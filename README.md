@@ -1,38 +1,108 @@
-# sv
+# Spiralize
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**Spiralize** is an interactive, educational, and engaging web application designed to help users explore and understand the Spiral Dynamics model. Through quizzes, insights, and resources, Spiralize empowers users to reflect on their values and worldview, facilitating personal and societal growth.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Interactive Assessment**
+  - Take a dynamic quiz with randomized questions to discover your "center of gravity"
+  - Get personalized insights and tips for growth
+  - Share your results on social media
+  - Visual progress tracking with color-coded stages
 
-```bash
-# create a new project in the current directory
-npx sv create
+- **Explore the Spiral**
+  - Learn about the stages of the Spiral Dynamics model with engaging visuals and explanations.
+  - Understand how values shape individuals, communities, and societies.
 
-# create a new project in my-app
-npx sv create my-app
-```
+- **Multilingual Support**
+  - Currently supports English and Swedish.
+  - Expandable to include additional languages.
 
-## Developing
+- **Educational Resources**
+  - Read in-depth articles and practical applications for each stage.
+  - Gain tools for integrating higher-stage values into your life.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- **Donation Support**
+  - Support the project through [PayPal Donations](https://www.paypal.com/donate/?hosted_button_id=FX7FQMDQBAR4N) (add the message "Spiralize").
 
-```bash
-npm run dev
+## Deployment
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+The project is deployed on GitHub Pages. To deploy your own instance:
 
-## Building
+1. Fork the repository
+2. Update `svelte.config.js` with your repository name
+3. Enable GitHub Pages in your repository settings
+4. Push to the main branch to trigger deployment
 
-To create a production version of your app:
+The site will be available at `https://BjornKennethHolmstrom.github.io/Spiralize/`
 
+## Technology Stack
+
+- **Frontend Framework**: [SvelteKit](https://kit.svelte.dev/) for a reactive and fast user experience.
+- **Styling**: Tailwind CSS for responsive and modern UI design.
+- **Data Storage**: IndexedDB for local progress tracking.
+- **Deployment**: GitHub Pages for hosting.
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js** (LTS version recommended)
+- **npm** (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/spiralize.git
+   cd spiralize
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev -- --open
+   ```
+
+4. Open the app in your browser at `http://localhost:5173`.
+
+### Build for Production
+
+To build the app for production:
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+The static site will be generated in the `build` directory.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Contributing
+
+Contributions are welcome! Here's how you can help:
+
+- Suggest new questions for the quiz.
+- Help translate the app into other languages.
+- Report bugs or suggest improvements.
+- Submit a pull request with new features or fixes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Inspired by the work of Clare W. Graves, Don Beck, and Chris Cowan.
+- Special thanks to contributors and supporters who help make Spiralize possible.
+
+## Support
+
+If you find Spiralize helpful, please consider supporting the project:
+
+- [Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=FX7FQMDQBAR4N)
+
+Thank you for your support and for exploring Spiral Dynamics with Spiralize!
+
+

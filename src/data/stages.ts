@@ -1,0 +1,314 @@
+// data/stages.ts
+import type { StageInfo, SpiralStage } from '../types/spiral';
+
+export const stages: Record<SpiralStage, StageInfo> = {
+  beige: {
+    name: {
+      en: "Survival",
+      sv: "Överlevnad"
+    },
+    color: "#E5D0BA",
+    description: {
+      en: "Focus on immediate survival needs and basic physical sustenance",
+      sv: "Fokus på omedelbara överlevnadsbehov och grundläggande fysiskt uppehälle"
+    },
+    characteristics: [
+      {
+        en: "Instinctive survival behaviors",
+        sv: "Instinktiva överlevnadsbeteenden"
+      },
+      {
+        en: "Focus on basic needs",
+        sv: "Fokus på grundläggande behov"
+      }
+    ],
+    challenges: [
+      {
+        en: "Moving beyond pure survival mode",
+        sv: "Att komma bortom rent överlevnadsläge"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Developing sense of safety and security",
+        sv: "Utveckla känsla av trygghet och säkerhet"
+      }
+    ]
+  },
+  purple: {
+    name: {
+      en: "Tribal",
+      sv: "Stamtillhörighet"
+    },
+    color: "#9B6B9E",
+    description: {
+      en: "Magical thinking and focus on tradition and kinship bonds",
+      sv: "Magiskt tänkande och fokus på tradition och släktband"
+    },
+    characteristics: [
+      {
+        en: "Strong group bonds",
+        sv: "Starka gruppband"
+      },
+      {
+        en: "Ritual and tradition",
+        sv: "Ritual och tradition"
+      }
+    ],
+    challenges: [
+      {
+        en: "Overcoming fear of change",
+        sv: "Övervinna rädsla för förändring"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Learning to embrace individual identity",
+        sv: "Lära sig att omfamna individuell identitet"
+      }
+    ]
+  },
+  red: {
+    name: {
+      en: "Power",
+      sv: "Makt"
+    },
+    color: "#E25A53",
+    description: {
+      en: "Emphasis on personal power and immediate gratification",
+      sv: "Betoning på personlig makt och omedelbar tillfredsställelse"
+    },
+    characteristics: [
+      {
+        en: "Assertive self-expression",
+        sv: "Självsäker självuttryckning"
+      },
+      {
+        en: "Immediate action and results",
+        sv: "Omedelbara handlingar och resultat"
+      }
+    ],
+    challenges: [
+      {
+        en: "Learning self-control",
+        sv: "Lära sig självkontroll"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Developing discipline and purpose",
+        sv: "Utveckla disciplin och syfte"
+      }
+    ]
+  },
+  blue: {
+    name: {
+      en: "Order",
+      sv: "Ordning"
+    },
+    color: "#4A72B2",
+    description: {
+      en: "Focus on order, meaning, and proper behavior",
+      sv: "Fokus på ordning, mening och korrekt beteende"
+    },
+    characteristics: [
+      {
+        en: "Strong sense of right and wrong",
+        sv: "Stark känsla för rätt och fel"
+      },
+      {
+        en: "Respect for authority and rules",
+        sv: "Respekt för auktoritet och regler"
+      }
+    ],
+    challenges: [
+      {
+        en: "Rigidity in thinking",
+        sv: "Rigiditet i tänkandet"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Learning flexibility while maintaining principles",
+        sv: "Lära sig flexibilitet medan principer upprätthålls"
+      }
+    ]
+  },
+  orange: {
+    name: {
+      en: "Achievement",
+      sv: "Prestation"
+    },
+    color: "#FF7F27",
+    description: {
+      en: "Emphasis on individual success and scientific rationality",
+      sv: "Betoning på individuell framgång och vetenskaplig rationalitet"
+    },
+    characteristics: [
+      {
+        en: "Goal-oriented behavior",
+        sv: "Målinriktat beteende"
+      },
+      {
+        en: "Strategic thinking",
+        sv: "Strategiskt tänkande"
+      }
+    ],
+    challenges: [
+      {
+        en: "Balancing achievement with other values",
+        sv: "Balansera prestation med andra värden"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Developing emotional intelligence",
+        sv: "Utveckla emotionell intelligens"
+      }
+    ]
+  },
+  green: {
+    name: {
+      en: "Communal",
+      sv: "Gemenskap"
+    },
+    color: "#7AB55C",
+    description: {
+      en: "Focus on community, equality, and human connection",
+      sv: "Fokus på gemenskap, jämlikhet och mänsklig kontakt"
+    },
+    characteristics: [
+      {
+        en: "Strong emphasis on inclusion",
+        sv: "Stark betoning på inkludering"
+      },
+      {
+        en: "Sensitivity to others' feelings",
+        sv: "Känslighet för andras känslor"
+      }
+    ],
+    challenges: [
+      {
+        en: "Decision paralysis from multiple perspectives",
+        sv: "Beslutsparalys från flera perspektiv"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Integrating efficiency with empathy",
+        sv: "Integrera effektivitet med empati"
+      }
+    ]
+  },
+  yellow: {
+    name: {
+      en: "Systemic",
+      sv: "Systemisk"
+    },
+    color: "#FFD700",
+    description: {
+      en: "Integration of complex systems and adaptive solutions",
+      sv: "Integration av komplexa system och adaptiva lösningar"
+    },
+    characteristics: [
+      {
+        en: "Systemic thinking",
+        sv: "Systemiskt tänkande"
+      },
+      {
+        en: "Comfort with complexity",
+        sv: "Bekväm med komplexitet"
+      }
+    ],
+    challenges: [
+      {
+        en: "Communicating complex insights simply",
+        sv: "Kommunicera komplexa insikter enkelt"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Developing practical applications of systems thinking",
+        sv: "Utveckla praktiska tillämpningar av systemtänkande"
+      }
+    ]
+  },
+  turquoise: {
+    name: {
+      en: "Holistic",
+      sv: "Holistisk"
+    },
+    color: "#40E0D0",
+    description: {
+      en: "Global, holistic thinking and being",
+      sv: "Globalt, holistiskt tänkande och varande"
+    },
+    characteristics: [
+      {
+        en: "Universal perspective",
+        sv: "Universellt perspektiv"
+      },
+      {
+        en: "Integration of all levels",
+        sv: "Integration av alla nivåer"
+      }
+    ],
+    challenges: [
+      {
+        en: "Maintaining groundedness",
+        sv: "Bibehålla jordfästhet"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Balancing universal vision with practical action",
+        sv: "Balansera universell vision med praktisk handling"
+      }
+    ]
+  },
+  coral: {
+    name: {
+      en: "Transcendent",
+      sv: "Transcendent"
+    },
+    color: "#FF6F61",
+    description: {
+      en: "Beyond individual consciousness, experiencing unity with all existence",
+      sv: "Bortom individuellt medvetande, upplevelse av enhet med all existens"
+    },
+    characteristics: [
+      {
+        en: "Direct experience of non-dual reality",
+        sv: "Direkt upplevelse av icke-dualistisk verklighet"
+      },
+      {
+        en: "Transcendence of individual self",
+        sv: "Transcendens av individuellt själv"
+      },
+      {
+        en: "Spontaneous right action",
+        sv: "Spontan rätt handling"
+      }
+    ],
+    challenges: [
+      {
+        en: "Integrating transcendent experience with daily life",
+        sv: "Integrera transcendent upplevelse med dagligt liv"
+      },
+      {
+        en: "Communicating ineffable experiences",
+        sv: "Kommunicera outsägliga upplevelser"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Deepening and stabilizing non-dual awareness",
+        sv: "Fördjupa och stabilisera icke-dualistisk medvetenhet"
+      },
+      {
+        en: "Embodying transcendence in practical life",
+        sv: "Förkroppsliga transcendens i praktiskt liv"
+      }
+    ]
+  }
+};
