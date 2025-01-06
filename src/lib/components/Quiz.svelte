@@ -4,6 +4,8 @@
   import { quintOut } from 'svelte/easing';
   import { quizStore, quizActions } from '../stores/quizStore';
   import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
+
 
   // Subscribe to store
   $: ({ questions, currentIndex: currentQuestionIndex, answers, language, hasStarted } = $quizStore);

@@ -79,6 +79,67 @@ npm run build
 
 The static site will be generated in the `build` directory.
 
+### Project files and folders
+
+Spiralize
+├── CHANGELOG.md
+├── docs
+├── eslint.config.js
+├── LICENSE.md
+├── package.json
+├── postcss.config.js
+├── README.md
+├── src
+│   ├── app.css
+│   ├── app.d.ts
+│   ├── app.html
+│   ├── demo.spec.ts
+│   ├── lib
+│   │   ├── components
+│   │   │   ├── Footer.svelte
+│   │   │   ├── Header.svelte
+│   │   │   ├── Quiz.svelte
+│   │   │   ├── ResultsImage.svelte
+│   │   │   ├── SpiralDiagram.svelte
+│   │   │   ├── SpiralProfile.svelte
+│   │   │   └── StageCard.svelte
+│   │   ├── data
+│   │   │   └── stages.ts
+│   │   ├── index.ts
+│   │   ├── stores
+│   │   │   ├── languageStore.ts
+│   │   │   └── quizStore.ts
+│   │   ├── styles
+│   │   └── utils
+│   │       └── questionUtils.ts
+│   ├── routes
+│   │   ├── about
+│   │   │   └── +page.svelte
+│   │   ├── contact
+│   │   │   └── +page.svelte
+│   │   ├── insights
+│   │   │   └── +page.svelte
+│   │   ├── +layout.js
+│   │   ├── +layout.svelte
+│   │   ├── +page.svelte
+│   │   ├── quiz
+│   │   │   ├── +page.svelte
+│   │   │   └── results
+│   │   │       └── +page.svelte
+│   │   └── spiral
+│   │       └── +page.svelte
+│   └── types
+│       └── spiral.ts
+├── static
+│   ├── default-share.svg
+│   ├── favicon.png
+│   ├── social-preview.png
+│   └── social-preview.svg
+├── svelte.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+└── vite.config.ts
+
 ## Contributing
 
 Contributions are welcome! Here's how you can help:
