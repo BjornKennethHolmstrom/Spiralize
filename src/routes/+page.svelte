@@ -12,7 +12,7 @@
   const translations = {
     en: {
       heroTitle: "Welcome to Spiralize",
-      heroSubtitle: "Understand yourself. Understand the world. Ascend the spiral.",
+      heroSubtitle: "Understand yourself. Understand the world. Navigate the spiral.",
       features: [
         {
           title: "Take the Assessment",
@@ -36,7 +36,7 @@
     },
     sv: {
       heroTitle: "Välkommen till Spiralize",
-      heroSubtitle: "Förstå dig själv. Förstå världen. Klättra på spiralen.",
+      heroSubtitle: "Förstå dig själv. Förstå världen. Navigera spiralen.",
       features: [
         {
           title: "Ta testet",
