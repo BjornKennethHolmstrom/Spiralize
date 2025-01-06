@@ -1,7 +1,13 @@
 <script lang="ts">
   import '../app.css';
   import { page } from '$app/stores';
-  
+  import { base } from '$app/paths';
+  import Footer from '$lib/components/Footer.svelte';
+  import Header from '$lib/components/Header.svelte';
+  import languageStore from '$lib/stores/languageStore';
+
+  const { language, toggleLanguage } = languageStore;  
+
   $: isResultsPage = $page.url.pathname.includes('/results');
   
   $: metaTitle = isResultsPage 
@@ -22,16 +28,18 @@
   <meta property="og:url" content={$page.url.href} />
   <meta property="og:title" content={metaTitle} />
   <meta property="og:description" content={metaDescription} />
-  <meta property="og:image" content="{$page.url.origin}/social-preview.png" />
+  <meta property="og:image" content="{base}/default-share.svg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={$page.url.href} />
   <meta property="twitter:title" content={metaTitle} />
   <meta property="twitter:description" content={metaDescription} />
-  <meta property="twitter:image" content="{$page.url.origin}/social-preview.png" />
+  <meta property="twitter:image" content="{base}/default-share.svg" />
 </svelte:head>
 
 <div class="min-h-screen">
+  <Header {language} />
   <slot />
+  <Footer language="en" />
 </div>

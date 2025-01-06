@@ -1,10 +1,41 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { quizStore, quizActions } from '$lib/stores/quizStore';
+  import languageStore from '$lib/stores/languageStore';
   import Quiz from '$lib/components/Quiz.svelte';
 
-  // Subscribe to the store
+  const { language, toggleLanguage } = languageStore; 
+
+  // Subscribe to the stores
   $: ({ hasStarted, isLoading, questions, currentIndex, answers } = $quizStore);
+  $: currentLanguage = $language;
+
+  const translations = {
+    en: {
+      title: "Spiral Dynamics Assessment",
+      description: "Discover your center of gravity in the Spiral Dynamics model through this comprehensive assessment. The test takes about 15-20 minutes to complete.",
+      benefits: [
+        "25 carefully designed questions",
+        "Detailed profile analysis",
+        "Personalized insights and recommendations"
+      ],
+      startButton: "Start Assessment",
+      loading: "Loading assessment..."
+    },
+    sv: {
+      title: "Spiral Dynamics Bedömning",
+      description: "Upptäck din tyngdpunkt i Spiral Dynamics-modellen genom denna omfattande bedömning. Testet tar cirka 15-20 minuter att slutföra.",
+      benefits: [
+        "25 noggrant utformade frågor",
+        "Detaljerad profilanalys",
+        "Personliga insikter och rekommendationer"
+      ],
+      startButton: "Starta Bedömning",
+      loading: "Laddar bedömning..."
+    }
+  };
+
+  $: t = translations[currentLanguage];
 
   function handleStartQuiz() {
     console.log('Starting quiz...'); // Debug log
@@ -16,42 +47,36 @@
   {#if !hasStarted}
     <div class="max-w-3xl mx-auto text-center">
       <h1 class="text-4xl font-bold text-gray-900 mb-8">
-        Spiral Dynamics Assessment
+        {t.title}
       </h1>
       <div class="bg-white rounded-2xl shadow-sm p-8 mb-8">
         <p class="text-lg text-gray-600 mb-6">
-          Discover your center of gravity in the Spiral Dynamics model through this comprehensive assessment. 
-          The test takes about 15-20 minutes to complete.
+          {t.description}
         </p>
         <ul class="text-left text-gray-600 mb-8 space-y-3">
-          <li class="flex items-center">
-            <span class="text-green-500 mr-2">✓</span>
-            25 carefully designed questions
-          </li>
-          <li class="flex items-center">
-            <span class="text-green-500 mr-2">✓</span>
-            Detailed profile analysis
-          </li>
-          <li class="flex items-center">
-            <span class="text-green-500 mr-2">✓</span>
-            Personalized insights and recommendations
-          </li>
+          {#each t.benefits as benefit}
+            <li class="flex items-center">
+              <span class="text-green-500 mr-2">✓</span>
+              {benefit}
+            </li>
+          {/each}
         </ul>
         <button
           class="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-purple-700 transition-colors"
           on:click={handleStartQuiz}
         >
-          Start Assessment
+          {t.startButton}
         </button>
       </div>
     </div>
   {:else if isLoading}
     <div class="flex items-center justify-center min-h-[50vh]">
       <div class="text-lg text-gray-600">
-        Loading assessment...
+        {t.loading}
       </div>
     </div>
   {:else if questions.length > 0}
     <Quiz />
   {/if}
 </div>
+

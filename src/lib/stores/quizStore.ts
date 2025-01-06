@@ -2,7 +2,9 @@
 import { writable } from 'svelte/store';
 import type { Question } from '../types/spiral';
 import { shuffleArray } from '../utils/questionUtils'; // Reuse your shuffleArray function
+import languageStore from '$lib/stores/languageStore';
 
+const { language, toggleLanguage } = languageStore; 
 
 const questionsData: Question[] = [
   {
@@ -2075,6 +2077,14 @@ export const quizStore = writable({
   isLoading: false,
   hasStarted: false,
   language: 'en'
+});
+
+// Synchronize the quiz store with the language store
+language.subscribe(lang => {
+  quizStore.update(state => ({
+    ...state,
+    language: lang
+  }));
 });
 
 // Helper functions that work with the store

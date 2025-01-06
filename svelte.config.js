@@ -2,6 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const dev = process.env.NODE_ENV === 'development';
+const base = dev ? '' : '/Spiralize';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,7 +15,21 @@ const config = {
       strict: true
     }),
     paths: {
-      base: dev ? '' : '/Spiralize'
+      base: base
+    },
+    prerender: {
+      handleHttpError: ({ path, referrer, message }) => {
+        // Ignore missing social preview images
+        if (path.includes('.png') || path.includes('.svg')) {
+          console.warn(`Warning: Missing asset ${path}`);
+          return;
+        }
+        // Ignore quiz results page
+        if (path.includes('/quiz/results')) {
+          return;
+        }
+        throw new Error(message);
+      }
     }
   },
   preprocess: vitePreprocess()

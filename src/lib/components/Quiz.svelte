@@ -51,17 +51,7 @@
   }
   
   function showResults() {
-    // Calculate results based on answers
-    const stageScores = {};
-    
-    Object.entries(answers).forEach(([_, answer]) => {
-      answer.relatedStages.forEach(stage => {
-        stageScores[stage] = (stageScores[stage] || 0) + answer.value;
-      });
-    });
-    
-    console.log('Stage Scores:', stageScores);
-    goto('/quiz/results');
+    goto(`${base}/quiz/results${window.location.search}`);
   }
   
   function getProgressColor(index) {

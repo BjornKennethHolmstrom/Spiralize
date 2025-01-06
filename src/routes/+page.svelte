@@ -1,8 +1,12 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import { writable } from 'svelte/store';
+  import languageStore from '$lib/stores/languageStore';
 
-  // Language store
-  export const language = writable('en');
+  const { language, toggleLanguage } = languageStore; 
+
+  // Reactive language value
+  $: currentLanguage = $language;
 
   // Translation data
   const translations = {
@@ -13,19 +17,19 @@
         {
           title: "Take the Assessment",
           description: "Discover your center of gravity on the Spiral Dynamics model with an interactive quiz.",
-          link: "/quiz",
+          link: `${base}/quiz`,
           icon: "🌀"
         },
         {
           title: "Explore the Spiral",
           description: "Learn about each stage of the spiral and how they shape personal and societal growth.",
-          link: "/spiral",
+          link: `${base}/spiral`,
           icon: "📚"
         },
         {
           title: "Practical Insights",
           description: "Find actionable tips for integrating Spiral Dynamics principles into your life.",
-          link: "/insights",
+          link: `${base}/insights`,
           icon: "✨"
         }
       ]
@@ -37,19 +41,19 @@
         {
           title: "Ta testet",
           description: "Upptäck din tyngdpunkt i Spiral Dynamics-modellen med ett interaktivt quiz.",
-          link: "/quiz",
+          link: `${base}/quiz`,
           icon: "🌀"
         },
         {
           title: "Utforska Spiralen",
           description: "Lär dig om varje steg i spiralen och hur de formar personlig och samhällelig utveckling.",
-          link: "/spiral",
+          link: `${base}/spiral`,
           icon: "📚"
         },
         {
           title: "Praktiska Insikter",
           description: "Hitta konkreta tips för att integrera Spiral Dynamics-principer i ditt liv.",
-          link: "/insights",
+          link: `${base}/insights`,
           icon: "✨"
         }
       ]
@@ -62,21 +66,6 @@
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <!-- Language Switcher -->
-    <div class="flex justify-end mb-8 space-x-4">
-      <button
-        class="text-purple-600 hover:text-purple-800 transition-colors"
-        on:click={() => language.set('en')}
-      >
-        English
-      </button>
-      <button
-        class="text-purple-600 hover:text-purple-800 transition-colors"
-        on:click={() => language.set('sv')}
-      >
-        Svenska
-      </button>
-    </div>
 
     <!-- Hero Section -->
     <div class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl text-white text-center px-6 py-16 mb-12">
@@ -87,7 +76,7 @@
         {t.heroSubtitle}
       </p>
       <a 
-        href="/quiz"
+        href="{base}/quiz"
         class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
       >
         Take the Assessment

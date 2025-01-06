@@ -3,6 +3,7 @@
   import { quizStore } from '$lib/stores/quizStore';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
   import ResultsImage from '$lib/components/ResultsImage.svelte';
 
 
@@ -15,7 +16,7 @@
 
   onMount(() => {
     if (Object.keys(answers).length === 0) {
-      goto('/quiz');
+      goto('${base}/quiz');
       return;
     }
 
@@ -151,7 +152,7 @@
 
       <div class="text-center mt-8">
         <a
-          href="/quiz"
+          href="{base}/quiz"
           class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
         >
           Take Quiz Again
