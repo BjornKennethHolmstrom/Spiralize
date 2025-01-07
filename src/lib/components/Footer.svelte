@@ -21,7 +21,7 @@
       <a href="{base}/contact" class="hover:underline">
         {currentLanguage === "en" ? "Contact" : "Kontakt"}
       </a>
-      <a href="https://en.wikipedia.org/wiki/Spiral_Dynamics" target="_blank" rel="noopener">
+      <a href="{base}/origins" class="hover:underline">
         {currentLanguage === "en" ? "Learn More" : "Läs mer"}
       </a>
     </div>

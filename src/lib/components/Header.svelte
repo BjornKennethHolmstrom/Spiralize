@@ -7,20 +7,26 @@
 
   // Links for navigation
   const navLinks = [
-    { href: `${base}/`, label: { en: "Home", sv: "Hem" } },
-    { href: `${base}/about`, label: { en: "About", sv: "Om" } },
-    { href: `${base}/quiz`, label: { en: "Quiz", sv: "Test" } },
-    { href: `${base}/spiral`, label: { en: "Explore", sv: "Utforska" } },
-    { href: `${base}/insights`, label: { en: "Insights", sv: "Insikter" } },
-    { href: `${base}/contact`, label: { en: "Contact", sv: "Kontakt" } }
+      { href: `${base}/`, label: { en: "Home", sv: "Hem" } },
+      { href: `${base}/spiral`, label: { en: "Explore", sv: "Utforska" } },
+      { href: `${base}/origins`, label: { en: "Origins", sv: "Historia" } },
+      { href: `${base}/quiz`, label: { en: "Quiz", sv: "Test" } },
+      { href: `${base}/insights`, label: { en: "Insights", sv: "Insikter" } },
+      { href: `${base}/contact`, label: { en: "Contact", sv: "Kontakt" } },
+      { href: `${base}/about`, label: { en: "About", sv: "Om" } }
   ];
 </script>
 
 <header class="bg-gradient-to-br from-purple-600 to-purple-800 text-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <a href={`${base}/`} class="text-2xl font-bold hover:text-purple-300 transition-colors">
-      Spiralize
+    <!-- Logo and site name -->
+    <a href={`${base}/`} class="flex items-center gap-2 hover:text-purple-300 transition-colors">
+      <img 
+        src={`${base}/logo192.png`}
+        alt="Spiralize" 
+        class="w-8 h-8"
+      />
+      <span class="text-2xl font-bold">Spiralize</span>
     </a>
 
     <!-- Navigation Links -->

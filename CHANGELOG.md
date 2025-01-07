@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.2] - Visual and Content Enhancements
+
+### Added
+- **Logo**: Created and implemented a new spiral-based logo representing all nine stages
+- **Origins Page**: Added comprehensive history and background of Spiral Dynamics
+  - Timeline from Dr. Clare W. Graves through modern developments
+  - Key principles and historical impact
+  - Full bilingual support
+
+### Changed
+- Moved donation section from homepage to About page for better focus
+- Reorganized navigation menu order for better user flow
+- Improved contact form with custom thank you page
+- Updated asset paths to ensure correct loading in production
+
+### Fixed
+- Corrected image and asset paths for GitHub Pages deployment
+- Fixed responsive layout issues in various components
+
 ## [0.3.1]
 
 ### Added

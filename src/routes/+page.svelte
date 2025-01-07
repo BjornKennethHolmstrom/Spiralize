@@ -13,6 +13,27 @@
     en: {
       heroTitle: "Welcome to Spiralize",
       heroSubtitle: "Understand yourself. Understand the world. Navigate the spiral.",
+      intro: {
+        title: "What is Spiral Dynamics?",
+        description: "Spiral Dynamics is a powerful framework that helps us understand how humans and societies evolve through different stages of development. Each stage represents a unique way of thinking about and interacting with the world.",
+        keyPoints: [
+          {
+            title: "It's About Growth",
+            text: "Like a spiral, human consciousness evolves through expanding levels of complexity, each building upon and including what came before.",
+            icon: "🌱"
+          },
+          {
+            title: "Everyone is Different",
+            text: "We each have our own center of gravity - the stage where we feel most comfortable. There's no 'better' or 'worse', just different ways of making sense of the world.",
+            icon: "🎯"
+          },
+          {
+            title: "Practical Understanding",
+            text: "Understanding Spiral Dynamics can help you better navigate relationships, work, and social challenges by recognizing different worldviews.",
+            icon: "🔑"
+          }
+        ]
+      },
       features: [
         {
           title: "Take the Assessment",
@@ -37,6 +58,27 @@
     sv: {
       heroTitle: "Välkommen till Spiralize",
       heroSubtitle: "Förstå dig själv. Förstå världen. Navigera spiralen.",
+      intro: {
+        title: "Vad är Spiral Dynamics?",
+        description: "Spiral Dynamics är ett kraftfullt ramverk som hjälper oss förstå hur människor och samhällen utvecklas genom olika utvecklingsstadier. Varje stadium representerar ett unikt sätt att tänka om och interagera med världen.",
+        keyPoints: [
+          {
+            title: "Det Handlar om Utveckling",
+            text: "Som en spiral utvecklas mänskligt medvetande genom expanderande nivåer av komplexitet, där varje nivå bygger på och inkluderar det som kom före.",
+            icon: "🌱"
+          },
+          {
+            title: "Alla är Olika",
+            text: "Vi har alla vårt eget gravitationscentrum - det stadium där vi känner oss mest bekväma. Det finns inget 'bättre' eller 'sämre', bara olika sätt att förstå världen.",
+            icon: "🎯"
+          },
+          {
+            title: "Praktisk Förståelse",
+            text: "Att förstå Spiral Dynamics kan hjälpa dig att bättre navigera relationer, arbete och sociala utmaningar genom att känna igen olika världsåskådningar.",
+            icon: "🔑"
+          }
+        ]
+      },
       features: [
         {
           title: "Ta testet",
@@ -66,9 +108,16 @@
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-
     <!-- Hero Section -->
     <div class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl text-white text-center px-6 py-16 mb-12">
+      <!-- Add logo here -->
+      <div class="mb-8">
+        <img 
+          src="{base}/logo.svg" 
+          alt="Spiralize Logo" 
+          class="w-32 h-32 mx-auto mb-6"
+        />
+      </div>
       <h1 class="text-4xl md:text-5xl font-bold mb-4">
         {t.heroTitle}
       </h1>
@@ -83,21 +132,47 @@
       </a>
     </div>
 
+    <!-- New Introduction Section -->
+    <div class="max-w-4xl mx-auto mb-16">
+      <h2 class="text-3xl font-bold text-center mb-6">
+        {t.intro.title}
+      </h2>
+      <p class="text-xl text-gray-600 text-center mb-12">
+        {t.intro.description}
+      </p>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        {#each t.intro.keyPoints as point}
+          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-4xl mb-4">
+              {point.icon}
+            </div>
+            <h3 class="text-xl font-semibold mb-2">
+              {point.title}
+            </h3>
+            <p class="text-gray-600">
+              {point.text}
+            </p>
+          </div>
+        {/each}
+      </div>
+    </div>
+
     <!-- Features Section -->
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
       {#each t.features as feature}
         <a 
           href={feature.link}
-          class="block bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6"
+          class="group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6 border-2 border-transparent hover:border-purple-500 transform hover:-translate-y-1"
         >
           <div class="flex items-start space-x-4">
             <div class="flex-shrink-0">
-              <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-2xl">
+              <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-2xl group-hover:bg-purple-200 transition-colors">
                 {feature.icon}
               </div>
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
                 {feature.title}
               </h3>
               <p class="text-gray-600">
@@ -105,27 +180,14 @@
               </p>
             </div>
           </div>
+          <!-- Add subtle arrow indicator -->
+          <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
         </a>
       {/each}
-    </div>
-
-    <!-- Donation Section -->
-    <div class="bg-white rounded-xl p-8 text-center">
-      <h2 class="text-2xl font-semibold mb-4">Support Spiralize</h2>
-      <p class="text-gray-600 mb-6">
-        If you enjoy Spiralize and want to support the project, consider donating:
-      </p>
-      <a
-        href="https://www.paypal.com/donate/?hosted_button_id=FX7FQMDQBAR4N"
-        target="_blank"
-        rel="noopener"
-        class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
-      >
-        Donate via PayPal
-      </a>
-      <p class="text-sm text-gray-500 mt-4">
-        Please add the message "Spiralize" with your donation. Thank you!
-      </p>
     </div>
   </div>
 </div>
