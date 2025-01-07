@@ -112,8 +112,21 @@
       {/key}
     </div>
 
-    <div class="progress-text">
-      Question {currentQuestionIndex + 1} of {questions.length}
+    <div class="flex justify-between items-center w-full mt-4">
+      <button
+        class="text-gray-600 hover:text-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        on:click={() => quizActions.previousQuestion()}
+        disabled={currentQuestionIndex === 0 || isTransitioning}
+      >
+        ← {language === 'en' ? 'Previous' : 'Föregående'}
+      </button>
+
+      <div class="progress-text">
+        Question {currentQuestionIndex + 1} of {questions.length}
+      </div>
+
+      <div class="w-16">
+      </div>
     </div>
   {:else}
     <div class="loading">Loading questions...</div>

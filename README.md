@@ -7,7 +7,7 @@
 - **Interactive Assessment**
   - Take a dynamic quiz with randomized questions to discover your "center of gravity"
   - Get personalized insights and tips for growth
-  - Share your results on social media
+  - Share your results on social media and download results image
   - Visual progress tracking with color-coded stages
 
 - **Explore the Spiral**

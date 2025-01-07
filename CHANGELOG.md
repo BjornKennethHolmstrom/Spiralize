@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.1]
+
+### Added
+
+- **Quiz Improvements**
+  - Download .png-file with results from the quiz.
+  - Back button to assist with missclicks or regrets.
+  - Full top-two stages combination descriptions (36 in total).
+
 ## [0.3.0] - Translation and Feature Enhancements
 
 ### Added

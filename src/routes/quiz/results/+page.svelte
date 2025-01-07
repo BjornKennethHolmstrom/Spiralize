@@ -1,13 +1,17 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { quizStore } from '$lib/stores/quizStore';
+  import { quizStore, quizActions } from '$lib/stores/quizStore';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
   import { base } from '$app/paths';
   import ResultsImage from '$lib/components/ResultsImage.svelte';
+  import { dominantStageExplanations, getCombinationExplanation } from '$lib/data/stageExplanations';
+  import languageStore from '$lib/stores/languageStore';
 
-
-  $: ({ answers, language } = $quizStore);
+  const { language } = languageStore;
+  $: currentLanguage = $language;
+  
+  $: ({ answers } = $quizStore);
   $: shareUrl = $page.url.origin + $page.url.pathname;
 
   let stageScores = {};
@@ -16,7 +20,7 @@
 
   onMount(() => {
     if (Object.keys(answers).length === 0) {
-      goto('${base}/quiz');
+      goto(`${base}/quiz`);
       return;
     }
 
@@ -62,7 +66,9 @@
   }
 
   function getShareMessage() {
-    return `I just discovered my Spiral Dynamics profile! My center of gravity is in ${dominantStage} with strong ${secondaryStage} influences. Take the assessment to find your profile:`;
+    return currentLanguage === 'en' 
+      ? `I just discovered my Spiral Dynamics profile! My center of gravity is in ${dominantStage} with strong ${secondaryStage} influences. Take the assessment to find your profile:`
+      : `Jag har just upptäckt min Spiral Dynamics-profil! Mitt gravitationscentrum är i ${dominantStage} med starka ${secondaryStage}-influenser. Ta testet för att hitta din profil:`;
   }
 
   function shareOnFacebook() {
@@ -81,12 +87,43 @@
   }
 
   $: if (dominantStage && secondaryStage) {
-    const title = `My Spiral Dynamics Profile: ${dominantStage} with ${secondaryStage}`;
+    const title = currentLanguage === 'en'
+      ? `My Spiral Dynamics Profile: ${dominantStage} with ${secondaryStage}`
+      : `Min Spiral Dynamics Profil: ${dominantStage} med ${secondaryStage}`;
     document.title = title;
-    document.querySelector('meta[property="og:title"]').setAttribute('content', title);
-    document.querySelector('meta[property="og:description"]').setAttribute('content', getShareMessage());
-    document.querySelector('meta[property="twitter:title"]').setAttribute('content', title);
-    document.querySelector('meta[property="twitter:description"]').setAttribute('content', getShareMessage());
+    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute('content', getShareMessage());
+    document.querySelector('meta[property="twitter:title"]')?.setAttribute('content', title);
+    document.querySelector('meta[property="twitter:description"]')?.setAttribute('content', getShareMessage());
+  }
+
+  let resultImageComponent: ResultsImage;
+  let isDownloading = false;
+
+  async function downloadResults() {
+    if (resultImageComponent && !isDownloading) {
+      isDownloading = true;
+      try {
+        const blob = await resultImageComponent.generateImage();
+        if (blob) {
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = `spiral-dynamics-profile-${new Date().toISOString().split('T')[0]}.png`;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+        }
+      } catch (error) {
+        console.error('Error downloading image:', error);
+        alert(currentLanguage === 'en' 
+          ? 'Error downloading image. Please try again.' 
+          : 'Fel vid nedladdning av bild. Försök igen.');
+      } finally {
+        isDownloading = false;
+      }
+    }
   }
 </script>
 
@@ -97,7 +134,9 @@
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-3xl mx-auto">
     <div class="bg-white rounded-2xl shadow-sm p-8">
-      <h1 class="text-3xl font-bold text-center mb-8">Your Spiral Dynamics Profile</h1>
+      <h1 class="text-3xl font-bold text-center mb-8">
+        {currentLanguage === 'en' ? 'Your Spiral Dynamics Profile' : 'Din Spiral Dynamics Profil'}
+      </h1>
 
       <!-- Results visualization -->
       <div class="results-visualization mb-8">
@@ -117,6 +156,41 @@
         {/each}
       </div>
 
+      <!-- Detailed Explanations -->
+      <div class="mt-8 text-gray-700">
+        <h2 class="text-2xl font-semibold mb-4">
+          {currentLanguage === 'en' ? 'Understanding Your Profile' : 'Förstå Din Profil'}
+        </h2>
+        
+        {#if dominantStage && dominantStageExplanations[dominantStage]}
+          <!-- Dominant Stage Explanation -->
+          <div class="mb-6">
+            <h3 class="text-xl font-medium mb-2">
+              {currentLanguage === 'en' ? 'Your Center of Gravity' : 'Ditt Gravitationscentrum'}
+            </h3>
+            <p class="mb-4">{dominantStageExplanations[dominantStage].dominant[currentLanguage]}</p>
+          </div>
+
+          <!-- Secondary Stage Explanation -->
+          {#if secondaryStage && dominantStageExplanations[secondaryStage]}
+            <div class="mb-6">
+              <h3 class="text-xl font-medium mb-2">
+                {currentLanguage === 'en' ? 'Secondary Influence' : 'Sekundärt Inflytande'}
+              </h3>
+              <p class="mb-4">{dominantStageExplanations[secondaryStage].secondary[currentLanguage]}</p>
+            </div>
+          {/if}
+
+          <!-- Combination Explanation -->
+          <div class="mb-6">
+            <h3 class="text-xl font-medium mb-2">
+              {currentLanguage === 'en' ? 'Your Unique Combination' : 'Din Unika Kombination'}
+            </h3>
+            <p>{getCombinationExplanation(dominantStage, secondaryStage, currentLanguage)}</p>
+          </div>
+        {/if}
+      </div>
+
       <!-- Share buttons -->
       <div class="flex justify-center gap-4 mb-8">
         <button
@@ -126,7 +200,7 @@
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
           </svg>
-          Share
+          {currentLanguage === 'en' ? 'Share' : 'Dela'}
         </button>
 
         <button
@@ -146,27 +220,55 @@
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
           </svg>
-          Share
+          {currentLanguage === 'en' ? 'Share' : 'Dela'}
         </button>
       </div>
 
-      <div class="text-center mt-8">
-        <a
-          href="{base}/quiz"
-          class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
+      <div class="flex justify-center gap-4 mt-8">
+        <button
+          on:click={() => {
+            quizActions.resetQuiz();
+            goto(`${base}/quiz`);
+          }}
+          class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
         >
-          Take Quiz Again
-        </a>
+          {currentLanguage === 'en' ? 'Take Quiz Again' : 'Gör Testet Igen'}
+        </button>
+
+        <button
+          on:click={downloadResults}
+          disabled={isDownloading}
+          class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {#if isDownloading}
+            <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          {:else}
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          {/if}
+          {#if isDownloading}
+            {currentLanguage === 'en' ? 'Generating...' : 'Genererar...'}
+          {:else}
+            {currentLanguage === 'en' ? 'Download Results' : 'Ladda Ner Resultat'}
+          {/if}
+        </button>
       </div>
+
+      <ResultsImage
+        bind:this={resultImageComponent}
+        {stageScores}
+        {dominantStage}
+        {secondaryStage}
+        combinationDescription={getCombinationExplanation(dominantStage, secondaryStage, currentLanguage)}
+        language={currentLanguage}
+      />
     </div>
   </div>
 </div>
-
-<ResultsImage
-  {stageScores}
-  {dominantStage}
-  {secondaryStage}
-/>
 
 <style>
   :root {
