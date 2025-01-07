@@ -13,6 +13,7 @@
 - **Explore the Spiral**
   - Learn about the stages of the Spiral Dynamics model with engaging visuals and explanations.
   - Understand how values shape individuals, communities, and societies.
+  - Read about the history of Spiral Dynamics
 
 - **Multilingual Support**
   - Currently supports English and Swedish.
