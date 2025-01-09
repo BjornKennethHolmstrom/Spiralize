@@ -16,20 +16,6 @@ const config = {
     }),
     paths: {
       base: base
-    },
-    prerender: {
-      handleHttpError: ({ path, referrer, message }) => {
-        // Ignore missing social preview images
-        if (path.includes('.png') || path.includes('.svg')) {
-          console.warn(`Warning: Missing asset ${path}`);
-          return;
-        }
-        // Ignore quiz results page
-        if (path.includes('/quiz/results')) {
-          return;
-        }
-        throw new Error(message);
-      }
     }
   },
   preprocess: vitePreprocess()
