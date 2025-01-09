@@ -12,10 +12,12 @@ const config = {
       assets: 'build',
       fallback: 'index.html',
       precompress: false,
-      strict: true
+      strict: true,
+      trailingSlash: 'always'
     }),
     paths: {
-      base: base
+      base: base,
+      assets: dev ? '' : 'https://www.spiralize.org/Spiralize'
     },
     prerender: {
       handleHttpError: ({ path, referrer, message }) => {
