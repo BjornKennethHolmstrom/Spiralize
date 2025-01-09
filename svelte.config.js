@@ -10,12 +10,24 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: false,
+      fallback: 'index.html',
       precompress: false,
       strict: true
     }),
     paths: {
       base: base
+    },
+    prerender: {
+      handleHttpError: ({ path, referrer, message }) => {
+        if (path.includes('.png') || path.includes('.svg')) {
+          console.warn(`Warning: Missing asset ${path}`);
+          return;
+        }
+        if (path.includes('/quiz/results')) {
+          return;
+        }
+        throw new Error(message);
+      }
     }
   },
   preprocess: vitePreprocess()
