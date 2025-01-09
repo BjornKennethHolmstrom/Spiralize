@@ -5,7 +5,7 @@
 ## Features
 
 - **Interactive Assessment**
-  - Take a dynamic quiz with randomized questions to discover your "center of gravity"
+  - Take a dynamic quiz with randomized questions to discover your "center of gravity" in the spiral
   - Get personalized insights and tips for growth
   - Share your results on social media and download results image
   - Visual progress tracking with color-coded stages
@@ -55,7 +55,7 @@ The site will be available at `https://BjornKennethHolmstrom.github.io/Spiralize
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/spiralize.git
+   git clone https://github.com/BjornKennethHolmstrom/Spiralize.git
    cd spiralize
    ```
 
