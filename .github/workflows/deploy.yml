@@ -32,11 +32,7 @@ jobs:
         
       - name: Build
         run: npm run build
-
-      - name: Copy config files
-        run: |
-          cp netlify.toml build/netlify.toml
-        
+       
       - name: Create 404 page
         run: cp build/index.html build/404.html
         
