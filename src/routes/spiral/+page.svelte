@@ -32,7 +32,8 @@
         "No stage is inherently 'better' - each is appropriate for its life conditions",
         "People and societies can operate from multiple stages in different areas of life",
         "Evolution through stages is not guaranteed or always linear",
-        "The stages alternate between individualistic and collective focus"
+        "The stages alternate between individualistic and collective focus",
+        "Some qualities of advanced stages may appear similar to natural child-like states, but the key difference lies in conscious integration versus unconscious expression"
       ]
     },
     sv: {
@@ -54,7 +55,8 @@
         "Inget stadium är i sig 'bättre' - varje är lämpligt för sina livsvillkor",
         "Människor och samhällen kan operera från flera stadier i olika livsområden",
         "Evolution genom stadier är inte garanterad eller alltid linjär",
-        "Stadierna växlar mellan ett individuellt och kollektivt fokus"
+        "Stadierna växlar mellan ett individuellt och kollektivt fokus",
+        "Vissa kvaliteter i avancerade stadier kan likna naturliga barnsliga tillstånd, men nyckeln ligger i skillnaden mellan medveten integration och omedvetet uttryck"
       ]
     }
   };
