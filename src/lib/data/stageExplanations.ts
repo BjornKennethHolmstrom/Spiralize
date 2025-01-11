@@ -91,12 +91,22 @@ export const dominantStageExplanations: Record<string, StageExplanation> = {
   },
   coral: {
     dominant: {
-      en: "Your center of gravity in Coral indicates a transcendent perspective and unity consciousness. You likely value being over doing and experience deep interconnectedness.",
-      sv: "Ditt gravitationscentrum i Korall indikerar ett transcendent perspektiv och enhetsmedvetande. Du värdesätter troligen varande över görande och upplever djup sammankoppling."
+      en: "Your center of gravity in Coral indicates a unique balance of sovereign individuality and universal connection. You likely excel at pioneering new paradigms while maintaining deep resonance with universal consciousness, bringing together personal creative expression with collective evolution.",
+      sv: "Ditt gravitationscentrum i Korall indikerar en unik balans mellan suverän individualitet och universell koppling. Du är troligen skicklig på att pionjära nya paradigm medan du bibehåller djup resonans med universellt medvetande, och förenar personligt kreativt uttryck med kollektiv evolution."
     },
     secondary: {
-      en: "Having Coral as a secondary influence suggests you maintain transcendent awareness while engaging with other value systems.",
-      sv: "Att ha Korall som sekundärt inflytande antyder att du upprätthåller transcendent medvetenhet samtidigt som du engagerar dig i andra värdesystem."
+      en: "Having Coral as a secondary influence suggests you maintain the ability to pioneer new possibilities and integrate personal sovereignty with universal awareness while operating from other value systems.",
+      sv: "Att ha Korall som sekundärt inflytande antyder att du upprätthåller förmågan att pionjära nya möjligheter och integrera personlig suveränitet med universell medvetenhet medan du opererar från andra värdesystem."
+    }
+  },
+  ultraviolet: {
+    dominant: {
+      en: "Your center of gravity in Ultraviolet reflects a complete dissolution into infinite flow and co-creation. You likely experience reality as a seamless dance of infinite possibilities, where boundaries between self and other, form and formlessness, naturally dissolve into dynamic creative expression.",
+      sv: "Ditt gravitationscentrum i Ultraviolett återspeglar en fullständig upplösning i oändligt flöde och medskapande. Du upplever troligen verkligheten som en sömlös dans av oändliga möjligheter, där gränser mellan själv och andra, form och formlöshet, naturligt upplöses i dynamiskt kreativt uttryck."
+    },
+    secondary: {
+      en: "Having Ultraviolet as a secondary influence suggests you maintain access to infinite awareness and boundless flow while engaging with more structured value systems.",
+      sv: "Att ha Ultraviolett som sekundärt inflytande antyder att du upprätthåller tillgång till oändlig medvetenhet och gränslöst flöde medan du engagerar dig i mer strukturerade värdesystem."
     }
   }
 };
@@ -132,8 +142,12 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna kombination förenar grundläggande överlevnadsmedvetenhet med holistiskt medvetande, vilket antyder en förståelse för hur grundläggande behov relaterar till globala system och universella mönster. Du ser troligen den djupa kopplingen mellan individuell överlevnad och planetärt välbefinnande."
     },
     coral: {
-      en: "This combination merges survival consciousness with transcendent awareness, indicating an ability to maintain practical groundedness while accessing deeper universal insights. You likely understand how basic existence connects to the larger fabric of consciousness.",
-      sv: "Denna kombination förenar överlevnadsmedvetande med transcendent medvetenhet, vilket indikerar en förmåga att bibehålla praktisk jordning medan djupare universella insikter nås. Du förstår troligen hur grundläggande existens kopplar till det större medvetandets väv."
+      en: "This combination merges survival awareness with sovereign unity consciousness, suggesting an ability to ground cosmic understanding in the most basic aspects of existence. You likely bridge primal life forces with pioneering visions of new evolutionary possibilities.",
+      sv: "Denna kombination förenar överlevnadsmedvetenhet med suveränt enhetsmedvetande, vilket antyder en förmåga att jorda kosmisk förståelse i existensens mest grundläggande aspekter. Du överbryggar troligen ursprungliga livskrafter med banbrytande visioner av nya evolutionära möjligheter."
+    },
+    ultraviolet: {
+      en: "This combination unites survival awareness with infinite flow consciousness, suggesting an ability to experience the most basic life forces as expressions of boundless potential. You likely maintain deep presence in physical reality while accessing infinite awareness.",
+      sv: "Denna kombination förenar överlevnadsmedvetenhet med oändligt flödesmedvetande, vilket antyder en förmåga att uppleva de mest grundläggande livskrafterna som uttryck för gränslös potential. Du bibehåller troligen djup närvaro i fysisk verklighet medan oändlig medvetenhet nås."
     }
   },
   purple: {
@@ -162,8 +176,12 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna unika kombination överbryggar uråldrig visdom med holistisk medvetenhet, vilket antyder en förmåga att hedra traditionell kunskap medan dess plats i större planetära system erkänns. Du för troligen samman förfäders förståelse med samtida global medvetenhet."
     },
     coral: {
-      en: "This combination integrates communal traditions with transcendent awareness, suggesting a deep understanding of how collective wisdom connects to universal consciousness. You likely bridge ancient spiritual practices with direct existential experience.",
-      sv: "Denna kombination integrerar kommunala traditioner med transcendent medvetenhet, vilket antyder en djup förståelse för hur kollektiv visdom kopplar till universellt medvetande. Du överbryggar troligen gamla andliga praktiker med direkt existentiell upplevelse."
+      en: "This combination integrates tribal wisdom with sovereign unity, suggesting an ability to honor ancestral knowledge while pioneering new paradigms of collective consciousness. You likely weave traditional practices into innovative expressions of universal potential.",
+      sv: "Denna kombination integrerar stamvisdom med suverän enhet, vilket antyder en förmåga att hedra förfäders kunskap medan nya paradigmer av kollektivt medvetande växer fram. Du väver troligen traditionella praktiker in i innovativa uttryck av universell potential."
+    },
+    ultraviolet: {
+      en: "This combination integrates tribal wisdom with infinite flow, suggesting an ability to experience collective traditions as expressions of boundless creativity. You likely perceive ancestral knowledge through the lens of infinite possibility.",
+      sv: "Denna kombination integrerar stamvisdom med oändligt flöde, vilket antyder en förmåga att uppleva kollektiva traditioner som uttryck för gränslös kreativitet. Du uppfattar troligen förfäders kunskap genom linsen av oändlig möjlighet."
     }
   },
   red: {
@@ -188,8 +206,12 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna kombination förenar personlig kraft med holistisk medvetenhet, vilket indikerar en förmåga att uttrycka individuell styrka medan koppling till globala system bibehålls. Du förstår troligen hur personlig handling påverkar den större helheten."
     },
     coral: {
-      en: "This combination integrates assertive power with transcendent awareness, suggesting an ability to express strong will while maintaining higher consciousness. You likely channel personal power through universal wisdom.",
-      sv: "Denna kombination integrerar självhävdande kraft med transcendent medvetenhet, vilket antyder en förmåga att uttrycka stark vilja medan högre medvetande bibehålls. Du kanaliserar troligen personlig kraft genom universell visdom."
+      en: "This combination unites personal power with sovereign unity awareness, suggesting an ability to channel strong individual energy into pioneering evolutionary breakthroughs. You likely express bold creativity while maintaining deep resonance with universal wisdom.",
+      sv: "Denna kombination förenar personlig kraft med suveränt enhetsmedvetande, vilket antyder en förmåga att kanalisera stark individuell energi in i banbrytande evolutionära genombrott. Du uttrycker troligen djärv kreativitet medan djup resonans med universell visdom bibehålls."
+    },
+    ultraviolet: {
+      en: "This combination merges personal power with infinite flow consciousness, suggesting an ability to channel individual energy as an expression of boundless potential. You likely experience personal action as a dance of infinite creative force.",
+      sv: "Denna kombination förenar personlig kraft med oändligt flödesmedvetande, vilket antyder en förmåga att kanalisera individuell energi som ett uttryck för gränslös potential. Du upplever troligen personlig handling som en dans av oändlig kreativ kraft."
     }
   },
   blue: {
@@ -210,8 +232,12 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna kombination förenar moraliska principer med holistisk medvetenhet, vilket indikerar en förmåga att se etiska ramverk inom planetära system. Du förstår troligen hur individuella värderingar kopplar till universella mönster."
     },
     coral: {
-      en: "This combination merges structured principles with transcendent awareness, suggesting an ability to ground spiritual insights in practical ethics. You likely bridge moral frameworks with universal consciousness.",
-      sv: "Denna kombination förenar strukturerade principer med transcendent medvetenhet, vilket antyder en förmåga att jorda andliga insikter i praktisk etik. Du överbryggar troligen moraliska ramverk med universellt medvetande."
+      en: "This combination merges principled structure with sovereign unity, suggesting an ability to create ethical frameworks that support evolutionary emergence. You likely pioneer new paradigms while maintaining respect for foundational order.",
+      sv: "Denna kombination förenar principfast struktur med suverän enhet, vilket antyder en förmåga att skapa etiska ramverk som stödjer evolutionär framväxt. Du är troligen pionjär för nya paradigmer medan respekt för grundläggande ordning bibehålls."
+    },
+    ultraviolet: {
+      en: "This combination unites structured principles with infinite flow, suggesting an ability to perceive order as a dynamic expression of boundless possibility. You likely experience ethical frameworks as fluid manifestations of infinite wisdom.",
+      sv: "Denna kombination förenar strukturerade principer med oändligt flöde, vilket antyder en förmåga att uppfatta ordning som ett dynamiskt uttryck av gränslös möjlighet. Du upplever troligen etiska ramverk som flytande manifestationer av oändlig visdom."
     }
   },
   orange: {
@@ -228,8 +254,12 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna kombination integrerar strategisk prestation med holistisk medvetenhet, vilket antyder en förmåga att sträva efter framgång medan en djup koppling till globala system bibehålls. Du är troligen skicklig på att skapa innovativa lösningar som tjänar både praktiska mål och planetärt välbefinnande."
     },
     coral: {
-      en: "This combination integrates strategic achievement with transcendent awareness, suggesting an ability to pursue success while maintaining higher consciousness. You likely excel at bringing practical effectiveness to spiritual insights.",
-      sv: "Denna kombination integrerar strategisk prestation med transcendent medvetenhet, vilket antyder en förmåga att sträva efter framgång medan högre medvetande bibehålls. Du är troligen skicklig på att föra praktisk effektivitet till andliga insikter."
+      en: "This combination integrates strategic achievement with sovereign unity consciousness, suggesting an ability to manifest innovative breakthroughs while maintaining cosmic awareness. You likely excel at bringing visionary possibilities into practical reality.",
+      sv: "Denna kombination integrerar strategisk prestation med suveränt enhetsmedvetande, vilket antyder en förmåga att manifestera innovativa genombrott medan kosmisk medvetenhet bibehålls. Du är troligen skicklig på att föra visionära möjligheter in i praktisk verklighet."
+    },
+    ultraviolet: {
+      en: "This combination integrates strategic achievement with infinite flow consciousness, suggesting an ability to pursue goals while remaining open to boundless possibility. You likely experience success as a natural expression of infinite potential.",
+      sv: "Denna kombination integrerar strategisk prestation med oändligt flödesmedvetande, vilket antyder en förmåga att eftersträva mål medan öppenhet för gränslös möjlighet bibehålls. Du upplever troligen framgång som ett naturligt uttryck av oändlig potential."
     }
   },
   green: {
@@ -242,8 +272,12 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna kombination integrerar socialt medvetande med global medvetenhet, vilket indikerar en djup förståelse för både mänskliga relationer och planetära system. Du ser troligen sammankopplingarna mellan social rättvisa och ekologiskt välbefinnande."
     },
     coral: {
-      en: "This combination unites social consciousness with transcendent awareness, suggesting a deep capacity for both human connection and universal understanding. You likely bring together communal harmony with profound spiritual insights, fostering both individual and collective awakening.",
-      sv: "Denna kombination förenar socialt medvetande med transcendent medvetenhet, vilket antyder en djup kapacitet för både mänsklig kontakt och universell förståelse. Du för troligen samman kommunal harmoni med djupa andliga insikter, och främjar både individuellt och kollektivt uppvaknande."
+      en: "This combination unites social consciousness with sovereign unity, suggesting a deep capacity for fostering collective evolution while honoring individual creativity. You likely pioneer new forms of community that support both personal sovereignty and universal connection.",
+      sv: "Denna kombination förenar socialt medvetande med suverän enhet, vilket antyder en djup förmåga att främja kollektiv evolution medan individuell kreativitet hedras. Du är troligen pionjär för nya former av gemenskap som stödjer både personlig suveränitet och universell koppling."
+    },
+    ultraviolet: {
+      en: "This combination merges social consciousness with infinite flow, suggesting an ability to experience community as an expression of boundless unity. You likely perceive human connection through the lens of infinite possibility and potential.",
+      sv: "Denna kombination förenar socialt medvetande med oändligt flöde, vilket antyder en förmåga att uppleva gemenskap som ett uttryck för gränslös enhet. Du uppfattar troligen mänsklig koppling genom linsen av oändlig möjlighet och potential."
     }
   },
   yellow: {
@@ -252,16 +286,30 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna kombination förenar systemtänkande med holistisk medvetenhet, vilket antyder en förmåga att navigera komplexa utmaningar medan kopplingen till den större helheten bibehålls. Du är troligen skicklig på att hitta innovativa lösningar som tjänar både omedelbara behov och långsiktig evolution."
     },
     coral: {
-      en: "This combination unites systems thinking with transcendent awareness, suggesting a unique ability to understand complex patterns while maintaining a state of deep presence. You likely can navigate intricate challenges with both analytical precision and intuitive wisdom, seeing both the detailed mechanics and the unified whole simultaneously.",
-      sv: "Denna kombination förenar systemtänkande med transcendent medvetenhet, vilket antyder en unik förmåga att förstå komplexa mönster medan ett tillstånd av djup närvaro bibehålls. Du kan troligen navigera invecklade utmaningar med både analytisk precision och intuitiv visdom, och se både de detaljerade mekanismerna och den enade helheten samtidigt."
+      en: "This combination merges systems thinking with sovereign unity consciousness, suggesting an ability to understand complex patterns while pioneering new evolutionary possibilities. You likely integrate systemic awareness with creative breakthroughs in consciousness.",
+      sv: "Denna kombination förenar systemtänkande med suveränt enhetsmedvetande, vilket antyder en förmåga att förstå komplexa mönster medan du är pionjär för nya evolutionära möjligheter. Du integrerar troligen systemisk medvetenhet med kreativa genombrott i medvetandet."
+    },
+    ultraviolet: {
+      en: "This combination unites systems thinking with infinite flow consciousness, suggesting an ability to perceive complex patterns as expressions of boundless creativity. You likely experience systemic understanding through the lens of infinite possibility.",
+      sv: "Denna kombination förenar systemtänkande med oändligt flödesmedvetande, vilket antyder en förmåga att uppfatta komplexa mönster som uttryck för gränslös kreativitet. Du upplever troligen systemisk förståelse genom linsen av oändlig möjlighet."
     }
   },
   turquoise: {
     coral: {
-      en: "This combination integrates global consciousness with transcendent awareness, suggesting a deep understanding of both planetary systems and universal consciousness. You likely perceive the subtle interconnections between all aspects of existence while maintaining practical engagement with global challenges.",
-      sv: "Denna kombination integrerar globalt medvetande med transcendent medvetenhet, vilket antyder en djup förståelse för både planetära system och universellt medvetande. Du uppfattar troligen de subtila sammankopplingarna mellan alla aspekter av existensen medan praktiskt engagemang i globala utmaningar bibehålls."
+      en: "This combination integrates holistic awareness with sovereign unity, suggesting a profound ability to unite global consciousness with individual creative expression. You likely pioneer new paradigms that serve both planetary evolution and universal emergence.",
+      sv: "Denna kombination integrerar holistisk medvetenhet med suverän enhet, vilket antyder en djupgående förmåga att förena globalt medvetande med individuellt kreativt uttryck. Du är troligen pionjär för nya paradigmer som tjänar både planetär evolution och universell framväxt."
+    },
+    ultraviolet: {
+      en: "This combination merges holistic planetary awareness with infinite flow, suggesting a profound ability to unite universal patterns with boundless creative potential. You likely experience reality as a dynamic interplay between manifest wholeness and infinite possibility.",
+      sv: "Denna kombination förenar holistisk planetär medvetenhet med oändligt flöde, vilket antyder en djupgående förmåga att förena universella mönster med gränslös kreativ potential. Du upplever troligen verkligheten som ett dynamiskt samspel mellan manifest helhet och oändlig möjlighet."
     }
   },
+  coral: {
+    ultraviolet: {
+      en: "This combination integrates sovereign co-creation with infinite flow, suggesting a unique capacity to pioneer new paradigms while remaining completely open to infinite possibility. You likely navigate between structured innovation and boundless potential with remarkable fluidity.",
+      sv: "Denna kombination integrerar suverän samskapelse med oändligt flöde, vilket antyder en unik förmåga att vara pionjär för nya paradigm medan en fullständig öppenhet för oändlig möjlighet bibehålls. Du navigerar troligen mellan strukturerad innovation och gränslös potential med anmärkningsvärd fluiditet."
+    }
+  }
 };
 
 export function getCombinationExplanation(dominant: string, secondary: string, language: 'en' | 'sv'): string {

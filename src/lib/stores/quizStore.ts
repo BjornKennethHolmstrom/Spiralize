@@ -82,12 +82,20 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Experiencing unity with all existence",
-          sv: "Uppleva enhet med all existens"
+          en: "Expressing unique creativity within universal harmony",
+          sv: "Uttrycka unik kreativitet inom universell harmoni"
         },
         value: 1,
         relatedStages: ['coral']
-      }
+      },
+      {
+        text: {
+          en: "Allowing decisions to emerge from infinite awareness",
+          sv: "Låta beslut växa fram ur oändlig medvetenhet"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
+      }      
     ]
   },
 
@@ -158,11 +166,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "A unified field of consciousness and being",
-          sv: "Ett enat fält av medvetande och varande"
+          en: "A dance between individual expression and universal consciousness",
+          sv: "En dans mellan individuellt uttryck och universellt medvetande"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "A seamless field of infinite possibilities and co-creation",
+          sv: "Ett sömlöst fält av oändliga möjligheter och medskapande"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -233,11 +249,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Experience direct unity and non-separation",
-          sv: "Uppleva direkt enhet och icke-separation"
+          en: "Balance unique self-expression with universal connection",
+          sv: "Balansera unikt självuttryck med universell koppling"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Dissolve boundaries between self and other in infinite flow",
+          sv: "Upplösa gränser mellan själv och andra i oändligt flöde"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -308,11 +332,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Collective awakening and conscious evolution",
-          sv: "Kollektivt uppvaknande och medveten evolution"
+          en: "Pioneering new paradigms of conscious co-evolution",
+          sv: "Bana väg för nya paradigm av medveten samevolution"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Dissolving into infinite creative potential",
+          sv: "Upplösas i oändlig kreativ potential"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -392,11 +424,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Realizing and expressing universal consciousness",
-          sv: "Förverkliga och uttrycka universellt medvetande"
+          en: "Being a sovereign co-creator of new possibilities",
+          sv: "Vara en suverän medskapare av nya möjligheter"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Dancing as the infinite expressing itself",
+          sv: "Dansa som det oändliga som uttrycker sig självt"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -460,11 +500,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Respond spontaneously from a place of unity consciousness",
-          sv: "Svara spontant från en plats av enhetsmedvetande"
+          en: "Create new paradigms that transcend the apparent conflict",
+          sv: "Skapa nya paradigm som transcenderar den uppenbara konflikten"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Allow resolution to emerge from infinite intelligence",
+          sv: "Låta lösningen växa fram ur oändlig intelligens"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -537,11 +585,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Experience direct unity with all of nature",
-          sv: "Upplev direkt enhet med hela naturen"
+          en: "Co-create new paradigms of human-nature relationship",
+          sv: "Samskapa nya paradigm för människa-natur-relationen"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Experience the environment as infinite consciousness expressing itself",
+          sv: "Uppleva miljön som oändligt medvetande som uttrycker sig självt"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -622,11 +678,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Allow natural unfolding of consciousness",
-          sv: "Tillåt naturligt utvecklande av medvetandet"
+          en: "Pioneer new territories of consciousness and creation",
+          sv: "Är pionjär för nya territorier av medvetande och skapande"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Allow infinite potential to unfold naturally",
+          sv: "Låta oändlig potential utvecklas naturligt"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -707,11 +771,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "A presence that elevates collective consciousness",
-          sv: "En närvaro som höjer det kollektiva medvetandet"
+          en: "One who catalyzes new paradigms of collective potential",
+          sv: "En som katalyserar nya paradigm av kollektiv potential"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "A vessel for infinite wisdom's expression",
+          sv: "Ett kärl för oändlig vishets uttryck"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -784,11 +856,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Flow with the natural evolution of things",
-          sv: "Flöda med tingens naturliga utveckling"
+          en: "Create new possibilities from evolutionary tension",
+          sv: "Skapa nya möjligheter från evolutionär spänning"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Flow with the infinite dance of transformation",
+          sv: "Flödar med den oändliga transformationsdansen"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -869,11 +949,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Being in harmony with existence itself",
-          sv: "Vara i harmoni med existensen själv"
+          en: "Manifesting unique gifts in service of evolution",
+          sv: "Manifestera unika gåvor i evolutionens tjänst"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Being a pure channel for infinite potential",
+          sv: "Vara en ren kanal för oändlig potential"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -954,11 +1042,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Allow solutions to emerge naturally",
-          sv: "Låta lösningar växa fram naturligt"
+          en: "Pioneer breakthrough solutions through creative synthesis",
+          sv: "Pionjära genombrott genom kreativ syntes"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Allow solutions to emerge from infinite intelligence",
+          sv: "Låta lösningar framträda ur oändlig intelligens"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1039,11 +1135,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Expression of universal creative intelligence",
-          sv: "Uttryck för universell kreativ intelligens"
+          en: "A tool for expressing new paradigms of consciousness",
+          sv: "Ett verktyg för att uttrycka nya medvetandeparadigm"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "A manifestation of infinite creative intelligence",
+          sv: "En manifestation av oändlig kreativ intelligens"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1124,11 +1228,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Through direct knowing of unity",
-          sv: "Genom direkt vetande om enhet"
+          en: "Through sovereign alignment with universal wisdom",
+          sv: "Genom suverän anpassning till universell visdom"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Through direct communion with infinite wisdom",
+          sv: "Genom direkt kommunion med oändlig visdom"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1209,11 +1321,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Direct experiential wisdom of unity",
-          sv: "Direkt erfarenhetsmässig visdom om enhet"
+          en: "The art of conscious co-creation",
+          sv: "Konsten att medvetet samskapa"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Direct knowing from infinite consciousness",
+          sv: "Direkt vetande från oändligt medvetande"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1294,11 +1414,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Transform consciousness collectively",
-          sv: "Transformera medvetandet kollektivt"
+          en: "Pioneer new paradigms of conscious evolution",
+          sv: "Pionjära nya paradigm av medveten evolution"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Allow solutions to emerge from collective infinite wisdom",
+          sv: "Låta lösningar växa fram ur kollektiv oändlig visdom"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1379,11 +1507,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Through presence and direct transmission",
-          sv: "Genom närvaro och direkt överföring"
+          en: "Through creative synthesis of multiple dimensions",
+          sv: "Genom kreativ syntes av flera dimensioner"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Through direct transmission of infinite understanding",
+          sv: "Genom direkt överföring av oändlig förståelse"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1464,11 +1600,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "What emerges from deep presence",
-          sv: "Vad som framträder ur djup närvaro"
+          en: "What aligns universal wisdom with unique creative expression",
+          sv: "Vad som förenar universell visdom med unikt kreativt uttryck"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "What naturally emerges from infinite awareness",
+          sv: "Vad som naturligt framträder ur oändlig medvetenhet"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1549,11 +1693,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Being one with existence",
-          sv: "Vara ett med existensen"
+          en: "Co-creating new potentials for consciousness",
+          sv: "Samskapa nya potentialer för medvetandet"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Being infinite potential expressing itself",
+          sv: "Vara oändlig potential som uttrycker sig själv"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1639,6 +1791,14 @@ const questionsData: Question[] = [
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Allow resolution to arise from unified consciousness",
+          sv: "Låta lösning uppstå ur förenat medvetande"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1719,11 +1879,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Spontaneous expression of unity",
-          sv: "Spontant uttryck för enhet"
+          en: "A field for sovereign co-creation of new possibilities",
+          sv: "Ett fält för suverän samskapelse av nya möjligheter"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "A living expression of infinite consciousness",
+          sv: "Ett levande uttryck av oändligt medvetande"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1804,11 +1972,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Direct realization of non-dual reality",
-          sv: "Direkt insikt i icke-dualistisk verklighet"
+          en: "Being unique instruments of universal consciousness",
+          sv: "Att vara unika instrument för universellt medvetande"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Complete dissolution into infinite being",
+          sv: "Fullständig upplösning i oändligt varande"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1889,11 +2065,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Manifestation of universal flow",
-          sv: "Manifestation av universellt flöde"
+          en: "Creative force for pioneering new evolutionary possibilities",
+          sv: "Kreativ kraft för att pionjära nya evolutionära möjligheter"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Natural flow of infinite creative potential",
+          sv: "Naturligt flöde av oändlig kreativ potential"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -1974,11 +2158,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Expression of universal consciousness",
-          sv: "Uttryck för universellt medvetande"
+          en: "Unique expressions of universal consciousness",
+          sv: "Unika uttryck för universellt medvetande"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Pure manifestations of infinite potential",
+          sv: "Rena manifestationer av oändlig potential"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   },
@@ -2059,11 +2251,19 @@ const questionsData: Question[] = [
       },
       {
         text: {
-          en: "Rest in fundamental uncertainty",
-          sv: "Vila i fundamental osäkerhet"
+          en: "Use uncertainty as catalyst for new paradigm creation",
+          sv: "Använd osäkerhet som katalysator för nya paradigm"
         },
         value: 1,
         relatedStages: ['coral']
+      },
+      {
+        text: {
+          en: "Rest in the infinite dance of possibility",
+          sv: "Vila i den oändliga dansen av möjligheter"
+        },
+        value: 1,
+        relatedStages: ['ultraviolet']
       }
     ]
   }

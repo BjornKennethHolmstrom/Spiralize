@@ -13,8 +13,8 @@
   const stageCount = Object.keys(stages).length;
 
   // Spiral configuration
-  const rotations = 2; // Number of full rotations
-  const spacing = 30; // Spacing between stages
+  const rotations = 2.25; // Number of full rotations
+  const spacing = 28; // Spacing between stages
   const spiralPathSegments = 500; // Number of segments for smoothness
 
   // Generate points for stages

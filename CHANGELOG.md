@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.3] - Extended Stage Support and Refinements
+
+### Added
+- **New Stages**:
+  - Added Ultraviolet (X) stage to complete the developmental spectrum
+  - Enhanced Coral stage descriptions to emphasize sovereign unity
+  - Added comprehensive stage combinations for new stages (45 additional combinations)
+- **Quiz Enhancements**:
+  - Extended quiz scoring to include Ultraviolet stage
+  - Updated stage color scheme to include Ultraviolet
+- **Stage Insights**:
+  - Added detailed descriptions for both Coral and Ultraviolet stages
+  - Expanded stage interactions and combinations documentation
+
+### Changed
+- Refined stage descriptions to better reflect the unique qualities of each stage
+- Updated stage navigation to include all stages through Ultraviolet
+- Enhanced visualization color scheme to accommodate new stages
+
+### Fixed
+- Resolved prerendering issues for dynamic stage routes
+
 ## [0.3.2] - Visual and Content Enhancements
 
 ### Added

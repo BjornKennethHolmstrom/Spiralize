@@ -6,7 +6,7 @@
 
 - **Interactive Assessment**
   - Take a dynamic quiz with randomized questions to discover your "center of gravity" in the spiral
-  - Get personalized insights and tips for growth
+  - Get personalized insights and tips for growth across all stages from Beige to Ultraviolet
   - Share your results on social media and download results image
   - Visual progress tracking with color-coded stages
 

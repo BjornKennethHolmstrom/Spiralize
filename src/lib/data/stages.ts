@@ -268,46 +268,91 @@ export const stages: Record<SpiralStage, StageInfo> = {
   },
   coral: {
     name: {
-      en: "Transcendent",
-      sv: "Transcendent"
+      en: "Sovereign Unity",
+      sv: "Suverän Enhet"
     },
     color: "#FF6F61",
     description: {
-      en: "Beyond individual consciousness, experiencing unity with all existence",
-      sv: "Bortom individuellt medvetande, upplevelse av enhet med all existens"
+      en: "Integration of expansive individuality with universal consciousness",
+      sv: "Integration av expansiv individualitet med universellt medvetande"
     },
     characteristics: [
       {
-        en: "Direct experience of non-dual reality",
-        sv: "Direkt upplevelse av icke-dualistisk verklighet"
+        en: "Balance of personal sovereignty and cosmic awareness",
+        sv: "Balans mellan personlig suveränitet och kosmisk medvetenhet"
       },
       {
-        en: "Transcendence of individual self",
-        sv: "Transcendens av individuellt själv"
+        en: "Revolutionary creation within universal harmony",
+        sv: "Revolutionärt skapande inom universell harmoni"
       },
       {
-        en: "Spontaneous right action",
-        sv: "Spontan rätt handling"
+        en: "Pioneering new paradigms of existence",
+        sv: "Banbrytande nya paradigm för existens"
       }
     ],
     challenges: [
       {
-        en: "Integrating transcendent experience with daily life",
-        sv: "Integrera transcendent upplevelse med dagligt liv"
+        en: "Bridging visionary insights with practical implementation",
+        sv: "Överbrygga visionära insikter med praktiskt genomförande"
       },
       {
-        en: "Communicating ineffable experiences",
-        sv: "Kommunicera outsägliga upplevelser"
+        en: "Finding resonance while pushing boundaries",
+        sv: "Hitta resonans medan gränser tänjs"
       }
     ],
     growthPaths: [
       {
-        en: "Deepening and stabilizing non-dual awareness",
-        sv: "Fördjupa och stabilisera icke-dualistisk medvetenhet"
+        en: "Deepening the integration of individual and universal",
+        sv: "Fördjupa integrationen av individuellt och universellt"
       },
       {
-        en: "Embodying transcendence in practical life",
-        sv: "Förkroppsliga transcendens i praktiskt liv"
+        en: "Co-creating new possibilities for human potential",
+        sv: "Samskapa nya möjligheter för mänsklig potential"
+      }
+    ]
+  },
+  ultraviolet: {
+    name: {
+      en: "Infinite Flow",
+      sv: "Oändligt Flöde"
+    },
+    color: "#9932CC",
+    description: {
+      en: "Dissolution of all boundaries into dynamic universal co-creation",
+      sv: "Upplösning av alla gränser till dynamiskt universellt medskapande"
+    },
+    characteristics: [
+      {
+        en: "Seamless integration of all existence",
+        sv: "Sömlös integration av all existens"
+      },
+      {
+        en: "Fluid movement between all perspectives and dimensions",
+        sv: "Flytande rörelse mellan alla perspektiv och dimensioner"
+      },
+      {
+        en: "Instantaneous creation through universal consciousness",
+        sv: "Omedelbart skapande genom universellt medvetande"
+      }
+    ],
+    challenges: [
+      {
+        en: "Maintaining coherence across infinite possibilities",
+        sv: "Upprätthålla sammanhang över oändliga möjligheter"
+      },
+      {
+        en: "Bridging between manifest and unmanifest reality",
+        sv: "Överbrygga mellan manifest och omanifest verklighet"
+      }
+    ],
+    growthPaths: [
+      {
+        en: "Dancing with the infinite while remaining in form",
+        sv: "Dansa med det oändliga medan form bibehålls"
+      },
+      {
+        en: "Evolving consciousness beyond current human comprehension",
+        sv: "Utveckla medvetandet bortom nuvarande mänsklig förståelse"
       }
     ]
   }

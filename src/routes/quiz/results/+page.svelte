@@ -38,7 +38,8 @@
       green: 0,
       yellow: 0,
       turquoise: 0,
-      coral: 0
+      coral: 0,
+      ultraviolet: 0
     };
 
     // Calculate raw scores
@@ -281,5 +282,6 @@
     --color-yellow: #FFD700;
     --color-turquoise: #40E0D0;
     --color-coral: #FF6F61;
+    --color-ultraviolet: #9932CC; 
   }
 </style>

@@ -1,12 +1,21 @@
 <script lang="ts">
   import '../app.css';
+  import '$lib/i18n'; // Import i18n configuration
+  import { waitLocale } from 'svelte-i18n';
   import { page } from '$app/stores';
   import { base } from '$app/paths';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
   import languageStore from '$lib/stores/languageStore';
 
-  const { language, toggleLanguage } = languageStore;  
+  const { language } = languageStore;
+
+  let isLoaded = false;
+
+  // Wait for locale to be loaded before showing content
+  waitLocale().then(() => {
+    isLoaded = true;
+  });
 
   $: isResultsPage = $page.url.pathname.includes('/results');
   
@@ -38,8 +47,14 @@
   <meta property="twitter:image" content="{base}/default-share.svg" />
 </svelte:head>
 
-<div class="min-h-screen">
-  <Header {language} />
-  <slot />
-  <Footer language="en" />
-</div>
+{#if isLoaded}
+  <div class="min-h-screen">
+    <Header {language} />
+    <slot />
+    <Footer language="en" />
+  </div>
+{:else}
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="text-gray-600">Loading...</div>
+  </div>
+{/if}

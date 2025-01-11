@@ -23,7 +23,8 @@
     green: '#7AB55C',
     yellow: '#FFD700',
     turquoise: '#40E0D0',
-    coral: '#FF6F61'
+    coral: '#FF6F61',
+    ultraviolet: '#9932CC'
   };
 
   $: currentQuestion = questions[currentQuestionIndex];
