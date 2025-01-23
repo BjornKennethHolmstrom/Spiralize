@@ -30,6 +30,13 @@
   $: currentQuestion = questions[currentQuestionIndex];
   $: shuffledOptions = currentQuestion?.shuffledOptions || [];
   $: progress = (currentQuestionIndex / questions.length) * 100;
+  $: questionNumber = currentQuestionIndex + 1;
+  $: totalQuestions = questions.length;
+
+  // Announce progress to screen readers
+  $: progressAnnouncement = language === 'en' 
+    ? `Question ${questionNumber} of ${totalQuestions}` 
+    : `Fråga ${questionNumber} av ${totalQuestions}`;
   
   async function selectAnswer(option) {
     if (isTransitioning) return;
@@ -65,10 +72,21 @@
   }
 </script>
 
-<div class="quiz-container">
+<div 
+  class="quiz-container"
+  role="main"
+  aria-label={language === 'en' ? 'Spiral Dynamics Assessment Quiz' : 'Spiral Dynamics Bedömningstest'}
+>
   {#if currentQuestion}
-    <div class="progress-spiral">
-      <svg viewBox="0 0 100 100" class="spiral-progress">
+    <div 
+      class="progress-spiral"
+      role="progressbar"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow={progress}
+      aria-label={progressAnnouncement}
+    >
+      <svg viewBox="0 0 100 100" class="spiral-progress" aria-hidden="true">
         {#each Array(questions.length) as _, i}
           {@const angle = (i / questions.length) * 2 * Math.PI}
           {@const radius = 35 + (i / questions.length) * 10}
@@ -87,7 +105,12 @@
       </svg>
     </div>
     
-    <div class="question-container">
+    <!-- Question container -->
+    <div 
+      class="question-container"
+      role="form"
+      aria-label={language === 'en' ? 'Current question' : 'Aktuell fråga'}
+    >
       {#key currentQuestionIndex}
         <div
           class="question"
@@ -96,7 +119,11 @@
         >
           <h2>{currentQuestion.text[language]}</h2>
 
-          <div class="options">
+          <div 
+            class="options"
+            role="radiogroup"
+            aria-labelledby="current-question"
+          >
             {#each shuffledOptions as option}
               <button
                 class="option"
@@ -104,6 +131,10 @@
                 on:click={() => selectAnswer(option)}
                 disabled={isTransitioning}
                 in:fade={{ delay: 200, duration: 200 }}
+                role="radio"
+                aria-checked={selectedOption === option}
+                aria-label={option.text[language]}
+                tabindex={isTransitioning ? -1 : 0}
               >
                 {option.text[language]}
               </button>
@@ -113,7 +144,12 @@
       {/key}
     </div>
 
-    <div class="flex justify-between items-center w-full mt-4">
+    <!-- Navigation controls -->
+    <div 
+      class="flex justify-between items-center w-full mt-4"
+      role="navigation"
+      aria-label={language === 'en' ? 'Quiz navigation' : 'Quiz-navigation'}
+    >
       <button
         class="text-gray-600 hover:text-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         on:click={() => quizActions.previousQuestion()}
@@ -122,15 +158,26 @@
         ← {language === 'en' ? 'Previous' : 'Föregående'}
       </button>
 
-      <div class="progress-text">
-        Question {currentQuestionIndex + 1} of {questions.length}
+      <!-- Live region for progress updates -->
+      <div 
+        class="progress-text"
+        role="status"
+        aria-live="polite"
+      >
+        {progressAnnouncement}
       </div>
 
       <div class="w-16">
       </div>
     </div>
   {:else}
-    <div class="loading">Loading questions...</div>
+    <div 
+      class="loading"
+      role="alert"
+      aria-live="polite"
+    >
+      {language === 'en' ? 'Loading questions...' : 'Laddar frågor...'}
+    </div>
   {/if}
 </div>
 
@@ -228,5 +275,22 @@
   .loading {
     text-align: center;
     color: #6B7280;
+  }
+
+  /* Enhanced focus styles */
+  .option:focus {
+    outline: 2px solid #6366F1;
+    outline-offset: 2px;
+  }
+
+  /* Make sure disabled state is clearly visible */
+  .option:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  /* Ensure sufficient color contrast */
+  .progress-text {
+    color: #4B5563; /* Ensure readable contrast */
   }
 </style>

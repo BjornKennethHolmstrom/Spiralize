@@ -46,31 +46,37 @@
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   {#if !hasStarted}
     <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-4xl font-bold text-gray-900 mb-8">
-        {t.title}
-      </h1>
-      <div class="bg-white rounded-2xl shadow-sm p-8 mb-8">
-        <p class="text-lg text-gray-600 mb-6">
-          {t.description}
-        </p>
-        <ul class="text-left text-gray-600 mb-8 space-y-3">
-          {#each t.benefits as benefit}
-            <li class="flex items-center">
-              <span class="text-green-500 mr-2">✓</span>
-              {benefit}
-            </li>
-          {/each}
-        </ul>
-        <button
-          class="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-purple-700 transition-colors"
-          on:click={handleStartQuiz}
-        >
-          {t.startButton}
-        </button>
-      </div>
+      <section aria-labelledby="quiz-title">
+        <h1 class="text-4xl font-bold text-gray-900 mb-8">
+          {t.title}
+        </h1>
+        <div class="bg-white rounded-2xl shadow-sm p-8 mb-8">
+          <p class="text-lg text-gray-600 mb-6">
+            {t.description}
+          </p>
+          <ul class="text-left text-gray-600 mb-8 space-y-3">
+            {#each t.benefits as benefit}
+              <li class="flex items-center">
+                <span class="text-green-500 mr-2">✓</span>
+                {benefit}
+              </li>
+            {/each}
+          </ul>
+          <button
+            class="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-purple-700 transition-colors"
+            on:click={handleStartQuiz}
+          >
+            {t.startButton}
+          </button>
+        </div>
+      </section>
     </div>
   {:else if isLoading}
-    <div class="flex items-center justify-center min-h-[50vh]">
+    <div 
+      class="flex items-center justify-center min-h-[50vh]"
+      role="status"
+      aria-live="polite"
+    >
       <div class="text-lg text-gray-600">
         {t.loading}
       </div>

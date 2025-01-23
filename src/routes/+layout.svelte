@@ -49,12 +49,71 @@
 
 {#if isLoaded}
   <div class="min-h-screen">
+    <!-- Skip Link -->
+    <a 
+      href="#main-content"
+      class="skip-link"
+      aria-label={$language === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
+    >
+      {$language === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
+    </a>
+
     <Header {language} />
-    <slot />
+    
+    <!-- Main content wrapper -->
+    <main id="main-content" tabindex="-1">
+      <slot />
+    </main>
+
     <Footer language="en" />
   </div>
 {:else}
   <div class="min-h-screen flex items-center justify-center">
-    <div class="text-gray-600">Loading...</div>
+    <div class="text-gray-600" role="status">Loading...</div>
   </div>
 {/if}
+
+<style>
+  .skip-link {
+    position: absolute;
+    top: -9999px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #7C3AED;
+    color: white;
+    padding: 1rem 2rem;
+    z-index: 100;
+    text-decoration: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-weight: 500;
+    transition: top 0.2s ease;
+  }
+
+  .skip-link:focus {
+    top: 0;
+    outline: 2px solid white;
+    outline-offset: 4px;
+  }
+
+  /* Remove the default focus outline from the main content when focused via skip link */
+  main:focus {
+    outline: none;
+  }
+
+  /* But keep a subtle indicator that we've moved focus */
+  main:focus::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #7C3AED;
+    animation: fadeOut 2s forwards;
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+</style>

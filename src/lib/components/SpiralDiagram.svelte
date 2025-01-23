@@ -56,12 +56,16 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
   }
 </script>
 
-<div class="spiral-diagram w-full max-w-4xl mx-auto">
+<div 
+  class="spiral-diagram w-full max-w-4xl mx-auto"
+  role="region"
+  aria-label={language === 'en' ? 'Spiral Dynamics stages visualization' : 'Visualisering av Spiral Dynamics stadier'}
+>
   <svg 
     viewBox="0 0 750 750" 
     class="w-full h-auto"
     role="img"
-    aria-label="Spiral Dynamics stages visualization"
+    aria-label={language === 'en' ? 'Interactive spiral showing all developmental stages' : 'Interaktiv spiral som visar alla utvecklingsstadier'}
   >
     <!-- Background -->
     <rect width="100%" height="100%" fill="#F8FAFC" />
@@ -93,7 +97,10 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
         class:active={activeStage === point.stageName}
         on:click={() => handleStageClick(point.stageName)}
         on:keydown={(e) => handleKeyDown(e, point.stageName)}
-        aria-label={`${point.stageName} stage: ${point.info.name[language]}`}
+        aria-label={language === 'en' 
+          ? `${point.stageName} stage: ${point.info.name[language]}. Press Enter to learn more.`
+          : `${point.stageName}-stadiet: ${point.info.name[language]}. Tryck Enter för att lära dig mer.`
+        }
         aria-pressed={activeStage === point.stageName}
       >
         <!-- Dot -->
@@ -104,6 +111,7 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
           fill={point.info.color}
           class="transition-opacity duration-150"
           opacity={activeStage === point.stageName ? "1" : "0.8"}
+          aria-hidden="true"
         />
 
         <!-- Label -->
@@ -113,6 +121,7 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
           text-anchor="middle"
           class="text-sm font-medium capitalize"
           fill="#4B5563"
+          aria-hidden="true"
         >
           {point.info.name[language]}
         </text>
@@ -126,10 +135,20 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
       text-anchor="middle"
       class="text-lg font-semibold"
       fill="#374151"
+      role="heading"
+      aria-level="2"
     >
       {language === 'en' ? 'Evolution of Consciousness' : 'Medvetandets Evolution'}
     </text>
   </svg>
+
+  <!-- Screen reader only instructions -->
+  <div class="sr-only">
+    {language === 'en' 
+      ? 'Use Tab key to navigate between stages, Enter or Space to select a stage and learn more about it.'
+      : 'Använd Tab-tangenten för att navigera mellan stadier, Enter eller Mellanslag för att välja ett stadium och lära dig mer om det.'
+    }
+  </div>
 </div>
 
 
@@ -151,6 +170,25 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
   .stage-group:focus circle {
     stroke: #6366F1;
     stroke-width: 4px;
+  }
+
+  /* Add focus styles for keyboard navigation */
+  .stage-group:focus {
+    outline: 2px solid #6366F1;
+    outline-offset: 2px;
+  }
+
+  /* Hide content visually but keep it available for screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 </style>
 
