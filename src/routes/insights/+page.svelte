@@ -1,6 +1,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import languageStore from '$lib/stores/languageStore';
+  import LazyInsightSection from '$lib/components/LazyInsightSection.svelte';
 
   const { language } = languageStore;
   $: currentLanguage = $language;
@@ -242,36 +243,13 @@
 
     <!-- Stage Cards Grid -->
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {#each Object.entries(t.stages) as [stage, content]}
-        <div 
-          class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow"
-        >
-          <div class="p-6 border-l-4" style="border-color: {stageColors[stage]}">
-            <h3 
-              class="text-xl font-semibold mb-4 flex items-center justify-between"
-              style="color: {stageColors[stage]}"
-            >
-              {content.title}
-            </h3>
-            <ul class="space-y-2 mb-6">
-              {#each content.tips as tip}
-                <li class="flex items-start">
-                  <span class="mr-2">•</span>
-                  <span class="text-gray-600">{tip}</span>
-                </li>
-              {/each}
-            </ul>
-            <a 
-              href="{base}/insights/stages/{stage}"
-              class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium"
-            >
-              {t.readMore}
-              <svg class="w-5 h-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </div>
-        </div>
+      {#each Object.entries(stageColors) as [stageName, color]}
+        <LazyInsightSection
+          {stageName}
+          stageColor={color}
+          {translations}
+          language={currentLanguage}
+        />
       {/each}
     </div>
   </div>
