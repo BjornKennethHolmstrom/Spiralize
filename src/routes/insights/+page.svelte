@@ -89,7 +89,7 @@
           ]
         },
         ultraviolet: {
-          title: "X/Ultraviolet",
+          title: "Ultraviolet",
           tips: [
            "Explore consciousness beyond individual and collective boundaries",
            "Participate in the co-creation of new realities and possibilities",
@@ -179,7 +179,7 @@
           ]
         },
         "ultraviolet": {
-          "title": "X/Ultraviolet",
+          "title": "Ultraviolet",
           "tips": [
               "Utforska medvetande bortom individuella och kollektiva gränser.",
               "Delta i medskapandet av nya verkligheter och möjligheter.",

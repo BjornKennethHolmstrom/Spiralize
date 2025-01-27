@@ -33,7 +33,7 @@
       "From Yellow, we develop systems thinking, flexibility, and a deep understanding of interconnectedness.",
       "From Turquoise, we embrace the oneness of existence and align ourselves with universal flow.",
       "From Coral, we embody expansive individuality within a universal framework.",
-      "From X/Ultraviolet, we step into infinite integration, dissolving all distinctions."
+      "From Ultraviolet, we step into infinite integration, dissolving all distinctions."
     ],
     "sv": [
       "Från Beige behåller vi vår koppling till livets grundläggande behov och den råa instinkten att överleva.",
@@ -45,7 +45,7 @@
       "Från Yellow utvecklar vi systemtänkande, flexibilitet och en djup förståelse för sammanhang.",
       "Från Turquoise omfamnar vi existensens enhet och anpassar oss till det universella flödet.",
       "Från Coral förkroppsligar vi expansiv individualitet inom ett universellt ramverk.",
-      "Från X/Ultraviolet kliver vi in i oändlig integration, där alla åtskillnader upplöses."
+      "Från Ultraviolet kliver vi in i oändlig integration, där alla åtskillnader upplöses."
     ]
   };
 </script>
