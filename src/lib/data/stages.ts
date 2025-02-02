@@ -7,6 +7,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
       en: "Survival",
       sv: "Överlevnad"
     },
+    focus: {
+      en: "Individual",
+      sv: "Individuell"
+    },
     color: "#E5D0BA",
     description: {
       en: "Focus on immediate survival needs and basic physical sustenance",
@@ -39,6 +43,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
     name: {
       en: "Tribal",
       sv: "Stamtillhörighet"
+    },
+    focus: {
+      en: "Collective",
+      sv: "Kollektiv"
     },
     color: "#9B6B9E",
     description: {
@@ -73,6 +81,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
       en: "Power",
       sv: "Makt"
     },
+    focus: {
+      en: "Individual",
+      sv: "Individuell"
+    },
     color: "#E25A53",
     description: {
       en: "Emphasis on personal power and immediate gratification",
@@ -105,6 +117,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
     name: {
       en: "Order",
       sv: "Ordning"
+    },
+    focus: {
+      en: "Collective",
+      sv: "Kollektiv"
     },
     color: "#4A72B2",
     description: {
@@ -139,6 +155,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
       en: "Achievement",
       sv: "Prestation"
     },
+    focus: {
+      en: "Individual",
+      sv: "Individuell"
+    },
     color: "#FF7F27",
     description: {
       en: "Emphasis on individual success and scientific rationality",
@@ -171,6 +191,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
     name: {
       en: "Communal",
       sv: "Gemenskap"
+    },
+    focus: {
+      en: "Collective",
+      sv: "Kollektiv"
     },
     color: "#7AB55C",
     description: {
@@ -205,6 +229,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
       en: "Systemic",
       sv: "Systemisk"
     },
+    focus: {
+      en: "Individual",
+      sv: "Individuell"
+    },
     color: "#FFD700",
     description: {
       en: "Integration of complex systems and adaptive solutions",
@@ -238,6 +266,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
       en: "Holistic",
       sv: "Holistisk"
     },
+    focus: {
+      en: "Collective",
+      sv: "Kollektiv"
+    },
     color: "#40E0D0",
     description: {
       en: "Global, holistic thinking and being",
@@ -270,6 +302,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
     name: {
       en: "Sovereign Unity",
       sv: "Suverän Enhet"
+    },
+    focus: {
+      en: "Individual",
+      sv: "Individuell"
     },
     color: "#FF6F61",
     description: {
@@ -315,6 +351,10 @@ export const stages: Record<SpiralStage, StageInfo> = {
     name: {
       en: "Infinite Flow",
       sv: "Oändligt Flöde"
+    },
+    focus: {
+      en: "Collective",
+      sv: "Kollektiv"
     },
     color: "#9932CC",
     description: {

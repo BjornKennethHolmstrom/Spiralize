@@ -33,16 +33,16 @@
     };
   });
 
-// Generate continuous spiral path
-const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
-  const t = i / (spiralPathSegments - 1); // Normalize to 0-1 range
-  const angle = t * Math.PI * 2 * rotations;
-  const radius = 50 + t * (stageCount - 1) * spacing;
-  const x = centerX + radius * Math.cos(angle);
-  const y = centerY + radius * Math.sin(angle);
+  // Generate continuous spiral path
+  const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
+    const t = i / (spiralPathSegments - 1); // Normalize to 0-1 range
+    const angle = t * Math.PI * 2 * rotations;
+    const radius = 50 + t * (stageCount - 1) * spacing;
+    const x = centerX + radius * Math.cos(angle);
+    const y = centerY + radius * Math.sin(angle);
 
-  return { x, y };
-});
+    return { x, y };
+  });
 
   function handleStageClick(stageName: string) {
     dispatch('stageSelect', { stage: stageName });
@@ -114,7 +114,7 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
           aria-hidden="true"
         />
 
-        <!-- Label -->
+        <!-- Stage Name Label -->
         <text
           x={point.x}
           y={point.y + 30} 
@@ -124,6 +124,18 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
           aria-hidden="true"
         >
           {point.info.name[language]}
+        </text>
+
+        <!-- Individual/Collective Indicator (Hidden by default, shown on hover) -->
+        <text
+          x={point.x}
+          y={point.y + 50}
+          text-anchor="middle"
+          class="text-xs font-medium opacity-0 transition-opacity duration-150"
+          fill={point.info.focus[language] === 'Individual' ? '#3B82F6' : '#10B981'}
+          aria-hidden="true"
+        >
+          {point.info.focus[language]}
         </text>
       </g>
     {/each}
@@ -151,10 +163,13 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
   </div>
 </div>
 
-
 <style>
   .stage-group:hover circle {
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+  }
+
+  .stage-group:hover text {
+    opacity: 1;
   }
 
   .stage-group.active circle {
@@ -191,4 +206,3 @@ const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
     border: 0;
   }
 </style>
-
