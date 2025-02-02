@@ -95,6 +95,12 @@
            "Participate in the co-creation of new realities and possibilities",
            "Embrace the unity of all existence while maintaining dynamic flow"
           ]
+        },
+        "beyond_spiral": {
+          title: "Beyond",
+          tips: [
+           "Explore existence beyond the spiral",
+          ]
         }
       }
     },
@@ -185,6 +191,12 @@
               "Delta i medskapandet av nya verkligheter och möjligheter.",
               "Omfamna enhet i all existens medan dynamiskt flöde upprätthålls."
           ]
+        },
+        "beyond_spiral": {
+          title: "Beyond",
+          tips: [
+           "Utforska existensen bortom spiralen",
+          ]
         }
       }
     }
@@ -202,7 +214,8 @@
     yellow: '#FFD700',
     turquoise: '#40E0D0',
     coral: '#FF6F61',
-    ultraviolet: '#9932CC'
+    ultraviolet: '#9932CC',
+    beyond_spiral: '#FAFFB6'
   };
 </script>
 
