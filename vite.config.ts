@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [sveltekit()],
   base: process.env.NODE_ENV === 'production' 
     ? '/Spiralize/'
-    : '', 
+    : '',
   test: {
     include: ['src/**/*.{test,spec}.{js,ts}']
   }

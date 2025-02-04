@@ -12,7 +12,18 @@
   $: currentLanguage = $language;
   
   $: ({ answers } = $quizStore);
-  $: shareUrl = $page.url.origin + $page.url.pathname;
+  $: shareUrl = (() => {
+    const domain = 'https://www.spiralize.org'; // or your actual domain
+    const path = $page.url.pathname;
+    const url = new URL(path, domain);
+    const resultsData = {
+      stageScores,
+      dominantStage,
+      secondaryStage
+    };
+    url.searchParams.set('data', encodeURIComponent(JSON.stringify(resultsData)));
+    return url.toString();
+  })();
 
   let isSharedResult = false;
   let stageScores = {};
@@ -107,7 +118,7 @@
       secondaryStage
     };
     const encodedResults = encodeURIComponent(JSON.stringify(resultsData));
-    const currentUrl = new URL($page.url);
+    const currentUrl = new URL(window.location.href);
     currentUrl.searchParams.set('data', encodedResults);
     history.replaceState(null, '', currentUrl);
   }
