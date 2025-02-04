@@ -61,7 +61,12 @@
   }
   
   function showResults() {
-    goto(`${base}/quiz/results${window.location.search}`);
+    // Encode the current answers into the URL
+    const resultsData = {
+      answers
+    };
+    const encodedResults = encodeURIComponent(JSON.stringify(resultsData));
+    goto(`${base}/quiz/results?data=${encodedResults}`);
   }
   
   function getProgressColor(index) {

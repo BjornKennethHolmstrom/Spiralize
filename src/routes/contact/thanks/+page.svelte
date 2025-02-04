@@ -22,7 +22,24 @@
   };
 
   $: t = translations[currentLanguage];
+
+  $: title = currentLanguage === 'en'
+    ? 'Message Sent | Spiralize'
+    : 'Meddelande Skickat | Spiralize';
+    
+  $: description = currentLanguage === 'en'
+    ? 'Thank you for contacting Spiralize. We will get back to you soon.'
+    : 'Tack för att du kontaktar Spiralize. Vi återkommer till dig snart.';
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+</svelte:head>
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

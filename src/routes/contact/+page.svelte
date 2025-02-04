@@ -33,7 +33,24 @@
   };
 
   $: t = translations[currentLanguage];
+
+  $: title = currentLanguage === 'en'
+    ? 'Contact Us | Spiralize'
+    : 'Kontakta Oss | Spiralize';
+    
+  $: description = currentLanguage === 'en'
+    ? 'Get in touch with the Spiralize team. Share your feedback, ask questions, or inquire about Spiral Dynamics and personal development.'
+    : 'Kontakta Spiralize-teamet. Dela din feedback, ställ frågor eller fråga om Spiral Dynamics och personlig utveckling.';
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+</svelte:head>
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

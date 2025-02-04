@@ -104,7 +104,25 @@
 
   // Reactive translation data
   $: t = translations[$language];
+
+  $: title = currentLanguage === 'en'
+    ? 'Spiralize - Discover Your Spiral Dynamics Profile'
+    : 'Spiralize - Upptäck Din Spiral Dynamics Profil';
+    
+  $: description = currentLanguage === 'en'
+    ? 'Take our comprehensive assessment to understand your values and worldview through Spiral Dynamics. Get personalized insights and practical guidance for growth.'
+    : 'Ta vår omfattande bedömning för att förstå dina värderingar och världsbild genom Spiral Dynamics. Få personliga insikter och praktisk vägledning för utveckling.';
+
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+</svelte:head>
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -190,4 +208,5 @@
       {/each}
     </div>
   </div>
+
 </div>

@@ -14,17 +14,38 @@
   $: ({ answers } = $quizStore);
   $: shareUrl = $page.url.origin + $page.url.pathname;
 
+  let isSharedResult = false;
   let stageScores = {};
   let dominantStage = '';
   let secondaryStage = '';
 
   onMount(() => {
-    if (Object.keys(answers).length === 0) {
+    // Check if we have results in the URL
+    const urlParams = new URLSearchParams($page.url.search);
+    const sharedData = urlParams.get('data');
+
+    if (sharedData) {
+      try {
+        const decodedData = JSON.parse(decodeURIComponent(sharedData));
+        // Validate the data structure
+        if (decodedData.stageScores && decodedData.dominantStage && decodedData.secondaryStage) {
+          stageScores = decodedData.stageScores;
+          dominantStage = decodedData.dominantStage;
+          secondaryStage = decodedData.secondaryStage;
+          isSharedResult = true;
+        } else {
+          throw new Error('Invalid shared data structure');
+        }
+      } catch (error) {
+        console.error('Error parsing shared results:', error);
+        goto(`${base}/quiz`);
+      }
+    } else if (Object.keys(answers).length === 0) {
       goto(`${base}/quiz`);
       return;
+    } else {
+      calculateResults();
     }
-
-    calculateResults();
   });
 
   function calculateResults() {
@@ -64,6 +85,16 @@
     
     dominantStage = sortedStages[0][0];
     secondaryStage = sortedStages[1][0];
+
+    const resultsData = {
+      stageScores,
+      dominantStage,
+      secondaryStage
+    };
+    const encodedResults = encodeURIComponent(JSON.stringify(resultsData));
+    const currentUrl = new URL($page.url);
+    currentUrl.searchParams.set('data', encodedResults);
+    history.replaceState(null, '', currentUrl);
   }
 
   function getShareMessage() {
@@ -191,6 +222,24 @@
           </div>
         {/if}
       </div>
+
+      {#if isSharedResult}
+        <div class="mt-8 bg-purple-50 p-4 rounded-lg">
+          <p class="text-purple-700 text-center">
+            {currentLanguage === 'en' 
+              ? 'This is a shared Spiral Dynamics profile. Take the assessment yourself to discover your own profile!'
+              : 'Detta är en delad Spiral Dynamics-profil. Gör bedömningen själv för att upptäcka din egen profil!'}
+          </p>
+          <div class="text-center mt-4">
+            <a 
+              href="{base}/quiz"
+              class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
+            >
+              {currentLanguage === 'en' ? 'Take the Assessment' : 'Gör Bedömningen'}
+            </a>
+          </div>
+        </div>
+      {/if}
 
       <!-- Share buttons -->
       <div class="flex justify-center gap-4 mb-8">

@@ -41,7 +41,24 @@
     console.log('Starting quiz...'); // Debug log
     quizActions.startQuiz();
   }
+
+  $: title = currentLanguage === 'en'
+    ? 'Spiral Dynamics Assessment | Spiralize'
+    : 'Spiral Dynamics Bedömning | Spiralize';
+    
+  $: description = currentLanguage === 'en'
+    ? 'Take our comprehensive Spiral Dynamics assessment. 25 carefully designed questions to discover your center of gravity and understand your values system.'
+    : 'Ta vår omfattande Spiral Dynamics-bedömning. 25 noggrant utformade frågor för att upptäcka ditt gravitationscentrum och förstå ditt värdesystem.';
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+</svelte:head>
 
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   {#if !hasStarted}

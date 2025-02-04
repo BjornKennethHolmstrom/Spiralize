@@ -3,6 +3,7 @@
   import StageCard from '$lib/components/StageCard.svelte';
   import SpiralDiagram from '$lib/components/SpiralDiagram.svelte';
   import languageStore from '$lib/stores/languageStore';
+  import ShareButtons from '$lib/components/ShareButtons.svelte';
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -74,7 +75,25 @@
       element.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
+
+  $: title = currentLanguage === 'en'
+    ? 'Understanding Spiral Dynamics Stages | Spiralize'
+    : 'Förstå Spiral Dynamics Stadier | Spiralize';
+    
+  $: description = currentLanguage === 'en'
+    ? 'Explore all stages of Spiral Dynamics from Beige to Ultraviolet. Learn how human consciousness evolves through different value systems and worldviews.'
+    : 'Utforska alla stadier av Spiral Dynamics från Beige till Ultraviolett. Lär dig hur mänskligt medvetande utvecklas genom olika värdesystem och världsbilder.';
+
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+</svelte:head>
 
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-4xl mx-auto">
@@ -129,4 +148,9 @@
       {/each}
     </div>
   </div>
+
+  <br>
+  <ShareButtons />
+  <br>
+
 </div>

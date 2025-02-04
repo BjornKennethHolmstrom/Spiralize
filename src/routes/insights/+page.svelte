@@ -2,6 +2,7 @@
   import { base } from '$app/paths';
   import languageStore from '$lib/stores/languageStore';
   import LazyInsightSection from '$lib/components/LazyInsightSection.svelte';
+  import ShareButtons from '$lib/components/ShareButtons.svelte';
 
   const { language } = languageStore;
   $: currentLanguage = $language;
@@ -217,7 +218,24 @@
     ultraviolet: '#9932CC',
     beyond_spiral: '#FAFFB6'
   };
+
+  $: title = currentLanguage === 'en'
+    ? 'Spiral Dynamics Insights & Practical Applications | Spiralize'
+    : 'Spiral Dynamics Insikter & Praktiska Tillämpningar | Spiralize';
+    
+  $: description = currentLanguage === 'en'
+    ? 'Get practical insights and applications for each Spiral Dynamics stage. Learn how to integrate different value systems and foster personal growth.'
+    : 'Få praktiska insikter och tillämpningar för varje Spiral Dynamics-stadium. Lär dig hur du integrerar olika värdesystem och främjar personlig utveckling.';
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+</svelte:head>
 
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
@@ -266,4 +284,9 @@
       {/each}
     </div>
   </div>
+ 
+  <br>
+  <ShareButtons />
+  <br>
+
 </div>
