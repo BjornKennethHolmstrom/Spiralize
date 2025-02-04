@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1080 1080" width="1080" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGradient)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="150" fill="#7c3aed" opacity="0.1"/>
+  <circle cx="980" cy="980" r="200" fill="#6d28d9" opacity="0.1"/>
+
+  <!-- Logo placement -->
+  <g transform="translate(390, 200) scale(4)">
+    <!-- Your logo SVG here -->
+    <path d="m 39.820699,71.916326 q 30,0 30,-30 0,-30 -30,-30 -29.9999995,0 -29.9999995,30" fill="none" stroke="#ff6f61" stroke-width="8" stroke-linecap="round"/>
+    <path d="m 9.8206995,41.916326 q 0,30 29.9999995,30" fill="none" stroke="#40e0d0" stroke-width="8" stroke-linecap="round"/>
+    <path d="m 39.820699,71.916326 q 15,0 15,-15 0,-15 -15,-15 -15,0 -15,15" fill="none" stroke="#ffd700" stroke-width="8" stroke-linecap="round"/>
+    <path d="m 24.820699,56.916326 q 0,15 15,15" fill="none" stroke="#7ab55c" stroke-width="8" stroke-linecap="round"/>
+    <path d="m 39.820699,71.916326 q 8,0 8,-8 0,-8 -8,-8 -8,0 -8,8" fill="none" stroke="#ff7f27" stroke-width="8" stroke-linecap="round"/>
+    <path d="m 31.820699,63.916326 q 0,8 8,8" fill="none" stroke="#4a72b2" stroke-width="8" stroke-linecap="round"/>
+    <path d="m 39.820699,71.916326 q 4,0 4,-4 0,-4 -4,-4 -4,0 -4,4" fill="none" stroke="#e25a53" stroke-width="8" stroke-linecap="round"/>
+    <path d="m 35.820699,67.916326 q 0,4 4,4" fill="none" stroke="#9b6b9e" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="39.820698" cy="71.916328" r="4" fill="#e5d0ba"/>
+  </g>
+
+  <!-- Text elements -->
+  <text x="540" y="650" fill="url(#textGradient)" font-family="Arial, sans-serif" font-size="72" text-anchor="middle" font-weight="bold">
+    Discover Your
+  </text>
+  <text x="540" y="730" fill="url(#textGradient)" font-family="Arial, sans-serif" font-size="72" text-anchor="middle" font-weight="bold">
+    Spiral Dynamics Profile
+  </text>
+
+  <!-- Call to action -->
+  <text x="540" y="850" fill="#f3f4f6" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">
+    Visit spiralize.org
+  </text>
+
+  <!-- Tagline -->
+  <text x="540" y="920" fill="#f3f4f6" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" opacity="0.9">
+    Understand yourself. Understand the world.
+  </text>
+</svg>

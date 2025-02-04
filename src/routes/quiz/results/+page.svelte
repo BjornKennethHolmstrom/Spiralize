@@ -23,28 +23,43 @@
     // Check if we have results in the URL
     const urlParams = new URLSearchParams($page.url.search);
     const sharedData = urlParams.get('data');
+    const hasQuizAnswers = Object.keys(answers).length > 0;
 
     if (sharedData) {
       try {
         const decodedData = JSON.parse(decodeURIComponent(sharedData));
-        // Validate the data structure
         if (decodedData.stageScores && decodedData.dominantStage && decodedData.secondaryStage) {
           stageScores = decodedData.stageScores;
           dominantStage = decodedData.dominantStage;
           secondaryStage = decodedData.secondaryStage;
-          isSharedResult = true;
+          // Only set as shared result if we don't have quiz answers
+          isSharedResult = !hasQuizAnswers;
         } else {
-          throw new Error('Invalid shared data structure');
+          console.error('Missing required data fields in shared results');
+          goto(`${base}/quiz`);
         }
       } catch (error) {
         console.error('Error parsing shared results:', error);
         goto(`${base}/quiz`);
       }
-    } else if (Object.keys(answers).length === 0) {
+    } else if (!hasQuizAnswers) {
+      // No URL parameters and no quiz answers - redirect to quiz
       goto(`${base}/quiz`);
       return;
     } else {
+      // Calculate results from quiz answers
       calculateResults();
+      
+      // Generate URL for sharing after calculating
+      const resultsData = {
+        stageScores,
+        dominantStage,
+        secondaryStage
+      };
+      const encodedResults = encodeURIComponent(JSON.stringify(resultsData));
+      const currentUrl = new URL($page.url);
+      currentUrl.searchParams.set('data', encodedResults);
+      history.replaceState(null, '', currentUrl);
     }
   });
 

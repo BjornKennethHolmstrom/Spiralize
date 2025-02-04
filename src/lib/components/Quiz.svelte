@@ -61,10 +61,49 @@
   }
   
   function showResults() {
-    // Encode the current answers into the URL
-    const resultsData = {
-      answers
+    // Calculate scores
+    const scores = {
+      beige: 0,
+      purple: 0,
+      red: 0,
+      blue: 0,
+      orange: 0,
+      green: 0,
+      yellow: 0,
+      turquoise: 0,
+      coral: 0,
+      ultraviolet: 0
     };
+
+    // Calculate raw scores
+    Object.values(answers).forEach((answer: any) => {
+      answer.relatedStages.forEach(stage => {
+        scores[stage] = (scores[stage] || 0) + answer.value;
+      });
+    });
+
+    // Convert to percentages
+    const totalAnswers = Object.keys(answers).length;
+    const stageScores = Object.entries(scores).reduce((acc, [stage, score]) => {
+      acc[stage] = Math.round((score / totalAnswers) * 100);
+      return acc;
+    }, {});
+
+    // Find dominant and secondary stages
+    const sortedStages = Object.entries(stageScores)
+      .sort(([,a], [,b]) => b - a);
+    
+    const dominantStage = sortedStages[0][0];
+    const secondaryStage = sortedStages[1][0];
+
+    // Prepare data for URL
+    const resultsData = {
+      stageScores,
+      dominantStage,
+      secondaryStage
+    };
+
+    // Encode and redirect
     const encodedResults = encodeURIComponent(JSON.stringify(resultsData));
     goto(`${base}/quiz/results?data=${encodedResults}`);
   }
