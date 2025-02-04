@@ -12,10 +12,12 @@
   $: currentLanguage = $language;
   
   $: ({ answers } = $quizStore);
-  $: shareUrl = (() => {
-    const domain = 'https://www.spiralize.org'; // or your actual domain
-    const path = $page.url.pathname;
+  function getCleanShareUrl() {
+    const domain = 'https://www.spiralize.org'; // or whatever your production domain is
+    const path = '/quiz/results';
     const url = new URL(path, domain);
+    
+    // Add results data
     const resultsData = {
       stageScores,
       dominantStage,
@@ -23,7 +25,7 @@
     };
     url.searchParams.set('data', encodeURIComponent(JSON.stringify(resultsData)));
     return url.toString();
-  })();
+  }
 
   let isSharedResult = false;
   let stageScores = {};
@@ -31,8 +33,8 @@
   let secondaryStage = '';
 
   onMount(() => {
-    // Check if we have results in the URL
-    const urlParams = new URLSearchParams($page.url.search);
+    const urlParams = new URLSearchParams(window.location.search);
+    // Get data parameter regardless of other parameters
     const sharedData = urlParams.get('data');
     const hasQuizAnswers = Object.keys(answers).length > 0;
 
@@ -43,34 +45,22 @@
           stageScores = decodedData.stageScores;
           dominantStage = decodedData.dominantStage;
           secondaryStage = decodedData.secondaryStage;
-          // Only set as shared result if we don't have quiz answers
           isSharedResult = !hasQuizAnswers;
         } else {
-          console.error('Missing required data fields in shared results');
-          goto(`${base}/quiz`);
+          throw new Error('Invalid data structure');
         }
       } catch (error) {
         console.error('Error parsing shared results:', error);
         goto(`${base}/quiz`);
       }
     } else if (!hasQuizAnswers) {
-      // No URL parameters and no quiz answers - redirect to quiz
       goto(`${base}/quiz`);
       return;
     } else {
-      // Calculate results from quiz answers
       calculateResults();
-      
-      // Generate URL for sharing after calculating
-      const resultsData = {
-        stageScores,
-        dominantStage,
-        secondaryStage
-      };
-      const encodedResults = encodeURIComponent(JSON.stringify(resultsData));
-      const currentUrl = new URL($page.url);
-      currentUrl.searchParams.set('data', encodedResults);
-      history.replaceState(null, '', currentUrl);
+      // Update URL with clean share URL
+      const shareUrl = getCleanShareUrl();
+      history.replaceState(null, '', shareUrl);
     }
   });
 
@@ -130,16 +120,19 @@
   }
 
   function shareOnFacebook() {
+    const shareUrl = getCleanShareUrl();
     const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(getShareMessage())}`;
     window.open(url, 'facebook-share-dialog', 'width=800,height=600');
   }
 
   function shareOnTwitter() {
+    const shareUrl = getCleanShareUrl();
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(getShareMessage())}&url=${encodeURIComponent(shareUrl)}`;
     window.open(url, 'twitter-share-dialog', 'width=800,height=600');
   }
 
   function shareOnLinkedIn() {
+    const shareUrl = getCleanShareUrl();
     const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
     window.open(url, 'linkedin-share-dialog', 'width=800,height=600');
   }
