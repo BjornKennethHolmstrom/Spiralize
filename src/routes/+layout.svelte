@@ -21,8 +21,10 @@
   
   $: metaTitle = isResultsPage 
     ? 'My Spiral Dynamics Profile Results - Spiralize'
-    : 'Discover Your Spiral Dynamics Profile - Spiralize';
-    
+    : $page.url.pathname === '/' 
+      ? 'Spiralize - Discover Your Spiral Dynamics Profile'
+      : 'Spiralize';
+
   $: metaDescription = isResultsPage
     ? 'View my Spiral Dynamics profile results and take the assessment yourself to discover your own center of gravity.'
     : 'Take the assessment to understand your values and worldview through the lens of Spiral Dynamics.';
