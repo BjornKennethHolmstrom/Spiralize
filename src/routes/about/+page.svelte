@@ -19,6 +19,13 @@
         text: "While Spiralize is free to use, if you'd like to support the project's maintenance and development, you can make a small contribution:",
         button: "Support via PayPal",
         note: "Please add the message \"Spiralize\" with your donation. Thank you!"
+      },
+      "author": {
+        "title": "About the Author",
+        "text": "Björn Kenneth Holmström writes about consciousness, philosophy, and spirituality and more. Explore more of his work:",
+        "blog": "Visit My Blog",
+        "books": "Explore My Books",
+        "projects": "Other Projects"
       }
     },
     sv: {
@@ -34,6 +41,13 @@
         text: "Medan Spiralize är gratis att använda kan du, om du vill stödja projektets underhåll och utveckling, göra ett litet bidrag:",
         button: "Stöd via PayPal",
         note: "Lägg till meddelandet \"Spiralize\" med din donation. Tack!"
+      },
+      "author": {
+        "title": "Om Författaren",
+        "text": "Björn Kenneth Holmström skriver om bland annat medvetande, filosofi och spiritualitet. Utforska mer av hans arbete:",
+        "blog": "Besök Min Blogg",
+        "books": "Utforska Mina Böcker",
+        "projects": "Andra Projekt"
       }
     }
   };
@@ -76,6 +90,38 @@
         <p class="mb-6">{paragraph}</p>
       {/each}
 
+      <!-- Author Section -->
+      <div class="mt-12 pt-6 border-t border-gray-200">
+        <h2 class="text-lg font-medium mb-3">{t.author.title}</h2>
+        <p class="text-gray-600 mb-4">{t.author.text}</p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="https://bjornkennethholmstrom.wordpress.com/"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm"
+          >
+            {t.author.blog}
+          </a>
+          <a          
+            href="https://bjornkennethholmstrom.wordpress.com/books/"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors text-sm"
+          >
+            {t.author.books}
+          </a>
+          <a          
+            href="https://bjornkennethholmstrom.wordpress.com/code/"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
+          >
+            {t.author.projects}
+          </a>
+        </div>
+      </div>
+
       <!-- Support Section -->
       <div class="mt-12 pt-6 border-t border-gray-200">
         <h2 class="text-lg font-medium mb-3">{t.support.title}</h2>
@@ -94,6 +140,7 @@
           </p>
         </div>
       </div>
+
     </div>
   </div>
 </div>

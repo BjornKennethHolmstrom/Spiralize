@@ -8,9 +8,9 @@
   
   // Props with defaults
   export let title = 'Spiralize';
-  export let description = $language === 'en' 
+ /* export let description = $language === 'en' 
     ? 'Discover your Spiral Dynamics profile and understand your values and worldview.'
-    : 'Upptäck din Spiral Dynamics-profil och förstå dina värderingar och världsbild.';
+    : 'Upptäck din Spiral Dynamics-profil och förstå dina värderingar och världsbild.';*/
   
   // Get the current URL
   $: url = $page ? `https://bjornkennethholmstrom.github.io/Spiralize${$page.url.pathname}` : '';
