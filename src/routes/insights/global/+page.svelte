@@ -1,5 +1,8 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import TabNav from '$lib/components/TabNav.svelte';
+  import WorldviewMatrix from '$lib/components/WorldviewMatrix.svelte';
+  import IssueExplorer from '$lib/components/IssueExplorer.svelte';
   import languageStore from '$lib/stores/languageStore';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
 
@@ -1131,6 +1134,8 @@
   $: description = currentLanguage === 'en'
     ? 'Explore how Spiral Dynamics can help us understand and address major global challenges like climate change, inequality, and social polarization.'
     : 'Utforska hur Spiral Dynamics kan hjälpa oss att förstå och hantera stora globala utmaningar som klimatförändringar, ojämlikhet och social polarisering.';
+
+  let activeTab: 'overview' | 'visualizations' = 'overview';
 </script>
 
 <svelte:head>
@@ -1142,59 +1147,107 @@
   <meta property="twitter:description" content={description}>
 </svelte:head>
 
-<div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-5xl mx-auto">
-    <!-- Header -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">
-        {t.title}
+<div class="min-h-screen bg-gray-50">
+  <div class="bg-gradient-to-b from-blue-50 to-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">
+        {currentLanguage === 'en' ? 'Global Perspectives' : 'Globala Perspektiv'}
       </h1>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        {t.subtitle}
+      <p class="text-xl text-center text-gray-600 max-w-3xl mx-auto">
+        {currentLanguage === 'en' 
+          ? 'How Different Worldviews Shape Our Shared Challenges' 
+          : 'Hur Olika Världsbilder Formar Våra Gemensamma Utmaningar'}
       </p>
-    </div>
-
-    <!-- Introduction -->
-    <div class="bg-white rounded-xl shadow-sm p-8 mb-12">
-      <p class="text-lg text-gray-700">
-        {t.introduction}
-      </p>
-    </div>
-
-    <!-- Main Content -->
-    <div class="space-y-12">
-      {#each t.sections as section, i}
-        <section class="bg-white rounded-xl shadow-sm overflow-hidden">
-          <div class="p-8">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-6">
-              {section.title}
-            </h2>
-            
-            {#if section.content}
-              <div class="prose max-w-none text-gray-700">
-                {@html section.content}
-              </div>
-            {/if}
-            
-            {#if section.subsections}
-              <div class="space-y-8 mt-8">
-                {#each section.subsections as subsection}
-                  <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-medium text-gray-900 mb-4">
-                      {subsection.title}
-                    </h3>
-                    <div class="prose max-w-none text-gray-700">
-                      {@html subsection.content}
-                    </div>
-                  </div>
-                {/each}
-              </div>
-            {/if}
-          </div>
-        </section>
-      {/each}
     </div>
   </div>
+
+  <!-- Tab Navigation -->
+  <TabNav bind:activeTab />
+
+  <!-- Content based on active tab -->
+  {#if activeTab === 'overview'}
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Introduction -->
+      <div class="bg-white rounded-xl shadow-sm p-8 mb-12">
+        <p class="text-lg text-gray-700">
+          {t.introduction}
+        </p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="space-y-12">
+        {#each t.sections as section, i}
+          <section class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <div class="p-8">
+              <h2 class="text-2xl font-semibold text-gray-900 mb-6">
+                {section.title}
+              </h2>
+              
+              {#if section.content}
+                <div class="prose max-w-none text-gray-700">
+                  {@html section.content}
+                </div>
+              {/if}
+              
+              {#if section.subsections}
+                <div class="space-y-8 mt-8">
+                  {#each section.subsections as subsection}
+                    <div class="bg-gray-50 rounded-lg p-6">
+                      <h3 class="text-xl font-medium text-gray-900 mb-4">
+                        {subsection.title}
+                      </h3>
+                      <div class="prose max-w-none text-gray-700">
+                        {@html subsection.content}
+                      </div>
+                    </div>
+                  {/each}
+                </div>
+              {/if}
+            </div>
+          </section>
+        {/each}
+      </div>
+    </div>
+  {:else}
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Visualizations tab content -->
+      <div class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="space-y-12">
+            <!-- Matrix section -->
+            <section>
+              <h2 class="text-2xl font-bold mb-6">
+                {currentLanguage === 'en' 
+                  ? 'Worldview Interaction Matrix' 
+                  : 'Interaktionsmatris för Världsbilder'}
+              </h2>
+              <p class="text-gray-600 mb-8">
+                {currentLanguage === 'en'
+                  ? 'Explore how different worldviews interact and influence each other. Select any two perspectives to see how they relate, conflict, and potentially integrate.'
+                  : 'Utforska hur olika världsbilder interagerar och påverkar varandra. Välj två perspektiv för att se hur de relaterar, konflikter och potentiellt integrerar.'}
+              </p>
+              <WorldviewMatrix />
+            </section>
+
+            <!-- Issue Explorer Section -->
+            <section>
+              <h2 class="text-2xl font-bold mb-6">
+                {currentLanguage === 'en' 
+                  ? 'Issue Perspective Explorer' 
+                  : 'Utforska Perspektiv på Olika Frågor'}
+              </h2>
+              <p class="text-gray-600 mb-8">
+                {currentLanguage === 'en'
+                  ? 'See how different worldviews approach major global challenges. The color-coding matches the stages in the Spiral Dynamics model.'
+                  : 'Se hur olika världsbilder närmar sig stora globala utmaningar. Färgkodningen matchar stadierna i Spiral Dynamics-modellen.'}
+              </p>
+              <IssueExplorer />
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  {/if}
   
   <br>
   <ShareButtons />
