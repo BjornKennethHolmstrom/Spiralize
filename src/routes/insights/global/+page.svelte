@@ -42,7 +42,7 @@
                 <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
                   <h4 class="font-semibold text-yellow-800 mb-2">Yellow: Systems Thinking</h4>
                   <p class="text-gray-700 mb-3">Focused on understanding complexity, integration, and flexible adaptation.</p>
-                  <p class="text-sm text-gray-600"><strong>Examples:</strong> Emerging in systems thinkers, complexity researchers, integral practitioners</p>
+                  <p class="text-sm text-gray-600"><strong>Examples:</strong> Emerging in systems thinkers, complexity researchers, integral practitioners. Notable examples include Sweden's <a href="https://www.fjarilspartiet.se" class="text-blue-600 hover:underline">Fjärilspartiet</a> (Butterfly Party), which explicitly applies systems thinking and developmental frameworks to politics, and advanced AI systems designed to integrate multiple perspectives and adapt to complex contexts.</p>
                 </div>
               </div>
               
@@ -232,7 +232,7 @@
                         </ul>
                       </div>
                     </div>
-                    
+
                     <div class="px-4 py-5 sm:px-6 bg-yellow-50">
                       <div class="flex items-center">
                         <div class="flex-shrink-0 h-10 w-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700">
@@ -244,12 +244,13 @@
                         </div>
                       </div>
                       <div class="mt-3 pl-14">
-                        <p class="text-gray-700 mb-2">Sees climate change as a complex adaptive challenge requiring integrated solutions</p>
+                        <p class="text-gray-700 mb-2">Sees challenges as complex adaptive systems requiring integrated solutions.</p>
                         <ul class="list-disc pl-5 text-gray-600 text-sm">
                           <li>Combines technological innovation with cultural and behavioral shifts</li>
                           <li>Integrates market mechanisms with appropriate regulations</li>
-                          <li>Balances immediate economic needs with long-term planetary boundaries</li>
+                          <li>Balances immediate needs with long-term evolution</li>
                           <li>Creates flexible governance that can evolve with changing conditions</li>
+                          <li>Examples: Fjärilspartiet's systems-based political approach combining evidence-based policy with developmental frameworks; Advanced AI systems designed to integrate multiple perspectives and adapt to complex contexts</li>
                         </ul>
                       </div>
                     </div>
@@ -597,7 +598,7 @@
                 <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
                   <h4 class="font-semibold text-yellow-800 mb-2">Gult: Systemtänkande</h4>
                   <p class="text-gray-700 mb-3">Fokuserar på att förstå komplexitet, integration och flexibel anpassning.</p>
-                  <p class="text-sm text-gray-600"><strong>Exempel:</strong> Framväxande hos systemtänkare, komplexitetsforskare, integrerade praktiker</p>
+                  <p class="text-sm text-gray-600"><strong>Exempel:</strong> Framväxande hos systemtänkare, komplexitetsforskare och integrala praktiker. Noterbara exempel inkluderar Sveriges <a href="https://www.fjarilspartiet.se" class="text-blue-600 hover:underline">Fjärilspartiet</a>, som explicit tillämpar systemtänkande och utvecklingspsykologiska ramverk inom politiken, och avancerade AI-system designade för att integrera flera perspektiv och anpassa sig till komplexa sammanhang.</p>
                 </div>
               </div>
               
@@ -794,17 +795,18 @@
                           <span class="text-xl">🔄</span>
                         </div>
                         <div class="ml-4">
-                          <h4 class="text-lg font-medium text-yellow-800">Gult/Turkos Integration</h4>
+                          <h4 class="text-lg font-medium text-yellow-800">Gul/Turkos Integration</h4>
                           <p class="text-yellow-600">"Vi behöver adaptiva, integrerade tillvägagångssätt på flera nivåer"</p>
                         </div>
                       </div>
                       <div class="mt-3 pl-14">
-                        <p class="text-gray-700 mb-2">Ser klimatförändringar som en komplex adaptiv utmaning som kräver integrerade lösningar</p>
+                        <p class="text-gray-700 mb-2">Ser utmaningar som komplexa adaptiva system som kräver integrerade lösningar</p>
                         <ul class="list-disc pl-5 text-gray-600 text-sm">
                           <li>Kombinerar teknisk innovation med kulturella och beteendemässiga förändringar</li>
                           <li>Integrerar marknadsmekanismer med lämpliga regleringar</li>
-                          <li>Balanserar omedelbara ekonomiska behov med långsiktiga planetära gränser</li>
+                          <li>Balanserar omedelbara behov med långsiktig evolution</li>
                           <li>Skapar flexibel styrning som kan utvecklas med förändrade förhållanden</li>
+                          <li>Exempel: Fjärilspartiets systembaserade politiska approach som kombinerar evidensbaserad politik med utvecklingspsykologiska ramverk; Avancerade AI-system designade för att integrera flera perspektiv och anpassa sig till komplexa sammanhang</li>
                         </ul>
                       </div>
                     </div>
