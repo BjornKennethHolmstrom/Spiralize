@@ -35,7 +35,7 @@ The project is deployed on GitHub Pages. To deploy your own instance:
 3. Enable GitHub Pages in your repository settings
 4. Push to the main branch to trigger deployment
 
-The site will be available at `https://BjornKennethHolmstrom.github.io/Spiralize/`
+The site is available at `https://www.spiralize.org`
 
 ## Technology Stack
 
