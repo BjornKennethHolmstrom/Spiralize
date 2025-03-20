@@ -39,19 +39,37 @@
           title: "Take the Assessment",
           description: "Discover your center of gravity on the Spiral Dynamics model with an interactive quiz.",
           link: `${base}/quiz`,
-          icon: "🌀"
+          icon: "📝"
         },
         {
           title: "Explore the Spiral",
           description: "Learn about each stage of the spiral and how they shape personal and societal growth.",
           link: `${base}/spiral`,
-          icon: "📚"
+          icon: "🌀"
+        },
+        {
+          title: "Origins & History",
+          description: "Learn about the foundations of Spiral Dynamics, from Clare Graves' research to modern applications.",
+          link: `${base}/origins`,
+          icon: "📚"  // or "🎓" or "⏳" - feel free to choose which fits best
         },
         {
           title: "Practical Insights",
           description: "Find actionable tips for integrating Spiral Dynamics principles into your life.",
           link: `${base}/insights`,
           icon: "✨"
+        },
+        {
+          title: "Global Perspectives",
+          description: "Explore how different worldviews shape our understanding of major global challenges.",
+          link: `${base}/global`,
+          icon: "🌍"
+        },
+        {
+          title: "Conscious Governance",
+          description: "Learn how to integrate developmental perspectives into organizational and societal systems.",
+          link: `${base}/governance`,
+          icon: "🏛️"
         }
       ]
     },
@@ -84,19 +102,37 @@
           title: "Ta testet",
           description: "Upptäck din tyngdpunkt i Spiral Dynamics-modellen med ett interaktivt quiz.",
           link: `${base}/quiz`,
-          icon: "🌀"
+          icon: "📝"
         },
         {
           title: "Utforska Spiralen",
           description: "Lär dig om varje steg i spiralen och hur de formar personlig och samhällelig utveckling.",
           link: `${base}/spiral`,
-          icon: "📚"
+          icon: "🌀"
+        },
+        {
+          title: "Historia & Ursprung",
+          description: "Lär dig om grunderna i Spiral Dynamics, från Clare Graves forskning till moderna tillämpningar.",
+          link: `${base}/origins`,
+          icon: "📚"  // matching the English version
         },
         {
           title: "Praktiska Insikter",
           description: "Hitta konkreta tips för att integrera Spiral Dynamics-principer i ditt liv.",
           link: `${base}/insights`,
           icon: "✨"
+        },
+        {
+          title: "Globala Perspektiv",
+          description: "Utforska hur olika världsbilder formar vår förståelse av stora globala utmaningar.",
+          link: `${base}/global`,
+          icon: "🌍"
+        },
+        {
+          title: "Medveten Styrning",
+          description: "Lär dig hur man integrerar utvecklingsperspektiv i organisatoriska och samhälleliga system.",
+          link: `${base}/governance`,
+          icon: "🏛️"
         }
       ]
     }
@@ -177,7 +213,7 @@
     </div>
 
     <!-- Features Section -->
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
       {#each t.features as feature}
         <a 
           href={feature.link}
@@ -198,7 +234,6 @@
               </p>
             </div>
           </div>
-          <!-- Add subtle arrow indicator -->
           <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
             <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
