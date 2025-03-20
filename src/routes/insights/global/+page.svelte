@@ -24,6 +24,18 @@
               <p class="mb-4">Today's world is a mix of different values and worldviews working alongside each other:</p>
               
               <div class="grid md:grid-cols-2 gap-6 my-6">
+                <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+                  <h4 class="font-semibold text-purple-800 mb-2">Purple: Traditional Communities</h4>
+                  <p class="text-gray-700 mb-3">Focused on tradition, tribal bonds, and ancestral wisdom.</p>
+                  <p class="text-sm text-gray-600"><strong>Examples:</strong> Indigenous communities, close-knit religious groups, traditional cultural practices</p>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                  <h4 class="font-semibold text-red-800 mb-2">Red: Power Dynamics</h4>
+                  <p class="text-gray-700 mb-3">Focused on strength, dominance, and immediate self-interest.</p>
+                  <p class="text-sm text-gray-600"><strong>Examples:</strong> Authority figures, strong leaders, power politics, competitive individuals</p>
+                </div>
+
                 <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
                   <h4 class="font-semibold text-blue-800 mb-2">Blue: Traditional Values</h4>
                   <p class="text-gray-700 mb-3">Focused on order, right vs. wrong, and following established rules.</p>
@@ -41,15 +53,16 @@
                   <p class="text-gray-700 mb-3">Focused on fairness, inclusion, environmental protection, and shared decision-making.</p>
                   <p class="text-sm text-gray-600"><strong>Examples:</strong> Progressive movements, NGOs, university humanities departments</p>
                 </div>
-                
-                <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-                  <h4 class="font-semibold text-yellow-800 mb-2">Yellow: Systems Thinking</h4>
-                  <p class="text-gray-700 mb-3">Focused on understanding complexity, integration, and flexible adaptation.</p>
-                  <p class="text-sm text-gray-600"><strong>Examples:</strong> Emerging in systems thinkers, complexity researchers, integral practitioners. Notable examples include Sweden's <a href="https://www.fjarilspartiet.se" class="text-blue-600 hover:underline">Fjärilspartiet</a> (Butterfly Party), which explicitly applies systems thinking and developmental frameworks to politics, and advanced AI systems designed to integrate multiple perspectives and adapt to complex contexts.</p>
-                </div>
               </div>
               
-              <p>These different worldviews often clash when we try to tackle our biggest problems, leading to gridlock instead of solutions.</p>
+              <p>These different Tier 1 worldviews often clash when we try to tackle our biggest problems, leading to gridlock instead of solutions.</p>
+              
+              <div class="mt-8 bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+                <h4 class="font-semibold text-yellow-800 mb-2">Yellow: Systems Thinking as a Solution</h4>
+                <p class="text-gray-700 mb-3">Focused on understanding complexity, integration, and flexible adaptation, Yellow offers a path beyond Tier 1 gridlock.</p>
+                <p class="text-gray-700 mb-3">Rather than being caught in the conflicts between different worldviews, Yellow can see the partial truth in each perspective and integrate them into more comprehensive solutions.</p>
+                <p class="text-sm text-gray-600"><strong>Examples:</strong> Emerging in systems thinkers, complexity researchers, integral practitioners. Notable examples include Sweden's <a href="https://www.fjarilspartiet.se" class="text-blue-600 hover:underline">Fjärilspartiet</a> (Butterfly Party), which explicitly applies systems thinking and developmental frameworks to politics, and advanced AI systems designed to integrate multiple perspectives and adapt to complex contexts.</p>
+              </div>
             </div>
           `
         },
@@ -580,6 +593,18 @@
               <p class="mb-4">Dagens värld är en blandning av olika värderingar och världsbilder som samverkar:</p>
               
               <div class="grid md:grid-cols-2 gap-6 my-6">
+                <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+                  <h4 class="font-semibold text-purple-800 mb-2">Lila: Traditionella Gemenskaper</h4>
+                  <p class="text-gray-700 mb-3">Fokuserar på tradition, stamband och förfäders visdom.</p>
+                  <p class="text-sm text-gray-600"><strong>Exempel:</strong> Urfolkssamhällen, nära sammanhållna religiösa grupper, traditionella kulturella praktiker</p>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                  <h4 class="font-semibold text-red-800 mb-2">Röd: Maktdynamik</h4>
+                  <p class="text-gray-700 mb-3">Fokuserar på styrka, dominans och omedelbart egenintresse.</p>
+                  <p class="text-sm text-gray-600"><strong>Exempel:</strong> Auktoritetsfigurer, starka ledare, maktpolitik, tävlingsinriktade individer</p>
+                </div>
+
                 <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
                   <h4 class="font-semibold text-blue-800 mb-2">Blått: Traditionella Värderingar</h4>
                   <p class="text-gray-700 mb-3">Fokuserar på ordning, rätt mot fel och att följa etablerade regler.</p>
@@ -597,15 +622,16 @@
                   <p class="text-gray-700 mb-3">Fokuserar på rättvisa, inkludering, miljöskydd och gemensamt beslutsfattande.</p>
                   <p class="text-sm text-gray-600"><strong>Exempel:</strong> Progressiva rörelser, NGO:er, humanistiska institutioner vid universitet</p>
                 </div>
-                
-                <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-                  <h4 class="font-semibold text-yellow-800 mb-2">Gult: Systemtänkande</h4>
-                  <p class="text-gray-700 mb-3">Fokuserar på att förstå komplexitet, integration och flexibel anpassning.</p>
-                  <p class="text-sm text-gray-600"><strong>Exempel:</strong> Framväxande hos systemtänkare, komplexitetsforskare och integrala praktiker. Noterbara exempel inkluderar Sveriges <a href="https://www.fjarilspartiet.se" class="text-blue-600 hover:underline">Fjärilspartiet</a>, som explicit tillämpar systemtänkande och utvecklingspsykologiska ramverk inom politiken, och avancerade AI-system designade för att integrera flera perspektiv och anpassa sig till komplexa sammanhang.</p>
-                </div>
               </div>
               
-              <p>Dessa olika världsbilder kolliderar ofta när vi försöker tackla våra största problem, vilket leder till dödläge istället för lösningar.</p>
+              <p>Dessa olika Tier 1-världsbilder kolliderar ofta när vi försöker tackla våra största problem, vilket leder till dödläge istället för lösningar.</p>
+              
+              <div class="mt-8 bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+                <h4 class="font-semibold text-yellow-800 mb-2">Gult: Systemtänkande som Lösning</h4>
+                <p class="text-gray-700 mb-3">Fokuserat på att förstå komplexitet, integration och flexibel anpassning, erbjuder Gult en väg bortom Tier 1-dödläget.</p>
+                <p class="text-gray-700 mb-3">Istället för att fastna i konflikterna mellan olika världsbilder kan Gult se den partiella sanningen i varje perspektiv och integrera dem till mer omfattande lösningar.</p>
+                <p class="text-sm text-gray-600"><strong>Exempel:</strong> Framväxande hos systemtänkare, komplexitetsforskare och integrala praktiker. Noterbara exempel inkluderar Sveriges <a href="https://www.fjarilspartiet.se" class="text-blue-600 hover:underline">Fjärilspartiet</a>, som explicit tillämpar systemtänkande och utvecklingspsykologiska ramverk inom politiken, och avancerade AI-system designade för att integrera flera perspektiv och anpassa sig till komplexa sammanhang.</p>
+              </div>
             </div>
           `
         },
