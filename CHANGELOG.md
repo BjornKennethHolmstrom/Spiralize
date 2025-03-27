@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.4] - Resources Expansion and Video Content
+
+### Added
+- **Resources Section**:
+  - Added comprehensive resources tab to the Governance page
+  - Featured globalgovernanceframework.org as a primary resource
+  - Added curated collections of books, academic resources, and community links
+  - Integrated case studies of successful governance implementations
+- **Video Resources**:
+  - Added Leo Gura's (Actualized.org) comprehensive Spiral Dynamics video series
+  - Added Practical Integral's video series covering all stages from Beige to Coral
+  - Organized videos in a user-friendly, responsive grid layout
+- **Enhanced Translations**:
+  - Extended all resource content with full Swedish translations
+  - Improved translation consistency across multilingual components
+
+### Changed
+- Reorganized tab navigation in the Governance section for better user flow
+- Improved mobile responsiveness of resource listings
+
 ## [0.3.3] - Extended Stage Support and Refinements
 
 ### Added
@@ -62,7 +82,7 @@ All notable changes to this project will be documented in this file.
 - **Pages**:
   - Created a detailed **Insights** page with practical tips for integrating Spiral Dynamics principles into daily life.
   - Enhanced the **About** page with project and creator details, dynamically translated.
-  - Updated the **Contact** page to include a dynamic link to the creator’s contact page, with language support.
+  - Updated the **Contact** page to include a dynamic link to the creator's contact page, with language support.
 
 - **Spiral Diagram**:
   - Fixed and improved the spiral diagram visualization.
@@ -109,5 +129,3 @@ All notable changes to this project will be documented in this file.
 ---
 
 This is the initial release showcasing the foundation of Spiralize's functionality.
-
-

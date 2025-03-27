@@ -11,20 +11,29 @@
   - Visual progress tracking with color-coded stages
 
 - **Explore the Spiral**
-  - Learn about the stages of the Spiral Dynamics model with engaging visuals and explanations.
-  - Understand how values shape individuals, communities, and societies.
+  - Learn about the stages of the Spiral Dynamics model with engaging visuals and explanations
+  - Understand how values shape individuals, communities, and societies
   - Read about the history of Spiral Dynamics
+  - Access comprehensive video resources from leading Spiral Dynamics educators
 
-- **Multilingual Support**
-  - Currently supports English and Swedish.
-  - Expandable to include additional languages.
+- **Conscious Governance**
+  - Explore governance models through a developmental lens
+  - Access interactive tools for understanding governance evolution
+  - Browse real-world examples of different governance structures
+  - Find curated resources for implementing developmental governance approaches
 
 - **Educational Resources**
-  - Read in-depth articles and practical applications for each stage.
-  - Gain tools for integrating higher-stage values into your life.
+  - Access curated collections of books, academic papers, and online courses
+  - Watch video series exploring each stage of development
+  - Study case examples and practical applications
+  - Connect with communities of practice in the field
+
+- **Multilingual Support**
+  - Currently supports English and Swedish
+  - Expandable to include additional languages
 
 - **Donation Support**
-  - Support the project through [PayPal Donations](https://www.paypal.com/donate/?hosted_button_id=FX7FQMDQBAR4N) (add the message "Spiralize").
+  - Support the project through [PayPal Donations](https://www.paypal.com/donate/?hosted_button_id=FX7FQMDQBAR4N) (add the message "Spiralize")
 
 ## Deployment
 
@@ -39,10 +48,10 @@ The site is available at `https://www.spiralize.org`
 
 ## Technology Stack
 
-- **Frontend Framework**: [SvelteKit](https://kit.svelte.dev/) for a reactive and fast user experience.
-- **Styling**: Tailwind CSS for responsive and modern UI design.
-- **Data Storage**: IndexedDB for local progress tracking.
-- **Deployment**: GitHub Pages for hosting.
+- **Frontend Framework**: [SvelteKit](https://kit.svelte.dev/) for a reactive and fast user experience
+- **Styling**: Tailwind CSS for responsive and modern UI design
+- **Data Storage**: IndexedDB for local progress tracking
+- **Deployment**: GitHub Pages for hosting
 
 ## Getting Started
 
@@ -69,7 +78,7 @@ The site is available at `https://www.spiralize.org`
    npm run dev -- --open
    ```
 
-4. Open the app in your browser at `http://localhost:5173`.
+4. Open the app in your browser at `http://localhost:5173`
 
 ### Build for Production
 
@@ -80,75 +89,15 @@ npm run build
 
 The static site will be generated in the `build` directory.
 
-### Project files and folders
-
-Spiralize
-├── CHANGELOG.md
-├── docs
-├── eslint.config.js
-├── LICENSE.md
-├── package.json
-├── postcss.config.js
-├── README.md
-├── src
-│   ├── app.css
-│   ├── app.d.ts
-│   ├── app.html
-│   ├── demo.spec.ts
-│   ├── lib
-│   │   ├── components
-│   │   │   ├── Footer.svelte
-│   │   │   ├── Header.svelte
-│   │   │   ├── Quiz.svelte
-│   │   │   ├── ResultsImage.svelte
-│   │   │   ├── SpiralDiagram.svelte
-│   │   │   ├── SpiralProfile.svelte
-│   │   │   └── StageCard.svelte
-│   │   ├── data
-│   │   │   └── stages.ts
-│   │   ├── index.ts
-│   │   ├── stores
-│   │   │   ├── languageStore.ts
-│   │   │   └── quizStore.ts
-│   │   ├── styles
-│   │   └── utils
-│   │       └── questionUtils.ts
-│   ├── routes
-│   │   ├── about
-│   │   │   └── +page.svelte
-│   │   ├── contact
-│   │   │   └── +page.svelte
-│   │   ├── insights
-│   │   │   └── +page.svelte
-│   │   ├── +layout.js
-│   │   ├── +layout.svelte
-│   │   ├── +page.svelte
-│   │   ├── quiz
-│   │   │   ├── +page.svelte
-│   │   │   └── results
-│   │   │       └── +page.svelte
-│   │   └── spiral
-│   │       └── +page.svelte
-│   └── types
-│       └── spiral.ts
-├── static
-│   ├── default-share.svg
-│   ├── favicon.png
-│   ├── social-preview.png
-│   └── social-preview.svg
-├── svelte.config.js
-├── tailwind.config.ts
-├── tsconfig.json
-└── vite.config.ts
-
 ## Contributing
 
 Contributions are welcome! Here's how you can help:
 
-- Suggest new questions for the quiz.
-- Help translate the app into other languages.
-- Report bugs or suggest improvements.
-- Submit a pull request with new features or fixes.
+- Suggest new questions for the quiz
+- Help translate the app into other languages
+- Report bugs or suggest improvements
+- Submit a pull request with new features or fixes
+- Recommend additional resources for the Resources section
 
 ## License
 
@@ -156,8 +105,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-- Inspired by the work of Clare W. Graves, Don Beck, and Chris Cowan.
-- Special thanks to contributors and supporters who help make Spiralize possible.
+- Inspired by the work of Clare W. Graves, Don Beck, and Chris Cowan
+- Video resources courtesy of Leo Gura (Actualized.org) and Practical Integral
+- Special thanks to contributors and supporters who help make Spiralize possible
 
 ## Support
 
@@ -166,5 +116,3 @@ If you find Spiralize helpful, please consider supporting the project:
 - [Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=FX7FQMDQBAR4N)
 
 Thank you for your support and for exploring Spiral Dynamics with Spiralize!
-
-

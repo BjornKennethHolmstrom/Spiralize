@@ -15,7 +15,7 @@
   $: currentLanguage = $language;
 
   // State for active tab
-  let activeTab: 'overview' | 'explorer' | 'examples' | 'bridge' | 'guides' = 'overview';
+  let activeTab: 'overview' | 'explorer' | 'examples' | 'bridge' | 'guides' | 'resources' = 'overview';
 
   // Governance models mapped to Spiral Dynamics stages
   const governanceModels = {
@@ -333,7 +333,8 @@
         explorer: "Governance Explorer",
         examples: "Real-World Examples",
         bridge: "Personal-Collective Bridge",
-        guides: "Implementation Guides"
+        guides: "Implementation Guides",
+        resources: "Resources"
       },
       
       overview: {
@@ -400,6 +401,133 @@
         globalDesc: "Strategies for contributing to governance evolution at national and international scales.",
         resourcesTitle: "Additional Resources",
         resourcesDesc: "Books, courses, communities, and other resources to support your conscious governance journey."
+      },
+
+      resources: {
+        title: "Resources",
+        description: "Explore these resources to deepen your understanding of conscious governance and developmental approaches to organizational and societal systems.",
+        
+        organizationsTitle: "Organizations & Initiatives",
+        globalGovernanceDesc: "A framework for understanding and implementing multi-perspective governance models that address complex global challenges.",
+        integralInstituteDesc: "Research and educational organization dedicated to the development and application of integral approaches.",
+        spiralDynamicsDesc: "Official resource for the Spiral Dynamics model with training programs and developmental assessments.",
+        reinventingOrgsDesc: "Explores next-stage organizational models based on developmental perspectives.",
+        visitWebsite: "Visit Website",
+        
+        booksTitle: "Essential Books",
+        books: [
+          {
+            title: "Spiral Dynamics: Mastering Values, Leadership, and Change",
+            author: "Don Beck & Christopher Cowan",
+            description: "The foundational text on Spiral Dynamics that explores how human consciousness evolves and shapes our systems of governance."
+          },
+          {
+            title: "Reinventing Organizations",
+            author: "Frederic Laloux",
+            description: "A comprehensive exploration of evolutionary organizational models, with practical examples of next-stage governance systems."
+          },
+          {
+            title: "Integral Politics",
+            author: "Ken Wilber",
+            description: "An integral approach to political thinking and governance that integrates multiple perspectives."
+          },
+          {
+            title: "Theory U: Leading from the Future as It Emerges",
+            author: "Otto Scharmer",
+            description: "Presents a framework for collective leadership and governance that addresses our blind spots and accesses deeper sources of insight."
+          },
+          {
+            title: "The Listening Society",
+            author: "Hanzi Freinacht",
+            description: "A metamodern approach to politics and governance that integrates developmental perspectives."
+          }
+        ],
+        
+        academicTitle: "Academic Resources",
+        academic: [
+          {
+            title: "Journal of Integral Theory and Practice",
+            author: "Various Contributors",
+            description: "Academic journal featuring research on integral approaches to governance and organizational development.",
+            link: "https://integrallife.com/integral-post/journal-integral-theory-and-practice"
+          },
+          {
+            title: "Developmental Politics: How America Can Grow Into a Better Version of Itself",
+            author: "Steve McIntosh",
+            description: "Research paper on applying developmental frameworks to political structures.",
+            link: "https://www.developmentalpolitics.org/research-papers"
+          },
+          {
+            title: "Governance for a New Era: A Developmental Approach to Public Governance",
+            author: "Institute for Cultural Evolution",
+            description: "White paper on developmental governance models for complex societies.",
+            link: "https://www.culturalevolution.org/research-papers"
+          }
+        ],
+        accessResource: "Access Resource",
+        
+        coursesTitle: "Online Courses & Training",
+        courses: [
+          {
+            title: "Spiral Dynamics Integral Certification",
+            provider: "Spiral Dynamics Group",
+            description: "Comprehensive training in the application of Spiral Dynamics to organizational and governance systems.",
+            link: "https://www.spiraldynamics.org/training"
+          },
+          {
+            title: "Theory U: Leading from the Emerging Future",
+            provider: "MIT Presencing Institute",
+            description: "Interactive course on innovative governance approaches based on presencing methodologies.",
+            link: "https://www.presencing.org/programs/educational-programs"
+          },
+          {
+            title: "Integral Politics & Governance",
+            provider: "Integral Life",
+            description: "Course exploring integral approaches to political and governance systems.",
+            link: "https://integrallife.com/courses"
+          }
+        ],
+        learnMore: "Learn More",
+        
+        caseStudiesTitle: "Case Studies",
+        caseStudies: [
+          {
+            title: "Buurtzorg: Self-Managed Healthcare Teams",
+            description: "Dutch healthcare organization operating with distributed authority and minimal hierarchy, demonstrating Yellow-Turquoise governance principles in action."
+          },
+          {
+            title: "City of Borås: Integral City Planning",
+            description: "Swedish municipality applying developmental models to urban planning and governance."
+          },
+          {
+            title: "South Africa's Transition from Apartheid",
+            description: "Application of Spiral Dynamics frameworks to facilitate peaceful transition and reconciliation in post-apartheid South Africa."
+          },
+          {
+            title: "Mondragon Corporation: Cooperative Governance",
+            description: "Worker-owned cooperative demonstrating Green governance principles with elements of Yellow adaptivity."
+          }
+        ],
+        
+        communityTitle: "Communities of Practice",
+        communities: [
+          {
+            title: "Integral Global",
+            description: "An international community of practitioners focused on integral approaches to governance and social change.",
+            link: "https://integral-global.org"
+          },
+          {
+            title: "Conscious Governance Forum",
+            description: "Online forum for discussing and implementing developmental approaches to governance at various scales.",
+            link: "https://consciousgovernance.net"
+          },
+          {
+            title: "Systems Innovation Network",
+            description: "Community of systems thinkers applying developmental frameworks to complex governance challenges.",
+            link: "https://www.systemsinnovation.network"
+          }
+        ],
+        joinCommunity: "Join Community"
       }
     },
     sv: {
@@ -412,7 +540,8 @@
         explorer: "Styrningsutforskare",
         examples: "Verkliga Exempel",
         bridge: "Personlig-Kollektiv Brygga",
-        guides: "Implementeringsguider"
+        guides: "Implementeringsguider",
+        resources: "Resurser"
       },
       
       overview: {
@@ -480,6 +609,133 @@
         resourcesTitle: "Ytterligare Resurser",
         resourcesDesc: "Böcker, kurser, gemenskaper och andra resurser för att stödja din resa mot medveten styrning."
       }
+    },
+
+    resources: {
+      title: "Resurser",
+      description: "Utforska dessa resurser för att fördjupa din förståelse för medveten styrning och utvecklingsbaserade metoder för organisatoriska och samhälleliga system.",
+      
+      organizationsTitle: "Organisationer & Initiativ",
+      globalGovernanceDesc: "Ett ramverk för att förstå och implementera styrningsmodeller med flera perspektiv som adresserar komplexa globala utmaningar.",
+      integralInstituteDesc: "Forsknings- och utbildningsorganisation dedikerad till utveckling och tillämpning av integrala metoder.",
+      spiralDynamicsDesc: "Officiell resurs för Spiral Dynamics-modellen med träningsprogram och utvecklingsbedömningar.",
+      reinventingOrgsDesc: "Utforskar nästa steg i organisationsmodeller baserade på utvecklingsperspektiv.",
+      visitWebsite: "Besök Webbplats",
+      
+      booksTitle: "Viktiga Böcker",
+      books: [
+        {
+          title: "Spiral Dynamics: Mastering Values, Leadership, and Change",
+          author: "Don Beck & Christopher Cowan",
+          description: "Grundtexten om Spiral Dynamics som utforskar hur mänskligt medvetande utvecklas och formar våra styrningssystem."
+        },
+        {
+          title: "Reinventing Organizations",
+          author: "Frederic Laloux",
+          description: "En omfattande utforskning av evolutionära organisationsmodeller, med praktiska exempel på nästa generationens styrningssystem."
+        },
+        {
+          title: "Integral Politics",
+          author: "Ken Wilber",
+          description: "En integral syn på politiskt tänkande och styrning som integrerar flera perspektiv."
+        },
+        {
+          title: "Theory U: Leading from the Future as It Emerges",
+          author: "Otto Scharmer",
+          description: "Presenterar ett ramverk för kollektivt ledarskap och styrning som adresserar våra blinda fläckar och får tillgång till djupare insiktskällor."
+        },
+        {
+          title: "The Listening Society",
+          author: "Hanzi Freinacht",
+          description: "En metamodern syn på politik och styrning som integrerar utvecklingsperspektiv."
+        }
+      ],
+      
+      academicTitle: "Akademiska Resurser",
+      academic: [
+        {
+          title: "Journal of Integral Theory and Practice",
+          author: "Olika Bidragsgivare",
+          description: "Akademisk tidskrift med forskning om integrala metoder för styrning och organisationsutveckling.",
+          link: "https://integrallife.com/integral-post/journal-integral-theory-and-practice"
+        },
+        {
+          title: "Developmental Politics: How America Can Grow Into a Better Version of Itself",
+          author: "Steve McIntosh",
+          description: "Forskningsartikel om tillämpning av utvecklingsramverk på politiska strukturer.",
+          link: "https://www.developmentalpolitics.org/research-papers"
+        },
+        {
+          title: "Governance for a New Era: A Developmental Approach to Public Governance",
+          author: "Institute for Cultural Evolution",
+          description: "Vitbok om utvecklingsbaserade styrningsmodeller för komplexa samhällen.",
+          link: "https://www.culturalevolution.org/research-papers"
+        }
+      ],
+      accessResource: "Få Tillgång till Resurs",
+      
+      coursesTitle: "Onlinekurser & Utbildning",
+      courses: [
+        {
+          title: "Spiral Dynamics Integral Certification",
+          provider: "Spiral Dynamics Group",
+          description: "Omfattande utbildning i tillämpningen av Spiral Dynamics på organisatoriska och styrningssystem.",
+          link: "https://www.spiraldynamics.org/training"
+        },
+        {
+          title: "Theory U: Leading from the Emerging Future",
+          provider: "MIT Presencing Institute",
+          description: "Interaktiv kurs om innovativa styrningsmetoder baserade på presencing-metoder.",
+          link: "https://www.presencing.org/programs/educational-programs"
+        },
+        {
+          title: "Integral Politics & Governance",
+          provider: "Integral Life",
+          description: "Kurs som utforskar integrala metoder för politiska och styrningssystem.",
+          link: "https://integrallife.com/courses"
+        }
+      ],
+      learnMore: "Läs Mer",
+      
+      caseStudiesTitle: "Fallstudier",
+      caseStudies: [
+        {
+          title: "Buurtzorg: Självstyrande Vårdteam",
+          description: "Holländsk vårdorganisation som fungerar med distribuerad auktoritet och minimal hierarki, vilket demonstrerar Gul-Turkos styrningsprinciper i praktiken."
+        },
+        {
+          title: "Borås Stad: Integral Stadsplanering",
+          description: "Svensk kommun som tillämpar utvecklingsmodeller för stadsplanering och styrning."
+        },
+        {
+          title: "Sydafrikas Övergång från Apartheid",
+          description: "Tillämpning av Spiral Dynamics-ramverk för att underlätta fredlig övergång och försoning i post-apartheid Sydafrika."
+        },
+        {
+          title: "Mondragon Corporation: Kooperativ Styrning",
+          description: "Arbetarägt kooperativ som visar Gröna styrningsprinciper med inslag av Gul adaptivitet."
+        }
+      ],
+      
+      communityTitle: "Praktikgemenskaper",
+      communities: [
+        {
+          title: "Integral Global",
+          description: "En internationell gemenskap av praktiker fokuserad på integrala tillvägagångssätt för styrning och social förändring.",
+          link: "https://integral-global.org"
+        },
+        {
+          title: "Conscious Governance Forum",
+          description: "Onlineforum för att diskutera och implementera utvecklingsbaserade metoder för styrning i olika skalor.",
+          link: "https://consciousgovernance.net"
+        },
+        {
+          title: "Systems Innovation Network",
+          description: "Gemenskap av systemtänkare som tillämpar utvecklingsramverk på komplexa styrningsutmaningar.",
+          link: "https://www.systemsinnovation.network"
+        }
+      ],
+      joinCommunity: "Gå Med i Gemenskapen"
     }
   };
 
@@ -544,6 +800,12 @@
             on:click={() => activeTab = 'guides'}
           >
             {t.tabs.guides}
+          </button>
+          <button
+            class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'resources' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
+            on:click={() => activeTab = 'resources'}
+          >
+            {t.tabs.resources}
           </button>
         </nav>
       </div>
@@ -644,6 +906,190 @@
         
         <!-- Implementation Guides -->
         <ImplementationGuides />
+      </div>
+    {/if}
+
+    {#if activeTab === 'resources'}
+      <div class="bg-white rounded-xl shadow-sm p-6">
+        <h2 class="text-2xl font-semibold mb-4">{t.resources.title}</h2>
+        <p class="text-gray-600 mb-6">{t.resources.description}</p>
+        
+        <!-- Organizations and Initiatives -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-4">{t.resources.organizationsTitle}</h3>
+          <div class="grid gap-4 md:grid-cols-2">
+            <a 
+              href="https://globalgovernanceframework.org" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="block p-4 border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-md transition-all"
+            >
+              <h4 class="font-medium text-lg mb-2">Global Governance Framework</h4>
+              <p class="text-gray-600 mb-2">{t.resources.globalGovernanceDesc}</p>
+              <div class="text-purple-600 flex items-center text-sm">
+                <span>{t.resources.visitWebsite}</span>
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+            
+            <a 
+              href="https://integral.org" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="block p-4 border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-md transition-all"
+            >
+              <h4 class="font-medium text-lg mb-2">Integral Institute</h4>
+              <p class="text-gray-600 mb-2">{t.resources.integralInstituteDesc}</p>
+              <div class="text-purple-600 flex items-center text-sm">
+                <span>{t.resources.visitWebsite}</span>
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+            
+            <a 
+              href="https://www.spiraldynamics.org" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="block p-4 border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-md transition-all"
+            >
+              <h4 class="font-medium text-lg mb-2">Spiral Dynamics Group</h4>
+              <p class="text-gray-600 mb-2">{t.resources.spiralDynamicsDesc}</p>
+              <div class="text-purple-600 flex items-center text-sm">
+                <span>{t.resources.visitWebsite}</span>
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+            
+            <a 
+              href="https://reinventingorganizations.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="block p-4 border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-md transition-all"
+            >
+              <h4 class="font-medium text-lg mb-2">Reinventing Organizations</h4>
+              <p class="text-gray-600 mb-2">{t.resources.reinventingOrgsDesc}</p>
+              <div class="text-purple-600 flex items-center text-sm">
+                <span>{t.resources.visitWebsite}</span>
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Books -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-4">{t.resources.booksTitle}</h3>
+          <div class="space-y-4">
+            {#each t.resources.books as book}
+              <div class="p-4 border border-gray-200 rounded-lg">
+                <h4 class="font-medium mb-1">{book.title}</h4>
+                <p class="text-sm text-gray-500 mb-2">{book.author}</p>
+                <p class="text-gray-600">{book.description}</p>
+              </div>
+            {/each}
+          </div>
+        </div>
+        
+        <!-- Academic Resources -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-4">{t.resources.academicTitle}</h3>
+          <div class="space-y-4">
+            {#each t.resources.academic as resource}
+              <div class="p-4 border border-gray-200 rounded-lg">
+                <h4 class="font-medium mb-1">{resource.title}</h4>
+                <p class="text-sm text-gray-500 mb-2">{resource.author}</p>
+                <p class="text-gray-600 mb-2">{resource.description}</p>
+                {#if resource.link}
+                  <a 
+                    href={resource.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="text-purple-600 flex items-center text-sm"
+                  >
+                    <span>{t.resources.accessResource}</span>
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                {/if}
+              </div>
+            {/each}
+          </div>
+        </div>
+        
+        <!-- Online Courses -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-4">{t.resources.coursesTitle}</h3>
+          <div class="space-y-4">
+            {#each t.resources.courses as course}
+              <div class="p-4 border border-gray-200 rounded-lg">
+                <h4 class="font-medium mb-1">{course.title}</h4>
+                <p class="text-sm text-gray-500 mb-2">{course.provider}</p>
+                <p class="text-gray-600 mb-2">{course.description}</p>
+                {#if course.link}
+                  <a 
+                    href={course.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="text-purple-600 flex items-center text-sm"
+                  >
+                    <span>{t.resources.learnMore}</span>
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                {/if}
+              </div>
+            {/each}
+          </div>
+        </div>
+        
+        <!-- Case Studies -->
+        <div class="mb-8">
+          <h3 class="text-xl font-semibold mb-4">{t.resources.caseStudiesTitle}</h3>
+          <div class="space-y-4">
+            {#each t.resources.caseStudies as caseStudy}
+              <div class="p-4 border border-gray-200 rounded-lg">
+                <h4 class="font-medium mb-1">{caseStudy.title}</h4>
+                <p class="text-gray-600">{caseStudy.description}</p>
+              </div>
+            {/each}
+          </div>
+        </div>
+        
+        <!-- Community and Practice -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">{t.resources.communityTitle}</h3>
+          <div class="space-y-4">
+            {#each t.resources.communities as community}
+              <div class="p-4 border border-gray-200 rounded-lg">
+                <h4 class="font-medium mb-1">{community.title}</h4>
+                <p class="text-gray-600 mb-2">{community.description}</p>
+                {#if community.link}
+                  <a 
+                    href={community.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="text-purple-600 flex items-center text-sm"
+                  >
+                    <span>{t.resources.joinCommunity}</span>
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                {/if}
+              </div>
+            {/each}
+          </div>
+        </div>
       </div>
     {/if}
 
