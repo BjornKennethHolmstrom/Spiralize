@@ -1,9 +1,11 @@
+<!-- src/routes/spiral/+page.svelte -->
 <script lang="ts">
   import { stages } from '$lib/data/stages';
   import StageCard from '$lib/components/StageCard.svelte';
   import SpiralDiagram from '$lib/components/SpiralDiagram.svelte';
   import languageStore from '$lib/stores/languageStore';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
+  import TabNav from '$lib/components/TabNav.svelte'; // Reuse existing TabNav component
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -12,6 +14,9 @@
   // Track expanded states and active stage
   let expandedStages: Record<string, boolean> = {};
   let activeStage: string | null = null;
+  
+  // Add activeTab state for tab navigation
+  let activeTab: 'overview' | 'resources' | 'visualizations' = 'overview';
   
   const translations = {
     en: {
@@ -36,8 +41,12 @@
         "The stages alternate between individualistic and collective focus",
         "Some qualities of advanced stages may appear similar to natural child-like states, but the key difference lies in conscious integration versus unconscious expression"
       ],
-      resources: 
-      {
+      tabs: {
+        overview: "Overview",
+        resources: "Resources",
+        visualizations: "Interactive Visualizations"
+      },
+      resources: {
         videosTitle: "Video Resources",
         actualized: "Comprehensive series exploring the different stages of Spiral Dynamics with practical examples and philosophical insights.",
         practicalIntegral: "Clear and concise explanations of each stage with visual aids and real-world applications.",
@@ -59,6 +68,10 @@
         piYellow: "Stage Yellow: Systemic-Integrative",
         piTurquoise: "Stage Turquoise: Holistic-Global",
         piCoral: "Stage Coral: Evolving Next Stage",
+        booksTitle: "Essential Books",
+        articlesTitle: "Articles & Papers",
+        readMore: "Read More",
+        visitWebsite: "Visit Website"
       }
     },
     sv: {
@@ -83,8 +96,12 @@
         "Stadierna växlar mellan ett individuellt och kollektivt fokus",
         "Vissa kvaliteter i avancerade stadier kan likna naturliga barnsliga tillstånd, men nyckeln ligger i skillnaden mellan medveten integration och omedvetet uttryck"
       ],
-      resources:
-      {
+      tabs: {
+        overview: "Översikt",
+        resources: "Resurser",
+        visualizations: "Interaktiva Visualiseringar"
+      },
+      resources: {
         videosTitle: "Videoresurser",
         actualized: "Omfattande serie som utforskar de olika stadierna av Spiral Dynamics med praktiska exempel och filosofiska insikter.",
         practicalIntegral: "Tydliga och koncisa förklaringar av varje stadium med visuella hjälpmedel och verkliga tillämpningar.",
@@ -106,8 +123,124 @@
         piYellow: "Stadium Yellow: Systemisk-Integrativ",
         piTurquoise: "Stadium Turquoise: Holistisk-Global",
         piCoral: "Stadium Coral: Utvecklande Nästa Stadium",
+        booksTitle: "Viktiga Böcker",
+        articlesTitle: "Artiklar & Uppsatser",
+        readMore: "Läs Mer",
+        visitWebsite: "Besök Webbplats"
       }
     }
+  };
+
+  // Books data
+  const books = {
+    en: [
+      {
+        title: "Spiral Dynamics: Mastering Values, Leadership, and Change",
+        author: "Don Beck & Christopher Cowan",
+        description: "The foundational text that details the complete Spiral Dynamics model, its theoretical background, and practical applications across various domains.",
+        link: "https://www.amazon.com/Spiral-Dynamics-Mastering-Values-Leadership/dp/1405133562"
+      },
+      {
+        title: "Levels of Human Existence",
+        author: "Clare W. Graves",
+        description: "Transcriptions of Clare W. Graves' original talks on his research and the emergence of value systems, edited by William R. Lee.",
+        link: "https://www.clarewgraves.com/source_content/books.html"
+      },
+      {
+        title: "The Never Ending Quest",
+        author: "Clare W. Graves, edited by Christopher Cowan & Natasha Todorovic",
+        description: "A comprehensive collection of Clare W. Graves' original research papers and writings on his emergent cyclical theory of adult development.",
+        link: "https://www.spiraldynamics.org/books/"
+      },
+      {
+        title: "Integral Psychology",
+        author: "Ken Wilber",
+        description: "An integration of Spiral Dynamics with other developmental models within the broader framework of Integral Theory.",
+        link: "https://www.amazon.com/Integral-Psychology-Consciousness-Therapy-Beyond/dp/1570625549"
+      }
+    ],
+    sv: [
+      {
+        title: "Spiral Dynamics: Mastering Values, Leadership, and Change",
+        author: "Don Beck & Christopher Cowan",
+        description: "Grundläggande text som detaljerar den kompletta Spiral Dynamics-modellen, dess teoretiska bakgrund och praktiska tillämpningar inom olika domäner.",
+        link: "https://www.amazon.com/Spiral-Dynamics-Mastering-Values-Leadership/dp/1405133562"
+      },
+      {
+        title: "Levels of Human Existence",
+        author: "Clare W. Graves",
+        description: "Transkriptioner av Clare W. Graves ursprungliga föreläsningar om sin forskning och framväxten av värdesystem, redigerade av William R. Lee.",
+        link: "https://www.clarewgraves.com/source_content/books.html"
+      },
+      {
+        title: "The Never Ending Quest",
+        author: "Clare W. Graves, redigerad av Christopher Cowan & Natasha Todorovic",
+        description: "En omfattande samling av Clare W. Graves ursprungliga forskningsartiklar och skrifter om hans framväxande cykliska teori om vuxenutveckling.",
+        link: "https://www.spiraldynamics.org/books/"
+      },
+      {
+        title: "Integral Psychology",
+        author: "Ken Wilber",
+        description: "En integration av Spiral Dynamics med andra utvecklingsmodeller inom det bredare ramverket för Integral Theory.",
+        link: "https://www.amazon.com/Integral-Psychology-Consciousness-Therapy-Beyond/dp/1570625549"
+      }
+    ]
+  };
+
+  // Articles data
+  const articles = {
+    en: [
+      {
+        title: "The Emergent, Cyclical, Double-Helix Model of the Adult Human Biopsychosocial Systems",
+        author: "Clare W. Graves",
+        description: "Dr. Graves' original paper introducing his model of human development, published in the Journal of the Boston Society for the Study of Systems (1970).",
+        link: "https://www.clarewgraves.com/articles_content/1970_paper/1970_paper.html"
+      },
+      {
+        title: "Spiral Dynamics and the Evolution of Consciousness",
+        author: "Ken Wilber",
+        description: "An exploration of how Spiral Dynamics maps onto the broader integral theory framework, integrating stages of consciousness development.",
+        link: "https://integrallife.com/spiral-dynamics-integral/"
+      },
+      {
+        title: "Second Tier Leadership: The Integral Leader",
+        author: "Don Beck",
+        description: "This paper explores the characteristics and capabilities of leaders operating from second-tier consciousness levels (Yellow and beyond).",
+        link: "https://www.spiraldynamics.org/second-tier-leadership/"
+      },
+      {
+        title: "The Spiral Dynamics of Societal Conflicts",
+        author: "Said E. Dawlabani",
+        description: "An application of Spiral Dynamics to understanding and resolving complex social conflicts and global challenges.",
+        link: "https://www.memenomics.com/spiral-dynamics-of-conflict/"
+      }
+    ],
+    sv: [
+      {
+        title: "The Emergent, Cyclical, Double-Helix Model of the Adult Human Biopsychosocial Systems",
+        author: "Clare W. Graves",
+        description: "Dr. Graves ursprungliga artikel som introducerar hans modell för mänsklig utveckling, publicerad i Journal of the Boston Society for the Study of Systems (1970).",
+        link: "https://www.clarewgraves.com/articles_content/1970_paper/1970_paper.html"
+      },
+      {
+        title: "Spiral Dynamics och Medvetandets Evolution",
+        author: "Ken Wilber",
+        description: "En utforskning av hur Spiral Dynamics passar in i det bredare integrala teoriramen, som integrerar stadier av medvetandeutveckling.",
+        link: "https://integrallife.com/spiral-dynamics-integral/"
+      },
+      {
+        title: "Second Tier Leadership: Den integrala ledaren",
+        author: "Don Beck",
+        description: "Denna artikel utforskar egenskaper och förmågor hos ledare som verkar från second-tier medvetandenivåer (Gult och bortom).",
+        link: "https://www.spiraldynamics.org/second-tier-leadership/"
+      },
+      {
+        title: "Spiral Dynamics av samhälleliga konflikter",
+        author: "Said E. Dawlabani",
+        description: "En tillämpning av Spiral Dynamics för att förstå och lösa komplexa sociala konflikter och globala utmaningar.",
+        link: "https://www.memenomics.com/spiral-dynamics-of-conflict/"
+      }
+    ]
   };
 
   $: t = translations[$language];
@@ -157,276 +290,371 @@
       </p>
     </div>
 
-    <!-- Spiral Diagram -->
-    <div class="mb-12">
-      <SpiralDiagram 
-        language={$language} 
-        {activeStage}
-        on:stageSelect={handleStageSelect}
-      />
-      <p class="text-center text-sm text-gray-500 mt-4 italic">
-        {t.stageInstruction}
-      </p>
-    </div>
-
-    <!-- Theory Section -->
-    <div class="bg-white rounded-xl shadow-sm p-8 mb-12">
-      <h3 class="text-xl font-semibold mb-4">{t.emergenceTitle}</h3>
-      <p class="text-gray-600 mb-6">{t.emergenceText}</p>
-      
-      <h4 class="font-semibold text-gray-900 mb-3">{t.noteTitle}</h4>
-      <ul class="list-disc pl-5 space-y-2 text-gray-600">
-        {#each t.notes as note}
-          <li>{note}</li>
-        {/each}
-      </ul>
-    </div>
-
-    <!-- Stage Cards -->
-    <div class="space-y-6">
-      {#each Object.entries(stages) as [stageName, stageInfo]}
-        <div id="stage-{stageName}">
-          <StageCard
-            {stageInfo}
-            {stageName}
-            language={$language}
-            bind:expanded={expandedStages[stageName]}
-          />
-        </div>
-      {/each}
-    </div>
-    
-    <br><br>
-
-    <!-- Video Resources -->
+    <!-- Tab Navigation -->
     <div class="mb-8">
-      <h3 class="text-xl font-semibold mb-4">{t.resources.videosTitle}</h3>
-      
-      <!-- Series 1: Actualized.org -->
-      <div class="bg-gray-50 p-5 rounded-lg mb-6">
-        <h4 class="font-medium text-lg mb-2">Leo Gura (Actualized.org) - Spiral Dynamics Series</h4>
-        <p class="text-gray-600 mb-4">{t.resources.actualized}</p>
-        
-        <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          <a 
-            href="https://www.youtube.com/watch?v=23aDNBvn_2g" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+      <div class="border-b border-gray-200">
+        <nav class="flex space-x-4 overflow-x-auto" aria-label="Tabs">
+          <button
+            class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'overview' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
+            on:click={() => activeTab = 'overview'}
           >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.sdIntro}</span>
-          </a>
-
-          <a 
-            href="https://www.youtube.com/watch?v=BZFlE0eKTvw" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            {t.tabs.overview}
+          </button>
+          <button
+            class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'resources' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
+            on:click={() => activeTab = 'resources'}
           >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.sdPurple}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=XEHYK3TM2jc" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            {t.tabs.resources}
+          </button>
+          <button
+            class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'visualizations' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
+            on:click={() => activeTab = 'visualizations'}
           >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.sdRed}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=_5iLt1p-W1U" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.sdBlue}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=0zfw76P_Cq4" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.sdOrange}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=z_Gy3mTztgg" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.sdGreen}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=w0d1TsOcbQs" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.sdYellow}</span>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Series 2: Practical Integral -->
-      <div class="bg-gray-50 p-5 rounded-lg">
-        <h4 class="font-medium text-lg mb-2">Practical Integral - Spiral Dynamics Series</h4>
-        <p class="text-gray-600 mb-4">{t.resources.practicalIntegral}</p>
-        
-        <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          <a 
-            href="https://www.youtube.com/watch?v=f2BOuAQMJCc" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piIntro}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=8gZeey7WlKY" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piBeige}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=LZy_HyOYyjc" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piPurple}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=v14PeDpxCPU" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piRed}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=TdKW90ORxKM" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piBlue}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=sMIYt-9_4WI" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piOrange}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=apmExom33l8" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piGreen}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=DNvkbl9KKgg" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piYellow}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=-e1K_OhYILc" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piTurquoise}</span>
-          </a>
-          
-          <a 
-            href="https://www.youtube.com/watch?v=E9ngcvJ9dX0" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
-          >
-            <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <span class="text-sm">{t.resources.piCoral}</span>
-          </a>
-        </div>
+            {t.tabs.visualizations}
+          </button>
+        </nav>
       </div>
     </div>
 
+    <!-- Overview Tab -->
+    {#if activeTab === 'overview'}
+      <!-- Spiral Diagram -->
+      <div class="mb-12">
+        <SpiralDiagram 
+          language={$language} 
+          {activeStage}
+          on:stageSelect={handleStageSelect}
+        />
+        <p class="text-center text-sm text-gray-500 mt-4 italic">
+          {t.stageInstruction}
+        </p>
+      </div>
+
+      <!-- Theory Section -->
+      <div class="bg-white rounded-xl shadow-sm p-8 mb-12">
+        <h3 class="text-xl font-semibold mb-4">{t.emergenceTitle}</h3>
+        <p class="text-gray-600 mb-6">{t.emergenceText}</p>
+        
+        <h4 class="font-semibold text-gray-900 mb-3">{t.noteTitle}</h4>
+        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+          {#each t.notes as note}
+            <li>{note}</li>
+          {/each}
+        </ul>
+      </div>
+
+      <!-- Stage Cards -->
+      <div class="space-y-6">
+        {#each Object.entries(stages) as [stageName, stageInfo]}
+          <div id="stage-{stageName}">
+            <StageCard
+              {stageInfo}
+              {stageName}
+              language={$language}
+              bind:expanded={expandedStages[stageName]}
+            />
+          </div>
+        {/each}
+      </div>
+    {/if}
+
+    <!-- Resources Tab -->
+    {#if activeTab === 'resources'}
+      <div class="bg-white rounded-xl shadow-sm p-8 mb-8">
+        <!-- Books -->
+        <h3 class="text-xl font-semibold mb-4">{t.resources.booksTitle}</h3>
+        <div class="grid gap-4 md:grid-cols-2">
+          {#each books[currentLanguage] as book}
+            <div class="p-4 border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-sm transition-all">
+              <h4 class="font-medium mb-1">{book.title}</h4>
+              <p class="text-sm text-gray-500 mb-2">{book.author}</p>
+              <p class="text-gray-600 mb-3 text-sm">{book.description}</p>
+              {#if book.link}
+                <a 
+                  href={book.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="text-purple-600 flex items-center text-sm"
+                >
+                  <span>{t.resources.readMore}</span>
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              {/if}
+            </div>
+          {/each}
+        </div>
+
+        <!-- Articles & Papers -->
+        <h3 class="text-xl font-semibold mt-10 mb-4">{t.resources.articlesTitle}</h3>
+        <div class="grid gap-4 md:grid-cols-2">
+          {#each articles[currentLanguage] as article}
+            <div class="p-4 border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-sm transition-all">
+              <h4 class="font-medium mb-1">{article.title}</h4>
+              <p class="text-sm text-gray-500 mb-2">{article.author}</p>
+              <p class="text-gray-600 mb-3 text-sm">{article.description}</p>
+              {#if article.link}
+                <a 
+                  href={article.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="text-purple-600 flex items-center text-sm"
+                >
+                  <span>{t.resources.readMore}</span>
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              {/if}
+            </div>
+          {/each}
+        </div>
+
+        <!-- Video Resources -->
+        <h3 class="text-xl font-semibold mt-10 mb-4">{t.resources.videosTitle}</h3>
+        
+        <!-- Series 1: Actualized.org -->
+        <div class="bg-gray-50 p-5 rounded-lg mb-6">
+          <h4 class="font-medium text-lg mb-2">Leo Gura (Actualized.org) - Spiral Dynamics Series</h4>
+          <p class="text-gray-600 mb-4">{t.resources.actualized}</p>
+          
+          <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            <a 
+              href="https://www.youtube.com/watch?v=f2BOuAQMJCc" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.sdIntro}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=BZFlE0eKTvw" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.sdPurple}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=XEHYK3TM2jc" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.sdRed}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=_5iLt1p-W1U" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.sdBlue}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=0zfw76P_Cq4" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.sdOrange}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=z_Gy3mTztgg" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.sdGreen}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=w0d1TsOcbQs" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.sdYellow}</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Series 2: Practical Integral -->
+        <div class="bg-gray-50 p-5 rounded-lg">
+          <h4 class="font-medium text-lg mb-2">Practical Integral - Spiral Dynamics Series</h4>
+          <p class="text-gray-600 mb-4">{t.resources.practicalIntegral}</p>
+          
+          <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            <a 
+              href="https://www.youtube.com/watch?v=8gZeey7WlKY" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piBeige}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=LZy_HyOYyjc" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piPurple}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=v14PeDpxCPU" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piRed}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=TdKW90ORxKM" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piBlue}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=sMIYt-9_4WI" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piOrange}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=apmExom33l8" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piGreen}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=DNvkbl9KKgg" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piYellow}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=-e1K_OhYILc" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piTurquoise}</span>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/watch?v=E9ngcvJ9dX0" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center bg-white p-3 rounded border border-gray-200 hover:border-purple-500 hover:shadow-sm transition-all"
+            >
+              <svg class="w-10 h-10 text-red-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+              <span class="text-sm">{t.resources.piCoral}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    {/if}
+
+    <!-- Visualizations Tab (Placeholder for future interactive content) -->
+    {#if activeTab === 'visualizations'}
+      <div class="bg-white rounded-xl shadow-sm p-8 mb-12">
+        <h3 class="text-xl font-semibold mb-4">
+          {currentLanguage === 'en' ? 'Interactive Visualizations' : 'Interaktiva Visualiseringar'}
+        </h3>
+        <p class="text-gray-600 mb-8">
+          {currentLanguage === 'en' 
+            ? 'This section will feature interactive visualizations to help explore Spiral Dynamics concepts.' 
+            : 'Den här sektionen kommer att innehålla interaktiva visualiseringar för att hjälpa till att utforska Spiral Dynamics-koncept.'}
+        </p>
+        
+        <!-- Placeholder for future visualizations -->
+        <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+          <svg class="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+          <h4 class="text-lg font-medium text-gray-500 mb-2">
+            {currentLanguage === 'en' ? 'Coming Soon' : 'Kommer Snart'}
+          </h4>
+          <p class="text-gray-500">
+            {currentLanguage === 'en' 
+              ? 'Interactive visualizations are under development.' 
+              : 'Interaktiva visualiseringar är under utveckling.'}
+          </p>
+        </div>
+      </div>
+    {/if}
   </div>
 
   <br>
   <ShareButtons />
   <br>
-
 </div>

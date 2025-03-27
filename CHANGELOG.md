@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
   - Added curated collections of books, academic resources, and community links
   - Integrated case studies of successful governance implementations
 - **Video Resources**:
+  - Added essential books, articles and papers
   - Added Leo Gura's (Actualized.org) comprehensive Spiral Dynamics video series
   - Added Practical Integral's video series covering all stages from Beige to Coral
   - Organized videos in a user-friendly, responsive grid layout
@@ -19,6 +20,7 @@ All notable changes to this project will be documented in this file.
   - Improved translation consistency across multilingual components
 
 ### Changed
+- Created a tab navigation in the Explore page for better user flow
 - Reorganized tab navigation in the Governance section for better user flow
 - Improved mobile responsiveness of resource listings
 
