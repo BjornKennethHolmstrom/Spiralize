@@ -1,12 +1,13 @@
 <!-- src/routes/spiral/+page.svelte -->
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { stages } from '$lib/data/stages';
   import StageCard from '$lib/components/StageCard.svelte';
   import SpiralDiagram from '$lib/components/SpiralDiagram.svelte';
   import languageStore from '$lib/stores/languageStore';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
   import TabNav from '$lib/components/TabNav.svelte'; // Reuse existing TabNav component
-
+  import WorldSpiralMap from '$lib/components/WorldSpiralMap.svelte';
   const { language, toggleLanguage } = languageStore; 
 
   $: currentLanguage = $language;
@@ -245,6 +246,32 @@
     ]
   };
 
+  onMount(() => {
+    // Check for tab parameter in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabParam = urlParams.get('tab');
+    
+    // Set active tab based on URL parameter if it exists
+    if (tabParam) {
+      if (tabParam === 'visualizations' || tabParam === 'resources' || tabParam === 'overview') {
+        activeTab = tabParam;
+      }
+    }
+  });
+
+  // Update the URL when tab changes
+  function setActiveTab(tab) {
+    activeTab = tab;
+    updateUrl(tab);
+  }
+
+  // Update URL without refreshing page
+  function updateUrl(tab) {
+    const url = new URL(window.location);
+    url.searchParams.set('tab', tab);
+    window.history.pushState({}, '', url);
+  }
+
   $: t = translations[$language];
 
   function handleStageSelect(event: CustomEvent) {
@@ -298,19 +325,19 @@
         <nav class="flex space-x-4 overflow-x-auto" aria-label="Tabs">
           <button
             class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'overview' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
-            on:click={() => activeTab = 'overview'}
+            on:click={() => setActiveTab('overview')}
           >
             {t.tabs.overview}
           </button>
           <button
             class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'resources' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
-            on:click={() => activeTab = 'resources'}
+            on:click={() => setActiveTab('resources')}
           >
             {t.tabs.resources}
           </button>
           <button
             class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'visualizations' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
-            on:click={() => activeTab = 'visualizations'}
+            on:click={() => setActiveTab('visualizations')}
           >
             {t.tabs.visualizations}
           </button>
@@ -634,24 +661,25 @@
         <h3 class="text-xl font-semibold mb-4">
           {currentLanguage === 'en' ? 'Interactive Visualizations' : 'Interaktiva Visualiseringar'}
         </h3>
-        <p class="text-gray-600 mb-8">
-          {currentLanguage === 'en' 
-            ? 'This section will feature interactive visualizations to help explore Spiral Dynamics concepts.' 
-            : 'Den här sektionen kommer att innehålla interaktiva visualiseringar för att hjälpa till att utforska Spiral Dynamics-koncept.'}
-        </p>
-        
-        <!-- Placeholder for future visualizations -->
+        <!-- Global Spiral Map -->
+        <div class="mb-8">
+          <div class="bg-white rounded-lg shadow-sm p-6">
+            <WorldSpiralMap />
+          </div>
+        </div>
+
+        <!-- More visualizations coming soon -->
         <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
           <svg class="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
           </svg>
           <h4 class="text-lg font-medium text-gray-500 mb-2">
-            {currentLanguage === 'en' ? 'Coming Soon' : 'Kommer Snart'}
+            {currentLanguage === 'en' ? 'More Visualizations Coming Soon' : 'Fler Visualiseringar Kommer Snart'}
           </h4>
           <p class="text-gray-500">
             {currentLanguage === 'en' 
-              ? 'Interactive visualizations are under development.' 
-              : 'Interaktiva visualiseringar är under utveckling.'}
+              ? 'Additional interactive visualizations are under development.' 
+              : 'Ytterligare interaktiva visualiseringar är under utveckling.'}
           </p>
         </div>
       </div>

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.5] - Visualizations
+
+### Added
+- **Interactive Visualizations Tab**:
+  - Added interactive visualizations tab with a global Spiral Dynamics Map showing dominant stages for different countries.
+
 ## [0.3.4] - Resources Expansion and Video Content
 
 ### Added
