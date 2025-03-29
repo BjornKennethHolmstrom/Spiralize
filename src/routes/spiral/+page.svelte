@@ -70,6 +70,7 @@
         piCoral: "Stage Coral: Evolving Next Stage",
         booksTitle: "Essential Books",
         articlesTitle: "Articles & Papers",
+        articlesNone: "None at the moment. Tips on articles are very welcome!",
         readMore: "Read More",
         visitWebsite: "Visit Website"
       }
@@ -125,6 +126,7 @@
         piCoral: "Stadium Coral: Utvecklande Nästa Stadium",
         booksTitle: "Viktiga Böcker",
         articlesTitle: "Artiklar & Uppsatser",
+        articlesNone: "Inga artiklar för tillfället. Tips mottages tacksamt!",
         readMore: "Läs Mer",
         visitWebsite: "Besök Webbplats"
       }
@@ -144,7 +146,7 @@
         title: "Levels of Human Existence",
         author: "Clare W. Graves",
         description: "Transcriptions of Clare W. Graves' original talks on his research and the emergence of value systems, edited by William R. Lee.",
-        link: "https://www.clarewgraves.com/source_content/books.html"
+        link: "https://spiraldynamics.org/shop/clare-w-graves-levels-human-existence/"
       },
       {
         title: "The Never Ending Quest",
@@ -170,7 +172,7 @@
         title: "Levels of Human Existence",
         author: "Clare W. Graves",
         description: "Transkriptioner av Clare W. Graves ursprungliga föreläsningar om sin forskning och framväxten av värdesystem, redigerade av William R. Lee.",
-        link: "https://www.clarewgraves.com/source_content/books.html"
+        link: "https://spiraldynamics.org/shop/clare-w-graves-levels-human-existence/"
       },
       {
         title: "The Never Ending Quest",
@@ -190,7 +192,7 @@
   // Articles data
   const articles = {
     en: [
-      {
+ /*     {
         title: "The Emergent, Cyclical, Double-Helix Model of the Adult Human Biopsychosocial Systems",
         author: "Clare W. Graves",
         description: "Dr. Graves' original paper introducing his model of human development, published in the Journal of the Boston Society for the Study of Systems (1970).",
@@ -213,10 +215,10 @@
         author: "Said E. Dawlabani",
         description: "An application of Spiral Dynamics to understanding and resolving complex social conflicts and global challenges.",
         link: "https://www.memenomics.com/spiral-dynamics-of-conflict/"
-      }
+      }*/
     ],
     sv: [
-      {
+/*      {
         title: "The Emergent, Cyclical, Double-Helix Model of the Adult Human Biopsychosocial Systems",
         author: "Clare W. Graves",
         description: "Dr. Graves ursprungliga artikel som introducerar hans modell för mänsklig utveckling, publicerad i Journal of the Boston Society for the Study of Systems (1970).",
@@ -239,7 +241,7 @@
         author: "Said E. Dawlabani",
         description: "En tillämpning av Spiral Dynamics för att förstå och lösa komplexa sociala konflikter och globala utmaningar.",
         link: "https://www.memenomics.com/spiral-dynamics-of-conflict/"
-      }
+      }*/
     ]
   };
 
@@ -388,6 +390,8 @@
 
         <!-- Articles & Papers -->
         <h3 class="text-xl font-semibold mt-10 mb-4">{t.resources.articlesTitle}</h3>
+        {t.resources.articlesNone}
+
         <div class="grid gap-4 md:grid-cols-2">
           {#each articles[currentLanguage] as article}
             <div class="p-4 border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-sm transition-all">
