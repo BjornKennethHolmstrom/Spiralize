@@ -20,31 +20,28 @@
     return stages[stage]?.color || "#808080";
   }
 
-  // Translate interaction based on stages selected
-  function getInteractionText(stage1: string, stage2: string): string {
-    if (!stage1 || !stage2) return '';
+  // Get interaction data based on stages selected
+  function getInteractionData(stage1: string, stage2: string): any {
+    if (!stage1 || !stage2) return null;
     
     // Try different key combinations to find the data
     const standardKey = `${stage1}-${stage2}`;
     const reversedKey = `${stage2}-${stage1}`;
     
     // First try the direct keys
-    if (stageInteractions[standardKey]?.[currentLanguage]) {
-      return stageInteractions[standardKey][currentLanguage];
+    if (stageInteractions[standardKey]) {
+      return stageInteractions[standardKey];
     }
     
-    if (stageInteractions[reversedKey]?.[currentLanguage]) {
-      return stageInteractions[reversedKey][currentLanguage];
+    if (stageInteractions[reversedKey]) {
+      return stageInteractions[reversedKey];
     }
     
     // If that doesn't work, try sorting alphabetically
     const sortedStages = [stage1, stage2].sort();
     const sortedKey = `${sortedStages[0]}-${sortedStages[1]}`;
     
-    return stageInteractions[sortedKey]?.[currentLanguage] || 
-      (currentLanguage === 'en' 
-        ? `The interaction between ${stage1} and ${stage2} is complex and multifaceted.` 
-        : `Interaktionen mellan ${stage1} och ${stage2} är komplex och mångfacetterad.`);
+    return stageInteractions[sortedKey] || null;
   }
 
   // Translations for UI elements
@@ -55,6 +52,8 @@
       select1: "Select First Stage",
       select2: "Select Second Stage",
       interaction: "Stage Interaction",
+      clashes: "Potential Clashes",
+      bridging: "Bridging Strategies",
       characteristics: "Stage Characteristics",
       worldview: "Worldview",
       values: "Core Values",
@@ -69,6 +68,8 @@
       select1: "Välj Första Stadiet",
       select2: "Välj Andra Stadiet",
       interaction: "Stadieinteraktion",
+      clashes: "Potentiella Konflikter",
+      bridging: "Överbryggande Strategier",
       characteristics: "Stadieegenskaper",
       worldview: "Världsbild",
       values: "Kärnvärden",
@@ -80,7 +81,7 @@
   };
 
   $: t = translations[currentLanguage];
-  $: interactionText = getInteractionText(selectedStage1, selectedStage2);
+  $: interactionData = getInteractionData(selectedStage1, selectedStage2);
 </script>
 
 <div class="bg-white rounded-xl shadow-sm p-6">
@@ -133,14 +134,29 @@
   </div>
   
   <!-- Interaction Display -->
-  {#if selectedStage1 && selectedStage2}
-    <div class="bg-gray-50 p-6 rounded-lg mb-8">
-      <h3 class="text-lg font-medium mb-4">{t.interaction}</h3>
-      <p class="text-gray-700">{interactionText}</p>
+  {#if selectedStage1 && selectedStage2 && interactionData}
+    <div class="space-y-6">
+      <!-- Main Interaction -->
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-medium mb-4">{t.interaction}</h3>
+        <p class="text-gray-700">{interactionData[currentLanguage]}</p>
+      </div>
+      
+      <!-- Potential Clashes -->
+      <div class="bg-red-50 p-6 rounded-lg">
+        <h3 class="text-lg font-medium mb-4 text-red-700">{t.clashes}</h3>
+        <p class="text-gray-700">{interactionData.clashes[currentLanguage]}</p>
+      </div>
+      
+      <!-- Bridging Strategies -->
+      <div class="bg-green-50 p-6 rounded-lg">
+        <h3 class="text-lg font-medium mb-4 text-green-700">{t.bridging}</h3>
+        <p class="text-gray-700">{interactionData.bridging[currentLanguage]}</p>
+      </div>
     </div>
     
     <!-- Characteristics Comparison -->
-    <h3 class="text-lg font-medium mb-4">{t.characteristics}</h3>
+    <h3 class="text-lg font-medium my-6">{t.characteristics}</h3>
     <div class="overflow-x-auto">
       <table class="min-w-full border-collapse">
         <thead>
