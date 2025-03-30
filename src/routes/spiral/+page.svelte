@@ -8,6 +8,7 @@
   import ShareButtons from '$lib/components/ShareButtons.svelte';
   import TabNav from '$lib/components/TabNav.svelte'; // Reuse existing TabNav component
   import WorldSpiralMap from '$lib/components/WorldSpiralMap.svelte';
+  import StageComparisonVisualization from '$lib/components/StageComparisonVisualization.svelte';
   const { language, toggleLanguage } = languageStore; 
 
   $: currentLanguage = $language;
@@ -661,10 +662,18 @@
         <h3 class="text-xl font-semibold mb-4">
           {currentLanguage === 'en' ? 'Interactive Visualizations' : 'Interaktiva Visualiseringar'}
         </h3>
+
         <!-- Global Spiral Map -->
         <div class="mb-8">
           <div class="bg-white rounded-lg shadow-sm p-6">
             <WorldSpiralMap />
+          </div>
+        </div>
+
+        <!-- Stage Comparison Matrix -->
+        <div class="mb-8">
+          <div class="bg-white rounded-lg shadow-sm">
+            <StageComparisonVisualization />
           </div>
         </div>
 
