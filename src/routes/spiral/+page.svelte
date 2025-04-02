@@ -9,6 +9,7 @@
   import TabNav from '$lib/components/TabNav.svelte'; // Reuse existing TabNav component
   import WorldSpiralMap from '$lib/components/WorldSpiralMap.svelte';
   import StageComparisonVisualization from '$lib/components/StageComparisonVisualization.svelte';
+  import PersonalSpiralBuilder from '$lib/components/PersonalSpiralBuilder.svelte';
   const { language, toggleLanguage } = languageStore; 
 
   $: currentLanguage = $language;
@@ -294,6 +295,40 @@
   $: description = currentLanguage === 'en'
     ? 'Explore all stages of Spiral Dynamics from Beige to Ultraviolet. Learn how human consciousness evolves through different value systems and worldviews.'
     : 'Utforska alla stadier av Spiral Dynamics från Beige till Ultraviolett. Lär dig hur mänskligt medvetande utvecklas genom olika värdesystem och världsbilder.';
+
+  // Helper function to get parameters from URL
+  function getQuizResultsFromURL() {
+    // Using browser's URL API instead of $page
+    const url = new URL(window.location.href);
+    
+    let stageScores = null;
+    let dominantStage = null;
+    let secondaryStage = null;
+    
+    if (url.searchParams.has('fromQuiz')) {
+      try {
+        stageScores = JSON.parse(decodeURIComponent(url.searchParams.get('fromQuiz')));
+      } catch (e) {
+        console.error('Error parsing stageScores from URL', e);
+      }
+    }
+    
+    if (url.searchParams.has('dominant')) {
+      dominantStage = url.searchParams.get('dominant');
+    }
+    
+    if (url.searchParams.has('secondary')) {
+      secondaryStage = url.searchParams.get('secondary');
+    }
+    
+    return { stageScores, dominantStage, secondaryStage };
+  }
+
+  let quizResults = { stageScores: null, dominantStage: null, secondaryStage: null };
+
+  onMount(() => {
+    quizResults = getQuizResultsFromURL();
+  });
 
 </script>
 
@@ -677,20 +712,15 @@
           </div>
         </div>
 
-        <!-- More visualizations coming soon -->
-        <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-          <svg class="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-          </svg>
-          <h4 class="text-lg font-medium text-gray-500 mb-2">
-            {currentLanguage === 'en' ? 'More Visualizations Coming Soon' : 'Fler Visualiseringar Kommer Snart'}
-          </h4>
-          <p class="text-gray-500">
-            {currentLanguage === 'en' 
-              ? 'Additional interactive visualizations are under development.' 
-              : 'Ytterligare interaktiva visualiseringar är under utveckling.'}
-          </p>
+        <!-- Personal Spiral Builder -->
+        <div class="mb-8">
+          <PersonalSpiralBuilder 
+            stageScores={quizResults.stageScores}
+            dominantStage={quizResults.dominantStage}
+            secondaryStage={quizResults.secondaryStage}
+          />
         </div>
+
       </div>
     {/if}
   </div>

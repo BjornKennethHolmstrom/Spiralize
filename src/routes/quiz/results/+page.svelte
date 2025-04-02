@@ -293,6 +293,27 @@
         </button>
       </div>
 
+      <!-- Explore visualizations banner -->
+      <div class="mt-8 mb-8 bg-blue-50 p-6 rounded-lg border border-blue-200">
+        <h3 class="font-semibold text-lg text-blue-800 mb-2">
+          {currentLanguage === 'en' ? 'Explore More Visualizations' : 'Utforska Fler Visualiseringar'}
+        </h3>
+        <p class="text-blue-700 mb-4">
+          {currentLanguage === 'en' 
+            ? 'Continue your journey by exploring interactive visualizations that help you understand Spiral Dynamics in greater depth. Build your own personal spiral based on these results!'
+            : 'Fortsätt din resa genom att utforska interaktiva visualiseringar som hjälper dig förstå Spiral Dynamics på djupet. Bygg din egen personliga spiral baserad på dessa resultat!'}
+        </p>
+        <a 
+          href="{base}/spiral?tab=visualizations&fromQuiz={encodeURIComponent(JSON.stringify(stageScores))}&dominant={dominantStage}&secondary={secondaryStage}"
+          class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          <span>{currentLanguage === 'en' ? 'Build Your Spiral' : 'Bygg Din Spiral'}</span>
+          <svg class="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+
       <div class="flex justify-center gap-4 mt-8">
         <button
           on:click={() => {
