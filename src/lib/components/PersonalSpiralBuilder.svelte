@@ -266,14 +266,14 @@
         name: "Elon Musk",
         scores: {
           beige: 5,
-          purple: 0,
-          red: 10,
-          blue: 5,
-          orange: 35,
-          green: 5,
-          yellow: 30,
-          turquoise: 10,
-          coral: 0,
+          purple: 5,
+          red: 15,
+          blue: 10,
+          orange: 25,
+          green: 10,
+          yellow: 25,
+          turquoise: 15,
+          coral: 10,
           ultraviolet: 0
         },
         dominant: "orange",
@@ -317,7 +317,64 @@
         dominant: "blue",
         secondary: "green",
         note: "Centered in traditional moral structure while expressing openness to inclusive dialogue and modern adaptations within a consistent ethical framework."
-      }
+      },
+      {
+            id: "preset-cleopatra",
+            name: "Cleopatra",
+            scores: {
+              beige: 10,
+              purple: 20,
+              red: 25,
+              blue: 15,
+              orange: 15,
+              green: 5,
+              yellow: 5,
+              turquoise: 0,
+              coral: 0,
+              ultraviolet: 0
+            },
+            dominant: "red",
+            secondary: "purple",
+            note: "A dynamic ruler who wielded power (Red) with flair and leveraged tribal loyalty and mystique (Purple) to maintain her throne, while showing strategic savvy (Orange) in alliances with Rome."
+          },
+          {
+            id: "preset-mother-teresa",
+            name: "Mother Teresa",
+            scores: {
+              beige: 10,
+              purple: 15,
+              red: 5,
+              blue: 30,
+              orange: 5,
+              green: 20,
+              yellow: 10,
+              turquoise: 5,
+              coral: 0,
+              ultraviolet: 0
+            },
+            dominant: "blue",
+            secondary: "green",
+            note: "Anchored in unwavering religious devotion (Blue) with a heartfelt mission to serve the downtrodden (Green), driven by a simple, duty-bound approach to alleviating suffering."
+          },
+          {
+            id: "preset-genghis-khan",
+            name: "Genghis Khan",
+            scores: {
+              beige: 15,
+              purple: 20,
+              red: 35,
+              blue: 10,
+              orange: 15,
+              green: 5,
+              yellow: 5,
+              turquoise: 0,
+              coral: 0,
+              ultraviolet: 0
+            },
+            dominant: "red",
+            secondary: "purple",
+            note: "A fierce conqueror (Red) who unified tribes under a shared identity (Purple) and used ruthless strategy (Orange) to build one of history’s largest empires."
+          }
     ],
     sv: [
       {
@@ -471,7 +528,64 @@
         dominant: "blue",
         secondary: "green",
         note: "Centrerad i traditionell moralisk struktur samtidigt som öppenhet för inkluderande dialog och moderna anpassningar inom ett konsekvent etiskt ramverk uttrycks."
-      }
+      },
+      {
+            id: "preset-cleopatra",
+            name: "Kleopatra",
+            scores: {
+              beige: 10,
+              purple: 20,
+              red: 25,
+              blue: 15,
+              orange: 15,
+              green: 5,
+              yellow: 5,
+              turquoise: 0,
+              coral: 0,
+              ultraviolet: 0
+            },
+            dominant: "red",
+            secondary: "purple",
+            note: "En dynamisk härskare som utövade makt (Röd) med stil och utnyttjade stamlojalitet och mystik (Lila) för att behålla sin tron, samtidigt som hon visade strategisk skicklighet (Orange) i allianser med Rom."
+          },
+          {
+            id: "preset-mother-teresa",
+            name: "Moder Teresa",
+            scores: {
+              beige: 10,
+              purple: 15,
+              red: 5,
+              blue: 30,
+              orange: 5,
+              green: 20,
+              yellow: 10,
+              turquoise: 5,
+              coral: 0,
+              ultraviolet: 0
+            },
+            dominant: "blue",
+            secondary: "green",
+            note: "Förankrad i orubblig religiös hängivenhet (Blå) med ett hjärtligt uppdrag att tjäna de förtryckta (Grön), driven av en enkel, pliktbunden inställning till att lindra lidande."
+          },
+          {
+            id: "preset-genghis-khan",
+            name: "Djengis Khan",
+            scores: {
+              beige: 15,
+              purple: 20,
+              red: 35,
+              blue: 10,
+              orange: 15,
+              green: 5,
+              yellow: 5,
+              turquoise: 0,
+              coral: 0,
+              ultraviolet: 0
+            },
+            dominant: "red",
+            secondary: "purple",
+            note: "En hänsynslös erövrare (Röd) som enade stammar under en gemensam identitet (Lila) och använde skoningslös strategi (Orange) för att bygga ett av historiens största imperier."
+          }
     ]
   };
 
