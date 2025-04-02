@@ -1,12 +1,12 @@
 <script lang="ts">
   import { onMount, createEventDispatcher, tick } from 'svelte';
-  import { slide } from 'svelte/transition';
+  import { slide, fade } from 'svelte/transition';
   import { stages } from '$lib/data/stages';
   import type { SpiralStage } from '$lib/types/spiral';
   import languageStore from '$lib/stores/languageStore';
   import html2canvas from 'html2canvas';
   import { dominantStageExplanations, getCombinationExplanation } from '$lib/data/stageExplanations';
-
+ 
   // Accept quiz results as props or use default empty values
   export let stageScores: Record<SpiralStage, number> = null;
   export let dominantStage: SpiralStage = null;
@@ -25,6 +25,8 @@
   let isDownloading = false;
   let showInsights = false;
   let showTips = false;
+  let showPresetLibrary = false;
+  let previewedPreset = null;
   let savedProfiles: Array<{
     name: string;
     scores: Record<SpiralStage, number>;
@@ -92,6 +94,12 @@
             description: "Share and discuss profiles with friends or colleagues to bridge understanding across different value systems."
           }
         ]
+      },
+      presetLibrary: {
+        title: "Famous Profiles Library",
+        description: "Explore spiral profiles of notable historical and contemporary figures.",
+        loadPreset: "Load Profile",
+        previewPreset: "Preview"
       }
     },
     sv: {
@@ -145,8 +153,326 @@
             description: "Dela och diskutera profiler med vänner eller kollegor för att överbrygga förståelse mellan olika värdesystem."
           }
         ]
+      },
+      presetLibrary: {
+        title: "Berömda Profilers Bibliotek",
+        description: "Utforska spiralprofiler av anmärkningsvärda historiska och samtida personer.",
+        loadPreset: "Ladda Profil",
+        previewPreset: "Förhandsgranska"
       }
     }
+  };
+
+  // Famous figures profile presets for the Spiral Builder
+  const famousProfilePresets = {
+    en: [
+      {
+        id: "preset-gandhi",
+        name: "Mahatma Gandhi",
+        scores: {
+          beige: 5,
+          purple: 10,
+          red: 5,
+          blue: 15,
+          orange: 10,
+          green: 25,
+          yellow: 20,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "green",
+        secondary: "yellow",
+        note: "Known for his nonviolent resistance and community-focused approach to social change, with an integrated systems understanding of how to achieve justice."
+      },
+      {
+        id: "preset-einstein",
+        name: "Albert Einstein",
+        scores: {
+          beige: 5,
+          purple: 5,
+          red: 5,
+          blue: 10,
+          orange: 15,
+          green: 10,
+          yellow: 25,
+          turquoise: 15,
+          coral: 10,
+          ultraviolet: 0
+        },
+        dominant: "yellow",
+        secondary: "turquoise",
+        note: "Combined breakthrough scientific thinking with systemic understanding of complex patterns, occasionally pioneering entirely new paradigms (Coral) that transcended conventional frameworks. His later work reflected increasingly holistic (Turquoise) perspectives."
+      },
+      {
+        id: "preset-mandela",
+        name: "Nelson Mandela",
+        scores: {
+          beige: 5,
+          purple: 10,
+          red: 5,
+          blue: 15,
+          orange: 10,
+          green: 20,
+          yellow: 25,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "yellow",
+        secondary: "green",
+        note: "Demonstrated remarkable ability to integrate multiple perspectives and adapt to changing conditions while maintaining focus on reconciliation and community."
+      },
+      {
+        id: "preset-buddha",
+        name: "Gautama Buddha",
+        scores: {
+          beige: 5,
+          purple: 10,
+          red: 0,
+          blue: 5,
+          orange: 5,
+          green: 15,
+          yellow: 20,
+          turquoise: 25,
+          coral: 15,
+          ultraviolet: 0
+        },
+        dominant: "turquoise",
+        secondary: "yellow",
+        note: "His teachings emphasized holistic awareness, interconnectedness of all life, and systemic understanding of mind and reality."
+      },
+      {
+        id: "preset-mlk",
+        name: "Martin Luther King Jr.",
+        scores: {
+          beige: 5,
+          purple: 5,
+          red: 5,
+          blue: 20,
+          orange: 10,
+          green: 25,
+          yellow: 20,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "green",
+        secondary: "yellow",
+        note: "Combined strong moral principles (Blue) with inclusive community values (Green) and systemic understanding of social change (Yellow)."
+      },
+      {
+        id: "preset-musk",
+        name: "Elon Musk",
+        scores: {
+          beige: 5,
+          purple: 0,
+          red: 10,
+          blue: 5,
+          orange: 35,
+          green: 5,
+          yellow: 30,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "orange",
+        secondary: "yellow",
+        note: "Exemplifies achievement-oriented thinking combined with systems understanding, focusing on technological solutions to planetary challenges."
+      },
+      {
+        id: "preset-aoc",
+        name: "Alexandria Ocasio-Cortez",
+        scores: {
+          beige: 5,
+          purple: 5,
+          red: 10,
+          blue: 10,
+          orange: 15,
+          green: 35,
+          yellow: 15,
+          turquoise: 5,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "green",
+        secondary: "orange",
+        note: "Strongly community-focused with emphasis on social justice and equality, while utilizing strategic thinking to achieve progressive goals."
+      },
+      {
+        id: "preset-jpii",
+        name: "Pope John Paul II",
+        scores: {
+          beige: 5,
+          purple: 15,
+          red: 0,
+          blue: 30,
+          orange: 10,
+          green: 15,
+          yellow: 15,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "blue",
+        secondary: "green",
+        note: "Centered in traditional moral structure while expressing openness to inclusive dialogue and modern adaptations within a consistent ethical framework."
+      }
+    ],
+    sv: [
+      {
+        id: "preset-gandhi",
+        name: "Mahatma Gandhi",
+        scores: {
+          beige: 5,
+          purple: 10,
+          red: 5,
+          blue: 15,
+          orange: 10,
+          green: 25,
+          yellow: 20,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "green",
+        secondary: "yellow",
+        note: "Känd för sitt ickevåldsmotstånd och gemenskapsfokuserade tillvägagångssätt för social förändring, med en integrerad systemförståelse av hur rättvisa kan uppnås."
+      },
+      {
+        id: "preset-einstein",
+        name: "Albert Einstein",
+        scores: {
+          beige: 5,
+          purple: 5,
+          red: 5,
+          blue: 10,
+          orange: 15,
+          green: 10,
+          yellow: 25,
+          turquoise: 15,
+          coral: 10,
+          ultraviolet: 0
+        },
+        dominant: "yellow",
+        secondary: "turquoise",
+        note: "Kombinerade banbrytande vetenskapligt tänkande med systemisk förståelse av komplexa mönster, emellanåt banbrytande helt nya paradigm (Coral) som transcenderade konventionella ramar. Hans senare arbete återspeglade alltmer holistiska (Turquoise) perspektiv."
+      },
+      {
+        id: "preset-mandela",
+        name: "Nelson Mandela",
+        scores: {
+          beige: 5,
+          purple: 10,
+          red: 5,
+          blue: 15,
+          orange: 10,
+          green: 20,
+          yellow: 25,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "yellow",
+        secondary: "green",
+        note: "Visade anmärkningsvärd förmåga att integrera flera perspektiv och anpassa sig till förändrade förhållanden samtidigt som fokus på försoning och gemenskap upprätthölls."
+      },
+      {
+        id: "preset-buddha",
+        name: "Gautama Buddha",
+        scores: {
+          beige: 5,
+          purple: 10,
+          red: 0,
+          blue: 5,
+          orange: 5,
+          green: 15,
+          yellow: 20,
+          turquoise: 25,
+          coral: 15,
+          ultraviolet: 0
+        },
+        dominant: "turquoise",
+        secondary: "yellow",
+        note: "Hans läror betonade holistisk medvetenhet, sammankoppling av allt liv, och systemisk förståelse av sinne och verklighet."
+      },
+      {
+        id: "preset-mlk",
+        name: "Martin Luther King Jr.",
+        scores: {
+          beige: 5,
+          purple: 5,
+          red: 5,
+          blue: 20,
+          orange: 10,
+          green: 25,
+          yellow: 20,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "green",
+        secondary: "yellow",
+        note: "Kombinerade starka moraliska principer (Blå) med inkluderande gemenskapsvärderingar (Grön) och systemisk förståelse av social förändring (Gul)."
+      },
+      {
+        id: "preset-musk",
+        name: "Elon Musk",
+        scores: {
+          beige: 5,
+          purple: 0,
+          red: 10,
+          blue: 5,
+          orange: 35,
+          green: 5,
+          yellow: 30,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "orange",
+        secondary: "yellow",
+        note: "Exemplifierar prestationsorienterat tänkande kombinerat med systemförståelse, med fokus på teknologiska lösningar för planetära utmaningar."
+      },
+      {
+        id: "preset-aoc",
+        name: "Alexandria Ocasio-Cortez",
+        scores: {
+          beige: 5,
+          purple: 5,
+          red: 10,
+          blue: 10,
+          orange: 15,
+          green: 35,
+          yellow: 15,
+          turquoise: 5,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "green",
+        secondary: "orange",
+        note: "Starkt gemenskapsfokuserad med betoning på social rättvisa och jämlikhet, samtidigt som strategiskt tänkande används för att uppnå progressiva mål."
+      },
+      {
+        id: "preset-jpii",
+        name: "Påve Johannes Paulus II",
+        scores: {
+          beige: 5,
+          purple: 15,
+          red: 0,
+          blue: 30,
+          orange: 10,
+          green: 15,
+          yellow: 15,
+          turquoise: 10,
+          coral: 0,
+          ultraviolet: 0
+        },
+        dominant: "blue",
+        secondary: "green",
+        note: "Centrerad i traditionell moralisk struktur samtidigt som öppenhet för inkluderande dialog och moderna anpassningar inom ett konsekvent etiskt ramverk uttrycks."
+      }
+    ]
   };
 
   // Find dominant and secondary stages based on scores
@@ -820,6 +1146,162 @@
           </div>
         </div>
       {:else}
+        <div class="bg-gray-50 p-4 rounded-lg mb-6">
+          <div class="flex justify-between items-center cursor-pointer mb-2" on:click={() => showPresetLibrary = !showPresetLibrary}>
+            <h3 class="font-medium">{t.presetLibrary.title}</h3>
+            <svg 
+              class="w-5 h-5 text-gray-500 transform transition-transform duration-200"
+              class:rotate-180={showPresetLibrary}
+              viewBox="0 0 20 20" 
+              fill="currentColor"
+            >
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          
+          <p class="text-sm text-gray-600 mb-3">{t.presetLibrary.description}</p>
+          
+          {#if showPresetLibrary}
+            <div transition:slide={{ duration: 300 }} class="grid grid-cols-1 gap-3 mt-4">
+              {#each famousProfilePresets[currentLanguage] as preset}
+                <div class="border border-gray-200 rounded-lg p-4 bg-white hover:shadow-sm transition-all relative">
+                  <div class="flex flex-col">
+                    <div class="flex justify-between items-start mb-2">
+                      <h4 class="font-medium text-lg">{preset.name}</h4>
+                      <div class="flex gap-2">
+                        <!-- Preview button -->
+                        <button
+                          on:click={() => previewedPreset = preset}
+                          class="text-blue-600 hover:text-blue-800 text-sm px-3 py-1 border border-blue-200 rounded hover:bg-blue-50"
+                        >
+                          {t.presetLibrary.previewPreset}
+                        </button>
+                        
+                        <!-- Load button -->
+                        <button
+                          on:click={() => {
+                            // Load the preset into the customizer
+                            customScores = { ...preset.scores };
+                            profileName = `${preset.name} (${currentLanguage === 'en' ? 'Custom' : 'Anpassad'})`;
+                            noteText = preset.note;
+                            isCustomizing = true;
+                          }}
+                          class="bg-purple-600 text-white text-sm px-3 py-1 rounded hover:bg-purple-700"
+                        >
+                          {t.presetLibrary.loadPreset}
+                        </button>
+                      </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <div class="flex items-center gap-2 mt-1">
+                        <span class="bg-gray-100 px-2 py-1 rounded capitalize" style="color: {getStageColor(preset.dominant)}; border: 1px solid {getStageColor(preset.dominant)}">
+                          {preset.dominant}
+                        </span>
+                        <span>+</span>
+                        <span class="bg-gray-100 px-2 py-1 rounded capitalize" style="color: {getStageColor(preset.secondary)}; border: 1px solid {getStageColor(preset.secondary)}">
+                          {preset.secondary}
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600">{preset.note}</p>
+                  </div>
+                </div>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        {#if previewedPreset}
+          <div 
+            class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+            on:click|self={() => previewedPreset = null}
+            on:keydown={(e) => e.key === 'Escape' && (previewedPreset = null)}
+          >
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-auto" transition:fade={{ duration: 200 }}>
+              <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+                <h3 class="text-lg font-medium">{previewedPreset.name}</h3>
+                <button 
+                  on:click={() => previewedPreset = null}
+                  class="text-gray-500 hover:text-gray-700"
+                >
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="p-6">
+                <!-- Stage information -->
+                <div class="mb-4">
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="font-medium">{t.dominantStage}:</span>
+                    <span class="stage-badge" style="background-color: {getStageColor(previewedPreset.dominant)}">
+                      {previewedPreset.dominant.charAt(0).toUpperCase() + previewedPreset.dominant.slice(1)}
+                    </span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-medium">{t.secondaryStage}:</span>
+                    <span class="stage-badge" style="background-color: {getStageColor(previewedPreset.secondary)}">
+                      {previewedPreset.secondary.charAt(0).toUpperCase() + previewedPreset.secondary.slice(1)}
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Stage Distribution Visualization -->
+                <div class="mt-6">
+                  <h4 class="font-medium mb-3">{t.stageDistribution}</h4>
+                  {#each stageKeys as stage}
+                    <div class="mb-3">
+                      <div class="flex justify-between mb-1">
+                        <span class="font-medium capitalize">{stage}</span>
+                        <span>{previewedPreset.scores[stage]}%</span>
+                      </div>
+                      <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div
+                          class="h-2.5 rounded-full transition-all duration-300"
+                          style="width: {previewedPreset.scores[stage]}%; 
+                                 background-color: {getStageColor(stage)}"
+                        ></div>
+                      </div>
+                    </div>
+                  {/each}
+                </div>
+
+                <!-- Profile description -->
+                <div class="mt-4 p-3 bg-gray-50 rounded-lg">
+                  <p class="text-gray-600">{previewedPreset.note}</p>
+                </div>
+                
+                <!-- Load and close buttons -->
+                <div class="mt-6 flex justify-end gap-3">
+                  <button
+                    on:click={() => previewedPreset = null}
+                    class="px-4 py-2 border border-gray-300 rounded-lg"
+                  >
+                    {currentLanguage === 'en' ? 'Close' : 'Stäng'}
+                  </button>
+                  
+                  <button
+                    on:click={() => {
+                      // Load the preset into the customizer
+                      customScores = { ...previewedPreset.scores };
+                      profileName = `${previewedPreset.name} (${currentLanguage === 'en' ? 'Custom' : 'Anpassad'})`;
+                      noteText = previewedPreset.note;
+                      isCustomizing = true;
+                      previewedPreset = null; // Close the modal
+                    }}
+                    class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700"
+                  >
+                    {t.presetLibrary.loadPreset}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        {/if}
+
         <!-- Saved Profiles Section with Selectable Cards -->
         <div class="bg-gray-50 p-4 rounded-lg">
           <h3 class="font-medium mb-4">{t.savedProfiles}</h3>
