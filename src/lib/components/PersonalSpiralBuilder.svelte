@@ -1,9 +1,11 @@
 <script lang="ts">
   import { onMount, createEventDispatcher, tick } from 'svelte';
+  import { slide } from 'svelte/transition';
   import { stages } from '$lib/data/stages';
   import type { SpiralStage } from '$lib/types/spiral';
   import languageStore from '$lib/stores/languageStore';
   import html2canvas from 'html2canvas';
+  import { dominantStageExplanations, getCombinationExplanation } from '$lib/data/stageExplanations';
 
   // Accept quiz results as props or use default empty values
   export let stageScores: Record<SpiralStage, number> = null;
@@ -21,6 +23,8 @@
   let isCustomizing = false;
   let spiralCanvas: HTMLDivElement;
   let isDownloading = false;
+  let showInsights = false;
+  let showTips = false;
   let savedProfiles: Array<{
     name: string;
     scores: Record<SpiralStage, number>;
@@ -62,7 +66,33 @@
       confirmDelete: "Are you sure you want to delete this profile?",
       yes: "Yes",
       no: "No",
-      cancel: "Cancel"
+      cancel: "Cancel",
+      usageTips: {
+        title: "How to Use the Spiral Builder",
+        description: "The Personal Spiral Builder can be a powerful tool for self-discovery and analysis:",
+        tips: [
+          {
+            title: "Track Personal Growth",
+            description: "Save profiles at different points in your life to visualize your developmental journey over time."
+          },
+          {
+            title: "Analyze Organizations & Groups",
+            description: "Create profiles that represent companies, teams, or communities to better understand their values and approaches."
+          },
+          {
+            title: "Explore Hypothetical Scenarios",
+            description: "Build profiles for different contexts in your life (work, family, hobbies) to see how your values may shift."
+          },
+          {
+            title: "Compare Cultural Differences",
+            description: "Create profiles for different societies or cultural groups to understand diverse worldviews."
+          },
+          {
+            title: "Facilitate Communication",
+            description: "Share and discuss profiles with friends or colleagues to bridge understanding across different value systems."
+          }
+        ]
+      }
     },
     sv: {
       title: "Personlig Spiralbyggare",
@@ -89,7 +119,33 @@
       confirmDelete: "Är du säker på att du vill ta bort denna profil?",
       yes: "Ja",
       no: "Nej",
-      cancel: "Avbryt"
+      cancel: "Avbryt",
+      usageTips: {
+        title: "Hur man använder Spiralbyggaren",
+        description: "Den personliga Spiralbyggaren kan vara ett kraftfullt verktyg för självupptäckt och analys:",
+        tips: [
+          {
+            title: "Spåra Personlig Utveckling",
+            description: "Spara profiler vid olika tidpunkter i ditt liv för att visualisera din utvecklingsresa över tid."
+          },
+          {
+            title: "Analysera Organisationer & Grupper",
+            description: "Skapa profiler som representerar företag, team eller samhällen för att bättre förstå deras värderingar och tillvägagångssätt."
+          },
+          {
+            title: "Utforska Hypotetiska Scenarier",
+            description: "Bygg profiler för olika sammanhang i ditt liv (arbete, familj, hobbyer) för att se hur dina värderingar kan förändras."
+          },
+          {
+            title: "Jämför Kulturella Skillnader",
+            description: "Skapa profiler för olika samhällen eller kulturella grupper för att förstå olika världssyner."
+          },
+          {
+            title: "Underlätta Kommunikation",
+            description: "Dela och diskutera profiler med vänner eller kollegor för att överbrygga förståelse mellan olika värdesystem."
+          }
+        ]
+      }
     }
   };
 
@@ -467,6 +523,35 @@
   <h2 class="text-2xl font-semibold mb-4">{t.title}</h2>
   <p class="text-gray-600 mb-6">{t.description}</p>
 
+  <div class="mb-8 bg-purple-50 rounded-lg p-4">
+    <div class="flex justify-between items-center cursor-pointer" on:click={() => showTips = !showTips}>
+      <h3 class="font-medium text-purple-900">{t.usageTips.title}</h3>
+      <svg 
+        class="w-5 h-5 text-purple-500 transform transition-transform duration-200"
+        class:rotate-180={showTips}
+        viewBox="0 0 20 20" 
+        fill="currentColor"
+      >
+        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    
+    {#if showTips}
+      <div class="mt-3 text-sm text-purple-800" transition:slide={{ duration: 300 }}>
+        <p class="mb-3">{t.usageTips.description}</p>
+        
+        <div class="grid gap-3 md:grid-cols-2">
+          {#each t.usageTips.tips as tip}
+            <div class="bg-white p-3 rounded-md shadow-sm">
+              <h4 class="font-medium text-purple-900 mb-1">{tip.title}</h4>
+              <p class="text-gray-600">{tip.description}</p>
+            </div>
+          {/each}
+        </div>
+      </div>
+    {/if}
+  </div>
+
   <!-- Visualization and Controls -->
   <div class="grid md:grid-cols-2 gap-8">
     <!-- Left side: Spiral Visualization -->
@@ -509,6 +594,69 @@
                 </div>
               </div>
             {/each}
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-gray-200">
+            <button 
+              on:click={() => showInsights = !showInsights}
+              class="w-full flex justify-between items-center text-left"
+            >
+              <h4 class="font-medium">
+                {currentLanguage === 'en' ? 'Profile Insights' : 'Profilinsikter'}
+              </h4>
+              <svg 
+                class="w-5 h-5 text-gray-500 transform transition-transform duration-200"
+                class:rotate-180={showInsights}
+                viewBox="0 0 20 20" 
+                fill="currentColor"
+              >
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            
+            {#if showInsights}
+              <div class="mt-3 space-y-4 text-gray-600 text-sm" transition:slide={{ duration: 300 }}>
+                <!-- Dominant stage description -->
+                {#if dominantStageExplanations[displayedProfile.dominant]}
+                  <div>
+                    <h5 class="text-sm font-medium mb-1 flex items-center">
+                      <span class="w-3 h-3 rounded-full mr-2" style="background-color: {getStageColor(displayedProfile.dominant)}"></span>
+                      <span class="capitalize">{displayedProfile.dominant}</span>
+                      <span class="ml-1">{currentLanguage === 'en' ? 'Stage' : 'Stadium'}</span>
+                    </h5>
+                    <p class="text-gray-600 ml-5">
+                      {dominantStageExplanations[displayedProfile.dominant]?.dominant[currentLanguage]}
+                    </p>
+                  </div>
+                {/if}
+                
+                <!-- Secondary stage description -->
+                {#if dominantStageExplanations[displayedProfile.secondary]}
+                  <div>
+                    <h5 class="text-sm font-medium mb-1 flex items-center">
+                      <span class="w-3 h-3 rounded-full mr-2" style="background-color: {getStageColor(displayedProfile.secondary)}"></span>
+                      <span class="capitalize">{displayedProfile.secondary}</span>
+                      <span class="ml-1">{currentLanguage === 'en' ? 'Influence' : 'Inflytande'}</span>
+                    </h5>
+                    <p class="text-gray-600 ml-5">
+                      {dominantStageExplanations[displayedProfile.secondary]?.secondary[currentLanguage]}
+                    </p>
+                  </div>
+                {/if}
+                
+                <!-- Stage combination description -->
+                <div>
+                  <h5 class="text-sm font-medium mb-1 flex items-center">
+                    <span class="w-3 h-3 rounded-full mr-2 bg-gradient-to-r" 
+                          style="background-image: linear-gradient(to right, {getStageColor(displayedProfile.dominant)} 50%, {getStageColor(displayedProfile.secondary)} 50%);"></span>
+                    <span>{currentLanguage === 'en' ? 'Combination Dynamic' : 'Kombinationsdynamik'}</span>
+                  </h5>
+                  <p class="text-gray-600 ml-5">
+                    {getCombinationExplanation(displayedProfile.dominant, displayedProfile.secondary, currentLanguage)}
+                  </p>
+                </div>
+              </div>
+            {/if}
           </div>
 
           <!-- Profile notes if available -->
