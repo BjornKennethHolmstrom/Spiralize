@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 - **Interactive Visualizations Tab**:
   - Added interactive visualizations tab with a global Spiral Dynamics Map showing dominant stages for different countries.
   - Added stage comparison matrix with stage interaction information, including clashes and bridging strategies.
+  - Added personal spiral builder with library of famous people
 
 ## [0.3.4] - Resources Expansion and Video Content
 

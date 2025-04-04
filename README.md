@@ -15,6 +15,10 @@
   - Understand how values shape individuals, communities, and societies
   - Read about the history of Spiral Dynamics
   - Access comprehensive video resources from leading Spiral Dynamics educators
+  - Visualizations:
+    - Global Spiral Dynamics Map
+    - Stage Comparison Matrix
+    - Personal Spiral Builder
 
 - **Conscious Governance**
   - Explore governance models through a developmental lens
