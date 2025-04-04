@@ -85,8 +85,8 @@
 </script>
 
 <div class="bg-white rounded-xl shadow-sm p-6">
-  <h2 class="text-2xl font-semibold mb-2">{t.title}</h2>
-  <p class="text-gray-600 mb-6">{t.description}</p>
+ <!--  <h2 class="text-2xl font-semibold mb-2">{t.title}</h2>
+  <p class="text-gray-600 mb-6">{t.description}</p> -->
   
   <!-- Stage Selection -->
   <div class="grid gap-6 md:grid-cols-2 mb-8">

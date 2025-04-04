@@ -31,12 +31,62 @@
   let stageScores = {};
   let dominantStage = '';
   let secondaryStage = '';
+  let resultsSaved = false;
+  let showSavedNotice = false;
+
+  // Function to save results to localStorage
+  function saveResultsToLocalStorage() {
+    const resultsData = {
+      stageScores,
+      dominantStage,
+      secondaryStage,
+      timestamp: new Date().toISOString()
+    };
+    try {
+      localStorage.setItem('spiralize_quiz_results', JSON.stringify(resultsData));
+      resultsSaved = true; // Make sure this is set
+      showSavedNotice = true;
+      setTimeout(() => {
+        showSavedNotice = false;
+      }, 3000);
+    } catch (error) {
+      console.error('Error saving results to localStorage:', error);
+      resultsSaved = false; // Ensure it's false if there's an error
+    }
+  }
+
+  // Function to clear saved results
+  function clearSavedResults() {
+    try {
+      localStorage.removeItem('spiralize_quiz_results');
+      resultsSaved = false; // Update the state
+      // Show clear confirmation
+      clearConfirmation = true;
+      setTimeout(() => {
+        clearConfirmation = false;
+      }, 3000);
+    } catch (error) {
+      console.error('Error clearing results from localStorage:', error);
+    }
+  }
+
+  // Variable to track confirmation message display
+  let clearConfirmation = false;
 
   onMount(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    // Get data parameter regardless of other parameters
     const sharedData = urlParams.get('data');
     const hasQuizAnswers = Object.keys(answers).length > 0;
+
+    // Check if results are already saved in localStorage
+    try {
+      const storedResults = localStorage.getItem('spiralize_quiz_results');
+      resultsSaved = storedResults !== null; // This properly checks if there's data
+      console.log('Results saved status:', resultsSaved, storedResults); // Debug log
+    } catch (error) {
+      console.error('Error reading from localStorage:', error);
+      resultsSaved = false;
+    }
 
     if (sharedData) {
       try {
@@ -54,10 +104,29 @@
         goto(`${base}/quiz`);
       }
     } else if (!hasQuizAnswers) {
-      goto(`${base}/quiz`);
-      return;
+      // If no URL data and no quiz answers, try to load from localStorage
+      try {
+        const storedResults = localStorage.getItem('spiralize_quiz_results');
+        if (storedResults) {
+          const parsedResults = JSON.parse(storedResults);
+          stageScores = parsedResults.stageScores;
+          dominantStage = parsedResults.dominantStage;
+          secondaryStage = parsedResults.secondaryStage;
+        } else {
+          // No stored results either, redirect to quiz
+          goto(`${base}/quiz`);
+          return;
+        }
+      } catch (error) {
+        console.error('Error reading from localStorage:', error);
+        goto(`${base}/quiz`);
+        return;
+      }
     } else {
       calculateResults();
+      // Save results to localStorage if we just calculated them
+      saveResultsToLocalStorage();
+      resultsSaved = true;
       // Update URL with clean share URL
       const shareUrl = getCleanShareUrl();
       history.replaceState(null, '', shareUrl);
@@ -189,6 +258,40 @@
         {currentLanguage === 'en' ? 'Your Spiral Dynamics Profile' : 'Din Spiral Dynamics Profil'}
       </h1>
 
+      <!-- Notification for saved results -->
+      {#if showSavedNotice}
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4 flex justify-between items-center transition-opacity duration-300">
+          <span>
+            {currentLanguage === 'en' 
+              ? 'Your results have been saved to this device.' 
+              : 'Dina resultat har sparats på denna enhet.'}
+          </span>
+          <button 
+            on:click={() => showSavedNotice = false}
+            class="text-green-700 hover:text-green-900"
+          >
+            &times;
+          </button>
+        </div>
+      {/if}
+
+      <!-- Notification for cleared results -->
+      {#if clearConfirmation}
+        <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded mb-4 flex justify-between items-center transition-opacity duration-300">
+          <span>
+            {currentLanguage === 'en' 
+              ? 'Your saved results have been cleared.' 
+              : 'Dina sparade resultat har rensats.'}
+          </span>
+          <button 
+            on:click={() => clearConfirmation = false}
+            class="text-blue-700 hover:text-blue-900"
+          >
+            &times;
+          </button>
+        </div>
+      {/if}
+
       <!-- Results visualization -->
       <div class="results-visualization mb-8">
         {#each Object.entries(stageScores) as [stage, score]}
@@ -240,6 +343,18 @@
             <p>{getCombinationExplanation(dominantStage, secondaryStage, currentLanguage)}</p>
           </div>
         {/if}
+      </div>
+
+      <!-- Privacy Notice -->
+      <div class="mt-6 mb-8 bg-gray-50 p-4 rounded-lg text-sm text-gray-600">
+        <h4 class="font-medium text-gray-700 mb-1">
+          {currentLanguage === 'en' ? 'Privacy Information' : 'Sekretessinformation'}
+        </h4>
+        <p>
+          {currentLanguage === 'en' 
+            ? 'Your results are saved only on this device and are not sent to any server. You can clear your saved results at any time using the button below.' 
+            : 'Dina resultat sparas endast på denna enhet och skickas inte till någon server. Du kan när som helst rensa dina sparade resultat med knappen nedan.'}
+        </p>
       </div>
 
       {#if isSharedResult}
@@ -303,18 +418,18 @@
             ? 'Continue your journey by exploring interactive visualizations that help you understand Spiral Dynamics in greater depth. Build your own personal spiral based on these results!'
             : 'Fortsätt din resa genom att utforska interaktiva visualiseringar som hjälper dig förstå Spiral Dynamics på djupet. Bygg din egen personliga spiral baserad på dessa resultat!'}
         </p>
-        <a 
-          href="{base}/spiral?tab=visualizations&fromQuiz={encodeURIComponent(JSON.stringify(stageScores))}&dominant={dominantStage}&secondary={secondaryStage}"
-          class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          <span>{currentLanguage === 'en' ? 'Build Your Spiral' : 'Bygg Din Spiral'}</span>
-          <svg class="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
+          <a 
+            href="{base}/spiral?tab=visualizations&viz=builder&fromQuiz={encodeURIComponent(JSON.stringify(stageScores))}&dominant={dominantStage}&secondary={secondaryStage}"
+            class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            <span>{currentLanguage === 'en' ? 'Build Your Spiral' : 'Bygg Din Spiral'}</span>
+            <svg class="w-5 h-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
       </div>
 
-      <div class="flex justify-center gap-4 mt-8">
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
         <button
           on:click={() => {
             quizActions.resetQuiz();
@@ -346,6 +461,19 @@
             {currentLanguage === 'en' ? 'Download Results' : 'Ladda Ner Resultat'}
           {/if}
         </button>
+
+        <!-- Clear Saved Results Button -->
+        <!-->{#if resultsSaved && !isSharedResult}-->
+          <button
+            on:click={clearSavedResults}
+            class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors flex items-center gap-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"/>
+            </svg>
+            {currentLanguage === 'en' ? 'Clear Saved Results' : 'Rensa Sparade Resultat'}
+          </button>
+        <!-->{/if}-->
       </div>
 
       <ResultsImage
@@ -372,5 +500,11 @@
     --color-turquoise: #40E0D0;
     --color-coral: #FF6F61;
     --color-ultraviolet: #9932CC; 
+  }
+
+  /* Animation for notification */
+  .transition-opacity {
+    transition-property: opacity;
+    transition-duration: 300ms;
   }
 </style>

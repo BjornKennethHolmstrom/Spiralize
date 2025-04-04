@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount, createEventDispatcher, tick } from 'svelte';
+  import { base } from '$app/paths';
   import { slide, fade } from 'svelte/transition';
   import { stages } from '$lib/data/stages';
   import type { SpiralStage } from '$lib/types/spiral';
@@ -11,7 +12,8 @@
   export let stageScores: Record<SpiralStage, number> = null;
   export let dominantStage: SpiralStage = null;
   export let secondaryStage: SpiralStage = null;
-  
+  export let showLoadPrompt: boolean = false;
+
   const dispatch = createEventDispatcher();
   const { language } = languageStore;
   $: currentLanguage = $language;
@@ -27,6 +29,8 @@
   let showTips = false;
   let showPresetLibrary = false;
   let previewedPreset = null;
+  let showLoadedFromStorage = false;
+  let loadedTimestamp = null;
   let savedProfiles: Array<{
     name: string;
     scores: Record<SpiralStage, number>;
@@ -35,6 +39,8 @@
     note: string;
     timestamp: number;
   }> = [];
+  let savedQuizProfiles = []; // Array to store multiple quiz results
+  let isSavingQuizProfile = false;
 
   // Initialize stages array for rendering
   const stageKeys: SpiralStage[] = [
@@ -69,6 +75,8 @@
       yes: "Yes",
       no: "No",
       cancel: "Cancel",
+      loadedFromStorage: "Your saved quiz results have been loaded.",
+      takenOn: "Taken on",
       usageTips: {
         title: "How to Use the Spiral Builder",
         description: "The Personal Spiral Builder can be a powerful tool for self-discovery and analysis:",
@@ -93,7 +101,8 @@
             title: "Facilitate Communication",
             description: "Share and discuss profiles with friends or colleagues to bridge understanding across different value systems."
           }
-        ]
+        ],
+        loadFromStorage: "Your previous quiz results are automatically loaded if available."
       },
       presetLibrary: {
         title: "Famous Profiles Library",
@@ -128,6 +137,8 @@
       yes: "Ja",
       no: "Nej",
       cancel: "Avbryt",
+      loadedFromStorage: "Dina sparade quizresultat har laddats.",
+      takenOn: "Taget den",
       usageTips: {
         title: "Hur man använder Spiralbyggaren",
         description: "Den personliga Spiralbyggaren kan vara ett kraftfullt verktyg för självupptäckt och analys:",
@@ -152,7 +163,8 @@
             title: "Underlätta Kommunikation",
             description: "Dela och diskutera profiler med vänner eller kollegor för att överbrygga förståelse mellan olika värdesystem."
           }
-        ]
+        ],
+        loadFromStorage: "Dina tidigare quizresultat laddas automatiskt om de är tillgängliga."
       },
       presetLibrary: {
         title: "Berömda Profilers Bibliotek",
@@ -615,32 +627,55 @@
       console.error('Error loading saved profiles:', error);
     }
 
-    // Initialize displayed profile based on quiz results if available
-    if (stageScores) {
-      // Create a special "quiz" profile for the results
-      displayedProfile = {
-        id: "quiz",
-        name: currentLanguage === 'en' ? "Quiz Results" : "Quizresultat",
-        scores: { ...stageScores },
-        dominant: dominantStage,
-        secondary: secondaryStage,
-        note: "",
-        timestamp: Date.now(),
-        isQuizResult: true
-      };
-      customScores = { ...stageScores };
-    } else {
-      // Default equal distribution if no quiz results
-      stageKeys.forEach(stage => {
-        customScores[stage] = 10;
-      });
-      
-      // Set displayed profile to first saved profile or null
-      if (savedProfiles.length > 0) {
-        displayedProfile = savedProfiles[0];
-        displayedProfileId = savedProfiles[0].id || "0";
-        customScores = { ...displayedProfile.scores };
+    try {
+      const quizProfilesJson = localStorage.getItem('spiralize_quiz_profiles');
+      if (quizProfilesJson) {
+        savedQuizProfiles = JSON.parse(quizProfilesJson);
       }
+    } catch (error) {
+      console.error('Error loading quiz profiles:', error);
+    }
+
+    try {
+      const storedQuizResults = localStorage.getItem('spiralize_quiz_results');
+      if (storedQuizResults && (!stageScores || !dominantStage)) {
+        const parsedResults = JSON.parse(storedQuizResults);
+        
+        // Show notification that we loaded saved results
+        showLoadedFromStorage = true;
+        setTimeout(() => {
+          showLoadedFromStorage = false;
+        }, 3000);
+        
+        // Use stored results
+        if (!stageScores) {
+          stageScores = parsedResults.stageScores;
+          customScores = { ...parsedResults.stageScores };
+        }
+        
+        if (!dominantStage) {
+          dominantStage = parsedResults.dominantStage;
+        }
+        
+        if (!secondaryStage) {
+          secondaryStage = parsedResults.secondaryStage;
+        }
+        
+        // Create a special "quiz" profile for the latest results
+        displayedProfile = {
+          id: "quiz",
+          name: currentLanguage === 'en' ? "Latest Quiz Results" : "Senaste Quizresultat",
+          scores: { ...stageScores },
+          dominant: dominantStage,
+          secondary: secondaryStage,
+          note: "",
+          timestamp: parsedResults.timestamp || Date.now(),
+          isQuizResult: true
+        };
+        customScores = { ...stageScores };
+      }
+    } catch (error) {
+      console.error('Error loading quiz results from localStorage:', error);
     }
   });
 
@@ -719,6 +754,48 @@
     if (stageScores) {
       customScores = { ...stageScores };
       isCustomizing = true;
+    }
+  }
+
+  // Function to save current quiz result as a named profile
+  function saveQuizAsProfile() {
+    if (!profileName.trim()) {
+      alert(translations[currentLanguage].profileNameRequired);
+      return;
+    }
+
+    const quizProfile = {
+      id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
+      name: profileName,
+      scores: { ...stageScores },
+      dominant: dominantStage,
+      secondary: secondaryStage,
+      note: noteText,
+      timestamp: Date.now(),
+      isQuizResult: true
+    };
+
+    // Add to saved quiz profiles
+    savedQuizProfiles = [...savedQuizProfiles, quizProfile];
+    
+    // Save to localStorage
+    localStorage.setItem('spiralize_quiz_profiles', JSON.stringify(savedQuizProfiles));
+    
+    // Show confirmation
+    showProfileSavedNotice = true;
+    setTimeout(() => {
+      showProfileSavedNotice = false;
+    }, 3000);
+    
+    // Close the modal
+    isSavingQuizProfile = false;
+  }
+
+  // Function to delete a saved quiz profile
+  function deleteQuizProfile(index) {
+    if (confirm(translations[currentLanguage].confirmDelete)) {
+      savedQuizProfiles = savedQuizProfiles.filter((_, i) => i !== index);
+      localStorage.setItem('spiralize_quiz_profiles', JSON.stringify(savedQuizProfiles));
     }
   }
 
@@ -957,11 +1034,37 @@
     // Update the actual scores
     customScores = { ...tempScores };
   }
+
+  function formatDate(timestamp) {
+    if (!timestamp) return '';
+    
+    const date = new Date(timestamp);
+    return date.toLocaleDateString(
+      currentLanguage === 'en' ? 'en-US' : 'sv-SE',
+      { year: 'numeric', month: 'short', day: 'numeric' }
+    );
+  }
 </script>
 
 <div class="personal-spiral-builder bg-white rounded-xl shadow-sm p-6">
-  <h2 class="text-2xl font-semibold mb-4">{t.title}</h2>
+  <!--  <h2 class="text-2xl font-semibold mb-4">{t.title}</h2> -->
   <p class="text-gray-600 mb-6">{t.description}</p>
+
+  {#if showLoadedFromStorage}
+    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4 flex justify-between items-center transition-opacity duration-300">
+      <span>
+        {currentLanguage === 'en' 
+          ? 'Your saved quiz results have been loaded.' 
+          : 'Dina sparade quizresultat har laddats.'}
+      </span>
+      <button 
+        on:click={() => showLoadedFromStorage = false}
+        class="text-green-700 hover:text-green-900"
+      >
+        &times;
+      </button>
+    </div>
+  {/if}
 
   <div class="mb-8 bg-purple-50 rounded-lg p-4">
     <div class="flex justify-between items-center cursor-pointer" on:click={() => showTips = !showTips}>
@@ -1257,6 +1360,14 @@
             >
               {t.cancel}
             </button>
+            {#if stageScores}
+              <button
+                on:click={resetToQuizResults}
+                class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                {t.resetToQuiz}
+              </button>
+            {/if}
           </div>
         </div>
       {:else}
@@ -1416,6 +1527,22 @@
           </div>
         {/if}
 
+        {#if !displayedProfile && showLoadPrompt}
+          <div class="text-center p-6 bg-gray-50 rounded-lg">
+            <p class="text-gray-700 mb-3">
+              {currentLanguage === 'en' 
+                ? "Take the assessment to see your personal spiral profile" 
+                : "Ta bedömningen för att se din personliga spiralprofil"}
+            </p>
+            
+             <a href="{base}/quiz"
+              class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-4 py-2 rounded-lg transition-colors"
+            >
+              {currentLanguage === 'en' ? 'Take the Assessment' : 'Ta Bedömningen'}
+            </a>
+          </div>
+        {/if}
+
         <!-- Saved Profiles Section with Selectable Cards -->
         <div class="bg-gray-50 p-4 rounded-lg">
           <h3 class="font-medium mb-4">{t.savedProfiles}</h3>
@@ -1432,6 +1559,7 @@
                   dominant: dominantStage,
                   secondary: secondaryStage,
                   note: "",
+                  timestamp: displayedProfile?.timestamp || Date.now(),
                   isQuizResult: true
                 })}
               >
@@ -1450,6 +1578,13 @@
                       <span>+</span>
                       <span class="capitalize">{secondaryStage}</span>
                     </div>
+                    {#if displayedProfile?.timestamp}
+                      <div class="text-xs text-gray-400 mt-1">
+                        {currentLanguage === 'en' 
+                          ? `Taken on ${new Date(displayedProfile.timestamp).toLocaleDateString()}` 
+                          : `Taget den ${new Date(displayedProfile.timestamp).toLocaleDateString()}`}
+                      </div>
+                    {/if}
                   </div>
                   <div class="flex gap-2">
                     <button
@@ -1542,6 +1677,125 @@
                   {/if}
                 </div>
               {/each}
+            {/if}
+
+            {#if savedQuizProfiles && savedQuizProfiles.length > 0}
+              <div class="bg-gray-50 p-4 rounded-lg mt-4">
+                <h3 class="font-medium mb-4">{currentLanguage === 'en' ? 'Saved Quiz Results' : 'Sparade Quizresultat'}</h3>
+                
+                <div class="space-y-3">
+                  {#each savedQuizProfiles as profile, index}
+                    <div 
+                      class="border border-gray-200 rounded-lg p-3 bg-white cursor-pointer transition-all hover:shadow-md {displayedProfileId === profile.id ? 'ring-2 ring-purple-500' : ''}"
+                      on:click={() => selectProfile(profile)}
+                    >
+                      <div class="flex justify-between items-start">
+                        <div>
+                          <h4 class="font-medium">
+                            {profile.name}
+                            {#if displayedProfileId === profile.id}
+                              <span class="ml-2 text-sm text-purple-600">
+                                {currentLanguage === 'en' ? '(Selected)' : '(Vald)'}
+                              </span>
+                            {/if}
+                          </h4>
+                          <div class="text-sm text-gray-500 flex gap-2">
+                            <span class="capitalize">{profile.dominant}</span>
+                            <span>+</span>
+                            <span class="capitalize">{profile.secondary}</span>
+                          </div>
+                          <div class="text-xs text-gray-400 mt-1">
+                            {formatDate(profile.timestamp)}
+                          </div>
+                        </div>
+                        <div class="flex gap-2">
+                          <button
+                            on:click={(e) => {
+                              e.stopPropagation();
+                              deleteQuizProfile(index);
+                            }}
+                            class="text-red-600 hover:text-red-800 text-sm"
+                          >
+                            {t.delete}
+                          </button>
+                        </div>
+                      </div>
+                      {#if profile.note}
+                        <p class="text-sm text-gray-600 mt-2 italic">{profile.note}</p>
+                      {/if}
+                    </div>
+                  {/each}
+                </div>
+              </div>
+            {/if}
+
+            <!-- Button to save current quiz result as a profile -->
+            {#if stageScores && displayedProfileId === 'quiz' && !isCustomizing}
+              <button
+                on:click={() => {
+                  profileName = currentLanguage === 'en' ? "My Quiz Results" : "Mina Quizresultat";
+                  noteText = "";
+                  isSavingQuizProfile = true;
+                }}
+                class="mt-3 w-full py-2 px-3 border border-dashed border-purple-300 rounded-lg text-center text-purple-600 hover:bg-purple-50 transition-colors"
+              >
+                {currentLanguage === 'en' ? '+ Save Current Quiz Result as Profile' : '+ Spara Nuvarande Quizresultat som Profil'}
+              </button>
+            {/if}
+
+            <!-- Modal for saving quiz result as a profile -->
+            {#if isSavingQuizProfile}
+              <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" on:click|self={() => isSavingQuizProfile = false}>
+                <div class="bg-white rounded-lg max-w-md w-full p-6" transition:fade={{ duration: 200 }}>
+                  <h3 class="text-lg font-medium mb-4">
+                    {currentLanguage === 'en' ? 'Save Quiz Result as Profile' : 'Spara Quizresultat som Profil'}
+                  </h3>
+                  
+                  <div class="mb-4">
+                    <label for="quizProfileName" class="block text-sm font-medium text-gray-700 mb-1">
+                      {t.profileName}*
+                    </label>
+                    <input
+                      type="text"
+                      id="quizProfileName"
+                      bind:value={profileName}
+                      placeholder={t.enterName}
+                      class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                    />
+                  </div>
+                  
+                  <div class="mb-6">
+                    <label for="quizNoteText" class="block text-sm font-medium text-gray-700 mb-1">
+                      {t.notes}
+                    </label>
+                    <textarea
+                      id="quizNoteText"
+                      bind:value={noteText}
+                      placeholder={t.addNotes}
+                      class="w-full px-3 py-2 border border-gray-300 rounded-md h-24"
+                    ></textarea>
+                  </div>
+                  
+                  <div class="flex justify-end gap-3">
+                    <button
+                      on:click={() => isSavingQuizProfile = false}
+                      class="px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      {t.cancel}
+                    </button>
+                    
+                    <button
+                      on:click={() => {
+                        saveQuizAsProfile();
+                        isSavingQuizProfile = false;
+                      }}
+                      class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700"
+                    >
+                      {t.saveProfile}
+                    </button>
+                  </div>
+                </div>
+              </div>
             {/if}
             
             <!-- Create new profile button -->

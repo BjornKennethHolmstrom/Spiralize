@@ -17,9 +17,12 @@
   // Track expanded states and active stage
   let expandedStages: Record<string, boolean> = {};
   let activeStage: string | null = null;
+  let quizResults = { stageScores: null, dominantStage: null, secondaryStage: null };
+
+  let activeVisualization = 'map'; // Default to showing all, options: 'all', 'map', 'comparison', 'builder'
   
   // Add activeTab state for tab navigation
-  let activeTab: 'overview' | 'resources' | 'visualizations' = 'overview';
+  let activeTab: 'overview' | 'visualizations' = 'overview' | 'resources';
   
   const translations = {
     en: {
@@ -251,6 +254,15 @@
   onMount(() => {
     // Check for tab parameter in URL
     const urlParams = new URLSearchParams(window.location.search);
+    // Check for visualization parameter
+    const viz = urlParams.get('viz');
+    if (viz && ['map', 'comparison', 'builder'].includes(viz)) {
+      activeVisualization = viz;
+    } else if (urlParams.has('fromQuiz')) {
+      // If coming from quiz results, default to showing the builder
+      activeVisualization = 'builder';
+    }
+
     const tabParam = urlParams.get('tab');
     
     // Set active tab based on URL parameter if it exists
@@ -259,6 +271,9 @@
         activeTab = tabParam;
       }
     }
+    
+    // Load quiz results for the visualizations tab
+    quizResults = getQuizResultsFromURL();
   });
 
   // Update the URL when tab changes
@@ -321,14 +336,23 @@
       secondaryStage = url.searchParams.get('secondary');
     }
     
+    // If no URL parameters, try to load from localStorage
+    if (!stageScores || !dominantStage || !secondaryStage) {
+      try {
+        const storedResults = localStorage.getItem('spiralize_quiz_results');
+        if (storedResults) {
+          const parsedResults = JSON.parse(storedResults);
+          if (!stageScores) stageScores = parsedResults.stageScores;
+          if (!dominantStage) dominantStage = parsedResults.dominantStage;
+          if (!secondaryStage) secondaryStage = parsedResults.secondaryStage;
+        }
+      } catch (e) {
+        console.error('Error loading stored quiz results', e);
+      }
+    }
+    
     return { stageScores, dominantStage, secondaryStage };
   }
-
-  let quizResults = { stageScores: null, dominantStage: null, secondaryStage: null };
-
-  onMount(() => {
-    quizResults = getQuizResultsFromURL();
-  });
 
 </script>
 
@@ -366,16 +390,16 @@
             {t.tabs.overview}
           </button>
           <button
-            class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'resources' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
-            on:click={() => setActiveTab('resources')}
-          >
-            {t.tabs.resources}
-          </button>
-          <button
             class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'visualizations' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
             on:click={() => setActiveTab('visualizations')}
           >
             {t.tabs.visualizations}
+          </button>
+          <button
+            class={`py-2 px-3 border-b-2 font-medium text-sm whitespace-nowrap ${activeTab === 'resources' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}`}
+            on:click={() => setActiveTab('resources')}
+          >
+            {t.tabs.resources}
           </button>
         </nav>
       </div>
@@ -691,38 +715,63 @@
       </div>
     {/if}
 
-    <!-- Visualizations Tab (Placeholder for future interactive content) -->
     {#if activeTab === 'visualizations'}
       <div class="bg-white rounded-xl shadow-sm p-8 mb-12">
-        <h3 class="text-xl font-semibold mb-4">
-          {currentLanguage === 'en' ? 'Interactive Visualizations' : 'Interaktiva Visualiseringar'}
-        </h3>
 
-        <!-- Global Spiral Map -->
-        <div class="mb-8">
-          <div class="bg-white rounded-lg shadow-sm p-6">
-            <WorldSpiralMap />
+        <!-- Visualization tabs -->
+        <div class="mb-6 border-b border-gray-200">
+          <nav class="flex space-x-4 overflow-x-auto">
+            <button
+              class={`py-2 px-3 border-b-2 font-medium text-sm ${activeVisualization === 'map' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
+              on:click={() => activeVisualization = 'map'}
+            >
+              {currentLanguage === 'en' ? 'Global Map' : 'Global Karta'}
+            </button>
+            <button
+              class={`py-2 px-3 border-b-2 font-medium text-sm ${activeVisualization === 'comparison' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
+              on:click={() => activeVisualization = 'comparison'}
+            >
+              {currentLanguage === 'en' ? 'Stage Comparison' : 'Stadie Jämförelse'}
+            </button>
+            <button
+              class={`py-2 px-3 border-b-2 font-medium text-sm ${activeVisualization === 'builder' ? 'border-purple-600 text-purple-600' : 'border-transparent text-gray-500 hover:text-gray-700'}`}
+              on:click={() => activeVisualization = 'builder'}
+            >
+              {currentLanguage === 'en' ? 'Spiral Builder' : 'Spiralbyggare'}
+            </button>
+          </nav>
+        </div>
+
+        <!-- Conditional rendering based on activeVisualization -->
+        {#if activeVisualization === 'map'}
+          <div class="mb-8">
+            <div class="bg-white rounded-lg shadow-sm p-6">
+              <WorldSpiralMap />
+            </div>
           </div>
-        </div>
+        {/if}
 
-        <!-- Stage Comparison Matrix -->
-        <div class="mb-8">
-          <div class="bg-white rounded-lg shadow-sm">
-            <StageComparisonVisualization />
+        {#if activeVisualization === 'comparison'}
+          <div class="mb-8">
+            <div class="bg-white rounded-lg shadow-sm">
+              <StageComparisonVisualization />
+            </div>
           </div>
-        </div>
+        {/if}
 
-        <!-- Personal Spiral Builder -->
-        <div class="mb-8">
-          <PersonalSpiralBuilder 
-            stageScores={quizResults.stageScores}
-            dominantStage={quizResults.dominantStage}
-            secondaryStage={quizResults.secondaryStage}
-          />
-        </div>
-
+        {#if activeVisualization === 'builder'}
+          <div class="mb-8">
+            <PersonalSpiralBuilder 
+              stageScores={quizResults.stageScores}
+              dominantStage={quizResults.dominantStage}
+              secondaryStage={quizResults.secondaryStage}
+              showLoadPrompt={true}
+            />
+          </div>
+        {/if}
       </div>
     {/if}
+
   </div>
 
   <br>

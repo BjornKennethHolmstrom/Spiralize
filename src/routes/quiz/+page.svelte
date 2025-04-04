@@ -2,6 +2,8 @@
   import { onMount } from 'svelte';
   import { quizStore, quizActions } from '$lib/stores/quizStore';
   import languageStore from '$lib/stores/languageStore';
+  import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
   import Quiz from '$lib/components/Quiz.svelte';
 
   const { language, toggleLanguage } = languageStore; 
@@ -9,6 +11,48 @@
   // Subscribe to the stores
   $: ({ hasStarted, isLoading, questions, currentIndex, answers } = $quizStore);
   $: currentLanguage = $language;
+
+  // Saved results state
+  let savedResults = null;
+  let savedResultsDate = '';
+
+  onMount(() => {
+    // Reset quiz state first to make sure we start fresh
+    quizActions.resetQuiz();
+
+    // Check for saved results in localStorage
+    try {
+      const storedResults = localStorage.getItem('spiralize_quiz_results');
+      if (storedResults) {
+        const parsedResults = JSON.parse(storedResults);
+        savedResults = parsedResults;
+        // Format the timestamp for display
+        if (parsedResults.timestamp) {
+          const date = new Date(parsedResults.timestamp);
+          savedResultsDate = date.toLocaleDateString(currentLanguage === 'en' ? 'en-US' : 'sv-SE', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+        }
+      }
+    } catch (error) {
+      console.error('Error reading from localStorage:', error);
+    }
+  });
+
+  function viewSavedResults() {
+    goto(`${base}/quiz/results`);
+  }
+
+  function startFreshQuiz() {
+    // Fully reset the quiz before starting again
+    quizActions.resetQuiz();
+    // Short timeout to ensure state is updated
+    setTimeout(() => {
+      quizActions.startQuiz();
+    }, 50);
+  }
 
   const translations = {
     en: {
@@ -20,7 +64,13 @@
         "Personalized insights and recommendations"
       ],
       startButton: "Start Assessment",
-      loading: "Loading assessment..."
+      loading: "Loading assessment...",
+      savedResults: {
+        title: "You've already completed this assessment",
+        completed: "Completed on",
+        viewResults: "View Your Results",
+        startFresh: "Start Fresh Assessment"
+      }
     },
     sv: {
       title: "Spiral Dynamics Bedömning",
@@ -31,7 +81,13 @@
         "Personliga insikter och rekommendationer"
       ],
       startButton: "Starta Bedömning",
-      loading: "Laddar bedömning..."
+      loading: "Laddar bedömning...",
+      savedResults: {
+        title: "Du har redan slutfört denna bedömning",
+        completed: "Slutförd den",
+        viewResults: "Visa Dina Resultat",
+        startFresh: "Starta Ny Bedömning"
+      }
     }
   };
 
@@ -67,6 +123,39 @@
         <h1 class="text-4xl font-bold text-gray-900 mb-8">
           {t.title}
         </h1>
+        
+        {#if savedResults}
+          <!-- Saved Results Card -->
+          <div class="bg-white rounded-2xl shadow-sm p-8 mb-8 border-l-4 border-purple-500">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+              {t.savedResults.title}
+            </h2>
+            
+            <div class="flex items-center justify-center mb-6">
+              <div class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">
+                <span class="font-medium">{t.savedResults.completed}:</span> {savedResultsDate}
+              </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                class="bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-purple-700 transition-colors"
+                on:click={viewSavedResults}
+              >
+                {t.savedResults.viewResults}
+              </button>
+              
+              <button
+                class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg text-lg font-medium hover:bg-gray-300 transition-colors"
+                on:click={startFreshQuiz}
+              >
+                {t.savedResults.startFresh}
+              </button>
+            </div>
+          </div>
+        {/if}
+        
+        <!-- Assessment Info Card -->
         <div class="bg-white rounded-2xl shadow-sm p-8 mb-8">
           <p class="text-lg text-gray-600 mb-6">
             {t.description}
@@ -102,4 +191,3 @@
     <Quiz />
   {/if}
 </div>
-

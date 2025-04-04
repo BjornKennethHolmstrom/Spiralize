@@ -35,8 +35,8 @@
 </script>
 
 <div>
-  <div class="text-center mb-8">
-    <h2 class="text-2xl font-bold text-gray-900 mb-2">{t.title}</h2>
+  <div class="text-left mb-8">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">{t.title}</h2> 
     <p class="text-gray-600">{t.subtitle}</p>
   </div>
 

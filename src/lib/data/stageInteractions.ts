@@ -798,11 +798,11 @@ export const gridTranslations = {
 
 export const visualizationTranslations = {
   en: {
-    title: "Stage Comparison Visualization",
-    subtitle: "Explore how different Spiral Dynamics stages interact and compare"
+      title: "Stage Comparison Matrix",
+      subtitle: "Explore how different Spiral Dynamics stages interact with each other. Select two stages through their meeting point in the matrix or by clicking their names in the two columns below to see their relationship dynamics, potential synergies, and challenges."
   },
   sv: {
-    title: "Stadiejämförelse-visualisering",
-    subtitle: "Utforska hur olika Spiral Dynamics-stadier interagerar och jämför sig"
+      title: "Stadie-jämförelsematris",
+      subtitle: "Utforska hur olika Spiral Dynamics-stadier interagerar med varandra. Välj två stadier via deras mötespunkt i matrisen eller genom att klicka deras namn i de två kolumnerna nedanför för att se deras relationsdynamik, potentiella synergier och utmaningar."
   }
 };
