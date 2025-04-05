@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.6] - Storage and Navigation Fixes
+
+### Fixed
+- **Quiz Results Storage**:
+  - Resolved issue with quiz results not being properly saved to localStorage
+  - Added detailed debug logging to track and verify storage operations
+  - Ensured proper verification of saved data
+- **Navigation Improvements**:
+  - Fixed Spiral Dynamics page to always show the overview tab by default
+  - Ensured tab navigation works consistently across different entry points
+- **User Experience**:
+  - Made "Clear Saved Results" button always visible on the results page for easier access
+  - Added error handling and user feedback when managing saved results
+
 ## [0.3.5] - Visualizations
 
 ### Added

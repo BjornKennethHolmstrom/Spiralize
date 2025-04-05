@@ -16,15 +16,26 @@
   let savedResults = null;
   let savedResultsDate = '';
 
+  let clearConfirmation = false;
+
   onMount(() => {
     // Reset quiz state first to make sure we start fresh
     quizActions.resetQuiz();
 
+    quizStore.update(state => ({
+      ...state,
+      hasStarted: false,
+      currentIndex: 0
+    }));
+
     // Check for saved results in localStorage
     try {
+      console.log('Checking for saved results...');
       const storedResults = localStorage.getItem('spiralize_quiz_results');
+      console.log('Stored results from localStorage:', storedResults);
       if (storedResults) {
         const parsedResults = JSON.parse(storedResults);
+        console.log('Parsed stored results:', parsedResults);
         savedResults = parsedResults;
         // Format the timestamp for display
         if (parsedResults.timestamp) {
@@ -35,6 +46,8 @@
             day: 'numeric'
           });
         }
+      } else {
+        console.log('No saved results found');
       }
     } catch (error) {
       console.error('Error reading from localStorage:', error);
@@ -45,13 +58,34 @@
     goto(`${base}/quiz/results`);
   }
 
+  function clearSavedResults() {
+    try {
+      localStorage.removeItem('spiralize_quiz_results');
+      savedResults = null; // Clear the saved results
+      savedResultsDate = ''; // Clear the date
+      clearConfirmation = true;
+      setTimeout(() => {
+        clearConfirmation = false;
+      }, 3000);
+    } catch (error) {
+      console.error('Error clearing results from localStorage:', error);
+    }
+  }
+
   function startFreshQuiz() {
     // Fully reset the quiz before starting again
     quizActions.resetQuiz();
-    // Short timeout to ensure state is updated
+    quizStore.update(state => ({
+      ...state,
+      hasStarted: false,
+      currentIndex: 0,
+      answers: {}
+    }));
+    
+    // Short timeout to ensure state is updated before starting
     setTimeout(() => {
       quizActions.startQuiz();
-    }, 50);
+    }, 100);
   }
 
   const translations = {
@@ -151,7 +185,32 @@
               >
                 {t.savedResults.startFresh}
               </button>
+              
+              <!-- Add Clear Results Button -->
+              <button
+                class="bg-red-100 text-red-700 px-6 py-3 rounded-lg text-lg font-medium hover:bg-red-200 transition-colors"
+                on:click={clearSavedResults}
+              >
+                {currentLanguage === 'en' ? 'Clear Saved Results' : 'Rensa Sparade Resultat'}
+              </button>
             </div>
+            
+            <!-- Add notification for cleared results -->
+            {#if clearConfirmation}
+              <div class="mt-4 bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded flex justify-between items-center transition-opacity duration-300">
+                <span>
+                  {currentLanguage === 'en' 
+                    ? 'Your saved results have been cleared.' 
+                    : 'Dina sparade resultat har rensats.'}
+                </span>
+                <button 
+                  on:click={() => clearConfirmation = false}
+                  class="text-blue-700 hover:text-blue-900"
+                >
+                  &times;
+                </button>
+              </div>
+            {/if}
           </div>
         {/if}
         

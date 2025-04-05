@@ -22,7 +22,7 @@
   let activeVisualization = 'map'; // Default to showing all, options: 'all', 'map', 'comparison', 'builder'
   
   // Add activeTab state for tab navigation
-  let activeTab: 'overview' | 'visualizations' = 'overview' | 'resources';
+  let activeTab: 'overview' | 'visualizations' | 'resources' = 'overview';
   
   const translations = {
     en: {

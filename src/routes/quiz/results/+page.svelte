@@ -36,22 +36,49 @@
 
   // Function to save results to localStorage
   function saveResultsToLocalStorage() {
+    console.log('saveResultsToLocalStorage called');
+    console.log('Current values to save:', { 
+      stageScores, 
+      dominantStage, 
+      secondaryStage 
+    });
+    
+    // Check if we have valid data to save
+    if (!dominantStage || !secondaryStage || !stageScores || Object.keys(stageScores).length === 0) {
+      console.error('Cannot save results: missing required data');
+      return;
+    }
+    
     const resultsData = {
       stageScores,
       dominantStage,
       secondaryStage,
       timestamp: new Date().toISOString()
     };
+    
     try {
-      localStorage.setItem('spiralize_quiz_results', JSON.stringify(resultsData));
-      resultsSaved = true; // Make sure this is set
-      showSavedNotice = true;
-      setTimeout(() => {
-        showSavedNotice = false;
-      }, 3000);
+      console.log('Attempting to save:', resultsData);
+      const jsonData = JSON.stringify(resultsData);
+      localStorage.setItem('spiralize_quiz_results', jsonData);
+      
+      // Verify the save worked
+      const savedData = localStorage.getItem('spiralize_quiz_results');
+      console.log('Verification - saved data:', savedData);
+      
+      if (savedData) {
+        resultsSaved = true;
+        showSavedNotice = true;
+        setTimeout(() => {
+          showSavedNotice = false;
+        }, 3000);
+        console.log('Results saved successfully');
+      } else {
+        console.error('Verification failed - data not saved');
+        resultsSaved = false;
+      }
     } catch (error) {
       console.error('Error saving results to localStorage:', error);
-      resultsSaved = false; // Ensure it's false if there's an error
+      resultsSaved = false;
     }
   }
 
@@ -74,21 +101,26 @@
   let clearConfirmation = false;
 
   onMount(() => {
+    console.log('Results page onMount');
     const urlParams = new URLSearchParams(window.location.search);
     const sharedData = urlParams.get('data');
     const hasQuizAnswers = Object.keys(answers).length > 0;
+    console.log('Has quiz answers:', hasQuizAnswers, 'Number of answers:', Object.keys(answers).length);
 
     // Check if results are already saved in localStorage
     try {
+      console.log('Checking localStorage for saved results');
       const storedResults = localStorage.getItem('spiralize_quiz_results');
-      resultsSaved = storedResults !== null; // This properly checks if there's data
-      console.log('Results saved status:', resultsSaved, storedResults); // Debug log
+      console.log('Stored results from localStorage:', storedResults);
+      resultsSaved = storedResults !== null;
+      console.log('Results saved status:', resultsSaved);
     } catch (error) {
       console.error('Error reading from localStorage:', error);
       resultsSaved = false;
     }
 
     if (sharedData) {
+      // Process shared data
       try {
         const decodedData = JSON.parse(decodeURIComponent(sharedData));
         if (decodedData.stageScores && decodedData.dominantStage && decodedData.secondaryStage) {
@@ -96,24 +128,33 @@
           dominantStage = decodedData.dominantStage;
           secondaryStage = decodedData.secondaryStage;
           isSharedResult = !hasQuizAnswers;
+          
+          // If we have valid data from URL but it's not saved, save it
+          if (!resultsSaved && !isSharedResult) {
+            console.log('We have valid data from URL but it\'s not saved, saving it now');
+            saveResultsToLocalStorage();
+          }
         } else {
-          throw new Error('Invalid data structure');
+          throw new Error('Invalid data structure in URL');
         }
       } catch (error) {
         console.error('Error parsing shared results:', error);
         goto(`${base}/quiz`);
       }
     } else if (!hasQuizAnswers) {
-      // If no URL data and no quiz answers, try to load from localStorage
+      // No URL data and no quiz answers, try to load from localStorage
       try {
+        console.log('No URL data or quiz answers, trying localStorage');
         const storedResults = localStorage.getItem('spiralize_quiz_results');
         if (storedResults) {
+          console.log('Found stored results:', storedResults);
           const parsedResults = JSON.parse(storedResults);
           stageScores = parsedResults.stageScores;
           dominantStage = parsedResults.dominantStage;
           secondaryStage = parsedResults.secondaryStage;
         } else {
           // No stored results either, redirect to quiz
+          console.log('No stored results, redirecting to quiz');
           goto(`${base}/quiz`);
           return;
         }
@@ -123,10 +164,13 @@
         return;
       }
     } else {
+      // We have quiz answers, calculate and save results
+      console.log('We have quiz answers, calculating results');
       calculateResults();
-      // Save results to localStorage if we just calculated them
+      console.log('Results calculated, saving to localStorage');
       saveResultsToLocalStorage();
       resultsSaved = true;
+      
       // Update URL with clean share URL
       const shareUrl = getCleanShareUrl();
       history.replaceState(null, '', shareUrl);
@@ -134,6 +178,8 @@
   });
 
   function calculateResults() {
+    console.log('Calculating results with answers:', answers);
+    
     // Initialize scores
     const scores = {
       beige: 0,
@@ -162,6 +208,9 @@
       return acc;
     }, {});
 
+    console.log('Calculated percentages:', percentages);
+    
+    // Set state variables
     stageScores = percentages;
 
     // Find dominant and secondary stages
@@ -171,6 +220,14 @@
     dominantStage = sortedStages[0][0];
     secondaryStage = sortedStages[1][0];
 
+    console.log('Set dominant stage:', dominantStage);
+    console.log('Set secondary stage:', secondaryStage);
+
+    // Now explicitly call save function
+    console.log('Now saving results to localStorage');
+    saveResultsToLocalStorage();
+
+    // Update URL for sharing
     const resultsData = {
       stageScores,
       dominantStage,
@@ -352,8 +409,8 @@
         </h4>
         <p>
           {currentLanguage === 'en' 
-            ? 'Your results are saved only on this device and are not sent to any server. You can clear your saved results at any time using the button below.' 
-            : 'Dina resultat sparas endast på denna enhet och skickas inte till någon server. Du kan när som helst rensa dina sparade resultat med knappen nedan.'}
+            ? 'Your results are saved only on this device and are not sent to any server. You can clear your saved results at any time using the button below or on the quiz starting page.' 
+            : 'Dina resultat sparas endast på denna enhet och skickas inte till någon server. Du kan när som helst rensa dina sparade resultat med knappen nedan eller på startsidan för testet.'}
         </p>
       </div>
 
