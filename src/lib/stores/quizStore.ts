@@ -452,6 +452,22 @@ const questionsData: Question[] = [
     options: [
       {
         text: {
+          en: "Avoid the conflict and focus on staying safe or unnoticed",
+          sv: "Undvika konflikten och fokusera på att hålla sig säker eller osynlig"
+        },
+        value: 1,
+        relatedStages: ['beige']
+      },
+      {
+        text: {
+          en: "Consult trusted elders or rely on the group's traditions to handle the situation",
+          sv: "Rådgöra med betrodda äldre eller följa gruppens traditioner för att hantera situationen"
+        },
+        value: 1,
+        relatedStages: ['purple']
+      },
+      {
+        text: {
           en: "Protect my position and assert my rights",
           sv: "Skydda min position och hävda mina rättigheter"
         },
