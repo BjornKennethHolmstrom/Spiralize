@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.7] - AI Insights and Store Refactoring
+
+### Added
+- **AI Assistant Insights Page**:
+  - Created a new page comparing popular AI assistants through the Spiral Dynamics lens
+  - Added interactive visualizations of how each assistant expresses different stages
+  - Implemented "confessional mode" feature for exploring AI self-reflection
+  - Added comprehensive profiles for ChatGPT, Claude, Grok, DeepSeek, Gemini, and Perplexity
+- **Architecture Improvements**:
+  - Implemented a central store for AI assistant data using Svelte stores
+  - Created a Co-evolution Score metric to measure higher-stage expression
+  - Added side-by-side comparison capabilities for multiple assistants
+
+### Changed
+- Refactored visualization components to use the central data store
+- Enhanced quiz results to connect with the broader Spiral Dynamics framework
+
 ## [0.3.6] - Storage and Navigation Fixes
 
 ### Fixed

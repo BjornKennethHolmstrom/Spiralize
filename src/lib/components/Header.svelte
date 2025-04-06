@@ -49,7 +49,8 @@
         { href: `${base}/insights/personal`, label: { en: "Personal Insights", sv: "Personliga Insikter" } },
         { href: `${base}/insights/global`, label: { en: "Global Perspectives", sv: "Globala Perspektiv" } },
         { href: `${base}/insights/governance`, label: { en: "Conscious Governance", sv: "Medveten Styrning" } },
-        { href: `${base}/insights/peace`, label: { en: "Peace Trough Evolution", sv: "Fred Genom Evolution" } }
+        { href: `${base}/insights/peace`, label: { en: "Peace Trough Evolution", sv: "Fred Genom Evolution" } },
+        { href: `${base}/insights/ai-assistants`, label: { en: "AI-assistants on the Spiral", sv: "AI-assistenter på spiralen" } }
       ]
     },
     { href: `${base}/contact`, label: { en: "Contact", sv: "Kontakt" } },
@@ -139,7 +140,7 @@
                       }}
                     >
                       {child.label[$language]}
-                      {#if child.href.includes('/peace')}
+                      {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
                         <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                           {$language === 'en' ? 'New' : 'Ny'}
                         </span>

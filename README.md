@@ -32,6 +32,13 @@
   - Study case examples and practical applications
   - Connect with communities of practice in the field
 
+- **AI Assistant Insights**
+  - Explore how popular AI assistants express different stages of the Spiral
+  - Compare ChatGPT, Claude, Grok, DeepSeek, Gemini, and Perplexity through a developmental lens
+  - View interactive visualizations of AI expression across all stages
+  - Discover how different assistants complement each other across the Spiral
+  - Access unique "confessional mode" for AI self-reflection thought experiments
+
 - **Multilingual Support**
   - Currently supports English and Swedish
   - Expandable to include additional languages

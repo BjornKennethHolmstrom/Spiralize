@@ -7,6 +7,7 @@
   import ResultsImage from '$lib/components/ResultsImage.svelte';
   import { dominantStageExplanations, getCombinationExplanation } from '$lib/data/stageExplanations';
   import languageStore from '$lib/stores/languageStore';
+  import SpiralizeAIMatch from '$lib/components/SpiralizeAIMatch.svelte';
 
   const { language } = languageStore;
   $: currentLanguage = $language;
@@ -484,6 +485,18 @@
               <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
           </a>
+      </div>
+
+      <div class="mt-8 mb-8">
+        <h3 class="font-semibold text-lg text-purple-800 mb-2 text-center">
+          {currentLanguage === 'en' ? '🌀 Spiralize Mirror' : '🌀 Spiralize Spegel'}
+        </h3>
+        
+        <SpiralizeAIMatch 
+          userStageScores={stageScores} 
+          {dominantStage} 
+          {secondaryStage}
+        />
       </div>
 
       <div class="flex flex-wrap justify-center gap-4 mt-8">
