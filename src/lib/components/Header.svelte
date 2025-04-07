@@ -235,7 +235,7 @@
                         on:click={closeMobileMenu}
                       >
                         {child.label[$language]}
-                        {#if child.href.includes('/peace')}
+                        {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
                           <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                             {$language === 'en' ? 'New' : 'Ny'}
                           </span>
