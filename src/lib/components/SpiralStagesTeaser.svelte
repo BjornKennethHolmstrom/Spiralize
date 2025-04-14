@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   export let lang = 'en';
 
   const fallback = 'en';
@@ -6,6 +7,7 @@
 
   const translations = {
     en: {
+      title: "The Stages of Development",
       stages: [
         { name: "Red", emoji: "🔴", value: "Power & Survival" },
         { name: "Blue", emoji: "🔵", value: "Order & Faith" },
@@ -18,6 +20,7 @@
       }
     },
     sv: {
+      title: "Utvecklingsstegen",
       stages: [
         { name: "Röd", emoji: "🔴", value: "Makt & Överlevnad" },
         { name: "Blå", emoji: "🔵", value: "Ordning & Tro" },
@@ -31,28 +34,31 @@
     }
   };
 
-  const { stages, beyond } = translations[lang];
+  const t = translations[safeLang];
 </script>
 
-<div class="flex flex-wrap justify-center gap-4 mt-12">
-  {#each stages as stage}
-    <div
-      class="rounded-xl p-4 shadow-sm bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 max-w-[160px] text-center hover:scale-105 transition cursor-default"
+<section class="mb-12 text-center">
+  <h2 class="text-2xl md:text-3xl font-bold mb-6">{t.title}</h2>
+  
+  <div class="flex flex-wrap justify-center gap-4">
+    {#each t.stages as stage}
+      <div
+        class="flex-1 min-w-[140px] max-w-[180px] bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="text-4xl mb-2">{stage.emoji}</div>
+        <div class="font-semibold text-lg">{stage.name}</div>
+        <div class="text-sm text-gray-500">{stage.value}</div>
+      </div>
+    {/each}
+
+    <!-- Beyond Teaser -->
+    <a
+      href="{base}/spiral"
+      class="flex-1 min-w-[140px] max-w-[180px] rounded-xl p-4 shadow-sm border border-dashed border-gray-300 text-center hover:bg-gray-50 transition-colors"
     >
-      <div class="text-4xl mb-2">{stage.emoji}</div>
-      <div class="font-semibold text-lg">{stage.name}</div>
-      <div class="text-sm text-zinc-500 dark:text-zinc-400">{stage.value}</div>
-    </div>
-  {/each}
-
-  <!-- Beyond Teaser -->
-  <a
-    href="/start"
-    class="rounded-xl p-4 shadow-sm border border-dashed border-zinc-300 dark:border-zinc-600 text-center max-w-[160px] italic text-zinc-400 dark:text-zinc-500 hover:scale-105 transition cursor-pointer"
-  >
-    <div class="text-3xl mb-2">…</div>
-    <div class="font-medium">{beyond.label}</div>
-    <div class="text-sm">{beyond.teaser}</div>
-  </a>
-</div>
-
+      <div class="text-3xl mb-2">…</div>
+      <div class="font-medium text-gray-700">{t.beyond.label}</div>
+      <div class="text-sm text-gray-500">{t.beyond.teaser}</div>
+    </a>
+  </div>
+</section>
