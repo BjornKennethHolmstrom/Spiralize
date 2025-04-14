@@ -198,18 +198,20 @@
       <p class="text-xl md:text-2xl mb-8 text-purple-100">
         {t.heroSubtitle}
       </p>
-      <a 
-        href="{base}/start"
-        class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
-      >
-        {t.start}
-      </a>
-      <a 
-        href="{base}/quiz"
-        class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
-      >
-        {t.takeAssessment}
-      </a>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a 
+          href="{base}/start"
+          class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+        >
+          {t.start}
+        </a>
+        <a 
+          href="{base}/quiz"
+          class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+        >
+          {t.takeAssessment}
+        </a>
+      </div>
     </div>
 
     <!-- New Introduction Section -->
