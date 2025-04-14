@@ -220,7 +220,7 @@
         {t.intro.title}
       </h2>
 
-      <div class="max-w-4xl text-gray-500 dark:text-gray-400 text-base leading-relaxed">
+      <div class="max-w-4xl text-base leading-relaxed">
         <p class="mb-4">{t.intro.description.p1}</p>
         <p class="mb-4">{t.intro.description.p2}</p>
         <p class="mb-4">{t.intro.description.p3}</p>

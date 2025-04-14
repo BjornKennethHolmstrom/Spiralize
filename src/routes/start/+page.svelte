@@ -47,7 +47,7 @@
       {currentLanguage === 'sv' ? "Ditt nästa steg" : "Your Next Step"}
     </h2>
 
-    <p class="mb-8 text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
+    <p class="mb-8 max-w-xl mx-auto">
       {currentLanguage === 'sv'
         ? "Upptäck mer om varje nivå, ta vår enkla självskattning, eller gå med i en spiralmedveten dialog."
         : "Explore each stage in depth, take our simple self-assessment, or join a spiral-aware dialogue."}
@@ -58,16 +58,16 @@
         {currentLanguage === 'sv' ? "🔍 Utforska Spiralen" : "🔍 Explore the Spiral"}
       </a>
 
-      <a href="/quiz" class="px-6 py-3 rounded-xl bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+      <a href="/quiz" class="px-6 py-3 rounded-xl bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
         {currentLanguage === 'sv' ? "🧩 Ta testet" : "🧩 Take the Quiz"}
       </a>
 
-      <a href="/origins" class="px-6 py-3 rounded-xl bg-yellow-100 dark:bg-yellow-900 text-gray-800 dark:text-white hover:bg-yellow-200 dark:hover:bg-yellow-800 transition">
+      <a href="/origins" class="px-6 py-3 rounded-xl bg-yellow-100 dark:bg-yellow-900 hover:bg-yellow-200 dark:hover:bg-yellow-800 transition">
         {currentLanguage === 'sv' ? "📖 Läs Spiralens historia" : "📖 Read the Origins of the Spiral"}
       </a>
 
       <!-- Grayed out dialogue button -->
-      <div class="px-6 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-400 cursor-not-allowed border border-dashed border-gray-300 dark:border-gray-600 text-center">
+      <div class="px-6 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 cursor-not-allowed border border-dashed border-gray-300 dark:border-gray-600 text-center">
         <div>
           🗣️ {currentLanguage === 'sv' ? "Delta i en dialog" : "Join a Dialogue"}
         </div>
