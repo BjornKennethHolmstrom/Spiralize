@@ -98,7 +98,9 @@
     { href: `${base}/about`, label: { en: "About", sv: "Om" } }
   ];
 
-  function toggleMobileMenu() {
+  function toggleMobileMenu(event: MouseEvent | TouchEvent) {
+    event.preventDefault();
+    event.stopPropagation();
     isMobileMenuOpen = !isMobileMenuOpen;
     if (!isMobileMenuOpen) {
       closeDropdowns();
@@ -123,13 +125,16 @@
     event.preventDefault();
     event.stopPropagation();
     
-    if (id === 'home') {
-      homeDropdownOpen = !homeDropdownOpen;
-      if (homeDropdownOpen) insightsDropdownOpen = false;
-    } else if (id === 'insights') {
-      insightsDropdownOpen = !insightsDropdownOpen;
-      if (insightsDropdownOpen) homeDropdownOpen = false;
-    }
+    // Small delay to ensure the click event is fully processed
+    setTimeout(() => {
+      if (id === 'home') {
+        homeDropdownOpen = !homeDropdownOpen;
+        if (homeDropdownOpen) insightsDropdownOpen = false;
+      } else if (id === 'insights') {
+        insightsDropdownOpen = !insightsDropdownOpen;
+        if (insightsDropdownOpen) homeDropdownOpen = false;
+      }
+    }, 50);
   }
 
 </script>
@@ -301,8 +306,8 @@
                 {#if link.id === 'home'}
                   <button 
                     class="flex items-center justify-between w-full py-2 text-lg hover:text-purple-300 transition-colors"
-                    on:click|stopPropagation={(e) => toggleMobileSubmenu(e, 'home')}
-                    on:touchstart|stopPropagation={(e) => toggleMobileSubmenu(e, 'home')}
+                    on:click={(e) => toggleMobileSubmenu(e, 'home')}
+                    on:touchstart={(e) => toggleMobileSubmenu(e, 'home')}
                     aria-expanded={homeDropdownOpen}
                   >
                     <span>{link.label[$language]}</span>
