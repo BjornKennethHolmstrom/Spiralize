@@ -53,7 +53,7 @@
       <div class="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 p-6 text-center shadow-sm hover:shadow-md transition">
         <div class="text-3xl mb-2">{b.emoji}</div>
         <div class="font-semibold text-lg mb-1">{b.title}</div>
-        <div class="text-sm text-gray-600 dark:text-gray-400">{b[safeLang]}</div>
+        <div class="text-sm">{b[safeLang]}</div>
       </div>
     {/each}
   </div>

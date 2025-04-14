@@ -14,7 +14,7 @@
     {currentLanguage === 'sv' ? "Välkommen till Spiral Dynamics" : "Welcome to Spiral Dynamics"}
   </h1>
 
-  <p class="text-center text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+  <p class="text-center text-lg mb-12 max-w-3xl mx-auto">
     {currentLanguage === 'sv'
       ? "En karta över hur vi människor utvecklas – från överlevnad till samarbete, från kontroll till frihet, från separation till samhörighet."
       : "A map of how we evolve – from survival to cooperation, from control to freedom, from separation to interbeing."}
