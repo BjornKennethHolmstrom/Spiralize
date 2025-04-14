@@ -9,35 +9,69 @@
   // Mobile menu state
   let isMobileMenuOpen = false;
   
-  // Dropdown state for insights menu
+  // Dropdown states for different menus
+  let homeDropdownOpen = false;
   let insightsDropdownOpen = false;
   
-  // Helper function to toggle dropdown
-  function toggleInsightsDropdown() {
-    insightsDropdownOpen = !insightsDropdownOpen;
+  // Reference to dropdown elements
+  let homeDropdownEl: HTMLElement;
+  let homeButtonEl: HTMLElement;
+  let insightsDropdownEl: HTMLElement;
+  let insightsButtonEl: HTMLElement;
+  
+  // Helper functions to toggle dropdowns
+  function toggleHomeDropdown(event?: MouseEvent) {
+    if (event) event.stopPropagation();
+    homeDropdownOpen = !homeDropdownOpen;
+    // Close other dropdowns when opening this one
+    if (homeDropdownOpen) insightsDropdownOpen = false;
   }
   
-  // Close dropdown when pressing Escape
-  function closeDropdown() {
+  function toggleInsightsDropdown(event?: MouseEvent) {
+    if (event) event.stopPropagation();
+    insightsDropdownOpen = !insightsDropdownOpen;
+    // Close other dropdowns when opening this one
+    if (insightsDropdownOpen) homeDropdownOpen = false;
+  }
+  
+  // Close dropdowns when pressing Escape
+  function closeDropdowns() {
+    homeDropdownOpen = false;
     insightsDropdownOpen = false;
   }
   
-  // Click outside to close dropdown
+  // Click outside to close dropdowns
   function handleClickOutside(event: MouseEvent) {
     const target = event.target as Node;
-    const dropdownEl = document.getElementById('insights-dropdown');
-    const dropdownButton = document.getElementById('insights-dropdown-button');
     
-    if (dropdownEl && dropdownButton && 
-        !dropdownEl.contains(target) && 
-        !dropdownButton.contains(target)) {
+    // Handle insights dropdown
+    if (insightsDropdownEl && insightsButtonEl && 
+        insightsDropdownOpen &&
+        !insightsDropdownEl.contains(target) && 
+        !insightsButtonEl.contains(target)) {
       insightsDropdownOpen = false;
+    }
+    
+    // Handle home dropdown
+    if (homeDropdownEl && homeButtonEl && 
+        homeDropdownOpen &&
+        !homeDropdownEl.contains(target) && 
+        !homeButtonEl.contains(target)) {
+      homeDropdownOpen = false;
     }
   }
 
   // Links for navigation
   const navLinks = [
-    { href: `${base}/`, label: { en: "Home", sv: "Hem" } },
+    { 
+      label: { en: "Home", sv: "Hem" },
+      isDropdown: true,
+      id: "home",
+      children: [
+        { href: `${base}/`, label: { en: "🏠 Home", sv: "🏠 Hem" } },
+        { href: `${base}/start`, label: { en: "🌀 Start Here", sv: "🌀 Börja här" } },
+      ]
+    },
     { href: `${base}/spiral`, label: { en: "Explore", sv: "Utforska" } },
     { href: `${base}/origins`, label: { en: "Origins", sv: "Historia" } },
     { href: `${base}/quiz`, label: { en: "Quiz", sv: "Test" } },
@@ -45,12 +79,13 @@
     { 
       label: { en: "Insights", sv: "Insikter" },
       isDropdown: true,
+      id: "insights",
       children: [
-        { href: `${base}/insights/personal`, label: { en: "Personal Insights", sv: "Personliga Insikter" } },
-        { href: `${base}/insights/global`, label: { en: "Global Perspectives", sv: "Globala Perspektiv" } },
-        { href: `${base}/insights/governance`, label: { en: "Conscious Governance", sv: "Medveten Styrning" } },
-        { href: `${base}/insights/peace`, label: { en: "Peace Trough Evolution", sv: "Fred Genom Evolution" } },
-        { href: `${base}/insights/ai-assistants`, label: { en: "AI-assistants on the Spiral", sv: "AI-assistenter på spiralen" } }
+        { href: `${base}/insights/personal`, label: { en: "🪞 Personal Insights", sv: "🪞 Personliga Insikter" } },
+        { href: `${base}/insights/global`, label: { en: "🌍 Global Perspectives", sv: "🌍 Globala Perspektiv" } },
+        { href: `${base}/insights/governance`, label: { en: "🧭 Conscious Governance", sv: "🧭 Medveten Styrning" } },
+        { href: `${base}/insights/peace`, label: { en: "🕊️ Peace Trough Evolution", sv: "🕊️ Fred Genom Evolution" } },
+        { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI-assistants on the Spiral", sv: "🤖 AI-assistenter på spiralen" } }
       ]
     },
     { href: `${base}/contact`, label: { en: "Contact", sv: "Kontakt" } },
@@ -63,23 +98,31 @@
 
   function closeMobileMenu() {
     isMobileMenuOpen = false;
-    insightsDropdownOpen = false;
+    closeDropdowns();
   }
 
   // Handle escape key
   function handleKeydown(event: KeyboardEvent) {
     if (event.key === 'Escape') {
       isMobileMenuOpen = false;
-      insightsDropdownOpen = false;
+      closeDropdowns();
     }
   }
   
   // Toggle mobile submenu
-  function toggleMobileSubmenu(event: Event) {
+  function toggleMobileSubmenu(event: Event, id: string) {
     event.preventDefault();
     event.stopPropagation();
-    insightsDropdownOpen = !insightsDropdownOpen;
+    
+    if (id === 'home') {
+      homeDropdownOpen = !homeDropdownOpen;
+      if (homeDropdownOpen) insightsDropdownOpen = false;
+    } else if (id === 'insights') {
+      insightsDropdownOpen = !insightsDropdownOpen;
+      if (insightsDropdownOpen) homeDropdownOpen = false;
+    }
   }
+
 </script>
 
 <svelte:window on:keydown={handleKeydown} on:click={handleClickOutside} />
@@ -103,51 +146,91 @@
           {#if link.isDropdown}
             <!-- Dropdown parent -->
             <div class="relative group">
-              <button 
-                id="insights-dropdown-button"
-                class="text-lg hover:text-purple-300 transition-colors flex items-center gap-1"
-                aria-expanded={insightsDropdownOpen}
-                aria-haspopup="true"
-                on:click|stopPropagation={(e) => {
-                  e.preventDefault();
-                  toggleInsightsDropdown();
-                }}
-              >
-                {link.label[$language]}
-                <svg 
-                  class="w-4 h-4 ml-1 transition-transform duration-200" 
-                  class:rotate-180={insightsDropdownOpen}
-                  viewBox="0 0 20 20" 
-                  fill="currentColor"
+              {#if link.id === 'home'}
+                <button 
+                  bind:this={homeButtonEl}
+                  class="text-lg hover:text-purple-300 transition-colors flex items-center gap-1"
+                  aria-expanded={homeDropdownOpen}
+                  aria-haspopup="true"
+                  on:click={(e) => {
+                    e.preventDefault();
+                    toggleHomeDropdown(e);
+                  }}
                 >
-                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </button>
-              
-              <!-- Dropdown menu -->
-              {#if insightsDropdownOpen}
-                <div 
-                  id="insights-dropdown"
-                  class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-10"
-                  transition:slide={{ duration: 150 }}
+                  {link.label[$language]}
+                  <svg 
+                    class="w-4 h-4 ml-1 transition-transform duration-200" 
+                    class:rotate-180={homeDropdownOpen}
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                
+                <!-- Home Dropdown menu -->
+                {#if homeDropdownOpen}
+                  <div 
+                    bind:this={homeDropdownEl}
+                    class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-10"
+                    transition:slide={{ duration: 150 }}
+                  >
+                    {#each link.children as child}
+                      <a 
+                        href={child.href}
+                        class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-100 hover:text-purple-700"
+                        on:click={closeDropdowns}
+                      >
+                        {child.label[$language]}
+                      </a>
+                    {/each}
+                  </div>
+                {/if}
+              {:else}
+                <button 
+                  bind:this={insightsButtonEl}
+                  class="text-lg hover:text-purple-300 transition-colors flex items-center gap-1"
+                  aria-expanded={insightsDropdownOpen}
+                  aria-haspopup="true"
+                  on:click={(e) => {
+                    e.preventDefault();
+                    toggleInsightsDropdown(e);
+                  }}
                 >
-                  {#each link.children as child}
-                    <a 
-                      href={child.href}
-                      class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-100 hover:text-purple-700"
-                      on:click={() => {
-                        closeDropdown();
-                      }}
-                    >
-                      {child.label[$language]}
-                      {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
-                        <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
-                          {$language === 'en' ? 'New' : 'Ny'}
-                        </span>
-                      {/if}
-                    </a>
-                  {/each}
-                </div>
+                  {link.label[$language]}
+                  <svg 
+                    class="w-4 h-4 ml-1 transition-transform duration-200" 
+                    class:rotate-180={insightsDropdownOpen}
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                
+                <!-- Insights Dropdown menu -->
+                {#if insightsDropdownOpen}
+                  <div 
+                    bind:this={insightsDropdownEl}
+                    class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-10"
+                    transition:slide={{ duration: 150 }}
+                  >
+                    {#each link.children as child}
+                      <a 
+                        href={child.href}
+                        class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-100 hover:text-purple-700"
+                        on:click={closeDropdowns}
+                      >
+                        {child.label[$language]}
+                        {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
+                          <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
+                            {$language === 'en' ? 'New' : 'Ny'}
+                          </span>
+                        {/if}
+                      </a>
+                    {/each}
+                  </div>
+                {/if}
               {/if}
             </div>
           {:else}
@@ -209,40 +292,81 @@
             {#if link.isDropdown}
               <!-- Mobile dropdown parent -->
               <div>
-                <button 
-                  class="flex items-center justify-between w-full py-2 text-lg hover:text-purple-300 transition-colors"
-                  on:click={toggleMobileSubmenu}
-                  aria-expanded={insightsDropdownOpen}
-                >
-                  <span>{link.label[$language]}</span>
-                  <svg 
-                    class="w-4 h-4 transform transition-transform duration-200" 
-                    class:rotate-180={insightsDropdownOpen}
-                    viewBox="0 0 20 20" 
-                    fill="currentColor"
+                {#if link.id === 'home'}
+                  <button 
+                    class="flex items-center justify-between w-full py-2 text-lg hover:text-purple-300 transition-colors"
+                    on:click={(e) => {
+                      e.preventDefault();
+                      homeDropdownOpen = !homeDropdownOpen;
+                      if (homeDropdownOpen) insightsDropdownOpen = false;
+                    }}
+                    aria-expanded={homeDropdownOpen}
                   >
-                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                  </svg>
-                </button>
-                
-                <!-- Mobile dropdown submenu -->
-                {#if insightsDropdownOpen}
-                  <div class="pl-4 pt-1 pb-1 space-y-1" transition:slide={{ duration: 150 }}>
-                    {#each link.children as child}
-                      <a 
-                        href={child.href}
-                        class="block py-2 text-lg hover:text-purple-300 transition-colors pl-2 border-l border-purple-700"
-                        on:click={closeMobileMenu}
-                      >
-                        {child.label[$language]}
-                        {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
-                          <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
-                            {$language === 'en' ? 'New' : 'Ny'}
-                          </span>
-                        {/if}
-                      </a>
-                    {/each}
-                  </div>
+                    <span>{link.label[$language]}</span>
+                    <svg 
+                      class="w-4 h-4 transform transition-transform duration-200" 
+                      class:rotate-180={homeDropdownOpen}
+                      viewBox="0 0 20 20" 
+                      fill="currentColor"
+                    >
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  
+                  <!-- Mobile home dropdown submenu -->
+                  {#if homeDropdownOpen}
+                    <div class="pl-4 pt-1 pb-1 space-y-1" transition:slide={{ duration: 150 }}>
+                      {#each link.children as child}
+                        <a 
+                          href={child.href}
+                          class="block py-2 text-lg hover:text-purple-300 transition-colors pl-2 border-l border-purple-700"
+                          on:click={closeMobileMenu}
+                        >
+                          {child.label[$language]}
+                        </a>
+                      {/each}
+                    </div>
+                  {/if}
+                {:else}
+                  <button 
+                    class="flex items-center justify-between w-full py-2 text-lg hover:text-purple-300 transition-colors"
+                    on:click={(e) => {
+                      e.preventDefault();
+                      insightsDropdownOpen = !insightsDropdownOpen;
+                      if (insightsDropdownOpen) homeDropdownOpen = false;
+                    }}
+                    aria-expanded={insightsDropdownOpen}
+                  >
+                    <span>{link.label[$language]}</span>
+                    <svg 
+                      class="w-4 h-4 transform transition-transform duration-200" 
+                      class:rotate-180={insightsDropdownOpen}
+                      viewBox="0 0 20 20" 
+                      fill="currentColor"
+                    >
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  
+                  <!-- Mobile insights dropdown submenu -->
+                  {#if insightsDropdownOpen}
+                    <div class="pl-4 pt-1 pb-1 space-y-1" transition:slide={{ duration: 150 }}>
+                      {#each link.children as child}
+                        <a 
+                          href={child.href}
+                          class="block py-2 text-lg hover:text-purple-300 transition-colors pl-2 border-l border-purple-700"
+                          on:click={closeMobileMenu}
+                        >
+                          {child.label[$language]}
+                          {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
+                            <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
+                              {$language === 'en' ? 'New' : 'Ny'}
+                            </span>
+                          {/if}
+                        </a>
+                      {/each}
+                    </div>
+                  {/if}
                 {/if}
               </div>
             {:else}

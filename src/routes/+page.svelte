@@ -2,6 +2,8 @@
   import { base } from '$app/paths';
   import { writable } from 'svelte/store';
   import languageStore from '$lib/stores/languageStore';
+  import SpiralStagesTeaser from '$lib/components/SpiralStagesTeaser.svelte';
+  import QuickBenefits from '$lib/components/QuickBenefits.svelte';
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -13,9 +15,17 @@
     en: {
       heroTitle: "Welcome to Spiralize",
       heroSubtitle: "Understand yourself. Understand the world. Navigate the spiral.",
+      takeAssessment: "Take the Assessment",
+      start: "🔰 New to Spiral Dynamics?",
       intro: {
         title: "What is Spiral Dynamics?",
-        description: "Spiral Dynamics is a powerful framework that helps us understand how humans and societies evolve through different stages of development. Each stage represents a unique way of thinking about and interacting with the world.",
+        description: {
+          p1: "• Spiral Dynamics is a lens to understand how values evolve — shaping everything from personal choices to global politics.",
+          p2: "◦ It maps the development of human consciousness through distinct stages, each representing a unique way of making sense of the world.",
+          p3: "• This isn’t a belief system, but a pattern — of growth, meaning-making, and transformation.",
+          p4: "◦ By learning the spiral, we gain tools to navigate relationships, lead with insight, and understand where humanity is heading.",
+          quote: "“To honor all beings, we must first learn to see through all eyes.”"
+        },
         keyPoints: [
           {
             title: "It's About Growth",
@@ -76,9 +86,18 @@
     sv: {
       heroTitle: "Välkommen till Spiralize",
       heroSubtitle: "Förstå dig själv. Förstå världen. Navigera spiralen.",
+      heroSubtitle2: "En karta över hur människor och kulturer utvecklas – från överlevnad till system, från rädsla till frihet, från isolering till samhörighet.",
+      takeAssessment: "Testa dig själv",
+      start: "🔰 Ny till Spiral Dynamics?",
       intro: {
         title: "Vad är Spiral Dynamics?",
-        description: "Spiral Dynamics är ett kraftfullt ramverk som hjälper oss förstå hur människor och samhällen utvecklas genom olika utvecklingsstadier. Varje stadium representerar ett unikt sätt att tänka om och interagera med världen.",
+        description: {
+          p1: "• Spiral Dynamics är en lins för att förstå hur värderingar utvecklas – och hur de formar allt från personliga val till global politik.",
+          p2: "◦ Den kartlägger utvecklingen av mänskligt medvetande genom olika stadier, där varje stadium representerar ett unikt sätt att förstå världen.",
+          p3: "• Det är inget trossystem, utan ett mönster – av tillväxt, meningsskapande och transformation.",
+          p4: "◦ Genom att lära oss spiralen får vi verktyg för att navigera relationer, leda med insikt och förstå vart mänskligheten är på väg.",
+          quote: "“För att hedra alla varelser måste vi först lära oss att se genom alla ögon.”"
+        },
         keyPoints: [
           {
             title: "Det Handlar om Utveckling",
@@ -162,6 +181,7 @@
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
     <!-- Hero Section -->
     <div class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl text-white text-center px-6 py-16 mb-12">
       <!-- Add logo here -->
@@ -179,10 +199,16 @@
         {t.heroSubtitle}
       </p>
       <a 
+        href="{base}/start"
+        class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+      >
+        {t.start}
+      </a>
+      <a 
         href="{base}/quiz"
         class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
       >
-        Take the Assessment
+        {t.takeAssessment}
       </a>
     </div>
 
@@ -191,9 +217,21 @@
       <h2 class="text-3xl font-bold text-center mb-6">
         {t.intro.title}
       </h2>
-      <p class="text-xl text-gray-600 text-center mb-12">
-        {t.intro.description}
-      </p>
+
+      <div class="max-w-4xl text-gray-500 dark:text-gray-400 text-base leading-relaxed">
+        <p class="mb-4">{t.intro.description.p1}</p>
+        <p class="mb-4">{t.intro.description.p2}</p>
+        <p class="mb-4">{t.intro.description.p3}</p>
+        <p class="mb-4">{t.intro.description.p4}</p>
+      </div>
+
+      <SpiralStagesTeaser lang={currentLanguage} />
+
+      <QuickBenefits lang={currentLanguage} />
+
+      <div class="mt-8 max-w-xl text-sm text-gray-400 dark:text-gray-500 italic">
+        {t.intro.description.quote}
+      </div><br><br>
       
       <div class="grid md:grid-cols-3 gap-8">
         {#each t.intro.keyPoints as point}
