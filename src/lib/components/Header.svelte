@@ -20,15 +20,21 @@
   let insightsButtonEl: HTMLElement;
   
   // Helper functions to toggle dropdowns
-  function toggleHomeDropdown(event?: MouseEvent) {
-    if (event) event.stopPropagation();
+  function toggleHomeDropdown(event?: MouseEvent | TouchEvent) {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
     homeDropdownOpen = !homeDropdownOpen;
     // Close other dropdowns when opening this one
     if (homeDropdownOpen) insightsDropdownOpen = false;
   }
   
-  function toggleInsightsDropdown(event?: MouseEvent) {
-    if (event) event.stopPropagation();
+  function toggleInsightsDropdown(event?: MouseEvent | TouchEvent) {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
     insightsDropdownOpen = !insightsDropdownOpen;
     // Close other dropdowns when opening this one
     if (insightsDropdownOpen) homeDropdownOpen = false;
@@ -41,7 +47,7 @@
   }
   
   // Click outside to close dropdowns
-  function handleClickOutside(event: MouseEvent) {
+  function handleClickOutside(event: MouseEvent | TouchEvent) {
     const target = event.target as Node;
     
     // Handle insights dropdown
@@ -94,6 +100,9 @@
 
   function toggleMobileMenu() {
     isMobileMenuOpen = !isMobileMenuOpen;
+    if (!isMobileMenuOpen) {
+      closeDropdowns();
+    }
   }
 
   function closeMobileMenu() {
@@ -125,7 +134,7 @@
 
 </script>
 
-<svelte:window on:keydown={handleKeydown} on:click={handleClickOutside} />
+<svelte:window on:keydown={handleKeydown} on:click|stopPropagation={handleClickOutside} on:touchstart|stopPropagation={handleClickOutside} />
 
 <header class="bg-gradient-to-br from-purple-600 to-purple-800 text-white relative">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -152,10 +161,8 @@
                   class="text-lg hover:text-purple-300 transition-colors flex items-center gap-1"
                   aria-expanded={homeDropdownOpen}
                   aria-haspopup="true"
-                  on:click={(e) => {
-                    e.preventDefault();
-                    toggleHomeDropdown(e);
-                  }}
+                  on:click|stopPropagation={toggleHomeDropdown}
+                  on:touchstart|stopPropagation={toggleHomeDropdown}
                 >
                   {link.label[$language]}
                   <svg 
@@ -179,7 +186,7 @@
                       <a 
                         href={child.href}
                         class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-100 hover:text-purple-700"
-                        on:click={closeDropdowns}
+                        on:click|stopPropagation={closeDropdowns}
                       >
                         {child.label[$language]}
                       </a>
@@ -192,10 +199,8 @@
                   class="text-lg hover:text-purple-300 transition-colors flex items-center gap-1"
                   aria-expanded={insightsDropdownOpen}
                   aria-haspopup="true"
-                  on:click={(e) => {
-                    e.preventDefault();
-                    toggleInsightsDropdown(e);
-                  }}
+                  on:click|stopPropagation={toggleInsightsDropdown}
+                  on:touchstart|stopPropagation={toggleInsightsDropdown}
                 >
                   {link.label[$language]}
                   <svg 
@@ -219,7 +224,7 @@
                       <a 
                         href={child.href}
                         class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-100 hover:text-purple-700"
-                        on:click={closeDropdowns}
+                        on:click|stopPropagation={closeDropdowns}
                       >
                         {child.label[$language]}
                         {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
@@ -265,6 +270,7 @@
       <button
         class="md:hidden p-2 rounded-lg hover:bg-purple-700 transition-colors"
         on:click={toggleMobileMenu}
+        on:touchstart={toggleMobileMenu}
         aria-expanded={isMobileMenuOpen}
         aria-controls="mobile-menu"
       >
@@ -295,11 +301,8 @@
                 {#if link.id === 'home'}
                   <button 
                     class="flex items-center justify-between w-full py-2 text-lg hover:text-purple-300 transition-colors"
-                    on:click={(e) => {
-                      e.preventDefault();
-                      homeDropdownOpen = !homeDropdownOpen;
-                      if (homeDropdownOpen) insightsDropdownOpen = false;
-                    }}
+                    on:click|stopPropagation={(e) => toggleMobileSubmenu(e, 'home')}
+                    on:touchstart|stopPropagation={(e) => toggleMobileSubmenu(e, 'home')}
                     aria-expanded={homeDropdownOpen}
                   >
                     <span>{link.label[$language]}</span>
@@ -320,7 +323,8 @@
                         <a 
                           href={child.href}
                           class="block py-2 text-lg hover:text-purple-300 transition-colors pl-2 border-l border-purple-700"
-                          on:click={closeMobileMenu}
+                          on:click|stopPropagation={closeMobileMenu}
+                          on:touchstart|stopPropagation={closeMobileMenu}
                         >
                           {child.label[$language]}
                         </a>
@@ -330,11 +334,8 @@
                 {:else}
                   <button 
                     class="flex items-center justify-between w-full py-2 text-lg hover:text-purple-300 transition-colors"
-                    on:click={(e) => {
-                      e.preventDefault();
-                      insightsDropdownOpen = !insightsDropdownOpen;
-                      if (insightsDropdownOpen) homeDropdownOpen = false;
-                    }}
+                    on:click|stopPropagation={(e) => toggleMobileSubmenu(e, 'insights')}
+                    on:touchstart|stopPropagation={(e) => toggleMobileSubmenu(e, 'insights')}
                     aria-expanded={insightsDropdownOpen}
                   >
                     <span>{link.label[$language]}</span>
@@ -355,7 +356,8 @@
                         <a 
                           href={child.href}
                           class="block py-2 text-lg hover:text-purple-300 transition-colors pl-2 border-l border-purple-700"
-                          on:click={closeMobileMenu}
+                          on:click|stopPropagation={closeMobileMenu}
+                          on:touchstart|stopPropagation={closeMobileMenu}
                         >
                           {child.label[$language]}
                           {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
@@ -374,7 +376,8 @@
               <a 
                 href={link.href} 
                 class="block py-2 text-lg hover:text-purple-300 transition-colors"
-                on:click={closeMobileMenu}
+                on:click|stopPropagation={closeMobileMenu}
+                on:touchstart|stopPropagation={closeMobileMenu}
               >
                 {link.label[$language]}
               </a>
