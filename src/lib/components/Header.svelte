@@ -107,7 +107,11 @@
     }
   }
 
-  function closeMobileMenu() {
+  function closeMobileMenu(event?: Event) {
+    // Only prevent default if we're not dealing with a link click
+    if (event && !(event.target as HTMLElement).closest('a[href]')) {
+      event.preventDefault();
+    }
     isMobileMenuOpen = false;
     closeDropdowns();
   }
@@ -135,6 +139,13 @@
         if (insightsDropdownOpen) homeDropdownOpen = false;
       }
     }, 50);
+  }
+
+  function handleMobileLinkClick(event: Event) {
+    // Don't close immediately - let the navigation happen
+    setTimeout(() => {
+      closeMobileMenu();
+    }, 300); // Short delay to ensure navigation occurs
   }
 
 </script>
@@ -361,8 +372,8 @@
                         <a 
                           href={child.href}
                           class="block py-2 text-lg hover:text-purple-300 transition-colors pl-2 border-l border-purple-700"
-                          on:click|stopPropagation={closeMobileMenu}
-                          on:touchstart|stopPropagation={closeMobileMenu}
+                          on:click|stopPropagation={handleMobileLinkClick}
+                          on:touchstart|stopPropagation={handleMobileLinkClick}
                         >
                           {child.label[$language]}
                           {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
@@ -381,8 +392,8 @@
               <a 
                 href={link.href} 
                 class="block py-2 text-lg hover:text-purple-300 transition-colors"
-                on:click|stopPropagation={closeMobileMenu}
-                on:touchstart|stopPropagation={closeMobileMenu}
+                on:click|stopPropagation={handleMobileLinkClick}
+                on:touchstart|stopPropagation={handleMobileLinkClick}
               >
                 {link.label[$language]}
               </a>
