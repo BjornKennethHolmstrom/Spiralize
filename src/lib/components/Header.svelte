@@ -339,8 +339,8 @@
                         <a 
                           href={child.href}
                           class="block py-2 text-lg hover:text-purple-300 transition-colors pl-2 border-l border-purple-700"
-                          on:click|stopPropagation={closeMobileMenu}
-                          on:touchstart|stopPropagation={closeMobileMenu}
+                          on:click|stopPropagation={handleMobileLinkClick}
+                          on:touchstart|stopPropagation={handleMobileLinkClick}
                         >
                           {child.label[$language]}
                         </a>
