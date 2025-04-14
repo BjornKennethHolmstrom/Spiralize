@@ -54,7 +54,7 @@
     </p>
 
     <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="/explore" class="px-6 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition">
+      <a href="/spiral" class="px-6 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition">
         {currentLanguage === 'sv' ? "🔍 Utforska Spiralen" : "🔍 Explore the Spiral"}
       </a>
 
