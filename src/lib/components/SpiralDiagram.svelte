@@ -55,8 +55,6 @@
       handleStageClick(stageName);
     }
   }
-
-
 </script>
 
 <div 
@@ -64,7 +62,6 @@
   role="region"
   aria-label={language === 'en' ? 'Spiral Dynamics stages visualization' : 'Visualisering av Spiral Dynamics stadier'}
 >
-
   <svg 
     viewBox="0 0 780 680" 
     class="w-full h-auto"
@@ -92,6 +89,21 @@
       </linearGradient>
     </defs>
 
+    <!-- Center Label - INCREASED SIZE -->
+    <text
+      x={centerX - 200}
+      y={centerY - 275}
+      text-anchor="middle"
+      class="text-xl font-semibold"
+      fill="#374151"
+      role="heading"
+      aria-level="2"
+      font-size="22"
+      font-weight="600"
+    >
+      {language === 'en' ? 'Evolution of Consciousness' : 'Medvetandets Evolution'}
+    </text>
+
     <!-- Stage Dots and Labels -->
     {#each stagePoints as point}
     <g transform="translate({point.x}, {point.y})">
@@ -102,37 +114,53 @@
         on:click={() => handleStageClick(point.id)}
         on:keydown={(e) => handleKeyDown(e, point.id)}
         aria-label={language === 'en' 
-          ? `${point.stageName} stage: ${point.info.name[language]}. Press Enter to learn more.`
-          : `${point.stageName}-stadiet: ${point.info.name[language]}. Tryck Enter för att lära dig mer.`
+          ? `${point.id} stage: ${point.info.name[language]}. Press Enter to learn more.`
+          : `${point.id}-stadiet: ${point.info.name[language]}. Tryck Enter för att lära dig mer.`
         }
         aria-pressed={activeStage === point.id}
       >
-        <!-- Dot (with hover-only scale) -->
+        <!-- Dot (with hover-only scale) - INCREASED SIZE -->
         <circle
           cx="0"
           cy="0"
-          r="12"
+          r="26"
           fill={point.info.hex ?? '#999'}
           class="transition-transform duration-150 ease-in-out hover:scale-110 hover:opacity-90 focus:outline-none"
           opacity={activeStage === point.id ? 1 : 0.8}
         />
 
-        <!-- Stage Name Label -->
+        <!-- Stage Name Label - INCREASED SIZE AND IMPROVED CONTRAST -->
         <text
           x="0"
-          y="26"
+          y="40"
           text-anchor="middle"
-          class="text-xs font-medium pointer-events-none"
-          fill="#444"
+          font-size="15"
+          font-weight="500"
+          class="text-sm font-medium pointer-events-none"
+          fill="#333"
         >
           {point.info.association?.[language] ?? ''}
+        </text>
+
+        <!-- Stage Full Name below association - NEW ADDITION -->
+        <text
+          x="0"
+          y="58"
+          text-anchor="middle"
+          font-size="13"
+          font-weight="400"
+          class="text-xs font-normal pointer-events-none"
+          fill="#555"
+        >
+          {point.info.name?.[language] ?? ''}
         </text>
 
         <!-- Individual/Collective Indicator (Hidden by default, shown on hover) -->
         <text
           x=0
-          y="40"
+          y="75"
           text-anchor="middle"
+          font-size="12"
           class="text-xs font-medium opacity-0 transition-opacity duration-150"
           fill={point.info?.focus?.[language] === 'Individual' ? '#3B82F6' : '#10B981'}
           aria-hidden="true"
@@ -142,19 +170,6 @@
       </g>
       </g>
     {/each}
-
-    <!-- Center Label -->
-    <text
-      x={centerX - 200}
-      y={centerY - 275}
-      text-anchor="middle"
-      class="text-lg font-semibold"
-      fill="#374151"
-      role="heading"
-      aria-level="2"
-    >
-      {language === 'en' ? 'Evolution of Consciousness' : 'Medvetandets Evolution'}
-    </text>
   </svg>
 
   <!-- Screen reader only instructions -->
