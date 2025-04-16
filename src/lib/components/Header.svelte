@@ -1,10 +1,11 @@
 <script lang="ts">
   import { base } from '$app/paths';
-  import { writable } from 'svelte/store';
   import { slide } from 'svelte/transition';
+  import languageStore from '$lib/stores/languageStore';
   
-  // Language store
-  export let language = writable("en");
+  // Use language store directly
+  const { language, toggleLanguage } = languageStore;
+  $: currentLanguage = $language;
 
   // Mobile menu state
   let isMobileMenuOpen = false;
@@ -180,7 +181,7 @@
                   on:click|stopPropagation={toggleHomeDropdown}
                   on:touchstart|stopPropagation={toggleHomeDropdown}
                 >
-                  {link.label[$language]}
+                  {link.label[currentLanguage]}
                   <svg 
                     class="w-4 h-4 ml-1 transition-transform duration-200" 
                     class:rotate-180={homeDropdownOpen}
@@ -204,7 +205,7 @@
                         class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-100 hover:text-purple-700"
                         on:click|stopPropagation={closeDropdowns}
                       >
-                        {child.label[$language]}
+                        {child.label[currentLanguage]}
                       </a>
                     {/each}
                   </div>
@@ -218,7 +219,7 @@
                   on:click|stopPropagation={toggleInsightsDropdown}
                   on:touchstart|stopPropagation={toggleInsightsDropdown}
                 >
-                  {link.label[$language]}
+                  {link.label[currentLanguage]}
                   <svg 
                     class="w-4 h-4 ml-1 transition-transform duration-200" 
                     class:rotate-180={insightsDropdownOpen}
@@ -242,10 +243,10 @@
                         class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-100 hover:text-purple-700"
                         on:click|stopPropagation={closeDropdowns}
                       >
-                        {child.label[$language]}
+                        {child.label[currentLanguage]}
                         {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
                           <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
-                            {$language === 'en' ? 'New' : 'Ny'}
+                            {currentLanguage === 'en' ? 'New' : 'Ny'}
                           </span>
                         {/if}
                       </a>
@@ -260,7 +261,7 @@
               href={link.href} 
               class="text-lg hover:text-purple-300 transition-colors"
             >
-              {link.label[$language]}
+              {link.label[currentLanguage]}
             </a>
           {/if}
         {/each}
@@ -321,7 +322,7 @@
                     on:touchstart={(e) => toggleMobileSubmenu(e, 'home')}
                     aria-expanded={homeDropdownOpen}
                   >
-                    <span>{link.label[$language]}</span>
+                    <span>{link.label[currentLanguage]}</span>
                     <svg 
                       class="w-4 h-4 transform transition-transform duration-200" 
                       class:rotate-180={homeDropdownOpen}
@@ -342,7 +343,7 @@
                           on:click|stopPropagation={handleMobileLinkClick}
                           on:touchstart|stopPropagation={handleMobileLinkClick}
                         >
-                          {child.label[$language]}
+                          {child.label[currentLanguage]}
                         </a>
                       {/each}
                     </div>
@@ -354,7 +355,7 @@
                     on:touchstart|stopPropagation={(e) => toggleMobileSubmenu(e, 'insights')}
                     aria-expanded={insightsDropdownOpen}
                   >
-                    <span>{link.label[$language]}</span>
+                    <span>{link.label[currentLanguage]}</span>
                     <svg 
                       class="w-4 h-4 transform transition-transform duration-200" 
                       class:rotate-180={insightsDropdownOpen}
@@ -375,10 +376,10 @@
                           on:click|stopPropagation={handleMobileLinkClick}
                           on:touchstart|stopPropagation={handleMobileLinkClick}
                         >
-                          {child.label[$language]}
+                          {child.label[currentLanguage]}
                           {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
                             <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
-                              {$language === 'en' ? 'New' : 'Ny'}
+                              {currentLanguage === 'en' ? 'New' : 'Ny'}
                             </span>
                           {/if}
                         </a>
@@ -395,7 +396,7 @@
                 on:click|stopPropagation={handleMobileLinkClick}
                 on:touchstart|stopPropagation={handleMobileLinkClick}
               >
-                {link.label[$language]}
+                {link.label[currentLanguage]}
               </a>
             {/if}
           {/each}

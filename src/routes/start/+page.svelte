@@ -27,6 +27,12 @@
         origins: "📖 Learn the Origins",
         dialog: "🗣️ Join a Dialogue",
         coming: "Coming in the future"
+      },
+      // SEO metadata
+      meta: {
+        title: "Spiral Dynamics - Understanding Human Evolution and Values",
+        description: "Explore Spiral Dynamics, a powerful framework for understanding how individuals and societies evolve through different stages of development and worldviews.",
+        keywords: "Spiral Dynamics, human development, values evolution, consciousness stages, worldviews, personal growth"
       }
     },
     sv: {
@@ -45,13 +51,42 @@
         origins: "📖 Läs Spiralens historia",
         dialog: "🗣️ Delta i en dialog",
         coming: "Kommer i framtiden"
+      },
+      // SEO metadata
+      meta: {
+        title: "Spiral Dynamics - Förstå Mänsklig Evolution och Värderingar",
+        description: "Utforska Spiral Dynamics, ett kraftfullt ramverk för att förstå hur individer och samhällen utvecklas genom olika stadier av utveckling och världsbilder.",
+        keywords: "Spiral Dynamics, mänsklig utveckling, värderingsevolution, medvetandestadier, världsbilder, personlig utveckling"
       }
     }
   };
 
   // Reactive translation data
-  $: t = translations[currentLanguage];
+  $: t = translations[currentLanguage] || translations.en;
 </script>
+
+<svelte:head>
+  <title>{t.meta.title}</title>
+  <meta name="description" content={t.meta.description} />
+  <meta name="keywords" content={t.meta.keywords} />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={t.meta.title} />
+  <meta property="og:description" content={t.meta.description} />
+  <meta property="og:image" content="{base}/social-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content={t.meta.title} />
+  <meta property="twitter:description" content={t.meta.description} />
+  <meta property="twitter:image" content="{base}/social-preview.png" />
+  
+  <!-- Canonical link -->
+  <link rel="canonical" href="https://spiralize.org/start" />
+</svelte:head>
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -75,10 +110,10 @@
     </section>
 
     <!-- Spiral Stages Teaser -->
-    <SpiralStagesTeaser lang={currentLanguage} />
+    <SpiralStagesTeaser />
 
     <!-- Benefits Block -->
-    <QuickBenefits lang={currentLanguage} />
+    <QuickBenefits />
 
     <!-- Next Steps -->
     <section class="mt-16 md:mt-20 text-center max-w-4xl mx-auto">
@@ -94,6 +129,7 @@
         <a 
           href="{base}/spiral" 
           class="px-4 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium transition-colors"
+          aria-label={currentLanguage === 'en' ? 'Explore the spiral to learn about each developmental stage' : 'Utforska spiralen för att lära dig om varje utvecklingsstadium'}
         >
           {t.nextSteps.explore}
         </a>
@@ -101,6 +137,7 @@
         <a 
           href="{base}/quiz" 
           class="px-4 py-3 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium transition-colors"
+          aria-label={currentLanguage === 'en' ? 'Take the assessment quiz to discover your center of gravity' : 'Ta testet för att upptäcka ditt gravitationscentrum'}
         >
           {t.nextSteps.quiz}
         </a>
@@ -108,6 +145,7 @@
         <a 
           href="{base}/origins" 
           class="px-4 py-3 rounded-lg bg-yellow-100 hover:bg-yellow-200 text-yellow-800 font-medium transition-colors"
+          aria-label={currentLanguage === 'en' ? 'Learn about the history and origins of Spiral Dynamics' : 'Lär dig om Spiral Dynamics historia och ursprung'}
         >
           {t.nextSteps.origins}
         </a>

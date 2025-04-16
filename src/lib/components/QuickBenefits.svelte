@@ -1,8 +1,9 @@
 <script>
-  export let lang = 'en';
-
-  const fallback = 'en';
-  const safeLang = ['en', 'sv'].includes(lang) ? lang : fallback;
+  import languageStore from '$lib/stores/languageStore';
+  const { language } = languageStore; 
+  
+  // Reactive language value
+  $: currentLanguage = $language;
 
   const translations = {
     en: {
@@ -67,7 +68,8 @@
     }
   };
 
-  const t = translations[safeLang];
+  // Use the language from the store
+  $: t = translations[currentLanguage] || translations.en;
 </script>
 
 <section class="mb-12">

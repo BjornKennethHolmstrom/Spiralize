@@ -4,17 +4,22 @@
   import { waitLocale } from 'svelte-i18n';
   import { page } from '$app/stores';
   import { base } from '$app/paths';
+  import { onMount } from 'svelte';
+  import { browser } from '$app/environment';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
   import languageStore from '$lib/stores/languageStore';
 
   const { language } = languageStore;
+  $: currentLanguage = $language;
 
   let isLoaded = false;
 
-  // Wait for locale to be loaded before showing content
-  waitLocale().then(() => {
-    isLoaded = true;
+  onMount(() => {
+    // Wait for locale to be loaded before showing content
+    waitLocale().then(() => {
+      isLoaded = true;
+    });
   });
 
   $: isResultsPage = $page.url.pathname.includes('/results');
@@ -55,23 +60,27 @@
     <a 
       href="#main-content"
       class="skip-link"
-      aria-label={$language === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
+      aria-label={currentLanguage === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
     >
-      {$language === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
+      {currentLanguage === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
     </a>
 
-    <Header {language} />
+    <!-- Header no longer needs language prop -->
+    <Header />
     
     <!-- Main content wrapper -->
     <main id="main-content" tabindex="-1">
       <slot />
     </main>
 
-    <Footer language="en" />
+    <!-- Footer no longer needs language prop -->
+    <Footer />
   </div>
 {:else}
   <div class="min-h-screen flex items-center justify-center">
-    <div class="text-gray-600" role="status">Loading...</div>
+    <div class="text-gray-600" role="status">
+      {currentLanguage === 'en' ? 'Loading...' : 'Laddar...'}
+    </div>
   </div>
 {/if}
 
