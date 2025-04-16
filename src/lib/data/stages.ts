@@ -24,6 +24,32 @@ export const stages: Stage[] = [
       en: ['The body must survive', 'Hunger, thirst, shelter are primary', 'There is no “other”'],
       sv: ['Kroppen måste överleva', 'Hunger, törst och skydd är primärt', 'Det finns inget "annat"']
     },
+    contributions: {
+      en: [
+        "Instinctual preservation of life",
+        "Direct connection to bodily needs",
+        "Unfiltered presence in the moment"
+      ],
+      sv: [
+        "Instinktiv överlevnad av livet",
+        "Direkt kontakt med kroppens behov",
+        "Ofiltrerad närvaro i nuet"
+      ]
+    },
+    topValues: {
+      en: [
+        "Survival",
+        "Basic physical needs",
+        "Immediate safety",
+        "Instinctual reactions"
+      ],
+      sv: [
+        "Överlevnad",
+        "Basala fysiska behov",
+        "Omedelbar säkerhet",
+        "Instinktiva reaktioner"
+      ]
+    },
     pitfalls: {
       en: ['No long-term memory', 'No moral judgment', 'No abstract thought'],
       sv: ['Ingen långsiktig minne', 'Ingen moralisk bedömning', 'Ingen abstrakt tanke']
@@ -86,6 +112,34 @@ export const stages: Stage[] = [
       en: ['We are safer together', 'Ritual creates order', 'Nature is alive'],
       sv: ['Vi är säkrare tillsammans', 'Ritual skapar ordning', 'Naturen är levande']
     },
+    contributions: {
+      en: [
+        "Fosters deep belonging and shared identity",
+        "Honors ancestors and ritual continuity",
+        "Holds communities together through shared myth"
+      ],
+      sv: [
+        "Främjar djup tillhörighet och gemensam identitet",
+        "Hedrar förfäder och rituell kontinuitet",
+        "Håller samman samhällen genom gemensam myt"
+      ]
+    },
+    topValues: {
+      en: [
+        "Tradition",
+        "Belonging",
+        "Magical protection",
+        "Ancestral wisdom",
+        "Group harmony"
+      ],
+      sv: [
+        "Tradition",
+        "Tillhörighet",
+        "Magiskt skydd",
+        "Förfäders visdom",
+        "Gruppharmoni"
+      ]
+    },
     pitfalls: {
       en: ['Superstition', 'Fear of spirits', 'Resistance to change', 'Xenophobia'],
       sv: ['Övertro', 'Rädsla för andar', 'Motstånd mot förändring', 'Främlingsfientlighet']
@@ -99,8 +153,8 @@ export const stages: Stage[] = [
       sv: 'Lila utvecklas till Röd när individuell styrka blir nödvändig och separation från stammen börjar.'
     },
     archetypes: {
-      en: ['Shamans', 'Totem rituals', 'Tribal elders', 'Fairy tales', 'Witch doctors'],
-      sv: ['Schamaner', 'Totemritualer', 'Stamäldste', 'Sagosagor', 'Häxdoktorer']
+      en: ['Family traditions/rituals', 'Shamans', 'Totem rituals', 'Tribal elders', 'Fairy tales', 'Witch doctors'],
+      sv: ['Familjetraditioner/ritualer','Schamaner', 'Totemritualer', 'Stamäldste', 'Sagor', 'Häxdoktorer']
     },
     quotes: {
       en: [
@@ -147,6 +201,36 @@ export const stages: Stage[] = [
     insights: {
       en: ['The strong survive', 'Respect must be taken', 'Rules are for the weak'],
       sv: ['De starka överlever', 'Respekt måste tas', 'Regler är för de svaga']
+    },
+    contributions: {
+      en: [
+        "Ignites personal willpower and courage",
+        "Challenges oppression and asserts freedom",
+        "Drives bold action and leadership through strength"
+      ],
+      sv: [
+        "Tänder viljestyrka och mod",
+        "Utmanar förtryck och hävdar frihet",
+        "Driver djärv handling och ledarskap genom styrka"
+      ]
+    },
+    topValues: {
+      en: [
+        "Power",
+        "Domination",
+        "Strength",
+        "Freedom from constraints",
+        "Action and conquest",
+        "Immediate gratification"
+      ],
+      sv: [
+        "Kraft och makt",
+        "Dominans",
+        "Styrka",
+        "Frihet från begränsningar",
+        "Handling och erövring",
+        "Omedelbar tillfredsställelse"
+      ]
     },
     pitfalls: {
       en: ['Violence', 'Corruption', 'Lack of empathy', 'Short-termism'],
@@ -210,6 +294,36 @@ export const stages: Stage[] = [
       en: ['Law brings order', 'Meaning comes from serving a higher cause', 'Sacrifice ensures salvation'],
       sv: ['Lag skapar ordning', 'Mening kommer av att tjäna ett högre syfte', 'Uppoffring leder till frälsning']
     },
+    contributions: {
+      en: [
+        "Establishes structure, rules, and reliability",
+        "Creates purpose through shared morality",
+        "Builds institutions, law, and long-term stability"
+      ],
+      sv: [
+        "Etablerar struktur, regler och pålitlighet",
+        "Skapar syfte genom gemensam moral",
+        "Bygger institutioner, lagar och långsiktig stabilitet"
+      ]
+    },
+    topValues: {
+      en: [
+        "Order",
+        "Discipline",
+        "Duty",
+        "Morality",
+        "Righteousness",
+        "Loyalty"
+      ],
+      sv: [
+        "Ordning",
+        "Disciplin",
+        "Plikt",
+        "Moral",
+        "Rättfärdighet",
+        "Lojalitet"
+      ]
+    },
     pitfalls: {
       en: ['Dogmatism', 'Judgmentalism', 'Oppression through tradition', 'Fear of change'],
       sv: ['Dogmatism', 'Dömande attityd', 'Förtryck genom tradition', 'Rädsla för förändring']
@@ -223,8 +337,8 @@ export const stages: Stage[] = [
       sv: 'Blå utvecklas till Orange när människor börjar ifrågasätta dogmer och söka individuell framgång genom förnuft.'
     },
     archetypes: {
-      en: ['Priests', 'Monks', 'Military officers', 'Zealots', 'Religious conservatives'],
-      sv: ['Präster', 'Munkar', 'Militärofficerare', 'Fanatiker', 'Religiösa konservativa']
+      en: ['Bureaucrats', 'Priests', 'Monks', 'Military officers', 'Zealots', 'Religious conservatives'],
+      sv: ['Byråkrater', 'Präster', 'Munkar', 'Militärofficerare', 'Fanatiker', 'Religiösa konservativa']
     },
     quotes: {
       en: [
@@ -271,6 +385,38 @@ export const stages: Stage[] = [
     insights: {
       en: ['You can build your own success', 'Truth can be measured', 'Progress never stops'],
       sv: ['Du kan skapa din egen framgång', 'Sanning kan mätas', 'Framsteg stannar aldrig']
+    },
+    contributions: {
+      en: [
+        "Unleashes innovation and progress",
+        "Empowers individual achievement and self-actualization",
+        "Drives science, technology, and market economies"
+      ],
+      sv: [
+        "Frigör innovation och framsteg",
+        "Möjliggör individuell prestation och självförverkligande",
+        "Driver vetenskap, teknik och marknadsekonomi"
+      ]
+    },
+    topValues: {
+      en: [
+        "Achievement",
+        "Success",
+        "Innovation",
+        "Efficiency",
+        "Competition",
+        "Strategic thinking",
+        "Progress"
+      ],
+      sv: [
+        "Prestation",
+        "Framgång",
+        "Innovation",
+        "Effektivitet",
+        "Konkurrens",
+        "Strategiskt tänkande",
+        "Framsteg"
+      ]
     },
     pitfalls: {
       en: ['Shallow materialism', 'Workaholism', 'Manipulation', 'Environmental harm'],
@@ -332,6 +478,38 @@ export const stages: Stage[] = [
       en: ['Everyone is equal', 'Feelings matter', 'Systems of oppression must be dismantled'],
       sv: ['Alla är lika mycket värda', 'Känslor spelar roll', 'Förtryckande system måste avvecklas']
     },
+    contributions: {
+      en: [
+        "Creates space for empathy, emotional healing, and inclusion",
+        "Champions equality and human rights",
+        "Builds participatory community and relational intelligence"
+      ],
+      sv: [
+        "Skapar utrymme för empati, emotionell läkning och inkludering",
+        "Försvarar jämlikhet och mänskliga rättigheter",
+        "Bygger deltagande gemenskap och relationsintelligens"
+      ]
+    },
+    topValues: {
+      en: [
+        "Equality",
+        "Harmony",
+        "Community",
+        "Inclusion",
+        "Dialogue",
+        "Environmental awareness",
+        "Empathy"
+      ],
+      sv: [
+        "Jämställdhet",
+        "Harmoni",
+        "Gemenskap",
+        "Inkludering",
+        "Dialog",
+        "Miljömedvetenhet",
+        "Empati"
+      ]
+    },
     pitfalls: {
       en: ['Groupthink', 'Over-sensitivity', 'Anti-hierarchy bias', 'Lack of pragmatism'],
       sv: ['Gruppmentalitet', 'Överkänslighet', 'Motstånd mot hierarki', 'Brist på pragmatism']
@@ -345,8 +523,8 @@ export const stages: Stage[] = [
       sv: 'Grön utvecklas till Gul när den inser idealismens begränsningar och börjar tänka systemiskt.'
     },
     archetypes: {
-      en: ['Social workers', 'Activists', 'NGO founders', 'Therapists', 'Environmentalists'],
-      sv: ['Socialarbetare', 'Aktivister', 'NGO-grundare', 'Terapeuter', 'Miljövänner']
+      en: ['Progressive politicians', 'Social workers', 'Activists', 'NGO founders', 'Therapists', 'Environmentalists'],
+      sv: ['Progressiva politiker', 'Socialarbetare', 'Aktivister', 'NGO-grundare', 'Terapeuter', 'Miljövänner']
     },
     quotes: {
       en: [
@@ -391,6 +569,38 @@ export const stages: Stage[] = [
     insights: {
       en: ['Each perspective is partially true', 'Everything is interconnected', 'Truth is contextual'],
       sv: ['Varje perspektiv är delvis sant', 'Allt hänger samman', 'Sanning är kontextuell']
+    },
+    contributions: {
+      en: [
+        "Integrates diverse worldviews through systems thinking",
+        "Builds adaptive, sustainable solutions beyond ideology",
+        "Supports flexible, multi-perspectival leadership"
+      ],
+      sv: [
+        "Integrerar olika världsbilder genom systemtänkande",
+        "Skapar adaptiva, hållbara lösningar bortom ideologi",
+        "Stödjer flexibelt, mångperspektiviskt ledarskap"
+      ]
+    },
+    topValues: {
+      en: [
+        "Systems thinking",
+        "Complexity",
+        "Multiple perspectives",
+        "Effectiveness",
+        "Adaptability",
+        "Long-term sustainability",
+        "Integration"
+      ],
+      sv: [
+        "Systemtänkande",
+        "Komplexitet",
+        "Flera perspektiv",
+        "Effektivitet",
+        "Anpassningsförmåga",
+        "Långsiktig hållbarhet",
+        "Integration"
+      ]
     },
     pitfalls: {
       en: ['Analysis paralysis', 'Emotional detachment', 'Overcomplexity', 'Difficulty relating'],
@@ -454,6 +664,36 @@ export const stages: Stage[] = [
       en: ['We are the Earth dreaming', 'Love and presence are intelligence', 'Everything is already whole'],
       sv: ['Vi är Jorden som drömmer', 'Kärlek och närvaro är intelligens', 'Allt är redan helt']
     },
+    contributions: {
+      en: [
+        "Cultivates planetary and cosmic consciousness",
+        "Embeds sacred presence in leadership and action",
+        "Sees wholeness in the midst of complexity"
+      ],
+      sv: [
+        "Främjar planetärt och kosmiskt medvetande",
+        "Integrerar helig närvaro i ledarskap och handling",
+        "Ser helhet mitt i komplexitet"
+      ]
+    },
+    topValues: {
+      en: [
+        "Wholeness",
+        "Global consciousness",
+        "Harmony with natural flows",
+        "Interconnectedness",
+        "Spiritual awareness",
+        "Collective wisdom"
+      ],
+      sv: [
+        "Helhet",
+        "Globalt medvetande",
+        "Harmoni med naturliga flöden",
+        "Sammankoppling",
+        "Andlig medvetenhet",
+        "Kollektiv visdom"
+      ]
+    },
     pitfalls: {
       en: ['Isolation', 'Spiritual bypassing', 'Cosmic overwhelm', 'Challenges grounding insights in daily life'],
       sv: ['Isolering', 'Andlig flykt', 'Kosmisk överväldigande', 'Utmaningar att förankra insikter i vardagslivet']
@@ -514,6 +754,36 @@ export const stages: Stage[] = [
       en: ['Power can be sacred', 'Chaos can be creative', 'You can be whole and still act'],
       sv: ['Kraft kan vara helig', 'Kaos kan vara kreativt', 'Du kan vara hel och ändå agera']
     },
+    contributions: {
+      en: [
+        "Embodies post-egoic power and creative agency",
+        "Reintegrates shadow and chaos as sacred forces",
+        "Initiates radical transformation through living myth"
+      ],
+      sv: [
+        "Förkroppsligar post-egobaserad kraft och kreativt handlande",
+        "Återintegrerar skugga och kaos som heliga krafter",
+        "Initierar radikal transformation genom levd myt"
+      ]
+    },
+    topValues: {
+      en: [
+        "Sovereign unity",
+        "Creative freedom",
+        "Evolutionary purpose",
+        "Transcendent action",
+        "Conscious embodiment",
+        "Revolutionary potential"
+      ],
+      sv: [
+        "Suverän enhet",
+        "Kreativ frihet",
+        "Evolutionärt syfte",
+        "Transcendent handling",
+        "Medvetet förkroppsligande",
+        "Revolutionär potential"
+      ]
+    },
     pitfalls: {
       en: ['Hyper-individualism', 'Mythic inflation', 'Magical arrogance', 'Tribal fracturing'],
       sv: ['Hyperindividualism', 'Mythisk uppblåsthet', 'Magisk arrogans', 'Stamuppdelning']
@@ -572,6 +842,36 @@ export const stages: Stage[] = [
     insights: {
       en: ['All is already done', 'Nothing needs to happen', 'Truth is silence'],
       sv: ['Allt är redan gjort', 'Inget behöver hända', 'Sanningen är tystnad']
+    },
+    contributions: {
+      en: [
+        "Transmits luminous presence without attachment or effort",
+        "Rests in paradox, holding the whole Spiral lightly",
+        "Dissolves the self into transparent resonance with being"
+      ],
+      sv: [
+        "Överför ljus närvaro utan ansträngning eller bundenhet",
+        "Vilar i paradoxen, håller hela spiralen lätt",
+        "Upplöser jaget i transparent resonans med varandet"
+      ]
+    },
+    topValues: {
+      en: [
+        "Non-duality",
+        "Boundless awareness",
+        "Formless clarity",
+        "Infinite flow",
+        "Transparency",
+        "Pure presence"
+      ],
+      sv: [
+        "Icke-dualitet",
+        "Gränslös medvetenhet",
+        "Formlös klarhet",
+        "Oändligt flöde",
+        "Genomskinlighet",
+        "Ren närvaro"
+      ]
     },
     pitfalls: {
       en: ['Disconnection from form', 'Loss of direction', 'Difficulty communicating', 'Perceived aloofness'],
@@ -633,6 +933,36 @@ export const stages: Stage[] = [
     insights: {
       en: ['Nothing remains', 'Even being is optional', 'The world is a teacup evaporating'],
       sv: ['Inget återstår', 'Även varande är valfritt', 'Världen är en tekopp som avdunstar']
+    },
+    contributions: {
+      en: [
+        "Reveals the emptiness beneath all structure and striving",
+        "Silently completes the Spiral without leaving a trace",
+        "Offers space without self — the end and beginning of form"
+      ],
+      sv: [
+        "Avslöjar tomheten under all struktur och strävan",
+        "Fullbordar spiralen tyst utan att lämna spår",
+        "Erbjuder rum utan själv — formens slut och början"
+      ]
+    },
+    topValues: {
+      en: [
+        "Absence of identity",
+        "Silence",
+        "Freedom from form",
+        "Emptiness",
+        "Isness without reference",
+        "The end of need"
+      ],
+      sv: [
+        "Frånvaro av identitet",
+        "Tystnad",
+        "Frihet från form",
+        "Tomhet",
+        "Varande utan referens",
+        "Nödens slut"
+      ]
     },
     pitfalls: {
       en: ['Incommunicability', 'Disappearance from engagement', 'Being perceived as void'],

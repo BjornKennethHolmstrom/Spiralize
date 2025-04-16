@@ -74,6 +74,29 @@
 
     <div class="grid grid-cols-2 gap-4 mb-4">
       <div>
+        <h3 class="font-semibold text-gray-700 mb-1">
+          🌟 {currentLanguage === 'en' ? 'Contributions' : 'Bidrag'}
+        </h3>
+        <ul class="list-disc list-inside text-sm">
+          {#each stage.contributions[currentLanguage] as contribution}
+            <li>{contribution}</li>
+          {/each}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-1">
+          🎯 {currentLanguage === 'en' ? 'Top Values' : 'Högsta värderingar'}
+        </h3>
+        <ul class="list-disc list-inside text-sm">
+          {#each stage.topValues[currentLanguage] as value}
+            <li>{value}</li>
+          {/each}
+        </ul>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div>
         <h3 class="font-semibold text-gray-700 mb-1">⚠️ {currentLanguage === 'en' ? 'Pitfalls' : 'Fallgropar'}</h3>
         <ul class="list-disc list-inside text-sm">
           {#each stage.pitfalls[currentLanguage] as pitfall}
