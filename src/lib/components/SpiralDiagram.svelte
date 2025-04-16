@@ -9,7 +9,7 @@
   const dispatch = createEventDispatcher();
 
   const centerX = 400;
-  const centerY = 400;
+  const centerY = 320;
   const stageCount = Object.keys(stages).length;
 
   // Spiral configuration
@@ -18,20 +18,21 @@
   const spiralPathSegments = 500; // Number of segments for smoothness
 
   // Generate points for stages
-  const stagePoints = Object.entries(stages).map(([stageName, info], index) => {
-    const angle = (index / stageCount) * Math.PI * 2 * rotations; // Angle for each stage
-    const radius = 50 + (index * spacing); // Radius increases for each stage
+  const stagePoints = stages.map((stage, index) => {
+    const angle = (index / stageCount) * Math.PI * 2 * rotations;
+    const radius = 50 + (index * spacing);
     const x = centerX + radius * Math.cos(angle);
     const y = centerY + radius * Math.sin(angle);
 
     return {
-      stageName,
-      info,
+      id: stage.id,
+      info: stage,
       x,
       y,
       angle,
     };
   });
+
 
   // Generate continuous spiral path
   const spiralPath = Array.from({ length: spiralPathSegments }).map((_, i) => {
@@ -54,6 +55,8 @@
       handleStageClick(stageName);
     }
   }
+
+
 </script>
 
 <div 
@@ -61,8 +64,9 @@
   role="region"
   aria-label={language === 'en' ? 'Spiral Dynamics stages visualization' : 'Visualisering av Spiral Dynamics stadier'}
 >
+
   <svg 
-    viewBox="0 0 750 750" 
+    viewBox="0 0 780 680" 
     class="w-full h-auto"
     role="img"
     aria-label={language === 'en' ? 'Interactive spiral showing all developmental stages' : 'Interaktiv spiral som visar alla utvecklingsstadier'}
@@ -90,53 +94,52 @@
 
     <!-- Stage Dots and Labels -->
     {#each stagePoints as point}
+    <g transform="translate({point.x}, {point.y})">
       <g
         role="button"
         tabindex="0"
-        class="stage-group cursor-pointer transform transition-transform duration-150 hover:scale-105"
-        class:active={activeStage === point.stageName}
-        on:click={() => handleStageClick(point.stageName)}
-        on:keydown={(e) => handleKeyDown(e, point.stageName)}
+        class="stage-group cursor-pointer"
+        on:click={() => handleStageClick(point.id)}
+        on:keydown={(e) => handleKeyDown(e, point.id)}
         aria-label={language === 'en' 
           ? `${point.stageName} stage: ${point.info.name[language]}. Press Enter to learn more.`
           : `${point.stageName}-stadiet: ${point.info.name[language]}. Tryck Enter för att lära dig mer.`
         }
-        aria-pressed={activeStage === point.stageName}
+        aria-pressed={activeStage === point.id}
       >
-        <!-- Dot -->
+        <!-- Dot (with hover-only scale) -->
         <circle
-          cx={point.x}
-          cy={point.y}
-          r="15"
-          fill={point.info.color}
-          class="transition-opacity duration-150"
-          opacity={activeStage === point.stageName ? "1" : "0.8"}
-          aria-hidden="true"
+          cx="0"
+          cy="0"
+          r="12"
+          fill={point.info.hex ?? '#999'}
+          class="transition-transform duration-150 ease-in-out hover:scale-110 hover:opacity-90 focus:outline-none"
+          opacity={activeStage === point.id ? 1 : 0.8}
         />
 
         <!-- Stage Name Label -->
         <text
-          x={point.x}
-          y={point.y + 30} 
+          x="0"
+          y="26"
           text-anchor="middle"
-          class="text-sm font-medium capitalize"
-          fill="#4B5563"
-          aria-hidden="true"
+          class="text-xs font-medium pointer-events-none"
+          fill="#444"
         >
-          {point.info.name[language]}
+          {point.info.association?.[language] ?? ''}
         </text>
 
         <!-- Individual/Collective Indicator (Hidden by default, shown on hover) -->
         <text
-          x={point.x}
-          y={point.y + 50}
+          x=0
+          y="40"
           text-anchor="middle"
           class="text-xs font-medium opacity-0 transition-opacity duration-150"
-          fill={point.info.focus[language] === 'Individual' ? '#3B82F6' : '#10B981'}
+          fill={point.info?.focus?.[language] === 'Individual' ? '#3B82F6' : '#10B981'}
           aria-hidden="true"
         >
-          {point.info.focus[language]}
+          {point.info?.focus?.[language] ?? ''}
         </text>
+      </g>
       </g>
     {/each}
 
@@ -204,5 +207,16 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+  }
+
+  svg circle:focus {
+    outline: none;
+  }
+  svg .spiral-node:focus {
+    outline: none;
+  }
+
+  svg .stage-group:focus {
+    outline: none;
   }
 </style>

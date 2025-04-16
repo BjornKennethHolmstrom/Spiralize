@@ -1,114 +1,131 @@
 <script lang="ts">
-  import type { StageInfo } from '../types/spiral';
-  import type { Language } from '../types/spiral';
+  import languageStore from '$lib/stores/languageStore';
+  import type { Stage } from '$lib/data/stages.ts';
 
-  export let stageInfo: StageInfo;
-  export let stageName: string;
-  export let language: Language = 'en';
-  export let expanded = false;
+  export let stage: Stage;
+  export let bindThis;
+  export let expanded: boolean = false;
 
-  function handleKeyDown(event: KeyboardEvent) {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      expanded = !expanded;
-    }
+  let showAllQuotes = false;
+
+  const { language } = languageStore;
+  $: currentLanguage = $language;
+
+  $: isExpanded = expanded;
+
+  // Optional callback to inform parent
+  import { createEventDispatcher } from 'svelte';
+  const dispatch = createEventDispatcher();
+
+  function toggleCard() {
+    isExpanded = !isExpanded;
+    dispatch('toggle', { id: stage.id, expanded: isExpanded });
   }
-
-  // Translation mapping
-  const translations = {
-    en: {
-      characteristics: "Characteristics",
-      challenges: "Challenges",
-      growthPaths: "Growth Paths"
-    },
-    sv: {
-      characteristics: "Karaktärsdrag",
-      challenges: "Utmaningar",
-      growthPaths: "Tillväxtvägar"
-    }
-  };
-
-  // Get translated titles
-  $: t = translations[language];
 </script>
 
-<div 
-  class="bg-white rounded-xl shadow-sm overflow-hidden transition-all duration-300"
-  class:hover:shadow-md={!expanded}
-  class:shadow-md={expanded}
+<div
+  bind:this={bindThis}
+  id={"stage-" + stage.id}
+  class="stage-card p-6 border-l-8 rounded shadow-md mb-6 bg-white transition-all duration-300"
+  style="border-color: {stage.hex}"
 >
-  <button
-    class="w-full p-6 text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-500"
-    style="border-left: 4px solid {stageInfo.color}"
-    on:click={() => expanded = !expanded}
-    on:keydown={handleKeyDown}
-    aria-expanded={expanded}
-    aria-controls="content-{stageName}"
-  >
-    <div class="flex justify-between items-center">
-      <h3 class="text-xl font-semibold capitalize">
-        {stageName} - {stageInfo.name[language]}
-      </h3>
-      <span
-        class="text-gray-500 hover:text-gray-700 transition-colors"
-        aria-hidden="true"
-      >
-        <svg
-          class="w-6 h-6 transform transition-transform duration-200"
-          class:rotate-180={expanded}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </span>
-    </div>
-    
-    <p class="mt-2 text-gray-600">
-      {stageInfo.description[language]}
-    </p>
-  </button>
-
-  {#if expanded}
-    <div 
-      id="content-{stageName}"
-      class="px-6 pb-6 pt-2 bg-gray-50"
+  <div class="flex justify-between items-center mb-2">
+    <h2 class="text-2xl font-bold text-gray-800">{stage.name[currentLanguage]}</h2>
+    <button
+      on:click={toggleCard}
+      class="text-2xl text-gray-600 hover:text-gray-800 transform transition-transform duration-200 focus:outline-none"
+      aria-label={isExpanded ? (currentLanguage === 'en' ? 'Collapse' : 'Stäng') : (currentLanguage === 'en' ? 'Expand' : 'Visa')}
+      title={isExpanded ? (currentLanguage === 'en' ? 'Collapse' : 'Stäng') : (currentLanguage === 'en' ? 'Expand' : 'Visa')}
+      style="transform: rotate({isExpanded ? 180 : 0}deg);"
     >
-      <div class="space-y-4">
-        <div>
-          <h4 class="font-medium text-gray-900 mb-2">{t.characteristics}:</h4>
-          <ul class="list-disc pl-5 space-y-1 text-gray-600">
-            {#each stageInfo.characteristics as char}
-              <li>{char[language]}</li>
-            {/each}
-          </ul>
-        </div>
+      ⌄
+    </button>
+  </div>
 
-        <div>
-          <h4 class="font-medium text-gray-900 mb-2">{t.challenges}:</h4>
-          <ul class="list-disc pl-5 space-y-1 text-gray-600">
-            {#each stageInfo.challenges as challenge}
-              <li>{challenge[language]}</li>
-            {/each}
-          </ul>
-        </div>
+  {#if isExpanded}
+    <p class="italic text-sm text-gray-500 mb-4">✨ {stage.essence[currentLanguage]}</p>
 
-        <div>
-          <h4 class="font-medium text-gray-900 mb-2">{t.growthPaths}:</h4>
-          <ul class="list-disc pl-5 space-y-1 text-gray-600">
-            {#each stageInfo.growthPaths as path}
-              <li>{path[language]}</li>
-            {/each}
-          </ul>
-        </div>
+    <div class="mb-4">
+      <strong>🌱 {currentLanguage === 'en' ? 'Emergence' : 'Uppkomst'}</strong><br />
+      {stage.emergence[currentLanguage]}
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-1">🧠 {currentLanguage === 'en' ? 'Key Traits' : 'Nyckeldrag'}</h3>
+        <ul class="list-disc list-inside text-sm">
+          {#each stage.keyTraits[currentLanguage] as trait}
+            <li>{trait}</li>
+          {/each}
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-1">💡 {currentLanguage === 'en' ? 'Insights' : 'Insikter'}</h3>
+        <ul class="list-disc list-inside text-sm">
+          {#each stage.insights[currentLanguage] as insight}
+            <li>{insight}</li>
+          {/each}
+        </ul>
       </div>
     </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-1">⚠️ {currentLanguage === 'en' ? 'Pitfalls' : 'Fallgropar'}</h3>
+        <ul class="list-disc list-inside text-sm">
+          {#each stage.pitfalls[currentLanguage] as pitfall}
+            <li>{pitfall}</li>
+          {/each}
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-1">🚫 {currentLanguage === 'en' ? 'Triggers' : 'Triggerpunkter'}</h3>
+        <ul class="list-disc list-inside text-sm">
+          {#each stage.triggers[currentLanguage] as trigger}
+            <li>{trigger}</li>
+          {/each}
+        </ul>
+      </div>
+    </div>
+
+    <p class="mb-4">
+      <strong>🌈 {currentLanguage === 'en' ? 'Growth Path' : 'Utvecklingsväg'}:</strong>
+      {stage.growthPath[currentLanguage]}
+    </p>
+
+    <p class="mb-2">
+      <strong>🧬 {currentLanguage === 'en' ? 'Archetypes' : 'Arketyper'}:</strong>
+      {stage.archetypes[currentLanguage].join(', ')}
+    </p>
+
+    <h3 class="font-semibold text-gray-700 mb-1">
+      🗣️ {currentLanguage === 'en' ? 'Representative Quotes' : 'Typiska citat'}
+    </h3>
+
+    <!-- First quote always shown -->
+    <blockquote class="italic text-sm text-gray-600 border-l-4 border-gray-400 pl-3 mb-2">
+      “{stage.quotes[currentLanguage][0]}”
+    </blockquote>
+
+    {#if showAllQuotes}
+      {#each stage.quotes[currentLanguage].slice(1) as quote}
+        <blockquote class="italic text-sm text-gray-600 border-l-4 border-gray-300 pl-3 mb-2">
+          “{quote}”
+        </blockquote>
+      {/each}
+    {/if}
+
+    <!-- Toggle -->
+    {#if stage.quotes[currentLanguage].length > 1}
+      <button
+        on:click={() => showAllQuotes = !showAllQuotes}
+        class="text-sm text-blue-600 hover:underline focus:outline-none"
+      >
+        {showAllQuotes
+          ? (currentLanguage === 'en' ? 'Show fewer quotes' : 'Visa färre citat')
+          : (currentLanguage === 'en' ? 'Show more quotes' : 'Visa fler citat')}
+      </button>
+    {/if}
   {/if}
 </div>
 

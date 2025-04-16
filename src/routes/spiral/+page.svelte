@@ -11,6 +11,7 @@
   import StageComparisonVisualization from '$lib/components/StageComparisonVisualization.svelte';
   import PersonalSpiralBuilder from '$lib/components/PersonalSpiralBuilder.svelte';
   const { language, toggleLanguage } = languageStore; 
+  export let expanded: boolean = false;
 
   $: currentLanguage = $language;
   
@@ -18,6 +19,7 @@
   let expandedStages: Record<string, boolean> = {};
   let activeStage: string | null = null;
   let quizResults = { stageScores: null, dominantStage: null, secondaryStage: null };
+  let stageRefs = {};
 
   let activeVisualization = 'map'; // Default to showing all, options: 'all', 'map', 'comparison', 'builder'
   
@@ -32,7 +34,7 @@
         through distinct stages, each representing a unique way of making sense of the world. 
         Rather than a rigid hierarchy, it's a dynamic spiral where each stage transcends and 
         includes the healthy aspects of previous stages.`,
-      stageInstruction: "Click on any stage in the spiral to learn more about it.",
+      stageInstruction: "The spiral begins at the center (Beige) and expands outward through increasing layers of complexity and integration. Click on any stage in the spiral to learn more about it.",
       emergenceTitle: "Stage Emergence",
       emergenceText: `Each stage emerges in response to specific life conditions and challenges. 
         As humans face new problems that can't be solved with current thinking, consciousness 
@@ -88,7 +90,7 @@
         genom distinkta stadier, där varje stadium representerar ett unikt sätt att förstå världen. 
         Snarare än en rigid hierarki är det en dynamisk spiral där varje stadium transcenderar och 
         inkluderar de friska aspekterna av tidigare stadier.`,
-      stageInstruction: "Klicka på något stadium i spiralen för att lära dig mer om det.",
+      stageInstruction: "Spiralen börjar i mitten (Beige) och expanderar utåt genom ökande lager av komplexitet och integration. Klicka på något stadium i spiralen för att lära dig mer om det.",
       emergenceTitle: "Stadiernas Framväxt",
       emergenceText: `Varje stadium växer fram som svar på specifika livsvillkor och utmaningar. 
         När människor möter nya problem som inte kan lösas med nuvarande tänkande, utvecklas 
@@ -434,15 +436,13 @@
 
       <!-- Stage Cards -->
       <div class="space-y-6">
-        {#each Object.entries(stages) as [stageName, stageInfo]}
-          <div id="stage-{stageName}">
-            <StageCard
-              {stageInfo}
-              {stageName}
-              language={$language}
-              bind:expanded={expandedStages[stageName]}
-            />
-          </div>
+        {#each stages as stage (stage.id)}
+          <StageCard
+            {stage}
+            expanded={expandedStages[stage.id] ?? false}
+            on:toggle={(e) => expandedStages[stage.id] = e.detail.expanded}
+            bind:bindThis={stageRefs[stage.id]}
+          />
         {/each}
       </div>
     {/if}
