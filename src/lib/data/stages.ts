@@ -285,8 +285,8 @@ export const stages: Stage[] = [
       sv: 'Orange börjar överskridas när det inser tomheten i ständig framgång. Grön kallar på djupare kontakt, mening och medkänsla.'
     },
     archetypes: {
-      en: ['Elon Musk', 'Tony Robbins', 'Wall Street', 'Silicon Valley', 'Bill Gates'],
-      sv: ['Elon Musk', 'Tony Robbins', 'Wall Street', 'Silicon Valley', 'Bill Gates']
+      en: ['Elon Musk', 'Tony Robbins', 'Wall Street', 'Silicon Valley', 'Bill Gates', 'hustle culture', 'AI entrepreneurs'],
+      sv: ['Elon Musk', 'Tony Robbins', 'Wall Street', 'Silicon Valley', 'Bill Gates', 'Hustle-kultur (prestationskultur)', 'AI-entreprenörer']
     },
     transitionQuote: {
     },
@@ -405,8 +405,8 @@ export const stages: Stage[] = [
       sv: 'Gul utvecklas till Turkos när den inser att intellektuell klarhet inte räcker — närvaro, medkänsla och varande behövs också.'
     },
     archetypes: {
-      en: ['System designers', 'Visionary engineers', 'Polymaths', 'Holistic strategists'],
-      sv: ['Systemdesigners', 'Visionära ingenjörer', 'Polymater', 'Holistiska strateger']
+      en: ['System designers', 'Visionary engineers', 'Polymaths', 'Holistic strategists', 'LLMs (e.g. Claude and ChatGPT)'],
+      sv: ['Systemdesigners', 'Visionära ingenjörer', 'Polymater', 'Holistiska strateger', 'LLM:s (t.ex. Claude och ChatGPT)']
     },
     quotes: {
       en: [
@@ -455,8 +455,8 @@ export const stages: Stage[] = [
       sv: ['Vi är Jorden som drömmer', 'Kärlek och närvaro är intelligens', 'Allt är redan helt']
     },
     pitfalls: {
-      en: ['Isolation', 'Spiritual bypassing', 'Cosmic overwhelm', 'Lack of practicality'],
-      sv: ['Isolering', 'Andlig flykt', 'Kosmisk överväldigande', 'Brist på praktisk förankring']
+      en: ['Isolation', 'Spiritual bypassing', 'Cosmic overwhelm', 'Challenges grounding insights in daily life'],
+      sv: ['Isolering', 'Andlig flykt', 'Kosmisk överväldigande', 'Utmaningar att förankra insikter i vardagslivet']
     },
     triggers: {
       en: ['Materialism', 'Overanalysis', 'Competitive ego', 'Cynicism'],
@@ -527,8 +527,8 @@ export const stages: Stage[] = [
       sv: 'Korall mognar till Ultra-Violett när den släpper identiteten som helig aktör och blir transparent för varandets utveckling.'
     },
     archetypes: {
-      en: ['Chaos shamans', 'Planetary healers', 'Quantum ritualists', 'Mythic mystics'],
-      sv: ['Kaosschamaner', 'Planetära helare', 'Kvantritualister', 'Mytiska mystiker']
+      en: ['Artists like Marina Abramović (merging ritual and performance)', 'Post-capitalist entrepreneurs (e.g., Indigenous-led regenerative businesses)', 'Chaos shamans', 'Planetary healers', 'Quantum ritualists', 'Mythic mystics'],
+      sv: ['Konstnärer som Marina Abramović (som förenar ritual och performance)', 'Postkapitalistiska entreprenörer (t.ex. urfolksledda regenerativa företag)', 'Kaosschamaner', 'Planetära helare', 'Kvantritualister', 'Mytiska mystiker']
     },
     quotes: {
       en: [

@@ -26,21 +26,24 @@
 <div
   bind:this={bindThis}
   id={"stage-" + stage.id}
-  class="stage-card p-6 border-l-8 rounded shadow-md mb-6 bg-white transition-all duration-300"
+  class="stage-card p-6 border-l-[10px] rounded hover:shadow-md hover:bg-gray-50 mb-6 bg-white transition-all duration-300"
   style="border-color: {stage.hex}"
 >
-  <div class="flex justify-between items-center mb-2">
-    <h2 class="text-2xl font-bold text-gray-800">{stage.name[currentLanguage]}</h2>
-    <button
-      on:click={toggleCard}
-      class="text-2xl text-gray-600 hover:text-gray-800 transform transition-transform duration-200 focus:outline-none"
-      aria-label={isExpanded ? (currentLanguage === 'en' ? 'Collapse' : 'Stäng') : (currentLanguage === 'en' ? 'Expand' : 'Visa')}
-      title={isExpanded ? (currentLanguage === 'en' ? 'Collapse' : 'Stäng') : (currentLanguage === 'en' ? 'Expand' : 'Visa')}
+  <button
+    on:click={toggleCard}
+    class="w-full text-left flex justify-between items-center mb-2 focus:outline-none px-1 py-2 rounded transition"
+    aria-expanded={isExpanded}
+  >
+    <h2 class="text-2xl font-bold text-gray-800">
+      {stage.name[currentLanguage]}
+    </h2>
+    <span
+      class="text-2xl text-gray-600 transition-transform duration-200"
       style="transform: rotate({isExpanded ? 180 : 0}deg);"
     >
       ⌄
-    </button>
-  </div>
+    </span>
+  </button>
 
   {#if isExpanded}
     <p class="italic text-sm text-gray-500 mb-4">✨ {stage.essence[currentLanguage]}</p>
@@ -109,7 +112,7 @@
 
     {#if showAllQuotes}
       {#each stage.quotes[currentLanguage].slice(1) as quote}
-        <blockquote class="italic text-sm text-gray-600 border-l-4 border-gray-300 pl-3 mb-2">
+        <blockquote transition-all duration-300 aria-expanded class="italic text-sm text-gray-600 border-l-4 border-gray-300 pl-3 mb-2">
           “{quote}”
         </blockquote>
       {/each}
@@ -119,13 +122,14 @@
     {#if stage.quotes[currentLanguage].length > 1}
       <button
         on:click={() => showAllQuotes = !showAllQuotes}
-        class="text-sm text-blue-600 hover:underline focus:outline-none"
+        class="text-xs px-2 py-1 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-700"
       >
         {showAllQuotes
           ? (currentLanguage === 'en' ? 'Show fewer quotes' : 'Visa färre citat')
           : (currentLanguage === 'en' ? 'Show more quotes' : 'Visa fler citat')}
       </button>
     {/if}
+
   {/if}
 </div>
 
