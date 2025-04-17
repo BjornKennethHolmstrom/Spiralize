@@ -1,0 +1,90 @@
+/* scripts/pdf-styles.css */
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #614685;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+
+a {
+  color: #6B46C1;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0.8em;
+}
+
+code {
+  background: #f5f2f9;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background: #f5f2f9;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 4px solid #6B46C1;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f0ebf7;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Cover page styling */
+#title-page {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-page h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+#title-page h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 48px;
+}

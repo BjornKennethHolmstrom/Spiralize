@@ -531,8 +531,9 @@
   };
 
   // Helper function to get stage color
-  function getStageColor(stage: string): string {
-    return stages[stage]?.color || "#808080";
+  function getStageColor(stageId: string): string {
+    const stageObj = stages.find(s => s.id === stageId);
+    return stageObj?.hex || "#808080";
   }
 
   // Toggle selection of a stage

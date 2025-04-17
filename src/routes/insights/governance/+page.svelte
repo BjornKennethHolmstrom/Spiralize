@@ -743,7 +743,9 @@
   
   // Helper function to get stage color
   function getStageColor(stage: string): string {
-    return stages[stage]?.color || "#808080";
+    // Look for the stage in the updated stages array
+    const stageObj = stages.find(s => s.id === stage);
+    return stageObj?.hex || "#808080";
   }
 </script>
 
@@ -839,12 +841,12 @@
         <div class="bg-white rounded-xl shadow-sm p-6 md:col-span-2">
           <h2 class="text-xl font-semibold mb-4">{t.overview.governanceEvolutionTitle}</h2>
           <div class="space-y-4">
-            {#each Object.entries(governanceModels) as [stage, model]}
+            {#each Object.entries(governanceModels) as [stageId, model]}
               <div 
                 class="p-4 rounded-lg"
-                style="background-color: {getStageColor(stage)}25; border-left: 4px solid {getStageColor(stage)}"
+                style="background-color: {getStageColor(stageId)}25; border-left: 4px solid {getStageColor(stageId)}"
               >
-                <h3 class="font-semibold">{stage.charAt(0).toUpperCase() + stage.slice(1)}: {model[currentLanguage].name}</h3>
+                <h3 class="font-semibold">{stageId.charAt(0).toUpperCase() + stageId.slice(1)}: {model[currentLanguage].name}</h3>
                 <p class="text-sm text-gray-700">{model[currentLanguage].description}</p>
               </div>
             {/each}

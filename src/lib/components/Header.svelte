@@ -13,12 +13,15 @@
   // Dropdown states for different menus
   let homeDropdownOpen = false;
   let insightsDropdownOpen = false;
+  let guidesDropdownOpen = false; // New dropdown state
   
   // Reference to dropdown elements
   let homeDropdownEl: HTMLElement;
   let homeButtonEl: HTMLElement;
   let insightsDropdownEl: HTMLElement;
   let insightsButtonEl: HTMLElement;
+  let guidesDropdownEl: HTMLElement; // New dropdown element
+  let guidesButtonEl: HTMLElement; // New button element
   
   // Helper functions to toggle dropdowns
   function toggleHomeDropdown(event?: MouseEvent | TouchEvent) {
@@ -28,7 +31,10 @@
     }
     homeDropdownOpen = !homeDropdownOpen;
     // Close other dropdowns when opening this one
-    if (homeDropdownOpen) insightsDropdownOpen = false;
+    if (homeDropdownOpen) {
+      insightsDropdownOpen = false;
+      guidesDropdownOpen = false;
+    }
   }
   
   function toggleInsightsDropdown(event?: MouseEvent | TouchEvent) {
@@ -38,13 +44,31 @@
     }
     insightsDropdownOpen = !insightsDropdownOpen;
     // Close other dropdowns when opening this one
-    if (insightsDropdownOpen) homeDropdownOpen = false;
+    if (insightsDropdownOpen) {
+      homeDropdownOpen = false;
+      guidesDropdownOpen = false;
+    }
+  }
+  
+  // New function to toggle guides dropdown
+  function toggleGuidesDropdown(event?: MouseEvent | TouchEvent) {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    guidesDropdownOpen = !guidesDropdownOpen;
+    // Close other dropdowns when opening this one
+    if (guidesDropdownOpen) {
+      homeDropdownOpen = false;
+      insightsDropdownOpen = false;
+    }
   }
   
   // Close dropdowns when pressing Escape
   function closeDropdowns() {
     homeDropdownOpen = false;
     insightsDropdownOpen = false;
+    guidesDropdownOpen = false;
   }
   
   // Click outside to close dropdowns
@@ -66,6 +90,14 @@
         !homeButtonEl.contains(target)) {
       homeDropdownOpen = false;
     }
+    
+    // Handle guides dropdown
+    if (guidesDropdownEl && guidesButtonEl && 
+        guidesDropdownOpen &&
+        !guidesDropdownEl.contains(target) && 
+        !guidesButtonEl.contains(target)) {
+      guidesDropdownOpen = false;
+    }
   }
 
   // Links for navigation
@@ -73,7 +105,7 @@
     { 
       label: { en: "Home", sv: "Hem" },
       isDropdown: true,
-      id: "home",
+      id: 'home',
       children: [
         { href: `${base}/`, label: { en: "🏠 Home", sv: "🏠 Hem" } },
         { href: `${base}/start`, label: { en: "🌀 Start Here", sv: "🌀 Börja här" } },
@@ -82,17 +114,33 @@
     { href: `${base}/spiral`, label: { en: "Explore", sv: "Utforska" } },
     { href: `${base}/origins`, label: { en: "Origins", sv: "Historia" } },
     { href: `${base}/quiz`, label: { en: "Quiz", sv: "Test" } },
-    // Insights becomes a dropdown parent with no direct href
+    // Insights dropdown
     { 
       label: { en: "Insights", sv: "Insikter" },
       isDropdown: true,
-      id: "insights",
+      id: 'insights',
       children: [
         { href: `${base}/insights/personal`, label: { en: "🪞 Personal Insights", sv: "🪞 Personliga Insikter" } },
+        { href: `${base}/insights/spiral-psychology`, label: { en: "🧠 Spiral-Aware Psychology", sv: "🧠 Spiralmedveten Psykologi" } },
         { href: `${base}/insights/global`, label: { en: "🌍 Global Perspectives", sv: "🌍 Globala Perspektiv" } },
         { href: `${base}/insights/governance`, label: { en: "🧭 Conscious Governance", sv: "🧭 Medveten Styrning" } },
         { href: `${base}/insights/peace`, label: { en: "🕊️ Peace Trough Evolution", sv: "🕊️ Fred Genom Evolution" } },
         { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI-assistants on the Spiral", sv: "🤖 AI-assistenter på spiralen" } }
+      ]
+    },
+    // New guides dropdown
+    { 
+      label: { en: "Guides", sv: "Guider" },
+      isDropdown: true,
+      id: 'guides',
+      children: [
+        { 
+          href: `${base}/guide-psychological`, 
+          label: { 
+            en: "📘 Spiral-Aware Mental Health Guide", 
+            sv: "📘 Spiralmedveten Mental Hälsa Guide" 
+          }
+        }
       ]
     },
     { href: `${base}/contact`, label: { en: "Contact", sv: "Kontakt" } },
@@ -134,10 +182,22 @@
     setTimeout(() => {
       if (id === 'home') {
         homeDropdownOpen = !homeDropdownOpen;
-        if (homeDropdownOpen) insightsDropdownOpen = false;
+        if (homeDropdownOpen) {
+          insightsDropdownOpen = false;
+          guidesDropdownOpen = false;
+        }
       } else if (id === 'insights') {
         insightsDropdownOpen = !insightsDropdownOpen;
-        if (insightsDropdownOpen) homeDropdownOpen = false;
+        if (insightsDropdownOpen) {
+          homeDropdownOpen = false;
+          guidesDropdownOpen = false;
+        }
+      } else if (id === 'guides') {
+        guidesDropdownOpen = !guidesDropdownOpen;
+        if (guidesDropdownOpen) {
+          homeDropdownOpen = false;
+          insightsDropdownOpen = false;
+        }
       }
     }, 50);
   }
@@ -210,7 +270,7 @@
                     {/each}
                   </div>
                 {/if}
-              {:else}
+              {:else if link.id === 'insights'}
                 <button 
                   bind:this={insightsButtonEl}
                   class="text-lg hover:text-purple-300 transition-colors flex items-center gap-1"
@@ -249,6 +309,45 @@
                             {currentLanguage === 'en' ? 'New' : 'Ny'}
                           </span>
                         {/if}
+                      </a>
+                    {/each}
+                  </div>
+                {/if}
+              {:else if link.id === 'guides'}
+                <!-- Guides dropdown button -->
+                <button 
+                  bind:this={guidesButtonEl}
+                  class="text-lg hover:text-purple-300 transition-colors flex items-center gap-1"
+                  aria-expanded={guidesDropdownOpen}
+                  aria-haspopup="true"
+                  on:click|stopPropagation={toggleGuidesDropdown}
+                  on:touchstart|stopPropagation={toggleGuidesDropdown}
+                >
+                  {link.label[currentLanguage]}
+                  <svg 
+                    class="w-4 h-4 ml-1 transition-transform duration-200" 
+                    class:rotate-180={guidesDropdownOpen}
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                
+                <!-- Guides Dropdown menu -->
+                {#if guidesDropdownOpen}
+                  <div 
+                    bind:this={guidesDropdownEl}
+                    class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1 z-10"
+                    transition:slide={{ duration: 150 }}
+                  >
+                    {#each link.children as child}
+                      <a 
+                        href={child.href}
+                        class="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-100 hover:text-purple-700"
+                        on:click|stopPropagation={closeDropdowns}
+                      >
+                        {child.label[currentLanguage]}
                       </a>
                     {/each}
                   </div>
@@ -348,7 +447,7 @@
                       {/each}
                     </div>
                   {/if}
-                {:else}
+                {:else if link.id === 'insights'}
                   <button 
                     class="flex items-center justify-between w-full py-2 text-lg hover:text-purple-300 transition-colors"
                     on:click|stopPropagation={(e) => toggleMobileSubmenu(e, 'insights')}
@@ -382,6 +481,40 @@
                               {currentLanguage === 'en' ? 'New' : 'Ny'}
                             </span>
                           {/if}
+                        </a>
+                      {/each}
+                    </div>
+                  {/if}
+                {:else if link.id === 'guides'}
+                  <!-- Mobile guides dropdown -->
+                  <button 
+                    class="flex items-center justify-between w-full py-2 text-lg hover:text-purple-300 transition-colors"
+                    on:click|stopPropagation={(e) => toggleMobileSubmenu(e, 'guides')}
+                    on:touchstart|stopPropagation={(e) => toggleMobileSubmenu(e, 'guides')}
+                    aria-expanded={guidesDropdownOpen}
+                  >
+                    <span>{link.label[currentLanguage]}</span>
+                    <svg 
+                      class="w-4 h-4 transform transition-transform duration-200" 
+                      class:rotate-180={guidesDropdownOpen}
+                      viewBox="0 0 20 20" 
+                      fill="currentColor"
+                    >
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  
+                  <!-- Mobile guides dropdown submenu -->
+                  {#if guidesDropdownOpen}
+                    <div class="pl-4 pt-1 pb-1 space-y-1" transition:slide={{ duration: 150 }}>
+                      {#each link.children as child}
+                        <a 
+                          href={child.href}
+                          class="block py-2 text-lg hover:text-purple-300 transition-colors pl-2 border-l border-purple-700"
+                          on:click|stopPropagation={handleMobileLinkClick}
+                          on:touchstart|stopPropagation={handleMobileLinkClick}
+                        >
+                          {child.label[currentLanguage]}
                         </a>
                       {/each}
                     </div>
