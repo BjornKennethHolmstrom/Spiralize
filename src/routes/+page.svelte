@@ -2,8 +2,6 @@
   import { base } from '$app/paths';
   import { writable } from 'svelte/store';
   import languageStore from '$lib/stores/languageStore';
-  import SpiralStagesTeaser from '$lib/components/SpiralStagesTeaser.svelte';
-  import QuickBenefits from '$lib/components/QuickBenefits.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
 
   const { language, toggleLanguage } = languageStore; 
@@ -227,10 +225,6 @@
         <p class="mb-4">{t.intro.description.p3}</p>
         <p class="mb-4">{t.intro.description.p4}</p>
       </div>
-
-      <SpiralStagesTeaser lang={currentLanguage} />
-
-      <QuickBenefits lang={currentLanguage} />
 
       <div class="mt-8 max-w-xl text-sm text-gray-400 dark:text-gray-500 italic">
         {t.intro.description.quote}
