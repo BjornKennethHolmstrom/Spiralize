@@ -4,6 +4,7 @@
   import languageStore from '$lib/stores/languageStore';
   import SpiralStagesTeaser from '$lib/components/SpiralStagesTeaser.svelte';
   import QuickBenefits from '$lib/components/QuickBenefits.svelte';
+  import ShareButtons from '$lib/components/ShareButtons.svelte';
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -283,5 +284,9 @@
       {/each}
     </div>
   </div>
+
+  <br>
+  <ShareButtons />
+  <br>
 
 </div>

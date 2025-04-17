@@ -197,10 +197,9 @@ Part IV: Spiral Horizons — Glimpses Beyond the Map
 🔖 Appendices
 
 A. Quick Reference Guide (key terms, stage summaries)  
-B. Reflective Spiral Journaling Templates  
-C. Transition Symptom Map (with links to Part II practices, e.g., “If you feel X, try Practice Y from Chapter 5”)  
-D. Recommended Reading & Media  
-E. Spiral Life Timeline Template (prompts: “Where did you feel most ‘yourself’? Where did you feel trapped?”)
+B. Transition Symptom Map
+C. Recommended Reading & Media  
+D. Spiral Life Timeline Template (prompts: “Where did you feel most ‘yourself’? Where did you feel trapped?”)
 
 
 

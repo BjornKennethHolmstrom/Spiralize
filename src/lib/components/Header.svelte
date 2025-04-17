@@ -135,6 +135,13 @@
       id: 'guides',
       children: [
         { 
+          href: `${base}/guide-personal`, 
+          label: { 
+            en: "📘 Personal Spiral Growth Guide", 
+            sv: "📘 Personlig Spiral-Utvecklingsguide" 
+          }
+        },
+        { 
           href: `${base}/guide-psychological`, 
           label: { 
             en: "📘 Spiral-Aware Mental Health Guide", 
