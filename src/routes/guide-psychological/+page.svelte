@@ -2,6 +2,7 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import languageStore from '$lib/stores/languageStore';
+  import ShareButtons from '$lib/components/ShareButtons.svelte';
   import { fade } from 'svelte/transition';
   import { 
     guideStore, 
@@ -119,4 +120,9 @@
       {/if}
     </div>
   </div>
+
+  <br>
+  <ShareButtons />
+  <br>
+
 </div>

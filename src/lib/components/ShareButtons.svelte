@@ -13,7 +13,7 @@
     : 'Upptäck din Spiral Dynamics-profil och förstå dina värderingar och världsbild.';*/
   
   // Get the current URL
-  $: url = $page ? `https://bjornkennethholmstrom.github.io/Spiralize${$page.url.pathname}` : '';
+  $: url = $page ? `https://www.spiralize.org${$page.url.pathname}` : '';
   
   // Social share URLs
   $: twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`;
