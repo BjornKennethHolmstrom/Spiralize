@@ -8,10 +8,17 @@ import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const contentDir = path.join(__dirname, '../static/content/guides/psychology');
+const imagesDir = path.join(__dirname, '../static/content/guides/psychology/images');
 const outputPath = path.join(__dirname, '../static/spiral-aware-guide.pdf');
 const coverSvgPath = path.join(__dirname, '../static/content/guides/psychology/cover.svg');
 const tempCoverPath = path.join(__dirname, '../static/temp-cover.pdf');
 const tempContentPath = path.join(__dirname, '../static/temp-content.pdf');
+const tempImagesDir = path.join(__dirname, '../static/temp-images');
+
+// Create temp directory for image processing if it doesn't exist
+if (!fs.existsSync(tempImagesDir)) {
+  fs.mkdirSync(tempImagesDir, { recursive: true });
+}
 
 // Generate PDF cover from SVG
 async function generateCoverPdf() {
@@ -42,9 +49,78 @@ async function generateCoverPdf() {
   console.log('Cover page generated');
 }
 
+// Pre-process SVG images
+async function preprocessSvgImages() {
+  console.log('Pre-processing images...');
+  
+  if (!fs.existsSync(imagesDir)) {
+    console.warn('No images directory found at', imagesDir);
+    return {};
+  }
+  
+  const imageMap = {};
+  const allImageFiles = fs.readdirSync(imagesDir)
+    .filter(file => ['.svg', '.png', '.jpg', '.jpeg', '.gif'].includes(path.extname(file).toLowerCase()));
+  
+  for (const imageFile of allImageFiles) {
+    const ext = path.extname(imageFile).toLowerCase();
+    const sourcePath = path.join(imagesDir, imageFile);
+    const destPath = path.join(tempImagesDir, imageFile);
+    
+    try {
+      if (ext === '.svg') {
+        // Convert SVG to PNG
+        const pngFileName = imageFile.replace('.svg', '.png');
+        const pngPath = path.join(tempImagesDir, pngFileName);
+        
+        await sharp(sourcePath)
+          .resize({ width: 1200, height: 1200, fit: 'inside', withoutEnlargement: true })
+          .png()
+          .toFile(pngPath);
+        
+        imageMap[imageFile] = pngPath;
+        console.log(`Converted ${imageFile} to PNG`);
+      } else {
+        // Copy other image formats as-is
+        fs.copyFileSync(sourcePath, destPath);
+        console.log(`Copied ${imageFile} to temp directory`);
+      }
+    } catch (error) {
+      console.error(`Error processing ${imageFile}:`, error);
+    }
+  }
+  
+  return imageMap;
+}
+
+// Process markdown content to handle images
+function processMarkdown(markdown, imageMap) {
+  let processedContent = markdown;
+  
+  // Replace all image references (both SVG and other formats)
+  processedContent = processedContent.replace(
+    /!\[([^\]]*)\]\((?:\.\.\/)?images\/([^)]+)\)/g, 
+    (match, alt, filename) => {
+      // If this was an SVG that we converted, use the PNG path
+      if (imageMap[filename]) {
+        const pngPath = path.relative(contentDir, imageMap[filename]).replace(/\\/g, '/');
+        return `![${alt}](${pngPath})`;
+      }
+      // For non-SVG images, point to the temp directory
+      const newPath = path.relative(contentDir, path.join(tempImagesDir, filename)).replace(/\\/g, '/');
+      return `![${alt}](${newPath})`;
+    }
+  );
+  
+  return processedContent;
+}
+
 // Get all chapter files and sort them
 async function generateContentPdf() {
   console.log('Generating content PDF...');
+  
+  // Pre-process SVG images
+  const imageMap = await preprocessSvgImages();
   
   // Get all chapter files
   const chapterFiles = fs.readdirSync(contentDir)
@@ -93,7 +169,16 @@ async function generateContentPdf() {
   // Combine all chapter content
   for (let i = 0; i < chapterFiles.length; i++) {
     const file = chapterFiles[i];
-    const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+    let content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+
+    // Replace all image paths from 'images/filename.png' to '../temp-images/filename.png'
+    content = content.replace(/\!\[([^\]]*)\]\((images\/[^\)]+)\)/g, (_, alt, imgPath) => {
+      const filename = path.basename(imgPath);
+      return `![${alt}](../temp-images/${filename})`;
+    });
+
+    // Process content to handle images
+    content = processMarkdown(content, imageMap);
     
     // Add chapter marker for table of contents linking
     combinedMarkdown += `<a id="chapter-${i + 1}"></a>\n\n`;
@@ -114,7 +199,11 @@ async function generateContentPdf() {
   // Combine all appendix content
   for (let i = 0; i < appendixFiles.length; i++) {
     const file = appendixFiles[i];
-    const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+    let content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
+    
+    // Process content to handle images
+    content = processMarkdown(content, imageMap);
+    
     const letter = file.match(/^appendix-([a-g])\.md$/)[1].toLowerCase();
     
     // Add appendix marker for table of contents linking
@@ -143,6 +232,18 @@ async function generateContentPdf() {
       marked_options: {
         headerIds: true,
         smartypants: true
+      },
+      basedir: path.join(__dirname, '../static'), // Set to static directory
+      launch_options: {
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        // Add this for local file access:
+        headless: 'new',
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH
+      },
+      // Add this for better asset loading:
+      asset_options: {
+        allowed_schemes: ['file', 'data'],
+        allow_local: true
       }
     }
   );
@@ -180,6 +281,16 @@ async function mergePdfs() {
   // Clean up temporary files
   fs.unlinkSync(tempCoverPath);
   fs.unlinkSync(tempContentPath);
+  
+  // Clean up temporary converted images
+  if (fs.existsSync(tempImagesDir)) {
+    const tempFiles = fs.readdirSync(tempImagesDir);
+    for (const file of tempFiles) {
+      fs.unlinkSync(path.join(tempImagesDir, file));
+    }
+    // Optionally remove the directory itself
+    fs.rmdirSync(tempImagesDir);
+  }
   
   console.log(`✅ Complete PDF generated at: ${outputPath}`);
 }

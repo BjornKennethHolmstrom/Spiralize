@@ -55,6 +55,7 @@
 		"marked": "^15.0.8",
 		"md-to-pdf": "^5.2.4",
 		"pdf-lib": "^1.17.1",
+		"puppeteer": "^24.6.1",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
 		"rehype-stringify": "^10.0.1",

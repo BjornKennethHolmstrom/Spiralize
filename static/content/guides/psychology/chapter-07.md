@@ -448,4 +448,4 @@ It is a bridge of trust — one that honors the client’s unfolding, even when 
 Because the Spiral does not ascend alone.  
 It evolves in networks of care.
 
-![Crisis Care Spiral Tree](/content/guides/psychology/crisis-care-spiral-tree.svg)
+![Crisis Care Spiral Tree](/content/guides/psychology/images/crisis-care-spiral-tree.svg)

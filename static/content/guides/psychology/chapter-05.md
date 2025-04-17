@@ -557,4 +557,4 @@ one decision, boundary, and breath at a time.
 Because healing is not just surviving.  
 It’s learning how to live forward from the center of who you’re becoming.
 
-![Spiral Shock Flowchart](/content/guides/psychology/spiral-shock-flowchart.svg)
+![Spiral Shock Flowchart](/content/guides/psychology/images/spiral-shock-flowchart.svg)
