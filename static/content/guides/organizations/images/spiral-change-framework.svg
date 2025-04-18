@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 720"
+   width="900"
+   height="720"
+   version="1.1"
+   id="svg77"
+   sodipodi:docname="spiral-change-framework.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs77" />
+  <sodipodi:namedview
+     id="namedview77"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2085714"
+     inkscape:cx="449.70449"
+     inkscape:cy="416.19385"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg77" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="719.85815"
+     fill="#f8f9fa"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.01409" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text1">Spiral Change Framework</text>
+  <text
+     x="450"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text2">Leading Transformation Across Developmental Stages</text>
+  <!-- Spiral Connector Lines -->
+  <path
+     d="M 450,350 C 500,220 400,180 350,200 c -70,30 -60,100 0,120 60,20 100,-20 100,-70 0,-50 -50,-80 -100,-70 -50,10 -70,70 -30,100 40,30 90,0 90,-40 0,-40 -40,-50 -60,-40"
+     stroke="#999999"
+     stroke-width="8"
+     fill="none"
+     stroke-linecap="round"
+     opacity="0.3"
+     id="path2" />
+  <!-- Circular Elements for Each Stage -->
+  <!-- Purple -->
+  <circle
+     cx="274.82269"
+     cy="170.89835"
+     r="80"
+     fill="#8e44ad"
+     fill-opacity="0.2"
+     stroke="#8e44ad"
+     stroke-width="2"
+     id="circle2" />
+  <text
+     x="274.82269"
+     y="140.89835"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#8e44ad"
+     id="text3">PURPLE</text>
+  <text
+     x="274.82269"
+     y="160.89835"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text4">Tribal/Magical</text>
+  <text
+     x="274.82269"
+     y="190.89835"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text5">Response to Change:</text>
+  <text
+     x="274.82269"
+     y="205.89835"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text6">Fear of disrupting traditions</text>
+  <text
+     x="274.82269"
+     y="220.89835"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text7">Concern about group identity</text>
+  <circle
+     cx="245.03546"
+     cy="256.61938"
+     r="25"
+     fill="#8e44ad"
+     fill-opacity="0.1"
+     stroke="#8e44ad"
+     stroke-width="1.5"
+     id="circle7" />
+  <text
+     x="245.03546"
+     y="259.61938"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text8">Honor</text>
+  <text
+     x="245.03546"
+     y="269.61938"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text9">Traditions</text>
+  <!-- Red -->
+  <circle
+     cx="130"
+     cy="300"
+     r="80"
+     fill="#e74c3c"
+     fill-opacity="0.2"
+     stroke="#e74c3c"
+     stroke-width="2"
+     id="circle9" />
+  <text
+     x="130"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#e74c3c"
+     id="text10">RED</text>
+  <text
+     x="130"
+     y="290"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text11">Power/Impulsive</text>
+  <text
+     x="130"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text12">Response to Change:</text>
+  <text
+     x="130"
+     y="335"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text13">Concern about status/power</text>
+  <text
+     x="130"
+     y="350"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text14">Focus on personal impact</text>
+  <circle
+     cx="66.288414"
+     cy="377.44681"
+     r="25"
+     fill="#e74c3c"
+     fill-opacity="0.1"
+     stroke="#e74c3c"
+     stroke-width="1.5"
+     id="circle14" />
+  <text
+     x="66.288414"
+     y="380.44681"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text15">Respect</text>
+  <text
+     x="66.288414"
+     y="390.44681"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text16">Strength</text>
+  <!-- Blue -->
+  <circle
+     cx="130"
+     cy="480"
+     r="80"
+     fill="#3498db"
+     fill-opacity="0.2"
+     stroke="#3498db"
+     stroke-width="2"
+     id="circle16" />
+  <text
+     x="130"
+     y="450"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#3498db"
+     id="text17">BLUE</text>
+  <text
+     x="130"
+     y="470"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text18">Order/Conformist</text>
+  <text
+     x="130"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text19">Response to Change:</text>
+  <text
+     x="130"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text20">Need for proper procedures</text>
+  <text
+     x="130"
+     y="530"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text21">Concern about rule-following</text>
+  <circle
+     cx="104.34988"
+     cy="567.37592"
+     r="25"
+     fill="#3498db"
+     fill-opacity="0.1"
+     stroke="#3498db"
+     stroke-width="1.5"
+     id="circle21" />
+  <text
+     x="104.34988"
+     y="570.37592"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text22">Maintain</text>
+  <text
+     x="104.34988"
+     y="580.37592"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text23">Order</text>
+  <!-- Orange -->
+  <circle
+     cx="250"
+     cy="600"
+     r="80"
+     fill="#e67e22"
+     fill-opacity="0.2"
+     stroke="#e67e22"
+     stroke-width="2"
+     id="circle23" />
+  <text
+     x="250"
+     y="570"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#e67e22"
+     id="text24">ORANGE</text>
+  <text
+     x="250"
+     y="590"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text25">Achievement/Strategic</text>
+  <text
+     x="250"
+     y="620"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text26">Response to Change:</text>
+  <text
+     x="250"
+     y="635"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text27">Focus on results/efficiency</text>
+  <text
+     x="250"
+     y="650"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text28">Concern about performance</text>
+  <circle
+     cx="154.01891"
+     cy="641.04016"
+     r="25"
+     fill="#e67e22"
+     fill-opacity="0.1"
+     stroke="#e67e22"
+     stroke-width="1.5"
+     id="circle28" />
+  <text
+     x="154.01891"
+     y="644.04016"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text29">Focus on</text>
+  <text
+     x="154.01891"
+     y="654.04016"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text30">Results</text>
+  <!-- Green -->
+  <circle
+     cx="450"
+     cy="600"
+     r="80"
+     fill="#27ae60"
+     fill-opacity="0.2"
+     stroke="#27ae60"
+     stroke-width="2"
+     id="circle30" />
+  <text
+     x="450"
+     y="570"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#27ae60"
+     id="text31">GREEN</text>
+  <text
+     x="450"
+     y="590"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text32">Communal/Egalitarian</text>
+  <text
+     x="450"
+     y="620"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text33">Response to Change:</text>
+  <text
+     x="450"
+     y="635"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text34">Concern about inclusivity</text>
+  <text
+     x="450"
+     y="650"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text35">Focus on human impact</text>
+  <circle
+     cx="512.05676"
+     cy="676.61938"
+     r="25"
+     fill="#27ae60"
+     fill-opacity="0.1"
+     stroke="#27ae60"
+     stroke-width="1.5"
+     id="circle35" />
+  <text
+     x="512.05676"
+     y="679.61938"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text36">Build</text>
+  <text
+     x="512.05676"
+     y="689.61938"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text37">Harmony</text>
+  <!-- Yellow -->
+  <circle
+     cx="570"
+     cy="480"
+     r="80"
+     fill="#f1c40f"
+     fill-opacity="0.2"
+     stroke="#f1c40f"
+     stroke-width="2"
+     id="circle37" />
+  <text
+     x="570"
+     y="450"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#f1c40f"
+     id="text38">YELLOW</text>
+  <text
+     x="570"
+     y="470"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text39">Systemic/Integrative</text>
+  <text
+     x="570"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text40">Response to Change:</text>
+  <text
+     x="570"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text41">Analysis of system impacts</text>
+  <text
+     x="570"
+     y="530"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text42">Concern about integration</text>
+  <circle
+     cx="646.95038"
+     cy="552.4823"
+     r="25"
+     fill="#f1c40f"
+     fill-opacity="0.1"
+     stroke="#f1c40f"
+     stroke-width="1.5"
+     id="circle42" />
+  <text
+     x="646.95038"
+     y="555.4823"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text43">Foster</text>
+  <text
+     x="646.95038"
+     y="565.4823"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text44">Integration</text>
+  <!-- Turquoise -->
+  <circle
+     cx="570"
+     cy="300"
+     r="80"
+     fill="#1abc9c"
+     fill-opacity="0.2"
+     stroke="#1abc9c"
+     stroke-width="2"
+     id="circle44" />
+  <text
+     x="570"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1abc9c"
+     id="text45">TURQUOISE</text>
+  <text
+     x="570"
+     y="290"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text46">Holistic/Global</text>
+  <text
+     x="570"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text47">Response to Change:</text>
+  <text
+     x="570"
+     y="335"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text48">Focus on evolutionary purpose</text>
+  <text
+     x="570"
+     y="350"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text49">Sensing emergent patterns</text>
+  <circle
+     cx="637.84869"
+     cy="382.41135"
+     r="25"
+     fill="#1abc9c"
+     fill-opacity="0.1"
+     stroke="#1abc9c"
+     stroke-width="1.5"
+     id="circle49" />
+  <text
+     x="637.84869"
+     y="385.41135"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text50">Enable</text>
+  <text
+     x="637.84869"
+     y="395.41135"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text51">Emergence</text>
+  <!-- Center Element -->
+  <circle
+     cx="350"
+     cy="350"
+     r="100"
+     fill="#333333"
+     fill-opacity="0.1"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle51" />
+  <text
+     x="350"
+     y="350"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text52">CHANGE LEADERSHIP</text>
+  <text
+     x="350"
+     y="376"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text53">Meet people where they are</text>
+  <text
+     x="350"
+     y="396"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text54">Create pathways for growth</text>
+  <!-- Communication Strategies -->
+  <!-- Purple -->
+  <line
+     x1="290"
+     y1="235"
+     x2="330"
+     y2="290"
+     stroke="#8e44ad"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line54" />
+  <rect
+     x="347.10226"
+     y="102.30322"
+     rx="10.412591"
+     ry="9.9949589"
+     width="187.42665"
+     height="39.979836"
+     fill="#8e44ad"
+     fill-opacity="0.1"
+     stroke="#8e44ad"
+     stroke-width="1.02016"
+     id="rect54" />
+  <text
+     x="444.539"
+     y="117.29314"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text55">Emphasize in Communication:</text>
+  <text
+     x="444.539"
+     y="132.29314"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text56">Connection to traditions and group identity</text>
+  <!-- Red -->
+  <line
+     x1="170"
+     y1="355"
+     x2="260"
+     y2="345"
+     stroke="#e74c3c"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line56" />
+  <g
+     id="red-communication"
+     transform="translate(-163.82979,-137.35225)">
+    <rect
+       x="170"
+       y="310"
+       rx="10"
+       ry="10"
+       width="180"
+       height="40"
+       fill="#e74c3c"
+       fill-opacity="0.1"
+       stroke="#e74c3c"
+       stroke-width="1"
+       id="rect56" />
+    <text
+       x="260"
+       y="325"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333333"
+       id="text57">Emphasize in Communication:</text>
+    <text
+       x="260"
+       y="340"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text58">Personal opportunity and respect</text>
+  </g>
+  <!-- Blue -->
+  <line
+     x1="170"
+     y1="515"
+     x2="260"
+     y2="395"
+     stroke="#3498db"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line58" />
+  <rect
+     x="213.8788"
+     y="470.02536"
+     rx="11.054444"
+     ry="9.9873161"
+     width="198.98001"
+     height="39.949265"
+     fill="#3498db"
+     fill-opacity="0.1"
+     stroke="#3498db"
+     stroke-width="1.05074"
+     id="rect58" />
+  <text
+     x="312.95508"
+     y="485"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text59">Emphasize in Communication:</text>
+  <text
+     x="312.95508"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text60">Proper procedures and alignment with rules</text>
+  <!-- Orange -->
+  <line
+     x1="290"
+     y1="635"
+     x2="320"
+     y2="410"
+     stroke="#e67e22"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line60" />
+  <rect
+     x="24.418207"
+     y="675.24567"
+     rx="10.871053"
+     ry="9.9894772"
+     width="195.67894"
+     height="39.957909"
+     fill="#e67e22"
+     fill-opacity="0.1"
+     stroke="#e67e22"
+     stroke-width="1.0421"
+     id="rect60" />
+  <text
+     x="121.84397"
+     y="690.22461"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text61">Emphasize in Communication:</text>
+  <text
+     x="121.84397"
+     y="705.22461"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text62">Efficiency, outcomes, and competitive edge</text>
+  <!-- Green -->
+  <line
+     x1="490"
+     y1="635"
+     x2="380"
+     y2="410"
+     stroke="#27ae60"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line62" />
+  <rect
+     x="530.55713"
+     y="596.63275"
+     rx="10.550127"
+     ry="9.9933014"
+     width="189.9023"
+     height="39.973206"
+     fill="#27ae60"
+     fill-opacity="0.1"
+     stroke="#27ae60"
+     stroke-width="1.02679"
+     id="rect62" />
+  <text
+     x="624.68085"
+     y="611.61938"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text63">Emphasize in Communication:</text>
+  <text
+     x="624.68085"
+     y="626.61938"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text64">Inclusivity, consensus, and human impact</text>
+  <!-- Yellow -->
+  <line
+     x1="530"
+     y1="515"
+     x2="440"
+     y2="395"
+     stroke="#f1c40f"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line64" />
+  <rect
+     x="651.67352"
+     y="415.43234"
+     rx="11.788051"
+     ry="9.9788551"
+     width="212.18492"
+     height="39.915421"
+     fill="#f1c40f"
+     fill-opacity="0.1"
+     stroke="#f1c40f"
+     stroke-width="1.08458"
+     id="rect64" />
+  <text
+     x="755.69739"
+     y="430.39008"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text65">Emphasize in Communication:</text>
+  <text
+     x="755.69739"
+     y="445.39008"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text66">Systems perspective and contextual flexibility</text>
+  <!-- Turquoise -->
+  <line
+     x1="530"
+     y1="355"
+     x2="440"
+     y2="345"
+     stroke="#1abc9c"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line66" />
+  <g
+     id="turquoise-communication"
+     transform="translate(-23.995272,-134.86998)">
+    <rect
+       x="530"
+       y="310"
+       rx="10"
+       ry="10"
+       width="180"
+       height="40"
+       fill="#1abc9c"
+       fill-opacity="0.1"
+       stroke="#1abc9c"
+       stroke-width="1"
+       id="rect66" />
+    <text
+       x="620"
+       y="325"
+       font-family="Arial, sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333333"
+       id="text67">Emphasize in Communication:</text>
+    <text
+       x="620"
+       y="340"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text68">Evolutionary purpose and wholeness</text>
+  </g>
+  <!-- Legend -->
+  <rect
+     x="690"
+     y="130"
+     width="200"
+     height="230"
+     fill="#ffffff"
+     stroke="#cccccc"
+     stroke-width="1"
+     rx="5"
+     ry="5"
+     id="rect68" />
+  <text
+     x="790"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text69">LEGEND</text>
+  <circle
+     cx="724.06622"
+     y="175"
+     r="8"
+     fill="#8e44ad"
+     fill-opacity="0.2"
+     stroke="#8e44ad"
+     stroke-width="1.5"
+     id="circle69"
+     cy="175.41371" />
+  <text
+     x="790"
+     y="180"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text70">Stage Value System</text>
+  <rect
+     x="702"
+     y="195"
+     width="16"
+     height="10"
+     rx="5"
+     ry="5"
+     fill="#e74c3c"
+     fill-opacity="0.1"
+     stroke="#e74c3c"
+     stroke-width="1"
+     id="rect70" />
+  <text
+     x="790"
+     y="205"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text71">Communication Emphasis</text>
+  <circle
+     cx="707.51776"
+     y="225"
+     r="8"
+     fill="#333333"
+     fill-opacity="0.1"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="circle71"
+     cy="225.0591" />
+  <text
+     x="790"
+     y="230"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text72">Core Leadership Practices</text>
+  <line
+     x1="702"
+     y1="245"
+     x2="718"
+     y2="245"
+     stroke="#3498db"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line72" />
+  <text
+     x="790"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text73">Connection to Leadership</text>
+  <circle
+     cx="705.03552"
+     y="270"
+     r="8"
+     fill="#27ae60"
+     fill-opacity="0.1"
+     stroke="#27ae60"
+     stroke-width="1.5"
+     id="circle73"
+     cy="175.41371" />
+  <text
+     x="710"
+     y="273"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text74">Key</text>
+  <text
+     x="790"
+     y="275"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text75">Key Leadership Focus</text>
+  <path
+     d="m 702,295 c 8,-5 13,2 16,0"
+     stroke="#999999"
+     stroke-width="3"
+     fill="none"
+     stroke-linecap="round"
+     opacity="0.3"
+     id="path75" />
+  <text
+     x="790"
+     y="300"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text76">Spiral Evolution Pattern</text>
+  <!-- Bottom Notes -->
+  <g
+     id="notes"
+     transform="translate(81.914895,33.096926)">
+    <rect
+       x="130"
+       y="660"
+       width="640"
+       height="30"
+       fill="none"
+       id="rect76" />
+    <text
+       x="450"
+       y="680"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text77">Note: Effective change leadership requires addressing all stages present in your organization or community.</text>
+  </g>
+</svg>

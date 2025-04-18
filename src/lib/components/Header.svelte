@@ -142,6 +142,13 @@
           }
         },
         { 
+          href: `${base}/guide-organizations`, 
+          label: { 
+            en: "📘 Spiralizing Organizations & Communities", 
+            sv: "📘 Spiralisera Organisationer & Gemenskaper" 
+          }
+        },
+        { 
           href: `${base}/guide-psychological`, 
           label: { 
             en: "📘 Spiral-Aware Mental Health Guide", 

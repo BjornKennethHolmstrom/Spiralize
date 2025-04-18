@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 700"
+   version="1.1"
+   id="svg73"
+   sodipodi:docname="stage-transition-flowchart.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview73"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2085714"
+     inkscape:cx="496.04019"
+     inkscape:cy="367.37589"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg73" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="700"
+     fill="#f8f9fa"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text1">
+    Stage Transition Flowchart: Evolution Paths and Sticking Points
+  </text>
+  <!-- Subtitle -->
+  <text
+     x="450"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     fill="#666"
+     id="text2">
+    Navigating Organizational Evolution Through Spiral Dynamics Stages
+  </text>
+  <!-- Stage Boxes -->
+  <!-- Purple Stage -->
+  <rect
+     x="32"
+     y="150"
+     width="120"
+     height="80"
+     rx="10"
+     ry="10"
+     fill="#9b6b9e"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect2" />
+  <text
+     x="92"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text3">PURPLE</text>
+  <text
+     x="92"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text4">Tribal / Magical</text>
+  <text
+     x="92"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text5">Belonging Tradition</text>
+  <!-- Red Stage -->
+  <rect
+     x="332"
+     y="150"
+     width="120"
+     height="80"
+     rx="10"
+     ry="10"
+     fill="#e25a53"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect5" />
+  <text
+     x="392"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text6">RED</text>
+  <text
+     x="392"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text7">Power / Impulsive</text>
+  <text
+     x="392"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text8">Control Domination</text>
+  <!-- Blue Stage -->
+  <rect
+     x="638"
+     y="150"
+     width="120"
+     height="80"
+     rx="10"
+     ry="10"
+     fill="#4a72b2"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect8" />
+  <text
+     x="698"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text9">BLUE</text>
+  <text
+     x="698"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text10">Order / Conformist</text>
+  <text
+     x="698"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text11">Structure Principles</text>
+  <!-- Orange Stage -->
+  <rect
+     x="628.96997"
+     y="330.07166"
+     width="138.06001"
+     height="79.856697"
+     rx="11.505"
+     ry="9.9820871"
+     fill="#ff7f27"
+     stroke="#333333"
+     stroke-width="2.14331"
+     id="rect11" />
+  <text
+     x="698"
+     y="350"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text12">ORANGE</text>
+  <text
+     x="698"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text13">Achievement / Strategic</text>
+  <text
+     x="698"
+     y="395"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text14">Results Innovation</text>
+  <!-- Green Stage -->
+  <rect
+     x="329.44278"
+     y="330.06216"
+     width="135.59668"
+     height="79.875648"
+     rx="11.299726"
+     ry="9.9844561"
+     fill="#7ab55c"
+     stroke="#333333"
+     stroke-width="2.12435"
+     id="rect14" />
+  <text
+     x="396"
+     y="350"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text15">GREEN</text>
+  <text
+     x="396"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text16">Communal / Egalitarian</text>
+  <text
+     x="396"
+     y="395"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text17">Harmony Equality</text>
+  <!-- Yellow Stage -->
+  <rect
+     x="58"
+     y="330"
+     width="120"
+     height="80"
+     rx="10"
+     ry="10"
+     fill="#ffd700"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect17" />
+  <text
+     x="118"
+     y="350"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text18">YELLOW</text>
+  <text
+     x="118"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text19">Systemic / Integrative</text>
+  <text
+     x="118"
+     y="395"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text20">Flexibility Systems</text>
+  <!-- Turquoise Stage -->
+  <rect
+     x="58"
+     y="564"
+     width="120"
+     height="80"
+     rx="10"
+     ry="10"
+     fill="#40e0d0"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect20" />
+  <text
+     x="118"
+     y="584"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text21">TURQUOISE</text>
+  <text
+     x="118"
+     y="609"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text22">Holistic / Global</text>
+  <text
+     x="118"
+     y="629"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text23">Unity Flow</text>
+  <!-- Coral Stage -->
+  <rect
+     x="320"
+     y="564"
+     width="120"
+     height="80"
+     rx="10"
+     ry="10"
+     fill="#ff6f61"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect23" />
+  <text
+     x="380"
+     y="584"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text24">CORAL</text>
+  <text
+     x="380"
+     y="609"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text25">Sovereign Unity</text>
+  <text
+     x="380"
+     y="629"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text26">Emergence Evolution</text>
+  <!-- Tier Separator -->
+  <line
+     x1="8.805028"
+     y1="226.48444"
+     x2="681.02948"
+     y2="660.20587"
+     stroke="#666666"
+     stroke-width="2"
+     stroke-dasharray="8, 4"
+     id="line26" />
+  <rect
+     x="8"
+     y="435"
+     width="80"
+     height="20"
+     fill="#f8f9fa"
+     id="rect26" />
+  <text
+     x="436"
+     y="456"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#666666"
+     id="text27">FIRST TIER</text>
+  <rect
+     x="770"
+     y="435"
+     width="80"
+     height="20"
+     fill="#f8f9fa"
+     id="rect27" />
+  <text
+     x="315.64539"
+     y="483.93381"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#666666"
+     id="text28">SECOND TIER</text>
+  <!-- Transition Arrows -->
+  <!-- Purple to Red -->
+  <path
+     d="M 152.1513,190 H 312.55319"
+     fill="none"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path28"
+     sodipodi:nodetypes="cc" />
+  <!-- Red to Blue -->
+  <path
+     d="M 451.46099,190 H 616"
+     fill="none"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path29"
+     sodipodi:nodetypes="cc" />
+  <!-- Blue to Orange -->
+  <path
+     d="m 698,230 v 80.96927"
+     fill="none"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path30"
+     sodipodi:nodetypes="cc" />
+  <!-- Orange to Green -->
+  <path
+     d="M 628.53428,370 H 484.68085"
+     fill="none"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path31"
+     sodipodi:nodetypes="cc" />
+  <!-- Green to Yellow -->
+  <path
+     d="M 329.92908,370 H 197.65957"
+     fill="none"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path32"
+     sodipodi:nodetypes="cc" />
+  <!-- Yellow to Turquoise -->
+  <path
+     d="M 118,410 V 543.09692"
+     fill="none"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path33"
+     sodipodi:nodetypes="cc" />
+  <!-- Turquoise to Coral -->
+  <path
+     d="M 177.80142,604 H 301.79669"
+     fill="none"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path34"
+     sodipodi:nodetypes="cc" />
+  <!-- Define arrow marker -->
+  <defs
+     id="defs34">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="0"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#333"
+         id="polygon34" />
+    </marker>
+    <marker
+       id="arrowhead-3"
+       markerWidth="10"
+       markerHeight="7"
+       refX="0"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#333333"
+         id="polygon34-6" />
+    </marker>
+  </defs>
+  <!-- Transition Challenges / Sticking Points -->
+  <!-- Purple to Red Challenge -->
+  <rect
+     x="166"
+     y="130"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#fef3c7"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect34" />
+  <text
+     x="226"
+     y="155"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text34">Resistance to individual</text>
+  <text
+     x="226"
+     y="167"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text35">power emergence</text>
+  <!-- Red to Blue Challenge -->
+  <rect
+     x="482"
+     y="130"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#fef3c7"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect35" />
+  <text
+     x="542"
+     y="155"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text36">Resistance to control</text>
+  <text
+     x="542"
+     y="167"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text37">and authority</text>
+  <!-- Blue to Orange Challenge -->
+  <rect
+     x="708"
+     y="254"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#fef3c7"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect37" />
+  <text
+     x="768"
+     y="272"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text38">Fear of change and</text>
+  <text
+     x="768"
+     y="284"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text39">innovation</text>
+  <!-- Orange to Green Challenge -->
+  <rect
+     x="474"
+     y="318"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#fef3c7"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect39" />
+  <text
+     x="534"
+     y="336"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text40">Reluctance to sacrifice</text>
+  <text
+     x="534"
+     y="348"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text41">efficiency for inclusion</text>
+  <!-- Green to Yellow Challenge -->
+  <rect
+     x="202"
+     y="318"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#fef3c7"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect41" />
+  <text
+     x="262"
+     y="336"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text42">Consensus paralysis</text>
+  <text
+     x="262"
+     y="348"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text43">relativism</text>
+  <!-- Yellow to Turquoise Challenge -->
+  <rect
+     x="31.400486"
+     y="425.01987"
+     width="173.19904"
+     height="29.96026"
+     rx="5.4124699"
+     ry="4.9933767"
+     fill="#fef3c7"
+     stroke="#d97706"
+     stroke-width="1.03974"
+     id="rect43" />
+  <text
+     x="118"
+     y="445"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text44">Integration of systems vs. wholeness</text>
+  <!-- Turquoise to Coral Challenge -->
+  <rect
+     x="188"
+     y="542"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#fef3c7"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect44" />
+  <text
+     x="248"
+     y="560"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text45">Balancing universal unity</text>
+  <text
+     x="248"
+     y="572"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#92400e"
+     id="text46">with sovereignty</text>
+  <!-- Enablers / Transition Catalysts -->
+  <!-- Purple to Red Enabler -->
+  <rect
+     x="164"
+     y="200"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="1"
+     id="rect46" />
+  <text
+     x="224"
+     y="219"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text47">Crisis requiring strong</text>
+  <text
+     x="224"
+     y="231"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text48">leadership</text>
+  <!-- Red to Blue Enabler -->
+  <rect
+     x="484"
+     y="200"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="1"
+     id="rect48" />
+  <text
+     x="544"
+     y="219"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text49">Need for stability</text>
+  <text
+     x="544"
+     y="231"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text50">and scalability</text>
+  <!-- Blue to Orange Enabler -->
+  <rect
+     x="566"
+     y="252"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="1"
+     id="rect50" />
+  <text
+     x="626"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text51">Competitive pressures</text>
+  <text
+     x="626"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text52">market demands</text>
+  <!-- Orange to Green Enabler -->
+  <rect
+     x="474"
+     y="386"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="1"
+     id="rect52" />
+  <text
+     x="534"
+     y="404"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text53">Burnout need for</text>
+  <text
+     x="534"
+     y="416"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text54">meaning beyond profit</text>
+  <!-- Green to Yellow Enabler -->
+  <rect
+     x="206"
+     y="386"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="1"
+     id="rect54" />
+  <text
+     x="266"
+     y="404"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text55">Complexity requiring</text>
+  <text
+     x="266"
+     y="416"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text56">systemic solutions</text>
+  <!-- Yellow to Turquoise Enabler -->
+  <rect
+     x="34.70282"
+     y="470.01251"
+     width="168.24921"
+     height="29.974974"
+     rx="5.2577877"
+     ry="4.9958291"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="1.02503"
+     id="rect56" />
+  <text
+     x="118"
+     y="490"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text57">Awareness of global interconnection</text>
+  <!-- Turquoise to Coral Enabler -->
+  <rect
+     x="186"
+     y="624"
+     width="120"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="1"
+     id="rect57" />
+  <text
+     x="246"
+     y="642"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text58">Emergence of creative</text>
+  <text
+     x="246"
+     y="654"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#166534"
+     id="text59">evolutionary potential</text>
+  <!-- Common Regression Paths -->
+  <path
+     d="M 320,370 Q 250,290 320,190"
+     fill="none"
+     stroke="#D97706"
+     stroke-width="2"
+     stroke-dasharray="5,3"
+     marker-end="url(#regress-arrow)"
+     id="path59" />
+  <text
+     x="-14.827511"
+     y="382.42273"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#92400e"
+     transform="rotate(-45)"
+     id="text60">Under threat</text>
+  <path
+     d="M 759.10638,370 C 832.43972,296.66667 847.33333,236.66667 774,190"
+     fill="none"
+     stroke="#d97706"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#regress-arrow)"
+     id="path60"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="751.37732"
+     y="-425.50781"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#92400e"
+     transform="rotate(45)"
+     id="text61">In crisis</text>
+  <defs
+     id="defs61">
+    <marker
+       id="regress-arrow"
+       markerWidth="10"
+       markerHeight="7"
+       refX="0"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#D97706"
+         id="polygon61" />
+    </marker>
+  </defs>
+  <!-- Legend -->
+  <rect
+     x="658.02209"
+     y="500.02213"
+     width="218.15906"
+     height="139.95575"
+     rx="5.4539766"
+     ry="4.9984198"
+     fill="#ffffff"
+     stroke="#666666"
+     stroke-width="1"
+     id="rect61" />
+  <text
+     x="758"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text62">Legend</text>
+  <!-- Evolution path -->
+  <line
+     x1="668"
+     y1="540"
+     x2="708"
+     y2="540"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="line62" />
+  <text
+     x="736"
+     y="545"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text63">Typical evolution path</text>
+  <!-- Regression path -->
+  <line
+     x1="668"
+     y1="570"
+     x2="708"
+     y2="570"
+     stroke="#d97706"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#regress-arrow)"
+     id="line63" />
+  <text
+     x="736"
+     y="575"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text64">Common regression path</text>
+  <!-- Sticking point -->
+  <rect
+     x="668"
+     y="590"
+     width="40"
+     height="15"
+     rx="5"
+     ry="5"
+     fill="#fef3c7"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect64" />
+  <text
+     x="736"
+     y="600"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text65">Transition challenge</text>
+  <!-- Enabler -->
+  <rect
+     x="668"
+     y="615"
+     width="40"
+     height="15"
+     rx="5"
+     ry="5"
+     fill="#dcfce7"
+     stroke="#16a34a"
+     stroke-width="1"
+     id="rect65" />
+  <text
+     x="736"
+     y="625"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text66">Transition catalyst</text>
+  <!-- Notes -->
+  <rect
+     x="502.04263"
+     y="500.04263"
+     width="141.42772"
+     height="139.91472"
+     rx="11.785643"
+     ry="9.9939079"
+     fill="#f0f4ff"
+     stroke="#3b82f6"
+     stroke-width="1.08529"
+     id="rect66" />
+  <text
+     x="562"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1e40af"
+     id="text67">Usage Notes</text>
+  <text
+     x="512"
+     y="540"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#1e40af"
+     id="text68">1. Identify your org's current</text>
+  <text
+     x="512"
+     y="555"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#1e40af"
+     id="text69">stage and likely next step</text>
+  <text
+     x="512"
+     y="575"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#1e40af"
+     id="text70">2. Anticipate challenges</text>
+  <text
+     x="512"
+     y="590"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#1e40af"
+     id="text71">during transitions</text>
+  <text
+     x="512"
+     y="610"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#1e40af"
+     id="text72">3. Plan for catalysts that</text>
+  <text
+     x="512"
+     y="625"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#1e40af"
+     id="text73">enable healthy evolution</text>
+</svg>
