@@ -151,6 +151,13 @@
           }
         },
         { 
+          href: `${base}/guide-leadership`, 
+            label: { 
+              en: "🧭 Coaching & Leadership Toolkit", 
+              sv: "🧭 Coaching- och Ledarskapsverktyg" 
+            }
+        },
+        { 
           href: `${base}/guide-psychological`, 
           label: { 
             en: "🧠 Spiral-Aware Mental Health Guide", 
