@@ -19,7 +19,12 @@
   const introSection = getIntroSection();
   const mainSections = getMainSections();
   const quickReferenceItems = getQuickReferenceItems();
-  
+
+  const allTools = getTools();
+  console.log('All tools:', allTools);
+  console.log('Intro section ID:', introSection?.id);
+  console.log('Tools for intro section:', getTools(introSection?.id));
+ 
   // Get translations from store
   $: t = $leadershipGuideStore.translations[currentLanguage];
 </script>

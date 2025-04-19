@@ -14,7 +14,7 @@ Every Spiral Dynamics stage represents a *worldview*—a unique way of seeing an
 - **Why It Matters**: Understanding a client’s worldview lets you tailor questions, tools, and feedback to resonate with their perspective.
 - **Coaching Tip**: Listen for stage-specific language (e.g., Orange’s focus on “results” or Blue’s emphasis on “duty”) to identify the worldview.
 
-**Visual Aid**: Refer to the [Spiral Cheat Sheet](#spiral-cheat-sheet) for a quick summary of each stage’s worldview and keywords.
+**Visual Aid**: Refer to the [Spiral Cheat Sheet](/guide-leadership/spiral-cheat-sheet) for a quick summary of each stage’s worldview and keywords.
 
 ---
 
@@ -29,10 +29,10 @@ Vertical development happens when a client moves from one stage to the next, ada
   - Emotional: Frustration, doubt, or excitement about new possibilities.
   - Behavioral: Experimenting with new approaches or questioning old habits.
   - Cognitive: Shifting language, like a Blue client starting to value “efficiency” (Orange) over “rules.”
-- **Coaching Role**: Support clients through liminality with tools like journaling or somatic grounding (see [Tools for Transitions](#tools-for-transitions)).
+- **Coaching Role**: Support clients through liminality with tools like journaling or somatic grounding (see [Tools for Transitions](/guide-leadership/transitions-introduction)).
 - **Example**: A Blue-to-Orange transition might involve a client moving from rigid adherence to company policies to experimenting with creative solutions.
 
-**Visual Aid**: Download the [Transition Maps](#transition-maps) to see emotional and behavioral markers for each stage shift.
+**Visual Aid**: Download the [Transition Maps](/guide-leadership/transition-maps) to see emotional and behavioral markers for each stage shift.
 
 ---
 
@@ -51,7 +51,7 @@ Every stage has a *shadow*—unconscious distortions or defenses that can block 
   - Somatic: Physical tension, like a clenched jaw during stress.
   - Emotional: Anger, fear, or defensiveness when challenged.
   - Cognitive: Rationalizations, like a Blue client insisting “this is the only right way.”
-- **Coaching Approach**: Use techniques like role play or journaling to uncover shadows (see [Shadow & Resistance Work](#shadow-work)). Help clients integrate these parts for authentic growth.
+- **Coaching Approach**: Use techniques like role play or journaling to uncover shadows (see [Shadow & Resistance Work](/guide-leadership/shadow-resistance-introduction)). Help clients integrate these parts for authentic growth.
 - **Example**: A Green-stage client might resist decision-making to avoid upsetting the team. A coach could use the question above to explore underlying truths.
 
 **Visual Aid**: Watch the [Shadow Work Video](#shadow-video) on spiralize.org for a demonstration of uncovering shadows.
@@ -67,12 +67,12 @@ Every stage has a *shadow*—unconscious distortions or defenses that can block 
   - Ask Red-stage questions that respect a client’s need for control while nudging toward Blue’s structure.
   - Mediate team tensions, like Orange-Green conflicts, by bridging their priorities (e.g., for an Orange-driven leader pushing for efficiency and a Green-oriented team valuing inclusion, frame a solution as “a win for the team’s shared purpose”).
 - **How to Build It**:
-  - Study each stage’s motivations and language (use the [Spiral Cheat Sheet](#spiral-cheat-sheet)).
-  - Practice reflective exercises, like mapping your own spiral journey (see [Self-Diagnosis](#self-diagnosis)).
+  - Study each stage’s motivations and language (use the [Spiral Cheat Sheet](/guide-leadership/spiral-cheat-sheet)).
+  - Practice reflective exercises, like mapping your own spiral journey (see [Self-Diagnosis](/guide-leadership/section-05)).
   - Engage with diverse clients or teams to stretch your perspective.
 - **Example**: For a Red-stage client, frame growth as a “challenge to conquer” rather than a “collaborative journey” (Green). For an Orange-Green team conflict, facilitate by acknowledging Orange’s need for results and Green’s need for connection.
 
-**Visual Aid**: Use the [Spiral Mirror Tool](#spiral-mirror) to assess your fluency across stages.
+**Visual Aid**: Use the [Spiral Mirror Tool](/guide-leadership/spiral-mirror-tool) to assess your fluency across stages.
 
 ---
 
@@ -87,7 +87,7 @@ Every stage has a *shadow*—unconscious distortions or defenses that can block 
 
 ## Resources
 
-- **Downloadable**: [Spiral Cheat Sheet](#spiral-cheat-sheet) for stage worldviews and keywords.
-- **Interactive**: Take the [Spiral Stage Quiz](#spiral-stage-quiz) on spiralize.org to explore worldviews.
+- **Downloadable**: [Spiral Cheat Sheet](/guide-leadership/spiral-cheat-sheet) for stage worldviews and keywords.
+- **Interactive**: Take the [Spiral Stage Quiz](/quiz) on spiralize.org to explore worldviews.
 - **Video**: Watch the [Shadow Work Video](#shadow-video) on spiralize.org for shadow integration techniques.
-- **Tool**: Use the [Spiral Mirror Tool](#spiral-mirror) to build spiral fluency.
+- **Tool**: Use the [Spiral Mirror Tool](/guide-leadership/spiral-mirror-tool) to build spiral fluency.

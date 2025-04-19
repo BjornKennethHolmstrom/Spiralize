@@ -21,7 +21,7 @@ For each stage, you’ll find:
 ## Quick Start
 - **Downloadable Table**: A summary of Core, Growth Edge, and Misstep questions for all stages (see [Coaching Questions Table](#coaching-questions-table)).
 - **Client Template**: A one-page script for explaining one stage to a client (see [Client Templates](#client-templates)).
-- **Start with a Stage**: Explore stage-specific questions (e.g., [Orange Questions](#orange-questions)) to begin coaching.
+- **Start with a Stage**: Explore stage-specific questions (e.g., [Orange Questions](/guide-leadership/orange-questions)) to begin coaching.
 
 ## Key Takeaways
 - Tailor questions to a client’s stage for maximum resonance and impact.
@@ -31,5 +31,5 @@ For each stage, you’ll find:
 ## Resources
 - **Downloadable**: [Coaching Questions Table](#coaching-questions-table) for a quick reference of all stage questions.
 - **Template**: [Client Templates](#client-templates) for explaining stages to clients.
-- **Interactive**: Use the [Spiral Stage Quiz](#spiral-stage-quiz) on spiralize.org to identify a client’s stage.
-- **Deep Dive**: Review [Spiral Dynamics 101](#spiral-dynamics-101) for stage foundations.
+- **Interactive**: Use the [Spiral Stage Quiz](/quiz) on spiralize.org to identify a client’s stage.
+- **Deep Dive**: Review [Spiral Dynamics 101](/guide-leadership/spiral-dynamics-101) for stage foundations.

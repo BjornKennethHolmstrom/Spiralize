@@ -110,6 +110,24 @@ const allGuideItems: GuideItem[] = [
     parentId: "section-00",
     isTool: true
   },
+  {
+    id: 'spiral-mirror-tool',
+    title: {
+      en: "Spiral Mirror Tool",
+      sv: "Spiral-spegelverktyg"
+    },
+    description: {
+      en: "A comprehensive assessment and practice guide designed to enhance developmental coaching effectiveness",
+      sv: "En omfattande bedömnings- och övningsguide utformad för att förbättra effektiviteten i utvecklingscoaching"
+    },
+    path: "spiral-mirror-tool",
+    filePath: "tools/spiral-mirror-tool",
+    type: 'tool',
+    section: "00",
+    parentId: "section-00",
+    isTool: true
+  },
+
   
   // Section 1: Coaching Questions by Stage
   {

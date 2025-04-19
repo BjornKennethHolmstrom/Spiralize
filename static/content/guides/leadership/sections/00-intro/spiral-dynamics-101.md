@@ -46,9 +46,9 @@ As a coach, Spiral Dynamics helps you:
 
 ## Quick Start: Applying Spiral Dynamics
 
-1. **Assess the Stage**: Use the [Spiral Stage Quiz](https://www.spiralize.org/quiz) on spiralize.org to identify a client’s or team’s center of gravity.
-2. **Learn the Language**: Refer to the [Spiral Cheat Sheet](#spiral-cheat-sheet) for stage-specific needs, keywords, and coaching tips.
-3. **Ask the Right Questions**: Explore [Coaching Questions by Stage](#coaching-questions) to engage clients effectively.
+1. **Assess the Stage**: Use the [Spiral Stage Quiz](/quiz) on spiralize.org to identify a client’s or team’s center of gravity.
+2. **Learn the Language**: Refer to the [Spiral Cheat Sheet](/guide-leadership/spiral-cheat-sheet) for stage-specific needs, keywords, and coaching tips.
+3. **Ask the Right Questions**: Explore [Coaching Questions by Stage](/guide-leadership/coaching-questions-overview) to engage clients effectively.
 
 ---
 
@@ -62,7 +62,7 @@ As a coach, Spiral Dynamics helps you:
 
 ## Resources
 
-- **Interactive Tool**: Take the [Spiral Stage Quiz](https://www.spiralize.org/quiz) on spiralize.org to assess developmental stages.
-- **Downloadable**: Grab the [Spiral Cheat Sheet](#spiral-cheat-sheet) for a one-page reference of stages and coaching tips.
-- **Deep Dive**: Explore [Core Concepts](#core-concepts) for more on worldviews and transitions.
+- **Interactive Tool**: Take the [Spiral Stage Quiz](/quiz) on spiralize.org to assess developmental stages.
+- **Downloadable**: Grab the [Spiral Cheat Sheet](/guide-leadership/spiral-cheat-sheet) for a one-page reference of stages and coaching tips.
+- **Deep Dive**: Explore [Core Concepts](/guide-leadership/core-concepts) for more on worldviews and transitions.
 
