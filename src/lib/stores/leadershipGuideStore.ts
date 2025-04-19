@@ -863,7 +863,8 @@ const allGuideItems: GuideItem[] = [
       en: "Patterns of over-coaching, under-coaching, and developmental traps",
       sv: "Mönster av övercoaching, undercoaching och utvecklingsfällor"
     },
-    path: "sections/05-blind-spots/01-understanding-coaching-blind-spots",
+    path: "understanding-coaching-blind-spots",
+    filePath: "sections/05-blind-spots/01-understanding-coaching-blind-spots",
     type: 'subsection',
     section: "05",
     parentId: "section-05"
