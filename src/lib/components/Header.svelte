@@ -125,7 +125,9 @@
         { href: `${base}/insights/global`, label: { en: "🌍 Global Perspectives", sv: "🌍 Globala Perspektiv" } },
         { href: `${base}/insights/governance`, label: { en: "🧭 Conscious Governance", sv: "🧭 Medveten Styrning" } },
         { href: `${base}/insights/peace`, label: { en: "🕊️ Peace Trough Evolution", sv: "🕊️ Fred Genom Evolution" } },
-        { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI-assistants on the Spiral", sv: "🤖 AI-assistenter på spiralen" } }
+        { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI-assistants on the Spiral", sv: "🤖 AI-assistenter på spiralen" } },
+        { href: `${base}/insights/poetry`, label: { en: "🎙️ Spiral Poetry", sv: "🎙️ Spiralpoesi" } 
+}
       ]
     },
     // New guides dropdown
@@ -137,22 +139,22 @@
         { 
           href: `${base}/guide-personal`, 
           label: { 
-            en: "📘 Personal Spiral Growth Guide", 
-            sv: "📘 Personlig Spiral-Utvecklingsguide" 
+            en: "🌱 Personal Spiral Growth Guide", 
+            sv: "🌱 Personlig Spiral-Utvecklingsguide" 
           }
         },
         { 
           href: `${base}/guide-organizations`, 
           label: { 
-            en: "📘 Spiralizing Organizations & Communities", 
-            sv: "📘 Spiralisera Organisationer & Gemenskaper" 
+            en: "🏢 Spiralizing Organizations & Communities", 
+            sv: "🏢 Spiralisera Organisationer & Gemenskaper" 
           }
         },
         { 
           href: `${base}/guide-psychological`, 
           label: { 
-            en: "📘 Spiral-Aware Mental Health Guide", 
-            sv: "📘 Spiralmedveten Mental Hälsa Guide" 
+            en: "🧠 Spiral-Aware Mental Health Guide", 
+            sv: "🧠 Spiralmedveten Mental Hälsa Guide" 
           }
         }
       ]
@@ -318,7 +320,7 @@
                         on:click|stopPropagation={closeDropdowns}
                       >
                         {child.label[currentLanguage]}
-                        {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
+                        {#if child.href.includes('/poetry')}
                           <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                             {currentLanguage === 'en' ? 'New' : 'Ny'}
                           </span>
@@ -490,7 +492,7 @@
                           on:touchstart|stopPropagation={handleMobileLinkClick}
                         >
                           {child.label[currentLanguage]}
-                          {#if child.href.includes('/peace') || child.href.includes('/ai-assistants')}
+                          {#if child.href.includes('/poetry')}
                             <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                               {currentLanguage === 'en' ? 'New' : 'Ny'}
                             </span>

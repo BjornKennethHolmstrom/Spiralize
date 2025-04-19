@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 950"
+   width="800"
+   height="950"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="spiral-mirror-tool.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.74776542"
+     inkscape:cx="213.30219"
+     inkscape:cy="433.29096"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <text
+     x="400"
+     y="60"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="18px"
+     id="text2">Leadership Development Center of Gravity &amp; Stretch Zones</text>
+  <path
+     d="m 210.07656,326.68861 a 205.80916,213.11359 0 0 1 205.80917,213.1136 H 662.23932 A 452.16275,468.21058 0 0 0 210.07656,71.591637 Z"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="2.72359"
+     stroke-dasharray="5, 5"
+     opacity="0.3"
+     id="path12" />
+  <!-- Title and subtitle -->
+  <text
+     x="400"
+     y="30"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="24px"
+     font-weight="bold"
+     id="text1">Spiral Mirror Tool</text>
+  <path
+     d="M 454.05191,288.29257 A 343.82574,343.82574 0 0 1 554.75614,531.41408 H 657.90386 A 446.97346,446.97346 0 0 0 526.98836,215.35612 Z"
+     fill="#00cccc"
+     stroke="#333333"
+     stroke-width="2"
+     id="path3" />
+  <!-- Spiral segments for each stage -->
+  <!-- Coral -->
+  <path
+     d="m 657.90386,531.41408 a 446.97346,446.97346 0 0 1 -130.9155,316.05797 l 94.81739,94.81739 A 581.0655,581.0655 0 0 0 791.9959,531.41408 Z"
+     fill="#ff6b8b"
+     stroke="#333333"
+     stroke-width="2"
+     id="path2" />
+  <text
+     x="684.38409"
+     y="729.89703"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text3">Coral</text>
+  <!-- Turquoise -->
+  <text
+     x="580.48914"
+     y="382.92395"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text4">Turquoise</text>
+  <!-- Yellow -->
+  <path
+     d="m 210.9304,266.93275 a 264.48134,264.48134 0 0 1 187.01654,77.46479 l 56.10497,-56.10497 A 343.82574,343.82574 0 0 0 210.9304,187.58835 Z"
+     fill="#ffcc00"
+     stroke="#333333"
+     stroke-width="2"
+     id="path4" />
+  <text
+     x="330.71198"
+     y="254.69112"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text5">Yellow</text>
+  <!-- Green -->
+  <path
+     d="M 67.071519,387.5552 A 203.44718,203.44718 0 0 1 210.9304,327.9669 V 266.93275 A 264.48134,264.48134 0 0 0 23.913849,344.39754 Z"
+     fill="#33cc33"
+     stroke="#333333"
+     stroke-width="2"
+     id="path5" />
+  <text
+     x="127.81592"
+     y="321.48505"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text6">Green</text>
+  <!-- Orange -->
+  <path
+     d="M 54.432559,531.41408 A 156.49783,156.49783 0 0 1 100.26972,420.75341 L 67.071519,387.5552 A 203.44718,203.44718 0 0 0 7.4832089,531.41408 Z"
+     fill="#ff9900"
+     stroke="#333333"
+     stroke-width="2"
+     id="path6" />
+  <text
+     x="43.154945"
+     y="464.17032"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text7">Orange</text>
+  <!-- Blue -->
+  <path
+     d="M 125.8068,616.53768 A 120.38295,120.38295 0 0 1 90.547449,531.41408 H 54.432559 A 156.49783,156.49783 0 0 0 100.26972,642.07476 Z"
+     fill="#3366cc"
+     stroke="#333333"
+     stroke-width="2"
+     id="path7" />
+  <text
+     x="82.812508"
+     y="589.07788"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text8">Blue</text>
+  <!-- Red -->
+  <path
+     d="m 210.9304,624.01635 a 92.602268,92.602268 0 0 1 -65.47969,-27.12257 l -19.64391,19.6439 a 120.38295,120.38295 0 0 0 85.1236,35.25935 z"
+     fill="#ff3333"
+     stroke="#333333"
+     stroke-width="2"
+     id="path8" />
+  <text
+     x="171.41188"
+     y="636.38776"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text9">Red</text>
+  <!-- Purple -->
+  <path
+     d="M 261.29939,581.78308 A 71.232514,71.232514 0 0 1 210.9304,602.6466 v 21.36975 a 92.602268,92.602268 0 0 0 65.47969,-27.12257 z"
+     fill="#9933cc"
+     stroke="#333333"
+     stroke-width="2"
+     id="path9" />
+  <text
+     x="243.46211"
+     y="611.39453"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text10">Purple</text>
+  <!-- Beige -->
+  <path
+     d="m 265.72464,531.41408 a 54.794241,54.794241 0 0 1 -16.04886,38.74538 l 11.62361,11.62362 a 71.232514,71.232514 0 0 0 20.86352,-50.369 z"
+     fill="#cc9966"
+     stroke="#333333"
+     stroke-width="2"
+     id="path10" />
+  <text
+     x="271.10001"
+     y="558.88971"
+     text-anchor="middle"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     fill="#333333"
+     id="text11">Beige</text>
+  <!-- Center of Gravity marker (example) -->
+  <circle
+     cx="315.36032"
+     cy="319.85077"
+     r="15"
+     fill="#ff9900"
+     stroke="#333333"
+     stroke-width="2"
+     opacity="0.7"
+     id="circle11" />
+  <text
+     x="315.36032"
+     y="321.18811"
+     text-anchor="middle"
+     dominant-baseline="middle"
+     font-family="Arial"
+     font-size="10px"
+     font-weight="bold"
+     id="text12">COG</text>
+  <!-- Stretch Zone (example) -->
+  <!-- Legend -->
+  <rect
+     x="36.626823"
+     y="729.18195"
+     width="20"
+     height="20"
+     fill="#ff9900"
+     stroke="#333333"
+     stroke-width="1"
+     opacity="0.7"
+     id="rect12" />
+  <text
+     x="66.626823"
+     y="744.18195"
+     font-family="Arial"
+     font-size="14px"
+     id="text13">Center of Gravity</text>
+  <rect
+     x="36.626823"
+     y="759.18195"
+     width="20"
+     height="20"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="5, 5"
+     opacity="0.3"
+     id="rect13" />
+  <text
+     x="66.626823"
+     y="774.18195"
+     font-family="Arial"
+     font-size="14px"
+     id="text14">Stretch Zone</text>
+  <!-- Instructions -->
+  <text
+     x="548.065"
+     y="910.29883"
+     text-anchor="end"
+     font-family="Arial"
+     font-size="12px"
+     font-style="italic"
+     id="text15">Download this SVG to mark your</text>
+  <text
+     x="548.065"
+     y="930.29883"
+     text-anchor="end"
+     font-family="Arial"
+     font-size="12px"
+     font-style="italic"
+     id="text16">center of gravity and stretch zones</text>
+</svg>
