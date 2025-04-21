@@ -1,2 +1,2 @@
-// src/routes/leadership-guide/+page.ts
+// src/routes/guide-leadership/+page.ts
 export const prerender = true;

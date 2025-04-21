@@ -144,10 +144,10 @@
           }
         },
         { 
-          href: `${base}/guide-organizations`, 
+          href: `${base}/guide-parenting`, 
           label: { 
-            en: "🏢 Spiralizing Organizations & Communities", 
-            sv: "🏢 Spiralisera Organisationer & Gemenskaper" 
+            en: "👶 Parenting & Education Guide", 
+            sv: "👶 Föräldraskap & Utbildning" 
           }
         },
         { 
@@ -156,6 +156,13 @@
               en: "🧭 Coaching & Leadership Toolkit", 
               sv: "🧭 Coaching- och Ledarskapsverktyg" 
             }
+        },
+        { 
+          href: `${base}/guide-organizations`, 
+          label: { 
+            en: "🏢 Spiralizing Organizations & Communities", 
+            sv: "🏢 Spiralisera Organisationer & Gemenskaper" 
+          }
         },
         { 
           href: `${base}/guide-psychological`, 
