@@ -71,13 +71,13 @@
         {
           title: "Global Perspectives",
           description: "Explore how different worldviews shape our understanding of major global challenges.",
-          link: `${base}/global`,
+          link: `${base}/insights/global`,
           icon: "🌍"
         },
         {
           title: "Conscious Governance",
           description: "Learn how to integrate developmental perspectives into organizational and societal systems.",
-          link: `${base}/governance`,
+          link: `${base}/insights/governance`,
           icon: "🏛️"
         }
       ]

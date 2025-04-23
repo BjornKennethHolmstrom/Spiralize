@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg64"
+   sodipodi:docname="orange-crisis-visual.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview64"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.692"
+     inkscape:cx="250.29551"
+     inkscape:cy="250"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg64" />
+  <!-- Background with data aesthetics -->
+  <defs
+     id="defs5">
+    <linearGradient
+       id="orangeGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#ffedd5;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#fdba74;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <pattern
+       id="dataPattern"
+       patternUnits="userSpaceOnUse"
+       width="100"
+       height="100">
+      <path
+         d="M0,50 L100,50 M50,0 L50,100"
+         stroke="#fb923c"
+         stroke-width="0.3"
+         stroke-opacity="0.3"
+         id="path2" />
+      <path
+         d="M0,0 L100,100 M0,100 L100,0"
+         stroke="#fb923c"
+         stroke-width="0.3"
+         stroke-opacity="0.2"
+         id="path3" />
+    </pattern>
+    <filter
+       id="dataDissolve"
+       x="-0.022028427"
+       y="-0.026666667"
+       width="1.0412284"
+       height="1.0533333">
+      <feTurbulence
+         type="fractalNoise"
+         baseFrequency="0.03"
+         numOctaves="3"
+         result="noise"
+         id="feTurbulence3" />
+      <feDisplacementMap
+         in="SourceGraphic"
+         in2="noise"
+         scale="10"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         id="feDisplacementMap3" />
+      <feGaussianBlur
+         stdDeviation="2"
+         id="feGaussianBlur3" />
+    </filter>
+    <linearGradient
+       id="watercolorGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#fb923c;stop-opacity:0.3"
+         id="stop3" />
+      <stop
+         offset="50%"
+         style="stop-color:#f97316;stop-opacity:0.2"
+         id="stop4" />
+      <stop
+         offset="100%"
+         style="stop-color:#ea580c;stop-opacity:0.3"
+         id="stop5" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect
+     x="0"
+     y="0"
+     width="500"
+     height="500"
+     fill="url(#orangeGradient)"
+     id="rect5" />
+  <rect
+     x="0"
+     y="0"
+     width="500"
+     height="500"
+     fill="url(#dataPattern)"
+     id="rect6" />
+  <!-- Dashboard dissolving into watercolor -->
+  <g
+     transform="translate(250, 250)"
+     id="g24">
+    <!-- Dashboard structure -->
+    <rect
+       x="-150"
+       y="-125"
+       width="300"
+       height="250"
+       rx="10"
+       ry="10"
+       fill="#f1f5f9"
+       stroke="#94a3b8"
+       stroke-width="2"
+       id="rect7" />
+    <!-- Dashboard panels - some intact, some dissolving -->
+    <rect
+       x="-140"
+       y="-115"
+       width="130"
+       height="80"
+       rx="5"
+       ry="5"
+       fill="#f8fafc"
+       stroke="#cbd5e1"
+       stroke-width="1"
+       id="rect8" />
+    <rect
+       x="0"
+       y="-115"
+       width="130"
+       height="80"
+       rx="5"
+       ry="5"
+       fill="#f8fafc"
+       stroke="#cbd5e1"
+       stroke-width="1"
+       id="rect9" />
+    <rect
+       x="-140"
+       y="-25"
+       width="130"
+       height="140"
+       rx="5"
+       ry="5"
+       fill="#f8fafc"
+       stroke="#cbd5e1"
+       stroke-width="1"
+       id="rect10" />
+    <rect
+       x="0"
+       y="-25"
+       width="130"
+       height="140"
+       rx="5"
+       ry="5"
+       fill="#f8fafc"
+       stroke="#cbd5e1"
+       stroke-width="1"
+       id="rect11" />
+    <!-- Data Streams into Watercolor -->
+    <g
+       filter="url(#dataDissolve)"
+       id="g22">
+      <!-- Broken graph in left panel -->
+      <polyline
+         points="-130,-90 -110,-70 -90,-100 -70,-65 -50,-95 -30,-75 -20,-85"
+         fill="none"
+         stroke="#f97316"
+         stroke-width="2"
+         id="polyline11" />
+      <!-- Bar chart in right panel -->
+      <rect
+         x="10"
+         y="-95"
+         width="10"
+         height="30"
+         fill="#fb923c"
+         id="rect12" />
+      <rect
+         x="30"
+         y="-75"
+         width="10"
+         height="10"
+         fill="#fb923c"
+         id="rect13" />
+      <rect
+         x="50"
+         y="-105"
+         width="10"
+         height="40"
+         fill="#fb923c"
+         id="rect14" />
+      <rect
+         x="70"
+         y="-65"
+         width="10"
+         height="0"
+         fill="#fb923c"
+         id="rect15" />
+      <!-- empty bar -->
+      <rect
+         x="90"
+         y="-85"
+         width="10"
+         height="20"
+         fill="#fb923c"
+         id="rect16" />
+      <rect
+         x="110"
+         y="-90"
+         width="10"
+         height="25"
+         fill="#fb923c"
+         id="rect17" />
+      <!-- Pie chart dissolving -->
+      <path
+         d="M-85,30 L-85,0 A30,30 0 0,1 -59.7,15 Z"
+         fill="#fb923c"
+         id="path17" />
+      <path
+         d="M-85,30 L-59.7,15 A30,30 0 0,1 -55.3,42.3 Z"
+         fill="#f97316"
+         id="path18" />
+      <path
+         d="M-85,30 L-55.3,42.3 A30,30 0 0,1 -114.7,42.3 Z"
+         fill="#ea580c"
+         id="path19" />
+      <path
+         d="M-85,30 L-114.7,42.3 A30,30 0 0,1 -85,0 Z"
+         fill="#c2410c"
+         id="path20" />
+      <!-- Watercolor swirls emerging from data -->
+      <path
+         d="M65,30 Q90,0 65,-30 Q30,-50 30,0 Q30,50 65,30"
+         fill="url(#watercolorGradient)"
+         opacity="0.7"
+         id="path21" />
+      <path
+         d="M40,60 Q65,90 90,60 Q110,20 65,10 Q20,0 40,60"
+         fill="url(#watercolorGradient)"
+         opacity="0.5"
+         id="path22" />
+    </g>
+    <!-- Broken dashboard elements -->
+    <line
+       x1="-150"
+       y1="-45"
+       x2="150"
+       y2="-45"
+       stroke="#cbd5e1"
+       stroke-width="1"
+       stroke-dasharray="5,5"
+       id="line22" />
+    <path
+       d="M150,-125 L170,-105 L170,125 L150,105 Z"
+       fill="#e2e8f0"
+       stroke="#cbd5e1"
+       stroke-width="1"
+       id="path23" />
+    <!-- side panel breaking off -->
+    <path
+       d="M-150,125 L-150,145 L150,145 L150,125"
+       fill="#e2e8f0"
+       stroke="#cbd5e1"
+       stroke-width="1"
+       id="path24" />
+    <!-- bottom panel falling off -->
+  </g>
+  <!-- 1. Hollow Trophy Melting -->
+  <g
+     transform="translate(125, 150)"
+     id="g32">
+    <circle
+       cx="0"
+       cy="0"
+       r="50"
+       fill="#ffedd5"
+       stroke="#ea580c"
+       stroke-width="1"
+       id="circle24" />
+    <!-- Trophy outline -->
+    <path
+       d="M-15,-25 L15,-25 L15,-20 L10,-20 L10,15 L-10,15 L-10,-20 L-15,-20 Z"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="2"
+       id="path25" />
+    <!-- Trophy handles -->
+    <path
+       d="M-15,-20 Q-25,-20 -25,-10 Q-25,0 -15,0"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="2"
+       id="path26" />
+    <path
+       d="M15,-20 Q25,-20 25,-10 Q25,0 15,0"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="2"
+       id="path27" />
+    <!-- Trophy base -->
+    <rect
+       x="-20"
+       y="15"
+       width="40"
+       height="5"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="2"
+       id="rect27" />
+    <rect
+       x="-15"
+       y="20"
+       width="30"
+       height="5"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="2"
+       id="rect28" />
+    <!-- Melting effect -->
+    <path
+       d="M-5,15 L-7,25"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="1"
+       id="path28" />
+    <path
+       d="M5,15 L8,30"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="1"
+       id="path29" />
+    <path
+       d="M10,0 L15,10"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="1"
+       id="path30" />
+    <path
+       d="M-10,-5 L-14,5"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="1"
+       id="path31" />
+    <path
+       d="M0,-25 L0,-35"
+       fill="none"
+       stroke="#ea580c"
+       stroke-width="1"
+       id="path32" />
+  </g>
+  <!-- 2. Pill Bottle Sprouting Flowers -->
+  <g
+     transform="translate(375, 150)"
+     id="g38">
+    <circle
+       cx="0"
+       cy="0"
+       r="50"
+       fill="#ffedd5"
+       stroke="#ea580c"
+       stroke-width="1"
+       id="circle32" />
+    <!-- Pill bottle -->
+    <rect
+       x="-15"
+       y="-25"
+       width="30"
+       height="40"
+       rx="5"
+       ry="5"
+       fill="#f8fafc"
+       stroke="#94a3b8"
+       stroke-width="1"
+       id="rect32" />
+    <rect
+       x="-12"
+       y="-25"
+       width="24"
+       height="5"
+       fill="#e2e8f0"
+       stroke="#94a3b8"
+       stroke-width="0.5"
+       id="rect33" />
+    <!-- Lid on the ground -->
+    <rect
+       x="-10"
+       y="20"
+       width="20"
+       height="5"
+       rx="2"
+       ry="2"
+       fill="#e2e8f0"
+       stroke="#94a3b8"
+       stroke-width="0.5"
+       id="rect34" />
+    <!-- Flowers sprouting -->
+    <path
+       d="M0,-25 L0,-35"
+       stroke="#84cc16"
+       stroke-width="1.5"
+       id="path34" />
+    <path
+       d="M0,-35 Q-5,-40 -10,-35 Q-5,-30 0,-35"
+       fill="#84cc16"
+       stroke="#65a30d"
+       stroke-width="0.5"
+       id="path35" />
+    <path
+       d="M0,-35 Q5,-40 10,-35 Q5,-30 0,-35"
+       fill="#84cc16"
+       stroke="#65a30d"
+       stroke-width="0.5"
+       id="path36" />
+    <circle
+       cx="0"
+       cy="-35"
+       r="2"
+       fill="#facc15"
+       id="circle36" />
+    <path
+       d="M5,-10 L10,-20"
+       stroke="#84cc16"
+       stroke-width="1"
+       id="path37" />
+    <circle
+       cx="10"
+       cy="-20"
+       r="3"
+       fill="#ec4899"
+       stroke="#be185d"
+       stroke-width="0.5"
+       id="circle37" />
+    <path
+       d="M-5,-15 L-15,-25"
+       stroke="#84cc16"
+       stroke-width="1"
+       id="path38" />
+    <circle
+       cx="-15"
+       cy="-25"
+       r="3"
+       fill="#8b5cf6"
+       stroke="#6d28d9"
+       stroke-width="0.5"
+       id="circle38" />
+  </g>
+  <!-- 3. Neural Network Sketching "VOID" -->
+  <circle
+     cx="125"
+     cy="350"
+     r="50"
+     fill="#ffedd5"
+     stroke="#ea580c"
+     stroke-width="1"
+     id="circle39" />
+  <ellipse
+     cx="125"
+     cy="350"
+     rx="30"
+     ry="25"
+     fill="none"
+     stroke="#94a3b8"
+     stroke-width="1"
+     id="ellipse39" />
+  <circle
+     cx="110"
+     cy="340"
+     r="3"
+     fill="#94a3b8"
+     id="circle40" />
+  <circle
+     cx="140"
+     cy="340"
+     r="3"
+     fill="#94a3b8"
+     id="circle41" />
+  <circle
+     cx="105"
+     cy="355"
+     r="3"
+     fill="#94a3b8"
+     id="circle42" />
+  <circle
+     cx="125"
+     cy="355"
+     r="3"
+     fill="#94a3b8"
+     id="circle43" />
+  <circle
+     cx="145"
+     cy="355"
+     r="3"
+     fill="#94a3b8"
+     id="circle44" />
+  <circle
+     cx="115"
+     cy="365"
+     r="3"
+     fill="#94a3b8"
+     id="circle45" />
+  <circle
+     cx="135"
+     cy="365"
+     r="3"
+     fill="#94a3b8"
+     id="circle46" />
+  <line
+     x1="110"
+     y1="340"
+     x2="105"
+     y2="355"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="line46" />
+  <line
+     x1="110"
+     y1="340"
+     x2="125"
+     y2="355"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="line47" />
+  <line
+     x1="140"
+     y1="340"
+     x2="125"
+     y2="355"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="line48" />
+  <line
+     x1="140"
+     y1="340"
+     x2="145"
+     y2="355"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="line49" />
+  <line
+     x1="105"
+     y1="355"
+     x2="115"
+     y2="365"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="line50" />
+  <line
+     x1="125"
+     y1="355"
+     x2="115"
+     y2="365"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="line51" />
+  <line
+     x1="125"
+     y1="355"
+     x2="135"
+     y2="365"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="line52" />
+  <line
+     x1="145"
+     y1="355"
+     x2="135"
+     y2="365"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="line53" />
+  <text
+     x="125"
+     y="380"
+     font-family="monospace"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#64748b"
+     id="text53">VOID</text>
+  <text
+     x="120.70872"
+     y="324.04269"
+     font-family="monospace"
+     font-size="8.45588px"
+     text-anchor="middle"
+     fill="#64748b"
+     id="text54"
+     style="stroke-width:2.11397">if(meaning){</text>
+  <text
+     x="143.91707"
+     y="335.01868"
+     font-family="monospace"
+     font-size="7.46945px"
+     text-anchor="middle"
+     fill="#64748b"
+     id="text55"
+     style="stroke-width:1.86736">return null;</text>
+  <text
+     x="150"
+     y="335"
+     font-family="monospace"
+     font-size="4px"
+     text-anchor="middle"
+     fill="#64748b"
+     id="text56">}</text>
+  <!-- 4. Yoga Mat with Stock Tickers -->
+  <circle
+     cx="375"
+     cy="350"
+     r="50"
+     fill="#ffedd5"
+     stroke="#ea580c"
+     stroke-width="1"
+     id="circle56" />
+  <rect
+     x="350"
+     y="315"
+     width="50"
+     height="70"
+     rx="5"
+     ry="5"
+     fill="#22c55e"
+     stroke="#16a34a"
+     stroke-width="1"
+     id="rect56" />
+  <circle
+     cx="375"
+     cy="335"
+     r="5"
+     fill="#f8fafc"
+     id="circle57" />
+  <path
+     d="m 375,340 v 10 l -15,15 m 15,-15 15,15"
+     fill="none"
+     stroke="#f8fafc"
+     stroke-width="1.5"
+     id="path57" />
+  <path
+     d="m 375,345 -15,-10 m 15,10 15,-10"
+     fill="none"
+     stroke="#f8fafc"
+     stroke-width="1.5"
+     id="path58" />
+  <rect
+     x="350"
+     y="370"
+     width="50"
+     height="15"
+     fill="#020617"
+     stroke="#020617"
+     stroke-width="1"
+     id="rect58" />
+  <text
+     x="355"
+     y="380"
+     font-family="monospace"
+     font-size="7px"
+     fill="#22c55e"
+     id="text58">MDND↑ ZEN↓</text>
+  <circle
+     cx="375"
+     cy="315"
+     r="10"
+     fill="#f8fafc"
+     stroke="#94a3b8"
+     stroke-width="0.5"
+     id="circle58" />
+  <text
+     x="375"
+     y="318"
+     font-family="monospace"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#020617"
+     id="text59">5:00</text>
+  <!-- "Nirvana™" Patent Application (Hidden Easter Egg) -->
+  <rect
+     x="217.93802"
+     y="410.03021"
+     width="62.94194"
+     height="29.939575"
+     rx="2.5176775"
+     ry="1.9959717"
+     fill="#f8fafc"
+     stroke="#94a3b8"
+     stroke-width="0.560425"
+     id="rect59"
+     style="opacity:0.3" />
+  <text
+     x="250"
+     y="420"
+     font-family="serif"
+     font-size="6px"
+     text-anchor="middle"
+     fill="#475569"
+     id="text60"
+     style="opacity:0.3">PATENT PENDING</text>
+  <text
+     x="250"
+     y="430"
+     font-family="serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#475569"
+     id="text61"
+     style="opacity:0.3">Nirvana™</text>
+  <text
+     x="250"
+     y="437"
+     font-family="sans-serif"
+     font-size="4px"
+     text-anchor="middle"
+     fill="#475569"
+     id="text62"
+     style="opacity:0.3">App. #OM-108-2023</text>
+  <!-- Brain Scan with 404 Error (from alternate description) -->
+  <g
+     transform="translate(250, 300)"
+     opacity="0.4"
+     id="g63">
+    <rect
+       x="-30"
+       y="-20"
+       width="60"
+       height="40"
+       rx="5"
+       ry="5"
+       fill="#f1f5f9"
+       stroke="#cbd5e1"
+       stroke-width="0.5"
+       id="rect62" />
+    <!-- Brain scan style image -->
+    <ellipse
+       cx="0"
+       cy="0"
+       rx="25"
+       ry="15"
+       fill="none"
+       stroke="#94a3b8"
+       stroke-width="0.5"
+       id="ellipse62" />
+    <path
+       d="M-20,-5 Q-10,-15 0,-5 Q10,-15 20,-5"
+       fill="none"
+       stroke="#94a3b8"
+       stroke-width="0.5"
+       id="path62" />
+    <path
+       d="M-15,5 Q-5,12 5,5 Q15,12 15,0"
+       fill="none"
+       stroke="#94a3b8"
+       stroke-width="0.5"
+       id="path63" />
+    <!-- 404 Error -->
+    <text
+       x="0"
+       y="2"
+       font-family="monospace"
+       font-size="8"
+       text-anchor="middle"
+       fill="#ef4444"
+       id="text63">404</text>
+  </g>
+  <!-- Title -->
+  <g
+     transform="translate(250, 470)"
+     id="g64">
+    <text
+       x="0"
+       y="0"
+       font-family="Arial"
+       font-size="14"
+       text-anchor="middle"
+       fill="#c2410c"
+       font-weight="bold"
+       id="text64">ORANGE'S EMPTINESS CRISIS</text>
+  </g>
+</svg>

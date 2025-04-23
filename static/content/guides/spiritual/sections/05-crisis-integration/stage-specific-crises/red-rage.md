@@ -171,10 +171,10 @@ When rage feels overwhelming, repeat slowly while breathing deeply:
 ---
 
 ## **Next Steps**  
-- 🔵 [Blue's Doubt Crisis](/blue-doubt.md) (the next stage's challenge)  
-- 🛡️ [Red Shadow Journal Prompts](/tools/shadow-journal.md#red)  
-- 🧘‍♂️ [Rage to Power Meditation](/tools/meditation-scripts.md#red-rage)
-- 🥋 [Martial Arts as Spiritual Practice](/practices/red-power.md#martial-path)
+- 🔵 [Blue's Doubt Crisis](/guide-spiritual/sections/05-crisis-integration/blue-doubt.md) (the next stage's challenge)  
+- 🛡️ [Red Shadow Journal Prompts](/guide-spiritual/tools/shadow-journal.md#red)  
+- 🧘‍♂️ [Rage to Power Meditation](/guide-spiritual/tools/meditation-scripts.md#red-rage)
+- 🥋 [Martial Arts as Spiritual Practice](/guide-spiritual/section/04-practices/red-power.md#martial-path)
 - 📞 [Crisis Hotlines](/crisis-protocols.md#emergency-contacts) (when containment fails)
 
 ---  
