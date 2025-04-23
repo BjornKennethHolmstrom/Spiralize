@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 800 800"
+   version="1.1"
+   id="svg47"
+   sodipodi:docname="spiral-map.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs47" />
+  <sodipodi:namedview
+     id="namedview47"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0575"
+     inkscape:cx="363.59338"
+     inkscape:cy="258.15603"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg47" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="800"
+     fill="#f9f4e8"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="50"
+     font-size="24"
+     text-anchor="middle"
+     font-weight="bold"
+     fill="#333"
+     id="text1">Spiral Dynamics Mystical Map</text>
+  <text
+     x="400"
+     y="80"
+     font-size="16"
+     text-anchor="middle"
+     fill="#666"
+     id="text2">Stages of Spiritual Awakening</text>
+  <!-- Spiral Path -->
+  <path
+     d="M400,400 Q500,300 550,400 Q600,500 400,600 Q200,500 250,400 Q300,300 400,400"
+     fill="none"
+     stroke="#333"
+     stroke-width="2"
+     stroke-dasharray="5,3"
+     id="path2" />
+  <!-- Stage Nodes -->
+  <!-- Beige -->
+  <g
+     transform="translate(400, 400)"
+     id="g6">
+    <circle
+       r="30"
+       fill="#E6D5B8"
+       stroke="#333"
+       stroke-width="1"
+       id="circle2" />
+    <text
+       y="5"
+       font-size="20"
+       text-anchor="middle"
+       id="text3">🌱</text>
+    <text
+       y="40"
+       font-size="12"
+       text-anchor="middle"
+       fill="#333"
+       id="text4">Beige</text>
+    <text
+       y="55"
+       font-size="10"
+       text-anchor="middle"
+       fill="#666"
+       id="text5">Primal Awe</text>
+    <text
+       y="70"
+       font-size="10"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text6">Trap: Literalism</text>
+  </g>
+  <!-- Purple -->
+  <g
+     transform="translate(500,292)"
+     id="g10">
+    <circle
+       r="30"
+       fill="#b399d4"
+       stroke="#333333"
+       stroke-width="1"
+       id="circle6"
+       cx="0"
+       cy="0" />
+    <text
+       y="5"
+       font-size="20px"
+       text-anchor="middle"
+       id="text7">🌀</text>
+    <text
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text8">Purple</text>
+    <text
+       y="55"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text9">Sacred Rituals</text>
+    <text
+       y="70"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text10">Trap: Superstition</text>
+  </g>
+  <!-- Red -->
+  <g
+     transform="translate(550, 400)"
+     id="g14">
+    <circle
+       r="30"
+       fill="#FF6B6B"
+       stroke="#333"
+       stroke-width="1"
+       id="circle10" />
+    <text
+       y="5"
+       font-size="20"
+       text-anchor="middle"
+       id="text11">⚔️</text>
+    <text
+       y="40"
+       font-size="12"
+       text-anchor="middle"
+       fill="#333"
+       id="text12">Red</text>
+    <text
+       y="55"
+       font-size="10"
+       text-anchor="middle"
+       fill="#666"
+       id="text13">Warrior Ecstasy</text>
+    <text
+       y="70"
+       font-size="10"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text14">Trap: Ego Inflation</text>
+  </g>
+  <!-- Blue -->
+  <g
+     transform="translate(600, 500)"
+     id="g18">
+    <circle
+       r="30"
+       fill="#4D80E6"
+       stroke="#333"
+       stroke-width="1"
+       id="circle14" />
+    <text
+       y="5"
+       font-size="20"
+       text-anchor="middle"
+       id="text15">📜</text>
+    <text
+       y="40"
+       font-size="12"
+       text-anchor="middle"
+       fill="#333"
+       id="text16">Blue</text>
+    <text
+       y="55"
+       font-size="10"
+       text-anchor="middle"
+       fill="#666"
+       id="text17">Divine Order</text>
+    <text
+       y="70"
+       font-size="10"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text18">Trap: Dogma</text>
+  </g>
+  <!-- Orange -->
+  <g
+     transform="translate(400, 600)"
+     id="g22">
+    <circle
+       r="30"
+       fill="#FFA64D"
+       stroke="#333"
+       stroke-width="1"
+       id="circle18" />
+    <text
+       y="5"
+       font-size="20"
+       text-anchor="middle"
+       id="text19">🔬</text>
+    <text
+       y="40"
+       font-size="12"
+       text-anchor="middle"
+       fill="#333"
+       id="text20">Orange</text>
+    <text
+       y="55"
+       font-size="10"
+       text-anchor="middle"
+       fill="#666"
+       id="text21">Rational Spirit</text>
+    <text
+       y="70"
+       font-size="10"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text22">Trap: Reductionism</text>
+  </g>
+  <!-- Green -->
+  <g
+     transform="translate(200, 500)"
+     id="g26">
+    <circle
+       r="30"
+       fill="#66CC99"
+       stroke="#333"
+       stroke-width="1"
+       id="circle22" />
+    <text
+       y="5"
+       font-size="20"
+       text-anchor="middle"
+       id="text23">💚</text>
+    <text
+       y="40"
+       font-size="12"
+       text-anchor="middle"
+       fill="#333"
+       id="text24">Green</text>
+    <text
+       y="55"
+       font-size="10"
+       text-anchor="middle"
+       fill="#666"
+       id="text25">Cosmic Love</text>
+    <text
+       y="70"
+       font-size="10"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text26">Trap: Bypassing</text>
+  </g>
+  <!-- Yellow -->
+  <g
+     transform="translate(250, 400)"
+     id="g30">
+    <circle
+       r="30"
+       fill="#FFD166"
+       stroke="#333"
+       stroke-width="1"
+       id="circle26" />
+    <text
+       y="5"
+       font-size="20"
+       text-anchor="middle"
+       id="text27">🧩</text>
+    <text
+       y="40"
+       font-size="12"
+       text-anchor="middle"
+       fill="#333"
+       id="text28">Yellow</text>
+    <text
+       y="55"
+       font-size="10"
+       text-anchor="middle"
+       fill="#666"
+       id="text29">Systems Play</text>
+    <text
+       y="70"
+       font-size="10"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text30">Trap: Overanalysis</text>
+  </g>
+  <!-- Turquoise -->
+  <g
+     transform="translate(300,292)"
+     id="g34">
+    <circle
+       r="30"
+       fill="#7ce0d6"
+       stroke="#333333"
+       stroke-width="1"
+       id="circle30"
+       cx="0"
+       cy="0" />
+    <text
+       y="5"
+       font-size="20px"
+       text-anchor="middle"
+       id="text31">🌊</text>
+    <text
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text32">Turquoise</text>
+    <text
+       y="55"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text33">Nondual Flow</text>
+    <text
+       y="70"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text34">Trap: Detachment</text>
+  </g>
+  <!-- Coral -->
+  <g
+     transform="translate(352,192)"
+     id="g38">
+    <circle
+       r="30"
+       fill="#ff8fa3"
+       stroke="#333333"
+       stroke-width="1"
+       id="circle34"
+       cx="0"
+       cy="0" />
+    <text
+       y="5"
+       font-size="20px"
+       text-anchor="middle"
+       id="text35">🪸</text>
+    <text
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text36">Coral</text>
+    <text
+       y="55"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text37">Embodied Play</text>
+    <text
+       y="70"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ff9900"
+       id="text38">Trap: Elitism</text>
+  </g>
+  <!-- Clear -->
+  <g
+     transform="translate(450, 150)"
+     id="g42">
+    <circle
+       r="30"
+       fill="none"
+       stroke="#333"
+       stroke-width="1"
+       stroke-dasharray="3,3"
+       id="circle38" />
+    <text
+       y="5"
+       font-size="20"
+       text-anchor="middle"
+       id="text39">○</text>
+    <text
+       y="40"
+       font-size="12"
+       text-anchor="middle"
+       fill="#333"
+       id="text40">Clear</text>
+    <text
+       y="55"
+       font-size="10"
+       text-anchor="middle"
+       fill="#666"
+       id="text41">No Separation</text>
+    <text
+       y="70"
+       font-size="10"
+       text-anchor="middle"
+       fill="#66CC99"
+       id="text42">Gift: Freedom</text>
+  </g>
+  <!-- Legend -->
+  <rect
+     x="50"
+     y="654"
+     width="200"
+     height="90"
+     fill="#ffffff"
+     stroke="#333333"
+     rx="5"
+     id="rect42" />
+  <text
+     x="150"
+     y="674"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text43">Guide</text>
+  <text
+     x="60"
+     y="694"
+     font-size="12px"
+     id="text44"><tspan
+   fill="#ff9900"
+   id="tspan43">■</tspan> Trap = Stage-specific shadow</text>
+  <text
+     x="60"
+     y="714"
+     font-size="12px"
+     id="text45"><tspan
+   fill="#66cc99"
+   id="tspan44">■</tspan> Gift = Mystical strength</text>
+  <text
+     x="60"
+     y="734"
+     font-size="12px"
+     id="text46"><tspan
+   fill="#333333"
+   id="tspan45">○</tspan> Clear = Beyond stages</text>
+  <!-- Footer -->
+  <text
+     x="400"
+     y="790"
+     font-size="12"
+     text-anchor="middle"
+     fill="#666"
+     id="text47">
+    Explore stage practices: spiralize.org/guide-spiritual/03-practices
+  </text>
+</svg>

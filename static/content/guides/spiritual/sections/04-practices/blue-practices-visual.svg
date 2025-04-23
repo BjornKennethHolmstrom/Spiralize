@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background Gothic Window -->
+  <rect x="0" y="0" width="400" height="400" fill="#1a365d" />
+  
+  <!-- Window Frame -->
+  <path d="M50 50 L50 350 L350 350 L350 50 Z" fill="#0f172a" stroke="#cbd5e1" stroke-width="6" />
+  
+  <!-- Gothic Arch -->
+  <path d="M75 75 L75 275 A100 100 0 0 0 325 275 L325 75 Z" fill="#1e3a8a" stroke="#cbd5e1" stroke-width="4" />
+  
+  <!-- Window Dividers -->
+  <line x1="200" y1="75" x2="200" y2="275" stroke="#cbd5e1" stroke-width="4" />
+  <line x1="75" y1="175" x2="325" y2="175" stroke="#cbd5e1" stroke-width="4" />
+  
+  <!-- Quadrant 1: Lit Candle (Top Left) -->
+  <rect x="95" y="95" width="80" height="60" fill="#2563eb" opacity="0.7" />
+  <!-- Candle -->
+  <rect x="130" y="110" width="10" height="35" fill="#f1f5f9" />
+  <!-- Flame -->
+  <path d="M135 110 Q140 100 140 95 Q145 100 140 110" fill="#fbbf24" />
+  <path d="M135 110 Q130 100 130 95 Q125 100 130 110" fill="#f59e0b" />
+  
+  <!-- Quadrant 2: Open Book (Top Right) -->
+  <rect x="225" y="95" width="80" height="60" fill="#2563eb" opacity="0.7" />
+  <!-- Book -->
+  <path d="M245 135 L245 115 L285 115 L285 135 Z" fill="#f1f5f9" />
+  <path d="M245 135 L245 115 L265 125 L265 145 Z" fill="#e2e8f0" />
+  <path d="M285 135 L285 115 L265 125 L265 145 Z" fill="#e2e8f0" />
+  <!-- Text Lines -->
+  <line x1="255" y1="120" x2="275" y2="120" stroke="#0f172a" stroke-width="1" />
+  <line x1="255" y1="125" x2="275" y2="125" stroke="#0f172a" stroke-width="1" />
+  <line x1="255" y1="130" x2="275" y2="130" stroke="#0f172a" stroke-width="1" />
+  
+  <!-- Quadrant 3: Folded Hands (Bottom Left) -->
+  <rect x="95" y="195" width="80" height="60" fill="#2563eb" opacity="0.7" />
+  <!-- Hands -->
+  <path d="M125 215 Q135 205 145 215 Q155 225 145 235 Q135 225 125 215" fill="#f8fafc" />
+  <path d="M125 225 Q135 215 145 225 Q155 235 145 245 Q135 235 125 225" fill="#e2e8f0" />
+  
+  <!-- Quadrant 4: Symmetrical Pillars (Bottom Right) -->
+  <rect x="225" y="195" width="80" height="60" fill="#2563eb" opacity="0.7" />
+  <!-- Pillars -->
+  <rect x="240" y="205" width="10" height="40" fill="#f1f5f9" />
+  <rect x="240" y="200" width="10" height="5" fill="#cbd5e1" />
+  <rect x="240" y="245" width="10" height="5" fill="#cbd5e1" />
+  
+  <rect x="280" y="205" width="10" height="40" fill="#f1f5f9" />
+  <rect x="280" y="200" width="10" height="5" fill="#cbd5e1" />
+  <rect x="280" y="245" width="10" height="5" fill="#cbd5e1" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="200" cy="325" r="15" fill="#2563eb" />
+  <text x="200" y="330" font-family="serif" font-size="15" text-anchor="middle" fill="#f8fafc">🕊️</text>
+  
+  <!-- Border Decorations -->
+  <rect x="50" y="350" width="300" height="10" fill="#475569" />
+  <rect x="50" y="40" width="300" height="10" fill="#475569" />
+  <rect x="40" y="50" width="10" height="300" fill="#475569" />
+  <rect x="350" y="50" width="10" height="300" fill="#475569" />
+</svg>

@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 800"
+   version="1.1"
+   id="svg52"
+   sodipodi:docname="yellow-essence.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview52"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4955308"
+     inkscape:cx="506.50911"
+     inkscape:cy="395.84607"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg52" />
+  <!-- Definitions -->
+  <defs
+     id="defs7">
+    <linearGradient
+       id="yellowGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#FFEB3B"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#FFC107"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="stickyNoteGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#FFF9C4"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#FFEE58"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="whiteboardGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#FFFFFF"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#F5F5F5"
+         id="stop6" />
+    </linearGradient>
+    <filter
+       id="dropShadow"
+       x="-0.12"
+       y="-0.18"
+       width="1.2733333"
+       height="1.41">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="3"
+         id="feGaussianBlur6" />
+      <feOffset
+         dx="2"
+         dy="2"
+         id="feOffset6" />
+      <feComponentTransfer
+         id="feComponentTransfer6">
+        <feFuncA
+           type="linear"
+           slope="0.3"
+           id="feFuncA6" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge7">
+        <feMergeNode
+           id="feMergeNode6" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7" />
+      </feMerge>
+    </filter>
+    <pattern
+       id="gridPattern"
+       width="20"
+       height="20"
+       patternUnits="userSpaceOnUse">
+      <rect
+         width="20"
+         height="20"
+         fill="none"
+         stroke="#E0E0E0"
+         stroke-width="0.5"
+         id="rect7" />
+    </pattern>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#stickyNoteGradient"
+       id="linearGradient52"
+       x1="-12.37244"
+       y1="-16.759831"
+       x2="118.9129"
+       y2="114.5255"
+       gradientTransform="scale(1.1638771,0.85919724)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#stickyNoteGradient"
+       id="linearGradient53"
+       x1="-12.37244"
+       y1="-16.759831"
+       x2="118.9129"
+       y2="114.5255"
+       gradientTransform="scale(1.1638771,0.85919724)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Background -->
+  <rect
+     width="800"
+     height="800"
+     fill="#FFFDE7"
+     id="rect8" />
+  <!-- Whiteboard Background -->
+  <rect
+     x="100"
+     y="100"
+     width="600"
+     height="500"
+     rx="10"
+     ry="10"
+     fill="url(#whiteboardGradient)"
+     stroke="#FFD54F"
+     stroke-width="3"
+     filter="url(#dropShadow)"
+     id="rect9" />
+  <rect
+     x="100"
+     y="100"
+     width="600"
+     height="500"
+     rx="10"
+     ry="10"
+     fill="url(#gridPattern)"
+     id="rect10" />
+  <!-- Whiteboard Title -->
+  <rect
+     x="109.30146"
+     y="110"
+     width="221.39709"
+     height="40"
+     rx="5.5349274"
+     ry="5"
+     fill="#ffd54f"
+     opacity="0.7"
+     id="rect11"
+     style="stroke-width:1.05214" />
+  <text
+     x="220"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     font-size="16"
+     text-anchor="middle"
+     fill="#333333"
+     id="text11">CONSCIOUSNESS MAP v4.2</text>
+  <!-- Main Spiral Diagram -->
+  <g
+     transform="translate(400, 350)"
+     id="g21">
+    <!-- Spiral Framework -->
+    <path
+       d="M0,0               Q40,40 80,0               Q120,-40 80,-80               Q40,-120 0,-100               Q-40,-80 -60,-40               Q-80,0 -60,40               Q-40,80 0,60               Q40,40 80,0"
+       fill="none"
+       stroke="#FFC107"
+       stroke-width="3"
+       stroke-dasharray="5,3"
+       id="path11" />
+    <!-- Stage Labels -->
+    <g
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       id="g19">
+      <!-- First Tier Labels -->
+      <text
+         x="-40"
+         y="55"
+         fill="#795548"
+         transform="rotate(-30 -40,55)"
+         id="text12">BEIGE</text>
+      <text
+         x="-65"
+         y="15"
+         fill="#9C27B0"
+         transform="rotate(-60 -65,15)"
+         id="text13">PURPLE</text>
+      <text
+         x="-55"
+         y="-35"
+         fill="#F44336"
+         transform="rotate(-90 -55,-35)"
+         id="text14">RED</text>
+      <text
+         x="-20"
+         y="-70"
+         fill="#2196F3"
+         transform="rotate(-120 -20,-70)"
+         id="text15">BLUE</text>
+      <text
+         x="25"
+         y="-75"
+         fill="#FF9800"
+         transform="rotate(-150 25,-75)"
+         id="text16">ORANGE</text>
+      <text
+         x="65"
+         y="-45"
+         fill="#4CAF50"
+         transform="rotate(-180 65,-45)"
+         id="text17">GREEN</text>
+      <!-- Second Tier Label (Highlighted) -->
+      <g
+         transform="translate(75, 0)"
+         id="g18">
+        <rect
+           x="-30"
+           y="-10"
+           width="60"
+           height="20"
+           rx="10"
+           ry="10"
+           fill="#FFEB3B"
+           opacity="0.7"
+           id="rect17" />
+        <text
+           x="0"
+           y="5"
+           fill="#333333"
+           font-weight="bold"
+           id="text18">YELLOW</text>
+      </g>
+      <!-- Next Stage Label -->
+      <text
+         x="45"
+         y="45"
+         fill="#26A69A"
+         transform="rotate(60 45,45)"
+         id="text19">TURQUOISE</text>
+    </g>
+    <!-- You Are Here Indicator -->
+    <g
+       transform="translate(75, 0)"
+       id="g20">
+      <circle
+         cx="0"
+         cy="0"
+         r="10"
+         fill="#FFEB3B"
+         stroke="#FFA000"
+         stroke-width="2"
+         id="circle19">
+        <animate
+           attributeName="r"
+           values="10;12;10"
+           dur="3s"
+           repeatCount="indefinite" />
+      </circle>
+      <line
+         x1="0"
+         y1="-15"
+         x2="0"
+         y2="-30"
+         stroke="#FFA000"
+         stroke-width="2"
+         id="line19" />
+      <polygon
+         points="0,-40 -5,-30 5,-30"
+         fill="#FFA000"
+         id="polygon19" />
+      <text
+         x="0"
+         y="-50"
+         font-family="Arial, sans-serif"
+         font-size="12"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#FFA000"
+         id="text20">YOU ARE HERE</text>
+    </g>
+  </g>
+  <!-- Mind Map Elements -->
+  <g
+     id="g27">
+    <!-- Central Concept -->
+    <circle
+       cx="400"
+       cy="200"
+       r="40"
+       fill="#FFEB3B"
+       opacity="0.8"
+       id="circle21" />
+    <text
+       x="400"
+       y="205"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333333"
+       id="text21">META-</text>
+    <text
+       x="400"
+       y="225"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333333"
+       id="text22">AWARENESS</text>
+    <!-- Connected Concepts -->
+    <g
+       id="g26">
+      <!-- Concept 1 -->
+      <line
+         x1="400"
+         y1="240"
+         x2="300"
+         y2="280"
+         stroke="#FFD54F"
+         stroke-width="2"
+         id="line22" />
+      <circle
+         cx="300"
+         cy="280"
+         r="30"
+         fill="url(#stickyNoteGradient)"
+         filter="url(#dropShadow)"
+         id="circle22" />
+      <text
+         x="300"
+         y="285"
+         font-family="Arial, sans-serif"
+         font-size="10"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#333333"
+         id="text23">SYSTEMS</text>
+      <!-- Concept 2 -->
+      <line
+         x1="400"
+         y1="240"
+         x2="500"
+         y2="280"
+         stroke="#FFD54F"
+         stroke-width="2"
+         id="line23" />
+      <circle
+         cx="500"
+         cy="280"
+         r="30"
+         fill="url(#stickyNoteGradient)"
+         filter="url(#dropShadow)"
+         id="circle23" />
+      <text
+         x="500"
+         y="285"
+         font-family="Arial, sans-serif"
+         font-size="10"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#333333"
+         id="text24">COMPLEXITY</text>
+      <!-- Concept 3 -->
+      <line
+         x1="300"
+         y1="310"
+         x2="220"
+         y2="350"
+         stroke="#FFD54F"
+         stroke-width="2"
+         id="line24" />
+      <rect
+         x="190"
+         y="330"
+         width="60"
+         height="40"
+         rx="5"
+         ry="5"
+         fill="url(#stickyNoteGradient)"
+         filter="url(#dropShadow)"
+         id="rect24" />
+      <text
+         x="220"
+         y="355"
+         font-family="Arial, sans-serif"
+         font-size="9"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#333333"
+         id="text25">INTEGRAL</text>
+      <!-- Concept 4 -->
+      <line
+         x1="500"
+         y1="310"
+         x2="580"
+         y2="350"
+         stroke="#FFD54F"
+         stroke-width="2"
+         id="line25" />
+      <rect
+         x="550"
+         y="330"
+         width="60"
+         height="40"
+         rx="5"
+         ry="5"
+         fill="url(#stickyNoteGradient)"
+         filter="url(#dropShadow)"
+         id="rect25" />
+      <text
+         x="580"
+         y="355"
+         font-family="Arial, sans-serif"
+         font-size="9"
+         font-weight="bold"
+         text-anchor="middle"
+         fill="#333333"
+         id="text26">EMERGENCE</text>
+    </g>
+  </g>
+  <!-- Sticky Notes -->
+  <rect
+     width="120"
+     height="80"
+     fill="url(#stickyNoteGradient)"
+     filter="url(#dropShadow)"
+     id="rect27"
+     style="fill:url(#linearGradient52)"
+     x="0"
+     y="0"
+     transform="rotate(-5,2151.3389,-1971.3389)" />
+  <text
+     x="222.50621"
+     y="214.86684"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text27"
+     transform="rotate(-5)">TODO:</text>
+  <text
+     x="222.50621"
+     y="234.86684"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text28"
+     transform="rotate(-5)">Integrate Ken</text>
+  <text
+     x="222.50621"
+     y="249.86681"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text29"
+     transform="rotate(-5)">Wilber with</text>
+  <text
+     x="222.50621"
+     y="264.86676"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text30"
+     transform="rotate(-5)">Complexity Theory</text>
+  <rect
+     width="120"
+     height="80"
+     fill="url(#stickyNoteGradient)"
+     filter="url(#dropShadow)"
+     id="rect30"
+     style="fill:url(#linearGradient53)"
+     x="0"
+     y="0"
+     transform="rotate(5,-1761.3389,6961.1297)" />
+  <text
+     x="673.40485"
+     y="157.02161"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text31"
+     transform="rotate(5)">REMINDER:</text>
+  <text
+     x="673.40485"
+     y="177.02161"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text32"
+     transform="rotate(5)">Maps ≠ Territory</text>
+  <text
+     x="673.40485"
+     y="192.02161"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text33"
+     transform="rotate(5)">(Even this one)</text>
+  <line
+     x1="615.39178"
+     y1="233.54524"
+     x2="695.0874"
+     y2="240.5177"
+     stroke="#ff5722"
+     stroke-width="1"
+     id="line33" />
+  <!-- Irony Element -->
+  <rect
+     x="548.07343"
+     y="450.10931"
+     width="144.18741"
+     height="74.157532"
+     rx="12.015617"
+     ry="12.359588"
+     fill="#ffffff"
+     stroke="#ffd54f"
+     stroke-width="1.21864"
+     id="rect34" />
+  <text
+     x="620"
+     y="475"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#9e9e9e"
+     id="text34">*Spends 3 hours*</text>
+  <text
+     x="620"
+     y="495"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#9e9e9e"
+     id="text35">*making chart*</text>
+  <text
+     x="620"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#9e9e9e"
+     id="text36">*about not making charts*</text>
+  <!-- Human Figure -->
+  <g
+     transform="translate(200, 500)"
+     id="g43">
+    <!-- Body -->
+    <circle
+       cx="0"
+       cy="-50"
+       r="20"
+       fill="#FFE082"
+       id="circle36" />
+    <!-- Head -->
+    <line
+       x1="0"
+       y1="-30"
+       x2="0"
+       y2="20"
+       stroke="#FFE082"
+       stroke-width="5"
+       id="line36" />
+    <!-- Body -->
+    <line
+       x1="0"
+       y1="-10"
+       x2="-30"
+       y2="10"
+       stroke="#FFE082"
+       stroke-width="4"
+       id="line37" />
+    <!-- Left Arm -->
+    <line
+       x1="0"
+       y1="-10"
+       x2="30"
+       y2="10"
+       stroke="#FFE082"
+       stroke-width="4"
+       id="line38" />
+    <!-- Right Arm -->
+    <line
+       x1="0"
+       y1="20"
+       x2="-20"
+       y2="50"
+       stroke="#FFE082"
+       stroke-width="4"
+       id="line39" />
+    <!-- Left Leg -->
+    <line
+       x1="0"
+       y1="20"
+       x2="20"
+       y2="50"
+       stroke="#FFE082"
+       stroke-width="4"
+       id="line40" />
+    <!-- Right Leg -->
+    <!-- Thinking Bubble -->
+    <path
+       d="M30,-70               Q80,-80 70,-50               Q90,-30 60,-20               Q60,0 40,-10               Q30,-5 20,-10"
+       fill="#FFFFFF"
+       stroke="#FFD54F"
+       stroke-width="1"
+       id="path40" />
+    <circle
+       cx="15"
+       cy="-20"
+       r="5"
+       fill="#FFFFFF"
+       stroke="#FFD54F"
+       stroke-width="1"
+       id="circle40" />
+    <circle
+       cx="5"
+       cy="-30"
+       r="3"
+       fill="#FFFFFF"
+       stroke="#FFD54F"
+       stroke-width="1"
+       id="circle41" />
+    <!-- Thought Content -->
+    <text
+       x="50"
+       y="-50"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       text-anchor="middle"
+       fill="#333333"
+       id="text41">Meta-meta...</text>
+    <text
+       x="50"
+       y="-35"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       text-anchor="middle"
+       fill="#333333"
+       id="text42">wait, am I</text>
+    <text
+       x="50"
+       y="-20"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       text-anchor="middle"
+       fill="#333333"
+       id="text43">overthinking?</text>
+  </g>
+  <!-- Bottom Framework Elements -->
+  <g
+     transform="translate(400, 530)"
+     id="g47">
+    <!-- 2x2 Matrix -->
+    <rect
+       x="-100"
+       y="-50"
+       width="200"
+       height="100"
+       fill="none"
+       stroke="#FFC107"
+       stroke-width="2"
+       id="rect43" />
+    <line
+       x1="0"
+       y1="-50"
+       x2="0"
+       y2="50"
+       stroke="#FFC107"
+       stroke-width="2"
+       id="line43" />
+    <line
+       x1="-100"
+       y1="0"
+       x2="100"
+       y2="0"
+       stroke="#FFC107"
+       stroke-width="2"
+       id="line44" />
+    <!-- Matrix Labels -->
+    <text
+       x="-50"
+       y="-25"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       text-anchor="middle"
+       fill="#333333"
+       id="text44">THINKING</text>
+    <text
+       x="50"
+       y="-25"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       text-anchor="middle"
+       fill="#333333"
+       id="text45">BEING</text>
+    <text
+       x="-50"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       text-anchor="middle"
+       fill="#333333"
+       id="text46">ANALYZING</text>
+    <text
+       x="50"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       text-anchor="middle"
+       fill="#333333"
+       id="text47">EXPERIENCING</text>
+    <!-- Circle in the "Being" Quadrant -->
+    <circle
+       cx="50"
+       cy="-25"
+       r="10"
+       fill="#FFEB3B"
+       stroke="#FFC107"
+       stroke-width="1"
+       id="circle47">
+      <animate
+         attributeName="opacity"
+         values="1;0.6;1"
+         dur="3s"
+         repeatCount="indefinite" />
+    </circle>
+  </g>
+  <!-- Meta-Joke Post-it -->
+  <g
+     transform="translate(700, 100) rotate(10)"
+     id="g50">
+    <rect
+       width="80"
+       height="80"
+       fill="#FFECB3"
+       filter="url(#dropShadow)"
+       id="rect47" />
+    <text
+       x="40"
+       y="20"
+       font-family="Arial, sans-serif"
+       font-size="9"
+       text-anchor="middle"
+       fill="#333333"
+       id="text48">This SVG:</text>
+    <text
+       x="40"
+       y="40"
+       font-family="Arial, sans-serif"
+       font-size="9"
+       text-anchor="middle"
+       fill="#333333"
+       id="text49">Peak Yellow</text>
+    <text
+       x="40"
+       y="60"
+       font-family="Arial, sans-serif"
+       font-size="9"
+       text-anchor="middle"
+       fill="#333333"
+       id="text50">Self-Reference</text>
+  </g>
+  <!-- Title -->
+  <text
+     x="400"
+     y="740"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#FFC107"
+     id="text51">YELLOW ESSENCE</text>
+  <text
+     x="400"
+     y="770"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     fill="#FFC107"
+     id="text52">Systemic Mysticism</text>
+</svg>

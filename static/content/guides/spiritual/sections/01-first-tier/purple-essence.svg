@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="195" fill="#f0f0f5"/>
+  
+  <!-- Outer Circle - Woven Texture -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="#800080" stroke-width="6" stroke-dasharray="15,5" opacity="0.7"/>
+  
+  <!-- Secondary Circle -->
+  <circle cx="200" cy="200" r="170" fill="#9370DB" opacity="0.2"/>
+  
+  <!-- Spiral Center -->
+  <path d="M 200,200 
+           L 200,160
+           A 40,40 0 0,1 240,200
+           A 40,40 0 0,1 200,240
+           A 80,80 0 0,0 120,160
+           A 120,120 0 0,0 240,280
+           A 160,160 0 0,0 40,200
+           A 180,180 0 0,0 200,20" 
+        fill="none" stroke="#800080" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Woven Threads - Connecting Lines -->
+  <g opacity="0.7">
+    <!-- Radial Lines -->
+    <line x1="200" y1="200" x2="110" y2="110" stroke="#9370DB" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="200" y1="200" x2="290" y2="110" stroke="#9370DB" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="200" y1="200" x2="290" y2="290" stroke="#9370DB" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="200" y1="200" x2="110" y2="290" stroke="#9370DB" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="200" y1="200" x2="200" y2="60" stroke="#9370DB" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="200" y1="200" x2="340" y2="200" stroke="#9370DB" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="200" y1="200" x2="200" y2="340" stroke="#9370DB" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="200" y1="200" x2="60" y2="200" stroke="#9370DB" stroke-width="2" stroke-dasharray="5,3"/>
+    
+    <!-- Connecting Arcs -->
+    <path d="M 110,110 A 130,130 0 0,1 290,110" fill="none" stroke="#800080" stroke-width="2" stroke-dasharray="3,5"/>
+    <path d="M 290,110 A 130,130 0 0,1 290,290" fill="none" stroke="#800080" stroke-width="2" stroke-dasharray="3,5"/>
+    <path d="M 290,290 A 130,130 0 0,1 110,290" fill="none" stroke="#800080" stroke-width="2" stroke-dasharray="3,5"/>
+    <path d="M 110,290 A 130,130 0 0,1 110,110" fill="none" stroke="#800080" stroke-width="2" stroke-dasharray="3,5"/>
+  </g>
+  
+  <!-- Owl (Spirit Guide) -->
+  <g transform="translate(110, 110)">
+    <!-- Owl Body -->
+    <ellipse cx="0" cy="0" rx="30" ry="35" fill="#663399" opacity="0.8"/>
+    <!-- Owl Eyes -->
+    <circle cx="-10" cy="-10" r="8" fill="#f0f0f5"/>
+    <circle cx="10" cy="-10" r="8" fill="#f0f0f5"/>
+    <circle cx="-10" cy="-10" r="4" fill="#4B0082"/>
+    <circle cx="10" cy="-10" r="4" fill="#4B0082"/>
+    <!-- Owl Beak -->
+    <path d="M 0,-5 L 5,3 L -5,3 Z" fill="#4B0082"/>
+    <!-- Owl Wings -->
+    <path d="M -30,-5 Q -25,10 -20,20 Q -10,30 0,20" fill="none" stroke="#4B0082" stroke-width="2"/>
+    <path d="M 30,-5 Q 25,10 20,20 Q 10,30 0,20" fill="none" stroke="#4B0082" stroke-width="2"/>
+    <!-- Subtle Animation -->
+    <circle cx="-10" cy="-10" r="2" fill="#f0f0f5">
+      <animate attributeName="r" values="2;1;2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="10" cy="-10" r="2" fill="#f0f0f5">
+      <animate attributeName="r" values="2;1;2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Tree (Lineage) -->
+  <g transform="translate(290, 110)">
+    <!-- Tree Trunk -->
+    <path d="M 0,30 L 0,-20" stroke="#4B0082" stroke-width="8" stroke-linecap="round"/>
+    <!-- Tree Roots -->
+    <path d="M 0,30 Q -15,40 -25,45" stroke="#4B0082" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 0,30 Q 15,40 25,45" stroke="#4B0082" stroke-width="4" stroke-linecap="round"/>
+    <!-- Tree Branches -->
+    <path d="M 0,-20 Q -20,-30 -30,-25" stroke="#4B0082" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 0,-20 Q 20,-30 30,-25" stroke="#4B0082" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 0,-20 Q -10,-40 -15,-50" stroke="#4B0082" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 0,-20 Q 10,-40 15,-50" stroke="#4B0082" stroke-width="3" stroke-linecap="round"/>
+    <!-- Tree Leaves/Foliage -->
+    <circle cx="-30" cy="-25" r="10" fill="#9370DB" opacity="0.7"/>
+    <circle cx="30" cy="-25" r="10" fill="#9370DB" opacity="0.7"/>
+    <circle cx="-15" cy="-50" r="10" fill="#9370DB" opacity="0.7"/>
+    <circle cx="15" cy="-50" r="10" fill="#9370DB" opacity="0.7"/>
+    <circle cx="0" cy="-35" r="15" fill="#9370DB" opacity="0.7"/>
+    <!-- Subtle Animation -->
+    <circle cx="-15" cy="-50" r="10" fill="#9370DB" opacity="0.7">
+      <animate attributeName="r" values="10;12;10" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="-50" r="10" fill="#9370DB" opacity="0.7">
+      <animate attributeName="r" values="10;12;10" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Rainbow (Synchronicity) -->
+  <g transform="translate(290, 290)">
+    <path d="M -40,0 A 40,40 0 0,1 40,0" fill="none" stroke="#9932CC" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -35,-7 A 35,35 0 0,1 35,-7" fill="none" stroke="#8A2BE2" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -30,-14 A 30,30 0 0,1 30,-14" fill="none" stroke="#9370DB" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -25,-20 A 25,25 0 0,1 25,-20" fill="none" stroke="#BA55D3" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+    <!-- Subtle Animation -->
+    <path d="M -40,0 A 40,40 0 0,1 40,0" fill="none" stroke="#9932CC" stroke-width="6" stroke-linecap="round" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Candle (Ritual) -->
+  <g transform="translate(110, 290)">
+    <!-- Candle Base -->
+    <rect x="-10" y="0" width="20" height="30" fill="#4B0082" rx="2" ry="2"/>
+    <!-- Candle Wax -->
+    <rect x="-8" y="-20" width="16" height="20" fill="#9370DB"/>
+    <!-- Candle Wick -->
+    <line x1="0" y1="-25" x2="0" y2="-20" stroke="#4B0082" stroke-width="2"/>
+    <!-- Candle Flame -->
+    <path d="M 0,-25 Q -5,-30 0,-40 Q 5,-30 0,-25 Z" fill="#FFD700">
+      <animate attributeName="d" values="M 0,-25 Q -5,-30 0,-40 Q 5,-30 0,-25 Z; 
+                                        M 0,-25 Q -6,-32 0,-42 Q 6,-32 0,-25 Z;
+                                        M 0,-25 Q -5,-30 0,-40 Q 5,-30 0,-25 Z" 
+               dur="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Candle Glow -->
+    <circle cx="0" cy="-30" r="10" fill="#FFD700" opacity="0.3">
+      <animate attributeName="r" values="10;15;10" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.2;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="-30" r="20" fill="#FFD700" opacity="0.1">
+      <animate attributeName="r" values="20;25;20" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.05;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Inner Circle with Tribal Pattern -->
+  <circle cx="200" cy="200" r="60" fill="none" stroke="#800080" stroke-width="3" stroke-dasharray="10,5"/>
+  
+  <!-- Text Label -->
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#4B0082">PURPLE: TRIBAL MYSTICISM</text>
+</svg>

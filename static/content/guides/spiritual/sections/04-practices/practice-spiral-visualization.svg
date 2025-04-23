@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 900"
+   version="1.1"
+   id="svg93"
+   sodipodi:docname="practice-spiral-visualization.svg"
+   width="800"
+   height="900"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview93"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.74776542"
+     inkscape:cx="353.72056"
+     inkscape:cy="465.38659"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg93" />
+  <!-- Definitions -->
+  <defs
+     id="defs24">
+    <!-- Gradients -->
+    <linearGradient
+       id="beigeGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#8B4513"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#A0522D"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="purpleGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#800080"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#9370DB"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="redGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FF0000"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#FF4500"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="blueGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#0000CD"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#1E90FF"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="orangeGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FF8C00"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#FFA500"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="greenGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#008000"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#3CB371"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="yellowGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FFD700"
+         id="stop13" />
+      <stop
+         offset="100%"
+         stop-color="#FFFF00"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       id="turquoiseGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#40E0D0"
+         id="stop15" />
+      <stop
+         offset="100%"
+         stop-color="#20B2AA"
+         id="stop16" />
+    </linearGradient>
+    <linearGradient
+       id="coralGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FF7F50"
+         id="stop17" />
+      <stop
+         offset="100%"
+         stop-color="#FA8072"
+         id="stop18" />
+    </linearGradient>
+    <linearGradient
+       id="ultravioletGradient"
+       x1="-47.200001"
+       y1="-47.200001"
+       x2="49.200005"
+       y2="49.200005"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#8A2BE2"
+         id="stop19" />
+      <stop
+         offset="100%"
+         stop-color="#9370DB"
+         id="stop20" />
+    </linearGradient>
+    <linearGradient
+       id="clearGradient"
+       x1="-50.088326"
+       y1="-50.077702"
+       x2="50.094769"
+       y2="50.105392"
+       gradientTransform="matrix(1.0001044,0,0,0.99989558,450,564)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#F5F5F5"
+         stop-opacity="0.8"
+         id="stop21" />
+      <stop
+         offset="100%"
+         stop-color="#FFFFFF"
+         stop-opacity="0.1"
+         id="stop22" />
+    </linearGradient>
+    <!-- Filters -->
+    <filter
+       id="glow"
+       x="-0.12616948"
+       y="-0.12590592"
+       width="1.2524195"
+       height="1.2521579">
+      <feGaussianBlur
+         stdDeviation="4"
+         result="blur"
+         id="feGaussianBlur22" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="over"
+         id="feComposite22" />
+    </filter>
+    <filter
+       id="softShadow"
+       x="-0.09"
+       y="-0.09"
+       width="1.205"
+       height="1.205">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur23" />
+      <feOffset
+         dx="2"
+         dy="2"
+         id="feOffset23" />
+      <feComponentTransfer
+         id="feComponentTransfer23">
+        <feFuncA
+           type="linear"
+           slope="0.3"
+           id="feFuncA23" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge24">
+        <feMergeNode
+           id="feMergeNode23" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode24" />
+      </feMerge>
+    </filter>
+    <defs
+       id="defs81">
+      <marker
+         id="arrowhead"
+         markerWidth="10"
+         markerHeight="7"
+         refX="10"
+         refY="3.5"
+         orient="auto">
+        <polygon
+           points="10,3.5 0,7 0,0 "
+           fill="#666666"
+           id="polygon81" />
+      </marker>
+    </defs>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="800"
+     height="898.96149"
+     fill="#f5f5f5"
+     id="rect24"
+     x="0"
+     y="0"
+     style="stroke-width:1.06005" />
+  <!-- Tier Markers -->
+  <text
+     x="46"
+     y="554"
+     fill="#8b4513"
+     id="text24"
+     style="font-weight:bold;font-size:20px;font-family:Arial, sans-serif">🪵 First Tier</text>
+  <text
+     x="286"
+     y="276"
+     fill="#40e0d0"
+     id="text25"
+     style="font-weight:bold;font-size:20px;font-family:Arial, sans-serif">🧠 Second Tier</text>
+  <text
+     x="632"
+     y="448"
+     fill="#9370db"
+     id="text26"
+     style="font-weight:bold;font-size:20px;font-family:Arial, sans-serif">👻 Third Tier</text>
+  <!-- Main Spiral Path -->
+  <path
+     d="M 400,784 Q 250,784 200,664 150,544 200,464 250,384 350,364 450,344 500,264 550,184 450,164 350,144 300,214 q -50,70 0,100 50,30 150,0 100,-30 150,50 50,80 0,150 -50,70 -150,50"
+     fill="none"
+     stroke="#666666"
+     stroke-width="4"
+     stroke-dasharray="1, 6"
+     id="path26" />
+  <!-- Stage Circles Along Spiral -->
+  <!-- Beige -->
+  <g
+     transform="translate(400,784)"
+     id="g29">
+    <circle
+       r="40"
+       fill="url(#beigeGradient)"
+       filter="url(#softShadow)"
+       id="circle26"
+       cx="0"
+       cy="0"
+       style="fill:url(#beigeGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text27">BEIGE</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text28">Sensory</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text29">🌿</text>
+  </g>
+  <!-- Purple -->
+  <g
+     transform="translate(200,664)"
+     id="g32">
+    <circle
+       r="40"
+       fill="url(#purpleGradient)"
+       filter="url(#softShadow)"
+       id="circle29"
+       cx="0"
+       cy="0"
+       style="fill:url(#purpleGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text30">PURPLE</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text31">Ritual</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text32">🔮</text>
+  </g>
+  <!-- Red -->
+  <g
+     transform="translate(200,464)"
+     id="g35">
+    <circle
+       r="40"
+       fill="url(#redGradient)"
+       filter="url(#softShadow)"
+       id="circle32"
+       cx="0"
+       cy="0"
+       style="fill:url(#redGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text33">RED</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text34">Power</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text35">⚔️</text>
+  </g>
+  <!-- Blue -->
+  <g
+     transform="translate(350,364)"
+     id="g38">
+    <circle
+       r="40"
+       fill="url(#blueGradient)"
+       filter="url(#softShadow)"
+       id="circle35"
+       cx="0"
+       cy="0"
+       style="fill:url(#blueGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text36">BLUE</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text37">Devotion</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text38">📿</text>
+  </g>
+  <!-- Orange -->
+  <g
+     transform="translate(500,264)"
+     id="g41">
+    <circle
+       r="40"
+       fill="url(#orangeGradient)"
+       filter="url(#softShadow)"
+       id="circle38"
+       cx="0"
+       cy="0"
+       style="fill:url(#orangeGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text39">ORANGE</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text40">Optimize</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text41">📊</text>
+  </g>
+  <!-- Green -->
+  <g
+     transform="translate(450,164)"
+     id="g44">
+    <circle
+       r="40"
+       fill="url(#greenGradient)"
+       filter="url(#softShadow)"
+       id="circle41"
+       cx="0"
+       cy="0"
+       style="fill:url(#greenGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text42">GREEN</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text43">Connect</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text44">💚</text>
+  </g>
+  <!-- Yellow -->
+  <g
+     transform="translate(300,214)"
+     id="g47">
+    <circle
+       r="40"
+       fill="url(#yellowGradient)"
+       filter="url(#softShadow)"
+       id="circle44"
+       cx="0"
+       cy="0"
+       style="fill:url(#yellowGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333333"
+       id="text45">YELLOW</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text46">Systems</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text47">🧩</text>
+  </g>
+  <!-- Turquoise -->
+  <g
+     transform="translate(450,314)"
+     id="g50">
+    <circle
+       r="40"
+       fill="url(#turquoiseGradient)"
+       filter="url(#softShadow)"
+       id="circle47"
+       cx="0"
+       cy="0"
+       style="fill:url(#turquoiseGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text48">TURQUOISE</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text49">Unity</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text50">🌊</text>
+  </g>
+  <!-- Coral -->
+  <g
+     transform="translate(600,364)"
+     id="g53">
+    <circle
+       r="40"
+       fill="url(#coralGradient)"
+       filter="url(#softShadow)"
+       id="circle50"
+       cx="0"
+       cy="0"
+       style="fill:url(#coralGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text51">CORAL</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text52">Play</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text53">🎭</text>
+  </g>
+  <!-- Ultra-Violet -->
+  <g
+     transform="translate(600,514)"
+     id="g56">
+    <circle
+       r="40"
+       fill="url(#ultravioletGradient)"
+       filter="url(#softShadow)"
+       id="circle53"
+       cx="0"
+       cy="0"
+       style="fill:url(#ultravioletGradient)" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text54">ULTRA-VIOLET</text>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text55">Witness</text>
+    <!-- Practice Icon -->
+    <text
+       x="0"
+       y="-15"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text56">👁️</text>
+  </g>
+  <!-- Clear -->
+  <circle
+     r="40"
+     fill="url(#clearGradient)"
+     stroke="#dddddd"
+     stroke-width="1"
+     stroke-dasharray="5, 5"
+     filter="url(#glow)"
+     id="circle56"
+     style="fill:url(#clearGradient)"
+     cx="450"
+     cy="564" />
+  <text
+     x="450"
+     y="569"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#aaaaaa"
+     opacity="0.8"
+     id="text57">CLEAR</text>
+  <text
+     x="378"
+     y="571"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#aaaaaa"
+     opacity="0.8"
+     id="text58">Being</text>
+  <text
+     x="450"
+     y="485"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#dddddd"
+     opacity="0.6"
+     id="text59">🌀</text>
+  <!-- Practice Trap/Gift Indicators -->
+  <text
+     x="450"
+     y="784"
+     fill="#8b4513"
+     id="text60"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Survival fixation</text>
+  <text
+     x="450"
+     y="804"
+     fill="#8b4513"
+     id="text61"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Embodied presence</text>
+  <text
+     x="48"
+     y="644"
+     fill="#800080"
+     id="text62"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Superstition</text>
+  <text
+     x="48"
+     y="664"
+     fill="#800080"
+     id="text63"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Sacred community</text>
+  <text
+     x="70"
+     y="444"
+     fill="#ff0000"
+     id="text64"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Power obsession</text>
+  <text
+     x="70"
+     y="464"
+     fill="#ff0000"
+     id="text65"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Vital force</text>
+  <text
+     x="296"
+     y="422"
+     fill="#0000cd"
+     id="text66"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Rigid orthodoxy</text>
+  <text
+     x="296"
+     y="442"
+     fill="#0000cd"
+     id="text67"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Sacred discipline</text>
+  <text
+     x="540"
+     y="258"
+     fill="#ff8c00"
+     id="text68"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Achievement addiction</text>
+  <text
+     x="540"
+     y="278"
+     fill="#ff8c00"
+     id="text69"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Effective technique</text>
+  <text
+     x="492"
+     y="156"
+     fill="#008000"
+     id="text70"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Emotional bypassing</text>
+  <text
+     x="492"
+     y="176"
+     fill="#008000"
+     id="text71"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Heart connection</text>
+  <text
+     x="150"
+     y="210"
+     fill="#b8860b"
+     id="text72"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Analysis paralysis</text>
+  <text
+     x="150"
+     y="230"
+     fill="#b8860b"
+     id="text73"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Integral awareness</text>
+  <text
+     x="406"
+     y="370"
+     fill="#20b2aa"
+     id="text74"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Cosmic bypassing</text>
+  <text
+     x="406"
+     y="390"
+     fill="#20b2aa"
+     id="text75"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Unified experience</text>
+  <text
+     x="642"
+     y="364"
+     fill="#ff7f50"
+     id="text76"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Performative play</text>
+  <text
+     x="642"
+     y="384"
+     fill="#ff7f50"
+     id="text77"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Creative liberation</text>
+  <text
+     x="644"
+     y="514"
+     fill="#8a2be2"
+     id="text78"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 Detached apathy</text>
+  <text
+     x="644"
+     y="534"
+     fill="#8a2be2"
+     id="text79"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 Effortless presence</text>
+  <text
+     x="410"
+     y="584"
+     fill="#aaaaaa"
+     opacity="0.7"
+     id="text80"
+     style="font-size:10px;font-family:Arial, sans-serif">🪤 N/A</text>
+  <text
+     x="410"
+     y="604"
+     fill="#aaaaaa"
+     opacity="0.7"
+     id="text81"
+     style="font-size:10px;font-family:Arial, sans-serif">🎁 ...</text>
+  <!-- Stage Transition Arrows -->
+  <path
+     d="M 365,744 Q 320,714 240,684"
+     fill="none"
+     id="path81"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="m 170,629 q 20,-65 20,-125"
+     fill="none"
+     id="path82"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="m 210,424 q 50,-25 110,-45"
+     fill="none"
+     id="path83"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="m 390,354 q 45,-35 80,-60"
+     fill="none"
+     id="path84"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="M 535,249 Q 500,214 475,184"
+     fill="none"
+     id="path85"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="m 410,169 q -50,10 -80,30"
+     fill="none"
+     id="path86"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="m 325,244 q 50,28 95,55"
+     fill="none"
+     id="path87"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="m 490,324 q 45,15 80,25"
+     fill="none"
+     id="path88"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="m 635,389 q -15,50 -25,85"
+     fill="none"
+     id="path89"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <path
+     d="m 570,539 q -50,10 -85,20"
+     fill="none"
+     id="path90"
+     style="opacity:0.7;stroke:#666666;stroke-width:2;stroke-dasharray:5, 3;marker-end:url(#arrowhead)" />
+  <!-- Title -->
+  <g
+     transform="translate(400,40)"
+     id="g91">
+    <text
+       x="0"
+       y="0"
+       font-family="Arial, sans-serif"
+       font-size="32px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333333"
+       id="text90">SPIRAL PRACTICES</text>
+    <text
+       x="0"
+       y="30"
+       font-family="Arial, sans-serif"
+       font-size="16px"
+       font-style="italic"
+       text-anchor="middle"
+       fill="#666666"
+       id="text91">Stage-Aligned Spiritual Technologies</text>
+  </g>
+  <!-- Legend -->
+  <g
+     transform="translate(80,794)"
+     id="g93">
+    <rect
+       x="0"
+       y="0"
+       width="160"
+       height="50"
+       rx="5"
+       ry="5"
+       fill="#ffffff"
+       stroke="#dddddd"
+       id="rect91" />
+    <text
+       x="10"
+       y="20"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       fill="#333333"
+       id="text92">🪤 Practice Trap</text>
+    <text
+       x="10"
+       y="40"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       fill="#333333"
+       id="text93">🎁 Practice Gift</text>
+  </g>
+</svg>

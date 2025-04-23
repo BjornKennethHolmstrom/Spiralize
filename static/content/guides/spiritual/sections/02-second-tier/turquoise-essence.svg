@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions -->
+  <defs>
+    <!-- Background Gradient (Deep Ocean to Earth) -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#008B8B" />
+      <stop offset="50%" stop-color="#20B2AA" />
+      <stop offset="100%" stop-color="#2E8B57" />
+    </linearGradient>
+    
+    <!-- Glowing Effect for Ethereal Elements -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <!-- Subtle Texture Pattern -->
+    <pattern id="waterPattern" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0,50 Q25,40 50,50 Q75,60 100,50 M0,70 Q25,80 50,70 Q75,60 100,70" 
+            fill="none" stroke="#E0FFFF" stroke-width="0.5" stroke-opacity="0.3"/>
+    </pattern>
+    
+    <!-- Radial Gradient for Gaia Core -->
+    <radialGradient id="gaiaGlow" cx="50%" cy="50%" r="50%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#7FFFD4" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#008B8B" stop-opacity="0.1" />
+    </radialGradient>
+    
+    <!-- Spiral Path for Flow Animation -->
+    <path id="flowPath" d="M400,400 
+                           Q500,300 400,200 
+                           Q300,100 200,200 
+                           Q100,300 200,400 
+                           Q300,500 400,400" />
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgGradient)" />
+  <rect width="800" height="800" fill="url(#waterPattern)" />
+  
+  <!-- Energy Field / Aura -->
+  <circle cx="400" cy="400" r="350" fill="url(#gaiaGlow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.4;0.6" dur="8s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Interconnected Web (Sacred Geometry) -->
+  <g opacity="0.7" filter="url(#glow)">
+    <!-- Flower of Life Pattern -->
+    <g stroke="#E0FFFF" stroke-width="1" fill="none">
+      <circle cx="400" cy="340" r="60" />
+      <circle cx="452" cy="370" r="60" />
+      <circle cx="452" cy="430" r="60" />
+      <circle cx="400" cy="460" r="60" />
+      <circle cx="348" cy="430" r="60" />
+      <circle cx="348" cy="370" r="60" />
+      
+      <circle cx="400" cy="280" r="60" />
+      <circle cx="504" cy="340" r="60" />
+      <circle cx="504" cy="460" r="60" />
+      <circle cx="400" cy="520" r="60" />
+      <circle cx="296" cy="460" r="60" />
+      <circle cx="296" cy="340" r="60" />
+    </g>
+  </g>
+  
+  <!-- Holographic Earth -->
+  <g filter="url(#glow)">
+    <circle cx="400" cy="400" r="120" fill="#40E0D0" opacity="0.3" />
+    <circle cx="400" cy="400" r="120" fill="none" stroke="#E0FFFF" stroke-width="2" stroke-opacity="0.8">
+      <animate attributeName="r" values="120;125;120" dur="10s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Earth Grid Lines -->
+    <path d="M400,280 A120,120 0 0,1 400,520 A120,120 0 0,1 400,280" 
+          fill="none" stroke="#E0FFFF" stroke-width="1" stroke-dasharray="5,5"/>
+    <path d="M280,400 A120,120 0 0,1 520,400 A120,120 0 0,1 280,400" 
+          fill="none" stroke="#E0FFFF" stroke-width="1" stroke-dasharray="5,5"/>
+    <path d="M318,318 A120,120 0 0,1 482,482 A120,120 0 0,1 318,318" 
+          fill="none" stroke="#E0FFFF" stroke-width="1" stroke-dasharray="5,5"/>
+    <path d="M318,482 A120,120 0 0,1 482,318 A120,120 0 0,1 318,482" 
+          fill="none" stroke="#E0FFFF" stroke-width="1" stroke-dasharray="5,5"/>
+          
+    <!-- Holographic Details -->
+    <path d="M340,370 Q400,350 460,370 Q440,400 460,430 Q400,450 340,430 Q360,400 340,370Z" 
+          fill="#40E0D0" opacity="0.4" />
+  </g>
+  
+  <!-- Flowing Energy Currents -->
+  <g>
+    <!-- Main Flow -->
+    <path d="M200,200 Q300,100 400,200 Q500,300 400,400 Q300,500 200,400 Q100,300 200,200" 
+          fill="none" stroke="#E0FFFF" stroke-width="2" stroke-opacity="0.7" 
+          stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;20;0" dur="10s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Secondary Flows -->
+    <path d="M600,200 Q500,100 400,200 Q300,300 400,400 Q500,500 600,400 Q700,300 600,200" 
+          fill="none" stroke="#E0FFFF" stroke-width="1.5" stroke-opacity="0.5" 
+          stroke-dasharray="3,3">
+      <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="12s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Luminous Particles -->
+    <g>
+      <circle r="3" fill="#E0FFFF" opacity="0.8" filter="url(#glow)">
+        <animateMotion dur="20s" repeatCount="indefinite" 
+                      path="M200,200 Q300,100 400,200 Q500,300 400,400 Q300,500 200,400 Q100,300 200,200" />
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="5s" repeatCount="indefinite" />
+      </circle>
+      
+      <circle r="2" fill="#E0FFFF" opacity="0.8" filter="url(#glow)">
+        <animateMotion dur="20s" begin="5s" repeatCount="indefinite" 
+                      path="M200,200 Q300,100 400,200 Q500,300 400,400 Q300,500 200,400 Q100,300 200,200" />
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="5s" repeatCount="indefinite" />
+      </circle>
+      
+      <circle r="4" fill="#E0FFFF" opacity="0.8" filter="url(#glow)">
+        <animateMotion dur="20s" begin="10s" repeatCount="indefinite" 
+                      path="M200,200 Q300,100 400,200 Q500,300 400,400 Q300,500 200,400 Q100,300 200,200" />
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="5s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+  
+  <!-- Lotus (Flowing Unity) -->
+  <g transform="translate(400, 400)" filter="url(#glow)">
+    <!-- Lotus Petals -->
+    <path d="M0,0 Q-40,-70 0,-100 Q40,-70 0,0" fill="#40E0D0" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="6s" repeatCount="indefinite" />
+    </path>
+    <path d="M0,0 Q40,-70 80,-60 Q60,-30 0,0" fill="#40E0D0" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="7s" repeatCount="indefinite" />
+    </path>
+    <path d="M0,0 Q80,-30 100,0 Q70,30 0,0" fill="#40E0D0" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="8s" repeatCount="indefinite" />
+    </path>
+    <path d="M0,0 Q70,30 80,60 Q40,70 0,0" fill="#40E0D0" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="9s" repeatCount="indefinite" />
+    </path>
+    <path d="M0,0 Q40,70 0,100 Q-40,70 0,0" fill="#40E0D0" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="10s" repeatCount="indefinite" />
+    </path>
+    <path d="M0,0 Q-40,70 -80,60 Q-60,30 0,0" fill="#40E0D0" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="9s" repeatCount="indefinite" />
+    </path>
+    <path d="M0,0 Q-80,30 -100,0 Q-70,-30 0,0" fill="#40E0D0" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="8s" repeatCount="indefinite" />
+    </path>
+    <path d="M0,0 Q-70,-30 -80,-60 Q-40,-70 0,0" fill="#40E0D0" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.4;0.6" dur="7s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Lotus Center -->
+    <circle cx="0" cy="0" r="20" fill="#7FFFD4" opacity="0.8">
+      <animate attributeName="r" values="20;22;20" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Symbolic Representations -->
+  <g>
+    <!-- Yin-Yang (Unity of Opposites) -->
+    <g transform="translate(210, 210) scale(0.6)" opacity="0.8">
+      <circle cx="0" cy="0" r="40" fill="#E0FFFF"/>
+      <path d="M0,-40 A40,40 0 0,1 0,40 A20,20 0 0,0 0,-40" fill="#20B2AA"/>
+      <circle cx="0" cy="-20" r="8" fill="#20B2AA"/>
+      <circle cx="0" cy="20" r="8" fill="#E0FFFF"/>
+    </g>
+    
+    <!-- DNA/Tree of Life (Evolution + Connection) -->
+    <g transform="translate(590, 210) scale(0.6)" opacity="0.8">
+      <path d="M0,-40 Q-15,-30 0,-20 Q15,-10 0,0 Q-15,10 0,20 Q15,30 0,40" 
+            fill="none" stroke="#E0FFFF" stroke-width="2" />
+      <path d="M0,-40 Q15,-30 0,-20 Q-15,-10 0,0 Q15,10 0,20 Q-15,30 0,40" 
+            fill="none" stroke="#E0FFFF" stroke-width="2" />
+      <circle cx="0" cy="-40" r="5" fill="#E0FFFF" />
+      <circle cx="0" cy="-20" r="5" fill="#E0FFFF" />
+      <circle cx="0" cy="0" r="5" fill="#E0FFFF" />
+      <circle cx="0" cy="20" r="5" fill="#E0FFFF" />
+      <circle cx="0" cy="40" r="5" fill="#E0FFFF" />
+    </g>
+    
+    <!-- Infinity (Eternal Now) -->
+    <g transform="translate(590, 590) scale(0.7)" opacity="0.8">
+      <path d="M-30,0 C-30,-20 -15,-20 0,0 C15,20 30,20 30,0 C30,-20 15,-20 0,0 C-15,20 -30,20 -30,0" 
+            fill="none" stroke="#E0FFFF" stroke-width="3" />
+    </g>
+    
+    <!-- Spiral (Evolution) -->
+    <g transform="translate(210, 590) scale(0.7)" opacity="0.8">
+      <path d="M0,0 Q5,5 10,0 Q15,-5 10,-10 Q5,-15 0,-10 Q-5,-5 0,0" 
+            fill="none" stroke="#E0FFFF" stroke-width="3" />
+      <path d="M0,0 Q10,10 20,0 Q30,-10 20,-20 Q10,-30 0,-20 Q-10,-10 0,0" 
+            fill="none" stroke="#E0FFFF" stroke-width="2" />
+      <path d="M0,0 Q15,15 30,0 Q45,-15 30,-30 Q15,-45 0,-30 Q-15,-15 0,0" 
+            fill="none" stroke="#E0FFFF" stroke-width="1.5" />
+    </g>
+  </g>
+  
+  <!-- Ambient Light Particles -->
+  <g>
+    <circle cx="200" cy="300" r="2" fill="#E0FFFF" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="400" r="3" fill="#E0FFFF" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="600" r="2" fill="#E0FFFF" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="200" r="3" fill="#E0FFFF" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="350" cy="150" r="2" fill="#E0FFFF" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Subtle Text Elements -->
+  <g font-family="Arial, sans-serif" font-size="14" fill="#E0FFFF" opacity="0.7" text-anchor="middle">
+    <text x="400" y="230">Unity</text>
+    <text x="280" y="350">Being</text>
+    <text x="520" y="350">Knowing</text>
+    <text x="400" y="570">Flowing</text>
+  </g>
+  
+  <!-- Title -->
+  <g filter="url(#glow)">
+    <text x="400" y="680" font-family="Arial, sans-serif" font-size="30" font-weight="300" text-anchor="middle" fill="#E0FFFF">TURQUOISE ESSENCE</text>
+    <text x="400" y="720" font-family="Arial, sans-serif" font-size="18" font-weight="300" text-anchor="middle" fill="#E0FFFF">Holistic Consciousness</text>
+  </g>
+</svg>

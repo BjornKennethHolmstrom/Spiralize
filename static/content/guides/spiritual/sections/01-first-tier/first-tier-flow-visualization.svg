@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 400"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="first-tier-flow-visualization.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4955308"
+     inkscape:cx="428.27602"
+     inkscape:cy="194.57974"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg28" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="400"
+     fill="#f8f8f8"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="22"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text1">First-Tier Spiritual Journey</text>
+  <text
+     x="450"
+     y="65"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#666"
+     id="text2">From Survival to Belonging to Awakening Identity</text>
+  <!-- The Arc Path -->
+  <path
+     d="M 100,300             Q 200,280 300,250             Q 400,220 500,180             Q 600,140 700,100             Q 800,60 850,50"
+     fill="none"
+     stroke="#333"
+     stroke-width="2"
+     stroke-opacity="0.3"
+     id="path2" />
+  <!-- Beige - Primal Ember -->
+  <g
+     transform="translate(100, 300)"
+     id="g4">
+    <circle
+       r="30"
+       fill="#E8D0AA"
+       id="circle2" />
+    <circle
+       r="15"
+       fill="#FF6633"
+       opacity="0.7"
+       id="circle3">
+      <animate
+         attributeName="r"
+         values="10;15;10"
+         dur="3s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="opacity"
+         values="0.5;0.7;0.5"
+         dur="3s"
+         repeatCount="indefinite" />
+    </circle>
+    <text
+       x="0"
+       y="55"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333"
+       id="text3">BEIGE</text>
+    <text
+       x="0"
+       y="75"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#666"
+       id="text4">Survival &amp; Primal Awe</text>
+  </g>
+  <!-- Purple - Tribal Circle -->
+  <g
+     transform="translate(250, 260)"
+     id="g8">
+    <circle
+       r="35"
+       fill="#9370DB"
+       id="circle4" />
+    <circle
+       r="25"
+       fill="none"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="circle5" />
+    <circle
+       r="15"
+       fill="none"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="circle6" />
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#FFFFFF"
+       id="text6">TRIBE</text>
+    <text
+       x="0"
+       y="60"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333"
+       id="text7">PURPLE</text>
+    <text
+       x="0"
+       y="80"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#666"
+       id="text8">Tribal Magic &amp; Ritual</text>
+  </g>
+  <!-- Red - Rising Flame -->
+  <g
+     transform="translate(400, 210)"
+     id="g10">
+    <circle
+       r="35"
+       fill="#FF4500"
+       id="circle8" />
+    <path
+       d="M -15,15 Q -10,0 -15,-10 Q -5,-15 0,-25 Q 5,-15 15,-10 Q 10,0 15,15 Z"
+       fill="#FFCC00"
+       id="path8" />
+    <path
+       d="M -10,10 Q -5,0 -10,-5 Q 0,-10 0,-15 Q 0,-10 10,-5 Q 5,0 10,10 Z"
+       fill="#FF6600"
+       id="path9">
+      <animate
+         attributeName="d"
+         values="M -10,10 Q -5,0 -10,-5 Q 0,-10 0,-15 Q 0,-10 10,-5 Q 5,0 10,10 Z;                                          M -12,12 Q -6,-2 -12,-6 Q 0,-12 0,-18 Q 0,-12 12,-6 Q 6,-2 12,12 Z;                                         M -10,10 Q -5,0 -10,-5 Q 0,-10 0,-15 Q 0,-10 10,-5 Q 5,0 10,10 Z"
+         dur="2s"
+         repeatCount="indefinite" />
+    </path>
+    <text
+       x="0"
+       y="60"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333"
+       id="text9">RED</text>
+    <text
+       x="0"
+       y="80"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#666"
+       id="text10">Power &amp; Divine Ecstasy</text>
+  </g>
+  <!-- Blue - Ordered Structure -->
+  <g
+     transform="translate(550, 160)"
+     id="g13">
+    <circle
+       r="35"
+       fill="#1E90FF"
+       id="circle10" />
+    <rect
+       x="-20"
+       y="-20"
+       width="40"
+       height="40"
+       fill="none"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="rect10" />
+    <line
+       x1="-20"
+       y1="-10"
+       x2="20"
+       y2="-10"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="line10" />
+    <line
+       x1="-20"
+       y1="0"
+       x2="20"
+       y2="0"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="line11" />
+    <line
+       x1="-20"
+       y1="10"
+       x2="20"
+       y2="10"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="line12" />
+    <text
+       x="0"
+       y="60"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333"
+       id="text12">BLUE</text>
+    <text
+       x="0"
+       y="80"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#666"
+       id="text13">Order &amp; Divine Law</text>
+  </g>
+  <!-- Orange - Forward Arrow -->
+  <g
+     transform="translate(700, 110)"
+     id="g15">
+    <circle
+       r="35"
+       fill="#FFA500"
+       id="circle13" />
+    <path
+       d="M -15,-15 L 20,0 L -15,15 Z"
+       fill="#FFFFFF"
+       id="path13" />
+    <text
+       x="0"
+       y="60"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333"
+       id="text14">ORANGE</text>
+    <text
+       x="0"
+       y="80"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#666"
+       id="text15">Achievement &amp; Rational Spirit</text>
+  </g>
+  <!-- Green - Interconnected Network -->
+  <g
+     transform="translate(850, 70)"
+     id="g21">
+    <circle
+       r="35"
+       fill="#3CB371"
+       id="circle15" />
+    <circle
+       cx="-15"
+       cy="-10"
+       r="5"
+       fill="#FFFFFF"
+       id="circle16" />
+    <circle
+       cx="0"
+       cy="5"
+       r="5"
+       fill="#FFFFFF"
+       id="circle17" />
+    <circle
+       cx="15"
+       cy="-10"
+       r="5"
+       fill="#FFFFFF"
+       id="circle18" />
+    <line
+       x1="-15"
+       y1="-10"
+       x2="0"
+       y2="5"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="line18" />
+    <line
+       x1="0"
+       y1="5"
+       x2="15"
+       y2="-10"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="line19" />
+    <line
+       x1="-15"
+       y1="-10"
+       x2="15"
+       y2="-10"
+       stroke="#FFFFFF"
+       stroke-width="2"
+       id="line20" />
+    <text
+       x="0"
+       y="60"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333"
+       id="text20">GREEN</text>
+    <text
+       x="0"
+       y="80"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#666"
+       id="text21">Community &amp; Harmony</text>
+  </g>
+  <!-- Yellow Hint (at the edge) -->
+  <g
+     transform="translate(870, 40)"
+     opacity="0.3"
+     id="g23">
+    <circle
+       r="15"
+       fill="#FFFF00"
+       id="circle21" />
+    <text
+       x="0"
+       y="40"
+       font-family="Arial, sans-serif"
+       font-size="10"
+       text-anchor="middle"
+       fill="#666"
+       id="text22">YELLOW</text>
+    <text
+       x="0"
+       y="53"
+       font-family="Arial, sans-serif"
+       font-size="9"
+       font-style="italic"
+       text-anchor="middle"
+       fill="#666"
+       id="text23">Second-Tier</text>
+  </g>
+  <!-- Stage Transition Arrows -->
+  <g
+     id="g27">
+    <path
+       d="M 140,290 Q 170,280 205,270"
+       fill="none"
+       stroke="#666"
+       stroke-width="1.5"
+       marker-end="url(#arrowhead)"
+       id="path23" />
+    <path
+       d="M 290,240 Q 320,230 355,220"
+       fill="none"
+       stroke="#666"
+       stroke-width="1.5"
+       marker-end="url(#arrowhead)"
+       id="path24" />
+    <path
+       d="M 440,190 Q 470,180 505,170"
+       fill="none"
+       stroke="#666"
+       stroke-width="1.5"
+       marker-end="url(#arrowhead)"
+       id="path25" />
+    <path
+       d="M 590,140 Q 620,130 655,120"
+       fill="none"
+       stroke="#666"
+       stroke-width="1.5"
+       marker-end="url(#arrowhead)"
+       id="path26" />
+    <path
+       d="M 740,100 Q 770,90 805,80"
+       fill="none"
+       stroke="#666"
+       stroke-width="1.5"
+       marker-end="url(#arrowhead)"
+       id="path27" />
+  </g>
+  <!-- Arrowhead Marker -->
+  <defs
+     id="defs27">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#666"
+         id="polygon27" />
+    </marker>
+  </defs>
+  <!-- Legend -->
+  <rect
+     x="359.28757"
+     y="320.05188"
+     width="366.09351"
+     height="59.896278"
+     rx="6.1015587"
+     ry="4.9913564"
+     fill="#ffffff"
+     stroke="#dddddd"
+     stroke-width="1.10373"
+     id="rect27" />
+  <text
+     x="542"
+     y="340"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text27">FIRST-TIER PROGRESSION</text>
+  <text
+     x="542"
+     y="365"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text28">Survival → Tribe → Power → Order → Achievement → Community</text>
+</svg>

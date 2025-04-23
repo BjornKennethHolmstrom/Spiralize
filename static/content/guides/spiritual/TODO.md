@@ -1,0 +1,11 @@
+- [Beige Tracker](/guide-spiritual/tools/practice-trackers/beige-tracker) (log sensory awakenings)
+- ⚔️ Try the [Red Power Tracker](/guide-spiritual/tools/practice-trackers/red-tracker.md) (log energy surges)  
+- 📿 Try the [Blue Habit Tracker](/guide-spiritual/tools/practice-trackers/blue-tracker) (log sacred rhythms)  
+- 📊 Try the [Orange Experiment Tracker](/guide-spiritual/tools/practice-trackers/orange-tracker.md) (log hypothesis-testing)  
+- 🌍 Try the [Green Ripple Journal](/guide-spiritual/tools/practice-trackers/green-tracker.md) (log relational impacts)  
+- 📈 Try the [Yellow Meta-Tracker](/guide-spiritual/tools/practice-trackers/yellow-tracker.md) (log pattern recognition)  
+- 🌌 Try the [Turquoise Synchronicity Log](/guide-spiritual/tools/practice-trackers/turquoise-tracker.md) (record cosmic winks)  
+- 🎪 Try the [Coral Chaos Log](/guide-spiritual/tools/practice-trackers/coral-tracker.md) (record divine pranks)  
+- 📝 Try the [Ultra-Violet Forget-Me Log](/guide-spiritual/tools/practice-trackers/ultraviolet-tracker.md) (intentionally lose it)  
+
+- Shadow Journal (/guide-spiritual/tools/shadow-journal)

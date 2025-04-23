@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background: Sleek modern gradient -->
+  <defs>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="400" fill="white" />
+  <rect x="50" y="50" width="300" height="300" rx="8" ry="8" fill="url(#orangeGradient)" stroke="#ea580c" stroke-width="2" />
+  
+  <!-- Grid lines - lab style -->
+  <g stroke="#f8fafc" stroke-width="0.5" stroke-opacity="0.5">
+    <line x1="50" y1="125" x2="350" y2="125" />
+    <line x1="50" y1="200" x2="350" y2="200" />
+    <line x1="50" y1="275" x2="350" y2="275" />
+    <line x1="125" y1="50" x2="125" y2="350" />
+    <line x1="200" y1="50" x2="200" y2="350" />
+    <line x1="275" y1="50" x2="275" y2="350" />
+  </g>
+  
+  <!-- Quadrant 1: Brain Scan / Neuron (Top Left) -->
+  <circle cx="125" cy="125" r="50" fill="#fb923c" fill-opacity="0.3" />
+  <!-- Neuron -->
+  <circle cx="125" cy="125" r="15" fill="#f97316" />
+  <!-- Dendrites -->
+  <path d="M125 110 Q110 95 95 90" stroke="#ea580c" stroke-width="2" fill="none" />
+  <path d="M125 110 Q140 95 155 85" stroke="#ea580c" stroke-width="2" fill="none" />
+  <path d="M125 110 Q125 90 130 75" stroke="#ea580c" stroke-width="2" fill="none" />
+  <!-- Axon -->
+  <path d="M125 140 Q125 160 125 175" stroke="#ea580c" stroke-width="3" fill="none" />
+  <!-- Pulse Animation -->
+  <circle cx="125" cy="125" r="25" fill="none" stroke="#f97316" stroke-width="1">
+    <animate attributeName="r" values="20;30;20" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Quadrant 2: Rising Chart (Top Right) -->
+  <circle cx="275" cy="125" r="50" fill="#fb923c" fill-opacity="0.3" />
+  <!-- Chart -->
+  <polyline points="235,155 245,145 255,150 265,130 275,120 285,110 295,95" 
+            fill="none" stroke="#ea580c" stroke-width="3" stroke-linecap="round" />
+  <!-- Axis -->
+  <line x1="235" y1="155" x2="235" y2="95" stroke="#666" stroke-width="1" />
+  <line x1="235" y1="155" x2="295" y2="155" stroke="#666" stroke-width="1" />
+  <!-- Data Points -->
+  <circle cx="245" cy="145" r="3" fill="#ea580c" />
+  <circle cx="255" cy="150" r="3" fill="#ea580c" />
+  <circle cx="265" cy="130" r="3" fill="#ea580c" />
+  <circle cx="275" cy="120" r="3" fill="#ea580c" />
+  <circle cx="285" cy="110" r="3" fill="#ea580c" />
+  <circle cx="295" cy="95" r="3" fill="#ea580c" />
+  
+  <!-- Quadrant 3: Meditative Figure with Trackers (Bottom Left) -->
+  <circle cx="125" cy="275" r="50" fill="#fb923c" fill-opacity="0.3" />
+  <!-- Sitting figure -->
+  <circle cx="125" cy="260" r="12" fill="#475569" /> <!-- head -->
+  <path d="M125 272 L125 290" stroke="#475569" stroke-width="6" /> <!-- body -->
+  <path d="M125 290 Q110 300 105 290" stroke="#475569" stroke-width="5" fill="none" /> <!-- left leg -->
+  <path d="M125 290 Q140 300 145 290" stroke="#475569" stroke-width="5" fill="none" /> <!-- right leg -->
+  <!-- Data points around meditator -->
+  <circle cx="125" cy="235" r="2" fill="#ea580c" />
+  <circle cx="145" cy="245" r="2" fill="#ea580c" />
+  <circle cx="155" cy="265" r="2" fill="#ea580c" />
+  <circle cx="145" cy="285" r="2" fill="#ea580c" />
+  <circle cx="125" cy="295" r="2" fill="#ea580c" />
+  <circle cx="105" cy="285" r="2" fill="#ea580c" />
+  <circle cx="95" cy="265" r="2" fill="#ea580c" />
+  <circle cx="105" cy="245" r="2" fill="#ea580c" />
+  <!-- Data line connecting points -->
+  <polyline points="125,235 145,245 155,265 145,285 125,295 105,285 95,265 105,245 125,235" 
+            fill="none" stroke="#ea580c" stroke-width="1" stroke-dasharray="2,2" />
+  
+  <!-- Quadrant 4: Compass/Direction (Bottom Right) -->
+  <circle cx="275" cy="275" r="50" fill="#fb923c" fill-opacity="0.3" />
+  <!-- Compass -->
+  <circle cx="275" cy="275" r="30" fill="#fef3c7" stroke="#ea580c" stroke-width="2" />
+  <!-- Compass directions -->
+  <line x1="275" y1="245" x2="275" y2="305" stroke="#666" stroke-width="1" />
+  <line x1="245" y1="275" x2="305" y2="275" stroke="#666" stroke-width="1" />
+  <!-- Compass needle -->
+  <path d="M275 260 L275 275 L280 270 Z" fill="#ea580c" />
+  <path d="M275 290 L275 275 L270 280 Z" fill="#475569" />
+  <!-- Inner circle -->
+  <circle cx="275" cy="275" r="5" fill="#ea580c" />
+  
+  <!-- Lab flask overlay -->
+  <circle cx="335" cy="65" r="12" fill="white" stroke="#ea580c" stroke-width="1" />
+  <path d="M330 65 L330 80 Q335 85 340 80 L340 65" fill="white" stroke="#ea580c" stroke-width="1" />
+  <rect x="330" y="75" width="10" height="3" fill="#f97316" fill-opacity="0.5" />
+  
+  <!-- Title plate -->
+  <rect x="150" y="35" width="100" height="25" rx="5" ry="5" fill="white" stroke="#ea580c" stroke-width="1" />
+  <text x="200" y="53" font-family="Arial" font-size="12" text-anchor="middle" fill="#ea580c" font-weight="bold">ORANGE STAGE</text>
+</svg>

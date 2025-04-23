@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="190" fill="#E8D0AA">
+    <animate attributeName="r" values="190;185;190" dur="4s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Earth Texture Background -->
+  <circle cx="200" cy="200" r="180" fill="#D2B48C" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.5;0.7" dur="6s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Subtle Texture -->
+  <pattern id="earthPattern" patternUnits="userSpaceOnUse" width="100" height="100">
+    <rect width="100" height="100" fill="#D2B48C"/>
+    <circle cx="20" cy="20" r="3" fill="#C19A6B" opacity="0.5"/>
+    <circle cx="60" cy="40" r="2" fill="#C19A6B" opacity="0.5"/>
+    <circle cx="80" cy="80" r="4" fill="#C19A6B" opacity="0.5"/>
+    <circle cx="30" cy="70" r="3" fill="#C19A6B" opacity="0.5"/>
+  </pattern>
+  <circle cx="200" cy="200" r="180" fill="url(#earthPattern)" opacity="0.2"/>
+  
+  <!-- Center Earth-toned Circle -->
+  <circle cx="200" cy="200" r="150" fill="#C19A6B" opacity="0.7">
+    <animate attributeName="r" values="150;145;150" dur="5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Subtle Inner Pulse -->
+  <circle cx="200" cy="200" r="130" fill="#9F7B31" opacity="0.2">
+    <animate attributeName="r" values="130;140;130" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.2;0.3;0.2" dur="4s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Human Handprint -->
+  <g transform="translate(140, 150)">
+    <path d="M 0,90 
+             C 0,70 10,60 15,35 
+             C 18,20 15,5 15,-5 
+             C 15,-15 25,-15 25,-5 
+             C 25,10 28,20 25,35 
+             
+             M 30,90
+             C 30,60 35,50 40,30
+             C 43,15 40,0 40,-10
+             C 40,-20 50,-20 50,-10
+             C 50,5 53,15 50,30
+             
+             M 60,85
+             C 60,65 65,45 68,30
+             C 70,15 68,5 68,-5
+             C 68,-15 78,-15 78,-5
+             C 78,10 80,20 75,35
+             
+             M 80,75
+             C 80,60 83,50 85,35
+             C 87,25 85,15 85,5
+             C 85,-5 95,-5 95,5
+             C 95,15 97,25 90,40
+             
+             M -5,25
+             C -15,25 -25,15 -30,0
+             C -35,-15 -25,-25 -15,-20
+             C -5,-15 -5,0 -5,10
+             
+             M -5,40 L 95,40 L 80,90 L 10,90 Z" 
+          fill="#8B4513" opacity="0.8"/>
+  </g>
+  
+  <!-- Animal Tracks -->
+  <!-- Wolf/Dog Paw -->
+  <g transform="translate(250, 200) rotate(30)">
+    <circle cx="0" cy="0" r="8" fill="#5D4037" opacity="0.7"/>
+    <circle cx="5" cy="-10" r="5" fill="#5D4037" opacity="0.7"/>
+    <circle cx="-5" cy="-10" r="5" fill="#5D4037" opacity="0.7"/>
+    <circle cx="8" cy="-5" r="5" fill="#5D4037" opacity="0.7"/>
+    <circle cx="-8" cy="-5" r="5" fill="#5D4037" opacity="0.7"/>
+  </g>
+  
+  <!-- Bird Footprint -->
+  <g transform="translate(200, 270) rotate(-15)">
+    <path d="M 0,0 L 20,-5 M 0,0 L 15,5 M 0,0 L 10,15" stroke="#5D4037" stroke-width="2" opacity="0.7"/>
+  </g>
+  
+  <!-- Deer Hoofprint -->
+  <g transform="translate(110, 230) rotate(-45)">
+    <path d="M -5,0 C -8,10 0,20 5,10 C 10,20 18,10 15,0 C 12,-5 8,-5 5,0 C 2,-5 -2,-5 -5,0 Z" fill="#5D4037" opacity="0.7"/>
+  </g>
+  
+  <!-- Plant Elements -->
+  <!-- Simple Leaf -->
+  <g transform="translate(280, 150) rotate(45)">
+    <path d="M 0,0 Q 20,-20 0,-40 Q -20,-20 0,0" fill="#556B2F" opacity="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="#556B2F" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Grass Tuft -->
+  <g transform="translate(100, 150)">
+    <path d="M 0,0 C 5,-10 10,-20 15,-30 M 0,0 C 0,-15 -5,-25 -10,-35 M 0,0 C -2,-10 5,-15 0,-25" stroke="#556B2F" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Seed -->
+  <g transform="translate(220, 120)">
+    <ellipse cx="0" cy="0" rx="8" ry="12" fill="#8B4513" opacity="0.5"/>
+  </g>
+  
+  <!-- Pulsing Life Force -->
+  <circle cx="200" cy="200" r="90" fill="none" stroke="#FF6347" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="90;130;90" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.1;0.2" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="200" cy="200" r="70" fill="none" stroke="#FF6347" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="70;110;70" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.1;0.2" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="200" cy="200" r="50" fill="none" stroke="#FF6347" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="50;90;50" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.1;0.2" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Text Beneath -->
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#5D4037">BEIGE: PRIMAL AWE</text>
+</svg>

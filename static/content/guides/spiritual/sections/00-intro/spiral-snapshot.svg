@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="700"
+   viewBox="0 0 800 700"
+   version="1.1"
+   id="svg24"
+   sodipodi:docname="spiral-snapshot.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     id="namedview24"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0575"
+     inkscape:cx="400.47281"
+     inkscape:cy="324.34988"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg24" />
+  <!-- Background -->
+  <rect
+     width="100%"
+     height="100%"
+     fill="#f9f4e8"
+     id="rect1"
+     x="0"
+     y="0" />
+  <!-- Spiral Base -->
+  <path
+     d="M 400,352 Q 500,252 550,352 600,452 400,552 200,452 250,352 q 50,-100 150,0"
+     fill="none"
+     stroke="#333333"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="path1" />
+  <!-- Stages (Colors + Icons) -->
+  <!-- Beige (🟤) -->
+  <circle
+     cx="400"
+     cy="352"
+     r="30"
+     fill="#e6d5b8"
+     id="circle1" />
+  <text
+     x="400"
+     y="400"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text1">🌱</text>
+  <text
+     x="400"
+     y="392"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text2">Beige: Primal Awe</text>
+  <!-- Purple (🟣) -->
+  <circle
+     cx="500"
+     cy="252"
+     r="30"
+     fill="#b399d4"
+     id="circle2" />
+  <text
+     x="500"
+     y="300"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text3">🌀</text>
+  <text
+     x="500"
+     y="292"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text4">Purple: Ritual</text>
+  <!-- Red (🔴) -->
+  <circle
+     cx="550"
+     cy="352"
+     r="30"
+     fill="#ff6b6b"
+     id="circle4" />
+  <text
+     x="550"
+     y="400"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text5">⚔️</text>
+  <text
+     x="550"
+     y="392"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text6">Red: Power</text>
+  <!-- Blue (🔵) -->
+  <circle
+     cx="600"
+     cy="452"
+     r="30"
+     fill="#4d80e6"
+     id="circle6" />
+  <text
+     x="600"
+     y="500"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text7">📜</text>
+  <text
+     x="600"
+     y="492"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text8">Blue: Order</text>
+  <!-- Orange (🟠) -->
+  <circle
+     cx="400"
+     cy="552"
+     r="30"
+     fill="#ffa64d"
+     id="circle8" />
+  <text
+     x="400"
+     y="600"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text9">🔬</text>
+  <text
+     x="400"
+     y="592"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text10">Orange: Logic</text>
+  <!-- Green (🟢) -->
+  <circle
+     cx="200"
+     cy="452"
+     r="30"
+     fill="#66cc99"
+     id="circle10" />
+  <text
+     x="200"
+     y="500"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text11">💚</text>
+  <text
+     x="200"
+     y="492"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text12">Green: Harmony</text>
+  <!-- Yellow (🟡) -->
+  <circle
+     cx="250"
+     cy="352"
+     r="30"
+     fill="#ffd166"
+     id="circle12" />
+  <text
+     x="250"
+     y="400"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text13">🧩</text>
+  <text
+     x="250"
+     y="392"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text14">Yellow: Systems</text>
+  <!-- Turquoise (🩵) -->
+  <circle
+     cx="300"
+     cy="252"
+     r="30"
+     fill="#7ce0d6"
+     id="circle14" />
+  <text
+     x="300"
+     y="300"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text15">🌊</text>
+  <text
+     x="300"
+     y="292"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text16">Turquoise: Unity</text>
+  <!-- Coral (🪸) -->
+  <circle
+     cx="350"
+     cy="152"
+     r="30"
+     fill="#ff8fa3"
+     id="circle16" />
+  <text
+     x="350"
+     y="200"
+     font-size="20px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text17">🪸</text>
+  <text
+     x="350"
+     y="192"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text18">Coral: Play</text>
+  <!-- Tiers Legend -->
+  <rect
+     x="50.088898"
+     y="546.08893"
+     width="208.45105"
+     height="99.822205"
+     fill="#ffffff"
+     stroke="#333333"
+     rx="6.9483681"
+     id="rect18"
+     style="stroke-width:1.1778" />
+  <text
+     x="125"
+     y="566"
+     font-size="16px"
+     text-anchor="middle"
+     font-weight="bold"
+     fill="#333333"
+     id="text19">Tiers</text>
+  <text
+     x="60"
+     y="586"
+     font-size="12px"
+     fill="#333333"
+     id="text20">• First-Tier: Beige–Green</text>
+  <text
+     x="60"
+     y="606"
+     font-size="12px"
+     fill="#333333"
+     id="text21">• Second-Tier: Yellow–Turquoise</text>
+  <text
+     x="60"
+     y="626"
+     font-size="12px"
+     fill="#333333"
+     id="text22">• Third-Tier: Coral+</text>
+  <!-- Title -->
+  <text
+     x="400"
+     y="50"
+     font-size="24px"
+     text-anchor="middle"
+     font-weight="bold"
+     fill="#333333"
+     id="text23">Spiral Dynamics Mysticism</text>
+  <text
+     x="400"
+     y="80"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text24">Stages of Spiritual Awakening</text>
+</svg>

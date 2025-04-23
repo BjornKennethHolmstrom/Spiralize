@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 500 380"
+   version="1.1"
+   id="svg51"
+   sodipodi:docname="traditions-spiral-map.svg"
+   width="500"
+   height="380"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview51"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.692"
+     inkscape:cx="250.29551"
+     inkscape:cy="155.43735"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg51" />
+  <!-- Background with subtle texture -->
+  <defs
+     id="defs3">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#texturePattern"
+       id="pattern51"
+       patternTransform="matrix(0.70710678,0.53743459,-0.70710678,0.53743459,0,0)" />
+    <linearGradient
+       id="bgGradient"
+       x1="0"
+       y1="0"
+       x2="500"
+       y2="500"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(1,0.76004728)">
+      <stop
+         offset="0%"
+         style="stop-color:#f8fafc;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#e2e8f0;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <pattern
+       id="texturePattern"
+       patternUnits="userSpaceOnUse"
+       width="50"
+       height="50"
+       patternTransform="rotate(45)">
+      <rect
+         width="50"
+         height="50"
+         fill="none"
+         id="rect2" />
+      <path
+         d="M0,0 L50,50 M50,0 L0,50"
+         stroke="#e2e8f0"
+         stroke-width="0.5"
+         id="path2" />
+    </pattern>
+    <filter
+       id="softGlow"
+       height="1.2020571"
+       width="1.2078817"
+       x="-0.1012344"
+       y="-0.096053389">
+      <feMorphology
+         operator="dilate"
+         radius="4"
+         in="SourceAlpha"
+         result="thicken"
+         id="feMorphology2" />
+      <feGaussianBlur
+         in="thicken"
+         stdDeviation="8"
+         result="blurred"
+         id="feGaussianBlur2" />
+      <feFlood
+         flood-color="#f8fafc"
+         result="glowColor"
+         id="feFlood2" />
+      <feComposite
+         in="glowColor"
+         in2="blurred"
+         operator="in"
+         result="softGlow_colored"
+         id="feComposite2" />
+      <feComposite
+         in="SourceGraphic"
+         in2="softGlow_colored"
+         operator="over"
+         result="softGlow_colored"
+         id="feComposite3" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect
+     x="0"
+     y="0"
+     width="500"
+     height="380.02365"
+     fill="url(#bgGradient)"
+     id="rect3"
+     style="fill:url(#bgGradient);stroke-width:0.871807" />
+  <rect
+     x="0"
+     y="0"
+     width="500"
+     height="380.02365"
+     fill="url(#texturePattern)"
+     id="rect4"
+     style="fill:url(#pattern51);stroke-width:0.871807" />
+  <!-- Central Spiral Structure - Drawing from center outward -->
+  <g
+     transform="translate(250,308)"
+     filter="url(#softGlow)"
+     id="g14">
+    <!-- Beige (Survival) - Innermost -->
+    <path
+       d="m 0,0 q 5,-3 10,0 5,3 10,0"
+       fill="none"
+       stroke="#d6d3d1"
+       stroke-width="8"
+       id="path4" />
+    <!-- Purple (Tribal/Magical) -->
+    <path
+       d="m 20,0 q 10,-10 20,-5 10,5 15,-5"
+       fill="none"
+       stroke="#a855f7"
+       stroke-width="12"
+       id="path5" />
+    <!-- Red (Power/Impulsive) -->
+    <path
+       d="m 55,-10 q 10,-15 5,-30 -5,-15 5,-25"
+       fill="none"
+       stroke="#ef4444"
+       stroke-width="14"
+       id="path6" />
+    <!-- Blue (Order/Authority) -->
+    <path
+       d="m 65,-65 q 10,-15 15,-35 5,-20 20,-25"
+       fill="none"
+       stroke="#3b82f6"
+       stroke-width="16"
+       id="path7" />
+    <!-- Orange (Achievement/Strategic) -->
+    <path
+       d="m 100,-125 q 20,-10 40,0 20,10 35,-5"
+       fill="none"
+       stroke="#f97316"
+       stroke-width="16"
+       id="path8" />
+    <!-- Green (Communal/Egalitarian) -->
+    <path
+       d="m 175,-130 q 10,-15 0,-30 -10,-15 5,-25"
+       fill="none"
+       stroke="#22c55e"
+       stroke-width="16"
+       id="path9" />
+    <!-- Yellow (Systemic/Integrative) -->
+    <path
+       d="m 180,-185 q 10,-10 25,-5 15,5 20,-10"
+       fill="none"
+       stroke="#eab308"
+       stroke-width="14"
+       id="path10" />
+    <!-- Turquoise (Holistic/Global) -->
+    <path
+       d="m 225,-200 q 5,-10 0,-20 -5,-10 5,-15"
+       fill="none"
+       stroke="#06b6d4"
+       stroke-width="12"
+       id="path11" />
+    <!-- Coral (Playful) -->
+    <path
+       d="m 230,-235 q 5,-5 10,0 5,5 8,-3"
+       fill="none"
+       stroke="#ec4899"
+       stroke-width="10"
+       id="path12" />
+    <!-- Ultra-Violet (Transparent) -->
+    <path
+       d="m 248,-238 q 2,-4 0,-7 -2,-3 1,-5"
+       fill="none"
+       stroke="#8b5cf6"
+       stroke-width="8"
+       opacity="0.8"
+       id="path13" />
+    <!-- Clear (Beyond) - Outermost, barely visible -->
+    <path
+       d="m 249,-250 q 1,-2 0,-4"
+       fill="none"
+       stroke="#f8fafc"
+       stroke-width="6"
+       opacity="0.6"
+       id="path14" />
+  </g>
+  <!-- Tradition Symbols - Placed along the spiral -->
+  <!-- Purple Stage Traditions -->
+  <g
+     transform="translate(220,298)"
+     id="g18">
+    <!-- Indigenous/Shamanic - Celtic Triskele -->
+    <g
+       transform="scale(0.7)"
+       id="g17">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#f3e8ff"
+         stroke="#a855f7"
+         stroke-width="1"
+         id="circle14" />
+      <path
+         d="m 0,0 c -5,-10 -15,-10 -10,0 5,10 -5,15 0,5 C -5,-5 5,-5 0,0"
+         fill="none"
+         stroke="#a855f7"
+         stroke-width="2"
+         id="path15" />
+      <path
+         d="m 0,0 c 10,-5 15,-15 5,-10 -10,5 -15,-5 -5,0 10,5 10,15 0,10"
+         fill="none"
+         stroke="#a855f7"
+         stroke-width="2"
+         id="path16" />
+      <path
+         d="M 0,0 C -5,10 5,15 5,5 5,-5 15,-5 10,5 5,15 -5,10 0,0"
+         fill="none"
+         stroke="#a855f7"
+         stroke-width="2"
+         id="path17" />
+    </g>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#a855f7"
+       id="text17">Indigenous</text>
+  </g>
+  <!-- Red Stage Traditions -->
+  <g
+     transform="translate(224,226)"
+     id="g20">
+    <!-- Warrior Traditions - Spear/Shield -->
+    <g
+       transform="scale(0.7)"
+       id="g19">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#fee2e2"
+         stroke="#ef4444"
+         stroke-width="1"
+         id="circle18" />
+      <path
+         d="M -10,-10 10,10 M 0,-15 v 30"
+         stroke="#ef4444"
+         stroke-width="2"
+         id="path18" />
+      <circle
+         cx="0"
+         cy="0"
+         r="12"
+         fill="none"
+         stroke="#ef4444"
+         stroke-width="2"
+         id="circle19" />
+    </g>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#ef4444"
+       id="text19">Warrior Cults</text>
+  </g>
+  <!-- Blue Stage Traditions -->
+  <g
+     transform="translate(149.40898,215.18676)"
+     id="g23">
+    <!-- Abrahamic Traditions - Torah/Cross/Crescent -->
+    <g
+       transform="scale(0.7)"
+       id="g22">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#dbeafe"
+         stroke="#3b82f6"
+         stroke-width="1"
+         id="circle20" />
+      <!-- Combined Abrahamic symbol -->
+      <path
+         d="M -5,-15 V 15 M -10,-5 H 0 M -10,5 H 0"
+         stroke="#3b82f6"
+         stroke-width="2"
+         id="path20" />
+      <!-- Torah scroll -->
+      <path
+         d="M 5,-10 V 10 M 0,0 h 10"
+         stroke="#3b82f6"
+         stroke-width="2"
+         id="path21" />
+      <!-- Cross -->
+      <path
+         d="m 15,0 c -5,-10 5,-10 0,0"
+         stroke="#3b82f6"
+         stroke-width="2"
+         id="path22" />
+      <!-- Crescent -->
+    </g>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#3b82f6"
+       id="text22">Abrahamic</text>
+  </g>
+  <!-- Orange Stage Traditions -->
+  <g
+     transform="translate(87.907801,185.68322)"
+     id="g26">
+    <!-- New Age/Science - Atom/Crystal -->
+    <g
+       transform="scale(0.7)"
+       id="g25">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#ffedd5"
+         stroke="#f97316"
+         stroke-width="1"
+         id="circle23" />
+      <!-- Atom/Crystal hybrid -->
+      <ellipse
+         cx="0"
+         cy="0"
+         rx="15"
+         ry="8"
+         fill="none"
+         stroke="#f97316"
+         stroke-width="1"
+         transform="rotate(30)"
+         id="ellipse23" />
+      <ellipse
+         cx="0"
+         cy="0"
+         rx="15"
+         ry="8"
+         fill="none"
+         stroke="#f97316"
+         stroke-width="1"
+         transform="rotate(90)"
+         id="ellipse24" />
+      <ellipse
+         cx="0"
+         cy="0"
+         rx="15"
+         ry="8"
+         fill="none"
+         stroke="#f97316"
+         stroke-width="1"
+         transform="rotate(150)"
+         id="ellipse25" />
+      <circle
+         cx="0"
+         cy="0"
+         r="3"
+         fill="#f97316"
+         id="circle25" />
+    </g>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#f97316"
+       id="text25">New Age/Science</text>
+  </g>
+  <!-- Green Stage Traditions -->
+  <g
+     transform="translate(88.640662,109.04019)"
+     id="g30">
+    <!-- Eco-Spirituality/Liberation Theology - Tree/Hand -->
+    <g
+       transform="scale(0.7)"
+       id="g29">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#dcfce7"
+         stroke="#22c55e"
+         stroke-width="1"
+         id="circle26" />
+      <!-- Tree with raised hand -->
+      <path
+         d="M 0,-15 V 10"
+         stroke="#22c55e"
+         stroke-width="2"
+         id="path26" />
+      <!-- trunk -->
+      <path
+         d="m 0,-5 c -10,-5 -15,0 -5,5"
+         stroke="#22c55e"
+         stroke-width="1.5"
+         id="path27" />
+      <!-- branch -->
+      <path
+         d="m 0,-10 c 10,-5 15,0 5,5"
+         stroke="#22c55e"
+         stroke-width="1.5"
+         id="path28" />
+      <!-- branch -->
+      <path
+         d="m -5,10 c 0,5 5,5 5,0 0,5 5,5 5,0"
+         stroke="#22c55e"
+         stroke-width="1.5"
+         id="path29" />
+      <!-- roots -->
+    </g>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#22c55e"
+       id="text29">Eco-Spirituality</text>
+  </g>
+  <!-- Yellow Stage Traditions -->
+  <g
+     transform="translate(28.22695,135.18676)"
+     id="g37">
+    <!-- Integral/Buddhist Psychology - Connected Nodes -->
+    <g
+       transform="scale(0.7)"
+       id="g36">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#fef9c3"
+         stroke="#eab308"
+         stroke-width="1"
+         id="circle30" />
+      <!-- Integral framework -->
+      <rect
+         x="-10"
+         y="-10"
+         width="8"
+         height="8"
+         fill="#eab308"
+         opacity="0.7"
+         id="rect30" />
+      <rect
+         x="2"
+         y="-10"
+         width="8"
+         height="8"
+         fill="#eab308"
+         opacity="0.7"
+         id="rect31" />
+      <rect
+         x="-10"
+         y="2"
+         width="8"
+         height="8"
+         fill="#eab308"
+         opacity="0.7"
+         id="rect32" />
+      <rect
+         x="2"
+         y="2"
+         width="8"
+         height="8"
+         fill="#eab308"
+         opacity="0.7"
+         id="rect33" />
+      <line
+         x1="-6"
+         y1="-6"
+         x2="6"
+         y2="-6"
+         stroke="#eab308"
+         stroke-width="1"
+         id="line33" />
+      <line
+         x1="-6"
+         y1="6"
+         x2="6"
+         y2="6"
+         stroke="#eab308"
+         stroke-width="1"
+         id="line34" />
+      <line
+         x1="-6"
+         y1="-6"
+         x2="-6"
+         y2="6"
+         stroke="#eab308"
+         stroke-width="1"
+         id="line35" />
+      <line
+         x1="6"
+         y1="-6"
+         x2="6"
+         y2="6"
+         stroke="#eab308"
+         stroke-width="1"
+         id="line36" />
+    </g>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#eab308"
+       id="text36">Integral</text>
+  </g>
+  <!-- Turquoise Stage Traditions -->
+  <g
+     transform="translate(54.869976,91.274228)"
+     id="g40">
+    <!-- Nondual Traditions - Zen Enso/Lotus -->
+    <g
+       transform="scale(0.7)"
+       id="g39">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#cffafe"
+         stroke="#06b6d4"
+         stroke-width="1"
+         id="circle37" />
+      <!-- Zen circle (Enso) -->
+      <circle
+         cx="0"
+         cy="0"
+         r="12"
+         fill="none"
+         stroke="#06b6d4"
+         stroke-width="2.5"
+         stroke-dasharray="72, 8"
+         id="circle38" />
+      <!-- Lotus stylized -->
+      <path
+         d="m 0,0 c -5,-5 -10,-5 -7,0 -3,5 2,5 7,0"
+         stroke="#06b6d4"
+         stroke-width="1"
+         fill="none"
+         id="path38" />
+      <path
+         d="M 0,0 C 5,-5 10,-5 7,0 10,5 5,5 0,0"
+         stroke="#06b6d4"
+         stroke-width="1"
+         fill="none"
+         id="path39" />
+    </g>
+    <text
+       x="0"
+       y="25"
+       font-family="Arial"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#06b6d4"
+       id="text39">Nondual</text>
+  </g>
+  <!-- Coral Stage Traditions -->
+  <g
+     transform="translate(30.957447,58.543736)"
+     id="g46">
+    <!-- Tantric/Trickster - Dancing Figure -->
+    <g
+       transform="scale(0.6)"
+       id="g45">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#fce7f3"
+         stroke="#ec4899"
+         stroke-width="1"
+         id="circle40" />
+      <!-- Dancing figure -->
+      <circle
+         cx="0"
+         cy="-5"
+         r="5"
+         fill="none"
+         stroke="#ec4899"
+         stroke-width="1.5"
+         id="circle41" />
+      <!-- head -->
+      <path
+         d="M 0,0 Q 5,10 0,15 -5,10 0,0"
+         fill="none"
+         stroke="#ec4899"
+         stroke-width="1.5"
+         id="path41" />
+      <!-- body -->
+      <path
+         d="M -5,5 Q -10,0 -15,5"
+         fill="none"
+         stroke="#ec4899"
+         stroke-width="1.5"
+         id="path42" />
+      <!-- arm -->
+      <path
+         d="M 5,5 Q 15,0 15,10"
+         fill="none"
+         stroke="#ec4899"
+         stroke-width="1.5"
+         id="path43" />
+      <!-- arm -->
+      <path
+         d="m 0,15 q -5,5 -10,10"
+         fill="none"
+         stroke="#ec4899"
+         stroke-width="1.5"
+         id="path44" />
+      <!-- leg -->
+      <path
+         d="M 0,15 Q 5,25 5,30"
+         fill="none"
+         stroke="#ec4899"
+         stroke-width="1.5"
+         id="path45" />
+      <!-- leg -->
+    </g>
+    <text
+       x="0"
+       y="20"
+       font-family="Arial"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#ec4899"
+       id="text45">Tantra</text>
+  </g>
+  <!-- Clear/Ultra-Violet Stage Traditions -->
+  <g
+     transform="translate(14.728132,27.858157)"
+     id="g48">
+    <!-- Zen/Advaita - Empty Circle -->
+    <g
+       transform="scale(0.5)"
+       id="g47">
+      <circle
+         cx="0"
+         cy="0"
+         r="20"
+         fill="#f5f3ff"
+         stroke="#8b5cf6"
+         stroke-width="1"
+         opacity="0.6"
+         id="circle46" />
+      <!-- Almost invisible empty circle -->
+      <circle
+         cx="0"
+         cy="0"
+         r="10"
+         fill="none"
+         stroke="#8b5cf6"
+         stroke-width="0.5"
+         opacity="0.6"
+         id="circle47" />
+    </g>
+    <text
+       x="0"
+       y="15"
+       font-family="Arial"
+       font-size="7px"
+       text-anchor="middle"
+       fill="#8b5cf6"
+       opacity="0.7"
+       id="text47">Zen</text>
+  </g>
+  <!-- Tradition Overlap Indicators -->
+  <!-- Sufism spanning Blue to Turquoise -->
+  <path
+     d="M 150,188 Q 110,148 70,138 40,128 20,83"
+     fill="none"
+     stroke="#3b82f6"
+     stroke-width="1"
+     stroke-dasharray="5, 3"
+     opacity="0.7"
+     id="path48" />
+  <text
+     x="90"
+     y="158"
+     font-family="Arial"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#3b82f6"
+     opacity="0.8"
+     id="text48">Sufism</text>
+  <!-- Shamanic traditions spanning Purple to Green -->
+  <path
+     d="M 220,298 Q 180,188 65,138"
+     fill="none"
+     stroke="#a855f7"
+     stroke-width="1"
+     stroke-dasharray="5, 3"
+     opacity="0.7"
+     id="path49" />
+  <text
+     x="174.82269"
+     y="253.4137"
+     font-family="Arial"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#a855f7"
+     opacity="0.8"
+     id="text49">Shamanic</text>
+  <!-- Buddhism spanning Blue to Clear -->
+  <path
+     d="M 150,188 Q 95,178 30,108 15,88 10,58"
+     fill="none"
+     stroke="#f59e0b"
+     stroke-width="1"
+     stroke-dasharray="5, 3"
+     opacity="0.7"
+     id="path50" />
+  <text
+     x="70"
+     y="168"
+     font-family="Arial"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#f59e0b"
+     opacity="0.8"
+     id="text50">Buddhism</text>
+  <!-- Title -->
+  <g
+     transform="translate(250,361.20567)"
+     id="g51">
+    <text
+       x="0"
+       y="0"
+       font-family="Arial"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#1e293b"
+       font-weight="bold"
+       id="text51">WISDOM TRADITIONS THROUGH THE SPIRAL</text>
+  </g>
+</svg>

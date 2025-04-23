@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 600 600"
+   version="1.1"
+   id="svg53"
+   sodipodi:docname="orange-essence.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview53"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="299.64539"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg53" />
+  <!-- Definitions -->
+  <defs
+     id="defs7">
+    <linearGradient
+       id="backgroundGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#FFF5E6"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#FFEBCC"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="orangeGradient"
+       x1="0"
+       y1="78.262379"
+       x2="67.082039"
+       y2="145.34442"
+       gradientTransform="matrix(2.236068,0,0,0.4472136,75,110)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FF8C00"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#FFA64D"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="chartGradient"
+       x1="0"
+       y1="325.26912"
+       x2="0"
+       y2="183.84776"
+       gradientTransform="matrix(1.4142136,0,0,0.70710678,75,110)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FF8C00"
+         stop-opacity="0.1"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#FF8C00"
+         stop-opacity="0.7"
+         id="stop6" />
+    </linearGradient>
+    <filter
+       id="dropShadow"
+       x="-0.0164"
+       y="-0.0164"
+       width="1.0368"
+       height="1.0368">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="3"
+         id="feGaussianBlur6" />
+      <feOffset
+         dx="2"
+         dy="2"
+         id="feOffset6" />
+      <feComponentTransfer
+         id="feComponentTransfer6">
+        <feFuncA
+           type="linear"
+           slope="0.3"
+           id="feFuncA6" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge7">
+        <feMergeNode
+           id="feMergeNode6" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode7" />
+      </feMerge>
+    </filter>
+    <pattern
+       id="gridPattern"
+       width="20"
+       height="20"
+       patternUnits="userSpaceOnUse">
+      <rect
+         width="20"
+         height="20"
+         fill="none"
+         stroke="#FFA64D"
+         stroke-width="0.5"
+         opacity="0.2"
+         id="rect7" />
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="600"
+     height="600"
+     fill="url(#backgroundGradient)"
+     id="rect8" />
+  <rect
+     width="600"
+     height="600"
+     fill="url(#gridPattern)"
+     id="rect9" />
+  <!-- Dashboard Frame -->
+  <rect
+     x="50"
+     y="50"
+     width="500"
+     height="500"
+     rx="15"
+     ry="15"
+     fill="white"
+     stroke="#FF8C00"
+     stroke-width="2"
+     filter="url(#dropShadow)"
+     id="rect10" />
+  <!-- Header Bar -->
+  <rect
+     x="50"
+     y="50"
+     width="500"
+     height="40"
+     rx="15"
+     ry="15"
+     fill="#FF8C00"
+     id="rect11" />
+  <text
+     x="80"
+     y="77"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="18"
+     fill="white"
+     id="text11">Spiritual Metrics Dashboard</text>
+  <circle
+     cx="530"
+     cy="70"
+     r="10"
+     fill="#FFD166"
+     id="circle11" />
+  <circle
+     cx="500"
+     cy="70"
+     r="10"
+     fill="#FFD166"
+     id="circle12" />
+  <circle
+     cx="470"
+     cy="70"
+     r="10"
+     fill="#FFD166"
+     id="circle13" />
+  <!-- Left Panel - Charts & Metrics -->
+  <text
+     x="75"
+     y="130"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="14px"
+     fill="#ff8c00"
+     id="text13">Enlightenment Progress</text>
+  <rect
+     x="75"
+     y="145"
+     width="200"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#eeeeee"
+     id="rect13" />
+  <rect
+     x="75"
+     y="145"
+     width="150"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="url(#orangeGradient)"
+     id="rect14"
+     style="fill:url(#orangeGradient)">
+    <animate
+       attributeName="width"
+       values="0;150"
+       dur="2s" />
+  </rect>
+  <text
+     x="175"
+     y="165"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="14px"
+     fill="#ffffff"
+     text-anchor="middle"
+     id="text14">75%</text>
+  <text
+     x="75"
+     y="210"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="14px"
+     fill="#ff8c00"
+     id="text15">Meditation Metrics</text>
+  <rect
+     x="75"
+     y="220"
+     width="200"
+     height="120"
+     fill="#fcfcfc"
+     stroke="#eeeeee"
+     id="rect15" />
+  <line
+     x1="75"
+     y1="340"
+     x2="275"
+     y2="340"
+     stroke="#dddddd"
+     id="line15" />
+  <line
+     x1="75"
+     y1="310"
+     x2="275"
+     y2="310"
+     stroke="#dddddd"
+     stroke-dasharray="2, 2"
+     id="line16" />
+  <line
+     x1="75"
+     y1="280"
+     x2="275"
+     y2="280"
+     stroke="#dddddd"
+     stroke-dasharray="2, 2"
+     id="line17" />
+  <line
+     x1="75"
+     y1="250"
+     x2="275"
+     y2="250"
+     stroke="#dddddd"
+     stroke-dasharray="2, 2"
+     id="line18" />
+  <line
+     x1="115"
+     y1="220"
+     x2="115"
+     y2="340"
+     stroke="#dddddd"
+     stroke-dasharray="2, 2"
+     id="line19" />
+  <line
+     x1="155"
+     y1="220"
+     x2="155"
+     y2="340"
+     stroke="#dddddd"
+     stroke-dasharray="2, 2"
+     id="line20" />
+  <line
+     x1="195"
+     y1="220"
+     x2="195"
+     y2="340"
+     stroke="#dddddd"
+     stroke-dasharray="2, 2"
+     id="line21" />
+  <line
+     x1="235"
+     y1="220"
+     x2="235"
+     y2="340"
+     stroke="#dddddd"
+     stroke-dasharray="2, 2"
+     id="line22" />
+  <polyline
+     points="0,210 40,200 80,190 120,160 160,150 200,130"
+     fill="none"
+     stroke="#ff8c00"
+     stroke-width="3"
+     id="polyline22"
+     transform="translate(75,110)">
+    <animate
+       attributeName="points"
+       values="0,230 40,230 80,230 120,230 160,230 200,230; 0,210 40,200 80,190 120,160 160,150 200,130"
+       dur="2s" />
+  </polyline>
+  <path
+     d="m 75,320 40,-10 40,-10 40,-30 40,-10 40,-20 V 340 H 75 Z"
+     fill="url(#chartGradient)"
+     id="path22"
+     style="fill:url(#chartGradient)">
+    <animate
+       attributeName="d"
+       values="M0,230 L40,230 L80,230 L120,230 L160,230 L200,230 L200,230 L0,230 Z; M0,210 L40,200 L80,190 L120,160 L160,150 L200,130 L200,230 L0,230 Z"
+       dur="2s" />
+  </path>
+  <text
+     x="75"
+     y="380"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="14px"
+     fill="#ff8c00"
+     id="text22">Key Metrics</text>
+  <rect
+     x="72.886665"
+     y="390.01431"
+     width="63.517448"
+     height="59.971352"
+     rx="5.2931209"
+     ry="4.9976125"
+     fill="#ffffff"
+     stroke="#eeeeee"
+     stroke-width="1.02865"
+     id="rect22" />
+  <text
+     x="105"
+     y="420"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="20px"
+     fill="#ff8c00"
+     text-anchor="middle"
+     id="text23">7.2</text>
+  <text
+     x="105"
+     y="440"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#666666"
+     text-anchor="middle"
+     id="text24">Focus Score</text>
+  <rect
+     x="143.59306"
+     y="390.01147"
+     width="62.813892"
+     height="59.977016"
+     rx="5.2344909"
+     ry="4.9980845"
+     fill="#ffffff"
+     stroke="#eeeeee"
+     stroke-width="1.02299"
+     id="rect24" />
+  <text
+     x="175"
+     y="420"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="20px"
+     fill="#ff8c00"
+     text-anchor="middle"
+     id="text25">32</text>
+  <text
+     x="175"
+     y="440"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#666666"
+     text-anchor="middle"
+     id="text26">Days Streak</text>
+  <rect
+     x="212.18306"
+     y="390.01993"
+     width="64.924652"
+     height="59.960117"
+     rx="5.410388"
+     ry="4.9966764"
+     fill="#ffffff"
+     stroke="#eeeeee"
+     stroke-width="1.03989"
+     id="rect26" />
+  <text
+     x="245"
+     y="420"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="20px"
+     fill="#ff8c00"
+     text-anchor="middle"
+     id="text27">A+</text>
+  <text
+     x="245"
+     y="440"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#666666"
+     text-anchor="middle"
+     id="text28">Peace Grade</text>
+  <!-- Right Panel - Science & Spirituality -->
+  <g
+     id="g40"
+     transform="translate(300,110)">
+    <!-- DNA Strand -->
+    <path
+       d="m 125,0 q 75,40 0,80 -75,40 0,80 75,40 0,80 -75,40 0,80"
+       stroke="#ff8c00"
+       stroke-width="3"
+       fill="none"
+       stroke-dasharray="5, 3"
+       id="path28">
+      <animate
+         attributeName="stroke-dashoffset"
+         values="0;20;0"
+         dur="4s"
+         repeatCount="indefinite" />
+    </path>
+    <path
+       d="m 125,0 q -75,40 0,80 75,40 0,80 -75,40 0,80 75,40 0,80"
+       stroke="#ff8c00"
+       stroke-width="3"
+       fill="none"
+       stroke-dasharray="5, 3"
+       id="path29">
+      <animate
+         attributeName="stroke-dashoffset"
+         values="0;-20;0"
+         dur="4s"
+         repeatCount="indefinite" />
+    </path>
+    <!-- DNA Rungs -->
+    <line
+       x1="75"
+       y1="20"
+       x2="175"
+       y2="20"
+       stroke="#ffa64d"
+       stroke-width="2"
+       id="line29" />
+    <line
+       x1="75"
+       y1="60"
+       x2="175"
+       y2="60"
+       stroke="#ffa64d"
+       stroke-width="2"
+       id="line30" />
+    <line
+       x1="75"
+       y1="100"
+       x2="175"
+       y2="100"
+       stroke="#ffa64d"
+       stroke-width="2"
+       id="line31" />
+    <line
+       x1="75"
+       y1="140"
+       x2="175"
+       y2="140"
+       stroke="#ffa64d"
+       stroke-width="2"
+       id="line32" />
+    <line
+       x1="75"
+       y1="180"
+       x2="175"
+       y2="180"
+       stroke="#ffa64d"
+       stroke-width="2"
+       id="line33" />
+    <line
+       x1="75"
+       y1="220"
+       x2="175"
+       y2="220"
+       stroke="#ffa64d"
+       stroke-width="2"
+       id="line34" />
+    <line
+       x1="75"
+       y1="260"
+       x2="175"
+       y2="260"
+       stroke="#ffa64d"
+       stroke-width="2"
+       id="line35" />
+    <line
+       x1="75"
+       y1="300"
+       x2="175"
+       y2="300"
+       stroke="#ffa64d"
+       stroke-width="2"
+       id="line36" />
+    <!-- Lotus Integration -->
+    <g
+       transform="translate(125,330)"
+       id="g39">
+      <!-- Lotus Petals -->
+      <path
+         d="M 0,0 Q -30,-30 0,-40 30,-30 0,0"
+         fill="#ffa64d"
+         opacity="0.7"
+         id="path36" />
+      <path
+         d="M 0,0 Q -40,-10 -40,20 -20,30 0,0"
+         fill="#ffa64d"
+         opacity="0.7"
+         id="path37" />
+      <path
+         d="M 0,0 Q 40,-10 40,20 20,30 0,0"
+         fill="#ffa64d"
+         opacity="0.7"
+         id="path38" />
+      <path
+         d="M 0,0 Q -20,30 0,50 20,30 0,0"
+         fill="#ffa64d"
+         opacity="0.7"
+         id="path39" />
+      <!-- Lotus Center -->
+      <circle
+         cx="0"
+         cy="0"
+         r="15"
+         fill="#ffd166"
+         id="circle39">
+        <animate
+           attributeName="r"
+           values="15;17;15"
+           dur="2s"
+           repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+  <g
+     transform="translate(425,510)"
+     opacity="0.6"
+     id="g46">
+    <circle
+       cx="-80"
+       cy="-30"
+       r="12"
+       fill="#ffa64d"
+       id="circle40" />
+    <circle
+       cx="80"
+       cy="-50"
+       r="10"
+       fill="#ffa64d"
+       id="circle41" />
+    <circle
+       cx="-50"
+       cy="10"
+       r="8"
+       fill="#ffa64d"
+       id="circle42" />
+    <circle
+       cx="60"
+       cy="20"
+       r="14"
+       fill="#ffa64d"
+       id="circle43" />
+    <line
+       x1="-80"
+       y1="-30"
+       x2="0"
+       y2="-70"
+       stroke="#ffa64d"
+       stroke-width="1.5"
+       id="line43" />
+    <line
+       x1="80"
+       y1="-50"
+       x2="0"
+       y2="-70"
+       stroke="#ffa64d"
+       stroke-width="1.5"
+       id="line44" />
+    <line
+       x1="-50"
+       y1="10"
+       x2="0"
+       y2="-70"
+       stroke="#ffa64d"
+       stroke-width="1.5"
+       id="line45" />
+    <line
+       x1="60"
+       y1="20"
+       x2="0"
+       y2="-70"
+       stroke="#ffa64d"
+       stroke-width="1.5"
+       id="line46" />
+  </g>
+  <g
+     transform="translate(350,490)"
+     id="g51">
+    <rect
+       x="0"
+       y="0"
+       width="40"
+       height="40"
+       fill="#ffffff"
+       stroke="#ff8c00"
+       stroke-width="1"
+       id="rect46" />
+    <rect
+       x="5"
+       y="5"
+       width="10"
+       height="10"
+       fill="#ff8c00"
+       id="rect47" />
+    <rect
+       x="25"
+       y="5"
+       width="10"
+       height="10"
+       fill="#ff8c00"
+       id="rect48" />
+    <rect
+       x="15"
+       y="15"
+       width="10"
+       height="10"
+       fill="#ff8c00"
+       id="rect49" />
+    <rect
+       x="5"
+       y="25"
+       width="10"
+       height="10"
+       fill="#ff8c00"
+       id="rect50" />
+    <rect
+       x="25"
+       y="25"
+       width="10"
+       height="10"
+       fill="#ff8c00"
+       id="rect51" />
+  </g>
+  <path
+     d="m 482.23807,490.0492 h 35.762 l 11.92067,9.9508 -11.92067,9.9508 h -35.762 z"
+     fill="#ffffff"
+     stroke="#ff8c00"
+     stroke-width="1.08913"
+     id="path51" />
+  <text
+     x="505"
+     y="504"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="10px"
+     fill="#ff8c00"
+     text-anchor="middle"
+     id="text51">$99.99</text>
+  <circle
+     cx="495"
+     cy="500"
+     r="3"
+     fill="#ffffff"
+     stroke="#ff8c00"
+     stroke-width="1"
+     id="circle51" />
+  <!-- Footer -->
+  <rect
+     x="50"
+     y="510"
+     width="500"
+     height="40"
+     rx="15"
+     ry="15"
+     fill="#FF8C00"
+     id="rect53" />
+  <text
+     x="300"
+     y="535"
+     font-family="sans-serif"
+     font-weight="bold"
+     font-size="16"
+     text-anchor="middle"
+     fill="white"
+     id="text53">ORANGE ESSENCE: RATIONAL SPIRITUALITY</text>
+</svg>

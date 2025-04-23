@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Background with subtle gradient -->
+  <defs>
+    <linearGradient id="voidGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#e2e8f0;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0" />
+    </radialGradient>
+    
+    <filter id="shimmer" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+      <feGaussianBlur stdDeviation="0.5" />
+    </filter>
+    
+    <filter id="dissolve" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise" />
+      <feComponentTransfer in="noise" result="modifiedNoise">
+        <feFuncA type="table" tableValues="0 0 0.2 0.2 0.5 0.8 1 1" />
+      </feComponentTransfer>
+      <feComposite operator="in" in="SourceGraphic" in2="modifiedNoise" />
+    </filter>
+    
+    <!-- Optical illusion pattern -->
+    <pattern id="illusionPattern" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="none" />
+      <circle cx="10" cy="10" r="8" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.3" />
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="500" height="500" fill="url(#voidGradient)" />
+  
+  <!-- Center circle dissolving at edges -->
+  <circle cx="250" cy="250" r="200" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2" filter="url(#shimmer)" />
+  <circle cx="250" cy="250" r="150" fill="url(#centerGlow)" filter="url(#shimmer)" />
+  
+  <!-- Optical illusion background in center -->
+  <circle cx="250" cy="250" r="180" fill="url(#illusionPattern)" opacity="0.3" />
+  
+  <!-- Dissolving forms -->
+  
+  <!-- 1. Laughing Sage (Top) - face that could also be mountains -->
+  <g transform="translate(250, 150)" filter="url(#dissolve)">
+    <!-- Face/mountain ambiguous shape -->
+    <path d="M-50,-30 Q0,-60 50,-30 Q60,0 50,30 Q0,60 -50,30 Q-60,0 -50,-30" fill="#94a3b8" fill-opacity="0.2" />
+    
+    <!-- Features that could be mountain peaks or facial features -->
+    <path d="M-20,-10 Q0,-20 20,-10" fill="none" stroke="#64748b" stroke-width="1" /> <!-- smile/ridge -->
+    <path d="M-30,0 Q-20,-5 -10,0" fill="none" stroke="#64748b" stroke-width="1" /> <!-- eye/outcrop -->
+    <path d="M10,0 Q20,-5 30,0" fill="none" stroke="#64748b" stroke-width="1" /> <!-- eye/outcrop -->
+    
+    <!-- Dissolving edges -->
+    <g opacity="0.5">
+      <path d="M-50,-30 Q-60,-40 -70,-35" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-dasharray="1,2" />
+      <path d="M50,-30 Q60,-40 70,-35" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-dasharray="1,2" />
+      <path d="M50,30 Q60,40 70,35" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-dasharray="1,2" />
+      <path d="M-50,30 Q-60,40 -70,35" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-dasharray="1,2" />
+    </g>
+  </g>
+  
+  <!-- 2. Crashing Wave (Right) -->
+  <g transform="translate(350, 250)" filter="url(#dissolve)">
+    <!-- Wave shape -->
+    <path d="M-30,-40 Q0,-50 30,-30 Q50,-10 40,20 Q30,40 0,30 Q-30,20 -30,-40" fill="#0ea5e9" fill-opacity="0.2" />
+    
+    <!-- Wave crest -->
+    <path d="M-20,-20 Q0,-40 20,-20 Q30,0 20,20" fill="none" stroke="#0ea5e9" stroke-width="1" />
+    
+    <!-- Foam/spray -->
+    <circle cx="15" cy="-25" r="3" fill="#e0f2fe" fill-opacity="0.5" />
+    <circle cx="5" cy="-30" r="2" fill="#e0f2fe" fill-opacity="0.5" />
+    <circle cx="25" cy="-15" r="2" fill="#e0f2fe" fill-opacity="0.5" />
+    
+    <!-- Dissolving into drops -->
+    <g opacity="0.5">
+      <circle cx="35" cy="-20" r="1" fill="#0ea5e9" />
+      <circle cx="40" cy="-10" r="1.5" fill="#0ea5e9" />
+      <circle cx="45" cy="0" r="1" fill="#0ea5e9" />
+      <circle cx="50" cy="10" r="0.5" fill="#0ea5e9" />
+    </g>
+  </g>
+  
+  <!-- 3. Empty Teacup (Bottom) -->
+  <g transform="translate(250, 350)" filter="url(#dissolve)">
+    <!-- Cup -->
+    <path d="M-30,-10 Q-30,20 0,30 Q30,20 30,-10" fill="none" stroke="#78716c" stroke-width="1" />
+    <path d="M-20,-10 L20,-10" stroke="#78716c" stroke-width="1" /> <!-- rim -->
+    
+    <!-- Handle -->
+    <path d="M30,-5 Q40,-5 40,10 Q40,20 30,20" fill="none" stroke="#78716c" stroke-width="1" />
+    
+    <!-- Empty space inside cup - slightly darker to show emptiness -->
+    <path d="M-20,-10 Q-20,15 0,25 Q20,15 20,-10" fill="#f8fafc" fill-opacity="0.3" stroke="none" />
+    
+    <!-- Steam/emptiness rising -->
+    <path d="M-5,-15 Q0,-25 5,-15" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.5" stroke-dasharray="1,2" />
+    <path d="M-10,-20 Q0,-35 10,-20" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.3" stroke-dasharray="1,3" />
+    
+    <!-- Dissolving edges -->
+    <g opacity="0.3">
+      <path d="M-30,-10 Q-35,-15 -40,-10" fill="none" stroke="#78716c" stroke-width="0.5" stroke-dasharray="1,1" />
+      <path d="M30,-10 Q35,-15 40,-10" fill="none" stroke="#78716c" stroke-width="0.5" stroke-dasharray="1,1" />
+    </g>
+  </g>
+  
+  <!-- 4. Scribbled-out Spiral (Left) -->
+  <g transform="translate(150, 250)" filter="url(#dissolve)">
+    <!-- Spiral base -->
+    <path d="M0,0 Q10,-20 20,-10 Q30,-30 10,-20 Q0,-40 -10,-20 Q-30,-30 -20,-10 Q-40,0 -20,10 Q-30,30 -10,20 Q0,40 10,20 Q30,30 20,10 Q40,0 0,0" 
+          fill="none" stroke="#64748b" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Crossed-out lines -->
+    <path d="M-40,-40 L40,40 M-40,40 L40,-40" stroke="#64748b" stroke-width="1" stroke-dasharray="5,3" />
+    <path d="M-30,-30 L30,30 M-30,30 L30,-30" stroke="#475569" stroke-width="2" stroke-dasharray="5,10" />
+    
+    <!-- Dissolving edges -->
+    <g opacity="0.4">
+      <path d="M-40,-40 Q-50,-50 -55,-45" stroke="#64748b" stroke-width="0.5" stroke-dasharray="1,2" />
+      <path d="M40,40 Q50,50 55,45" stroke="#64748b" stroke-width="0.5" stroke-dasharray="1,2" />
+      <path d="M-40,40 Q-50,50 -55,45" stroke="#64748b" stroke-width="0.5" stroke-dasharray="1,2" />
+      <path d="M40,-40 Q50,-50 55,-45" stroke="#64748b" stroke-width="0.5" stroke-dasharray="1,2" />
+    </g>
+  </g>
+  
+  <!-- Center point where all forms meet/blur -->
+  <circle cx="250" cy="250" r="40" fill="#f8fafc" fill-opacity="0.2" filter="url(#shimmer)" />
+  <path d="M220,250 L280,250 M250,220 L250,280" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.2" />
+  
+  <!-- Connecting flow lines between elements - very subtle -->
+  <path d="M250,150 Q200,200 150,250" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.3" stroke-dasharray="5,5" />
+  <path d="M150,250 Q200,300 250,350" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.3" stroke-dasharray="5,5" />
+  <path d="M250,350 Q300,300 350,250" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.3" stroke-dasharray="5,5" />
+  <path d="M350,250 Q300,200 250,150" fill="none" stroke="#94a3b8" stroke-width="0.5" stroke-opacity="0.3" stroke-dasharray="5,5" />
+  
+  <!-- Hidden 404 error in corner -->
+  <text x="15" y="485" font-family="monospace" font-size="6" fill="#cbd5e1" opacity="0.3">404: Duality Not Found</text>
+  
+  <!-- Title -->
+  <g transform="translate(250, 480)" filter="url(#shimmer)">
+    <text x="0" y="0" font-family="Arial" font-size="14" text-anchor="middle" fill="#64748b" font-weight="bold" opacity="0.8">NONDUAL WISDOM</text>
+  </g>
+</svg>

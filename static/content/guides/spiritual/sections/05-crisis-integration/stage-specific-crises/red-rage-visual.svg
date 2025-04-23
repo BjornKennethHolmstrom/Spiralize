@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Background with volcanic texture -->
+  <defs>
+    <linearGradient id="lavaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#450a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7f1d1d;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="eruption" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#ef4444;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:0.3" />
+    </radialGradient>
+    
+    <filter id="lavaGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 0.5 0 0 0  0 0 0.5 0 0  0 0 0 1 0" result="glow1" />
+      <feBlend in="SourceGraphic" in2="glow1" mode="normal" />
+    </filter>
+    
+    <filter id="smoke" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" />
+      <feGaussianBlur stdDeviation="2" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" intercept="0" />
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="500" height="500" fill="url(#lavaGradient)" />
+  
+  <!-- Volcano and lava flow -->
+  <path d="M100,400 L250,100 L400,400 Z" fill="#450a0a" />
+  <path d="M150,400 L250,150 L350,400 Z" fill="#7f1d1d" />
+  
+  <!-- Eruption -->
+  <ellipse cx="250" cy="150" rx="50" ry="20" fill="#b91c1c" />
+  <ellipse cx="250" cy="140" rx="40" ry="15" fill="#ef4444" />
+  
+  <!-- Lava flows -->
+  <path d="M250,150 Q270,200 280,250 Q300,300 300,350 Q290,380 250,400" fill="url(#eruption)" filter="url(#lavaGlow)" />
+  <path d="M250,150 Q220,220 230,270 Q210,310 200,350 Q210,380 250,400" fill="url(#eruption)" filter="url(#lavaGlow)" />
+  
+  <!-- Sacred Mandala receiving the lava flow -->
+  <g transform="translate(250, 350)">
+    <!-- Outer sacred geometry -->
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#fca5a5" stroke-width="1" />
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#fca5a5" stroke-width="1" />
+    
+    <!-- Sacred geometry pattern -->
+    <path d="M0,0 L0,-50 M0,0 L43.3,-25 M0,0 L43.3,25 M0,0 L0,50 M0,0 L-43.3,25 M0,0 L-43.3,-25" stroke="#fca5a5" stroke-width="0.5" />
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#fca5a5" stroke-width="1" />
+    
+    <!-- Six-pointed star -->
+    <path d="M0,-40 L10,-20 L30,-20 L15,0 L30,20 L10,20 L0,40 L-10,20 L-30,20 L-15,0 L-30,-20 L-10,-20 Z" fill="none" stroke="#fca5a5" stroke-width="1" />
+  </g>
+  
+  <!-- Smoke plumes with hidden 404 message -->
+  <g filter="url(#smoke)">
+    <path d="M250,130 Q200,80 150,100 Q100,50 180,20" fill="none" stroke="#e5e7eb" stroke-width="3" stroke-opacity="0.2" />
+    <path d="M250,130 Q300,60 350,90 Q400,40 320,15" fill="none" stroke="#e5e7eb" stroke-width="3" stroke-opacity="0.2" />
+    <!-- Hidden 404 error in smoke -->
+    <text x="320" y="45" font-family="monospace" font-size="8" fill="#f8fafc" opacity="0.2">404:RAGE_NOT_FOUND</text>
+  </g>
+  
+  <!-- 1. Clenched Fist holding a Rose -->
+  <g transform="translate(180, 250)">
+    <circle cx="0" cy="0" r="40" fill="#991b1b" fill-opacity="0.5" />
+    
+    <!-- Fist -->
+    <path d="M-10,-5 L-15,-10 L-15,5 L-10,10 L-5,15 L0,15 L5,15 L10,10 L15,5 L15,-10 L10,-15 L0,-15 L-10,-5" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1" />
+    <path d="M-10,0 L-5,0 M0,0 L5,0 M10,0 L15,0" stroke="#fca5a5" stroke-width="0.5" /> <!-- knuckle lines -->
+    
+    <!-- Rose -->
+    <path d="M0,-15 L0,-30" stroke="#22c55e" stroke-width="1.5" /> <!-- stem -->
+    <path d="M-5,-30 Q0,-40 5,-30 Q10,-35 5,-25 Q0,-30 -5,-25 Q-10,-35 -5,-30" fill="#ef4444" stroke="#991b1b" stroke-width="0.5" /> <!-- flower -->
+    <path d="M-2,-33 L3,-28" stroke="#22c55e" stroke-width="0.5" /> <!-- leaf -->
+  </g>
+  
+  <!-- 2. Broken Chains -->
+  <g transform="translate(320, 250)">
+    <circle cx="0" cy="0" r="40" fill="#991b1b" fill-opacity="0.5" />
+    
+    <!-- Chains -->
+    <path d="M-30,0 L-20,0" stroke="#d6d3d1" stroke-width="3" />
+    <path d="M-15,0 L-10,0" stroke="#d6d3d1" stroke-width="3" />
+    <ellipse cx="-5" cy="0" rx="5" ry="7" fill="none" stroke="#d6d3d1" stroke-width="3" />
+    <ellipse cx="5" cy="0" rx="5" ry="7" fill="none" stroke="#d6d3d1" stroke-width="3" />
+    <path d="M10,0 L15,0" stroke="#d6d3d1" stroke-width="3" />
+    <path d="M20,0 L30,0" stroke="#d6d3d1" stroke-width="3" />
+    
+    <!-- Break in chain -->
+    <path d="M-20,0 Q-18,-5 -15,0 M-10,0 Q-12,5 -15,0" stroke="#f87171" stroke-width="2" />
+    <path d="M15,0 Q17,-5 20,0 M25,0 Q23,5 20,0" stroke="#f87171" stroke-width="2" />
+    
+    <!-- Breaking energy -->
+    <path d="M-17.5,0 L-17.5,-5 L-15,-3 L-12.5,-5 L-12.5,0" fill="none" stroke="#f87171" stroke-width="0.5" />
+    <path d="M17.5,0 L17.5,-5 L20,-3 L22.5,-5 L22.5,0" fill="none" stroke="#f87171" stroke-width="0.5" />
+  </g>
+  
+  <!-- 3. Warrior's Tear - Glowing ember -->
+  <g transform="translate(250, 220)">
+    <circle cx="0" cy="0" r="30" fill="#991b1b" fill-opacity="0.5" />
+    
+    <!-- Tear shape -->
+    <path d="M0,-10 Q-10,10 0,20 Q10,10 0,-10" fill="#fb923c" stroke="#991b1b" stroke-width="0.5" filter="url(#lavaGlow)" />
+    
+    <!-- Interior glow -->
+    <path d="M0,-5 Q-5,5 0,10 Q5,5 0,-5" fill="#fdba74" />
+    <path d="M0,-2 Q-2,2 0,5 Q2,2 0,-2" fill="#fef3c7" />
+    
+    <!-- Flash lines -->
+    <path d="M0,-15 L0,-20 M5,-5 L10,-10 M10,5 L15,5 M5,15 L5,20 M-5,-5 L-10,-10 M-10,5 L-15,5 M-5,15 L-5,20" stroke="#fdba74" stroke-width="0.5" stroke-opacity="0.7" />
+  </g>
+  
+  <!-- Title -->
+  <g transform="translate(250, 470)">
+    <text x="0" y="0" font-family="Arial" font-size="14" text-anchor="middle" fill="#fef2f2" font-weight="bold">RED'S RAGE CRISIS</text>
+  </g>
+</svg>

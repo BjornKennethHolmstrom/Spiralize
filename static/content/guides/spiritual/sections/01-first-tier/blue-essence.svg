@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions -->
+  <defs>
+    <radialGradient id="backgroundGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#000066" />
+      <stop offset="100%" stop-color="#000033" />
+    </radialGradient>
+    
+    <linearGradient id="glassGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3366CC" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0000CC" stop-opacity="0.7" />
+    </linearGradient>
+    
+    <linearGradient id="glassGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0000CC" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#4D80E6" stop-opacity="0.7" />
+    </linearGradient>
+    
+    <linearGradient id="glassGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4D80E6" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#3366CC" stop-opacity="0.7" />
+    </linearGradient>
+    
+    <linearGradient id="glassGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0033CC" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#1A1AFF" stop-opacity="0.7" />
+    </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#backgroundGradient)" />
+  
+  <!-- Ornate Border -->
+  <rect x="50" y="50" width="500" height="500" fill="none" stroke="#4D80E6" stroke-width="3" stroke-opacity="0.5" />
+  <rect x="60" y="60" width="480" height="480" fill="none" stroke="#4D80E6" stroke-width="1" stroke-opacity="0.3" />
+  
+  <!-- Cathedral Architecture -->
+  <path d="M150,100 L150,500 L450,500 L450,100 Z" fill="none" stroke="#4D80E6" stroke-width="5" />
+  
+  <!-- Gothic Arch -->
+  <path d="M200,150 L200,350 Q300,250 400,350 L400,150 Z" fill="none" stroke="#4D80E6" stroke-width="3" />
+  
+  <!-- Stained Glass Window -->
+  <g filter="url(#glow)">
+    <!-- Main Window Divisions -->
+    <path d="M200,150 L200,350 Q300,250 400,350 L400,150 Z" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    <path d="M300,150 L300,300" stroke="#FFFFFF" stroke-width="2" />
+    <path d="M250,150 L250,325 Q300,275 350,325 L350,150" stroke="#FFFFFF" stroke-width="1" />
+    
+    <!-- Colored Glass Sections -->
+    <path d="M200,150 L250,150 L250,325 Q275,300 300,300 L300,150 Z" fill="url(#glassGradient1)" />
+    <path d="M300,150 L300,300 Q325,275 350,325 L350,150 Z" fill="url(#glassGradient2)" />
+    <path d="M250,150 L250,250 L300,150 Z" fill="url(#glassGradient3)" />
+    <path d="M300,150 L350,150 L300,200 Z" fill="url(#glassGradient4)" />
+    
+    <!-- Rose Window Element -->
+    <circle cx="300" cy="220" r="30" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+    <circle cx="300" cy="220" r="20" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M300,190 L300,250 M270,220 L330,220" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M279,199 L321,241 M279,241 L321,199" stroke="#FFFFFF" stroke-width="1" />
+    <circle cx="300" cy="220" r="10" fill="#4D80E6" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Sacred Text -->
+  <g transform="translate(300, 420)">
+    <rect x="-60" y="-80" width="120" height="160" fill="#000066" stroke="#B3C6FF" stroke-width="1" />
+    <rect x="-55" y="-75" width="110" height="150" fill="none" stroke="#B3C6FF" stroke-width="0.5" />
+    
+    <!-- Book Text Lines -->
+    <g stroke="#B3C6FF" stroke-width="0.7">
+      <path d="M-45,-55 L45,-55" />
+      <path d="M-45,-45 L45,-45" />
+      <path d="M-45,-35 L45,-35" />
+      <path d="M-45,-25 L25,-25" />
+      <path d="M-45,-15 L45,-15" />
+      <path d="M-45,-5 L35,-5" />
+      <path d="M-45,5 L45,5" />
+      <path d="M-45,15 L40,15" />
+      <path d="M-45,25 L45,25" />
+      <path d="M-45,35 L30,35" />
+      <path d="M-45,45 L45,45" />
+      <path d="M-45,55 L35,55" />
+    </g>
+    
+    <!-- Book Binding -->
+    <rect x="-60" y="-80" width="10" height="160" fill="#000044" stroke="#B3C6FF" stroke-width="0.5" />
+    <line x1="0" y1="-80" x2="0" y2="80" stroke="#B3C6FF" stroke-width="0.5" stroke-dasharray="2,2" />
+  </g>
+  
+  <!-- Chalice -->
+  <g transform="translate(300, 300)" filter="url(#glow)">
+    <!-- Chalice Cup -->
+    <path d="M-30,-20 C-40,10 40,10 30,-20" fill="#1A1AFF" opacity="0.7" stroke="#B3C6FF" stroke-width="1" />
+    
+    <!-- Chalice Stem -->
+    <rect x="-5" y="-20" width="10" height="40" fill="#1A1AFF" opacity="0.8" stroke="#B3C6FF" stroke-width="0.5" />
+    
+    <!-- Chalice Base -->
+    <path d="M-25,20 L25,20 L15,30 L-15,30 Z" fill="#1A1AFF" opacity="0.9" stroke="#B3C6FF" stroke-width="1" />
+    
+    <!-- Subtle Light -->
+    <circle cx="0" cy="-10" r="15" fill="#FFFFFF" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.2;0.3" dur="3s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Pillars -->
+  <g>
+    <rect x="150" y="100" width="20" height="400" fill="#000044" stroke="#4D80E6" stroke-width="1" />
+    <rect x="430" y="100" width="20" height="400" fill="#000044" stroke="#4D80E6" stroke-width="1" />
+    
+    <!-- Pillar Details -->
+    <rect x="150" y="100" width="20" height="20" fill="none" stroke="#4D80E6" stroke-width="1" />
+    <rect x="150" y="480" width="20" height="20" fill="none" stroke="#4D80E6" stroke-width="1" />
+    <rect x="430" y="100" width="20" height="20" fill="none" stroke="#4D80E6" stroke-width="1" />
+    <rect x="430" y="480" width="20" height="20" fill="none" stroke="#4D80E6" stroke-width="1" />
+  </g>
+  
+  <!-- Sacred Geometry Overlay -->
+  <g stroke="#FFFFFF" stroke-width="0.3" opacity="0.2">
+    <circle cx="300" cy="300" r="200" fill="none" />
+    <circle cx="300" cy="300" r="150" fill="none" />
+    <circle cx="300" cy="300" r="100" fill="none" />
+    <line x1="100" y1="300" x2="500" y2="300" />
+    <line x1="300" y1="100" x2="300" y2="500" />
+  </g>
+  
+  <!-- Title -->
+  <text x="300" y="540" font-family="serif" font-size="24" text-anchor="middle" fill="#4D80E6" filter="url(#glow)">BLUE ESSENCE</text>
+  <text x="300" y="570" font-family="serif" font-size="16" text-anchor="middle" fill="#4D80E6">SACRED ORDER</text>
+</svg>

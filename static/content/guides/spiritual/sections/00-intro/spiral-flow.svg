@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="500"
+   viewBox="0 0 800 500"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="Updated Spiral Snapshot Infographic.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.99702056"
+     inkscape:cx="272.31133"
+     inkscape:cy="312.93236"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <!-- Ocean Background -->
+  <rect
+     width="800"
+     height="499.70117"
+     fill="#e6f7ff"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:0.912598" />
+  <!-- Mystical Wave -->
+  <path
+     d="m 0,350 c 100,-50 150,50 250,-100 100,-150 200,50 300,-50 100,-100 150,100 250,0"
+     fill="none"
+     stroke="#333333"
+     stroke-width="4"
+     stroke-linecap="round"
+     id="path1" />
+  <!-- Stage Drops (From Beige's Spark to Clear's Ocean) -->
+  <!-- Beige (Spark) -->
+  <g
+     transform="translate(42.907801,283.33333)"
+     id="g3">
+    <circle
+       cx="0"
+       cy="0"
+       r="8"
+       fill="#e6d5b8"
+       stroke="#333333"
+       stroke-width="1"
+       id="circle1" />
+    <path
+       d="M -5,-5 5,5 M 5,-5 -5,5"
+       stroke="#ff9900"
+       stroke-width="2"
+       id="path2" />
+    <text
+       x="0"
+       y="25"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text2">Beige</text>
+    <text
+       x="0"
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text3">Primal Spark</text>
+  </g>
+  <!-- Purple (Ripple) -->
+  <g
+     transform="translate(144.32624,364.539)"
+     id="g5">
+    <circle
+       cx="0"
+       cy="0"
+       r="10"
+       fill="#b399d4"
+       opacity="0.7"
+       id="circle3" />
+    <text
+       x="0"
+       y="25"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text4">Purple</text>
+    <text
+       x="0"
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text5">Sacred Ripples</text>
+  </g>
+  <!-- Red (Fire) -->
+  <g
+     transform="translate(171.82979,247.00709)"
+     id="g7">
+    <path
+       d="M -10,5 0,-15 10,5 Z"
+       fill="#ff6b6b"
+       id="path5" />
+    <text
+       x="0"
+       y="25"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text6">Red</text>
+    <text
+       x="0"
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text7">Ecstatic Fire</text>
+  </g>
+  <!-- Blue (Chalice) -->
+  <g
+     transform="translate(289.71631,248.93617)"
+     id="g9">
+    <path
+       d="M -8,5 H 8 L 5,15 H -5 Z"
+       fill="#4d80e6"
+       id="path7" />
+    <text
+       x="0"
+       y="25"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text8">Blue</text>
+    <text
+       x="0"
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text9">Holy Chalice</text>
+  </g>
+  <!-- Orange (Star) -->
+  <g
+     transform="translate(366.04255,141.37589)"
+     id="g11">
+    <path
+       d="M 0,-10 3,3 h 7 l -5,7 2,10 -7,-5 -7,5 2,-10 -5,-7 h 7 z"
+       fill="#ffa64d"
+       id="path9" />
+    <text
+       x="0"
+       y="25"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text10">Orange</text>
+    <text
+       x="0"
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text11">Cosmic Star</text>
+  </g>
+  <!-- Green (Lotus) -->
+  <g
+     transform="translate(437.50355,249.07801)"
+     id="g13">
+    <path
+       d="M 0,-10 Q 5,-5 5,0 5,5 0,10 -5,5 -5,0 -5,-5 0,-10"
+       fill="#66cc99"
+       id="path11" />
+    <text
+       x="0"
+       y="25"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text12">Green</text>
+    <text
+       x="0"
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text13">Blossoming Lotus</text>
+  </g>
+  <!-- Yellow - Systemic (Place along wave) -->
+  <g
+     transform="translate(515.60284,139.3617)"
+     id="g15">
+    <!-- Symbol: Spiral (🌀) -->
+    <path
+       d="M 0,0 Q 10,-10 20,0 30,10 20,20 10,30 0,20 -10,10 0,0"
+       fill="none"
+       stroke="#ffd166"
+       stroke-width="3"
+       id="path3" />
+    <!-- Text -->
+    <text
+       x="0"
+       y="35"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text14">Yellow</text>
+    <text
+       x="0"
+       y="50"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text15">Spiral Mind</text>
+  </g>
+  <!-- Turquoise (Mandala) -->
+  <g
+     transform="translate(609.92908,211.1773)"
+     id="g17">
+    <circle
+       cx="0"
+       cy="0"
+       r="10"
+       fill="none"
+       stroke="#7ce0d6"
+       stroke-width="2"
+       id="circle13" />
+    <circle
+       cx="0"
+       cy="0"
+       r="6"
+       fill="none"
+       stroke="#7ce0d6"
+       stroke-width="2"
+       id="circle14" />
+    <text
+       x="0"
+       y="25"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text16">Turquoise</text>
+    <text
+       x="0"
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text17">Flowing Mandala</text>
+  </g>
+  <!-- Coral - Evolutionary Play (Place along wave) -->
+  <g
+     transform="translate(716.31206,138.15603)"
+     id="g19">
+    <!-- Symbol: Phoenix (🦅) -->
+    <path
+       d="M -15,0 0,-20 15,0 M 0,-20 v 30"
+       stroke="#ff8fa3"
+       stroke-width="2"
+       fill="none"
+       id="path17" />
+    <path
+       d="M -5,10 Q 0,5 5,10"
+       stroke="#ff8fa3"
+       stroke-width="2"
+       id="path18" />
+    <!-- Text -->
+    <text
+       x="0"
+       y="35"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text18">Coral</text>
+    <text
+       x="0"
+       y="50"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text19">Phoenix Play</text>
+  </g>
+  <!-- Clear (Ocean) -->
+  <g
+     transform="translate(764.31206,221.95745)"
+     id="g21">
+    <rect
+       x="-15"
+       y="-15"
+       width="30"
+       height="30"
+       fill="none"
+       stroke="#333333"
+       stroke-width="1"
+       stroke-dasharray="3, 3"
+       id="rect15" />
+    <text
+       x="0"
+       y="25"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text20">Clear</text>
+    <text
+       x="0"
+       y="40"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#666666"
+       id="text21">The Ocean</text>
+  </g>
+  <!-- Title & Legend -->
+  <text
+     x="400"
+     y="50"
+     font-size="24px"
+     text-anchor="middle"
+     font-weight="bold"
+     fill="#333333"
+     id="text22">Mystical Flow</text>
+  <text
+     x="400"
+     y="80"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text23">From Spark to Ocean: Spiritual Experiences Across Stages</text>
+  <!-- Flow Arrow -->
+  <text
+     x="542"
+     y="438"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text24">“The wave dissolves into the sea—yet was never separate.”</text>
+</svg>
