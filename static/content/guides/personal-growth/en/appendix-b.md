@@ -25,8 +25,8 @@ Just follow the **resonance**.
 | Burned out, overperforming, success feels hollow                 | 🟠 **Chapter 8 (Orange)** – *Deconstructing Values* Practice |
 | Overwhelmed by feelings, over-giving, boundaryless               | 💚 **Chapter 9 (Green)** – *Restoring Boundaries* Practice |
 | Holding too much complexity, seeking clarity or balance          | 🟡 **Chapter 10 (Yellow)** – *Mapping Your Inner Ecology* |
-| Spacious but aimless, longing for depth without direction        | 🟦 **Chapter 11 (Turquoise)** – *Embodying Presence* Practice |
-| On the edge of something big but formless                        | 🟣 **Chapter 12 (Coral)** – *Honoring the Unnamed* Practice |
+| Spacious but aimless, longing for depth without direction        | 🩵 **Chapter 11 (Turquoise)** – *Embodying Presence* Practice |
+| On the edge of something big but formless                        | 🪸 **Chapter 12 (Coral)** – *Honoring the Unnamed* Practice |
 | Grieving something intangible or identity-level                  | 🌒 **Chapter 14** – *Spiral-Aware Grief* Practice |
 | Caught between old and new selves, feeling fragmented            | 🌀 **Chapter 15** – *Dialoguing Across Selves* Practice |
 | Unsure where you're going but feeling gentle motion within       | 🫧 **Chapter 16** – *Spiral Dance Visualization* |

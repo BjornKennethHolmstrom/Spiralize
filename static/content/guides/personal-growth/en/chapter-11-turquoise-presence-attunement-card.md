@@ -1,4 +1,4 @@
-# 🟦 Turquoise Presence Attunement Card  
+# 🩵 Turquoise Presence Attunement Card  
 ### *Return to the Field. Let meaning arrive.*
 
 > _“Presence is not something you create.  
@@ -69,5 +69,5 @@ You just need to stay long enough to **hear it unfold**.
 > When I return to stillness,  
 > the web returns to me.
 
-🟦🕸️🌀
+🩵🕸️🌀
 

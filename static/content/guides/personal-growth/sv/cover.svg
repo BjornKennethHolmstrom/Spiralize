@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="850"
+   height="1100"
+   viewBox="0 0 850 1100"
+   version="1.1"
+   id="svg25"
+   sodipodi:docname="cover.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview25"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.76909091"
+     inkscape:cx="424.52719"
+     inkscape:cy="550"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg25" />
+  <!-- Background gradient -->
+  <defs
+     id="defs4">
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#f8f4ff"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#e9e1f9"
+         id="stop2" />
+    </linearGradient>
+    <!-- Spiral gradient -->
+    <linearGradient
+       id="spiralGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#9B6B9E"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#4A72B2"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="850"
+     height="1100"
+     fill="url(#bgGradient)"
+     id="rect4" />
+  <!-- Decorative elements -->
+  <path
+     d="M0,1100 C200,1000 650,1050 850,950 V1100 H0Z"
+     fill="#7c3aed"
+     opacity="0.1"
+     id="path4" />
+  <path
+     d="M850,0 C650,100 200,50 0,150 V0 H850Z"
+     fill="#7c3aed"
+     opacity="0.1"
+     id="path5" />
+  <!-- Spiral decorative lines -->
+  <g
+     transform="translate(425, 450)"
+     id="g10">
+    <path
+       d="M-300,0 A300,300 0 0,1 300,0"
+       stroke="#E25A53"
+       stroke-width="3"
+       fill="none"
+       opacity="0.3"
+       id="path6" />
+    <path
+       d="M-250,50 A250,250 0 0,1 250,50"
+       stroke="#FF7F27"
+       stroke-width="3"
+       fill="none"
+       opacity="0.3"
+       id="path7" />
+    <path
+       d="M-200,100 A200,200 0 0,1 200,100"
+       stroke="#7AB55C"
+       stroke-width="3"
+       fill="none"
+       opacity="0.3"
+       id="path8" />
+    <path
+       d="M-150,150 A150,150 0 0,1 150,150"
+       stroke="#FFD700"
+       stroke-width="3"
+       fill="none"
+       opacity="0.3"
+       id="path9" />
+    <path
+       d="M-100,200 A100,100 0 0,1 100,200"
+       stroke="#40E0D0"
+       stroke-width="3"
+       fill="none"
+       opacity="0.3"
+       id="path10" />
+  </g>
+  <!-- Logo -->
+  <g
+     transform="translate(425, 300) scale(2.5)"
+     id="g18">
+    <path
+       d="m 39.820699,71.916326 q 30,0 30,-30 0,-30 -30,-30 -29.9999995,0 -29.9999995,30"
+       fill="none"
+       stroke="#ff6f61"
+       stroke-width="8"
+       stroke-linecap="round"
+       id="path11" />
+    <path
+       d="m 9.8206995,41.916326 q 0,30 29.9999995,30"
+       fill="none"
+       stroke="#40e0d0"
+       stroke-width="8"
+       stroke-linecap="round"
+       id="path12" />
+    <path
+       d="m 39.820699,71.916326 q 15,0 15,-15 0,-15 -15,-15 -15,0 -15,15"
+       fill="none"
+       stroke="#ffd700"
+       stroke-width="8"
+       stroke-linecap="round"
+       id="path13" />
+    <path
+       d="m 24.820699,56.916326 q 0,15 15,15"
+       fill="none"
+       stroke="#7ab55c"
+       stroke-width="8"
+       stroke-linecap="round"
+       id="path14" />
+    <path
+       d="m 39.820699,71.916326 q 8,0 8,-8 0,-8 -8,-8 -8,0 -8,8"
+       fill="none"
+       stroke="#ff7f27"
+       stroke-width="8"
+       stroke-linecap="round"
+       id="path15" />
+    <path
+       d="m 31.820699,63.916326 q 0,8 8,8"
+       fill="none"
+       stroke="#4a72b2"
+       stroke-width="8"
+       stroke-linecap="round"
+       id="path16" />
+    <path
+       d="m 39.820699,71.916326 q 4,0 4,-4 0,-4 -4,-4 -4,0 -4,4"
+       fill="none"
+       stroke="#e25a53"
+       stroke-width="8"
+       stroke-linecap="round"
+       id="path17" />
+    <path
+       d="m 35.820699,67.916326 q 0,4 4,4"
+       fill="none"
+       stroke="#9b6b9e"
+       stroke-width="8"
+       stroke-linecap="round"
+       id="path18" />
+    <circle
+       cx="39.820698"
+       cy="71.916328"
+       r="4"
+       fill="#e5d0ba"
+       id="circle18" />
+  </g>
+  <!-- Title and subtitle -->
+  <text
+     x="425"
+     y="550"
+     font-family="Arial, sans-serif"
+     font-size="48px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#614685"
+     id="text18">Spiral för Personlig Tillväxt</text>
+  <text
+     x="425"
+     y="610"
+     font-family="Arial, sans-serif"
+     font-size="48px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#614685"
+     id="text19">&amp; Livsövergångar</text>
+  <text
+     x="425"
+     y="670"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#614685"
+     opacity="0.9"
+     id="text20"
+     style="white-space:pre;inline-size:495.57"
+     xml:space="preserve"><tspan
+       x="425"
+       y="670"
+       id="tspan4">En Självupptäcktsguide Genom Stadierna av<tspan
+   y="670"
+   id="tspan5">  </tspan></tspan><tspan
+       x="425"
+       y="700.00002"
+       id="tspan6">Mänsklig Utveckling</tspan></text>
+  <text
+     x="425"
+     y="705"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#614685"
+     opacity="0.9"
+     id="text21" />
+  <!-- Bottom decorative line -->
+  <rect
+     x="275"
+     y="780"
+     width="300"
+     height="3"
+     fill="url(#spiralGradient)"
+     id="rect21" />
+  <!-- Author section -->
+  <g
+     transform="translate(425, 830)"
+     id="g24">
+    <text
+       x="0"
+       y="0"
+       font-family="Arial, sans-serif"
+       font-size="24px"
+       font-weight="normal"
+       text-anchor="middle"
+       fill="#614685"
+       id="text22">av</text>
+    <text
+       x="0"
+       y="40"
+       font-family="Arial, sans-serif"
+       font-size="28"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#614685"
+       id="text23">
+      Björn Kenneth Holmström
+    </text>
+    <text
+       x="0"
+       y="80"
+       font-family="Arial, sans-serif"
+       font-size="20px"
+       font-weight="normal"
+       text-anchor="middle"
+       fill="#614685"
+       id="text24">med Claude och ChatGPT</text>
+  </g>
+  <!-- Website -->
+  <text
+     x="425"
+     y="950"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="normal"
+     text-anchor="middle"
+     fill="#614685"
+     id="text25">
+    Spiralize.org
+  </text>
+</svg>

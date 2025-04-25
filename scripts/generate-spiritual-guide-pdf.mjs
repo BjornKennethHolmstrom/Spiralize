@@ -360,7 +360,8 @@ async function generateContentPdf() {
       pdf_options: {
         format: 'A4',
         margin: { top: '2cm', bottom: '2cm', left: '2cm', right: '2cm' },
-        printBackground: true
+        printBackground: true,
+        timeout: 240000
       },
       stylesheet_paths: [path.join(__dirname, 'pdf-styles.css')],
       marked_options: {

@@ -1,4 +1,4 @@
-# 🟦 Chapter 11  
+# 🩵 Chapter 11  
 ## **Turquoise – The Living Web**  
 *Where all becomes pattern, breath, and belonging beyond form.*
 

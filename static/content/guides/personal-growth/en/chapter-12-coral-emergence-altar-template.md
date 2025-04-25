@@ -1,4 +1,4 @@
-# 🟣 Coral Emergence Altar Template  
+# 🪸 Coral Emergence Altar Template  
 ### *A place to hold what has not yet arrived*
 
 > _“You don’t need to name it. You just need to make space for it.”_
@@ -107,5 +107,5 @@ When visiting your altar, you may say:
 > find a place to rest  
 > before it becomes real.
 
-🟣🌀
+🪸🌀
 

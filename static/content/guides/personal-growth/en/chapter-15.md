@@ -41,7 +41,7 @@ You might be:
 - 💚 Green in relationships  
 - 🔵 Blue in your morning routine  
 - 🔴 Red when you feel disrespected  
-- 🟦 Turquoise in your creative flow  
+- 🩵 Turquoise in your creative flow  
 - 🟠 Orange in your leadership
 
 This is **Spiral-fluidity**.  

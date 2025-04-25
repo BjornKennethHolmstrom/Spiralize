@@ -28,8 +28,8 @@
 | 🟠 **Orange**    | Personal success, independence, and strategic self-mastery.          |
 | 💚 **Green**     | Empathy, inclusivity, and the pursuit of authentic connection.       |
 | 🟡 **Yellow**    | Systems thinking, multi-perspectival awareness, and integration.     |
-| 🟦 **Turquoise** | Symbolic coherence, sacred presence, and planetary interbeing.       |
-| 🟣 **Coral**     | Emergence, liminal vision, and transformation beyond the known.      |
+| 🩵 **Turquoise** | Symbolic coherence, sacred presence, and planetary interbeing.       |
+| 🪸 **Coral**     | Emergence, liminal vision, and transformation beyond the known.      |
 | 🫧 **UV/Indigo/Clear** | Post-symbolic transparency, mystic devotion, or subtle dissolution. |
 
 ---

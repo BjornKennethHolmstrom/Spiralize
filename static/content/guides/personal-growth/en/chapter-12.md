@@ -1,4 +1,4 @@
-# 🟣 Chapter 12  
+# 🪸 Chapter 12  
 ## **Coral – The Edge of Emergence**  
 *Where integration erupts as insight — and you begin to act from the unknown.*
 
