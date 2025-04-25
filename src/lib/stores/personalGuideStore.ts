@@ -579,7 +579,7 @@ const guideTranslations = {
     subtitle: "En Självupptäcktsguide Genom Stadierna av Mänsklig Utveckling",
     introduction: "Denna guide hjälper dig att navigera livsövergångar, inre förändringar och utvecklingströsklar med hjälp av Spiral Dynamics-ramverket — från Beige till Korall, med glimtar bortom.",
     downloadPrompt: "Ladda ner hela guiden som PDF:",
-    downloadButton: "Ladda ner PDF (Engelska)",
+    downloadButton: "Ladda ner PDF (Svenska)",
     tableOfContentsTitle: "Innehållsförteckning",
     sectionsTitle: {
       preface: "Förord",

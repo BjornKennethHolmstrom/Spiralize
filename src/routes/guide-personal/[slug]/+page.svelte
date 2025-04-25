@@ -133,22 +133,50 @@
         return;
       }
 
-      // Try multiple possible file locations
-      const pathsToTry = [
-        `${base}/content/guides/personal-growth/${itemSlug}.md`,
-        `${base}/content/guides/personal-growth/resources/${itemSlug}.md`,
-        `/content/guides/personal-growth/${itemSlug}.md`,
-        `/content/guides/personal-growth/resources/${itemSlug}.md`
+      // Try language-specific paths first, then fallback to English
+      let pathsToTry = [];
+      
+      // First try the user's preferred language
+      pathsToTry = [
+        `${base}/content/guides/personal-growth/${currentLanguage}/${itemSlug}.md`,
+        `${base}/content/guides/personal-growth/${currentLanguage}/resources/${itemSlug}.md`,
+        `/content/guides/personal-growth/${currentLanguage}/${itemSlug}.md`,
+        `/content/guides/personal-growth/${currentLanguage}/resources/${itemSlug}.md`,
       ];
+      
+      // Then try English as fallback if we're not already looking for English
+      if (currentLanguage !== 'en') {
+        pathsToTry = pathsToTry.concat([
+          `${base}/content/guides/personal-growth/en/${itemSlug}.md`,
+          `${base}/content/guides/personal-growth/en/resources/${itemSlug}.md`,
+          `/content/guides/personal-growth/en/${itemSlug}.md`,
+          `/content/guides/personal-growth/en/resources/${itemSlug}.md`,
+        ]);
+      }
 
       let contentLoaded = false;
+      let isEnglishFallback = false;
       
       for (const path of pathsToTry) {
         console.log('Attempting to load from:', path);
         try {
           const response = await fetch(path);
           if (response.ok) {
-            content = marked(await response.text());
+            let markdown = await response.text();
+            
+            // If we're using English content as a fallback for Swedish users, add a notice
+            if (currentLanguage === 'sv' && path.includes('/en/')) {
+              isEnglishFallback = true;
+              const englishNotice = `
+  > *Obs: Denna sida är för närvarande endast tillgänglig på engelska. Vi arbetar med att översätta allt innehåll till svenska.*
+
+  ---
+
+  `;
+              markdown = englishNotice + markdown;
+            }
+            
+            content = marked(markdown);
             contentLoaded = true;
             console.log('Successfully loaded from:', path);
             break;

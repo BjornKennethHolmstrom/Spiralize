@@ -1,4 +1,4 @@
-// scripts/generate-guide-pdf.mjs
+// scripts/generate-personal-guide-pdf.mjs
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -7,21 +7,48 @@ import { PDFDocument } from 'pdf-lib';
 import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const contentDir = path.join(__dirname, '../static/content/guides/personal-growth');
+const baseContentDir = path.join(__dirname, '../static/content/guides/personal-growth');
 const imagesDir = path.join(__dirname, '../static/content/guides/personal-growth/images');
-const outputPath = path.join(__dirname, '../static/spiral-personal-growth-guide.pdf');
-const coverSvgPath = path.join(__dirname, '../static/content/guides/personal-growth/cover.svg');
-const tempCoverPath = path.join(__dirname, '../static/temp-cover.pdf');
-const tempContentPath = path.join(__dirname, '../static/temp-content.pdf');
 const tempImagesDir = path.join(__dirname, '../static/temp-images');
+
+// Language-specific configurations
+const LANGUAGES = ['en', 'sv'];
+const TITLES = {
+  en: "Spiral-Aware Personal Growth Guide",
+  sv: "Spiralmedveten Guide för Personlig Utveckling"
+};
+const TOC_TITLES = {
+  en: "Table of Contents",
+  sv: "Innehållsförteckning"
+};
 
 // Create temp directory for image processing if it doesn't exist
 if (!fs.existsSync(tempImagesDir)) {
   fs.mkdirSync(tempImagesDir, { recursive: true });
 }
 
-// Generate PDF cover from SVG
-async function generateCoverPdf() {
+// Generate PDF cover from SVG for a specific language
+async function generateCoverPdf(language) {
+  const tempCoverPath = path.join(__dirname, `../static/temp-cover-${language}.pdf`);
+  
+  // First try to find language-specific cover
+  let coverSvgPath = path.join(baseContentDir, language, 'cover.svg');
+  
+  // If language-specific cover doesn't exist, fall back to generic cover
+  if (!fs.existsSync(coverSvgPath)) {
+    coverSvgPath = path.join(baseContentDir, 'cover.svg');
+    
+    // If even the generic cover doesn't exist, log an error and return null
+    if (!fs.existsSync(coverSvgPath)) {
+      console.error(`No cover SVG found for ${language}`);
+      return null;
+    }
+    
+    console.log(`Using generic cover for ${language}`);
+  } else {
+    console.log(`Using language-specific cover for ${language}`);
+  }
+  
   // Convert SVG to PNG first (pdf-lib works better with raster images)
   const pngBuffer = await sharp(coverSvgPath)
     .resize({ width: 850, height: 1100, fit: 'contain', background: { r: 255, g: 255, b: 255, alpha: 1 } })
@@ -46,7 +73,9 @@ async function generateCoverPdf() {
   // Save the cover PDF
   const pdfBytes = await pdfDoc.save();
   fs.writeFileSync(tempCoverPath, pdfBytes);
-  console.log('Cover page generated');
+  console.log(`Cover page generated for ${language}`);
+  
+  return tempCoverPath;
 }
 
 // Pre-process SVG images
@@ -103,11 +132,11 @@ function processMarkdown(markdown, imageMap) {
     (match, alt, filename) => {
       // If this was an SVG that we converted, use the PNG path
       if (imageMap[filename]) {
-        const pngPath = path.relative(contentDir, imageMap[filename]).replace(/\\/g, '/');
+        const pngPath = path.relative(baseContentDir, imageMap[filename]).replace(/\\/g, '/');
         return `![${alt}](${pngPath})`;
       }
       // For non-SVG images, point to the temp directory
-      const newPath = path.relative(contentDir, path.join(tempImagesDir, filename)).replace(/\\/g, '/');
+      const newPath = path.relative(baseContentDir, path.join(tempImagesDir, filename)).replace(/\\/g, '/');
       return `![${alt}](${newPath})`;
     }
   );
@@ -115,12 +144,22 @@ function processMarkdown(markdown, imageMap) {
   return processedContent;
 }
 
-// Get all chapter files and sort them
-async function generateContentPdf() {
-  console.log('Generating content PDF...');
+// Get all content files and sort them for a specific language
+async function generateContentPdf(language) {
+  console.log(`Generating ${language} content PDF...`);
+
+  const contentDir = path.join(baseContentDir, language);
+  const tempContentPath = path.join(__dirname, `../static/temp-content-${language}.pdf`);
+  
+  // Check if the language directory exists
+  if (!fs.existsSync(contentDir)) {
+    console.warn(`No content directory found for ${language} at ${contentDir}`);
+    return null;
+  }
 
   const imageMap = await preprocessSvgImages();
 
+  // Define the order of files to include
   const orderedFiles = [
     'preface.md',
     'chapter-01.md',
@@ -159,10 +198,21 @@ async function generateContentPdf() {
     'appendix-d.md'
   ];
 
-  let combinedMarkdown = `# Spiral-Aware Personal Growth Guide\n\n## Table of Contents\n\n`;
+  // Filter the list to only include files that exist
+  const existingFiles = orderedFiles.filter(file => {
+    return fs.existsSync(path.join(contentDir, file));
+  });
+
+  if (existingFiles.length === 0) {
+    console.warn(`No content files found for ${language} in ${contentDir}`);
+    return null;
+  }
+
+  // Start building markdown with language-specific title
+  let combinedMarkdown = `# ${TITLES[language]}\n\n## ${TOC_TITLES[language]}\n\n`;
 
   // Generate Table of Contents
-  orderedFiles.forEach((file, i) => {
+  existingFiles.forEach((file, i) => {
     const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');
     const titleMatch = content.match(/^#+\s+(.+)$/m);
     const title = titleMatch ? titleMatch[1] : file.replace(/\.md$/, '');
@@ -173,7 +223,7 @@ async function generateContentPdf() {
   combinedMarkdown += `\n---\n\n`;
 
   // Append content
-  orderedFiles.forEach((file, i) => {
+  existingFiles.forEach((file, i) => {
     const raw = fs.readFileSync(path.join(contentDir, file), 'utf-8');
     const anchorId = file.replace(/\.md$/, '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
@@ -189,7 +239,7 @@ async function generateContentPdf() {
     combinedMarkdown += processed + '\n\n';
 
     // Add page break unless last file
-    if (i < orderedFiles.length - 1) {
+    if (i < existingFiles.length - 1) {
       combinedMarkdown += `<div style="page-break-after: always;"></div>\n\n`;
     }
   });
@@ -222,17 +272,17 @@ async function generateContentPdf() {
     }
   );
 
-  console.log('Content PDF generated');
+  console.log(`${language} content PDF generated`);
+  return tempContentPath;
 }
 
-
 // Merge cover and content PDFs
-async function mergePdfs() {
-  console.log('Merging PDFs...');
+async function mergePdfs(coverPath, contentPath, outputPath) {
+  console.log(`Merging PDFs for ${outputPath}...`);
   
   // Read both PDFs
-  const coverPdfBytes = fs.readFileSync(tempCoverPath);
-  const contentPdfBytes = fs.readFileSync(tempContentPath);
+  const coverPdfBytes = fs.readFileSync(coverPath);
+  const contentPdfBytes = fs.readFileSync(contentPath);
   
   // Load PDFs
   const coverPdf = await PDFDocument.load(coverPdfBytes);
@@ -254,18 +304,8 @@ async function mergePdfs() {
   fs.writeFileSync(outputPath, mergedPdfBytes);
   
   // Clean up temporary files
-  fs.unlinkSync(tempCoverPath);
-  fs.unlinkSync(tempContentPath);
-  
-  // Clean up temporary converted images
-  if (fs.existsSync(tempImagesDir)) {
-    const tempFiles = fs.readdirSync(tempImagesDir);
-    for (const file of tempFiles) {
-      fs.unlinkSync(path.join(tempImagesDir, file));
-    }
-    // Optionally remove the directory itself
-    fs.rmdirSync(tempImagesDir);
-  }
+  fs.unlinkSync(coverPath);
+  fs.unlinkSync(contentPath);
   
   console.log(`✅ Complete PDF generated at: ${outputPath}`);
 }
@@ -273,14 +313,39 @@ async function mergePdfs() {
 // Main function to run the process
 async function generateGuidePdf() {
   try {
-    console.log('Generating Spiral-Aware Guide PDF...');
+    console.log('Generating Spiral-Aware Personal Growth Guide PDFs...');
     
-    await generateCoverPdf();
-    await generateContentPdf();
-    await mergePdfs();
+    // Process each language
+    for (const language of LANGUAGES) {
+      // Create output path for this language
+      const outputPath = path.join(__dirname, `../static/spiral-personal-growth-guide-${language}.pdf`);
+      
+      // Generate cover PDF
+      const coverPath = await generateCoverPdf(language);
+      
+      // Generate content PDF
+      const contentPath = await generateContentPdf(language);
+      
+      // If we have both cover and content, merge them
+      if (coverPath && contentPath) {
+        await mergePdfs(coverPath, contentPath, outputPath);
+      } else {
+        console.warn(`Skipping PDF generation for ${language} due to missing content or cover`);
+      }
+    }
+    
+    // Clean up temporary converted images
+    if (fs.existsSync(tempImagesDir)) {
+      const tempFiles = fs.readdirSync(tempImagesDir);
+      for (const file of tempFiles) {
+        fs.unlinkSync(path.join(tempImagesDir, file));
+      }
+      // Remove the directory itself
+      fs.rmdirSync(tempImagesDir);
+    }
     
   } catch (error) {
-    console.error('Error generating PDF:', error);
+    console.error('Error generating PDFs:', error);
   }
 }
 

@@ -81,8 +81,29 @@
         }
       }
       
-      // Load chapter/appendix markdown content
-      const response = await fetch(`${base}/content/guides/psychology/${chapterSlug}.md`);
+      // Try to load content in the user's preferred language
+      let response = await fetch(`${base}/content/guides/psychology/${currentLanguage}/${chapterSlug}.md`);
+      
+      // If Swedish content doesn't exist yet, fall back to English
+      if (!response.ok && currentLanguage === 'sv') {
+        response = await fetch(`${base}/content/guides/psychology/en/${chapterSlug}.md`);
+        
+        // Add a note that this content is only available in English
+        if (response.ok) {
+          const markdown = await response.text();
+          const englishNotice = `
+  > *Obs: Denna sida är för närvarande endast tillgänglig på engelska. Vi arbetar med att översätta allt innehåll till svenska.*
+
+  ---
+
+  `;
+          chapterContent = marked(englishNotice + markdown);
+          isAvailable = true;
+          isLoading = false;
+          return;
+        }
+      }
+      
       if (!response.ok) throw new Error(`Failed to load content: ${response.status}`);
       
       const markdown = await response.text();
