@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 600 800"
+   version="1.1"
+   id="svg43"
+   sodipodi:docname="coral-ethics-visual.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview43"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0575"
+     inkscape:cx="310.6383"
+     inkscape:cy="410.40189"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg43" />
+  <!-- Background with gradient -->
+  <defs
+     id="defs11">
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#1A1A3A"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#0D0D1A"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="jestersGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#FF7F50"
+         id="stop3" />
+      <!-- Coral -->
+      <stop
+         offset="50%"
+         stop-color="#FFD700"
+         id="stop4" />
+      <!-- Gold -->
+      <stop
+         offset="100%"
+         stop-color="#FF7F50"
+         id="stop5" />
+      <!-- Coral -->
+    </linearGradient>
+    <linearGradient
+       id="dnaGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#4B0082"
+         id="stop6" />
+      <!-- Indigo -->
+      <stop
+         offset="50%"
+         stop-color="#FFD700"
+         id="stop7" />
+      <!-- Gold -->
+      <stop
+         offset="100%"
+         stop-color="#FF7F50"
+         id="stop8" />
+      <!-- Coral -->
+    </linearGradient>
+    <linearGradient
+       id="lotusGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#FF7F50"
+         id="stop9" />
+      <!-- Coral -->
+      <stop
+         offset="50%"
+         stop-color="#FFC0CB"
+         id="stop10" />
+      <!-- Pink -->
+      <stop
+         offset="100%"
+         stop-color="#FF7F50"
+         id="stop11" />
+      <!-- Coral -->
+    </linearGradient>
+    <!-- Glow filter for jester's scepter -->
+    <filter
+       id="glow"
+       x="-0.39513887"
+       y="-0.02624695"
+       width="1.7922854"
+       height="1.046247">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur"
+         id="feGaussianBlur11" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="over"
+         id="feComposite11" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect
+     x="0"
+     y="0"
+     width="600"
+     height="800"
+     fill="url(#bgGradient)"
+     id="rect11" />
+  <!-- Mushroom cloud to lotus transformation at base -->
+  <g
+     id="mushroomCloud"
+     transform="translate(300, 650)">
+    <!-- Mushroom stem -->
+    <path
+       d="M -20,0               C -20,20 -15,40 -10,60               C -5,80 0,100 0,120               C 0,100 5,80 10,60               C 15,40 20,20 20,0 Z"
+       fill="#4B0082"
+       opacity="0.7"
+       id="path11" />
+    <!-- Mushroom cap -->
+    <ellipse
+       cx="0"
+       cy="0"
+       rx="100"
+       ry="50"
+       fill="#4B0082"
+       opacity="0.5"
+       id="ellipse11" />
+    <ellipse
+       cx="0"
+       cy="-10"
+       rx="80"
+       ry="30"
+       fill="#4B0082"
+       opacity="0.6"
+       id="ellipse12" />
+    <ellipse
+       cx="0"
+       cy="-20"
+       rx="60"
+       ry="20"
+       fill="#4B0082"
+       opacity="0.7"
+       id="ellipse13" />
+    <!-- Transition cloud wisps -->
+    <path
+       d="M -90,-10               C -80,-30 -60,-40 -40,-30               C -20,-20 -10,-40 10,-40               C 30,-40 40,-20 60,-30               C 80,-40 90,-30 100,-10"
+       fill="none"
+       stroke="#FF7F50"
+       stroke-width="2"
+       opacity="0.7"
+       id="path13" />
+    <!-- Lotus emerging from mushroom cloud -->
+    <g
+       transform="translate(0, -20)"
+       id="g16">
+      <!-- Outer petals -->
+      <path
+         d="M -60,0                 C -50,-30 -30,-50 0,-60                 C 30,-50 50,-30 60,0                 C 50,30 30,50 0,60                 C -30,50 -50,30 -60,0 Z"
+         fill="url(#lotusGradient)"
+         opacity="0.6"
+         id="path14" />
+      <!-- Middle petals -->
+      <path
+         d="M -40,0                 C -30,-20 -20,-30 0,-40                 C 20,-30 30,-20 40,0                 C 30,20 20,30 0,40                 C -20,30 -30,20 -40,0 Z"
+         fill="url(#lotusGradient)"
+         opacity="0.7"
+         id="path15" />
+      <!-- Inner petals -->
+      <path
+         d="M -20,0                 C -15,-10 -10,-15 0,-20                 C 10,-15 15,-10 20,0                 C 15,10 10,15 0,20                 C -10,15 -15,10 -20,0 Z"
+         fill="url(#lotusGradient)"
+         opacity="0.8"
+         id="path16" />
+      <!-- Center -->
+      <circle
+         cx="0"
+         cy="0"
+         r="5"
+         fill="#FFD700"
+         id="circle16" />
+    </g>
+  </g>
+  <!-- Main jester's scepter to DNA -->
+  <g
+     id="jestersStaff">
+    <!-- Main staff/stem transforming into DNA backbone -->
+    <path
+       d="M 300,650               C 300,600 290,550 300,500               C 310,450 320,400 300,350               C 280,300 270,250 300,200               C 330,150 340,100 300,50"
+       fill="none"
+       stroke="#FFD700"
+       stroke-width="12"
+       filter="url(#glow)"
+       id="path17" />
+    <!-- Jester's head at top -->
+    <g
+       transform="translate(300, 50)"
+       id="g22">
+      <!-- Jester's head/cap -->
+      <path
+         d="M -30,0                 C -25,-20 -15,-30 0,-30                 C 15,-30 25,-20 30,0                 C 25,20 15,30 0,30                 C -15,30 -25,20 -30,0 Z"
+         fill="url(#jestersGradient)"
+         id="path18" />
+      <!-- Jester's bells -->
+      <circle
+         cx="-20"
+         cy="20"
+         r="10"
+         fill="#FFD700"
+         id="circle18" />
+      <circle
+         cx="0"
+         cy="30"
+         r="10"
+         fill="#FFD700"
+         id="circle19" />
+      <circle
+         cx="20"
+         cy="20"
+         r="10"
+         fill="#FFD700"
+         id="circle20" />
+      <!-- Jester's face -->
+      <ellipse
+         cx="-10"
+         cy="-5"
+         rx="5"
+         ry="8"
+         fill="#FFFFFF"
+         id="ellipse20" />
+      <ellipse
+         cx="10"
+         cy="-5"
+         rx="5"
+         ry="8"
+         fill="#FFFFFF"
+         id="ellipse21" />
+      <circle
+         cx="-10"
+         cy="-5"
+         r="2"
+         fill="#000000"
+         id="circle21" />
+      <circle
+         cx="10"
+         cy="-5"
+         r="2"
+         fill="#000000"
+         id="circle22" />
+      <path
+         d="M -10,10 C -5,15 5,15 10,10"
+         fill="none"
+         stroke="#000000"
+         stroke-width="2"
+         id="path22" />
+    </g>
+    <!-- DNA helix strands -->
+    <!-- Left-side DNA strand -->
+    <path
+       d="M 270,600               C 250,580 250,560 270,540               C 290,520 290,500 270,480               C 250,460 250,440 270,420               C 290,400 290,380 270,360               C 250,340 250,320 270,300               C 290,280 290,260 270,240               C 250,220 250,200 270,180               C 290,160 290,140 270,120               C 250,100 250,80 270,60"
+       fill="none"
+       stroke="#FF7F50"
+       stroke-width="6"
+       opacity="0.8"
+       id="path23" />
+    <!-- Right-side DNA strand -->
+    <path
+       d="M 330,600               C 350,580 350,560 330,540               C 310,520 310,500 330,480               C 350,460 350,440 330,420               C 310,400 310,380 330,360               C 350,340 350,320 330,300               C 310,280 310,260 330,240               C 350,220 350,200 330,180               C 310,160 310,140 330,120               C 350,100 350,80 330,60"
+       fill="none"
+       stroke="#4B0082"
+       stroke-width="6"
+       opacity="0.8"
+       id="path24" />
+    <!-- DNA rungs connecting the strands -->
+    <line
+       x1="270"
+       y1="600"
+       x2="330"
+       y2="600"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line24" />
+    <line
+       x1="270"
+       y1="540"
+       x2="330"
+       y2="540"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line25" />
+    <line
+       x1="270"
+       y1="480"
+       x2="330"
+       y2="480"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line26" />
+    <line
+       x1="270"
+       y1="420"
+       x2="330"
+       y2="420"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line27" />
+    <line
+       x1="270"
+       y1="360"
+       x2="330"
+       y2="360"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line28" />
+    <line
+       x1="270"
+       y1="300"
+       x2="330"
+       y2="300"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line29" />
+    <line
+       x1="270"
+       y1="240"
+       x2="330"
+       y2="240"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line30" />
+    <line
+       x1="270"
+       y1="180"
+       x2="330"
+       y2="180"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line31" />
+    <line
+       x1="270"
+       y1="120"
+       x2="330"
+       y2="120"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line32" />
+    <line
+       x1="270"
+       y1="60"
+       x2="330"
+       y2="60"
+       stroke="#FFD700"
+       stroke-width="4"
+       id="line33" />
+  </g>
+  <!-- Candy stripe shadow and light intertwining -->
+  <g
+     id="candyStripes"
+     opacity="0.5">
+    <!-- Light stripes -->
+    <path
+       d="M 240,650               C 235,600 245,550 235,500               C 225,450 215,400 225,350               C 235,300 245,250 235,200               C 225,150 215,100 225,50"
+       fill="none"
+       stroke="#FFD700"
+       stroke-width="15"
+       stroke-dasharray="20,30"
+       id="path33" />
+    <path
+       d="M 360,650               C 365,600 355,550 365,500               C 375,450 385,400 375,350               C 365,300 355,250 365,200               C 375,150 385,100 375,50"
+       fill="none"
+       stroke="#FFD700"
+       stroke-width="15"
+       stroke-dasharray="20,30"
+       id="path34" />
+    <!-- Shadow stripes -->
+    <path
+       d="M 240,650               C 235,600 245,550 235,500               C 225,450 215,400 225,350               C 235,300 245,250 235,200               C 225,150 215,100 225,50"
+       fill="none"
+       stroke="#4B0082"
+       stroke-width="15"
+       stroke-dasharray="30,20"
+       id="path35" />
+    <path
+       d="M 360,650               C 365,600 355,550 365,500               C 375,450 385,400 375,350               C 365,300 355,250 365,200               C 375,150 385,100 375,50"
+       fill="none"
+       stroke="#4B0082"
+       stroke-width="15"
+       stroke-dasharray="30,20"
+       id="path36" />
+  </g>
+  <!-- Easter egg: "Play heals" -->
+  <g
+     transform="rotate(-45,563.27608,-224.38043)"
+     id="g36">
+    <text
+       x="0"
+       y="0"
+       font-family="serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#ffffff"
+       opacity="0.3"
+       id="text36">Play heals</text>
+  </g>
+  <!-- Sparkles and energy around the staff -->
+  <g
+     id="sparkles">
+    <circle
+       cx="280"
+       cy="200"
+       r="3"
+       fill="#FFD700"
+       opacity="0.8"
+       id="circle36">
+      <animate
+         attributeName="opacity"
+         values="0.8;0.2;0.8"
+         dur="3s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="320"
+       cy="250"
+       r="2"
+       fill="#FFD700"
+       opacity="0.6"
+       id="circle37">
+      <animate
+         attributeName="opacity"
+         values="0.6;0.1;0.6"
+         dur="2s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="270"
+       cy="300"
+       r="2.5"
+       fill="#FFD700"
+       opacity="0.7"
+       id="circle38">
+      <animate
+         attributeName="opacity"
+         values="0.7;0.2;0.7"
+         dur="4s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="330"
+       cy="350"
+       r="3"
+       fill="#FFD700"
+       opacity="0.8"
+       id="circle39">
+      <animate
+         attributeName="opacity"
+         values="0.8;0.3;0.8"
+         dur="3.5s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="280"
+       cy="400"
+       r="2"
+       fill="#FFD700"
+       opacity="0.6"
+       id="circle40">
+      <animate
+         attributeName="opacity"
+         values="0.6;0.1;0.6"
+         dur="2.5s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="320"
+       cy="450"
+       r="2.5"
+       fill="#FFD700"
+       opacity="0.7"
+       id="circle41">
+      <animate
+         attributeName="opacity"
+         values="0.7;0.2;0.7"
+         dur="3s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="270"
+       cy="500"
+       r="3"
+       fill="#FFD700"
+       opacity="0.8"
+       id="circle42">
+      <animate
+         attributeName="opacity"
+         values="0.8;0.3;0.8"
+         dur="4s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="330"
+       cy="550"
+       r="2"
+       fill="#FFD700"
+       opacity="0.6"
+       id="circle43">
+      <animate
+         attributeName="opacity"
+         values="0.6;0.1;0.6"
+         dur="2s"
+         repeatCount="indefinite" />
+    </circle>
+  </g>
+  <!-- Title at bottom -->
+  <text
+     x="300"
+     y="750"
+     font-family="Arial"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#FF7F50"
+     id="text43">Evolutionary Play</text>
+</svg>

@@ -79,7 +79,7 @@ Shadow ←→ Luminous Glimpse
 **Spiral Tip**: The spiral is a map, not the mystery itself. Use it to navigate—then trust your lived experience.  
 
 1. **Locate Yourself**  
-   - Use the [Spiral Diagnostics Tool](/guide-spiritual/tools/spiral-diagnostics.md) to identify your *center of gravity*.  
+   - Take the [Spiral Dynamics Quiz](https://spiralize.org/quiz) to find your center of gravity.
    - *Note*: You'll resonate with multiple stages—that's normal.  
 
 2. **Honor Your Current Stage**  

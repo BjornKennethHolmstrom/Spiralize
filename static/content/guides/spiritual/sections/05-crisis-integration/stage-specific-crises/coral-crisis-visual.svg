@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with fading carnival textures -->
+  <defs>
+    <linearGradient id="fadeCorals" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7F50" stop-opacity="0.8"/>
+      <stop offset="25%" stop-color="#FFA07A" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#FF6347" stop-opacity="0.6"/>
+      <stop offset="75%" stop-color="#FA8072" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E9967A" stop-opacity="0.4"/>
+    </linearGradient>
+    
+    <filter id="roughTexture" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    
+    <pattern id="peelEffect" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0,0 L40,0 L40,40 L0,40 Z" fill="none" stroke="#333" stroke-width="0.5" stroke-opacity="0.3"/>
+      <path d="M10,10 Q20,5 30,10 Q35,20 30,30 Q20,35 10,30 Q5,20 10,10 Z" fill="#FFF" fill-opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main carnival tent - faded and peeling -->
+  <g id="carnivalTent">
+    <!-- Tent background -->
+    <path d="M 100,400 L 250,150 L 400,400 Z" fill="url(#fadeCorals)" stroke="#333" stroke-width="1" filter="url(#roughTexture)"/>
+    
+    <!-- Tent stripes with peeling effect -->
+    <path d="M 130,400 L 250,180 L 370,400 Z" fill="none" stroke="#FF3333" stroke-width="8" stroke-opacity="0.3" stroke-dasharray="10,15"/>
+    <path d="M 160,400 L 250,210 L 340,400 Z" fill="none" stroke="#FFFF33" stroke-width="8" stroke-opacity="0.3" stroke-dasharray="10,15"/>
+    <path d="M 190,400 L 250,240 L 310,400 Z" fill="none" stroke="#FF3333" stroke-width="8" stroke-opacity="0.3" stroke-dasharray="10,15"/>
+    
+    <!-- Peeling paint effect using the pattern -->
+    <path d="M 100,400 L 250,150 L 400,400 Z" fill="url(#peelEffect)" fill-opacity="0.4"/>
+    
+    <!-- Tent pole -->
+    <rect x="247" y="100" width="6" height="50" fill="#8B4513" stroke="#333" stroke-width="1"/>
+    
+    <!-- Tent top -->
+    <circle cx="250" cy="100" r="20" fill="#FFA07A" stroke="#333" stroke-width="1" filter="url(#roughTexture)"/>
+    
+    <!-- Entrance flaps -->
+    <path d="M 230,400 L 250,380 L 270,400 Z" fill="#333" fill-opacity="0.7"/>
+  </g>
+  
+  <!-- Cracked comedy mask -->
+  <g id="crackedMask" transform="translate(160,260) scale(0.8)">
+    <!-- Mask base -->
+    <path d="M 0,0 Q 25,-30 50,0 Q 60,30 50,60 Q 25,80 0,60 Q -10,30 0,0 Z" fill="#F5F5DC" stroke="#333" stroke-width="2"/>
+    
+    <!-- Smile -->
+    <path d="M 15,40 Q 25,50 35,40" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="20" cy="20" rx="8" ry="12" fill="#333"/>
+    <ellipse cx="30" cy="20" rx="8" ry="12" fill="#333"/>
+    
+    <!-- Cracks -->
+    <path d="M 25,0 L 27,18 L 23,40" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="3,2"/>
+    <path d="M 15,25 L 35,32" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="3,2"/>
+    <path d="M 10,50 L 40,55" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="3,2"/>
+    
+    <!-- Smudged makeup -->
+    <path d="M 15,20 Q 5,30 10,40" fill="none" stroke="#FF6347" stroke-width="3" stroke-opacity="0.6" stroke-linecap="round"/>
+    <path d="M 35,20 Q 45,30 40,40" fill="none" stroke="#FF6347" stroke-width="3" stroke-opacity="0.6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Broken kazoo -->
+  <g id="brokenKazoo" transform="translate(330,280) rotate(-20) scale(0.9)">
+    <!-- Main kazoo body -->
+    <rect x="0" y="0" width="60" height="20" rx="10" ry="10" fill="#FA8072" stroke="#333" stroke-width="1"/>
+    
+    <!-- Kazoo center -->
+    <circle cx="30" cy="10" r="5" fill="#333" stroke="none"/>
+    
+    <!-- Kazoo break -->
+    <path d="M 35,0 L 35,20" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="3,2"/>
+    
+    <!-- Sound trail fading -->
+    <path d="M 60,10 Q 80,0 100,10 Q 110,15 120,10" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.7">
+      <animate attributeName="stroke-opacity" values="0.7;0.1;0.7" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Shadow puppet dissolving into light -->
+  <g id="shadowPuppet" transform="translate(250,320)">
+    <!-- Shadow -->
+    <path d="M 0,0 Q -20,-10 -30,0 Q -40,10 -30,30 Q -15,40 0,30 Q 15,40 30,30 Q 40,10 30,0 Q 20,-10 0,0 Z" fill="#333" fill-opacity="0.8">
+      <animate attributeName="fill-opacity" values="0.8;0.3;0.8" dur="7s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Light emanating from shadow -->
+    <path d="M 0,0 Q -20,-10 -30,0 Q -40,10 -30,30 Q -15,40 0,30 Q 15,40 30,30 Q 40,10 30,0 Q 20,-10 0,0 Z" fill="none" stroke="#FFF" stroke-width="1" stroke-opacity="0.5" filter="url(#roughTexture)">
+      <animate attributeName="stroke-opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Light rays dissolving -->
+    <path d="M -20,10 L -40,5" stroke="#FFF" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M -10,30 L -20,45" stroke="#FFF" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M 10,30 L 20,45" stroke="#FFF" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M 20,10 L 40,5" stroke="#FFF" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M 0,5 L 0,-10" stroke="#FFF" stroke-width="1" stroke-opacity="0.6"/>
+  </g>
+  
+  <!-- Vibrant flower blooming through cracks -->
+  <g id="vibrantFlower" transform="translate(250,420)">
+    <!-- Cracked ground -->
+    <path d="M -40,0 L 40,0" stroke="#333" stroke-width="3"/>
+    <path d="M -10,0 L -15,-10" stroke="#333" stroke-width="2"/>
+    <path d="M 10,0 L 20,-8" stroke="#333" stroke-width="2"/>
+    <path d="M -30,0 L -25,-7" stroke="#333" stroke-width="2"/>
+    
+    <!-- Flower stem -->
+    <path d="M 0,0 C 0,-10 -5,-20 0,-30" stroke="#228B22" stroke-width="2" fill="none"/>
+    
+    <!-- Leaves -->
+    <path d="M 0,-15 C 5,-15 10,-10 5,-5" stroke="#228B22" stroke-width="1" fill="#228B22" fill-opacity="0.6"/>
+    <path d="M 0,-22 C -5,-22 -10,-18 -5,-12" stroke="#228B22" stroke-width="1" fill="#228B22" fill-opacity="0.6"/>
+    
+    <!-- Flower petals -->
+    <g transform="translate(0,-32)">
+      <path d="M 0,0 C 5,-8 10,-8 8,0" fill="#FF1493" stroke="#FF69B4" stroke-width="1"/>
+      <path d="M 0,0 C 8,-5 12,0 8,5" fill="#FF1493" stroke="#FF69B4" stroke-width="1"/>
+      <path d="M 0,0 C 5,8 10,8 8,0" fill="#FF1493" stroke="#FF69B4" stroke-width="1"/>
+      <path d="M 0,0 C -8,5 -12,0 -8,-5" fill="#FF1493" stroke="#FF69B4" stroke-width="1"/>
+      <path d="M 0,0 C -5,-8 -10,-8 -8,0" fill="#FF1493" stroke="#FF69B4" stroke-width="1"/>
+      <path d="M 0,0 C -8,-5 -12,0 -8,5" fill="#FF1493" stroke="#FF69B4" stroke-width="1"/>
+      <path d="M 0,0 C -5,8 -10,8 -8,0" fill="#FF1493" stroke="#FF69B4" stroke-width="1"/>
+      <path d="M 0,0 C 8,5 12,0 8,-5" fill="#FF1493" stroke="#FF69B4" stroke-width="1"/>
+      
+      <!-- Flower center -->
+      <circle cx="0" cy="0" r="5" fill="#FFFF00" stroke="#FF8C00" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Deflated balloon with Easter egg -->
+  <g id="deflatedBalloon" transform="translate(400,180) scale(0.7)">
+    <!-- Balloon shape, wrinkled and deflated -->
+    <path d="M 0,0 C -10,-20 -30,-30 -20,0 C -30,10 -10,30 0,20 C 10,30 30,10 20,0 C 30,-30 10,-20 0,0 Z" fill="#9370DB" stroke="#333" stroke-width="1" filter="url(#roughTexture)"/>
+    
+    <!-- Balloon string -->
+    <path d="M 0,20 C 5,30 0,40 5,50" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="2,1"/>
+    
+    <!-- Easter egg text - "The End?" -->
+    <text x="-10" y="5" font-family="cursive" font-size="8" fill="#FFF" transform="rotate(-10)">The End?</text>
+  </g>
+  
+  <!-- Exhausted carnival elements -->
+  <g id="carnivalElements">
+    <!-- Fading glitter effect -->
+    <g id="fadingGlitter">
+      <circle cx="150" cy="200" r="2" fill="#FFF" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.1;0.7" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="300" cy="230" r="1.5" fill="#FFF" opacity="0.5">
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="270" cy="190" r="2" fill="#FFF" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="200" cy="180" r="1.5" fill="#FFF" opacity="0.4">
+        <animate attributeName="opacity" values="0.4;0.1;0.4" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="350" cy="300" r="1" fill="#FFF" opacity="0.5">
+        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Deflated whoopee cushion -->
+    <g id="whoopee" transform="translate(130,190) rotate(15) scale(0.6)">
+      <path d="M -30,-20 C -40,0 -40,40 -30,60 C -10,70 10,70 30,60 C 40,40 40,0 30,-20 C 10,-30 -10,-30 -30,-20 Z" fill="#FF69B4" stroke="#333" stroke-width="1" filter="url(#roughTexture)"/>
+      <ellipse cx="0" cy="20" rx="15" ry="10" fill="#333" fill-opacity="0.2"/>
+      <path d="M -20,0 C -10,10 10,10 20,0" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="3,2"/>
+      <path d="M -15,40 C -5,30 5,30 15,40" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="3,2"/>
+    </g>
+  </g>
+</svg>

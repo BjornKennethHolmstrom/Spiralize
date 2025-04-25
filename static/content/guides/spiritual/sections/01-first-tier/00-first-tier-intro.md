@@ -52,7 +52,7 @@ First-Tier stages (Beige–Green) represent humanity's foundational spiritual ex
    - Green's empathy softens Orange's individualism.  
 
 2. **Spot Your Trap**:  
-   - Use the [Spiral Diagnostics Tool](/guide-spiritual/tools/spiral-diagnostics.md) to identify shadows.  
+   - Use the [Spiral Dynamics Quiz](https://spiralize.org/quiz) to to identify shadows.  
    - ***Or as Grok would say: if you're burning sage while ghosting your therapist, check your spiral.***  
 
 3. **Practice Wisely**:  

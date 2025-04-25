@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background cosmos -->
+  <defs>
+    <!-- Gradients for cosmic background -->
+    <radialGradient id="cosmicGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#0A043C" />
+      <stop offset="50%" stop-color="#03506F" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    
+    <!-- Synaptic glow effect -->
+    <filter id="synapticGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Neuron pulse animation -->
+    <filter id="neuronPulse" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    
+    <!-- Earth texture -->
+    <pattern id="earthTexture" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzA4QThCQSIgLz48cGF0aCBkPSJNMCwwIEwyMDAsMjAwIE0yMDAsMCBMMCwyMDAiIHN0cm9rZT0iIzA5NjM3NiIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMyIgLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjUwIiBmaWxsPSIjMDc1RTU0IiBvcGFjaXR5PSIwLjQiIC8+PC9zdmc+" width="200" height="200" />
+    </pattern>
+  </defs>
+  
+  <!-- Cosmic background -->
+  <rect x="0" y="0" width="800" height="800" fill="url(#cosmicGradient)" />
+  
+  <!-- Stars -->
+  <g id="stars">
+    <circle cx="100" cy="100" r="1" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="200" cy="150" r="1.5" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="300" cy="80" r="1" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="400" cy="120" r="1.2" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="500" cy="90" r="1" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="600" cy="130" r="1.5" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="700" cy="110" r="1" fill="#FFFFFF" opacity="0.8" />
+    
+    <circle cx="150" cy="200" r="1.2" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="250" cy="180" r="1" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="350" cy="220" r="1.5" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="450" cy="170" r="1" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="550" cy="210" r="1.2" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="650" cy="190" r="1" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="750" cy="230" r="1.5" fill="#FFFFFF" opacity="0.7" />
+    
+    <circle cx="120" cy="300" r="1" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="220" cy="350" r="1.2" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="320" cy="280" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="420" cy="330" r="1" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="520" cy="290" r="1.2" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="620" cy="320" r="1" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="720" cy="270" r="1.5" fill="#FFFFFF" opacity="0.9" />
+    
+    <!-- More stars scattered throughout -->
+    <circle cx="50" cy="400" r="1.2" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="150" cy="450" r="1" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="250" cy="420" r="1.5" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="350" cy="480" r="1" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="450" cy="410" r="1.2" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="550" cy="470" r="1" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="650" cy="430" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="750" cy="490" r="1" fill="#FFFFFF" opacity="0.7" />
+    
+    <circle cx="80" cy="550" r="1.5" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="180" cy="520" r="1" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="280" cy="580" r="1.2" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="380" cy="540" r="1.5" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="480" cy="590" r="1" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="580" cy="530" r="1.2" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="680" cy="570" r="1" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="780" cy="510" r="1.5" fill="#FFFFFF" opacity="0.8" />
+    
+    <circle cx="100" cy="650" r="1" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="200" cy="620" r="1.5" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="300" cy="670" r="1" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="400" cy="640" r="1.2" fill="#FFFFFF" opacity="0.7" />
+    <circle cx="500" cy="680" r="1.5" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="600" cy="630" r="1" fill="#FFFFFF" opacity="0.8" />
+    <circle cx="700" cy="660" r="1.2" fill="#FFFFFF" opacity="0.7" />
+  </g>
+  
+  <!-- Cosmic webs/strings -->
+  <g id="cosmicWebs" opacity="0.3">
+    <path d="M 100,100 C 150,150 200,120 250,180" stroke="#9370DB" stroke-width="1" fill="none" />
+    <path d="M 300,80 C 350,130 400,100 450,160" stroke="#9370DB" stroke-width="1" fill="none" />
+    <path d="M 500,90 C 550,140 600,110 650,170" stroke="#9370DB" stroke-width="1" fill="none" />
+    
+    <path d="M 150,200 C 200,250 250,220 300,280" stroke="#9370DB" stroke-width="1" fill="none" />
+    <path d="M 350,220 C 400,270 450,240 500,300" stroke="#9370DB" stroke-width="1" fill="none" />
+    <path d="M 550,210 C 600,260 650,230 700,290" stroke="#9370DB" stroke-width="1" fill="none" />
+    
+    <path d="M 120,300 C 170,350 220,320 270,380" stroke="#9370DB" stroke-width="1" fill="none" />
+    <path d="M 320,280 C 370,330 420,300 470,360" stroke="#9370DB" stroke-width="1" fill="none" />
+    <path d="M 520,290 C 570,340 620,310 670,370" stroke="#9370DB" stroke-width="1" fill="none" />
+  </g>
+  
+  <!-- Earth in center -->
+  <g id="earth" transform="translate(400, 400)">
+    <circle cx="0" cy="0" r="120" fill="url(#earthTexture)" />
+    
+    <!-- Earth glow -->
+    <circle cx="0" cy="0" r="130" fill="#40E0D0" opacity="0.1" />
+    
+    <!-- Continents approximation -->
+    <path d="M -80,-20 C -70,-30 -60,-35 -50,-30 C -40,-25 -30,-35 -20,-40 C -10,-45 0,-40 10,-35 C 20,-30 30,-40 40,-35" fill="#075E54" opacity="0.4" />
+    <path d="M -20,60 C -10,55 0,50 10,55 C 20,60 30,50 40,55 C 50,60 60,55 70,50" fill="#075E54" opacity="0.4" />
+    <path d="M -10,-10 C 0,-20 10,-25 20,-20 C 30,-15 40,-25 50,-20 C 60,-15 70,-25 80,-20" fill="#075E54" opacity="0.4" />
+  </g>
+  
+  <!-- Neuron overlaying Earth -->
+  <g id="neuron" transform="translate(400, 400)" filter="url(#neuronPulse)">
+    <!-- Neuron cell body -->
+    <circle cx="0" cy="0" r="80" fill="#40E0D0" opacity="0.4" />
+    
+    <!-- Dendrites -->
+    <g id="dendrites" stroke="#40E0D0" stroke-width="2" fill="none" opacity="0.7">
+      <!-- Upper dendrites -->
+      <path d="M 0,-80 
+               C -20,-100 -40,-110 -60,-120 
+               C -80,-130 -100,-135 -120,-140" />
+      <path d="M 0,-80 
+               C 20,-100 40,-110 60,-120 
+               C 80,-130 100,-135 120,-140" />
+      <path d="M 0,-80 
+               C -5,-100 -10,-120 -15,-140 
+               C -20,-160 -25,-180 -30,-200" />
+      <path d="M 0,-80 
+               C 5,-100 10,-120 15,-140 
+               C 20,-160 25,-180 30,-200" />
+      
+      <!-- Middle dendrites -->
+      <path d="M -80,0 
+               C -100,-10 -120,-20 -140,-30 
+               C -160,-40 -180,-50 -200,-60" />
+      <path d="M 80,0 
+               C 100,-10 120,-20 140,-30 
+               C 160,-40 180,-50 200,-60" />
+      
+      <!-- Lower dendrites -->
+      <path d="M 0,80 
+               C -20,100 -40,110 -60,120 
+               C -80,130 -100,135 -120,140" />
+      <path d="M 0,80 
+               C 20,100 40,110 60,120 
+               C 80,130 100,135 120,140" />
+      <path d="M 0,80 
+               C -5,100 -10,120 -15,140 
+               C -20,160 -25,180 -30,200" />
+      <path d="M 0,80 
+               C 5,100 10,120 15,140 
+               C 20,160 25,180 30,200" />
+              
+      <!-- Diagonal dendrites -->
+      <path d="M -60,-60 
+               C -80,-80 -100,-100 -120,-120 
+               C -140,-140 -160,-160 -180,-180" />
+      <path d="M 60,-60 
+               C 80,-80 100,-100 120,-120 
+               C 140,-140 160,-160 180,-180" />
+      <path d="M -60,60 
+               C -80,80 -100,100 -120,120 
+               C -140,140 -160,160 -180,180" />
+      <path d="M 60,60 
+               C 80,80 100,100 120,120 
+               C 140,140 160,160 180,180" />
+    </g>
+    
+    <!-- Axon -->
+    <path d="M 0,80 
+             C 0,100 0,120 0,140 
+             C 0,160 0,180 0,200 
+             C 0,220 0,240 0,260" 
+          stroke="#40E0D0" stroke-width="4" fill="none" opacity="0.7" />
+    
+    <!-- Axon terminals -->
+    <path d="M 0,260 
+             C -10,270 -20,280 -30,290" 
+          stroke="#40E0D0" stroke-width="2" fill="none" opacity="0.7" />
+    <path d="M 0,260 
+             C 0,270 0,280 0,290" 
+          stroke="#40E0D0" stroke-width="2" fill="none" opacity="0.7" />
+    <path d="M 0,260 
+             C 10,270 20,280 30,290" 
+          stroke="#40E0D0" stroke-width="2" fill="none" opacity="0.7" />
+  </g>
+  
+  <!-- Synaptic connections and sparks -->
+  <g id="synapses">
+    <!-- Upper left synapse -->
+    <g transform="translate(220, 220)">
+      <circle cx="0" cy="0" r="10" fill="#9370DB" opacity="0.6" filter="url(#synapticGlow)">
+        <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <!-- Water droplet symbol -->
+      <path d="M 0,-5 C -3,0 -3,5 0,5 C 3,5 3,0 0,-5 Z" fill="#40E0D0" opacity="0.8" />
+    </g>
+    
+    <!-- Upper right synapse -->
+    <g transform="translate(580, 220)">
+      <circle cx="0" cy="0" r="10" fill="#40E0D0" opacity="0.6" filter="url(#synapticGlow)">
+        <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star symbol -->
+      <path d="M 0,-5 L 2,-2 L 5,-2 L 3,1 L 4,4 L 0,2 L -4,4 L -3,1 L -5,-2 L -2,-2 Z" fill="#9370DB" opacity="0.8" />
+    </g>
+    
+    <!-- Lower left synapse -->
+    <g transform="translate(220, 580)">
+      <circle cx="0" cy="0" r="10" fill="#9370DB" opacity="0.6" filter="url(#synapticGlow)">
+        <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+      <!-- Vine symbol -->
+      <path d="M -5,0 C -3,-3 0,-3 0,0 C 0,3 3,3 5,0" fill="none" stroke="#40E0D0" stroke-width="1" opacity="0.8" />
+    </g>
+    
+    <!-- Lower right synapse -->
+    <g transform="translate(580, 580)">
+      <circle cx="0" cy="0" r="10" fill="#40E0D0" opacity="0.6" filter="url(#synapticGlow)">
+        <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4.5s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star symbol -->
+      <path d="M 0,-5 L 2,-2 L 5,-2 L 3,1 L 4,4 L 0,2 L -4,4 L -3,1 L -5,-2 L -2,-2 Z" fill="#9370DB" opacity="0.8" />
+    </g>
+    
+    <!-- Top synapse -->
+    <g transform="translate(400, 170)">
+      <circle cx="0" cy="0" r="12" fill="#9370DB" opacity="0.7" filter="url(#synapticGlow)">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <!-- Easter egg: "All is here" -->
+      <text x="0" y="2" font-family="serif" font-size="5" text-anchor="middle" fill="#FFFFFF" opacity="0.6">All is here</text>
+    </g>
+    
+    <!-- Bottom synapse -->
+    <g transform="translate(400, 630)">
+      <circle cx="0" cy="0" r="12" fill="#40E0D0" opacity="0.7" filter="url(#synapticGlow)">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+      <!-- Water droplet symbol -->
+      <path d="M 0,-6 C -4,0 -4,6 0,6 C 4,6 4,0 0,-6 Z" fill="#9370DB" opacity="0.8" />
+    </g>
+    
+    <!-- Left synapse -->
+    <g transform="translate(170, 400)">
+      <circle cx="0" cy="0" r="12" fill="#9370DB" opacity="0.7" filter="url(#synapticGlow)">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <!-- Vine symbol -->
+      <path d="M -6,0 C -4,-4 0,-4 0,0 C 0,4 4,4 6,0" fill="none" stroke="#40E0D0" stroke-width="1.5" opacity="0.8" />
+    </g>
+    
+    <!-- Right synapse -->
+    <g transform="translate(630, 400)">
+      <circle cx="0" cy="0" r="12" fill="#40E0D0" opacity="0.7" filter="url(#synapticGlow)">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4.5s" repeatCount="indefinite" />
+      </circle>
+      <!-- Star symbol -->
+      <path d="M 0,-6 L 2.5,-2.5 L 6,-2.5 L 3.5,1 L 5,5 L 0,2.5 L -5,5 L -3.5,1 L -6,-2.5 L -2.5,-2.5 Z" fill="#9370DB" opacity="0.8" />
+    </g>
+  </g>
+  
+  <!-- Connecting streams between synapses and cosmic web -->
+  <g id="connectionStreams" stroke-opacity="0.4" fill="none">
+    <path d="M 220,220 C 180,180 150,150 120,120" stroke="#40E0D0" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="10s" repeatCount="indefinite" />
+    </path>
+    <path d="M 580,220 C 620,180 650,150 680,120" stroke="#9370DB" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="12s" repeatCount="indefinite" />
+    </path>
+    <path d="M 220,580 C 180,620 150,650 120,680" stroke="#9370DB" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="11s" repeatCount="indefinite" />
+    </path>
+    <path d="M 580,580 C 620,620 650,650 680,680" stroke="#40E0D0" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="13s" repeatCount="indefinite" />
+    </path>
+    
+    <path d="M 400,170 C 400,120 400,80 400,50" stroke="#9370DB" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="9s" repeatCount="indefinite" />
+    </path>
+    <path d="M 400,630 C 400,680 400,720 400,750" stroke="#40E0D0" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="14s" repeatCount="indefinite" />
+    </path>
+    <path d="M 170,400 C 120,400 80,400 50,400" stroke="#9370DB" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="10.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M 630,400 C 680,400 720,400 750,400" stroke="#40E0D0" stroke-width="1" stroke-dasharray="2,2">
+      <animate attributeName="stroke-dashoffset" from="0" to="20" dur="11.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Subtle Outer Glow -->
+  <circle cx="400" cy="400" r="350" fill="none" stroke="#40E0D0" stroke-width="2" opacity="0.1" />
+</svg>

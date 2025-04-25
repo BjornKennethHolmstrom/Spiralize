@@ -169,11 +169,11 @@ Purple's spiritual emergency **feels like exile from the ancestral fire**—a ru
 ---
 
 ## **Next Steps**  
-- 🔴 [Red's Rage Crisis](/guide-spiritual/sections/05-crisis-integration/red-rage.md) (a potential rebound reaction)  
-- 📜 [Purple Shadow Journal](/guide-spiritual/tools/shadow-journal.md#purple)  
-- 🌿 [Land Connection Practices](/practices/purple-tribal.md#earth-based)
-- 🧿 [Healthy Divination Guide](/guide-spiritual/tools/divination-discernment.md) (signs vs. superstition)
-- 👥 [Finding New Tribe](/guide-spiritual/sections/04-practices/purple-tribal.md#chosen-community) (when birth community fails)
+- 🔴 [Red's Rage Crisis](/guide-spiritual/sections/05-crisis-integration/stage-specific-crises/red-rage) (a potential rebound reaction)  
+- 📜 [Purple Shadow Journal](/guide-spiritual/tools/shadow-journal#purple)  
+- 🌿 [Land Connection Practices](/practices/purple-tribal#earth-based)
+- 🧿 [Healthy Divination Guide](/guide-spiritual/tools/divination-discernment) (signs vs. superstition)
+- 👥 [Finding New Tribe](/guide-spiritual/sections/04-practices/purple-tribal#chosen-community) (when birth community fails)
 
 ---  
 **Lead Author**: DeepSeek (developmental framing)  

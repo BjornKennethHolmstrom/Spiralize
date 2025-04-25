@@ -170,6 +170,13 @@
             en: "🧠 Spiral-Aware Mental Health Guide", 
             sv: "🧠 Spiralmedveten Mental Hälsa Guide" 
           }
+        },
+        { 
+          href: `${base}/guide-spiritual`, 
+          label: { 
+            en: "🧘 Spiral-Aware Spirituality Guide", 
+            sv: "🧘 Spiralmedveten Andlighetsguide" 
+          }
         }
       ]
     },

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="500" height="500" fill="#F9F6F2" />
+  
+  <!-- Ground/Soil with composting leaves -->
+  <path d="M 0,450 C 50,430 150,450 250,430 C 350,450 450,430 500,450 L 500,500 L 0,500 Z" 
+        fill="#5D4037" />
+  <path d="M 0,430 C 50,410 150,430 250,410 C 350,430 450,410 500,430 L 500,450 C 450,430 350,450 250,430 C 150,450 50,430 0,450 Z" 
+        fill="#795548" />
+  
+  <!-- Composting colored leaves in the soil -->
+  <g id="compostingLeaves">
+    <!-- Purple stage leaf -->
+    <path d="M 80,440 C 85,435 95,435 100,440 C 105,445 105,455 100,460 C 95,465 85,465 80,460 C 75,455 75,445 80,440 Z" 
+          fill="#663366" opacity="0.7" transform="rotate(30, 90, 450)" />
+    
+    <!-- Red stage leaf -->
+    <path d="M 150,450 C 155,445 165,445 170,450 C 175,455 175,465 170,470 C 165,475 155,475 150,470 C 145,465 145,455 150,450 Z" 
+          fill="#8B0000" opacity="0.7" transform="rotate(-20, 160, 460)" />
+    
+    <!-- Blue stage leaf -->
+    <path d="M 220,445 C 225,440 235,440 240,445 C 245,450 245,460 240,465 C 235,470 225,470 220,465 C 215,460 215,450 220,445 Z" 
+          fill="#0000AA" opacity="0.7" transform="rotate(15, 230, 455)" />
+    
+    <!-- Orange stage leaf -->
+    <path d="M 290,455 C 295,450 305,450 310,455 C 315,460 315,470 310,475 C 305,480 295,480 290,475 C 285,470 285,460 290,455 Z" 
+          fill="#FF7F00" opacity="0.7" transform="rotate(-25, 300, 465)" />
+    
+    <!-- Green stage leaf -->
+    <path d="M 360,440 C 365,435 375,435 380,440 C 385,445 385,455 380,460 C 375,465 365,465 360,460 C 355,455 355,445 360,440 Z" 
+          fill="#008000" opacity="0.7" transform="rotate(10, 370, 450)" />
+    
+    <!-- Yellow stage leaf -->
+    <path d="M 430,450 C 435,445 445,445 450,450 C 455,455 455,465 450,470 C 445,475 435,475 430,470 C 425,465 425,455 430,450 Z" 
+          fill="#FFFF00" opacity="0.7" transform="rotate(-15, 440, 460)" />
+  </g>
+  
+  <!-- Tree roots (somatic) -->
+  <g id="treeRoots">
+    <path d="M 250,350 L 200,430" fill="none" stroke="#8D6E63" stroke-width="5" />
+    <path d="M 250,350 L 170,450" fill="none" stroke="#8D6E63" stroke-width="4" />
+    <path d="M 250,350 L 130,420" fill="none" stroke="#8D6E63" stroke-width="3" />
+    
+    <path d="M 250,350 L 300,430" fill="none" stroke="#8D6E63" stroke-width="5" />
+    <path d="M 250,350 L 330,450" fill="none" stroke="#8D6E63" stroke-width="4" />
+    <path d="M 250,350 L 370,420" fill="none" stroke="#8D6E63" stroke-width="3" />
+    
+    <!-- Small rootlets -->
+    <path d="M 200,430 L 180,450" fill="none" stroke="#8D6E63" stroke-width="2" />
+    <path d="M 200,430 L 210,460" fill="none" stroke="#8D6E63" stroke-width="2" />
+    
+    <path d="M 300,430 L 320,450" fill="none" stroke="#8D6E63" stroke-width="2" />
+    <path d="M 300,430 L 290,460" fill="none" stroke="#8D6E63" stroke-width="2" />
+    
+    <path d="M 170,450 L 160,470" fill="none" stroke="#8D6E63" stroke-width="2" />
+    <path d="M 330,450 L 340,470" fill="none" stroke="#8D6E63" stroke-width="2" />
+  </g>
+  
+  <!-- Tree trunk (mental) with spiral patterns -->
+  <g id="treeTrunk">
+    <path d="M 230,350 L 230,150 C 230,140 270,140 270,150 L 270,350 Z" fill="#795548" />
+    
+    <!-- Spiral in bark -->
+    <path d="M 250,300 
+              C 255,295 260,295 265,300 
+              C 270,305 270,315 265,320 
+              C 260,325 250,325 245,320 
+              C 240,315 240,305 245,300 
+              C 250,295 255,290 260,295 
+              C 265,300 265,310 260,315 
+              C 255,320 245,320 240,315 
+              C 235,310 235,300 240,295"
+          fill="none" stroke="#5D4037" stroke-width="1.5" opacity="0.7" />
+    
+    <path d="M 250,250 
+              C 245,245 240,245 235,250 
+              C 230,255 230,265 235,270 
+              C 240,275 250,275 255,270 
+              C 260,265 260,255 255,250 
+              C 250,245 245,240 240,245 
+              C 235,250 235,260 240,265 
+              C 245,270 255,270 260,265 
+              C 265,260 265,250 260,245"
+          fill="none" stroke="#5D4037" stroke-width="1.5" opacity="0.7" />
+    
+    <!-- Bark texture -->
+    <line x1="230" y1="330" x2="240" y2="330" stroke="#5D4037" stroke-width="1" />
+    <line x1="260" y1="310" x2="270" y2="310" stroke="#5D4037" stroke-width="1" />
+    <line x1="230" y1="290" x2="240" y2="290" stroke="#5D4037" stroke-width="1" />
+    <line x1="260" y1="270" x2="270" y2="270" stroke="#5D4037" stroke-width="1" />
+    <line x1="230" y1="250" x2="240" y2="250" stroke="#5D4037" stroke-width="1" />
+    <line x1="260" y1="230" x2="270" y2="230" stroke="#5D4037" stroke-width="1" />
+    <line x1="230" y1="210" x2="240" y2="210" stroke="#5D4037" stroke-width="1" />
+    <line x1="260" y1="190" x2="270" y2="190" stroke="#5D4037" stroke-width="1" />
+    <line x1="230" y1="170" x2="240" y2="170" stroke="#5D4037" stroke-width="1" />
+  </g>
+  
+  <!-- Main branches (emotional) -->
+  <g id="mainBranches">
+    <!-- Left main branch -->
+    <path d="M 230,150 C 200,130 180,120 150,130" fill="none" stroke="#8D6E63" stroke-width="8" />
+    
+    <!-- Right main branch -->
+    <path d="M 270,150 C 300,130 320,120 350,130" fill="none" stroke="#8D6E63" stroke-width="8" />
+    
+    <!-- Center upward branch -->
+    <path d="M 250,150 C 250,120 250,100 250,80" fill="none" stroke="#8D6E63" stroke-width="8" />
+  </g>
+  
+  <!-- Secondary branches -->
+  <g id="secondaryBranches">
+    <!-- Left secondary branches -->
+    <path d="M 150,130 C 130,120 110,120 90,130" fill="none" stroke="#8D6E63" stroke-width="6" />
+    <path d="M 150,130 C 140,110 130,90 120,70" fill="none" stroke="#8D6E63" stroke-width="6" />
+    
+    <!-- Right secondary branches -->
+    <path d="M 350,130 C 370,120 390,120 410,130" fill="none" stroke="#8D6E63" stroke-width="6" />
+    <path d="M 350,130 C 360,110 370,90 380,70" fill="none" stroke="#8D6E63" stroke-width="6" />
+    
+    <!-- Center secondary branches -->
+    <path d="M 250,80 C 230,70 220,50 210,30" fill="none" stroke="#8D6E63" stroke-width="6" />
+    <path d="M 250,80 C 270,70 280,50 290,30" fill="none" stroke="#8D6E63" stroke-width="6" />
+  </g>
+  
+  <!-- Tertiary branches -->
+  <g id="tertiaryBranches">
+    <!-- Left tertiary branches -->
+    <path d="M 90,130 C 80,120 70,120 60,130" fill="none" stroke="#8D6E63" stroke-width="4" />
+    <path d="M 90,130 C 85,115 80,100 75,85" fill="none" stroke="#8D6E63" stroke-width="4" />
+    
+    <path d="M 120,70 C 110,60 100,50 90,45" fill="none" stroke="#8D6E63" stroke-width="4" />
+    <path d="M 120,70 C 125,55 130,40 135,25" fill="none" stroke="#8D6E63" stroke-width="4" />
+    
+    <!-- Right tertiary branches -->
+    <path d="M 410,130 C 420,120 430,120 440,130" fill="none" stroke="#8D6E63" stroke-width="4" />
+    <path d="M 410,130 C 415,115 420,100 425,85" fill="none" stroke="#8D6E63" stroke-width="4" />
+    
+    <path d="M 380,70 C 390,60 400,50 410,45" fill="none" stroke="#8D6E63" stroke-width="4" />
+    <path d="M 380,70 C 375,55 370,40 365,25" fill="none" stroke="#8D6E63" stroke-width="4" />
+    
+    <!-- Center tertiary branches -->
+    <path d="M 210,30 C 200,25 190,20 180,20" fill="none" stroke="#8D6E63" stroke-width="4" />
+    <path d="M 210,30 C 205,15 200,0 195,-15" fill="none" stroke="#8D6E63" stroke-width="4" />
+    
+    <path d="M 290,30 C 300,25 310,20 320,20" fill="none" stroke="#8D6E63" stroke-width="4" />
+    <path d="M 290,30 C 295,15 300,0 305,-15" fill="none" stroke="#8D6E63" stroke-width="4" />
+  </g>
+  
+  <!-- Stage-colored leaves on the branches -->
+  <g id="stageLeaves">
+    <!-- Purple leaves -->
+    <path d="M 60,130 C 55,125 55,115 60,110 C 65,105 75,105 80,110 C 85,115 85,125 80,130 C 75,135 65,135 60,130 Z" 
+          fill="#663366" opacity="0.8" />
+    <path d="M 75,85 C 70,80 70,70 75,65 C 80,60 90,60 95,65 C 100,70 100,80 95,85 C 90,90 80,90 75,85 Z" 
+          fill="#663366" opacity="0.8" />
+    
+    <!-- Red leaves -->
+    <path d="M 90,45 C 85,40 85,30 90,25 C 95,20 105,20 110,25 C 115,30 115,40 110,45 C 105,50 95,50 90,45 Z" 
+          fill="#8B0000" opacity="0.8" />
+    <path d="M 135,25 C 130,20 130,10 135,5 C 140,0 150,0 155,5 C 160,10 160,20 155,25 C 150,30 140,30 135,25 Z" 
+          fill="#8B0000" opacity="0.8" />
+    
+    <!-- Blue leaves -->
+    <path d="M 180,20 C 175,15 175,5 180,0 C 185,-5 195,-5 200,0 C 205,5 205,15 200,20 C 195,25 185,25 180,20 Z" 
+          fill="#0000AA" opacity="0.8" />
+          
+    <!-- Orange leaves -->
+    <path d="M 320,20 C 315,15 315,5 320,0 C 325,-5 335,-5 340,0 C 345,5 345,15 340,20 C 335,25 325,25 320,20 Z" 
+          fill="#FF7F00" opacity="0.8" />
+    
+    <!-- Green leaves -->
+    <path d="M 410,45 C 405,40 405,30 410,25 C 415,20 425,20 430,25 C 435,30 435,40 430,45 C 425,50 415,50 410,45 Z" 
+          fill="#008000" opacity="0.8" />
+    <path d="M 365,25 C 360,20 360,10 365,5 C 370,0 380,0 385,5 C 390,10 390,20 385,25 C 380,30 370,30 365,25 Z" 
+          fill="#008000" opacity="0.8" />
+    
+    <!-- Yellow leaves -->
+    <path d="M 440,130 C 435,125 435,115 440,110 C 445,105 455,105 460,110 C 465,115 465,125 460,130 C 455,135 445,135 440,130 Z" 
+          fill="#FFFF00" opacity="0.8" />
+    <path d="M 425,85 C 420,80 420,70 425,65 C 430,60 440,60 445,65 C 450,70 450,80 445,85 C 440,90 430,90 425,85 Z" 
+          fill="#FFFF00" opacity="0.8" />
+    
+    <!-- Turquoise leaves -->
+    <path d="M 195,-15 C 190,-20 190,-30 195,-35 C 200,-40 210,-40 215,-35 C 220,-30 220,-20 215,-15 C 210,-10 200,-10 195,-15 Z" 
+          fill="#40E0D0" opacity="0.8" />
+    
+    <!-- Coral leaves -->
+    <path d="M 305,-15 C 300,-20 300,-30 305,-35 C 310,-40 320,-40 325,-35 C 330,-30 330,-20 325,-15 C 320,-10 310,-10 305,-15 Z" 
+          fill="#FF7F50" opacity="0.8" />
+    
+    <!-- Ultra-Violet leaf -->
+    <path d="M 250,60 C 245,55 245,45 250,40 C 255,35 265,35 270,40 C 275,45 275,55 270,60 C 265,65 255,65 250,60 Z" 
+          fill="#8A2BE2" opacity="0.8" />
+    
+    <!-- Clear leaf (translucent) -->
+    <path d="M 250,20 C 245,15 245,5 250,0 C 255,-5 265,-5 270,0 C 275,5 275,15 270,20 C 265,25 255,25 250,20 Z" 
+          fill="#FFFFFF" opacity="0.5" stroke="#CCCCCC" stroke-width="0.5" />
+  </g>
+  
+  <!-- Falling leaves -->
+  <g id="fallingLeaves">
+    <!-- Purple falling leaf -->
+    <path d="M 120,200 C 115,195 115,185 120,180 C 125,175 135,175 140,180 C 145,185 145,195 140,200 C 135,205 125,205 120,200 Z" 
+          fill="#663366" opacity="0.7" transform="rotate(30, 130, 190)">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="30,200" dur="15s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Blue falling leaf -->
+    <path d="M 350,150 C 345,145 345,135 350,130 C 355,125 365,125 370,130 C 375,135 375,145 370,150 C 365,155 355,155 350,150 Z" 
+          fill="#0000AA" opacity="0.7" transform="rotate(-20, 360, 140)">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-150,250" dur="20s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Yellow falling leaf -->
+    <path d="M 400,100 C 395,95 395,85 400,80 C 405,75 415,75 420,80 C 425,85 425,95 420,100 C 415,105 405,105 400,100 Z" 
+          fill="#FFFF00" opacity="0.7" transform="rotate(15, 410, 90)">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-100,300" dur="18s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Turquoise falling leaf -->
+    <path d="M 180,100 C 175,95 175,85 180,80 C 185,75 195,75 200,80 C 205,85 205,95 200,100 C 195,105 185,105 180,100 Z" 
+          fill="#40E0D0" opacity="0.7" transform="rotate(-15, 190, 90)">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="120,300" dur="17s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Clear falling leaf -->
+    <path d="M 300,200 C 295,195 295,185 300,180 C 305,175 315,175 320,180 C 325,185 325,195 320,200 C 315,205 305,205 300,200 Z" 
+          fill="#FFFFFF" opacity="0.5" stroke="#CCCCCC" stroke-width="0.5" transform="rotate(45, 310, 190)">
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-50,200" dur="14s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Labels for sections: somatic, mental, emotional -->
+  <g id="sectionLabels" font-family="Arial" font-size="12" font-weight="bold">
+    <text x="150" y="470" fill="#FFFFFF" text-anchor="middle">SOMATIC (ROOTS)</text>
+    <text x="250" y="260" fill="#FFFFFF" text-anchor="middle" transform="rotate(90, 250, 260)">MENTAL (TRUNK)</text>
+    <text x="350" y="100" fill="#333333" text-anchor="middle">EMOTIONAL (BRANCHES)</text>
+  </g>
+</svg>

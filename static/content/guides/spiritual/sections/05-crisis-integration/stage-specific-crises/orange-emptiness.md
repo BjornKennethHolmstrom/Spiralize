@@ -189,11 +189,11 @@ Orange's spiritual emergency **hits when the metrics stop meaning**—a collisio
 ---
 
 ## **Next Steps**  
-- 🟢 [Green's Disillusionment Crisis](/green-crisis.md) (the next stage's challenge)  
-- 📉 [Orange Shadow Journal](/tools/shadow-journal.md#orange)  
-- 🧠 [Beyond Optimization Meditation](/tools/meditation-scripts.md#orange-emptiness)
-- 📊 [Healthy Metrics Guide](/tools/metrics-discernment.md) (when to measure, when to surrender)
-- 🎯 [Intrinsic vs. Extrinsic Motivation](/practices/orange-rational.md#motivation-types) (transforming your drivers)
+- 🟢 [Green's Disillusionment Crisis](/guide-spiritual/sections/05-crisis-integration/stage-specific-crises/green-disillusionment) (the next stage's challenge)  
+- 📉 [Orange Shadow Journal](/guide-spiritual/tools/shadow-journal#orange)  
+- 🧠 [Beyond Optimization Meditation](/guide-spiritual/tools/meditation-scripts#orange-emptiness)
+- 📊 [Healthy Metrics Guide](/guide-spiritual/tools/metrics-discernment) (when to measure, when to surrender)
+- 🎯 [Intrinsic vs. Extrinsic Motivation](/guide-spiritual/sections/04-practices/orange-rational#motivation-types) (transforming your drivers)
 
 ---  
 **Lead Author**: DeepSeek (systems framing)  

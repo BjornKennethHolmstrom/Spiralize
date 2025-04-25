@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg27"
+   sodipodi:docname="yellow-crisis-visual.svg"
+   width="500"
+   height="500"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview27"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.705"
+     inkscape:cx="351.06383"
+     inkscape:cy="262.41135"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg27" />
+  <!-- Background spiral -->
+  <defs
+     id="defs3">
+    <radialGradient
+       id="spiralGradient"
+       cx="439.46176"
+       cy="308.17822"
+       r="345.64688"
+       fx="439.46176"
+       fy="308.17822"
+       gradientTransform="scale(0.9859842,1.014215)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FFFF00"
+         stop-opacity="0.9"
+         id="stop1" />
+      <stop
+         offset="70%"
+         stop-color="#FFCC00"
+         stop-opacity="0.7"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#000000"
+         stop-opacity="1"
+         id="stop3" />
+    </radialGradient>
+    <!-- Define spiral path -->
+    <path
+       id="spiralPath"
+       d="m 400,300 q 50,-50 100,0 50,50 50,100 0,50 -100,100 -100,50 -150,-50 -50,-100 -50,-150 0,-50 50,-150 50,-100 150,50 100,150 50,200" />
+  </defs>
+  <!-- Main spiral -->
+  <g
+     id="mainSpiral"
+     transform="matrix(0.67952141,0,0,0.67952141,-39.859277,37.466793)">
+    <path
+       d="m 400,300 q -20,-20 -50,0 -30,20 -70,100 -40,80 40,100 80,20 130,20 50,0 100,-70 50,-70 30,-150 -20,-80 -30,-150 -10,-70 -150,-20 -140,50 -150,70 -10,20 -50,150 -40,130 30,150 70,20 150,80 80,60 170,-50 Q 640,420 650,400 660,380 680,250 700,120 600,100 500,80 400,50 300,20 200,150 100,280 100,350 q 0,70 50,200 50,130 200,100 Q 500,620 550,600 600,580 700,450 800,320 750,250 700,180 650,50 600,-80 400,0"
+       fill="none"
+       stroke="url(#spiralGradient)"
+       stroke-width="15"
+       stroke-linecap="round"
+       id="path3"
+       style="stroke:url(#spiralGradient)" />
+  </g>
+  <!-- Central radiant point -->
+  <circle
+     cx="231.94928"
+     cy="241.32321"
+     r="13.590428"
+     fill="#ffffff"
+     id="circle3"
+     style="stroke-width:0.679521">
+    <animate
+       attributeName="r"
+       values="20;25;20"
+       dur="3s"
+       repeatCount="indefinite" />
+  </circle>
+  <!-- Fractured clipboard -->
+  <g
+     transform="matrix(0.54361713,0,0,0.54361713,130.02107,173.37107)"
+     id="g15">
+    <rect
+       x="0"
+       y="0"
+       width="100"
+       height="140"
+       rx="5"
+       fill="#e6e6e6"
+       stroke="#333333"
+       stroke-width="2"
+       id="rect3" />
+    <rect
+       x="10"
+       y="10"
+       width="80"
+       height="120"
+       fill="#ffffff"
+       stroke="#333333"
+       stroke-width="1"
+       id="rect4" />
+    <!-- Fractured clipboard lines -->
+    <path
+       d="M 10,40 H 90"
+       stroke="#333333"
+       stroke-width="1"
+       id="path4" />
+    <path
+       d="M 10,60 H 90"
+       stroke="#333333"
+       stroke-width="1"
+       id="path5" />
+    <path
+       d="M 10,80 H 90"
+       stroke="#333333"
+       stroke-width="1"
+       id="path6" />
+    <path
+       d="M 10,100 H 90"
+       stroke="#333333"
+       stroke-width="1"
+       id="path7" />
+    <path
+       d="M 10,120 H 90"
+       stroke="#333333"
+       stroke-width="1"
+       id="path8" />
+    <!-- Fracture lines -->
+    <path
+       d="M 50,0 70,140"
+       stroke="#333333"
+       stroke-width="2"
+       stroke-dasharray="5, 3"
+       fill="none"
+       id="path9" />
+    <path
+       d="M 20,70 90,90"
+       stroke="#333333"
+       stroke-width="2"
+       stroke-dasharray="5, 3"
+       fill="none"
+       id="path10" />
+    <!-- Blooming petals -->
+    <g
+       transform="translate(50,70)"
+       id="g14">
+      <path
+         d="M 0,0 C 20,-20 40,-10 30,10"
+         fill="#ffdd00"
+         stroke="#333333"
+         stroke-width="1"
+         opacity="0.7"
+         id="path11" />
+      <path
+         d="M 0,0 C -20,-20 -40,-10 -30,10"
+         fill="#ffdd00"
+         stroke="#333333"
+         stroke-width="1"
+         opacity="0.7"
+         id="path12" />
+      <path
+         d="M 0,0 C 20,20 40,10 30,-10"
+         fill="#ffdd00"
+         stroke="#333333"
+         stroke-width="1"
+         opacity="0.7"
+         id="path13" />
+      <path
+         d="M 0,0 C -20,20 -40,10 -30,-10"
+         fill="#ffdd00"
+         stroke="#333333"
+         stroke-width="1"
+         opacity="0.7"
+         id="path14" />
+    </g>
+  </g>
+  <!-- Brain doodling itself -->
+  <g
+     transform="matrix(0.54361713,0,0,0.54361713,299.90143,173.37107)"
+     id="g23">
+    <!-- Brain outline -->
+    <path
+       d="M 50,20 C 70,0 90,0 110,20 130,40 130,60 110,80 90,100 70,100 50,80 30,60 30,40 50,20 Z"
+       fill="#f2d6e4"
+       stroke="#333333"
+       stroke-width="2"
+       id="path15" />
+    <!-- Brain details -->
+    <path
+       d="m 50,20 c 10,10 20,10 30,0"
+       fill="none"
+       stroke="#333333"
+       stroke-width="1.5"
+       id="path16" />
+    <path
+       d="m 80,20 c 10,10 20,10 30,0"
+       fill="none"
+       stroke="#333333"
+       stroke-width="1.5"
+       id="path17" />
+    <path
+       d="M 50,80 C 60,70 70,70 80,80"
+       fill="none"
+       stroke="#333333"
+       stroke-width="1.5"
+       id="path18" />
+    <path
+       d="m 80,80 c 10,-10 20,-10 30,0"
+       fill="none"
+       stroke="#333333"
+       stroke-width="1.5"
+       id="path19" />
+    <path
+       d="m 30,50 c 10,-5 10,5 0,0"
+       fill="none"
+       stroke="#333333"
+       stroke-width="1.5"
+       id="path20" />
+    <path
+       d="m 130,50 c -10,-5 -10,5 0,0"
+       fill="none"
+       stroke="#333333"
+       stroke-width="1.5"
+       id="path21" />
+    <!-- Brain pencil drawing itself -->
+    <path
+       d="m 80,50 q 40,40 60,-10"
+       fill="none"
+       stroke="#333333"
+       stroke-width="1.5"
+       stroke-dasharray="4, 2"
+       id="path22" />
+    <path
+       d="m 138,38 4,4 h -4 z"
+       fill="#333333"
+       id="path23" />
+  </g>
+  <!-- Sticky note -->
+  <g
+     transform="matrix(0.65636728,-0.17587308,0.17587308,0.65636728,231.94928,343.25143)"
+     id="g25">
+    <rect
+       x="-75"
+       y="-50"
+       width="150"
+       height="100"
+       fill="#ffdd00"
+       stroke="#333333"
+       stroke-width="1"
+       id="rect23">
+      <animate
+         attributeName="y"
+         values="-50;-48;-50"
+         dur="4s"
+         repeatCount="indefinite" />
+    </rect>
+    <!-- Note text -->
+    <text
+       x="0"
+       y="-20"
+       font-family="Arial"
+       font-size="16px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text23">What am I?</text>
+    <text
+       x="0"
+       y="10"
+       font-family="Arial"
+       font-size="14px"
+       text-anchor="middle"
+       fill="#333333"
+       id="text24">Enough.</text>
+    <!-- Easter egg hidden in the note -->
+    <text
+       x="60"
+       y="40"
+       font-family="Arial"
+       font-size="6px"
+       text-anchor="middle"
+       fill="#333333"
+       opacity="0.5"
+       id="text25">TL;DR</text>
+  </g>
+  <!-- Brain scanning itself with a grocery scanner (playful absurdity) -->
+  <g
+     transform="matrix(0.47566499,0,0,0.47566499,367.85357,295.68493)"
+     id="g26">
+    <path
+       d="M 50,20 C 70,0 90,0 110,20 130,40 130,60 110,80 90,100 70,100 50,80 30,60 30,40 50,20 Z"
+       fill="#f2d6e4"
+       stroke="#333333"
+       stroke-width="2"
+       id="path25" />
+    <!-- Scanner -->
+    <rect
+       x="0"
+       y="40"
+       width="30"
+       height="20"
+       fill="#444444"
+       stroke="#222222"
+       stroke-width="1"
+       id="rect25" />
+    <rect
+       x="5"
+       y="45"
+       width="20"
+       height="10"
+       fill="#666666"
+       stroke="#222222"
+       stroke-width="1"
+       id="rect26" />
+    <!-- Scanning beam -->
+    <path
+       d="M 30,50 H 60"
+       stroke="#ff0000"
+       stroke-width="1.5"
+       stroke-dasharray="2, 2"
+       id="path26">
+      <animate
+         attributeName="stroke-dashoffset"
+         values="0;4"
+         dur="0.5s"
+         repeatCount="indefinite" />
+    </path>
+  </g>
+  <!-- Recursive text that spirals and gets smaller -->
+  <g
+     id="g27"
+     transform="matrix(0.67952141,0,0,0.67952141,-39.859277,37.466793)">
+    <text
+       id="text26"><textPath
+         href="#spiralPath"
+         startOffset="10%"
+         font-family="Arial"
+         font-size="12px"
+         fill="#333333"
+         id="textPath26">analysis of analysis of analysis of analysis...</textPath></text>
+  </g>
+</svg>

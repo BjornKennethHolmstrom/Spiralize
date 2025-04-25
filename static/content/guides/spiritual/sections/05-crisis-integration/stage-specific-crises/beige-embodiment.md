@@ -200,7 +200,7 @@ Beige's spiritual emergency **isn't psychological—it's biological**: a failure
 ---
 
 ## **Next Steps**  
-- 🟣 [Purple's Crisis of Connection](/guide-spiritual/sections/05-crisis-integration/purple-crisis.md) (the next developmental challenge)  
+- 🟣 [Purple's Crisis of Connection](/guide-spiritual/sections/05-crisis-integration/stage-specific-crises/purple-crisis.md) (the next developmental challenge)  
 - 🌿 [Beige Grounding Techniques](/guide-spiritual/tools/beige-grounding.md)  
 - 🥄 [Spoon Theory Resource Guide](/guide-spiritual/tools/energy-management.md) (managing limited physical resources)
 - 🧠 [Polyvagal Practices](/guide-spiritual/tools/nervous-system-regulation.md) (nervous system regulation)

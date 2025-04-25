@@ -171,11 +171,11 @@ Blue's spiritual emergency **feels like God's silence in the cathedral**—a ter
 ---
 
 ## **Next Steps**  
-- 🟠 [Orange's Emptiness Crisis](/guide-spiritual/sections/05-crisis-integration/orange-crisis.md) (the next potential pitfall)  
-- ✝️ [Blue Shadow Journal](/guide-spiritual/tools/shadow-journal.md#blue)  
-- 📚 [Mystical Texts Reading Guide](/guide-spiritual/tools/mystical-texts.md) (finding depth beyond dogma)
-- 🧠 [Faith vs. Belief Contemplation](/guide-spiritual/tools/faith-belief-distinction.md) (understanding the difference)
-- 🌈 [Interfaith Dialogue Practice](/guide-spiritual/sections/04-practices/green-heart.md#interfaith-dialogue) (seeing through other eyes)
+- 🟠 [Orange's Emptiness Crisis](/guide-spiritual/sections/05-crisis-integration/stage-specific-crises/orange-crisis) (the next potential pitfall)  
+- ✝️ [Blue Shadow Journal](/guide-spiritual/tools/shadow-journal#blue)  
+- 📚 [Mystical Texts Reading Guide](/guide-spiritual/tools/mystical-texts) (finding depth beyond dogma)
+- 🧠 [Faith vs. Belief Contemplation](/guide-spiritual/tools/faith-belief-distinction) (understanding the difference)
+- 🌈 [Interfaith Dialogue Practice](/guide-spiritual/sections/04-practices/green-heart#interfaith-dialogue) (seeing through other eyes)
 
 ---  
 **Lead Author**: DeepSeek (structural theology)  

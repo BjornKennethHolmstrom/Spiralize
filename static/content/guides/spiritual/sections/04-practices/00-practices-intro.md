@@ -47,7 +47,7 @@ How spiritual practice transforms across stages:
 **Spiral Playground**: Practices are the spiral's sandbox, from tribal drum circles to spiralize.org's A.I.-guided inquiries. **They're Yellow's maps turned into finger-paint, reminding us to play, not just plan.**  
 
 ### **1. Diagnose Before Prescribing**  
-- Use the [Spiral Diagnostics](/guide-spiritual/tools/spiral-diagnostics) tool  
+- Take the [Spiral Dynamics Quiz](https://spiralize.org/quiz) to find your center of gravity.  
 - Watch for **stage-mixing**:  
   - *"I'm Coral but still need Red's fire ceremonies" = normal*  
   - ***"I'm Green but started craving Blue's sacred discipline again." = also normal.***  

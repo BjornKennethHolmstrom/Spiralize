@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background mountain -->
+  <defs>
+    <!-- Mountain texture -->
+    <radialGradient id="mountainGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#555555" />
+      <stop offset="100%" stop-color="#333333" />
+    </radialGradient>
+    
+    <!-- Fire effect for sword -->
+    <radialGradient id="fireGradient" cx="50%" cy="0%" r="100%" fx="50%" fy="0%">
+      <stop offset="0%" stop-color="#FFDD00" />
+      <stop offset="40%" stop-color="#FF5500" />
+      <stop offset="80%" stop-color="#CC0000" />
+      <stop offset="100%" stop-color="#800000" />
+    </radialGradient>
+    
+    <!-- Glow effect -->
+    <filter id="fireGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Rough texture -->
+    <filter id="roughTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="1" result="turbulence"/>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    
+    <!-- Blood splash pattern -->
+    <pattern id="bloodPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="15" fill="#8B0000" opacity="0.6" />
+      <ellipse cx="70" cy="50" rx="20" ry="15" fill="#A50000" opacity="0.5" />
+      <circle cx="40" cy="70" r="10" fill="#990000" opacity="0.4" />
+      <path d="M 80,20 Q 90,30 80,40 Q 70,30 80,20 Z" fill="#B00000" opacity="0.5" />
+    </pattern>
+  </defs>
+  
+  <!-- Dark sky background -->
+  <rect x="0" y="0" width="800" height="600" fill="#1A1A1A" />
+  
+  <!-- Mountain -->
+  <path d="M 0,350 L 400,100 L 800,350 L 800,600 L 0,600 Z" fill="url(#mountainGradient)" filter="url(#roughTexture)" />
+  
+  <!-- Mountain dividing crack -->
+  <path d="M 400,100 L 400,600" stroke="#1A1A1A" stroke-width="10" />
+  
+  <!-- Sacred side (left) -->
+  <g id="leftSide">
+    <!-- Village under protection -->
+    <g transform="translate(200, 450)">
+      <!-- Houses -->
+      <rect x="-80" y="-20" width="30" height="20" fill="#CCCCCC" />
+      <polygon points="-80,-20 -65,-20 -72.5,-35" fill="#AAAAAA" />
+      
+      <rect x="-40" y="-15" width="25" height="15" fill="#CCCCCC" />
+      <polygon points="-40,-15 -15,-15 -27.5,-30" fill="#AAAAAA" />
+      
+      <rect x="-10" y="-25" width="35" height="25" fill="#CCCCCC" />
+      <polygon points="-10,-25 25,-25 7.5,-45" fill="#AAAAAA" />
+      
+      <rect x="35" y="-20" width="30" height="20" fill="#CCCCCC" />
+      <polygon points="35,-20 65,-20 50,-40" fill="#AAAAAA" />
+      
+      <!-- Farmland -->
+      <rect x="-70" y="10" width="140" height="40" fill="#655132" />
+      <line x1="-70" y1="20" x2="70" y2="20" stroke="#594729" stroke-width="2" />
+      <line x1="-70" y1="30" x2="70" y2="30" stroke="#594729" stroke-width="2" />
+      <line x1="-50" y1="10" x2="-50" y2="50" stroke="#594729" stroke-width="2" />
+      <line x1="-20" y1="10" x2="-20" y2="50" stroke="#594729" stroke-width="2" />
+      <line x1="10" y1="10" x2="10" y2="50" stroke="#594729" stroke-width="2" />
+      <line x1="40" y1="10" x2="40" y2="50" stroke="#594729" stroke-width="2" />
+    </g>
+    
+    <!-- Protective warrior -->
+    <g transform="translate(250, 350)">
+      <!-- Body -->
+      <ellipse cx="0" cy="0" rx="20" ry="35" fill="#7F4033" />
+      
+      <!-- Head -->
+      <circle cx="0" cy="-45" r="15" fill="#B87551" />
+      
+      <!-- Arms with shield -->
+      <path d="M -20,-20 L -50,-10" stroke="#B87551" stroke-width="10" stroke-linecap="round" />
+      <path d="M 20,-20 L 40,0" stroke="#B87551" stroke-width="10" stroke-linecap="round" />
+      
+      <!-- Shield on left arm -->
+      <ellipse cx="-60" cy="-10" rx="20" ry="30" fill="#A52A2A" />
+      <ellipse cx="-60" cy="-10" rx="15" ry="25" fill="#8B0000" />
+      <path d="M -60,-10 L -60,-35 M -75,-10 L -45,-10" stroke="#C0C0C0" stroke-width="2" />
+      
+      <!-- Sword on right arm (raised in protection) -->
+      <path d="M 40,0 L 70,-40" stroke="#C0C0C0" stroke-width="3" />
+      <ellipse cx="43" cy="-3" rx="5" ry="5" fill="#A0A0A0" stroke="#707070" stroke-width="1" />
+      
+      <!-- Legs in defensive stance -->
+      <path d="M -10,35 L -20,80" stroke="#4B2621" stroke-width="15" stroke-linecap="round" />
+      <path d="M 10,35 L 30,80" stroke="#4B2621" stroke-width="15" stroke-linecap="round" />
+    </g>
+    
+    <!-- Protective fire/light -->
+    <circle cx="250" cy="250" r="70" fill="#FF890033" />
+    <circle cx="250" cy="250" r="40" fill="#FF550033" />
+  </g>
+  
+  <!-- Shadow side (right) -->
+  <g id="rightSide">
+    <!-- Oppressed people -->
+    <g transform="translate(600, 480)">
+      <!-- Fallen/kneeling figures -->
+      <g transform="translate(-50, -10) scale(0.8)">
+        <ellipse cx="0" cy="0" rx="15" ry="10" fill="#777777" />
+        <path d="M 0,-10 L 0,-30" stroke="#777777" stroke-width="8" stroke-linecap="round" />
+        <circle cx="0" cy="-40" r="10" fill="#777777" />
+        <path d="M 0,-30 L -20,-20" stroke="#777777" stroke-width="6" stroke-linecap="round" />
+        <path d="M 0,-30 L 20,-20" stroke="#777777" stroke-width="6" stroke-linecap="round" />
+      </g>
+      
+      <g transform="translate(0, 0) scale(0.7) rotate(90)">
+        <ellipse cx="0" cy="0" rx="15" ry="10" fill="#777777" />
+        <path d="M 0,-10 L 0,-30" stroke="#777777" stroke-width="8" stroke-linecap="round" />
+        <circle cx="0" cy="-40" r="10" fill="#777777" />
+        <path d="M 0,-30 L -20,-10" stroke="#777777" stroke-width="6" stroke-linecap="round" />
+        <path d="M 0,-30 L 20,-10" stroke="#777777" stroke-width="6" stroke-linecap="round" />
+        <path d="M -15,0 L -30,20" stroke="#777777" stroke-width="6" stroke-linecap="round" />
+        <path d="M 15,0 L 30,20" stroke="#777777" stroke-width="6" stroke-linecap="round" />
+      </g>
+      
+      <g transform="translate(50, -5) scale(0.8) rotate(-30)">
+        <ellipse cx="0" cy="0" rx="15" ry="10" fill="#777777" />
+        <path d="M 0,-10 L 0,-30" stroke="#777777" stroke-width="8" stroke-linecap="round" />
+        <circle cx="0" cy="-40" r="10" fill="#777777" />
+        <path d="M 0,-30 L -20,-20" stroke="#777777" stroke-width="6" stroke-linecap="round" />
+        <path d="M 0,-30 L 20,-20" stroke="#777777" stroke-width="6" stroke-linecap="round" />
+      </g>
+    </g>
+    
+    <!-- Warlord figure -->
+    <g transform="translate(550, 350)">
+      <!-- Body -->
+      <ellipse cx="0" cy="0" rx="25" ry="40" fill="#4B0000" />
+      
+      <!-- Head with helmet -->
+      <path d="M 0,-50 C -15,-50 -20,-35 -20,-45 C -20,-55 -15,-65 0,-65 C 15,-65 20,-55 20,-45 C 20,-35 15,-50 0,-50 Z" fill="#660000" />
+      <path d="M -15,-50 L 15,-50" stroke="#990000" stroke-width="3" />
+      
+      <!-- Face in shadow -->
+      <path d="M -8,-55 L -3,-55" stroke="#CC0000" stroke-width="2" />
+      <path d="M 8,-55 L 3,-55" stroke="#CC0000" stroke-width="2" />
+      <path d="M -5,-45 C -3,-43 3,-43 5,-45" stroke="#CC0000" stroke-width="2" />
+      
+      <!-- Armored arms -->
+      <path d="M -25,-20 L -50,0" stroke="#660000" stroke-width="15" stroke-linecap="round" />
+      <path d="M 25,-20 L 50,0" stroke="#660000" stroke-width="15" stroke-linecap="round" />
+      
+      <!-- Weapon (mace) -->
+      <path d="M 50,0 L 80,-10" stroke="#333333" stroke-width="5" />
+      <circle cx="90" cy="-12" r="12" fill="#333333" stroke="#666666" stroke-width="1" />
+      <path d="M 85,-17 L 95,-7 M 85,-7 L 95,-17" stroke="#666666" stroke-width="2" />
+      
+      <!-- Legs in aggressive stance -->
+      <path d="M -15,40 L -30,90" stroke="#330000" stroke-width="15" stroke-linecap="round" />
+      <path d="M 15,40 L 30,90" stroke="#330000" stroke-width="15" stroke-linecap="round" />
+    </g>
+    
+    <!-- Blood splatter and destruction -->
+    <circle cx="550" cy="500" r="30" fill="url(#bloodPattern)" opacity="0.7" />
+    <circle cx="650" cy="470" r="20" fill="url(#bloodPattern)" opacity="0.5" />
+    
+    <!-- Smoke/darkness -->
+    <circle cx="550" cy="250" r="70" fill="#00000066" />
+    <circle cx="550" cy="250" r="40" fill="#00000099" />
+  </g>
+  
+  <!-- Central flaming sword -->
+  <g id="sword" filter="url(#fireGlow)">
+    <!-- Sword blade -->
+    <path d="M 400,100 L 400,350" stroke="#C0C0C0" stroke-width="12" />
+    
+    <!-- Sword tip -->
+    <path d="M 385,350 L 400,380 L 415,350" fill="#C0C0C0" />
+    
+    <!-- Sword hilt -->
+    <rect x="385" y="85" width="30" height="15" fill="#8B4513" />
+    <path d="M 370,85 L 430,85" stroke="#8B4513" stroke-width="10" stroke-linecap="round" />
+    
+    <!-- Easter egg: "Strength serves" on the hilt -->
+    <text x="400" y="95" font-family="serif" font-size="6" text-anchor="middle" fill="#DDDDDD" opacity="0.6">Strength serves</text>
+    
+    <!-- Flames -->
+    <g>
+      <!-- Base flame -->
+      <path d="M 400,100 
+              C 385,150 370,200 385,250 
+              C 400,180 415,200 415,250 
+              C 430,200 415,150 400,100 Z" 
+            fill="url(#fireGradient)" opacity="0.7">
+        <animate attributeName="d" 
+                 values="M 400,100 C 385,150 370,200 385,250 C 400,180 415,200 415,250 C 430,200 415,150 400,100 Z;
+                         M 400,100 C 380,150 375,200 385,250 C 400,190 410,200 415,250 C 425,200 420,150 400,100 Z;
+                         M 400,100 C 385,150 370,200 385,250 C 400,180 415,200 415,250 C 430,200 415,150 400,100 Z" 
+                 dur="3s" 
+                 repeatCount="indefinite" />
+      </path>
+      
+      <!-- Secondary flames -->
+      <path d="M 400,100 
+              C 390,170 380,240 390,300 
+              C 400,250 410,250 410,300 
+              C 420,240 410,170 400,100 Z" 
+            fill="url(#fireGradient)" opacity="0.5">
+        <animate attributeName="d" 
+                 values="M 400,100 C 390,170 380,240 390,300 C 400,250 410,250 410,300 C 420,240 410,170 400,100 Z;
+                         M 400,100 C 385,170 385,240 390,300 C 400,260 405,250 410,300 C 415,240 415,170 400,100 Z;
+                         M 400,100 C 390,170 380,240 390,300 C 400,250 410,250 410,300 C 420,240 410,170 400,100 Z" 
+                 dur="4s" 
+                 repeatCount="indefinite" />
+      </path>
+      
+      <!-- Flame highlights -->
+      <path d="M 400,100 
+              C 395,150 395,200 400,250 
+              C 405,200 405,150 400,100 Z" 
+            fill="#FFDD55" opacity="0.6">
+        <animate attributeName="d" 
+                 values="M 400,100 C 395,150 395,200 400,250 C 405,200 405,150 400,100 Z;
+                         M 400,100 C 398,150 398,200 400,250 C 402,200 402,150 400,100 Z;
+                         M 400,100 C 395,150 395,200 400,250 C 405,200 405,150 400,100 Z" 
+                 dur="2s" 
+                 repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+  
+  <!-- Red symbols -->
+  <!-- Cracked shield -->
+  <g transform="translate(200, 200) rotate(-15)">
+    <path d="M 0,0 C -20,5 -30,20 -25,40 C -20,70 -10,90 0,100 C 10,90 20,70 25,40 C 30,20 20,5 0,0 Z" fill="#A52A2A" opacity="0.6" />
+    <path d="M 0,10 L 0,90 M -5,40 L 5,60" stroke="#333333" stroke-width="2" opacity="0.7" />
+  </g>
+  
+  <!-- Burning embers -->
+  <g id="embers">
+    <circle cx="150" cy="150" r="3" fill="#FF5500" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="180" cy="220" r="2" fill="#FF5500" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="230" cy="180" r="2.5" fill="#FF5500" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="600" cy="150" r="3" fill="#FF5500" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="650" cy="220" r="2" fill="#FF5500" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="550" cy="180" r="2.5" fill="#FF5500" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Blood splashes -->
+  <path d="M 100,350 C 95,340 90,345 85,340 C 80,335 85,330 90,335 C 95,340 100,335 100,350 Z" fill="#8B0000" opacity="0.5" />
+  <path d="M 700,320 C 695,310 690,315 685,310 C 680,305 685,300 690,305 C 695,310 700,305 700,320 Z" fill="#8B0000" opacity="0.6" />
+  
+  <!-- Central title -->
+  <text x="400" y="530" font-family="serif" font-size="24" fill="#DDDDDD" text-anchor="middle">Power is a blade—it cuts both ways</text>
+</svg>

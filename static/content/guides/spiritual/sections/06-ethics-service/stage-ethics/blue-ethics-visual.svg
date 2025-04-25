@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="800" fill="#1A237E" />
+  
+  <!-- Cathedral backdrop -->
+  <path d="M 50,200 
+           L 50,650 
+           L 550,650 
+           L 550,200 
+           C 500,150 450,100 300,50 
+           C 150,100 100,150 50,200 Z" 
+        fill="#101755" />
+  
+  <!-- Stained glass window frame -->
+  <defs>
+    <!-- Glowing light rays -->
+    <radialGradient id="lightRays" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="20%" stop-color="#FFF9C4" />
+      <stop offset="100%" stop-color="#FFD54F" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Gold inlay effect -->
+    <linearGradient id="goldInlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="50%" stop-color="#DAA520" />
+      <stop offset="100%" stop-color="#B8860B" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Window frame with gold inlay -->
+  <path d="M 100,250 
+           L 100,600 
+           L 500,600 
+           L 500,250 
+           C 450,200 400,150 300,100 
+           C 200,150 150,200 100,250 Z" 
+        fill="none" stroke="url(#goldInlay)" stroke-width="15" />
+  
+  <!-- Main stained glass pattern -->
+  <g id="stainedGlassWindow">
+    <!-- Central circle -->
+    <circle cx="300" cy="300" r="100" fill="#0D47A1" stroke="#DAA520" stroke-width="2" />
+    
+    <!-- Quandrants -->
+    <path d="M 100,250 L 300,300 L 100,450 Z" fill="#1565C0" stroke="#DAA520" stroke-width="2" />
+    <path d="M 100,450 L 300,300 L 100,600 Z" fill="#0D47A1" stroke="#DAA520" stroke-width="2" />
+    <path d="M 300,300 L 500,250 L 500,450 Z" fill="#1565C0" stroke="#DAA520" stroke-width="2" />
+    <path d="M 300,300 L 500,450 L 500,600 Z" fill="#0D47A1" stroke="#DAA520" stroke-width="2" />
+    
+    <!-- Upper sections -->
+    <path d="M 100,250 L 300,300 L 300,100 L 200,150 Z" fill="#0D47A1" stroke="#DAA520" stroke-width="2" />
+    <path d="M 300,100 L 300,300 L 500,250 L 400,150 Z" fill="#1565C0" stroke="#DAA520" stroke-width="2" />
+    
+    <!-- Blue symbols embedded in stained glass -->
+    <!-- Scroll in top left section -->
+    <g transform="translate(180, 200) scale(0.8)">
+      <path d="M -30,0 
+               C -30,-10 -25,-15 -20,-15 
+               L 20,-15 
+               C 25,-15 30,-10 30,0 
+               C 30,15 25,20 20,20 
+               L -20,20 
+               C -25,20 -30,15 -30,0 Z" 
+            fill="#1A237E" stroke="#DAA520" stroke-width="1.5" />
+      <path d="M -25,0 L 25,0 M -20,-5 L 20,-5 M -20,5 L 20,5" stroke="#DAA520" stroke-width="1" />
+    </g>
+    
+    <!-- Scales in top right section -->
+    <g transform="translate(420, 200) scale(0.7)">
+      <path d="M 0,-20 L 0,20" stroke="#DAA520" stroke-width="3" />
+      <path d="M -30,20 L 30,20" stroke="#DAA520" stroke-width="3" />
+      <circle cx="-25" cy="30" r="10" fill="#1A237E" stroke="#DAA520" stroke-width="1.5" />
+      <circle cx="25" cy="40" r="10" fill="#1A237E" stroke="#DAA520" stroke-width="1.5" />
+    </g>
+    
+    <!-- Central cross -->
+    <g transform="translate(300, 300)">
+      <path d="M 0,-60 L 0,60 M -40,0 L 40,0" stroke="#DAA520" stroke-width="8" />
+    </g>
+    
+    <!-- Torah/Commandments in bottom left -->
+    <g transform="translate(180, 450) scale(0.7)">
+      <path d="M -35,0 
+               C -35,-5 -30,-15 -20,-15 
+               L 20,-15 
+               C 30,-15 35,-5 35,0
+               C 35,5 30,15 20,15
+               L -20,15
+               C -30,15 -35,5 -35,0 Z" 
+            fill="#1A237E" stroke="#DAA520" stroke-width="2" />
+      <path d="M 0,-15 L 0,15" stroke="#DAA520" stroke-width="2" />
+      <path d="M -20,0 L 20,0 M -15,-7 L 15,-7 M -15,7 L 15,7" stroke="#DAA520" stroke-width="1" />
+    </g>
+    
+    <!-- Crown in bottom right -->
+    <g transform="translate(420, 450)">
+      <path d="M -30,0 
+               C -30,-5 -25,-10 -20,-10 
+               C -15,-10 -10,-5 -10,0 
+               C -10,-15 0,-25 10,-15 
+               C 10,-5 15,-10 20,-10 
+               C 25,-10 30,-5 30,0 
+               L 25,20 L -25,20 Z" 
+            fill="#1A237E" stroke="#DAA520" stroke-width="2" />
+      <circle cx="-15" cy="0" r="5" fill="#B71C1C" stroke="#DAA520" stroke-width="1" />
+      <circle cx="0" cy="-5" r="5" fill="#B71C1C" stroke="#DAA520" stroke-width="1" />
+      <circle cx="15" cy="0" r="5" fill="#B71C1C" stroke="#DAA520" stroke-width="1" />
+    </g>
+  </g>
+  
+  <!-- Cracks in the stained glass window -->
+  <g id="cracks" fill="none" stroke="#FFFFFF" stroke-width="1.5">
+    <!-- Major diagonal crack -->
+    <path d="M 150,200 
+             L 200,300 
+             L 180,350 
+             L 220,400 
+             L 200,500" 
+          stroke-width="2.5" />
+    
+    <!-- Secondary cracks -->
+    <path d="M 200,300 L 250,280" />
+    <path d="M 180,350 L 150,380" />
+    <path d="M 220,400 L 280,380" />
+    
+    <!-- Right side crack -->
+    <path d="M 450,220 
+             L 400,270 
+             L 420,350 
+             L 380,450" 
+          stroke-width="2" />
+    
+    <!-- Secondary right cracks -->
+    <path d="M 400,270 L 360,250" />
+    <path d="M 420,350 L 450,380" />
+    
+    <!-- Minor cracks -->
+    <path d="M 260,150 L 240,220" stroke-width="1" />
+    <path d="M 350,170 L 370,230" stroke-width="1" />
+    <path d="M 300,550 L 280,500" stroke-width="1" />
+  </g>
+  
+  <!-- Easter egg: "Truth adapts" hidden in a crack -->
+  <text x="210" y="460" font-family="serif" font-size="9" fill="#FFFFFF" transform="rotate(-40, 210, 460)" opacity="0.5">Truth adapts</text>
+  
+  <!-- Light bursting through cracks -->
+  <g id="burstingLight">
+    <!-- Central light burst -->
+    <circle cx="300" cy="300" r="150" fill="url(#lightRays)" opacity="0.3" />
+    
+    <!-- Light beams through cracks -->
+    <g opacity="0.7">
+      <path d="M 150,200 L 200,300 L 180,350 L 220,400 L 200,500" stroke="#FFFFFF" stroke-width="8" opacity="0.3" filter="blur(8px)" />
+      <path d="M 450,220 L 400,270 L 420,350 L 380,450" stroke="#FFFFFF" stroke-width="7" opacity="0.3" filter="blur(8px)" />
+      <path d="M 260,150 L 240,220" stroke="#FFFFFF" stroke-width="5" opacity="0.2" filter="blur(5px)" />
+    </g>
+    
+    <!-- Individual light beams -->
+    <path d="M 200,300 L 250,280" stroke="#FFFFFF" stroke-width="4" opacity="0.5" />
+    <path d="M 180,350 L 150,380" stroke="#FFFFFF" stroke-width="4" opacity="0.5" />
+    <path d="M 400,270 L 360,250" stroke="#FFFFFF" stroke-width="4" opacity="0.5" />
+  </g>
+  
+  <!-- Cathedral columns on sides -->
+  <rect x="25" y="200" width="25" height="450" fill="#101755" />
+  <rect x="550" y="200" width="25" height="450" fill="#101755" />
+  
+  <!-- Bottom supports -->
+  <rect x="0" y="650" width="600" height="50" fill="#101755" />
+  
+  <!-- Cathedral arches at bottom -->
+  <path d="M 50,650 C 75,630 125,630 150,650" fill="none" stroke="#DAA520" stroke-width="2" />
+  <path d="M 150,650 C 175,630 225,630 250,650" fill="none" stroke="#DAA520" stroke-width="2" />
+  <path d="M 250,650 C 275,630 325,630 350,650" fill="none" stroke="#DAA520" stroke-width="2" />
+  <path d="M 350,650 C 375,630 425,630 450,650" fill="none" stroke="#DAA520" stroke-width="2" />
+  <path d="M 450,650 C 475,630 525,630 550,650" fill="none" stroke="#DAA520" stroke-width="2" />
+  
+  <!-- Light beams from window to floor creating pools of light -->
+  <ellipse cx="200" cy="650" rx="30" ry="10" fill="#FFFFFF" opacity="0.3" />
+  <ellipse cx="300" cy="650" rx="40" ry="15" fill="#FFFFFF" opacity="0.4" />
+  <ellipse cx="400" cy="650" rx="25" ry="10" fill="#FFFFFF" opacity="0.3" />
+  
+  <!-- Title at bottom -->
+  <text x="300" y="730" font-family="serif" font-size="24" fill="#FFFFFF" text-anchor="middle">Divine Structure, Sacred Fracture</text>
+</svg>

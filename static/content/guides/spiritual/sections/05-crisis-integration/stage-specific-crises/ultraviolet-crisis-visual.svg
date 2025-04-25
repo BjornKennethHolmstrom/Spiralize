@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg25"
+   sodipodi:docname="ultraviolet-crisis-visual.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview25"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.384"
+     inkscape:cx="239.21395"
+     inkscape:cy="368.49882"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg25" />
+  <!-- Background with subtle ultraviolet gradient -->
+  <defs
+     id="defs6">
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#F8F8FF"
+         id="stop1" />
+      <stop
+         offset="50%"
+         stop-color="#F5F0FF"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#E6E6FA"
+         id="stop3" />
+    </linearGradient>
+    <!-- Glow effects -->
+    <filter
+       id="softGlow"
+       x="-0.28235294"
+       y="-0.3125"
+       width="1.5764706"
+       height="1.625">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur"
+         id="feGaussianBlur3" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="over"
+         id="feComposite3" />
+    </filter>
+    <!-- Fading effect -->
+    <linearGradient
+       id="fadeGradient"
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#8A2BE2"
+         stop-opacity="0.1"
+         id="stop4" />
+      <stop
+         offset="50%"
+         stop-color="#9370DB"
+         stop-opacity="0.5"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#9400D3"
+         stop-opacity="0.1"
+         id="stop6" />
+    </linearGradient>
+    <!-- Subtle pulse animation -->
+    <animate
+       id="opacityPulse"
+       attributeName="opacity"
+       values="0.7;0.3;0.7"
+       dur="8s"
+       repeatCount="indefinite" />
+  </defs>
+  <!-- Background -->
+  <rect
+     x="0"
+     y="0"
+     width="500"
+     height="500"
+     fill="url(#bgGradient)"
+     id="rect6" />
+  <!-- Fading figure outline -->
+  <g
+     id="fadingFigure"
+     opacity="0.7">
+    <animate
+       attributeName="opacity"
+       values="0.7;0.4;0.7"
+       dur="10s"
+       repeatCount="indefinite" />
+    <!-- Head and upper body - partially erased -->
+    <path
+       d="M 250,120               C 270,120 290,140 290,170               C 290,200 270,220 250,220               C 230,220 210,200 210,170               C 210,140 230,120 250,120 Z"
+       fill="none"
+       stroke="#9370DB"
+       stroke-width="1.5"
+       stroke-dasharray="5,5"
+       opacity="0.6"
+       id="path6">
+      <animate
+         attributeName="stroke-dasharray"
+         values="5,5;8,3;5,5"
+         dur="15s"
+         repeatCount="indefinite" />
+    </path>
+    <!-- Face - half erased -->
+    <g
+       opacity="0.5"
+       id="g7">
+      <ellipse
+         cx="235"
+         cy="160"
+         rx="3"
+         ry="5"
+         fill="#9370DB"
+         opacity="0.4"
+         id="ellipse6">
+        <animate
+           attributeName="opacity"
+           values="0.4;0;0.4"
+           dur="7s"
+           repeatCount="indefinite" />
+      </ellipse>
+      <ellipse
+         cx="265"
+         cy="160"
+         rx="3"
+         ry="5"
+         fill="#9370DB"
+         opacity="0.4"
+         id="ellipse7">
+        <animate
+           attributeName="opacity"
+           values="0.4;0;0.4"
+           dur="7s"
+           repeatCount="indefinite" />
+      </ellipse>
+      <path
+         d="M 240,180 C 245,185 255,185 260,180"
+         fill="none"
+         stroke="#9370DB"
+         stroke-width="1"
+         opacity="0.3"
+         id="path7">
+        <animate
+           attributeName="opacity"
+           values="0.3;0;0.3"
+           dur="8s"
+           repeatCount="indefinite" />
+      </path>
+    </g>
+    <!-- Body outline (more solid) -->
+    <path
+       d="M 220,220               L 220,350               M 280,220               L 280,350               M 220,350               C 230,380 270,380 280,350"
+       fill="none"
+       stroke="#8A2BE2"
+       stroke-width="1.5"
+       opacity="0.8"
+       id="path8">
+      <animate
+         attributeName="opacity"
+         values="0.8;0.3;0.8"
+         dur="12s"
+         repeatCount="indefinite" />
+    </path>
+  </g>
+  <!-- Floating hands holding coffee mug -->
+  <g
+     id="floatingHands"
+     transform="translate(250, 270)"
+     opacity="0.9">
+    <!-- Left hand -->
+    <path
+       d="M -50,0               C -40,-10 -30,-10 -20,0               C -25,10 -35,10 -40,5 Z"
+       fill="#E6E6FA"
+       stroke="#9370DB"
+       stroke-width="1"
+       id="path9">
+      <animate
+         attributeName="opacity"
+         values="0.9;0.6;0.9"
+         dur="6s"
+         repeatCount="indefinite" />
+    </path>
+    <!-- Right hand -->
+    <path
+       d="M 50,0               C 40,-10 30,-10 20,0               C 25,10 35,10 40,5 Z"
+       fill="#E6E6FA"
+       stroke="#9370DB"
+       stroke-width="1"
+       id="path10">
+      <animate
+         attributeName="opacity"
+         values="0.9;0.6;0.9"
+         dur="6s"
+         repeatCount="indefinite" />
+    </path>
+    <!-- Coffee mug with subtle glow -->
+    <g
+       transform="translate(0, -10)"
+       filter="url(#softGlow)"
+       id="g13">
+      <!-- Mug body -->
+      <path
+         d="M -15,0                 L -15,30                 Q -15,40 0,40                 Q 15,40 15,30                 L 15,0 Z"
+         fill="#F5F5F5"
+         stroke="#9370DB"
+         stroke-width="1"
+         id="path11" />
+      <!-- Mug handle -->
+      <path
+         d="M 15,10                 C 25,10 25,20 15,20"
+         fill="none"
+         stroke="#9370DB"
+         stroke-width="1"
+         id="path12" />
+      <!-- Coffee inside -->
+      <path
+         d="M -12,8                 L -12,30                 Q -12,37 0,37                 Q 12,37 12,30                 L 12,8 Z"
+         fill="#8A2BE2"
+         fill-opacity="0.1"
+         id="path13" />
+      <!-- Subtle glow from mug -->
+      <ellipse
+         cx="0"
+         cy="20"
+         rx="20"
+         ry="10"
+         fill="#9370DB"
+         opacity="0.2"
+         id="ellipse13">
+        <animate
+           attributeName="opacity"
+           values="0.2;0.4;0.2"
+           dur="4s"
+           repeatCount="indefinite" />
+      </ellipse>
+    </g>
+  </g>
+  <!-- Chair with shadow containing Easter egg -->
+  <g
+     opacity="0.8"
+     id="g18"
+     transform="translate(250,430)">
+    <!-- Chair back -->
+    <rect
+       x="-40"
+       y="-70"
+       width="80"
+       height="10"
+       fill="#8b4513"
+       id="rect13" />
+    <rect
+       x="-35"
+       y="-60"
+       width="10"
+       height="60"
+       fill="#8b4513"
+       id="rect14" />
+    <rect
+       x="25"
+       y="-60"
+       width="10"
+       height="60"
+       fill="#8b4513"
+       id="rect15" />
+    <!-- Chair seat -->
+    <rect
+       x="-40"
+       y="0"
+       width="80"
+       height="10"
+       fill="#8b4513"
+       id="rect16" />
+    <!-- Chair legs -->
+    <rect
+       x="-35"
+       y="10"
+       width="10"
+       height="40"
+       fill="#8b4513"
+       id="rect17" />
+    <rect
+       x="25"
+       y="10"
+       width="10"
+       height="40"
+       fill="#8b4513"
+       id="rect18" />
+  </g>
+  <path
+     d="m 190.91911,460 h 80 l 30.91911,30 h -80 z"
+     fill="#333333"
+     opacity="0.2"
+     id="path18" />
+  <text
+     x="81.023605"
+     y="488.2605"
+     font-family="monospace"
+     font-size="5.97026px"
+     fill="#ffffff"
+     text-anchor="middle"
+     opacity="0.28"
+     id="text18"
+     transform="skewX(20)"
+     style="stroke-width:1.19405">404 Self Not Found</text>
+  <!-- Cosmic Etch-A-Sketch effect: fading/reappearing outlines -->
+  <g
+     id="cosmicEtchASketch">
+    <!-- Constellation-like patterns -->
+    <g
+       opacity="0.4"
+       id="g21">
+      <path
+         d="M 100,100 L 120,120 L 150,110 L 130,140"
+         fill="none"
+         stroke="#9400D3"
+         stroke-width="0.5"
+         id="path19">
+        <animate
+           attributeName="opacity"
+           values="0.4;0;0.4"
+           dur="20s"
+           repeatCount="indefinite" />
+      </path>
+      <path
+         d="M 380,150 L 350,170 L 370,200 L 390,180"
+         fill="none"
+         stroke="#9400D3"
+         stroke-width="0.5"
+         id="path20">
+        <animate
+           attributeName="opacity"
+           values="0.4;0;0.4"
+           dur="15s"
+           repeatCount="indefinite" />
+      </path>
+      <path
+         d="M 150,350 L 180,330 L 200,350 L 170,370"
+         fill="none"
+         stroke="#9400D3"
+         stroke-width="0.5"
+         id="path21">
+        <animate
+           attributeName="opacity"
+           values="0.4;0;0.4"
+           dur="18s"
+           repeatCount="indefinite" />
+      </path>
+    </g>
+    <!-- Dissolving geometric patterns -->
+    <g
+       transform="translate(400, 80)"
+       opacity="0.3"
+       id="g22">
+      <path
+         d="M 0,0 L 20,20 L 0,40 L -20,20 Z"
+         fill="none"
+         stroke="#8A2BE2"
+         stroke-width="0.5"
+         id="path22">
+        <animate
+           attributeName="opacity"
+           values="0.3;0;0.3"
+           dur="12s"
+           repeatCount="indefinite" />
+      </path>
+    </g>
+    <g
+       transform="translate(100, 400)"
+       opacity="0.3"
+       id="g23">
+      <circle
+         cx="0"
+         cy="0"
+         r="15"
+         fill="none"
+         stroke="#8A2BE2"
+         stroke-width="0.5"
+         id="circle22">
+        <animate
+           attributeName="opacity"
+           values="0.3;0;0.3"
+           dur="10s"
+           repeatCount="indefinite" />
+        <animate
+           attributeName="r"
+           values="15;20;15"
+           dur="15s"
+           repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+  <!-- Light particles representing consciousness -->
+  <g
+     id="lightParticles">
+    <circle
+       cx="250"
+       cy="50"
+       r="1"
+       fill="#FFFFFF"
+       opacity="0.7"
+       id="circle23">
+      <animate
+         attributeName="cy"
+         values="50;450;50"
+         dur="30s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="opacity"
+         values="0.7;0.3;0.7"
+         dur="10s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="150"
+       cy="200"
+       r="1"
+       fill="#FFFFFF"
+       opacity="0.6"
+       id="circle24">
+      <animate
+         attributeName="cy"
+         values="200;350;200"
+         dur="20s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="cx"
+         values="150;200;150"
+         dur="25s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="opacity"
+         values="0.6;0.2;0.6"
+         dur="8s"
+         repeatCount="indefinite" />
+    </circle>
+    <circle
+       cx="350"
+       cy="300"
+       r="1"
+       fill="#FFFFFF"
+       opacity="0.5"
+       id="circle25">
+      <animate
+         attributeName="cy"
+         values="300;150;300"
+         dur="25s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="cx"
+         values="350;300;350"
+         dur="20s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="opacity"
+         values="0.5;0.1;0.5"
+         dur="12s"
+         repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

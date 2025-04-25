@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"build:pdf": "node scripts/generate-guide-pdf.mjs && node scripts/generate-organizations-guide-pdf.mjs && node scripts/generate-personal-guide-pdf.mjs && node scripts/generate-leadership-guide-pdf.mjs",
+		"build:pdf": "node scripts/generate-guide-pdf.mjs && node scripts/generate-organizations-guide-pdf.mjs && node scripts/generate-personal-guide-pdf.mjs && node scripts/generate-leadership-guide-pdf.mjs && node scripts/generate-parenting-guide-pdf.mjs && node scripts/generate-spiritual-guide-pdf.mjs",
 		"dev": "vite dev",
 		"build": "npm run build:pdf && vite build",
 		"preview": "vite preview",

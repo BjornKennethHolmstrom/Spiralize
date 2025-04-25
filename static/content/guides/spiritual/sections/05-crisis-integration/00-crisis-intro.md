@@ -51,7 +51,7 @@ This section explores:
 ## **How to Use This Section**  
 
 ### **If You're In Crisis Now**  
-1. **Locate your stage**: Use the [Spiral Diagnostics](/tools/spiral-diagnostics.md) tool  
+1. **Locate your stage**: Take the [Spiral Dynamics Quiz](https://spiralize.org/quiz) to find your center of gravity.  
    - *Crisis may not match your usual stage. You might express Red rage during a Yellow reframe spiral—and that's normal. Start where the pain lives.*  
 2. **Stage-specific first aid**:  
    - [Red Emergency Protocol](/red-rage.md)  

@@ -45,7 +45,7 @@ Think of it like climbing a mountain—as you ascend (forward movement), you gai
 
 ## **How to Use This Guide**  
 ### For Seekers:  
-- **Locate yourself**: Use the [Spiral Diagnostics Tool](/guide-spiritual/tools/spiral-diagnostics.md) to find your center of gravity.  
+- **Locate yourself**: Take the [Spiral Dynamics Quiz](https://spiralize.org/quiz) to find your center of gravity.
 - **Navigate crises**: See [Crisis Integration](/guide-spiritual/04-crisis-integration/00-crisis-intro.md) for stage-specific dark nights.  
 - **Practice wisely**: Choose [stage-aligned practices](/guide-spiritual/03-practices/00-practices-intro.md) to avoid bypassing.  
 - **Explore tools**: Check [Appendices](/guide-spiritual/appendices/) for journal prompts and shadow work exercises.  

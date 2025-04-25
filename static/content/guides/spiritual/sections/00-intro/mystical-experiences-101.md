@@ -109,7 +109,7 @@ This explains why two people can have seemingly identical mystical experiences y
 
 ## **Navigating Your Experiences**  
 ### If You're Feeling...  
-- **Disoriented**: Use the [Spiral Diagnostics Tool](/guide-spiritual/tools/spiral-diagnostics.md) to locate your stage's gifts/traps.  
+- **Disoriented**: Use the [Mystical Experience Diagnostics](/guide-spiritual/tools/mystical-diagnostics.md) to locate your stage's gifts/traps.
 - **Stuck**: Explore [stage-specific practices](/guide-spiritual/03-practices/) (e.g., Red's martial arts, Blue's prayer).  
 - **Expanding**: Read [Crisis Integration](/guide-spiritual/04-crisis-integration/) on spiritual emergencies.  
 - **Future Vision**: This section may become an audio-guided "Mystical Tour Through the Stages"—stay tuned!  
