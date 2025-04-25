@@ -11,7 +11,7 @@ Third-Tier consciousness (Coral–Clear) is **evolution playing hide-and-seek wi
 
 > ***"First-Tier builds ladders. Second-Tier sees they're air. Third-Tier eats the air and burps a galaxy."***  
 
-**Third-Tier Essence**: ![A visualization showing: left (Coral) as vibrant fractal play, center (Ultra-Violet) as transparent prism, right (Clear) as empty page with faint spiral watermarks. The whole image appears to be dissolving at the edges.](third-tier-essence-visualization.svg)   
+**Third-Tier Essence**: ![A visualization showing: left (Coral) as vibrant fractal play, center (Ultra-Violet) as transparent prism, right (Clear) as empty page with faint spiral watermarks. The whole image appears to be dissolving at the edges.](/content/guides/spiritual/sections/03-third-tier/third-tier-essence-visualization.svg)   
 
 ---
 

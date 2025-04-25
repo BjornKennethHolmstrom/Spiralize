@@ -15,7 +15,7 @@ This guide maps **stage-specific ethical pitfalls** and **antidotes**—because 
 > ***"The spiral asks: Can you hold deeper truth without losing your humanity?"***  
 
 **Ethics Spiral**: 
-![A dual-path spiral showing each stage's shadow trap (💀) and ethical gift (🌱), with icons representing each developmental stage's unique ethical challenges and opportunities.](ethics-spiral-visual.svg)
+![A dual-path spiral showing each stage's shadow trap (💀) and ethical gift (🌱), with icons representing each developmental stage's unique ethical challenges and opportunities.](/content/guides/spiritual/sections/06-ethics-service/ethics-spiral-visual.svg)
 ---
 
 ## **The Ethics-Development Connection**

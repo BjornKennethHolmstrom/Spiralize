@@ -12,7 +12,7 @@ Integral models **map the mappers**, offering:
 
 > ***"An integral theorist spends years transcending ego, only to build a 'transcendental' ego that quotes Ken Wilber in casual conversation." —Grok***  
 
-**Integral Essence**: ![A fractal spiral overlaid with: nested quadrants, a brain scan, and a tiny stick figure holding a "You Are Here" sign.](integral-visual.svg)
+**Integral Essence**: ![A fractal spiral overlaid with: nested quadrants, a brain scan, and a tiny stick figure holding a "You Are Here" sign.](/content/guides/spiritual/sections/07-wisdom-traditions/integral-visual.svg)
 
 ---
 

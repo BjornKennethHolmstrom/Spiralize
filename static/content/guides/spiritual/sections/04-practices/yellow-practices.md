@@ -11,7 +11,7 @@ Yellow spirituality **meta-analyses the sacred**—mapping, modeling, and laughi
 
 > ***"Yellow doesn't seek the divine—it reverse-engineers God's source code, then questions the compiler."***  
 
-**Yellow Essence**: ![A dynamic mind-map with icons: spiral flowchart, nested fractals, a laughing Buddha holding a clipboard.](yellow-practices-visual.svg)  
+**Yellow Essence**: ![A dynamic mind-map with icons: spiral flowchart, nested fractals, a laughing Buddha holding a clipboard.](/content/guides/spiritual/sections/04-practices/yellow-practices-visual.svg)  
 
 ---
 

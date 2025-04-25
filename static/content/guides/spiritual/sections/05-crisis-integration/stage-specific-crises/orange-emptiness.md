@@ -13,7 +13,7 @@ Orange's spiritual emergency **hits when the metrics stop meaning**—a collisio
 
 > ***"Orange doesn't truly doubt until the spreadsheet calculates its own futility."***  
 
-**Orange Crisis Essence**: ![A shattered dashboard dissolving into watercolor swirls, with icons: a hollow trophy melting, a pill bottle sprouting flowers, a neural network sketching "VOID" in code.](orange-crisis-visual.svg)
+**Orange Crisis Essence**: ![A shattered dashboard dissolving into watercolor swirls, with icons: a hollow trophy melting, a pill bottle sprouting flowers, a neural network sketching VOID in code.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/orange-crisis-visual.svg)
 
 ---
 

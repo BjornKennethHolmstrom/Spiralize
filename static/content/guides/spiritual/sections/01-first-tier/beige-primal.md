@@ -13,7 +13,7 @@ Beige spirituality is **the body's first prayer**—an unfiltered communion with
 
 > ***"Beige doesn't pray to the sacred—it wrestles it, tastes it, howls with it in the dirt."***  
 
-**Beige Essence**: [A simple circular emblem with earth tones showing a human handprint merging with animal tracks and plant elements, suggesting the primal union of human consciousness with nature, surrounded by a slow pulse-like animation representing the rhythm of survival and instinctual wisdom.]
+**Beige Essence**: ![Beige Essence](/content/guides/spiritual/sections/01-first-tier/beige-essence.svg)
 
 ---
 

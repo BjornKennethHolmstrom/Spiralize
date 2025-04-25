@@ -22,9 +22,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.692"
-     inkscape:cx="242.02128"
-     inkscape:cy="401.89125"
+     inkscape:zoom="0.846"
+     inkscape:cx="57.328605"
+     inkscape:cy="433.80614"
      inkscape:window-width="2520"
      inkscape:window-height="1048"
      inkscape:window-x="0"
@@ -33,76 +33,82 @@
      inkscape:current-layer="svg68" />
   <!-- Background -->
   <rect
-     x="0.59101653"
+     x="-3.4477115"
      y="-1.1820331"
-     width="500"
-     height="550.14941"
+     width="502.27707"
+     height="552.65485"
      fill="#fafafa"
      id="rect1"
-     style="stroke-width:1.04895" />
+     style="stroke-width:1.05372" />
   <!-- Spiral background guide (for positioning) - invisible in final -->
   <path
-     d="m 250,250 c 70,-70 140,-70 210,0 70,70 70,140 0,210 -70,70 -140,70 -210,0 -70,-70 -140,-70 -210,0 -70,70 -70,140 0,210 70,70 140,70 210,0 70,-70 140,-70 210,0"
+     d="m 169.01575,172.50748 c 48.40421,-48.4042 96.80841,-48.4042 145.21261,0 48.4042,48.4042 48.4042,96.8084 0,145.2126 -48.4042,48.4042 -96.8084,48.4042 -145.21261,0 -48.4042,-48.4042 -96.808398,-48.4042 -145.212599,0 -48.404201,48.4042 -48.404201,96.8084 0,145.2126 48.404201,48.4042 96.808399,48.4042 145.212599,0 48.40421,-48.4042 96.80841,-48.4042 145.21261,0"
      fill="none"
      stroke="none"
      opacity="0"
-     id="path1" />
+     id="path1"
+     style="stroke-width:0.691489" />
   <!-- Shadow traps path (dark, jagged) -->
   <path
-     d="m 244,104 c 70,-70 130,-60 190,0 30,40 50,90 20,150 -20,50 -70,90 -125,60 -45,-30 -105,-50 -155,-30 -60,20 -100,90 -90,150 10,60 60,100 120,90 60,-10 110,-60 120,-120"
+     d="m 241.06979,104.47902 c 70.31878,-70.318797 130.59203,-60.273255 190.86528,0 30.13663,40.18216 50.22771,90.40986 20.09109,150.68311 C 431.93507,305.38984 381.70737,345.572 326.45689,315.43538 281.25195,285.29875 220.9787,265.20768 170.751,285.29875 110.47775,305.38984 70.295587,375.70862 80.341125,435.98187 90.38667,496.25512 140.61438,536.43728 200.88763,526.39175 261.16087,516.34621 311.38857,466.1185 321.43412,405.84525"
      fill="none"
      stroke="#333333"
-     stroke-width="5"
+     stroke-width="5.02277"
      stroke-linecap="round"
      stroke-linejoin="round"
      stroke-dasharray="1, 0"
      id="path2" />
   <!-- Ethical gifts path (light, flowing) -->
   <path
-     d="m 244,104 c 60,-60 110,-80 170,-20 40,40 50,90 30,140 -20,40 -70,60 -120,40 -60,-20 -110,-20 -160,10 -50,30 -80,80 -70,130 10,50 50,80 100,70 50,-10 90,-50 100,-100"
+     d="m 241.06979,104.47902 c 60.27325,-60.273255 110.50095,-80.364338 170.7742,-20.091088 40.18217,40.182158 50.22771,90.409868 30.13662,140.637578 -20.09108,40.18217 -70.31879,60.27324 -120.54649,40.18217 -60.27325,-20.09109 -110.50096,-20.09109 -160.72866,10.04553 -50.22771,30.13663 -80.364335,80.36434 -70.31879,130.59204 10.04554,50.22771 50.22771,80.36433 100.45541,70.31879 50.22771,-10.04554 90.40987,-50.2277 100.45542,-100.45542"
      fill="none"
      stroke="#999999"
-     stroke-width="4"
+     stroke-width="4.01822"
      stroke-linecap="round"
      stroke-dasharray="1, 0"
      id="path3" />
   <!-- Center of the spiral with "Humility = Home" Easter egg -->
   <circle
-     cx="244"
-     cy="104"
-     r="30"
+     cx="241.06978"
+     cy="104.47902"
+     r="30.136625"
      fill="#f0f0f0"
      stroke="#cccccc"
-     stroke-width="1"
+     stroke-width="1.00455"
      id="circle3" />
   <text
-     x="244"
-     y="108"
+     x="241.06978"
+     y="108.49723"
      font-family="serif"
-     font-size="6px"
+     font-size="6.02733px"
      text-anchor="middle"
      fill="#aaaaaa"
      opacity="0.4"
-     id="text3">Humility = Home</text>
+     id="text3"
+     style="stroke-width:1.00455">Humility = Home</text>
   <!-- Stage Icons and Shadow/Gift Markers -->
   <!-- Purple -->
   <path
-     d="m 302.03782,85.052009 c -5,5 -5,25.000001 0,30.000001 5,5 15,5 20,0 5,-5 5,-25.000001 0,-30.000001 -5,-5 -15,-5 -20,0 z"
+     d="m 299.37192,85.444727 c -5.02277,5.022773 -5.02277,25.113853 0,30.136633 5.02277,5.02277 15.06831,5.02277 20.09108,0 5.02278,-5.02278 5.02278,-25.11386 0,-30.136633 -5.02277,-5.022765 -15.06831,-5.022765 -20.09108,0 z"
      fill="#8b008b"
      opacity="0.7"
-     id="path4" />
+     id="path4"
+     style="stroke-width:1.00455" />
   <path
-     d="m 307.03782,95.052009 c 0,2 2,2 2,0 0,-2 -2,-2 -2,0 z"
+     d="m 304.39469,95.490273 c 0,2.009106 2.00911,2.009106 2.00911,0 0,-2.009114 -2.00911,-2.009114 -2.00911,0 z"
      fill="#000000"
-     id="path5" />
+     id="path5"
+     style="stroke-width:1.00455" />
   <path
-     d="m 317.03782,95.052009 c 0,2 -2,2 -2,0 0,-2 2,-2 2,0 z"
+     d="m 314.44023,95.490273 c 0,2.009106 -2.00911,2.009106 -2.00911,0 0,-2.009114 2.00911,-2.009114 2.00911,0 z"
      fill="#000000"
-     id="path6" />
+     id="path6"
+     style="stroke-width:1.00455" />
   <path
-     d="m 312.03782,105.05201 c -3,3 3,3 0,0 z"
+     d="m 309.41746,105.53581 c -3.01366,3.01367 3.01366,3.01367 0,0 z"
      fill="#000000"
-     id="path7" />
+     id="path7"
+     style="stroke-width:1.00455" />
   <!-- Shadow trap emoji -->
   <text
      x="276.81088"
@@ -112,12 +118,13 @@
      fill="#000000"
      id="text7">💀</text>
   <text
-     x="288.81088"
-     y="129.2364"
+     x="286.08475"
+     y="129.83035"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text8">Tribal Absolutism</text>
+     id="text8"
+     style="stroke-width:1.00455">Tribal Absolutism</text>
   <!-- Ethical gift emoji -->
   <text
      x="279.52957"
@@ -127,33 +134,35 @@
      fill="#000000"
      id="text9">🌱</text>
   <text
-     x="291.52957"
-     y="80.773048"
+     x="288.81583"
+     y="81.146286"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text10">Honor with Question</text>
+     id="text10"
+     style="stroke-width:1.00455">Honor with Question</text>
   <!-- Red -->
   <circle
-     cx="392.08511"
-     cy="156.95508"
-     r="12"
+     cx="389.82928"
+     cy="157.67526"
+     r="12.054649"
      fill="#a00000"
      opacity="0.7"
-     id="circle10" />
+     id="circle10"
+     style="stroke-width:1.00455" />
   <path
-     d="m 392.08511,149.95508 v 9"
+     d="m 389.8293,150.64337 v 9.041"
      stroke="#ffffff"
-     stroke-width="3"
+     stroke-width="3.01366"
      stroke-linecap="round"
      id="path10" />
   <circle
-     cx="392.08511"
-     cy="156.95508"
-     r="5"
+     cx="389.82928"
+     cy="157.67526"
+     r="5.0227704"
      fill="none"
      stroke="#ffffff"
-     stroke-width="2"
+     stroke-width="2.00911"
      id="circle11" />
   <!-- Shadow trap emoji -->
   <text
@@ -164,12 +173,13 @@
      fill="#000000"
      id="text11">💀</text>
   <text
-     x="366.49411"
-     y="177.27423"
+     x="364.12177"
+     y="178.08694"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text12">Might Makes Right</text>
+     id="text12"
+     style="stroke-width:1.00455">Might Makes Right</text>
   <!-- Ethical gift emoji -->
   <text
      x="355.4397"
@@ -179,45 +189,47 @@
      fill="#000000"
      id="text13">🌱</text>
   <text
-     x="367.4397"
-     y="141.81325"
+     x="365.07162"
+     y="142.46446"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text14">Protected Power</text>
+     id="text14"
+     style="stroke-width:1.00455">Protected Power</text>
   <!-- Blue -->
   <rect
-     x="321.21985"
-     y="215.409"
-     width="16"
-     height="20"
-     rx="2"
+     x="318.6413"
+     y="216.39537"
+     width="16.072865"
+     height="20.091082"
+     rx="2.0091081"
      fill="#0000cd"
      opacity="0.7"
-     id="rect14" />
+     id="rect14"
+     style="stroke-width:1.00455" />
   <line
-     x1="325.21985"
-     y1="220.409"
-     x2="333.21985"
-     y2="220.409"
+     x1="322.65952"
+     y1="221.41817"
+     x2="330.69595"
+     y2="221.41817"
      stroke="#ffffff"
-     stroke-width="1"
+     stroke-width="1.00455"
      id="line14" />
   <line
-     x1="325.21985"
-     y1="225.409"
-     x2="333.21985"
-     y2="225.409"
+     x1="322.65952"
+     y1="226.44093"
+     x2="330.69595"
+     y2="226.44093"
      stroke="#ffffff"
-     stroke-width="1"
+     stroke-width="1.00455"
      id="line15" />
   <line
-     x1="325.21985"
-     y1="230.409"
-     x2="333.21985"
-     y2="230.409"
+     x1="322.65952"
+     y1="231.4637"
+     x2="330.69595"
+     y2="231.4637"
      stroke="#ffffff"
-     stroke-width="1"
+     stroke-width="1.00455"
      id="line16" />
   <!-- Shadow trap emoji -->
   <text
@@ -228,12 +240,13 @@
      fill="#000000"
      id="text16">💀</text>
   <text
-     x="308.21985"
-     y="248.409"
+     x="305.58209"
+     y="249.54567"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text17">Dogmatic Righteousness</text>
+     id="text17"
+     style="stroke-width:1.00455">Dogmatic Righteousness</text>
   <!-- Ethical gift emoji -->
   <text
      x="295.39243"
@@ -243,19 +256,20 @@
      fill="#000000"
      id="text18">🌱</text>
   <text
-     x="307.39243"
-     y="209.99294"
+     x="304.75092"
+     y="210.95465"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text19">Sacred Without Demonizing</text>
+     id="text19"
+     style="stroke-width:1.00455">Sacred Without Demonizing</text>
   <!-- Orange -->
   <polygon
-     points="-2.5,-4.5 0,-12 2.5,-4.5 10.5,-4.5 4,0.5 6.5,8 0,3 -6.5,8 -4,0.5 -10.5,-4.5 "
+     points="10.5,-4.5 4,0.5 6.5,8 0,3 -6.5,8 -4,0.5 -10.5,-4.5 -2.5,-4.5 0,-12 2.5,-4.5 "
      fill="#ffa500"
      opacity="0.7"
      id="polygon19"
-     transform="translate(270.95035,332.46336)" />
+     transform="matrix(1.0045541,0,0,1.0045541,268.14287,333.98283)" />
   <!-- Shadow trap emoji -->
   <text
      x="233.95035"
@@ -265,12 +279,13 @@
      fill="#000000"
      id="text20">💀</text>
   <text
-     x="245.95035"
-     y="347.46335"
+     x="243.02902"
+     y="349.05112"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text21">Spiritual Materialism</text>
+     id="text21"
+     style="stroke-width:1.00455">Spiritual Materialism</text>
   <!-- Ethical gift emoji -->
   <text
      x="236.66904"
@@ -280,18 +295,20 @@
      fill="#000000"
      id="text22">🌱</text>
   <text
-     x="248.66904"
-     y="317.91254"
+     x="245.76007"
+     y="319.36575"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text23">Verified Mysticism</text>
+     id="text23"
+     style="stroke-width:1.00455">Verified Mysticism</text>
   <!-- Green -->
   <path
-     d="m 134.85106,219.94563 c -10,-15 -20,-5 -10,5 5,5 10,5 10,0 0,5 5,5 10,0 10,-10 0,-20 -10,-5 z"
+     d="m 131.42377,220.95268 c -10.04554,-15.06831 -20.09108,-5.02278 -10.04554,5.02276 5.02277,5.02277 10.04554,5.02277 10.04554,0 0,5.02277 5.02277,5.02277 10.04554,0 10.04554,-10.04554 0,-20.09107 -10.04554,-5.02276 z"
      fill="#008000"
      opacity="0.7"
-     id="path23" />
+     id="path23"
+     style="stroke-width:1.00455" />
   <!-- Shadow trap emoji -->
   <text
      x="101.39716"
@@ -301,12 +318,13 @@
      fill="#000000"
      id="text24">💀</text>
   <text
-     x="113.39716"
-     y="239.4019"
+     x="109.87217"
+     y="240.49756"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text25">Love Light Bypass</text>
+     id="text25"
+     style="stroke-width:1.00455">Love Light Bypass</text>
   <!-- Ethical gift emoji -->
   <text
      x="101.16075"
@@ -316,57 +334,61 @@
      fill="#000000"
      id="text26">🌱</text>
   <text
-     x="113.16075"
-     y="204.53192"
+     x="109.63468"
+     y="205.46877"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text27">Shadow-Aware Compassion</text>
+     id="text27"
+     style="stroke-width:1.00455">Shadow-Aware Compassion</text>
   <!-- Yellow -->
   <circle
-     cx="169.73286"
-     cy="316.49408"
-     r="4"
+     cx="166.46443"
+     cy="317.94083"
+     r="4.0182161"
      fill="#ffff00"
      opacity="0.7"
-     id="circle27" />
+     id="circle27"
+     style="stroke-width:1.00455" />
   <circle
-     cx="179.73286"
-     cy="316.49408"
-     r="4"
+     cx="176.50996"
+     cy="317.94083"
+     r="4.0182161"
      fill="#ffff00"
      opacity="0.7"
-     id="circle28" />
+     id="circle28"
+     style="stroke-width:1.00455" />
   <circle
-     cx="174.73286"
-     cy="326.49408"
-     r="4"
+     cx="171.4872"
+     cy="327.98636"
+     r="4.0182161"
      fill="#ffff00"
      opacity="0.7"
-     id="circle29" />
+     id="circle29"
+     style="stroke-width:1.00455" />
   <line
-     x1="169.73286"
-     y1="316.49408"
-     x2="179.73286"
-     y2="316.49408"
+     x1="166.46443"
+     y1="317.94083"
+     x2="176.50996"
+     y2="317.94083"
      stroke="#333333"
-     stroke-width="1"
+     stroke-width="1.00455"
      id="line29" />
   <line
-     x1="179.73286"
-     y1="316.49408"
-     x2="174.73286"
-     y2="326.49408"
+     x1="176.50996"
+     y1="317.94083"
+     x2="171.4872"
+     y2="327.98636"
      stroke="#333333"
-     stroke-width="1"
+     stroke-width="1.00455"
      id="line30" />
   <line
-     x1="174.73286"
-     y1="326.49408"
-     x2="169.73286"
-     y2="316.49408"
+     x1="171.4872"
+     y1="327.98636"
+     x2="166.46443"
+     y2="317.94083"
      stroke="#333333"
-     stroke-width="1"
+     stroke-width="1.00455"
      id="line31" />
   <!-- Shadow trap emoji -->
   <text
@@ -377,12 +399,13 @@
      fill="#000000"
      id="text31">💀</text>
   <text
-     x="149.73286"
-     y="336.49408"
+     x="146.37334"
+     y="338.03189"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text32">Cold Analysis</text>
+     id="text32"
+     style="stroke-width:1.00455">Cold Analysis</text>
   <!-- Ethical gift emoji -->
   <text
      x="140.45154"
@@ -392,67 +415,73 @@
      fill="#000000"
      id="text33">🌱</text>
   <text
-     x="152.45154"
-     y="306.35223"
+     x="149.1044"
+     y="307.75281"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text34">Meta-Heart Balance</text>
+     id="text34"
+     style="stroke-width:1.00455">Meta-Heart Balance</text>
   <!-- Turquoise -->
   <circle
-     cx="124.04728"
-     cy="385.04019"
-     r="12"
+     cx="120.57079"
+     cy="386.7991"
+     r="12.054649"
      fill="#40e0d0"
      opacity="0.7"
-     id="circle34" />
+     id="circle34"
+     style="stroke-width:1.00455" />
   <path
-     d="m 116.04728,377.04019 16,16 m -16,0 16,-16"
+     d="m 112.53436,378.76266 16.07286,16.07287 m -16.07286,0 16.07286,-16.07287"
      stroke="#ffffff"
-     stroke-width="2"
+     stroke-width="2.00911"
      id="path34" />
   <circle
-     cx="124.04728"
-     cy="385.04019"
-     r="4"
+     cx="120.57079"
+     cy="386.7991"
+     r="4.0182161"
      fill="#ffffff"
-     id="circle35" />
+     id="circle35"
+     style="stroke-width:1.00455" />
   <!-- Shadow trap emoji -->
   <text
-     x="92.95744"
+     x="92.957443"
      y="403.5863"
      font-family="emoji"
      font-size="10px"
      fill="#000000"
      id="text35">💀</text>
   <text
-     x="104.95744"
-     y="403.5863"
+     x="101.39401"
+     y="405.42966"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text36">&quot;All Is Perfect&quot; Detachment</text>
+     id="text36"
+     style="stroke-width:1.00455">&quot;All Is Perfect&quot; Detachment</text>
   <!-- Ethical gift emoji -->
   <text
-     x="93.90308"
+     x="93.903084"
      y="370.48935"
      font-family="emoji"
      font-size="10px"
      fill="#000000"
      id="text37">🌱</text>
   <text
-     x="105.90308"
-     y="370.48935"
+     x="102.34396"
+     y="372.18198"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text38">Embracing Incarnation</text>
+     id="text38"
+     style="stroke-width:1.00455">Embracing Incarnation</text>
   <!-- Coral -->
   <path
-     d="m 169.86288,431.58866 c 5,5 10,0 5,5 5,5 0,10 5,15 -5,-5 -10,0 -15,-5 -5,5 0,0 -5,-5 5,-5 0,-10 5,-5 z"
+     d="m 166.59504,433.55956 c 5.02277,5.02276 10.04554,0 5.02277,5.02276 5.02277,5.02277 0,10.04555 5.02277,15.06832 -5.02277,-5.02277 -10.04554,0 -15.06831,-5.02277 -5.02278,5.02277 0,0 -5.02278,-5.02278 5.02278,-5.02277 0,-10.04553 5.02278,-5.02277 z"
      fill="#ff7f50"
      opacity="0.7"
-     id="path38" />
+     id="path38"
+     style="stroke-width:1.00455" />
   <!-- Shadow trap emoji -->
   <text
      x="140.5461"
@@ -462,12 +491,13 @@
      fill="#000000"
      id="text39">💀</text>
   <text
-     x="152.5461"
-     y="455.99765"
+     x="149.19939"
+     y="458.07968"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text40">Evolutionary Elitism</text>
+     id="text40"
+     style="stroke-width:1.00455">Evolutionary Elitism</text>
   <!-- Ethical gift emoji -->
   <text
      x="139.12766"
@@ -477,34 +507,38 @@
      fill="#000000"
      id="text41">🌱</text>
   <text
-     x="151.12766"
-     y="425.8558"
+     x="147.77449"
+     y="427.8006"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text42">Play as Service</text>
+     id="text42"
+     style="stroke-width:1.00455">Play as Service</text>
   <!-- Ultra-Violet -->
   <circle
-     cx="336.83688"
-     cy="470.052"
-     r="12"
+     cx="334.32947"
+     cy="472.19806"
+     r="12.054649"
      fill="#8a2be2"
      opacity="0.4"
-     id="circle42" />
+     id="circle42"
+     style="stroke-width:1.00455" />
   <circle
-     cx="336.83688"
-     cy="470.052"
-     r="8"
+     cx="334.32947"
+     cy="472.19806"
+     r="8.0364323"
      fill="#8a2be2"
      opacity="0.3"
-     id="circle43" />
+     id="circle43"
+     style="stroke-width:1.00455" />
   <circle
-     cx="336.83688"
-     cy="470.052"
-     r="4"
+     cx="334.32947"
+     cy="472.19806"
+     r="4.0182161"
      fill="#8a2be2"
      opacity="0.2"
-     id="circle44" />
+     id="circle44"
+     style="stroke-width:1.00455" />
   <!-- Shadow trap emoji -->
   <text
      x="299.83688"
@@ -514,12 +548,13 @@
      fill="#000000"
      id="text44">💀</text>
   <text
-     x="311.83688"
-     y="485.052"
+     x="309.21561"
+     y="487.26639"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text45">Nihilistic Disengagement</text>
+     id="text45"
+     style="stroke-width:1.00455">Nihilistic Disengagement</text>
   <!-- Ethical gift emoji -->
   <text
      x="301.37354"
@@ -529,20 +564,21 @@
      fill="#000000"
      id="text46">🌱</text>
   <text
-     x="313.37354"
-     y="456.09219"
+     x="310.75928"
+     y="458.17468"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text47">Silent Return</text>
+     id="text47"
+     style="stroke-width:1.00455">Silent Return</text>
   <!-- Clear -->
   <circle
-     cx="330.64304"
-     cy="382.22696"
-     r="12"
+     cx="328.10739"
+     cy="383.97302"
+     r="12.054649"
      fill="none"
      stroke="#999999"
-     stroke-width="1"
+     stroke-width="1.00455"
      id="circle47" />
   <!-- Shadow trap emoji -->
   <text
@@ -553,12 +589,13 @@
      fill="#000000"
      id="text48">💀</text>
   <text
-     x="305.64304"
-     y="403.13712"
+     x="302.99356"
+     y="404.97842"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text49">Absolute Bypass</text>
+     id="text49"
+     style="stroke-width:1.00455">Absolute Bypass</text>
   <!-- Ethical gift emoji -->
   <text
      x="292.22461"
@@ -568,76 +605,77 @@
      fill="#000000"
      id="text50">🌱</text>
   <text
-     x="304.22461"
-     y="364.72104"
+     x="301.56866"
+     y="366.38739"
      font-family="sans-serif"
-     font-size="8px"
+     font-size="8.03641px"
      fill="#111111"
-     id="text51">Selfless Contracts</text>
+     id="text51"
+     style="stroke-width:1.00455">Selfless Contracts</text>
   <!-- Stage labels with stage-specific colors -->
   <text
-     x="331.54138"
-     y="103.42081"
+     x="329.00983"
+     y="103.89719"
      fill="#8b008b"
      id="text52"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">PURPLE</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">PURPLE</text>
   <text
-     x="410.58392"
-     y="160.50117"
+     x="408.41235"
+     y="161.2375"
      fill="#a00000"
      id="text53"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">RED</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">RED</text>
   <text
-     x="343.17255"
-     y="235.63121"
+     x="340.69397"
+     y="236.70969"
      fill="#0000cd"
      id="text54"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">BLUE</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">BLUE</text>
   <text
-     x="282.17966"
-     y="338.23169"
+     x="279.42331"
+     y="339.77744"
      fill="#ffa500"
      id="text55"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">ORANGE</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">ORANGE</text>
   <text
-     x="153.7636"
-     y="217.75887"
+     x="150.42244"
+     y="218.75595"
      fill="#008000"
      id="text56"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">GREEN</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">GREEN</text>
   <text
-     x="191.37589"
-     y="323.539"
+     x="188.20602"
+     y="325.01782"
      fill="#cccc00"
      id="text57"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">YELLOW</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">YELLOW</text>
   <text
-     x="149.55556"
-     y="388.68085"
+     x="146.19522"
+     y="390.45633"
      fill="#40e0d0"
      id="text58"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">TURQUOISE</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">TURQUOISE</text>
   <text
-     x="185.2766"
-     y="442.03781"
+     x="182.07895"
+     y="444.05627"
      fill="#ff7f50"
      id="text59"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">CORAL</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">CORAL</text>
   <text
-     x="356.93146"
-     y="472.27423"
+     x="354.51553"
+     y="474.43042"
      fill="#8a2be2"
      id="text60"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">ULTRA-VIOLET</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">ULTRA-VIOLET</text>
   <text
-     x="347.09692"
-     y="382.08511"
+     x="344.63623"
+     y="383.83054"
      fill="#999999"
      id="text61"
-     style="font-weight:bold;font-size:10px;font-family:sans-serif">CLEAR</text>
+     style="font-weight:bold;font-size:10.0455px;font-family:sans-serif;stroke-width:1.00455">CLEAR</text>
   <!-- Legend -->
   <g
-     transform="translate(30,30)"
+     transform="matrix(1.0045541,0,0,1.0045541,26.095205,30.142007)"
      id="g68">
     <text
        x="0"

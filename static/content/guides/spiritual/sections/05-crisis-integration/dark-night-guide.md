@@ -11,7 +11,7 @@ A transformative process where:
 
 > ***"The Dark Night isn't the soul's end—it's the end of the soul's old containers."***
 
-**Dark Night Spectrum**: A spiral descending into shadow with color-coded stage crises, each containing a tiny light source—symbolizing that even in our darkest moments, transformation is occurring.
+<!--![Dark Night Spectrum: A spiral descending into shadow with color-coded stage crises, each containing a tiny light source—symbolizing that even in our darkest moments, transformation is occurring.](unavailable.svg)-->
 
 ---
 

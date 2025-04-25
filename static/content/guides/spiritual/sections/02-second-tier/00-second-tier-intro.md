@@ -11,7 +11,7 @@ Second-Tier consciousness (Yellow–Turquoise) marks a quantum leap in human evo
 
 > ***"First-Tier chases heaven. Second-Tier winks and says, 'We're already soaking in it.'"***  
 
-**Second-Tier Essence**: ![A dynamic spiral visualization in yellow and turquoise hues, showing interconnected systems and unity consciousness. The spiral contains a reflective eye that sees itself, symbolizing self-aware consciousness that can perceive its own development.](second-tier-essence-visualization.svg)
+**Second-Tier Essence**: ![Second-Tier Essence](/content/guides/spiritual/sections/02-second-tier/second-tier-essence-visualization.svg)
 
 ---
 

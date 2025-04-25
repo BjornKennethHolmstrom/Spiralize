@@ -13,7 +13,7 @@ Beige's spiritual emergency **isn't psychological—it's biological**: a failure
 
 > ***"A Beige crisis doesn't feel like awakening—it feels like the earth disappearing beneath your feet."***  
 
-**Beige Crisis Essence**: ![A barren earth mending with trickling streams and moss, with icons: parched lips softening, animal-human footprints merging, a faint stethoscope buried in soil.](beige-crisis-visual.svg)
+**Beige Crisis Essence**: ![A barren earth mending with trickling streams and moss, with icons: parched lips softening, animal-human footprints merging, a faint stethoscope buried in soil.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/beige-crisis-visual.svg)
 
 ---
 

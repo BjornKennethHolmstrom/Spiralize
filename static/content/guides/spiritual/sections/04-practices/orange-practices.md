@@ -11,7 +11,7 @@ Orange spirituality **reverse-engineers transcendence**—applying curiosity, me
 
 > ***"Orange doesn't believe—it tests. Doesn't surrender—it iterates."***  
 
-**Orange Essence**: ![A lab-coat meditation hybrid with icons: brain scan, graph trending upward, glowing flask, solo hiker.](orange-practices-visual.svg)  
+**Orange Essence**: ![A lab-coat meditation hybrid with icons: brain scan, graph trending upward, glowing flask, solo hiker.](/content/guides/spiritual/sections/04-practices/orange-practices-visual.svg)  
 
 ---
 

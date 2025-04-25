@@ -13,7 +13,7 @@ Mysticism isn't beyond life—it's how life lives **through you** when you're no
 
 > ***"Enlightenment that doesn't survive rush hour traffic is just spiritual tourism."***  
 
-**Daily Spiral**: ![Infographic mapping mundane activities (commuting, grocery shopping) to stage-specific awakenings—e.g., Beige's primal alertness in subway crowds, Turquoise's cosmic unity in recycling sorting.](everyday-mysticism-visual.svg)  
+**Daily Spiral**: ![Infographic mapping mundane activities (commuting, grocery shopping) to stage-specific awakenings—e.g., Beige's primal alertness in subway crowds, Turquoise's cosmic unity in recycling sorting.](/content/guides/spiritual/sections/06-ethics-service/everyday-mysticism-visual.svg)  
 
 ---
 

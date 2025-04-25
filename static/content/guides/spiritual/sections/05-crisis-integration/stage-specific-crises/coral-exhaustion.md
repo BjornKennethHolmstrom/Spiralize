@@ -11,7 +11,7 @@ Coral's spiritual emergency **hits when shadow alchemy becomes performative**—
 
 > ***"Coral doesn't truly mature until it admits sometimes the universe just isn't funny."***  
 
-**Coral Crisis Essence**: A faded carnival tent with peeling paint, revealing a single vibrant flower blooming through cracks, alongside icons: a cracked comedy mask, a kazoo trailing into silence, and a shadow puppet dissolving into light.
+**Coral Crisis Essence**: ![A faded carnival tent with peeling paint, revealing a single vibrant flower blooming through cracks, alongside icons: a cracked comedy mask, a kazoo trailing into silence, and a shadow puppet dissolving into light.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/coral-crisis-visual.svg)
 
 ---
 

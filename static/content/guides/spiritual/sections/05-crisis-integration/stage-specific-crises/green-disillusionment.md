@@ -13,7 +13,7 @@ Green's spiritual emergency **erupts when inclusion becomes excruciating**—a c
 
 > ***"Green doesn't truly grow until its bleeding heart grows claws."***  
 
-**Green Crisis Essence**: ![A fractured mandala sprouting thorny vines that bloom anew, with icons: wilted roses, a splintered protest sign with "Nice ≠ Kind" hidden within, and a heart pierced by a sword entwined with ivy.](green-crisis-visual.svg)
+**Green Crisis Essence**: ![A fractured mandala sprouting thorny vines that bloom anew, with icons: wilted roses, a splintered protest sign with Nice ≠ Kind hidden within, and a heart pierced by a sword entwined with ivy.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/green-crisis-visual.svg)
 
 ---
 

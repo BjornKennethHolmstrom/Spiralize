@@ -11,7 +11,7 @@ Blue's ethics revolve around **unquestionable truth**—a divine hierarchy where
 
 > ***"Blue doesn't question the mountain—it carves steps for others to climb."***  
 
-**Blue's Ethical Spiral**: A cathedral's stained-glass window cracking—light bursts through fractures, illuminating both the beauty of sacred structure and the danger of rigid dogma. Symbols of Blue ethics (scrolls, scales, cross, commandments, crown) are embedded in the glass, with "Truth adapts" faintly etched in one of the cracks.
+**Blue's Ethical Spiral**: ![A cathedral's stained-glass window cracking—light bursts through fractures, illuminating both the beauty of sacred structure and the danger of rigid dogma. Symbols of Blue ethics (scrolls, scales, cross, commandments, crown) are embedded in the glass, with "Truth adapts" faintly etched in one of the cracks.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/blue-ethics-visual.svg)
 
 ---
 

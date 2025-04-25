@@ -12,7 +12,7 @@ Integration can feel overwhelming. Start small:
 **Tool Chooser Prompt**  
 Journal: *"Which part of me is loudest right now—body, heart, or mind? Start there."*  
 
-**Integration Elements**: A tree with roots (somatic practices), trunk (mental frameworks), and branches (emotional processes) - symbolizing how all dimensions of healing must work together. The falling colored leaves represent stage-specific experiences being integrated back into soil, completing the cycle of growth.
+**Integration Elements**: ![A tree with roots (somatic practices), trunk (mental frameworks), and branches (emotional processes) - symbolizing how all dimensions of healing must work together. The falling colored leaves represent stage-specific experiences being integrated back into soil, completing the cycle of growth.](/content/guides/spiritual/sections/05-crisis-integration/integration-tools-visual.svg)
 
 ---
 

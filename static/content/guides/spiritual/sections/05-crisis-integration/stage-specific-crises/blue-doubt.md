@@ -13,7 +13,7 @@ Blue's spiritual emergency **feels like God's silence in the cathedral**—a ter
 
 > ***"A Blue crisis doesn't destroy faith—it incinerates the child's version so the mystic's can emerge."***  
 
-**Blue Crisis Essence**: ![A crumbling stained-glass window with icons: broken commandments, a torn scroll with glowing ink, a frayed prayer rope unravelling into light, and a question mark in sacred script.](blue-doubt-visual.svg)
+**Blue Crisis Essence**: ![A crumbling stained-glass window with icons: broken commandments, a torn scroll with glowing ink, a frayed prayer rope unravelling into light, and a question mark in sacred script.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/blue-doubt-visual.svg)
 
 ---
 

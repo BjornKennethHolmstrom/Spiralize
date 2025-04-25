@@ -11,7 +11,7 @@ Beige spirituality speaks in **pulse, sweat, and hunger**—before words coloniz
 
 > ***"Beige doesn't contemplate God—it digests God in the guts and bones."***  
 
-**Beige Essence**: [A textured background of earth/skin tones with icons: bare footprints, animal tracks, a heartbeat line, and tactile elements resembling cracked soil. The design evokes primordial connection to earth and body.]
+**Beige Essence**: ![A textured background of earth/skin tones with icons: bare footprints, animal tracks, a heartbeat line, and tactile elements resembling cracked soil. The design evokes primordial connection to earth and body.](/content/guides/spiritual/sections/04-practices/beige-practices-visual.svg)
 
 **Primal Pulse**: Beige is the spiral's heartbeat, from urban foraging to spiralize.org's call to rewild. **It's Yellow's theories traded for mud, reminding us to feel before we think.**  
 

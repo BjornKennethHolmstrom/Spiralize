@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 500 380"
+   viewBox="0 0 800 608"
    version="1.1"
    id="svg51"
    sodipodi:docname="traditions-spiral-map.svg"
-   width="500"
-   height="380"
+   width="800"
+   height="608"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -21,9 +21,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.692"
-     inkscape:cx="250.29551"
-     inkscape:cy="155.43735"
+     inkscape:zoom="0.846"
+     inkscape:cx="487.58865"
+     inkscape:cy="395.98109"
      inkscape:window-width="2520"
      inkscape:window-height="1048"
      inkscape:window-x="0"
@@ -37,7 +37,7 @@
        inkscape:collect="always"
        xlink:href="#texturePattern"
        id="pattern51"
-       patternTransform="matrix(0.70710678,0.53743459,-0.70710678,0.53743459,0,0)" />
+       patternTransform="matrix(1.1309466,0.85957285,-1.1309466,0.85957285,0,0)" />
     <linearGradient
        id="bgGradient"
        x1="0"
@@ -45,7 +45,7 @@
        x2="500"
        y2="500"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="scale(1,0.76004728)">
+       gradientTransform="scale(1.5993999,1.2156196)">
       <stop
          offset="0%"
          style="stop-color:#f8fafc;stop-opacity:1"
@@ -111,22 +111,22 @@
   <rect
      x="0"
      y="0"
-     width="500"
-     height="380.02365"
+     width="799.69995"
+     height="607.80981"
      fill="url(#bgGradient)"
      id="rect3"
-     style="fill:url(#bgGradient);stroke-width:0.871807" />
+     style="fill:url(#bgGradient);stroke-width:1.39437" />
   <rect
      x="0"
      y="0"
-     width="500"
-     height="380.02365"
+     width="799.69995"
+     height="607.80981"
      fill="url(#texturePattern)"
      id="rect4"
-     style="fill:url(#pattern51);stroke-width:0.871807" />
+     style="fill:url(#pattern51);stroke-width:1.39437" />
   <!-- Central Spiral Structure - Drawing from center outward -->
   <g
-     transform="translate(250,308)"
+     transform="matrix(1.5994,0,0,1.5994,389.2117,491.43317)"
      filter="url(#softGlow)"
      id="g14">
     <!-- Beige (Survival) - Innermost -->
@@ -212,7 +212,7 @@
   <!-- Tradition Symbols - Placed along the spiral -->
   <!-- Purple Stage Traditions -->
   <g
-     transform="translate(220,298)"
+     transform="matrix(1.5994,0,0,1.5994,351.868,476.6212)"
      id="g18">
     <!-- Indigenous/Shamanic - Celtic Triskele -->
     <g
@@ -256,7 +256,7 @@
   </g>
   <!-- Red Stage Traditions -->
   <g
-     transform="translate(224,226)"
+     transform="matrix(1.5994,0,0,1.5994,358.26561,361.4644)"
      id="g20">
     <!-- Warrior Traditions - Spear/Shield -->
     <g
@@ -295,7 +295,7 @@
   </g>
   <!-- Blue Stage Traditions -->
   <g
-     transform="translate(149.40898,215.18676)"
+     transform="matrix(1.5994,0,0,1.5994,238.96472,344.1697)"
      id="g23">
     <!-- Abrahamic Traditions - Torah/Cross/Crescent -->
     <g
@@ -340,7 +340,7 @@
   </g>
   <!-- Orange Stage Traditions -->
   <g
-     transform="translate(87.907801,185.68322)"
+     transform="matrix(1.5994,0,0,1.5994,140.59973,296.98174)"
      id="g26">
     <!-- New Age/Science - Atom/Crystal -->
     <g
@@ -403,7 +403,7 @@
   </g>
   <!-- Green Stage Traditions -->
   <g
-     transform="translate(88.640662,109.04019)"
+     transform="matrix(1.5994,0,0,1.5994,141.77188,174.39888)"
      id="g30">
     <!-- Eco-Spirituality/Liberation Theology - Tree/Hand -->
     <g
@@ -454,7 +454,7 @@
   </g>
   <!-- Yellow Stage Traditions -->
   <g
-     transform="translate(28.22695,135.18676)"
+     transform="matrix(1.5994,0,0,1.5994,45.146184,216.2177)"
      id="g37">
     <!-- Integral/Buddhist Psychology - Connected Nodes -->
     <g
@@ -545,7 +545,7 @@
   </g>
   <!-- Turquoise Stage Traditions -->
   <g
-     transform="translate(54.869976,91.274228)"
+     transform="matrix(1.5994,0,0,1.5994,87.75904,145.984)"
      id="g40">
     <!-- Nondual Traditions - Zen Enso/Lotus -->
     <g
@@ -594,7 +594,7 @@
   </g>
   <!-- Coral Stage Traditions -->
   <g
-     transform="translate(30.957447,58.543736)"
+     transform="matrix(1.5994,0,0,1.5994,49.513341,93.634852)"
      id="g46">
     <!-- Tantric/Trickster - Dancing Figure -->
     <g
@@ -665,7 +665,7 @@
   </g>
   <!-- Clear/Ultra-Violet Stage Traditions -->
   <g
-     transform="translate(14.728132,27.858157)"
+     transform="matrix(1.5994,0,0,1.5994,23.556174,44.556336)"
      id="g48">
     <!-- Zen/Advaita - Empty Circle -->
     <g
@@ -704,61 +704,64 @@
   <!-- Tradition Overlap Indicators -->
   <!-- Sufism spanning Blue to Turquoise -->
   <path
-     d="M 150,188 Q 110,148 70,138 40,128 20,83"
+     d="m 239.91,300.6872 q -63.976,-63.976 -127.952,-79.97 -47.982,-15.994 -79.97,-87.967"
      fill="none"
      stroke="#3b82f6"
-     stroke-width="1"
+     stroke-width="1.5994"
      stroke-dasharray="5, 3"
      opacity="0.7"
      id="path48" />
   <text
-     x="90"
-     y="158"
+     x="143.946"
+     y="252.7052"
      font-family="Arial"
-     font-size="7px"
+     font-size="11.1958px"
      text-anchor="middle"
      fill="#3b82f6"
      opacity="0.8"
-     id="text48">Sufism</text>
+     id="text48"
+     style="stroke-width:1.5994">Sufism</text>
   <!-- Shamanic traditions spanning Purple to Green -->
   <path
-     d="M 220,298 Q 180,188 65,138"
+     d="M 351.868,476.6212 Q 287.892,300.6872 103.961,220.7172"
      fill="none"
      stroke="#a855f7"
-     stroke-width="1"
+     stroke-width="1.5994"
      stroke-dasharray="5, 3"
      opacity="0.7"
      id="path49" />
   <text
-     x="174.82269"
-     y="253.4137"
+     x="279.61139"
+     y="405.30988"
      font-family="Arial"
-     font-size="7px"
+     font-size="11.1958px"
      text-anchor="middle"
      fill="#a855f7"
      opacity="0.8"
-     id="text49">Shamanic</text>
+     id="text49"
+     style="stroke-width:1.5994">Shamanic</text>
   <!-- Buddhism spanning Blue to Clear -->
   <path
-     d="M 150,188 Q 95,178 30,108 15,88 10,58"
+     d="M 239.91,300.6872 Q 151.943,284.6932 47.982,172.73521 23.991,140.7472 15.994,92.7652"
      fill="none"
      stroke="#f59e0b"
-     stroke-width="1"
+     stroke-width="1.5994"
      stroke-dasharray="5, 3"
      opacity="0.7"
      id="path50" />
   <text
-     x="70"
-     y="168"
+     x="111.958"
+     y="268.69922"
      font-family="Arial"
-     font-size="7px"
+     font-size="11.1958px"
      text-anchor="middle"
      fill="#f59e0b"
      opacity="0.8"
-     id="text50">Buddhism</text>
+     id="text50"
+     style="stroke-width:1.5994">Buddhism</text>
   <!-- Title -->
   <g
-     transform="translate(250,361.20567)"
+     transform="matrix(1.5994,0,0,1.5994,399.85,577.71235)"
      id="g51">
     <text
        x="0"

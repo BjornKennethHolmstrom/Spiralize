@@ -12,7 +12,7 @@ Monastic traditions **codify Blue's sanctity** while secretly housing **Turquois
 
 > ***"A monastery is God's workshop—where wild souls are sanded into saints, and saints into kindling."***  
 
-**Monastic Essence**: ![A gothic arch with icons: bell, kneeler, open book, and a cracked stained glass window revealing sky.](monastic-visual.svg)
+**Monastic Essence**: ![A gothic arch with icons: bell, kneeler, open book, and a cracked stained glass window revealing sky.](/content/guides/spiritual/sections/07-wisdom-traditions/monastic-visual.svg)
 
 ---
 

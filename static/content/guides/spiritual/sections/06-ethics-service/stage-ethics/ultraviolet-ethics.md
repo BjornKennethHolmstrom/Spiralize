@@ -11,7 +11,7 @@ UltraViolet ethics dissolve into **translucent presence**—a state where:
 
 > ***"UltraViolet doesn't 'practice' ethics—it witnesses ethics breathing through the body as naturally as heartbeats."***  
 
-**UltraViolet's Ethical Spiral**: ![A human silhouette of stained glass, sunlight pouring through—each colored beam illuminating ethical dilemmas below. The figure holds nothing, casts no shadow.](ultraviolet-ethics-visual.svg)  
+**UltraViolet's Ethical Spiral**: ![A human silhouette of stained glass, sunlight pouring through—each colored beam illuminating ethical dilemmas below. The figure holds nothing, casts no shadow.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/ultraviolet-ethics-visual.svg)  
 
 ---
 

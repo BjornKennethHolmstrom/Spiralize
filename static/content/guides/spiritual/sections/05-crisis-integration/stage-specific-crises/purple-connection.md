@@ -12,7 +12,7 @@ Purple's spiritual emergency **feels like exile from the ancestral fire**—a ru
 
 > ***"A Purple crisis doesn't destroy connection—it burns away childish dependence on signs and wonders."***  
 
-**Purple Crisis Essence**: ![A cracked sacred circle reforming with golden seams, with icons: fading ancestral masks, a seedling rising from ashes, and a faint smartphone glowing in the embers.](purple-crisis-visual.svg)
+**Purple Crisis Essence**: ![A cracked sacred circle reforming with golden seams, with icons: fading ancestral masks, a seedling rising from ashes, and a faint smartphone glowing in the embers.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/purple-crisis-visual.svg)
 
 ---
 

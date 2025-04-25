@@ -11,7 +11,7 @@ Purple spirituality **dances in the liminal**—the space between mushroom and m
 
 > ***"Purple doesn't believe in magic—it breathes magic like oxygen."***  
 
-**Purple Essence**: ![A moonlit ritual scene with deep purple hues, featuring a drum, cauldron, overlapping hands in circle formation, spiraling smoke, and a soft glow of firelight creating a space of communal mystery.](purple-practices-visual.svg)
+**Purple Essence**: ![A moonlit ritual scene with deep purple hues, featuring a drum, cauldron, overlapping hands in circle formation, spiraling smoke, and a soft glow of firelight creating a space of communal mystery.](/content/guides/spiritual/sections/04-practices/purple-practices-visual.svg)
 
 **Moonlit Thread**: Purple is the spiral's ancestral heartbeat, from urban altars to spiralize.org's call to rekindle ritual. **It's Yellow's spreadsheets swapped for candle wax, urging us to feel the unseen before we analyze it.**  
 

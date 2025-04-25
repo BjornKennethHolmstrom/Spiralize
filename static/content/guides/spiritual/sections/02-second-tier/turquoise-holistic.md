@@ -16,7 +16,7 @@ Turquoise spirituality is **the cosmic joke told to itself**—a seamless weave 
 
 > ***"Turquoise doesn't chase the divine—it sweats, laughs, and breathes it in every messy moment."***
 
-**Turquoise Essence**: [A fluid diagram with turquoise hues showing a holographic Earth surrounded by flowing energy patterns, with subtle symbols representing unity consciousness and ecological awareness.]
+**Turquoise Essence**: ![Turquoise Essence](/content/guides/spiritual/sections/02-second-tier/turquoise-essence.svg)
 
 ---
 

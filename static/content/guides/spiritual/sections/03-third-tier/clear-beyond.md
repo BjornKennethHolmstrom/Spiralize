@@ -13,7 +13,7 @@ Clear consciousness is **the universe forgetting its own name**—an effortless 
 
 > ***"Clear doesn't seek—it sips tea and forgets there was ever a quest."***  
 
-**Clear Essence**: [An almost invisible visualization with faint prismatic refractions, an empty circle being partially erased, subtle spiral watermarks fading into white space, and a "404 not found" message hidden in negative space—all conveying the absence of presence itself.]  
+**Clear Essence**: ![An almost invisible visualization with faint prismatic refractions, an empty circle being partially erased, subtle spiral watermarks fading into white space, and a 404 not found message hidden in negative space—all conveying the absence of presence itself.](/content/guides/spiritual/sections/03-third-tier/clear-essence.svg)  
 
 ---
 

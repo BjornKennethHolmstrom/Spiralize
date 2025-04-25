@@ -11,7 +11,7 @@ Spiritual technologies work best when they match your **center of gravity**—wh
 
 > ***"First-Tier climbs ladders. Second-Tier weaves them from starlight. Third-Tier forgets ladders and dances with the void."***  
 
-**Practice Spiral**: [A dynamic infographic showing practices evolving from Beige's sensory immersion to Clear's effortless being, with each stage represented by its color and characteristic practices: grounding for Beige, ritual for Purple, power work for Red, devotion for Blue, optimization for Orange, connection for Green, systems for Yellow, unity for Turquoise, play for Coral, witnessing for Ultra-Violet, and spontaneity for Clear.]
+**Practice Spiral**: ![A dynamic infographic showing practices evolving from Beige's sensory immersion to Clear's effortless being, with each stage represented by its color and characteristic practices: grounding for Beige, ritual for Purple, power work for Red, devotion for Blue, optimization for Orange, connection for Green, systems for Yellow, unity for Turquoise, play for Coral, witnessing for Ultra-Violet, and spontaneity for Clear.](/content/guides/spiritual/sections/04-practices/practice-spiral-visualization.svg)
 
 ---
 

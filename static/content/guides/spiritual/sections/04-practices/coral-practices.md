@@ -12,7 +12,7 @@ Coral spirituality **tickles the cosmos awake**—turning spiritual traps into p
 
 > ***"Coral doesn't transcend the ego—it invites the ego to karaoke night and laughs when it tries to hit the high notes."***  
 
-**Coral Essence**: ![A psychedelic circus tent with icons: jester hat, shadow puppet theater, a prism cracking open to release rainbows.](coral-practices-visual.svg)  
+**Coral Essence**: ![A psychedelic circus tent with icons: jester hat, shadow puppet theater, a prism cracking open to release rainbows.](/content/guides/spiritual/sections/04-practices/coral-practices-visual.svg)  
 
 ---
 

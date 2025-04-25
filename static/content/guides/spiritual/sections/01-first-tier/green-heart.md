@@ -13,7 +13,7 @@ Green spirituality is **the warm bath of collective belonging**—a fusion of ec
 
 > ***"Green doesn't heal wounds—it weaves flower crowns for them and hums 'Imagine' under starlight."***  
 
-**Green Essence**: [Green essence visualization with interconnected hearts, sacred circles, and elements representing collective belonging, healing, and ecological awareness]
+**Green Essence**: ![Green Essence](/content/guides/spiritual/sections/01-first-tier/green-essence.svg)
 
 ---
 

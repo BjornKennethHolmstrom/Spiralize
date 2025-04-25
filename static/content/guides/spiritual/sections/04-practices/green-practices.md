@@ -11,7 +11,7 @@ Green spirituality **pulses in the spaces between**—where healing becomes poli
 
 > ***"Green doesn't transcend the mess—it composts it into connection."***  
 
-**Green Essence**: ![A mandala of interconnected nodes with icons: holding hands, psychedelic patterns, protest signs growing into trees, and a heart-shaped earth.](green-practices-visual.svg)  
+**Green Essence**: ![A mandala of interconnected nodes with icons: holding hands, psychedelic patterns, protest signs growing into trees, and a heart-shaped earth.](/content/guides/spiritual/sections/04-practices/green-practices-visual.svg)  
 
 ---
 

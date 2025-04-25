@@ -13,7 +13,7 @@ Purple spirituality is **a tapestry of rituals, omens, and invisible bonds**—w
 
 > ***"Purple doesn't chase magic—it dances with it, like a child braiding starlight into stories."***  
 
-**Purple Essence**: [See accompanying circular design with ancestral motifs - a mandala-like pattern with an owl, tree of life, woven threads, rainbow and candle symbols, all in purple hues with a spiral center representing Purple's animated cosmos.]
+**Purple Essence**: ![Purple Essence](/content/guides/spiritual/sections/01-first-tier/purple-essence.svg)
 
 ---
 

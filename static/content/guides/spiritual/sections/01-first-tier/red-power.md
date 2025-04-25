@@ -13,7 +13,7 @@ Red spirituality is **unapologetic self-deification**—a volcanic fusion of ego
 
 > ***"Red doesn't kneel to the divine—it arm-wrestles it and demands a crown."***  
 
-**Red Essence**: ![Red Essence](red-essence.svg)  
+**Red Essence**: ![Red Essence](/content/guides/spiritual/sections/01-first-tier/red-essence.svg)  
 
 ---
 

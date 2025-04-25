@@ -57,7 +57,7 @@
      id="circle1" />
   <text
      x="400"
-     y="400"
+     y="360"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"
@@ -78,7 +78,7 @@
      id="circle2" />
   <text
      x="500"
-     y="300"
+     y="260"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"
@@ -99,7 +99,7 @@
      id="circle4" />
   <text
      x="550"
-     y="400"
+     y="360"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"
@@ -120,7 +120,7 @@
      id="circle6" />
   <text
      x="600"
-     y="500"
+     y="460"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"
@@ -141,7 +141,7 @@
      id="circle8" />
   <text
      x="400"
-     y="600"
+     y="560"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"
@@ -162,7 +162,7 @@
      id="circle10" />
   <text
      x="200"
-     y="500"
+     y="460"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"
@@ -183,7 +183,7 @@
      id="circle12" />
   <text
      x="250"
-     y="400"
+     y="360"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"
@@ -204,7 +204,7 @@
      id="circle14" />
   <text
      x="300"
-     y="300"
+     y="260"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"
@@ -225,7 +225,7 @@
      id="circle16" />
   <text
      x="350"
-     y="200"
+     y="160"
      font-size="20px"
      text-anchor="middle"
      fill="#333333"

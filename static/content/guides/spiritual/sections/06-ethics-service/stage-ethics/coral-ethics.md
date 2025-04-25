@@ -11,7 +11,7 @@ Coral ethics spark from **luminous mischief**—a sovereign dance where:
 
 > ***"Coral doesn't transcend the spiral—it pirouettes through its fractals, dropping truth bombs wrapped in glitter."***  
 
-**Coral's Ethical Spiral**: A jester's scepter morphing into a DNA helix, with shadow and light intertwining like candy stripes. At the base, a mushroom cloud blooms into a lotus, symbolizing how destruction can transform into creation. The phrase "Play heals" is faintly etched within the DNA strands.
+**Coral's Ethical Spiral**: ![A jester's scepter morphing into a DNA helix, with shadow and light intertwining like candy stripes. At the base, a mushroom cloud blooms into a lotus, symbolizing how destruction can transform into creation. The phrase 'Play heals' is faintly etched within the DNA strands.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/coral-ethics-visual.svg)
 
 ---
 

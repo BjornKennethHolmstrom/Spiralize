@@ -11,7 +11,7 @@ These methods **morph to meet each stage's needs** while maintaining core effica
 
 > ***"A true universal practice is like a mirror—it shows Red its fire, Blue its rules, and Clear its absence."***  
 
-**Universal Essence**: ![A prism refracting one light beam into multiple colors, each hitting stage-specific icons (Red's fist, Blue's book, Coral's jester hat).](universal-practices-visual.svg)
+**Universal Essence**: ![A prism refracting one light beam into multiple colors, each hitting stage-specific icons (Red's fist, Blue's book, Coral's jester hat).](/content/guides/spiritual/sections/04-practices/universal-practices-visual.svg)
 
 ---
 

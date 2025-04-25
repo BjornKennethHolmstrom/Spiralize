@@ -12,7 +12,7 @@ Red's awakening crisis **feels like divine wrath trapped in mortal flesh**—a c
 
 > ***"Red rage is lightning seeking ground—your task isn't to stop it, but to build lightning rods."***  
 
-**Red Crisis Essence**: ![A volcano erupting with icons: clenched fist holding a rose, broken chains, a warrior's tear glowing like an ember.](red-rage-visual.svg)
+**Red Crisis Essence**: ![A volcano erupting with icons: clenched fist holding a rose, broken chains, a warrior's tear glowing like an ember.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/red-rage-visual.svg)
 
 ---
 

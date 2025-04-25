@@ -30,7 +30,7 @@ Spiral Dynamics models how human **values**, **worldviews**, and **priorities** 
 | **Coral**  | 🪸       | Evolutionary Play | Embodied mysticism, shadow alchemy, sacred re-entry into form ***("Coral's where spirituality gets juicy—like a mystic who's also a CEO, artist, and lover of fine whiskey."—Grok)*** |  
 
 **Spiral Snapshot**: 
-![Spiral Snapshot](spiral-snapshot.svg)  
+![Spiral Snapshot](/content/guides/spiritual/sections/00-intro/spiral-snapshot.svg)  
 
 **Tiers**:  
 - **First-Tier**: Beige–Green *(subsistence to relational)*  

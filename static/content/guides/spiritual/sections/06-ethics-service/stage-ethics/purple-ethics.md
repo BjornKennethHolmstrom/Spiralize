@@ -12,7 +12,7 @@ Purple ethics are rooted in **sacred kinship**, where morality flows from:
 > ***"In Purple, ethics aren't debated—they're woven in campfire smoke and sung through bone songs."***  
 
 **Purple's Ethical Spiral**: 
-![A tribal mask split in two—one half radiant with communal firelight and warmth, the other rigid with shadowed cracks that symbolize dogmatic traditionalism. Ancestral bones and braided roots weave around the mask, signifying lineage, while "Listen to the living" appears faintly carved in the mask's shadow.](purple-ethics-visual.svg)
+![A tribal mask split in two—one half radiant with communal firelight and warmth, the other rigid with shadowed cracks that symbolize dogmatic traditionalism. Ancestral bones and braided roots weave around the mask, signifying lineage, while "Listen to the living" appears faintly carved in the mask's shadow.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/purple-ethics-visual.svg)
 
 ---
 

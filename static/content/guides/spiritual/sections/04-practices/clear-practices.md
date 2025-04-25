@@ -12,7 +12,7 @@ Clear isn't a stage—it's what remains when all concepts of stages evaporate. T
 
 > ***"Clear doesn't transcend—it yawns at transcendence and goes to make terrible coffee."***  
 
-**Clear Essence**: ![A blank white rectangle that subtly glitches when stared at, revealing for one frame: a stick figure shrugging before disappearing.](clear-essence.svg)  
+**Clear Essence**: ![A blank white rectangle that subtly glitches when stared at, revealing for one frame: a stick figure shrugging before disappearing.](/content/guides/spiritual/sections/04-practices/clear-essence.svg)  
 
 ---
   

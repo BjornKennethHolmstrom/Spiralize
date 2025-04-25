@@ -13,7 +13,7 @@ Ultra-Violet spirituality is **the universe exhaling**—a luminous collapse of 
 
 > ***"Ultra-Violet doesn't climb the spiral—it sighs and sees it was home all along."***  
 
-**Ultra-Violet Essence**: [A diaphanous visualization in ultraviolet hues showing an empty chair with sunlight streaming through it, a transparent spiral dissolving into a point of light, and a single unbroken line forming a laughing Buddha figure—all conveying weightless presence and luminous transparency.]
+**Ultra-Violet Essence**: ![A diaphanous visualization in ultraviolet hues showing an empty chair with sunlight streaming through it, a transparent spiral dissolving into a point of light, and a single unbroken line forming a laughing Buddha figure—all conveying weightless presence and luminous transparency.](/content/guides/spiritual/sections/03-third-tier/ultraviolet-essence.svg)
 
 ---
 

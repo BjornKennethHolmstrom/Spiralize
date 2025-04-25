@@ -11,7 +11,7 @@ Yellow's ethics flow from **evolutionary code**—a meta-aware stance where:
 
 > ***"Yellow doesn't obey moral laws—it engineers ethical ecosystems."***  
 
-**Yellow's Ethical Spiral**: ![A fractal tree growing from a circuit board—roots labeled "tradition," branches labeled "innovation," with data streams flowing between them. This visualization represents the dynamic integration of traditional wisdom with innovative approaches, with "Feel the roots" faintly etched in the circuit board to remind that systems thinking must remain grounded.](yellow-ethics-visual.svg)
+**Yellow's Ethical Spiral**: ![A fractal tree growing from a circuit board—roots labeled "tradition," branches labeled "innovation," with data streams flowing between them. This visualization represents the dynamic integration of traditional wisdom with innovative approaches, with "Feel the roots" faintly etched in the circuit board to remind that systems thinking must remain grounded.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/yellow-ethics-visual.svg)
 
 ---
 

@@ -16,7 +16,7 @@ Each developmental stage casts unique shadows:
 
 > ***"Your shadow isn't your enemy—it's the part of you that learned to survive in older spirals."***  
 
-**Shadow Spiral**: ![A person holding a lantern—its light reveals shadow figures resembling past stage selves, each holding gifts and weapons.](shadow-journal-visual.svg)  
+**Shadow Spiral**: ![A person holding a lantern—its light reveals shadow figures resembling past stage selves, each holding gifts and weapons.](/content/guides/spiritual/tools/shadow-journal-visual.svg)  
 
 ---
 

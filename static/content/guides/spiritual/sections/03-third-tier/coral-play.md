@@ -13,7 +13,7 @@ Coral spirituality is **the universe playing hide-and-seek with itself**—a par
 
 > ***"Coral doesn't seek enlightenment—it photobombs it with a kazoo."***  
 
-**Coral Essence**: ![A vibrant diagram in coral hues featuring a playful jester's hat, shadow puppets, yin-yang symbols in dynamic motion, and spiraling patterns that suggest both evolution and divine mischief.](coral-essence.svg)
+**Coral Essence**: ![A vibrant diagram in coral hues featuring a playful jester's hat, shadow puppets, yin-yang symbols in dynamic motion, and spiraling patterns that suggest both evolution and divine mischief.](/content/guides/spiritual/sections/03-third-tier/coral-essence.svg)
 
 ---
 

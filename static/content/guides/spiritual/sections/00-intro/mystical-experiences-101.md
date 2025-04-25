@@ -15,7 +15,7 @@ Mystical experiences aren't one-size-fits-all—**they're filtered through the l
 
 ## **Stage-by-Stage Mysticism**  
 **Mystical Flow**: 
-[Mystical Flow](spiral-flow.svg)  
+[Mystical Flow](/content/guides/spiritual/sections/00-intro/spiral-flow.svg)  
 
 ### **First-Tier: The Foundations**  
 | Stage  | Mystical Expression          | Potential Trap               | Gift                          |  

@@ -14,7 +14,7 @@ Every spiritual tradition contains **multiple developmental codes**—Purple's r
 
 **Self-Inquiry Prompt**: *"What part of me chose this tradition—and what part might be asking to evolve?"*  
 
-**Visual Guide**: ![A spiral overlaid with global tradition icons: Celtic knot (Purple), Cross (Blue), Zen circle (Turquoise), etc.](traditions-spiral-map.svg)
+**Visual Guide**: ![A spiral overlaid with global tradition icons: Celtic knot (Purple), Cross (Blue), Zen circle (Turquoise), etc.](/content/guides/spiritual/sections/07-wisdom-traditions/traditions-spiral-map.svg)
 
 ---
 

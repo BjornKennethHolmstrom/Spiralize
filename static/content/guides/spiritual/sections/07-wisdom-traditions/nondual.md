@@ -12,7 +12,7 @@ Nonduality **haunts every stage** like a half-remembered dream:
 
 > ***"Nonduality isn't a teaching—it's the universe playing hide-and-seek with itself, then forgetting it left the keys in its other pants."***  
 
-**Nondual Essence**: ![A circle dissolving at the edges into: a laughing sage, crashing wave, empty teacup, and scribbled-out spiral diagram.](nondual-visual.svg)
+**Nondual Essence**: ![A circle dissolving at the edges into: a laughing sage, crashing wave, empty teacup, and scribbled-out spiral diagram.](/content/guides/spiritual/sections/07-wisdom-traditions/nondual-visual.svg)
 
 ---
 

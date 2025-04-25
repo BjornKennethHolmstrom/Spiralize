@@ -13,7 +13,7 @@ This section explores:
 
 > ***"Your darkest hour is just your current stage's software crashing—reboot takes courage, not transcendence."***  
 
-**Crisis Spiral**: ![A fractal descent into shadow with "exit" arrows at each stage, labeled with integration tools.](crisis-spiral-visual.svg)
+**Crisis Spiral**: ![A fractal descent into shadow with "exit" arrows at each stage, labeled with integration tools.](/content/guides/spiritual/sections/05-crisis-integration/crisis-spiral-visual.svg)
 
 ---
 

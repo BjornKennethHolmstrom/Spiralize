@@ -11,7 +11,7 @@ Red spirituality **ignites in the crucible of action**—where prayer becomes a 
 
 > ***"Red doesn't meditate on chaos—it becomes the storm and laughs."***  
 
-**Red Essence**: ![A volcanic eruption with fiery reds and molten textures, featuring a clenched fist breaking chains, a warrior's face in mid-scream, and lava flowing like blood through veins—all conveying the raw, primal power of Red consciousness.](red-practices-visual.svg)
+**Red Essence**: ![A volcanic eruption with fiery reds and molten textures, featuring a clenched fist breaking chains, a warrior's face in mid-scream, and lava flowing like blood through veins—all conveying the raw, primal power of Red consciousness.](/content/guides/spiritual/sections/04-practices/red-practices-visual.svg)
 
 **Sacred Inferno**: Red is the spiral's primal spark, from street protests to spiralize.org's call to reclaim power. **It's Yellow's diagrams burned to ash, urging us to act before we overthink.**  
 

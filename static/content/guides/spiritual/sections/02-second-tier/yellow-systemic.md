@@ -14,7 +14,7 @@ Yellow spirituality is **the universe observing itself through spreadsheets**—
 > ***"Yellow doesn't seek the divine—it reverse-engineers it, then blogs about the irony."***  
 
 **Yellow Essence**: 
-![Yellow Essence](yellow-essence.svg)  
+![Yellow Essence](/content/guides/spiritual/sections/02-second-tier/yellow-essence.svg)  
 
 ---
 

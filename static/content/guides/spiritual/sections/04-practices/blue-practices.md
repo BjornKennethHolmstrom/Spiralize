@@ -11,7 +11,7 @@ Blue spirituality **builds stairways to heaven**—through ritual, repetition, a
 
 > ***"Blue doesn't wonder about God—it reports for divine duty at 6am sharp."***  
 
-**Blue Essence**: ![A cathedral window with icons: lit candle, open book, folded hands, symmetrical pillars.](blue-practices-visual.svg)  
+**Blue Essence**: ![A cathedral window with icons: lit candle, open book, folded hands, symmetrical pillars.](/content/guides/spiritual/sections/04-practices/blue-practices-visual.svg)  
 
 ---
 

@@ -11,7 +11,7 @@ True service evolves with consciousness—what helps at one level may harm at an
 
 > ***"Feed a man at Purple; teach farming at Orange; question land ownership at Yellow; become the hunger at Clear."***  
 
-**Service Spiral Visual**: ![Infographic of a stone tossed into water—ripples labeled with service expressions from Beige (immediate aid) to Clear (effortless being-as-service).](service-frameworks-visual.svg)  
+**Service Spiral Visual**: ![Infographic of a stone tossed into water—ripples labeled with service expressions from Beige (immediate aid) to Clear (effortless being-as-service).](/content/guides/spiritual/sections/06-ethics-service/service-frameworks-visual.svg)  
 
 ---
 

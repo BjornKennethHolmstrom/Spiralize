@@ -14,7 +14,7 @@ Indigenous spirituality **lives in the hyphen** between Purple's tribal bonds an
 
 **Reflection Prompt**: *"What forgotten root—cultural, geographic, familial—might be asking to grow through me now?"*  
 
-**Indigenous Essence**: ![A living landscape with icons: handprint on cave wall, corn sprouting from a book, drum merging with heartbeat line.](indigenous-visual.svg)  
+**Indigenous Essence**: ![A living landscape with icons: handprint on cave wall, corn sprouting from a book, drum merging with heartbeat line.](/content/guides/spiritual/sections/07-wisdom-traditions/indigenous-visual.svg)  
 
 ---
 

@@ -11,7 +11,7 @@ Turquoise spirituality **dissolves the practitioner**—where breathing becomes 
 
 > ***"Turquoise doesn't seek awakening—it notices the seeker was always fiction."***  
 
-**Turquoise Essence**: ![A vibrating mandala with icons: galaxy, neuron, mycelial network, and a laughing child—all made of the same shimmering particles.](turquoise-practices-visual.svg)  
+**Turquoise Essence**: ![A vibrating mandala with icons: galaxy, neuron, mycelial network, and a laughing child—all made of the same shimmering particles.](/content/guides/spiritual/sections/04-practices/turquoise-practices-visual.svg)  
 
 ---
 

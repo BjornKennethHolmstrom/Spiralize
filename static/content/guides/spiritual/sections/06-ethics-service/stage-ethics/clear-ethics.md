@@ -12,7 +12,7 @@ Clear isn't a stage—it's the **absence of stages**, where:
 
 > ***"Clear doesn't 'do' ethics—it's the space where ethical dramas play and dissolve like morning mist, yet compassion flows unobstructed by concept."***  
 
-**Clear's Spiral**: ![A blank white circle with faint, fading echoes of all previous stage colors. Caption: *"No one left to choose, but choosing happens."*](clear-ethics-visual.svg)  
+**Clear's Spiral**: ![A blank white circle with faint, fading echoes of all previous stage colors. Caption: *"No one left to choose, but choosing happens."*](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/clear-ethics-visual.svg)  
 
 ---
 

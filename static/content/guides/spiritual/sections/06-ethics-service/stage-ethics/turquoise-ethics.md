@@ -11,7 +11,7 @@ Turquoise ethics flow from **wholeness-in-action**—a Gaian consciousness where
 
 > ***"Turquoise doesn't 'have' ethics—it becomes the ethical medium through which life evolves itself."***  
 
-**Turquoise's Ethical Spiral**: ![A neuron superimposed over Earth, with synaptic connections extending into cosmic webs. Each synaptic spark contains symbols of connection (water droplets, vines, stars) and ripples across scales from the cellular to the cosmic, with "All is here" faintly etched in one of the sparks.](turquoise-ethics-visual.svg)
+**Turquoise's Ethical Spiral**: ![A neuron superimposed over Earth, with synaptic connections extending into cosmic webs. Each synaptic spark contains symbols of connection (water droplets, vines, stars) and ripples across scales from the cellular to the cosmic, with "All is here" faintly etched in one of the sparks.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/turquoise-ethics-visual.svg)
 
 ---
 

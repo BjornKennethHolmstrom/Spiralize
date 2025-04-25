@@ -12,7 +12,7 @@ Ultra-Violet spirituality **is the universe's silent exhale**—no techniques, n
 
 > ***"Ultra-Violet doesn't do practices—it notices when 'doing' was always God's inside joke."***  
 
-**Ultra-Violet Essence**: ![A nearly blank page with faint prismatic edges, containing only: a half-erased spiral, a teacup casting no shadow, and microscopic "404 not found" text.](ultraviolet-practices-visual.svg)  
+**Ultra-Violet Essence**: ![A nearly blank page with faint prismatic edges, containing only: a half-erased spiral, a teacup casting no shadow, and microscopic "404 not found" text.](/content/guides/spiritual/sections/04-practices/ultraviolet-practices-visual.svg)  
 
 ---
 

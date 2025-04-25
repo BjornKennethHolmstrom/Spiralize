@@ -9,8 +9,8 @@ This infographic maps how **spiritual experiences and traps** manifest at each s
 - Understand others’ mystical language.  
 - Navigate growth without bypassing.  
 
-![Spiral Dynamics Mystical Map](./spiral-map.svg)  
-*▲ [Full-screen version](./spiral-map.svg) | [Download PDF](./spiral-map.pdf)*  
+![Spiral Dynamics Mystical Map](/content/guides/spiritual/sections/00-intro/spiral-map.svg)  
+*▲ [Full-screen version](/content/guides/spiritual/sections/00-intro/spiral-map.svg) | [Download PDF](/content/guides/spiritual/sections/00-intro/spiral-map.pdf)*  
 
 ---
 

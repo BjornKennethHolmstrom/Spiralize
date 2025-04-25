@@ -14,7 +14,7 @@ Orange spirituality is **the quantified soul**—a merger of spreadsheet logic a
 > ***"Orange doesn't kneel to the divine—it A/B tests it and sells the results."***  
 
 **Orange Essence**: 
-![Orange Essence](orange-essence.svg)  
+![Orange Essence](/content/guides/spiritual/sections/01-first-tier/orange-essence.svg)  
 
 ---
 

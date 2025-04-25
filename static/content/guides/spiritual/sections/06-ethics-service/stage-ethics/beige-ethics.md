@@ -11,7 +11,7 @@ Beige's ethics pulse in **heartbeats and hunger pangs**—a pre-verbal bond betw
 
 > ***"Beige doesn't question 'should'—it follows 'must.' The first lie was ignoring the gut's 'no.'"***  
 
-**Beige's Ethical Spiral**: A wolf pack sharing a kill—balanced in their consumption with no guilt or greed, contrasted with a human disconnected from natural rhythms, overeating while scrolling on a phone.
+**Beige's Ethical Spiral**: ![A wolf pack sharing a kill—balanced in their consumption with no guilt or greed, contrasted with a human disconnected from natural rhythms, overeating while scrolling on a phone.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/beige-ethics-visual.svg)
 
 ---
 

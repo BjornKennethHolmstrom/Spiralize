@@ -11,7 +11,7 @@ The Ultra-Violet spiritual emergency arises when **even surrender becomes an ide
 
 > ***"Ultra-Violet doesn't dissolve into grace—it turns grace into a to-do list."***
 
-**Ultra-Violet Crisis Essence**: A fading figure with a half-erased face and floating hands holding a glowing coffee mug, beside a chair casting a shadow with "404 Self Not Found" hidden within it—the mundane and cosmic intertwining in a state of partial disappearance.
+**Ultra-Violet Crisis Essence**: ![A fading figure with a half-erased face and floating hands holding a glowing coffee mug, beside a chair casting a shadow with 404 Self Not Found hidden within it—the mundane and cosmic intertwining in a state of partial disappearance.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/ultraviolet-crisis-visual.svg)
 
 ---
 

@@ -14,7 +14,7 @@ Blue spirituality is **cosmic law etched in stone**—a divine contract between 
 > ***"Blue doesn't chase the divine—it carves its path in granite, then walks it with unshakable faith."***  
 
 **Blue Essence**: 
-![Blue Essence](blue-essence.svg)  
+![Blue Essence](/content/guides/spiritual/sections/01-first-tier/blue-essence.svg)  
 
 ---
 

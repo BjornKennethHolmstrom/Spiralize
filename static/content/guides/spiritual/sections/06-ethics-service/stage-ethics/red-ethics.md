@@ -12,7 +12,7 @@ Red's ethics blaze in **blood, fire, and unapologetic self-interest**—a warrio
 > ***"Red doesn't 'do no harm'—it does what it must. The first sin was apologizing for existing."***  
 
 **Red's Ethical Spiral**: 
-![A flaming sword splitting a mountain—one side shows a lone warrior protecting a village, the other a warlord trampling the weak. The sword represents how power can be wielded both as protection and as domination, with "Strength serves" faintly etched in the hilt.](red-ethics-visual.svg)
+![A flaming sword splitting a mountain—one side shows a lone warrior protecting a village, the other a warlord trampling the weak. The sword represents how power can be wielded both as protection and as domination, with "Strength serves" faintly etched in the hilt.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/red-ethics-visual.svg)
 
 ---
 

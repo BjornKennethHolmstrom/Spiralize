@@ -12,7 +12,7 @@ Clear isn't a stage—it's what remains when even "crisis" reveals itself as fic
 
 > ***"Clear doesn't transcend—it yawns at transcendence and feeds the cat."***
 
-**Clear Essence**: A nearly blank canvas with faint traces of a spiral erasing itself, a teacup casting no shadow, and microscopic text reading "no problem here"—the absence that contains everything.
+**Clear Essence**: ![A nearly blank canvas with faint traces of a spiral erasing itself, a teacup casting no shadow, and microscopic text reading "no problem here"—the absence that contains everything.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/clear-essence.svg)
 
 ---
 

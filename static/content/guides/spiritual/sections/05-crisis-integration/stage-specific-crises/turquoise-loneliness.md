@@ -11,7 +11,7 @@ Turquoise's spiritual emergency **is realizing the universe loves you—but no o
 
 > ***"Turquoise doesn't transcend the human condition—it discovers the human condition was always divine."***  
 
-**Turquoise Crisis Essence**: A radiant figure suspended between starlight and city streets, with cosmic beams weaving into human hands below, clutching a coffee cup with a faint "Unity WiFi" signal.
+**Turquoise Crisis Essence**: ![A radiant figure suspended between starlight and city streets, with cosmic beams weaving into human hands below, clutching a coffee cup with a faint Unity WiFi signal.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/turquoise-crisis-visual.svg)
 
 ---
 

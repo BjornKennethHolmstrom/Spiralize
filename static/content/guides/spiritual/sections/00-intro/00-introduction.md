@@ -32,7 +32,7 @@ Spiral Dynamics reveals how human values evolve—but rarely explores how **spir
 | **Second-Tier** | Yellow–Turquoise  | Systems → Holistic Unity            |  
 | **Third-Tier**  | Coral–Clear       | Evolutionary Play → Beyond Stages (tantra, Zen, nondual teachings) |  
 
-**Spiral Snapshot**: [See accompanying spiral infographic showing stage colors and mystical expressions]  
+**Spiral Snapshot**: ![Accompanying spiral infographic showing stage colors and mystical expressions](/content/guides/spiritual/sections/00-intro/spiral-snapshot.svg)  
 
 ### 3. **The Paradox of the Spiral**  
 - **Forward**: Climbing stages brings deeper wisdom.  

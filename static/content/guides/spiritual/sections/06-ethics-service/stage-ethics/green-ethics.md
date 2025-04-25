@@ -12,7 +12,7 @@ Green's ethics weave from **relational alchemy**—a living network where:
 > ***"Green doesn't build altars—it circles them, singing until even stones soften."***  
 
 **Green's Ethical Spiral**: 
-![A circle of hands around a fire—some palms open in giving and glowing with light, others clenched in fists casting shadows toward an excluded figure outside the circle. The image captures both Green's beautiful inclusivity and its shadow of exclusion, with "Edges hold" faintly etched in the fire's embers.](green-ethics-visual.svg)
+![A circle of hands around a fire—some palms open in giving and glowing with light, others clenched in fists casting shadows toward an excluded figure outside the circle. The image captures both Green's beautiful inclusivity and its shadow of exclusion, with "Edges hold" faintly etched in the fire's embers.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/green-ethics-visual.svg)
 
 ---
 

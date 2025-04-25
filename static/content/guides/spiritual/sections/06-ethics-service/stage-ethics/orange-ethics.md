@@ -12,7 +12,7 @@ Orange's ethics thrive on **cost-benefit analysis and self-driven success**—a 
 > ***"Orange doesn't pray for miracles—it builds them in a garage and patents the process."***  
 
 **Orange's Ethical Spiral**: 
-![A golden ladder ascending through clouds with rungs labeled "Innovation," "Efficiency," "Disruption," with shadowy figures falling through gaps. This represents how achievement-based ethics can create both upward mobility and potential casualties, with "Humility scales" faintly etched on one of the rungs.](orange-ethics-visual.svg)
+![A golden ladder ascending through clouds with rungs labeled "Innovation," "Efficiency," "Disruption," with shadowy figures falling through gaps. This represents how achievement-based ethics can create both upward mobility and potential casualties, with "Humility scales" faintly etched on one of the rungs.](/content/guides/spiritual/sections/06-ethics-service/stage-ethics/orange-ethics-visual.svg)
 
 ---
 

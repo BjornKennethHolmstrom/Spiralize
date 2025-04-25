@@ -12,7 +12,7 @@ First-Tier stages (Beige–Green) represent humanity's foundational spiritual ex
 
 > ***"The spiral's roots run deep. Red's divine roar and Green's cosmic hug both chase the infinite through their own kaleidoscope."***  
 
-**First-Tier Flow**: ![First-Tier Flow](first-tier-flow-visualization.svg)
+**First-Tier Flow**: ![First-Tier Flow](/content/guides/spiritual/sections/01-first-tier/first-tier-flow-visualization.svg)
 
 ---
 

@@ -11,7 +11,7 @@ Yellow's spiritual emergency **is realizing you've turned enlightenment into an 
 
 > ***"Yellow doesn't truly awaken until it laughs at its own flowcharts."***  
 
-**Yellow Crisis Essence**: A recursive spiral that simultaneously collapses into simplicity and expands into complexity. The mind that tries to understand itself by creating ever more intricate maps, until it reaches the edge where intellect surrenders to direct experience.
+**Yellow Crisis Essence**: ![A recursive spiral that simultaneously collapses into simplicity and expands into complexity. The mind that tries to understand itself by creating ever more intricate maps, until it reaches the edge where intellect surrenders to direct experience.](/content/guides/spiritual/sections/05-crisis-integration/stage-specific-crises/yellow-crisis-visual.svg)
 
 ---
 
