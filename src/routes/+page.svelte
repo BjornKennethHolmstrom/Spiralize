@@ -20,9 +20,9 @@
         title: "What is Spiral Dynamics?",
         description: {
           p1: "• Spiral Dynamics is a lens to understand how values evolve — shaping everything from personal choices to global politics.",
-          p2: "◦ It maps the development of human consciousness through distinct stages, each representing a unique way of making sense of the world.",
+          p2: "• It maps the development of human consciousness through distinct stages, each representing a unique way of making sense of the world.",
           p3: "• This isn’t a belief system, but a pattern — of growth, meaning-making, and transformation.",
-          p4: "◦ By learning the spiral, we gain tools to navigate relationships, lead with insight, and understand where humanity is heading.",
+          p4: "• By learning the spiral, we gain tools to navigate relationships, lead with insight, and understand where humanity is heading.",
           quote: "“To honor all beings, we must first learn to see through all eyes.”"
         },
         keyPoints: [
@@ -92,9 +92,9 @@
         title: "Vad är Spiral Dynamics?",
         description: {
           p1: "• Spiral Dynamics är en lins för att förstå hur värderingar utvecklas – och hur de formar allt från personliga val till global politik.",
-          p2: "◦ Den kartlägger utvecklingen av mänskligt medvetande genom olika stadier, där varje stadium representerar ett unikt sätt att förstå världen.",
+          p2: "• Den kartlägger utvecklingen av mänskligt medvetande genom olika stadier, där varje stadium representerar ett unikt sätt att förstå världen.",
           p3: "• Det är inget trossystem, utan ett mönster – av tillväxt, meningsskapande och transformation.",
-          p4: "◦ Genom att lära oss spiralen får vi verktyg för att navigera relationer, leda med insikt och förstå vart mänskligheten är på väg.",
+          p4: "• Genom att lära oss spiralen får vi verktyg för att navigera relationer, leda med insikt och förstå vart mänskligheten är på väg.",
           quote: "“För att hedra alla varelser måste vi först lära oss att se genom alla ögon.”"
         },
         keyPoints: [
@@ -226,7 +226,7 @@
         <p class="mb-4">{t.intro.description.p4}</p>
       </div>
 
-      <div class="mt-8 max-w-xl text-sm text-gray-400 dark:text-gray-500 italic">
+      <div class="mt-8 max-w-xl text-sm text-gray-500 dark:text-gray-500 italic">
         {t.intro.description.quote}
       </div><br><br>
       
