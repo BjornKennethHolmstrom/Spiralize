@@ -177,6 +177,13 @@
             en: "🧘 Spiral-Aware Spirituality Guide", 
             sv: "🧘 Spiralmedveten Andlighetsguide" 
           }
+        },
+        { 
+          href: `${base}/guide-governance`, 
+          label: { 
+            en: "🌍 Spiral-Aware Global Governance Guide", 
+            sv: "🌍 Spiralmedveten Global Styrning" 
+          }
         }
       ]
     },

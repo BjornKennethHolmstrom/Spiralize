@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="900"
+   height="700"
+   viewBox="0 0 900 700"
+   version="1.1"
+   id="svg120"
+   sodipodi:docname="governance-transition-navigation-chart.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs120" />
+  <sodipodi:namedview
+     id="namedview120"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2085714"
+     inkscape:cx="481.14657"
+     inkscape:cy="367.37589"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg120" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="700"
+     fill="#f8f8f8"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text1">Governance Transition Navigation Chart</text>
+  <text
+     x="450"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     fill="#666"
+     id="text2">Understanding and Supporting the Turbulent Periods Between Governance Paradigms</text>
+  <!-- Main Section Divider -->
+  <rect
+     x="50"
+     y="100"
+     width="800"
+     height="550"
+     rx="0"
+     ry="0"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect2" />
+  <!-- Transitional Zones -->
+  <rect
+     x="100"
+     y="160"
+     width="700"
+     height="80"
+     rx="0"
+     ry="0"
+     fill="#f1f8e9"
+     stroke="#aed581"
+     stroke-width="1"
+     id="rect3" />
+  <rect
+     x="100"
+     y="240"
+     width="700"
+     height="80"
+     rx="0"
+     ry="0"
+     fill="#e8f5e9"
+     stroke="#a5d6a7"
+     stroke-width="1"
+     id="rect4" />
+  <rect
+     x="100"
+     y="320"
+     width="700"
+     height="80"
+     rx="0"
+     ry="0"
+     fill="#e0f2f1"
+     stroke="#80cbc4"
+     stroke-width="1"
+     id="rect5" />
+  <rect
+     x="100"
+     y="400"
+     width="700"
+     height="80"
+     rx="0"
+     ry="0"
+     fill="#e0f7fa"
+     stroke="#80deea"
+     stroke-width="1"
+     id="rect6" />
+  <rect
+     x="100"
+     y="480"
+     width="700"
+     height="80"
+     rx="0"
+     ry="0"
+     fill="#e1f5fe"
+     stroke="#81d4fa"
+     stroke-width="1"
+     id="rect7" />
+  <!-- Headers -->
+  <rect
+     x="100"
+     y="130"
+     width="140"
+     height="30"
+     rx="0"
+     ry="0"
+     fill="#e0e0e0"
+     stroke="#bdbdbd"
+     stroke-width="1"
+     id="rect8" />
+  <text
+     x="170"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text8">Transition</text>
+  <rect
+     x="240"
+     y="130"
+     width="140"
+     height="30"
+     rx="0"
+     ry="0"
+     fill="#e0e0e0"
+     stroke="#bdbdbd"
+     stroke-width="1"
+     id="rect9" />
+  <text
+     x="310"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text9">Characteristics</text>
+  <rect
+     x="380"
+     y="130"
+     width="140"
+     height="30"
+     rx="0"
+     ry="0"
+     fill="#e0e0e0"
+     stroke="#bdbdbd"
+     stroke-width="1"
+     id="rect10" />
+  <text
+     x="450"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text10">Challenges</text>
+  <rect
+     x="520"
+     y="130"
+     width="140"
+     height="30"
+     rx="0"
+     ry="0"
+     fill="#e0e0e0"
+     stroke="#bdbdbd"
+     stroke-width="1"
+     id="rect11" />
+  <text
+     x="590"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text11">Support Strategies</text>
+  <rect
+     x="660"
+     y="130"
+     width="140"
+     height="30"
+     rx="0"
+     ry="0"
+     fill="#e0e0e0"
+     stroke="#bdbdbd"
+     stroke-width="1"
+     id="rect12" />
+  <text
+     x="730"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text12">Examples</text>
+  <!-- Purple-Red Transition Row -->
+  <rect
+     x="100"
+     y="160"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect13" />
+  <text
+     x="170"
+     y="185"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text13">Purple → Red</text>
+  <text
+     x="170"
+     y="229"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text14">Tribal → Power</text>
+  <circle
+     cx="140"
+     cy="207"
+     r="12"
+     fill="#9370db"
+     opacity="0.8"
+     id="circle14" />
+  <text
+     x="140"
+     y="211"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text15">P</text>
+  <text
+     x="160"
+     y="217"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text16">→</text>
+  <circle
+     cx="180"
+     cy="207"
+     r="12"
+     fill="#e53935"
+     opacity="0.8"
+     id="circle16" />
+  <text
+     x="180"
+     y="211"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text17">R</text>
+  <rect
+     x="240"
+     y="160"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect17" />
+  <text
+     x="310"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text18">• Breakdown of kinship</text>
+  <text
+     x="310"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text19">• Emergence of strongmen</text>
+  <text
+     x="310"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text20">• Tribal identity tension</text>
+  <text
+     x="310"
+     y="235"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text21">• Power consolidation</text>
+  <rect
+     x="380"
+     y="160"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect21" />
+  <text
+     x="450"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text22">• Social fragmentation</text>
+  <text
+     x="450"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text23">• Exploitation risk</text>
+  <text
+     x="450"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text24">• Traditional bond loss</text>
+  <text
+     x="450"
+     y="235"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text25">• Violence escalation</text>
+  <rect
+     x="520"
+     y="160"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect25" />
+  <text
+     x="590"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text26">• Channel power toward</text>
+  <text
+     x="590"
+     y="190"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text27">  protection not exploitation</text>
+  <text
+     x="590"
+     y="210"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text28">• Honor-based incentives</text>
+  <text
+     x="590"
+     y="230"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text29">• Maintain community bonds</text>
+  <rect
+     x="660"
+     y="160"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect29" />
+  <text
+     x="730"
+     y="180"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text30">Post-colonial tribal</text>
+  <text
+     x="730"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text31">societies, early state</text>
+  <text
+     x="730"
+     y="210"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text32">formation in Papua New</text>
+  <text
+     x="730"
+     y="225"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text33">Guinea, South Sudan</text>
+  <!-- Red-Blue Transition Row -->
+  <rect
+     x="100"
+     y="240"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect33" />
+  <text
+     x="170"
+     y="265"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text34">Red → Blue</text>
+  <text
+     x="170"
+     y="311"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text35">Power → Order</text>
+  <circle
+     cx="140"
+     cy="289"
+     r="12"
+     fill="#e53935"
+     opacity="0.8"
+     id="circle35" />
+  <text
+     x="140"
+     y="293"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text36">R</text>
+  <text
+     x="160"
+     y="299"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text37">→</text>
+  <circle
+     cx="180"
+     cy="289"
+     r="12"
+     fill="#1e88e5"
+     opacity="0.8"
+     id="circle37" />
+  <text
+     x="180"
+     y="293"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text38">B</text>
+  <rect
+     x="240"
+     y="240"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect38" />
+  <text
+     x="310"
+     y="255"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text39">• Institutionalizing power</text>
+  <text
+     x="310"
+     y="275"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text40">• Rule-based constraints</text>
+  <text
+     x="310"
+     y="295"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text41">• Emerging bureaucracy</text>
+  <text
+     x="310"
+     y="315"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text42">• Stability prioritization</text>
+  <rect
+     x="380"
+     y="240"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect42" />
+  <text
+     x="450"
+     y="255"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text43">• Power resistance</text>
+  <text
+     x="450"
+     y="275"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text44">• Institutional capacity gaps</text>
+  <text
+     x="450"
+     y="295"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text45">• Rule enforcement</text>
+  <text
+     x="450"
+     y="315"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text46">• Corruption of process</text>
+  <rect
+     x="520.01709"
+     y="240.01714"
+     width="149.89481"
+     height="79.965729"
+     fill="#ffffff"
+     stroke="#cccccc"
+     stroke-width="1.02408"
+     id="rect46" />
+  <text
+     x="594"
+     y="255"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text47">• Gradual power formalization</text>
+  <text
+     x="594"
+     y="275"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text48">• Clear consistent procedures</text>
+  <text
+     x="594"
+     y="295"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text49">• Institutional capacity building</text>
+  <text
+     x="594"
+     y="315"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text50">• Honor within order system</text>
+  <rect
+     x="670.32404"
+     y="239.9812"
+     width="129.69479"
+     height="80.037582"
+     fill="#ffffff"
+     stroke="#cccccc"
+     stroke-width="0.97419"
+     id="rect50" />
+  <text
+     x="730"
+     y="260"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text51">Post-conflict states,</text>
+  <text
+     x="730"
+     y="275"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text52">early democratization,</text>
+  <text
+     x="730"
+     y="290"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text53">Rwanda, Liberia</text>
+  <text
+     x="730"
+     y="305"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text54">post-civil war</text>
+  <!-- Blue-Orange Transition Row -->
+  <rect
+     x="100"
+     y="320"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect54" />
+  <text
+     x="170"
+     y="345"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text55">Blue → Orange</text>
+  <text
+     x="170"
+     y="389"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text56">Order → Achievement</text>
+  <circle
+     cx="140"
+     cy="367"
+     r="12"
+     fill="#1e88e5"
+     opacity="0.8"
+     id="circle56" />
+  <text
+     x="140"
+     y="371"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text57">B</text>
+  <text
+     x="160"
+     y="377"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text58">→</text>
+  <circle
+     cx="180"
+     cy="367"
+     r="12"
+     fill="#ff9800"
+     opacity="0.8"
+     id="circle58" />
+  <text
+     x="180"
+     y="371"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text59">O</text>
+  <rect
+     x="240"
+     y="320"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect59" />
+  <text
+     x="310"
+     y="335"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text60">• Market liberalization</text>
+  <text
+     x="310"
+     y="355"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text61">• Innovation emphasis</text>
+  <text
+     x="310"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text62">• Results orientation</text>
+  <text
+     x="310"
+     y="395"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text63">• Merit vs. position</text>
+  <rect
+     x="380"
+     y="320"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect63" />
+  <text
+     x="450"
+     y="335"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text64">• Institutional rigidity</text>
+  <text
+     x="450"
+     y="355"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text65">• Risk aversion</text>
+  <text
+     x="450"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text66">• Equity vs. meritocracy</text>
+  <text
+     x="450"
+     y="395"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text67">• Regulatory disruption</text>
+  <rect
+     x="520.01215"
+     y="320.01221"
+     width="147.00867"
+     height="79.975571"
+     fill="#ffffff"
+     stroke="#cccccc"
+     stroke-width="1.01423"
+     id="rect67" />
+  <text
+     x="594"
+     y="335"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text68">• Preserve ethical foundations</text>
+  <text
+     x="590"
+     y="355"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text69">• Staged deregulation</text>
+  <text
+     x="590"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text70">• Innovation sandboxes</text>
+  <text
+     x="590"
+     y="395"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text71">• Balanced metrics design</text>
+  <rect
+     x="667.43341"
+     y="319.98654"
+     width="132.58006"
+     height="80.026871"
+     fill="#ffffff"
+     stroke="#cccccc"
+     stroke-width="0.987866"
+     id="rect71" />
+  <text
+     x="734"
+     y="340"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text72">Economic liberalization,</text>
+  <text
+     x="734"
+     y="355"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text73">South Korea 1970s-1990s,</text>
+  <text
+     x="734"
+     y="370"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text74">China's market reforms,</text>
+  <text
+     x="734"
+     y="385"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text75">E. European transitions</text>
+  <!-- Orange-Green Transition Row -->
+  <rect
+     x="100"
+     y="400"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect75" />
+  <text
+     x="170"
+     y="425"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text76">Orange → Green</text>
+  <text
+     x="170"
+     y="469"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text77">Achievement → Pluralism</text>
+  <circle
+     cx="140"
+     cy="447"
+     r="12"
+     fill="#ff9800"
+     opacity="0.8"
+     id="circle77" />
+  <text
+     x="140"
+     y="451"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text78">O</text>
+  <text
+     x="160"
+     y="457"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text79">→</text>
+  <circle
+     cx="180"
+     cy="447"
+     r="12"
+     fill="#43a047"
+     opacity="0.8"
+     id="circle79" />
+  <text
+     x="180"
+     y="451"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text80">G</text>
+  <rect
+     x="240"
+     y="400"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect80" />
+  <text
+     x="310"
+     y="415"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text81">• Equity prioritization</text>
+  <text
+     x="310"
+     y="435"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text82">• Stakeholder inclusion</text>
+  <text
+     x="310"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text83">• Participatory processes</text>
+  <text
+     x="310"
+     y="475"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text84">• Environmental concerns</text>
+  <rect
+     x="380"
+     y="400"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect84" />
+  <text
+     x="450"
+     y="415"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text85">• Efficiency vs. inclusion</text>
+  <text
+     x="450"
+     y="435"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text86">• Decision paralysis</text>
+  <text
+     x="450"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text87">• Relativistic confusion</text>
+  <text
+     x="450"
+     y="475"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text88">• Economic competitiveness</text>
+  <rect
+     x="520"
+     y="400"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect88" />
+  <text
+     x="590"
+     y="415"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text89">• Structured participation</text>
+  <text
+     x="590"
+     y="435"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text90">• Balance voice and action</text>
+  <text
+     x="590"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text91">• Maintain effectiveness</text>
+  <text
+     x="590"
+     y="475"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text92">• Inclusive merit systems</text>
+  <rect
+     x="660"
+     y="400"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect92" />
+  <text
+     x="730"
+     y="420"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text93">Northern European</text>
+  <text
+     x="730"
+     y="435"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text94">welfare states, Costa Rica,</text>
+  <text
+     x="730"
+     y="450"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text95">post-materialist societies,</text>
+  <text
+     x="730"
+     y="465"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text96">environmental movements</text>
+  <!-- Green-Yellow Transition Row -->
+  <rect
+     x="100"
+     y="480"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect96" />
+  <text
+     x="170"
+     y="505"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text97">Green → Yellow</text>
+  <text
+     x="170"
+     y="549"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text98">Pluralism → Systemic</text>
+  <circle
+     cx="140"
+     cy="527"
+     r="12"
+     fill="#43a047"
+     opacity="0.8"
+     id="circle98" />
+  <text
+     x="140"
+     y="531"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text99">G</text>
+  <text
+     x="160"
+     y="537"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text100">→</text>
+  <circle
+     cx="180"
+     cy="527"
+     r="12"
+     fill="#fdd835"
+     opacity="0.8"
+     id="circle100" />
+  <text
+     x="180"
+     y="531"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text101">Y</text>
+  <rect
+     x="240"
+     y="480"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect101" />
+  <text
+     x="310"
+     y="495"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text102">• Systems perspective</text>
+  <text
+     x="310"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text103">• Functional pragmatism</text>
+  <text
+     x="310"
+     y="535"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text104">• Developmental awareness</text>
+  <text
+     x="310"
+     y="555"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text105">• Integrative approaches</text>
+  <rect
+     x="380"
+     y="480"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect105" />
+  <text
+     x="450"
+     y="495"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text106">• Complexity overwhelm</text>
+  <text
+     x="450"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text107">• Communication gaps</text>
+  <text
+     x="450"
+     y="535"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text108">• Elitism perception</text>
+  <text
+     x="450"
+     y="555"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text109">• Implementation barriers</text>
+  <rect
+     x="520"
+     y="480"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect109" />
+  <text
+     x="590"
+     y="495"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text110">• Bridging communication</text>
+  <text
+     x="590"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text111">• Functional implementation</text>
+  <text
+     x="590"
+     y="535"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text112">• Strategic simplification</text>
+  <text
+     x="590"
+     y="555"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text113">• Contextual adaptation</text>
+  <rect
+     x="660"
+     y="480"
+     width="140"
+     height="80"
+     fill="#fff"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect113" />
+  <text
+     x="730"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text114">EU governance evolution,</text>
+  <text
+     x="730"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text115">complex multistakeholder</text>
+  <text
+     x="730"
+     y="530"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text116">initiatives, climate regime,</text>
+  <text
+     x="730"
+     y="545"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     text-anchor="middle"
+     fill="#333"
+     id="text117">integrated policy design</text>
+  <!-- Key Insights Box -->
+  <rect
+     x="50"
+     y="590"
+     width="800"
+     height="60"
+     rx="10"
+     ry="10"
+     fill="#f5f5f5"
+     stroke="#ccc"
+     stroke-width="1"
+     id="rect117" />
+  <text
+     x="111"
+     y="620"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text118">KEY INSIGHT:</text>
+  <text
+     x="450"
+     y="620"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="#333"
+     id="text119">Transitional periods between governance paradigms require specific support strategies</text>
+  <text
+     x="450"
+     y="640"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="#333"
+     id="text120">tailored to the unique dynamics of each developmental shift</text>
+</svg>

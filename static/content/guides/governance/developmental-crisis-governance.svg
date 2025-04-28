@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 820 630"
+   version="1.1"
+   id="svg72"
+   sodipodi:docname="developmental-crisis-governance.svg"
+   width="820"
+   height="630"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs72" />
+  <sodipodi:namedview
+     id="namedview72"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.705"
+     inkscape:cx="687.23404"
+     inkscape:cy="289.3617"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg72" />
+  <!-- Background -->
+  <rect
+     width="819.88733"
+     height="629.89655"
+     fill="#f8f9fa"
+     rx="10.248592"
+     ry="10.498276"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.03727" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text1">Developmental Crisis Governance Model</text>
+  <!-- Timeline/Crisis Phases -->
+  <rect
+     x="100"
+     y="70"
+     width="600"
+     height="30"
+     fill="#e6e6e6"
+     rx="5"
+     ry="5"
+     id="rect2" />
+  <text
+     x="150"
+     y="90"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text2">PRE-CRISIS</text>
+  <text
+     x="400"
+     y="90"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text3">ACUTE CRISIS</text>
+  <text
+     x="650"
+     y="90"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text4">RECOVERY</text>
+  <!-- Dividing Lines -->
+  <line
+     x1="275"
+     y1="70"
+     x2="275"
+     y2="550"
+     stroke="#cccccc"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line4" />
+  <line
+     x1="525"
+     y1="70"
+     x2="525"
+     y2="550"
+     stroke="#cccccc"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line5" />
+  <!-- Value System Levels -->
+  <!-- Purple Level -->
+  <rect
+     x="50"
+     y="110"
+     width="100"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#660099"
+     opacity="0.8"
+     id="rect5" />
+  <text
+     x="100"
+     y="140"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text5">PURPLE</text>
+  <text
+     x="100"
+     y="160"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text6">Tribal/Traditional</text>
+  <!-- Red Level -->
+  <rect
+     x="50"
+     y="180"
+     width="100"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#ff0000"
+     opacity="0.8"
+     id="rect6" />
+  <text
+     x="100"
+     y="210"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text7">RED</text>
+  <text
+     x="100"
+     y="230"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text8">Power/Command</text>
+  <!-- Blue Level -->
+  <rect
+     x="50"
+     y="250"
+     width="100"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#3333ff"
+     opacity="0.8"
+     id="rect8" />
+  <text
+     x="100"
+     y="280"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text9">BLUE</text>
+  <text
+     x="100"
+     y="300"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text10">Order/Procedure</text>
+  <!-- Orange Level -->
+  <rect
+     x="50"
+     y="320"
+     width="100"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#ff9933"
+     opacity="0.8"
+     id="rect10" />
+  <text
+     x="100"
+     y="350"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text11">ORANGE</text>
+  <text
+     x="100"
+     y="370"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text12">Strategic/Technical</text>
+  <!-- Green Level -->
+  <rect
+     x="50"
+     y="390"
+     width="100"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#00cc00"
+     opacity="0.8"
+     id="rect12" />
+  <text
+     x="100"
+     y="420"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text13">GREEN</text>
+  <text
+     x="100"
+     y="440"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text14">Inclusive/Equitable</text>
+  <!-- Yellow Level -->
+  <rect
+     x="50"
+     y="460"
+     width="100"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#ffff00"
+     opacity="0.8"
+     id="rect14" />
+  <text
+     x="100"
+     y="490"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text15">YELLOW</text>
+  <text
+     x="100"
+     y="510"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text16">Systemic/Adaptive</text>
+  <!-- Regression Arrows - Left Side -->
+  <path
+     d="m 190,395 20,-15 30,15 -30,15 z"
+     fill="#d9534f"
+     opacity="0.9"
+     id="path16" />
+  <text
+     x="215"
+     y="398"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text17">R</text>
+  <line
+     x1="190"
+     y1="395"
+     x2="160"
+     y2="370"
+     stroke="#d9534f"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line17" />
+  <path
+     d="m 190,465 20,-15 30,15 -30,15 z"
+     fill="#d9534f"
+     opacity="0.9"
+     id="path17" />
+  <text
+     x="215"
+     y="468"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text18">R</text>
+  <line
+     x1="190"
+     y1="465"
+     x2="160"
+     y2="430"
+     stroke="#d9534f"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line18" />
+  <path
+     d="m 190,325 20,-15 30,15 -30,15 z"
+     fill="#d9534f"
+     opacity="0.9"
+     id="path18" />
+  <text
+     x="215"
+     y="328"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text19">R</text>
+  <line
+     x1="190"
+     y1="325"
+     x2="160"
+     y2="290"
+     stroke="#d9534f"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line19" />
+  <path
+     d="m 190,255 20,-15 30,15 -30,15 z"
+     fill="#d9534f"
+     opacity="0.9"
+     id="path19" />
+  <text
+     x="215"
+     y="258"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text20">R</text>
+  <line
+     x1="190"
+     y1="255"
+     x2="160"
+     y2="220"
+     stroke="#d9534f"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line20" />
+  <!-- Acute Crisis Response Patterns -->
+  <!-- Purple Response -->
+  <rect
+     x="300"
+     y="110"
+     width="200"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#f9f9f9"
+     stroke="#660099"
+     stroke-width="2"
+     id="rect20" />
+  <text
+     x="400"
+     y="130"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text21">Community Mobilization</text>
+  <text
+     x="400"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text22">• Elder guidance • Traditional knowledge</text>
+  <text
+     x="400"
+     y="165"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text23">• Mutual aid networks • Ritual practices</text>
+  <!-- Red Response -->
+  <rect
+     x="300"
+     y="180"
+     width="200"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#f9f9f9"
+     stroke="#ff0000"
+     stroke-width="2"
+     id="rect23" />
+  <text
+     x="400"
+     y="200"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text24">Decisive Command</text>
+  <text
+     x="400"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text25">• Rapid mobilization • Clear hierarchy</text>
+  <text
+     x="400"
+     y="235"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text26">• Visible action • Resource control</text>
+  <!-- Blue Response -->
+  <rect
+     x="300"
+     y="250"
+     width="200"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#f9f9f9"
+     stroke="#3333ff"
+     stroke-width="2"
+     id="rect26" />
+  <text
+     x="400"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text27">Procedural Implementation</text>
+  <text
+     x="400"
+     y="290"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text28">• Clear protocols • Consistent enforcement</text>
+  <text
+     x="400"
+     y="305"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text29">• Proper authority • Rule compliance</text>
+  <!-- Orange Response -->
+  <rect
+     x="300"
+     y="320"
+     width="200"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#f9f9f9"
+     stroke="#ff9933"
+     stroke-width="2"
+     id="rect29" />
+  <text
+     x="400"
+     y="340"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text30">Strategic Management</text>
+  <text
+     x="400"
+     y="360"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text31">• Technical innovation • Data-driven</text>
+  <text
+     x="400"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text32">• Resource optimization • Practical results</text>
+  <!-- Green Response -->
+  <rect
+     x="300"
+     y="390"
+     width="200"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#f9f9f9"
+     stroke="#00cc00"
+     stroke-width="2"
+     id="rect32" />
+  <text
+     x="400"
+     y="410"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text33">Inclusive Protection</text>
+  <text
+     x="400"
+     y="430"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text34">• Vulnerable populations • Equity focus</text>
+  <text
+     x="400"
+     y="445"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text35">• Community engagement • Transparency</text>
+  <!-- Yellow Response -->
+  <rect
+     x="300"
+     y="460"
+     width="200"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#f9f9f9"
+     stroke="#ffff00"
+     stroke-width="2"
+     id="rect35" />
+  <text
+     x="400"
+     y="480"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text36">Adaptive Systems Coordination</text>
+  <text
+     x="400"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text37">• Context-matched responses • Integration</text>
+  <text
+     x="400"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text38">• Multi-level governance • Feedback loops</text>
+  <!-- Evolutionary Opportunity Arrows -->
+  <path
+     d="m 508,185 20,-15 30,15 -30,15 z"
+     fill="#5cb85c"
+     opacity="0.9"
+     id="path38" />
+  <text
+     x="533"
+     y="188"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text39">E</text>
+  <line
+     x1="558"
+     y1="185"
+     x2="588"
+     y2="255"
+     stroke="#5cb85c"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line39" />
+  <path
+     d="m 508,255 20,-15 30,15 -30,15 z"
+     fill="#5cb85c"
+     opacity="0.9"
+     id="path39" />
+  <text
+     x="533"
+     y="258"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text40">E</text>
+  <line
+     x1="558"
+     y1="255"
+     x2="588"
+     y2="325"
+     stroke="#5cb85c"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line40" />
+  <path
+     d="m 508,325 20,-15 30,15 -30,15 z"
+     fill="#5cb85c"
+     opacity="0.9"
+     id="path40" />
+  <text
+     x="533"
+     y="328"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text41">E</text>
+  <line
+     x1="558"
+     y1="325"
+     x2="588"
+     y2="395"
+     stroke="#5cb85c"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line41" />
+  <path
+     d="m 508,395 20,-15 30,15 -30,15 z"
+     fill="#5cb85c"
+     opacity="0.9"
+     id="path41" />
+  <text
+     x="533"
+     y="398"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text42">E</text>
+  <line
+     x1="558"
+     y1="395"
+     x2="588"
+     y2="465"
+     stroke="#5cb85c"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line42" />
+  <!-- Recovery Models -->
+  <rect
+     x="590"
+     y="110"
+     width="200"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#f9f9f9"
+     stroke="#660099"
+     stroke-width="2"
+     id="rect42" />
+  <text
+     x="690"
+     y="130"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text43">Cultural Continuity</text>
+  <text
+     x="690"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text44">• Ritual healing • Community reconnection</text>
+  <text
+     x="690"
+     y="165"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text45">• Traditional practices • Ancestral wisdom</text>
+  <rect
+     x="590.0155"
+     y="250.01549"
+     width="206.35199"
+     height="59.969013"
+     rx="5.1587996"
+     ry="4.9974179"
+     fill="#f9f9f9"
+     stroke="#3333ff"
+     stroke-width="2.03099"
+     id="rect45" />
+  <text
+     x="690"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text46">Orderly Reconstruction</text>
+  <text
+     x="690"
+     y="290"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text47">• Clear recovery protocols • Proper procedures</text>
+  <text
+     x="690"
+     y="305"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text48">• Institutional restoration • Stable rebuilding</text>
+  <rect
+     x="580.12164"
+     y="320.05072"
+     width="221.17517"
+     height="59.898567"
+     rx="5.5293789"
+     ry="4.9915471"
+     fill="#f9f9f9"
+     stroke="#ff9933"
+     stroke-width="2.10143"
+     id="rect48" />
+  <text
+     x="690"
+     y="340"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text49">Strategic Enhancement</text>
+  <text
+     x="690"
+     y="360"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text50">• Innovative rebuilding • Opportunity leverage</text>
+  <text
+     x="690"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text51">• Performance improvement • Technical upgrade</text>
+  <rect
+     x="582.94019"
+     y="390.03244"
+     width="213.41032"
+     height="59.93515"
+     rx="5.3352585"
+     ry="4.994596"
+     fill="#f9f9f9"
+     stroke="#00cc00"
+     stroke-width="2.06485"
+     id="rect51" />
+  <text
+     x="690"
+     y="410"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text52">Equitable Rebuilding</text>
+  <text
+     x="690"
+     y="430"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text53">• Social justice focus • Participatory planning</text>
+  <text
+     x="690"
+     y="445"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text54">• Community empowerment • Inclusive design</text>
+  <rect
+     x="582.94189"
+     y="460.03412"
+     width="214.1162"
+     height="59.931797"
+     rx="5.3529048"
+     ry="4.9943166"
+     fill="#f9f9f9"
+     stroke="#ffff00"
+     stroke-width="2.0682"
+     id="rect54" />
+  <text
+     x="690"
+     y="480"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text55">Systemic Transformation</text>
+  <text
+     x="690"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text56">• Root cause addressing • Resilience design</text>
+  <text
+     x="690"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text57">• Cross-domain integration • Adaptive learning</text>
+  <!-- Pre-Crisis Preparation -->
+  <rect
+     x="162.06107"
+     y="180.06107"
+     width="112.64382"
+     height="239.87787"
+     rx="5.6321912"
+     ry="4.9974556"
+     fill="#f0f8ff"
+     stroke="#0275d8"
+     stroke-width="2.12214"
+     id="rect57" />
+  <text
+     x="212"
+     y="200"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text58">Resilience Factors</text>
+  <text
+     x="167"
+     y="225"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text59">• Regression-aware</text>
+  <text
+     x="167"
+     y="240"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text60">design</text>
+  <text
+     x="167"
+     y="265"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text61">• Developmental</text>
+  <text
+     x="167"
+     y="280"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text62">scaffolding</text>
+  <text
+     x="167"
+     y="305"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text63">• Graduated stress</text>
+  <text
+     x="167"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text64">responses</text>
+  <text
+     x="167"
+     y="345"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text65">• Cross-developmental</text>
+  <text
+     x="167"
+     y="360"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text66">stabilization</text>
+  <text
+     x="167"
+     y="385"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text67">• Polarity</text>
+  <text
+     x="167"
+     y="400"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text68">management</text>
+  <!-- Legend Box -->
+  <rect
+     x="49.963345"
+     y="538.99036"
+     width="473.83215"
+     height="63.432919"
+     rx="3.3845155"
+     ry="6.3432922"
+     fill="#f0f0f0"
+     stroke="#333333"
+     stroke-width="0.926695"
+     id="rect68" />
+  <!-- Regression Arrow for Legend -->
+  <path
+     d="m 100,555 15,-10 20,10 -20,10 z"
+     fill="#d9534f"
+     opacity="0.9"
+     id="path68" />
+  <text
+     x="117"
+     y="558"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text69">R</text>
+  <text
+     x="175"
+     y="558"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="start"
+     fill="#333333"
+     id="text70">Regression Risk: Stress-induced reversion to earlier value systems</text>
+  <!-- Evolution Arrow for Legend -->
+  <path
+     d="m 99,585 15,-10 20,10 -20,10 z"
+     fill="#5cb85c"
+     opacity="0.9"
+     id="path70" />
+  <text
+     x="116"
+     y="588"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text71">E</text>
+  <text
+     x="169"
+     y="588"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="start"
+     fill="#333333"
+     id="text72">Evolutionary Opportunity: Crisis-catalyzed developmental emergence</text>
+</svg>

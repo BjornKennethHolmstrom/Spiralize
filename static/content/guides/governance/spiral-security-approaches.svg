@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 750 600"
+   version="1.1"
+   id="svg56"
+   sodipodi:docname="spiral-security-approaches.svg"
+   width="750"
+   height="600"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs56" />
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="-37.943262"
+     inkscape:cy="464.53901"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg56" />
+  <!-- Background -->
+  <rect
+     width="745.34198"
+     height="600"
+     fill="#f8f9fa"
+     rx="9.3167753"
+     ry="10"
+     id="rect1"
+     x="2.6099291"
+     y="0"
+     style="stroke-width:0.965234" />
+  <rect
+     x="75.168625"
+     y="257.5159"
+     width="179.05678"
+     height="77.02092"
+     rx="11.191049"
+     ry="11.002989"
+     fill="#ff9eee"
+     opacity="0.7"
+     id="rect57"
+     style="stroke-width:1.10965" />
+  <text
+     x="166.20151"
+     y="277.5159"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text57">CORAL APPROACHES</text>
+  <text
+     x="166.20151"
+     y="297.5159"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text58">• Meta-systemic security design</text>
+  <text
+     x="166.20151"
+     y="312.5159"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text59">• Developmental governance evolution</text>
+  <text
+     x="166.20151"
+     y="327.5159"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text60">• Conscious security facilitation</text>
+  <line
+     x1="262.34894"
+     y1="338.98105"
+     x2="243.64746"
+     y2="318.18564"
+     stroke="#ff9eee"
+     stroke-width="0.623737"
+     stroke-dasharray="5, 3"
+     id="line61"
+     style="stroke-width:2;stroke-dasharray:5, 3;stroke-dashoffset:0" />
+  <rect
+     x="543.41492"
+     y="430.22342"
+     width="160"
+     height="150"
+     rx="10"
+     ry="10"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect61" />
+  <text
+     x="623.41492"
+     y="450.22342"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text61">Integration Principles</text>
+  <text
+     x="553.41492"
+     y="470.22342"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text62">1. Developmental Honesty</text>
+  <text
+     x="553.41492"
+     y="490.22342"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text63">2. Security Complexity Matching</text>
+  <text
+     x="553.41492"
+     y="510.22342"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text64">3. Polycentric Governance</text>
+  <text
+     x="553.41492"
+     y="530.22339"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text65">4. Developmental Translation</text>
+  <text
+     x="553.41492"
+     y="550.22339"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text66">5. Security Scaffolding</text>
+  <text
+     x="553.41492"
+     y="570.22339"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="start"
+     fill="#333333"
+     id="text67">6. Indigenous Security Wisdom</text>
+  <!-- Title -->
+  <text
+     x="358"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text1">Spiral-Aware Security Governance</text>
+  <!-- Center Circle -->
+  <circle
+     cx="358"
+     cy="274"
+     r="100"
+     fill="#ffe8e8"
+     stroke="#dd3333"
+     stroke-width="2"
+     id="circle1" />
+  <text
+     x="358"
+     y="254"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text2">Integrative</text>
+  <text
+     x="358"
+     y="284"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text3">Security</text>
+  <text
+     x="358"
+     y="314"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text4">Governance</text>
+  <!-- Purple Segment -->
+  <path
+     d="M 358,274 308,154 a 150,150 0 0 1 50,-30 z"
+     fill="#660099"
+     opacity="0.7"
+     id="path4" />
+  <text
+     x="328"
+     y="154"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#fff"
+     id="text5"
+     style="fill:#333333;fill-opacity:1">PURPLE</text>
+  <text
+     x="328"
+     y="172"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#fff"
+     id="text6"
+     style="fill:#333333;fill-opacity:1">Traditional</text>
+  <text
+     x="328"
+     y="184"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#fff"
+     id="text7"
+     style="fill:#333333;fill-opacity:1">Protection</text>
+  <!-- Red Segment -->
+  <path
+     d="M 358,274 V 124 a 150,150 0 0 1 65,30 z"
+     fill="#ff0000"
+     opacity="0.7"
+     id="path7" />
+  <text
+     x="383"
+     y="148"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text8">RED</text>
+  <text
+     x="383"
+     y="162"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text9">Power</text>
+  <text
+     x="383"
+     y="174"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text10">Projection</text>
+  <!-- Blue Segment -->
+  <path
+     d="m 358,274 65,-120 a 150,150 0 0 1 55,50 z"
+     fill="#3333ff"
+     opacity="0.7"
+     id="path10" />
+  <text
+     x="436"
+     y="186"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text11">BLUE</text>
+  <text
+     x="436"
+     y="204"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text12">Rule of Law</text>
+  <text
+     x="436"
+     y="216"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text13">Order</text>
+  <!-- Orange Segment -->
+  <path
+     d="m 358,274 120,-70 a 150,150 0 0 1 0,140 z"
+     fill="#ff9933"
+     opacity="0.7"
+     id="path13" />
+  <text
+     x="478"
+     y="274"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text14">ORANGE</text>
+  <text
+     x="478"
+     y="294"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text15">Strategic</text>
+  <text
+     x="478"
+     y="306"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text16">Management</text>
+  <!-- Green Segment -->
+  <path
+     d="m 358,274 120,70 a 150,150 0 0 1 -55,50 z"
+     fill="#00cc00"
+     opacity="0.7"
+     id="path16" />
+  <text
+     x="466"
+     y="380"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text17">GREEN</text>
+  <text
+     x="466"
+     y="398"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text18">Human</text>
+  <text
+     x="466"
+     y="410"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text19">Security</text>
+  <!-- Yellow Segment -->
+  <path
+     d="m 358,274 65,120 a 150,150 0 0 1 -65,30 z"
+     fill="#ffff00"
+     opacity="0.7"
+     id="path19" />
+  <text
+     x="400.80142"
+     y="425.09219"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text20">YELLOW</text>
+  <text
+     x="393"
+     y="436"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text21">Systems</text>
+  <text
+     x="393"
+     y="448"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text22">Approach</text>
+  <!-- Turquoise Segment -->
+  <path
+     d="M 358,274 V 424 A 150,150 0 0 1 308,394 Z"
+     fill="#66cccc"
+     opacity="0.7"
+     id="path22" />
+  <text
+     x="310"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text24">Holistic</text>
+  <text
+     x="310"
+     y="454"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text25">Peace</text>
+  <!-- Coral Segment -->
+  <path
+     d="M 358,274 308,394 A 150,150 0 0 1 238,344 Z"
+     fill="#ff9eee"
+     opacity="0.7"
+     id="path25" />
+  <text
+     x="254"
+     y="376"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text26">CORAL</text>
+  <text
+     x="254"
+     y="394"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text27">Developmental</text>
+  <text
+     x="254"
+     y="406"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text28">Design</text>
+  <!-- Extended Spiral-Aware Approaches -->
+  <!-- Purple -->
+  <rect
+     x="93"
+     y="94"
+     width="160"
+     height="77.02092"
+     rx="10"
+     ry="11.002989"
+     fill="#660099"
+     opacity="0.7"
+     id="rect28"
+     style="stroke-width:1.04895" />
+  <text
+     x="173"
+     y="114"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text29">PURPLE APPROACHES</text>
+  <text
+     x="173"
+     y="134"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text30">• Community-based security</text>
+  <text
+     x="173"
+     y="149"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text31">• Elder councils for conflict resolution</text>
+  <text
+     x="173"
+     y="164"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text32">• Ritual-based reconciliation</text>
+  <line
+     x1="253.98349"
+     y1="152.4174"
+     x2="308.73001"
+     y2="153.10033"
+     stroke="#660099"
+     stroke-width="1.31055"
+     stroke-dasharray="5, 3"
+     id="line33"
+     style="stroke-width:2;stroke-dasharray:7.63038, 4.57823;stroke-dashoffset:0" />
+  <!-- Red -->
+  <rect
+     x="542.14893"
+     y="86.05674"
+     width="160"
+     height="75.516434"
+     rx="10"
+     ry="10.788062"
+     fill="#ff0000"
+     opacity="0.7"
+     id="rect33"
+     style="stroke-width:1.03866" />
+  <text
+     x="622.14893"
+     y="106.05673"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text33">RED APPROACHES</text>
+  <text
+     x="622.14893"
+     y="126.05673"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text34">• Decisive leadership in crises</text>
+  <text
+     x="622.14893"
+     y="141.05673"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text35">• Clear demonstrations of capacity</text>
+  <text
+     x="622.14893"
+     y="156.05673"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text36">• Protection of critical resources</text>
+  <line
+     x1="406.19879"
+     y1="142.84836"
+     x2="544.88287"
+     y2="107.41309"
+     stroke="#ff0000"
+     stroke-width="1.64605"
+     stroke-dasharray="5, 3"
+     id="line37"
+     style="stroke-width:2;stroke-dasharray:6.07515, 3.64509;stroke-dashoffset:0" />
+  <!-- Blue -->
+  <rect
+     x="541.4397"
+     y="170.31206"
+     width="160"
+     height="76.017929"
+     rx="10"
+     ry="10.859704"
+     fill="#3333ff"
+     opacity="0.7"
+     id="rect37"
+     style="stroke-width:1.0421" />
+  <text
+     x="621.4397"
+     y="190.31206"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text37">BLUE APPROACHES</text>
+  <text
+     x="621.4397"
+     y="210.31206"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text38">• Clear legal frameworks</text>
+  <text
+     x="621.4397"
+     y="225.31206"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text39">• Hierarchical security institutions</text>
+  <text
+     x="621.4397"
+     y="240.31204"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text40">• Rule-based conflict resolution</text>
+  <line
+     x1="458.4342"
+     y1="190.00813"
+     x2="542.11401"
+     y2="189.22395"
+     stroke="#3333ff"
+     stroke-width="2.13265"
+     stroke-dasharray="5, 3"
+     id="line40"
+     style="stroke-width:2;stroke-dasharray:4.689, 2.8134;stroke-dashoffset:0" />
+  <!-- Orange -->
+  <rect
+     x="542.14893"
+     y="256.69504"
+     width="160"
+     height="76.017929"
+     rx="10"
+     ry="10.859704"
+     fill="#ff9933"
+     opacity="0.7"
+     id="rect41"
+     style="stroke-width:1.0421" />
+  <text
+     x="622.14893"
+     y="276.69504"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text41">ORANGE APPROACHES</text>
+  <text
+     x="622.14893"
+     y="296.69504"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text42">• Strategic security planning</text>
+  <text
+     x="622.14893"
+     y="311.69504"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text43">• Technological advantage</text>
+  <text
+     x="622.14893"
+     y="326.69504"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text44">• Economic security instruments</text>
+  <line
+     x1="458.09897"
+     y1="284.16415"
+     x2="571.23438"
+     y2="283.55215"
+     stroke="#ff9933"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line44" />
+  <line
+     x1="251.52281"
+     y1="436.82117"
+     x2="330.76028"
+     y2="392.70789"
+     stroke="#ff9933"
+     stroke-width="1.55583"
+     stroke-dasharray="5, 3"
+     id="line45"
+     style="fill:#92d9da;fill-opacity:1;stroke:#92d9da;stroke-width:2;stroke-dasharray:6.42742, 3.85646;stroke-dashoffset:0;stroke-opacity:1" />
+  <text
+     x="310"
+     y="424"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text23">TURQUOISE</text>
+  <!-- Green -->
+  <rect
+     x="542.14893"
+     y="338.82272"
+     width="160"
+     height="76.017929"
+     rx="10"
+     ry="10.859704"
+     fill="#00cc00"
+     opacity="0.7"
+     id="rect45"
+     style="stroke-width:1.0421" />
+  <text
+     x="622.14893"
+     y="358.82272"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text45">GREEN APPROACHES</text>
+  <text
+     x="622.14893"
+     y="378.82272"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text46">• Human rights protection</text>
+  <text
+     x="622.14893"
+     y="393.82272"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text47">• Inclusive peace processes</text>
+  <text
+     x="622.14893"
+     y="408.82272"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text48">• Root cause transformation</text>
+  <line
+     x1="434.40866"
+     y1="353.9772"
+     x2="569.39276"
+     y2="370.68948"
+     stroke="#00cc00"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line48" />
+  <!-- Yellow -->
+  <rect
+     x="360.53192"
+     y="475.56027"
+     width="168.52541"
+     height="78.023911"
+     rx="10.532838"
+     ry="11.146273"
+     fill="#ffff00"
+     opacity="0.7"
+     id="rect49"
+     style="stroke-width:1.08352" />
+  <text
+     x="444.53192"
+     y="495.56024"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text49">YELLOW APPROACHES</text>
+  <text
+     x="444.53192"
+     y="515.56024"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text50">• Complex adaptive security</text>
+  <text
+     x="444.53192"
+     y="530.56024"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text51">• Multi-level governance</text>
+  <text
+     x="444.53192"
+     y="545.56024"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text52">• Contextually appropriate response</text>
+  <line
+     x1="447.43393"
+     y1="481.2009"
+     x2="394.23672"
+     y2="403.77313"
+     stroke="#ffff00"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line52" />
+  <!-- Turquoise -->
+  <rect
+     x="95.19857"
+     y="431.99612"
+     width="160"
+     height="76.028366"
+     rx="10"
+     ry="10.861196"
+     fill="#66cccc"
+     opacity="0.7"
+     id="rect53"
+     style="stroke-width:1.04217" />
+  <text
+     x="175.19856"
+     y="451.99612"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text53">TURQUOISE APPROACHES</text>
+  <text
+     x="175.19856"
+     y="471.99612"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text54">• Earth-centered security</text>
+  <text
+     x="175.19856"
+     y="486.99612"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text55">• Intergenerational timeframes</text>
+  <rect
+     x="29.211769"
+     y="524.38757"
+     width="191.00089"
+     height="59.908241"
+     rx="11.937555"
+     ry="9.9847078"
+     fill="#f0f0f0"
+     stroke="#333333"
+     stroke-width="1.09175"
+     id="rect67" />
+  <text
+     x="123.20774"
+     y="544.34174"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text68">Successful Examples</text>
+  <text
+     x="123.20774"
+     y="564.34174"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text69">• Haudenosaunee Great Law of Peace</text>
+  <text
+     x="123.20774"
+     y="579.34174"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text70">• African Peace Security Architecture</text>
+  <text
+     x="175.4185"
+     y="501.9285"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text56-3">• Deep reconciliation processes</text>
+</svg>

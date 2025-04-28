@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 760"
+   version="1.1"
+   id="svg49"
+   sodipodi:docname="spiral-climate-principles.svg"
+   width="800"
+   height="760"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs49" />
+  <sodipodi:namedview
+     id="namedview49"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.99702056"
+     inkscape:cx="459.87015"
+     inkscape:cy="364.08477"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg49" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="759.99231"
+     fill="#f8f9fa"
+     rx="10"
+     ry="12.666539"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.12546" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text1">Spiral-Aware Climate Governance Principles</text>
+  <!-- Center Circle -->
+  <circle
+     cx="400"
+     cy="410"
+     r="120"
+     fill="#d1ecf1"
+     stroke="#5bc0de"
+     stroke-width="2"
+     id="circle1" />
+  <text
+     x="400"
+     y="400"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text2">Effective</text>
+  <text
+     x="400"
+     y="430"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text3">Climate</text>
+  <text
+     x="400"
+     y="460"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text4">Governance</text>
+  <!-- Principles Circles -->
+  <!-- 1. Developmental Honesty -->
+  <circle
+     cx="220"
+     cy="260"
+     r="70"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle4" />
+  <text
+     x="220"
+     y="229"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text5">Developmental</text>
+  <text
+     x="220"
+     y="249"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text6">Honesty</text>
+  <text
+     x="220"
+     y="269"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text7">Acknowledging value</text>
+  <text
+     x="220"
+     y="284"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text8">systems shaping</text>
+  <text
+     x="220"
+     y="299"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text9">governance approaches</text>
+  <line
+     x1="279"
+     y1="303"
+     x2="301"
+     y2="333"
+     stroke="#333333"
+     stroke-width="2"
+     id="line9" />
+  <!-- 2. Poly-Centric Solutions -->
+  <circle
+     cx="220"
+     cy="560"
+     r="70"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle9" />
+  <text
+     x="220"
+     y="535"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text10">Poly-Centric</text>
+  <text
+     x="220"
+     y="555"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text11">Solutions</text>
+  <text
+     x="220"
+     y="575"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text12">Multiple, complementary</text>
+  <text
+     x="220"
+     y="590"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text13">governance approaches</text>
+  <text
+     x="220"
+     y="605"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text14">at different levels</text>
+  <line
+     x1="283"
+     y1="517"
+     x2="305"
+     y2="487"
+     stroke="#333333"
+     stroke-width="2"
+     id="line14" />
+  <!-- 3. Developmental Translation -->
+  <circle
+     cx="580"
+     cy="260"
+     r="70"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle14" />
+  <text
+     x="580"
+     y="245"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text15">Developmental</text>
+  <text
+     x="580"
+     y="265"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text16">Translation</text>
+  <text
+     x="580"
+     y="285"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text17">Communication across</text>
+  <text
+     x="580"
+     y="300"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text18">different value systems</text>
+  <text
+     x="580"
+     y="315"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text19">and worldviews</text>
+  <line
+     x1="519"
+     y1="303"
+     x2="497"
+     y2="333"
+     stroke="#333333"
+     stroke-width="2"
+     id="line19" />
+  <!-- 4. Contextual Implementation -->
+  <circle
+     cx="580"
+     cy="560"
+     r="70"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle19" />
+  <text
+     x="580"
+     y="545"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text20">Contextual</text>
+  <text
+     x="580"
+     y="565"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text21">Implementation</text>
+  <text
+     x="580"
+     y="585"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text22">Approaches matched to</text>
+  <text
+     x="580"
+     y="600"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text23">developmental stages</text>
+  <text
+     x="580"
+     y="615"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text24">of each context</text>
+  <line
+     x1="519"
+     y1="517"
+     x2="497"
+     y2="487"
+     stroke="#333333"
+     stroke-width="2"
+     id="line24" />
+  <!-- 5. Developmental Scaffolding -->
+  <circle
+     cx="150"
+     cy="410"
+     r="70"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle24" />
+  <text
+     x="150"
+     y="385"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text25">Developmental</text>
+  <text
+     x="150"
+     y="405"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text26">Scaffolding</text>
+  <text
+     x="150"
+     y="425"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text27">Supporting transitions</text>
+  <text
+     x="150"
+     y="440"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text28">without forcing</text>
+  <text
+     x="150"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text29">inappropriate leaps</text>
+  <line
+     x1="222"
+     y1="410"
+     x2="277"
+     y2="410"
+     stroke="#333333"
+     stroke-width="2"
+     id="line29" />
+  <!-- 6. Indigenous Leadership -->
+  <circle
+     cx="650"
+     cy="410"
+     r="70"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle29" />
+  <text
+     x="650"
+     y="381"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text30">Indigenous</text>
+  <text
+     x="650"
+     y="401"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text31">Leadership</text>
+  <text
+     x="650"
+     y="421"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text32">Integrating traditional</text>
+  <text
+     x="650"
+     y="436"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text33">wisdom with holistic</text>
+  <text
+     x="650"
+     y="451"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text34">planetary awareness</text>
+  <line
+     x1="578"
+     y1="410"
+     x2="523"
+     y2="410"
+     stroke="#333333"
+     stroke-width="2"
+     id="line34" />
+  <!-- 7. Shadow Integration -->
+  <circle
+     cx="400"
+     cy="660"
+     r="70"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle34" />
+  <text
+     x="400"
+     y="645"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text35">Shadow</text>
+  <text
+     x="400"
+     y="665"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text36">Integration</text>
+  <text
+     x="400"
+     y="685"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text37">Addressing unhealthy</text>
+  <text
+     x="400"
+     y="700"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text38">expressions of each</text>
+  <text
+     x="400"
+     y="715"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text39">value system</text>
+  <line
+     x1="400"
+     y1="590"
+     x2="400"
+     y2="535"
+     stroke="#333333"
+     stroke-width="2"
+     id="line39" />
+  <!-- Development Levels Indicators -->
+  <rect
+     x="474"
+     y="52"
+     width="300"
+     height="30"
+     rx="15"
+     ry="15"
+     fill="#f0f0f0"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect39" />
+  <circle
+     cx="504"
+     cy="67"
+     r="10"
+     fill="#660099"
+     opacity="0.8"
+     id="circle39" />
+  <circle
+     cx="544"
+     cy="67"
+     r="10"
+     fill="#ff0000"
+     opacity="0.8"
+     id="circle40" />
+  <circle
+     cx="584"
+     cy="67"
+     r="10"
+     fill="#3333ff"
+     opacity="0.8"
+     id="circle41" />
+  <circle
+     cx="624"
+     cy="67"
+     r="10"
+     fill="#ff9933"
+     opacity="0.8"
+     id="circle42" />
+  <circle
+     cx="664"
+     cy="67"
+     r="10"
+     fill="#00cc00"
+     opacity="0.8"
+     id="circle43" />
+  <circle
+     cx="704"
+     cy="67"
+     r="10"
+     fill="#ffff00"
+     opacity="0.8"
+     id="circle44" />
+  <circle
+     cx="744"
+     cy="67"
+     r="10"
+     fill="#66cccc"
+     opacity="0.8"
+     id="circle45" />
+  <!-- Key Implementation Examples -->
+  <rect
+     x="50.482853"
+     cy="40"
+     width="299.0343"
+     height="116.29428"
+     rx="14.951715"
+     ry="58.147141"
+     fill="#f0f0f0"
+     stroke="#333333"
+     stroke-width="1.96571"
+     id="rect45"
+     y="52.482853" />
+  <text
+     x="200"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text45">Effective Climate Governance Examples</text>
+  <text
+     x="75"
+     y="95"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="start"
+     fill="#333333"
+     id="text46">• Pacific Resilience Partnership</text>
+  <text
+     x="75"
+     y="115"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="start"
+     fill="#333333"
+     id="text47">• Paris Agreement as Developmental Bridge</text>
+  <text
+     x="75"
+     y="135"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="start"
+     fill="#333333"
+     id="text48">• Indigenous Climate Adaptation in the Pacific</text>
+  <text
+     x="75"
+     y="155"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="start"
+     fill="#333333"
+     id="text49">• Arctic Council's Knowledge Co-Production</text>
+</svg>

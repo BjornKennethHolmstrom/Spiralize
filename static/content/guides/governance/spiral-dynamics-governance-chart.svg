@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 800"
+   version="1.1"
+   id="svg38"
+   sodipodi:docname="spiral-dynamics-governance-chart.svg"
+   width="800"
+   height="800"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs38" />
+  <sodipodi:namedview
+     id="namedview38"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.99702056"
+     inkscape:cx="240.21571"
+     inkscape:cy="424.26407"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg38" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="800"
+     fill="#f8f9fa"
+     rx="10"
+     ry="13.333333"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.1547" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text1">Spiral Dynamics: Value Systems and Governance Expressions</text>
+  <!-- Spiral Path -->
+  <path
+     d="M 400,694 C 300,674 250,624 240,574 230,524 280,474 350,454 450,424 490,374 480,324 470,274 420,244 350,234 260,224 220,194 230,164"
+     fill="none"
+     stroke="#cccccc"
+     stroke-width="140"
+     stroke-linecap="round"
+     opacity="0.6"
+     id="path1" />
+  <!-- Coral (Tier 3) -->
+  <circle
+     cx="400"
+     cy="694"
+     r="85"
+     fill="#ff9eee"
+     opacity="0.7"
+     id="circle1" />
+  <text
+     x="400"
+     y="674"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text2">CORAL</text>
+  <text
+     x="400"
+     y="699"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text3">Meta-systemic</text>
+  <text
+     x="400"
+     y="719"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text4">Post-nation-state governance,</text>
+  <text
+     x="400"
+     y="734"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text5">developmental awareness</text>
+  <!-- Turquoise (Second Tier) -->
+  <circle
+     cx="240"
+     cy="574"
+     r="75"
+     fill="#66cccc"
+     opacity="0.7"
+     id="circle5" />
+  <text
+     x="240"
+     y="554"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text6">TURQUOISE</text>
+  <text
+     x="240"
+     y="579"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text7">Holistic</text>
+  <text
+     x="240"
+     y="599"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text8">Planetary consciousness,</text>
+  <text
+     x="240"
+     y="614"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text9">collective intelligence</text>
+  <!-- Yellow (Second Tier) -->
+  <circle
+     cx="350"
+     cy="454"
+     r="70"
+     fill="#ffff00"
+     opacity="0.7"
+     id="circle9" />
+  <text
+     x="350"
+     y="434"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text10">YELLOW</text>
+  <text
+     x="350"
+     y="459"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text11">Integral/Systemic</text>
+  <text
+     x="350"
+     y="479"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text12">Adaptive governance,</text>
+  <text
+     x="350"
+     y="494"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text13">functional systems</text>
+  <!-- Green (First Tier) -->
+  <circle
+     cx="480"
+     cy="324"
+     r="65"
+     fill="#00cc00"
+     opacity="0.7"
+     id="circle13" />
+  <text
+     x="480"
+     y="304"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text14">GREEN</text>
+  <text
+     x="480"
+     y="329"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text15">Postmodern/Pluralistic</text>
+  <text
+     x="480"
+     y="349"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text16">Humanitarian efforts,</text>
+  <text
+     x="480"
+     y="364"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text17">participatory democracy</text>
+  <!-- Orange (First Tier) -->
+  <circle
+     cx="350"
+     cy="234"
+     r="60"
+     fill="#ff9933"
+     opacity="0.7"
+     id="circle17" />
+  <text
+     x="350"
+     y="214"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text18">ORANGE</text>
+  <text
+     x="350"
+     y="239"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text19">Modern/Rational</text>
+  <text
+     x="350"
+     y="259"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text20">Market mechanisms,</text>
+  <text
+     x="350"
+     y="274"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text21">evidence-based policy</text>
+  <!-- Blue (First Tier) -->
+  <circle
+     cx="230"
+     cy="164"
+     r="55"
+     fill="#3333ff"
+     opacity="0.7"
+     id="circle21" />
+  <text
+     x="230"
+     y="144"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text22">BLUE</text>
+  <text
+     x="230"
+     y="169"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text23"
+     style="fill:#53473b;fill-opacity:1">Traditional/Mythic</text>
+  <text
+     x="230"
+     y="189"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text24"
+     style="fill:#53473b;fill-opacity:1">Hierarchical structures,</text>
+  <text
+     x="230"
+     y="204"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text25"
+     style="fill:#53473b;fill-opacity:1">rule-based order</text>
+  <!-- Red (First Tier) - Off to the side -->
+  <circle
+     cx="120"
+     cy="214"
+     r="50"
+     fill="#ff0000"
+     opacity="0.7"
+     id="circle25" />
+  <text
+     x="120"
+     y="194"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text26">RED</text>
+  <text
+     x="120"
+     y="219"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text27"
+     style="fill:#333333;fill-opacity:1">Power/Impulsive</text>
+  <text
+     x="120"
+     y="239"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text28"
+     style="fill:#333333;fill-opacity:1">Authoritarian regimes,</text>
+  <text
+     x="120"
+     y="254"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text29"
+     style="fill:#333333;fill-opacity:1">power-based politics</text>
+  <!-- Purple (First Tier) - Off to the side -->
+  <circle
+     cx="70"
+     cy="294"
+     r="45"
+     fill="#660099"
+     opacity="0.7"
+     id="circle29" />
+  <text
+     x="70"
+     y="274"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text30">PURPLE</text>
+  <text
+     x="70"
+     y="299"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text31"
+     style="fill:#333333;fill-opacity:1">Tribal/Magical</text>
+  <text
+     x="70"
+     y="319"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text32"
+     style="fill:#333333;fill-opacity:1">Kinship-based,</text>
+  <text
+     x="70"
+     y="334"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text33"
+     style="fill:#333333;fill-opacity:1">traditional governance</text>
+  <!-- Tier Markers -->
+  <text
+     x="700"
+     y="664"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ff9eee"
+     id="text34">TIER 3</text>
+  <text
+     x="700"
+     y="464"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#66cccc"
+     id="text35">TIER 2</text>
+  <text
+     x="700"
+     y="264"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ff9933"
+     id="text36">TIER 1</text>
+  <!-- Lines connecting tiers to spiral -->
+  <line
+     x1="660"
+     y1="664"
+     x2="480"
+     y2="694"
+     stroke="#666666"
+     stroke-width="1"
+     stroke-dasharray="5, 3"
+     id="line36" />
+  <line
+     x1="660"
+     y1="464"
+     x2="410"
+     y2="464"
+     stroke="#666666"
+     stroke-width="1"
+     stroke-dasharray="5, 3"
+     id="line37" />
+  <line
+     x1="660"
+     y1="264"
+     x2="410"
+     y2="264"
+     stroke="#666666"
+     stroke-width="1"
+     stroke-dasharray="5, 3"
+     id="line38" />
+  <!-- Footnote -->
+  <text
+     x="400"
+     y="724"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#666666"
+     opacity="0"
+     id="text38">Based on the work of Clare W. Graves, Don Beck, and Christopher Cowan</text>
+</svg>
