@@ -5,8 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"build:pdf": "node scripts/generate-guide-pdf.mjs && node scripts/generate-organizations-guide-pdf.mjs && node scripts/generate-personal-guide-pdf.mjs && node scripts/generate-leadership-guide-pdf.mjs && node scripts/generate-parenting-guide-pdf.mjs && node scripts/generate-spiritual-guide-pdf.mjs && node scripts/generate-governance-guide-pdf.mjs",
+		"build:content": "node scripts/copy-content-files.mjs",
 		"dev": "vite dev",
-		"build": "npm run build:pdf && vite build",
+		"build": "npm run build:pdf && npm run build:content && vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -46,6 +47,7 @@
 		"@tailwindcss/typography": "^0.5.15",
 		"chart.js": "^4.4.8",
 		"d3": "^7.9.0",
+		"fs-extra": "^11.3.0",
 		"gray-matter": "^4.0.3",
 		"grey-matter": "^0.0.0",
 		"html2canvas": "^1.4.1",

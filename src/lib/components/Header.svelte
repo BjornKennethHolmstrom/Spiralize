@@ -127,7 +127,8 @@
         { href: `${base}/insights/peace`, label: { en: "🕊️ Peace Trough Evolution", sv: "🕊️ Fred Genom Evolution" } },
         { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI-assistants on the Spiral", sv: "🤖 AI-assistenter på spiralen" } },
         { href: `${base}/insights/poetry`, label: { en: "🎙️ Spiral Poetry", sv: "🎙️ Spiralpoesi" } 
-}
+},
+        { href: `${base}/insights/examples`, label: { en: "📚 Spiral Examples", sv: "📚 Spiralexempel" } }
       ]
     },
     // New guides dropdown
@@ -348,7 +349,7 @@
                         on:click|stopPropagation={closeDropdowns}
                       >
                         {child.label[currentLanguage]}
-                        {#if child.href.includes('/poetry')}
+                        {#if child.href.includes('/poetry') || child.href.includes('/examples')}
                           <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                             {currentLanguage === 'en' ? 'New' : 'Ny'}
                           </span>
@@ -520,7 +521,7 @@
                           on:touchstart|stopPropagation={handleMobileLinkClick}
                         >
                           {child.label[currentLanguage]}
-                          {#if child.href.includes('/poetry')}
+                          {#if child.href.includes('/poetry') || child.href.includes('/examples')}
                             <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                               {currentLanguage === 'en' ? 'New' : 'Ny'}
                             </span>
