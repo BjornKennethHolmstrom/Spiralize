@@ -3,6 +3,7 @@
   import { onMount, afterUpdate } from 'svelte';
   import * as d3 from 'd3';
   import { stages } from '$lib/data/stages';
+  import { getStageColor, getStageTextColor } from '$lib/utils/stageColors';
   import languageStore from '$lib/stores/languageStore';
   import { feature } from 'topojson-client';
 
@@ -54,12 +55,6 @@
   };
 
   $: t = translations[currentLanguage];
-
-  // Function to get stage color
-  function getStageColor(stage) {
-    if (!stage || stage === 'nodata') return "#CCCCCC";
-    return stages[stage]?.color || "#CCCCCC";
-  }
 
   // Define spiral dynamics data by country
   // This is a simplified dataset - in a real application, 

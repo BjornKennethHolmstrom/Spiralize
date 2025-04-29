@@ -2,6 +2,7 @@
 <script lang="ts">
   import languageStore from '$lib/stores/languageStore';
   import { stages } from '$lib/data/stages';
+  import { getStageColor, getStageTextColor } from '$lib/utils/stageColors';
   import { createEventDispatcher } from 'svelte';
   import { stageInteractions, stageCharacteristics } from '$lib/data/stageInteractions';
 
@@ -9,16 +10,11 @@
   const { language } = languageStore;
   $: currentLanguage = $language;
 
-  // State for selected stages
+  // State for selected stages - now only receives from parent component
   export let selectedStage1: string | null = null;
   export let selectedStage2: string | null = null;
 
   const dispatch = createEventDispatcher();
-
-  // Helper function to get stage color
-  function getStageColor(stage: string): string {
-    return stages[stage]?.color || "#808080";
-  }
 
   // Get interaction data based on stages selected
   function getInteractionData(stage1: string, stage2: string): any {
@@ -47,10 +43,7 @@
   // Translations for UI elements
   const translations = {
     en: {
-      title: "Stage Comparison Matrix",
-      description: "Explore how different Spiral Dynamics stages interact with each other. Select two stages to see their relationship dynamics, potential synergies, and challenges.",
-      select1: "Select First Stage",
-      select2: "Select Second Stage",
+      title: "Stage Interaction Details",
       interaction: "Stage Interaction",
       clashes: "Potential Clashes",
       bridging: "Bridging Strategies",
@@ -60,13 +53,10 @@
       communication: "Communication Style",
       leadership: "Leadership Approach",
       challenges: "Key Challenges",
-      noSelection: "Please select two stages to see their interaction."
+      noSelection: "Please select two stages from the grid above to see their interaction details."
     },
     sv: {
-      title: "Stadie-jämförelsematris",
-      description: "Utforska hur olika Spiral Dynamics-stadier interagerar med varandra. Välj två stadier för att se deras relationsdynamik, potentiella synergier och utmaningar.",
-      select1: "Välj Första Stadiet",
-      select2: "Välj Andra Stadiet",
+      title: "Interaktionsdetaljer",
       interaction: "Stadieinteraktion",
       clashes: "Potentiella Konflikter",
       bridging: "Överbryggande Strategier",
@@ -76,7 +66,7 @@
       communication: "Kommunikationsstil",
       leadership: "Ledarskapsmetod",
       challenges: "Nyckelutmaningar",
-      noSelection: "Välj två stadier för att se deras interaktion."
+      noSelection: "Välj två stadier från rutnätet ovan för att se deras interaktionsdetaljer."
     }
   };
 
@@ -84,57 +74,31 @@
   $: interactionData = getInteractionData(selectedStage1, selectedStage2);
 </script>
 
-<div class="bg-white rounded-xl shadow-sm p-6">
- <!--  <h2 class="text-2xl font-semibold mb-2">{t.title}</h2>
-  <p class="text-gray-600 mb-6">{t.description}</p> -->
-  
-  <!-- Stage Selection -->
-  <div class="grid gap-6 md:grid-cols-2 mb-8">
-    <!-- First Stage Selection -->
-    <div>
-      <h3 class="font-medium mb-3">{t.select1}</h3>
-      <div class="space-y-2">
-        {#each Object.keys(stages) as stage}
-          <button
-            class="w-full px-4 py-3 rounded-lg text-left transition-colors"
-            class:bg-opacity-100={selectedStage1 === stage}
-            class:text-white={selectedStage1 === stage}
-            class:bg-opacity-20={selectedStage1 !== stage}
-            class:hover:bg-opacity-30={selectedStage1 !== stage}
-            style="background-color: {selectedStage1 === stage ? getStageColor(stage) : `${getStageColor(stage)}33`}"
-            on:click={() => selectedStage1 = stage}
-          >
-            <div class="capitalize">{stage}</div>
-            <div class="text-sm opacity-80">{stages[stage].name[currentLanguage]}</div>
-          </button>
-        {/each}
-      </div>
-    </div>
-    
-    <!-- Second Stage Selection -->
-    <div>
-      <h3 class="font-medium mb-3">{t.select2}</h3>
-      <div class="space-y-2">
-        {#each Object.keys(stages) as stage}
-          <button
-            class="w-full px-4 py-3 rounded-lg text-left transition-colors"
-            class:bg-opacity-100={selectedStage2 === stage}
-            class:text-white={selectedStage2 === stage}
-            class:bg-opacity-20={selectedStage2 !== stage}
-            class:hover:bg-opacity-30={selectedStage2 !== stage}
-            style="background-color: {selectedStage2 === stage ? getStageColor(stage) : `${getStageColor(stage)}33`}"
-            on:click={() => selectedStage2 = stage}
-          >
-            <div class="capitalize">{stage}</div>
-            <div class="text-sm opacity-80">{stages[stage].name[currentLanguage]}</div>
-          </button>
-        {/each}
-      </div>
-    </div>
-  </div>
+<div class="bg-white rounded-xl shadow-sm p-6 mt-8">
+  <h2 class="text-xl font-semibold mb-4">{t.title}</h2>
   
   <!-- Interaction Display -->
   {#if selectedStage1 && selectedStage2 && interactionData}
+    <div class="flex gap-2 mb-6">
+      {#if selectedStage1}
+        <span 
+          class="px-3 py-1 rounded-full text-white font-medium capitalize"
+          style={`background-color: ${getStageColor(selectedStage1)}`}
+        >
+          {selectedStage1}
+        </span>
+      {/if}
+      <span class="text-gray-400">+</span>
+      {#if selectedStage2}
+        <span 
+          class="px-3 py-1 rounded-full text-white font-medium capitalize"
+          style={`background-color: ${getStageColor(selectedStage2)}`}
+        >
+          {selectedStage2}
+        </span>
+      {/if}
+    </div>
+
     <div class="space-y-6">
       <!-- Main Interaction -->
       <div class="bg-gray-50 p-6 rounded-lg">

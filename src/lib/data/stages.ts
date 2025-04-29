@@ -5,7 +5,7 @@ export const stages: Stage[] = [
     id: 'beige',
     color: 'Beige',
     focus: { en: 'Individual', sv: 'Individuell' },
-    hex: '#D6D1C4',
+    hex: '#F2F2E6',
     name: { en: 'Beige', sv: 'Beige' },
     association: { en: 'Survival', sv: 'Överlevnad' },
     essence: {
@@ -93,7 +93,7 @@ export const stages: Stage[] = [
     id: 'purple',
     color: 'Purple',
     focus: { en: 'Collective', sv: 'Kollektiv' },
-    hex: '#8E44AD',
+    hex: '#9B50BA',
     name: { en: 'Purple', sv: 'Lila' },
     association: { en: 'Tribal', sv: 'Stam' },
     essence: {
@@ -183,7 +183,7 @@ export const stages: Stage[] = [
     id: 'red',
     color: 'Red',
     focus: { en: 'Individual', sv: 'Individuell' },
-    hex: '#D32F2F',
+    hex: '#E25A53',
     name: { en: 'Red', sv: 'Röd' },
     association: { en: 'Power', sv: 'Makt' },
     essence: {
@@ -275,7 +275,7 @@ export const stages: Stage[] = [
     id: 'blue',
     color: 'Blue',
     focus: { en: 'Collective', sv: 'Kollektiv' },
-    hex: '#3B82F6',
+    hex: '#4A72B2',
     name: { en: 'Blue', sv: 'Blå' },
     association: { en: 'Order', sv: 'Ordning' },
     essence: {
@@ -367,7 +367,7 @@ export const stages: Stage[] = [
     id: 'orange',
     color: 'Orange',
     focus: { en: 'Individual', sv: 'Individuell' },
-    hex: '#FFA500',
+    hex: '#FF7F27',
     name: { en: 'Orange', sv: 'Orange' },
     association: { en: 'Achievement', sv: 'Prestation' },
     essence: {
@@ -459,7 +459,7 @@ export const stages: Stage[] = [
     id: 'green',
     color: 'Green',
     focus: { en: 'Collective', sv: 'Kollektiv' },
-    hex: '#10B981',
+    hex: '#7AB55C',
     name: { en: 'Green', sv: 'Grön' },
     association: { en: 'Communal', sv: 'Gemenskap' },
     essence: {
@@ -551,7 +551,7 @@ export const stages: Stage[] = [
     id: 'yellow',
     color: 'Yellow',
     focus: { en: 'Individual', sv: 'Individuell' },
-    hex: '#FACC15',
+    hex: '#FFD700',
     name: { en: 'Yellow', sv: 'Gul' },
     association: { en: 'Systemic', sv: 'Systemiskt' },
     essence: {
@@ -645,7 +645,7 @@ export const stages: Stage[] = [
     id: 'turquoise',
     color: 'Turquoise',
     focus: { en: 'Collective', sv: 'Kollektiv' },
-    hex: '#06B6D4',
+    hex: '#40E0D0',
     name: { en: 'Turquoise', sv: 'Turkos' },
     association: { en: 'Holistic', sv: 'Holistiskt' },
     essence: {
@@ -736,7 +736,7 @@ export const stages: Stage[] = [
     color: 'Coral',
     focus: { en: 'Individual', sv: 'Individuell' },
     association: { en: 'Sovereign Unity', sv: 'Suverän Enhet' },
-    hex: '#FB7185',
+    hex: '#FF7F50',
     name: { en: 'Coral', sv: 'Korall' },
     essence: {
       en: 'Reclaiming power after transcendence. Coral acts freely and fluidly from Source, blending the mystical with bold, embodied action.',
@@ -824,7 +824,7 @@ export const stages: Stage[] = [
   {
     id: 'ultraviolet',
     color: 'Ultra-Violet',
-    hex: '#A855F7',
+    hex: '#8A2BE2',
     name: { en: 'Ultra-Violet', sv: 'Ultra-Violett' },
     association: { en: 'Infinite Flow', sv: 'Oändligt Flöde' },
     essence: {
