@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"build:pdf": "node scripts/generate-guide-pdf.mjs && node scripts/generate-organizations-guide-pdf.mjs && node scripts/generate-personal-guide-pdf.mjs && node scripts/generate-leadership-guide-pdf.mjs && node scripts/generate-parenting-guide-pdf.mjs && node scripts/generate-spiritual-guide-pdf.mjs && node scripts/generate-governance-guide-pdf.mjs",
-		"build:content": "node scripts/copy-content-files.mjs",
+		"build:content": "node scripts/copy-content-files.mjs && node scripts/generate-character-index.mjs",
 		"dev": "vite dev",
 		"build": "npm run build:pdf && npm run build:content && vite build",
 		"preview": "vite preview",
@@ -67,6 +67,7 @@
 		"sharp": "^0.34.1",
 		"svelte-i18n": "^4.0.1",
 		"topojson-client": "^3.1.0",
-		"unified": "^11.0.5"
+		"unified": "^11.0.5",
+		"yaml": "^2.7.1"
 	}
 }

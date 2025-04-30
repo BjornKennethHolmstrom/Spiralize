@@ -231,5 +231,33 @@ export const examplesSchema: ExampleCategory[] = [
         nameSv: 'Värderingar och Prioriteringar' 
       }
     ]
+  },
+  {
+    id: 'co-creation',
+    nameEn: 'Conscious Co-Creation',
+    nameSv: 'Medveten Samskapelse',
+    icon: '🌐',
+    subcategories: [
+      {
+        id: 'living-fields',
+        nameEn: 'Living Fields & Shared Intent',
+        nameSv: 'Levande Fält och Delad Intention'
+      },
+      {
+        id: 'sacred-collaboration',
+        nameEn: 'Sacred Collaboration Patterns',
+        nameSv: 'Heliga Samverkansmönster'
+      },
+      {
+        id: 'circle-culture',
+        nameEn: 'Circle Culture & Governance',
+        nameSv: 'Cirkelkultur och Självstyrning'
+      },
+      {
+        id: 'emergent-rituals',
+        nameEn: 'Emergent Rituals & Festivals',
+        nameSv: 'Framväxande Ritualer och Festivaler'
+      }
+    ]
   }
 ];
