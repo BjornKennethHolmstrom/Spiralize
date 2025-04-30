@@ -36,12 +36,17 @@ export function processMarkdown(markdown: string): {
         const stageMatch = typeof headingText === 'string' && headingText.match(/<stage:([a-z]+)>/i);
         
         if (stageMatch && level === 2) {
+          // Close previous stage section if exists
+          if (currentStage) {
+            html += '</div>';
+          }
+          
           // Update current stage
           currentStage = stageMatch[1].toLowerCase();
           const stageColor = getStageColor(currentStage);
           const stageName = currentStage.charAt(0).toUpperCase() + currentStage.slice(1);
           
-          // Create stage section start
+          // Create new stage section
           html += `
             <div class="stage-section" data-stage="${currentStage}">
               <h2 class="stage-heading" style="
@@ -76,6 +81,12 @@ export function processMarkdown(markdown: string): {
           
           // Skip to next token
           continue;
+        }
+        
+        // If we encounter a level 2 heading that's not a stage marker, close current stage
+        if (level === 2 && currentStage) {
+          html += '</div>';
+          currentStage = '';
         }
       }
       

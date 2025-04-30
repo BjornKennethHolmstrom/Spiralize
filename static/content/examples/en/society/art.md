@@ -174,7 +174,7 @@ Coral art embodies both individual creative sovereignty and consciousness of evo
 
 ## <stage:ultraviolet>
 
-### 🟣 Ultra-Violet Art & Literature  
+### Ultra-Violet Art & Literature  
 **Transparent Transmission & Harmonic Resonance**  
 **Characteristics:** Non-linear, multidimensional, presence-evoked, ego-free expression
 
@@ -189,7 +189,7 @@ Ultra-Violet creation is no longer authored — it is transmitted. Art flows as 
 
 ## <stage:clear>
 
-### ⚪ Clear Art & Literature  
+### Clear Art & Literature  
 **The Art of No-Form, The Literature of Silence**  
 **Characteristics:** No story, no symbol, no self — only direct isness
 

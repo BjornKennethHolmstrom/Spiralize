@@ -174,7 +174,7 @@ Korallkonst förkroppsligar både individuell kreativ suveränitet och medvetenh
 
 ## <stage:ultraviolet>
 
-### 🟣 Ultraviolett Konst & Litteratur  
+### Ultraviolett Konst & Litteratur  
 **Transparent Överföring & Harmonisk Resonans**  
 **Kännetecken:** Icke-linjär, multidimensionell, närvaroutlöst, egobefriad
 
@@ -189,7 +189,7 @@ Ultraviolett skapande uppstår inte – det överförs. Konst flödar som ljus, 
 
 ## <stage:clear>
 
-### ⚪ Klar Konst & Litteratur  
+### Klar Konst & Litteratur  
 **Konstens Icke-form, Litteraturens Tystnad**  
 **Kännetecken:** Ingen berättelse, ingen symbol, inget jag – bara direkt varande
 

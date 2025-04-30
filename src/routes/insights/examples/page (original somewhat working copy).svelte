@@ -128,43 +128,57 @@
   }
 
   // Function to filter content by stages - FIXED version
-function filterContentByStages(html: string, stageIds: string[]): string {
-  if (!html || stageIds.length === 0) return html;
-
-  try {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(`<div id="root-wrapper">${html}</div>`, 'text/html');
-    const rootWrapper = doc.getElementById('root-wrapper');
-    if (!rootWrapper) return html;
-
-    const stageSections = rootWrapper.querySelectorAll('[data-stage]');
-    if (stageSections.length === 0) return html;
-
-    let hasMatchingSections = false;
-    const filteredWrapper = document.createElement('div');
-
-    stageSections.forEach(section => {
-      const sectionStage = section.getAttribute('data-stage');
-      if (sectionStage && stageIds.includes(sectionStage)) {
-        filteredWrapper.innerHTML += section.outerHTML; // ← FIXED LINE
-        hasMatchingSections = true;
+  function filterContentByStages(html: string, stageIds: string[]): string {
+    if (!html || stageIds.length === 0) return html; // If no stages selected, show all
+    
+    try {
+      // Create a DOMParser for safer HTML parsing
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(`<div id="root-wrapper">${html}</div>`, 'text/html');
+      
+      // Get the wrapper containing all content
+      const rootWrapper = doc.getElementById('root-wrapper');
+      if (!rootWrapper) return html;
+      
+      // Find all stage sections
+      const stageSections = rootWrapper.querySelectorAll('[data-stage]');
+      
+      // If no sections found, return original
+      if (stageSections.length === 0) return html;
+      
+      // Keep track of if we have any matching sections
+      let hasMatchingSections = false;
+      
+      // Create a new wrapper for filtered content
+      const filteredWrapper = document.createElement('div');
+      
+      // Process each section - if it matches the filter, add it to the filtered wrapper
+      stageSections.forEach(section => {
+        const sectionStage = section.getAttribute('data-stage');
+        
+        if (sectionStage && stageIds.includes(sectionStage)) {
+          // This is a matching section, add a clone to our filtered content
+          filteredWrapper.appendChild(section.cloneNode(true));
+          hasMatchingSections = true;
+        }
+      });
+      
+      // Check if we have any matching sections
+      if (!hasMatchingSections) {
+        return `<div class="p-4 bg-gray-100 rounded-lg text-gray-600">
+          <p>${currentLanguage === 'en' 
+              ? 'No content available for the selected stages. Please select different stages or clear your filters.' 
+              : 'Inget innehåll tillgängligt för de valda stadierna. Välj andra stadier eller rensa filtren.'}</p>
+        </div>`;
       }
-    });
-
-    if (!hasMatchingSections) {
-      return `<div class="p-4 bg-gray-100 rounded-lg text-gray-600">
-        <p>${currentLanguage === 'en' 
-          ? 'No content available for the selected stages. Please select different stages or clear your filters.' 
-          : 'Inget innehåll tillgängligt för de valda stadierna. Välj andra stadier eller rensa filtren.'}</p>
-      </div>`;
+      
+      // Return the filtered HTML
+      return filteredWrapper.innerHTML;
+    } catch (error) {
+      console.error('Error filtering content by stages:', error);
+      return html;
     }
-
-    return filteredWrapper.innerHTML;
-  } catch (error) {
-    console.error('Error filtering content by stages:', error);
-    return html;
   }
-}
   
   // Computed property for filtered content
   $: displayContent = selectedStages.length > 0

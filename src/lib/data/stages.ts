@@ -5,7 +5,7 @@ export const stages: Stage[] = [
     id: 'beige',
     color: 'Beige',
     focus: { en: 'Individual', sv: 'Individuell' },
-    hex: '#F2F2E6',
+    hex: '#e6e3c5',
     name: { en: 'Beige', sv: 'Beige' },
     association: { en: 'Survival', sv: 'Överlevnad' },
     essence: {

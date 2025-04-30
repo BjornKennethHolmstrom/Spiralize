@@ -153,6 +153,11 @@ export const examplesSchema: ExampleCategory[] = [
         id: 'communities', 
         nameEn: 'Digital Communities', 
         nameSv: 'Digitala Gemenskaper' 
+      },
+      { 
+        id: 'futures', 
+        nameEn: 'Futures Thinking', 
+        nameSv: 'Framtidstänkande' 
       }
     ]
   },
@@ -181,6 +186,16 @@ export const examplesSchema: ExampleCategory[] = [
         id: 'ethics', 
         nameEn: 'Ethical Frameworks', 
         nameSv: 'Etiska Ramverk' 
+      },
+      { 
+        id: 'experiences', 
+        nameEn: 'Mystical Experiences', 
+        nameSv: 'Mystiska Uppleveleser' 
+      },
+      { 
+        id: 'texts', 
+        nameEn: 'Sacred Texts', 
+        nameSv: 'Heliga Skrifter' 
       }
     ]
   },
@@ -209,6 +224,11 @@ export const examplesSchema: ExampleCategory[] = [
         id: 'practices', 
         nameEn: 'Daily Practices', 
         nameSv: 'Dagliga Praktiker' 
+      },
+      { 
+        id: 'values', 
+        nameEn: 'Values & Priorities', 
+        nameSv: 'Värderingar och Prioriteringar' 
       }
     ]
   }
