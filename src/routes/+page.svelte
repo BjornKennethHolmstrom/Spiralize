@@ -3,6 +3,7 @@
   import { writable } from 'svelte/store';
   import languageStore from '$lib/stores/languageStore';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
+  import QuickBenefits from '$lib/components/QuickBenefits.svelte';
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -14,6 +15,7 @@
     en: {
       heroTitle: "Welcome to Spiralize",
       heroSubtitle: "Understand yourself. Understand the world. Navigate the spiral.",
+      heroDescription: "A map of how we evolve – from survival to cooperation, from control to freedom, from separation to interbeing.",
       takeAssessment: "Take the Assessment",
       start: "🔰 New to Spiral Dynamics?",
       intro: {
@@ -21,9 +23,9 @@
         description: {
           p1: "• Spiral Dynamics is a lens to understand how values evolve — shaping everything from personal choices to global politics.",
           p2: "• It maps the development of human consciousness through distinct stages, each representing a unique way of making sense of the world.",
-          p3: "• This isn’t a belief system, but a pattern — of growth, meaning-making, and transformation.",
+          p3: "• This isn't a belief system, but a pattern — of growth, meaning-making, and transformation.",
           p4: "• By learning the spiral, we gain tools to navigate relationships, lead with insight, and understand where humanity is heading.",
-          quote: "“To honor all beings, we must first learn to see through all eyes.”"
+          quote: '"To honor all beings, we must first learn to see through all eyes."'
         },
         keyPoints: [
           {
@@ -60,7 +62,7 @@
           title: "Origins & History",
           description: "Learn about the foundations of Spiral Dynamics, from Clare Graves' research to modern applications.",
           link: `${base}/origins`,
-          icon: "📚"  // or "🎓" or "⏳" - feel free to choose which fits best
+          icon: "📚"
         },
         {
           title: "Practical Insights",
@@ -80,12 +82,68 @@
           link: `${base}/insights/governance`,
           icon: "🏛️"
         }
-      ]
+      ],
+      applications: {
+        title: "Explore Real-World Applications",
+        description: "Discover how Spiral Dynamics provides insights across different domains of life and society.",
+        items: [
+          {
+            title: "Global Perspectives",
+            description: "How different worldviews shape our approach to climate change, inequality, and politics.",
+            link: `${base}/insights/global`,
+            icon: "🌍",
+            color: "from-blue-500 to-indigo-600"
+          },
+          {
+            title: "Peace Through Evolution",
+            description: "Understanding how consciousness development shapes conflict and harmony.",
+            link: `${base}/insights/peace`,
+            icon: "🕊️",
+            color: "from-green-500 to-teal-600"
+          },
+          {
+            title: "Conscious Governance",
+            description: "Bridging personal development with systemic evolution in organizational and societal systems.",
+            link: `${base}/insights/governance`,
+            icon: "🏛️",
+            color: "from-purple-500 to-pink-600"
+          }
+        ]
+      },
+      getStarted: {
+        title: "Get Started with Spiralize",
+        steps: [
+          {
+            number: "1",
+            title: "Take the Assessment",
+            description: "Discover your center of gravity on the Spiral to understand your values worldview.",
+            link: `${base}/quiz`,
+            linkText: "Start Assessment",
+            color: "purple"
+          },
+          {
+            number: "2",
+            title: "Explore the Spiral",
+            description: "Learn about each stage of the Spiral and how they manifest in individuals and societies.",
+            link: `${base}/spiral`,
+            linkText: "View Stages",
+            color: "blue"
+          },
+          {
+            number: "3",
+            title: "Apply Insights",
+            description: "Discover practical applications for personal growth, relationships, and addressing global challenges.",
+            link: `${base}/insights`,
+            linkText: "Explore Insights",
+            color: "green"
+          }
+        ]
+      }
     },
     sv: {
       heroTitle: "Välkommen till Spiralize",
       heroSubtitle: "Förstå dig själv. Förstå världen. Navigera spiralen.",
-      heroSubtitle2: "En karta över hur människor och kulturer utvecklas – från överlevnad till system, från rädsla till frihet, från isolering till samhörighet.",
+      heroDescription: "En karta över hur vi människor utvecklas – från överlevnad till samarbete, från kontroll till frihet, från separation till samhörighet.",
       takeAssessment: "Testa dig själv",
       start: "🔰 Ny till Spiral Dynamics?",
       intro: {
@@ -95,7 +153,7 @@
           p2: "• Den kartlägger utvecklingen av mänskligt medvetande genom olika stadier, där varje stadium representerar ett unikt sätt att förstå världen.",
           p3: "• Det är inget trossystem, utan ett mönster – av tillväxt, meningsskapande och transformation.",
           p4: "• Genom att lära oss spiralen får vi verktyg för att navigera relationer, leda med insikt och förstå vart mänskligheten är på väg.",
-          quote: "“För att hedra alla varelser måste vi först lära oss att se genom alla ögon.”"
+          quote: '"För att hedra alla varelser måste vi först lära oss att se genom alla ögon."'
         },
         keyPoints: [
           {
@@ -132,7 +190,7 @@
           title: "Historia & Ursprung",
           description: "Lär dig om grunderna i Spiral Dynamics, från Clare Graves forskning till moderna tillämpningar.",
           link: `${base}/origins`,
-          icon: "📚"  // matching the English version
+          icon: "📚"
         },
         {
           title: "Praktiska Insikter",
@@ -152,7 +210,63 @@
           link: `${base}/governance`,
           icon: "🏛️"
         }
-      ]
+      ],
+      applications: {
+        title: "Utforska Verkliga Tillämpningar",
+        description: "Upptäck hur Spiral Dynamics ger insikter inom olika områden av livet och samhället.",
+        items: [
+          {
+            title: "Globala Perspektiv",
+            description: "Hur olika världsbilder formar vår approach till klimatförändringar, ojämlikhet och politik.",
+            link: `${base}/insights/global`,
+            icon: "🌍",
+            color: "from-blue-500 to-indigo-600"
+          },
+          {
+            title: "Fred Genom Evolution",
+            description: "Förstå hur medvetandeutveckling formar konflikt och harmoni.",
+            link: `${base}/insights/peace`,
+            icon: "🕊️",
+            color: "from-green-500 to-teal-600"
+          },
+          {
+            title: "Medveten Styrning",
+            description: "Att överbrygga personlig utveckling med systemisk evolution i organisatoriska och samhälleliga system.",
+            link: `${base}/insights/governance`,
+            icon: "🏛️",
+            color: "from-purple-500 to-pink-600"
+          }
+        ]
+      },
+      getStarted: {
+        title: "Kom Igång med Spiralize",
+        steps: [
+          {
+            number: "1",
+            title: "Ta Bedömningen",
+            description: "Upptäck ditt gravitationscentrum på Spiralen för att förstå din värderingsmässiga världsbild.",
+            link: `${base}/quiz`,
+            linkText: "Starta Bedömningen",
+            color: "purple"
+          },
+          {
+            number: "2",
+            title: "Utforska Spiralen",
+            description: "Lär dig om varje stadium i Spiralen och hur de manifesterar sig i individer och samhällen.",
+            link: `${base}/spiral`,
+            linkText: "Visa Stadier",
+            color: "blue"
+          },
+          {
+            number: "3",
+            title: "Tillämpa Insikter",
+            description: "Upptäck praktiska tillämpningar för personlig utveckling, relationer och att hantera globala utmaningar.",
+            link: `${base}/insights`,
+            linkText: "Utforska Insikter",
+            color: "green"
+          }
+        ]
+      }
     }
   };
 
@@ -166,7 +280,6 @@
   $: description = currentLanguage === 'en'
     ? 'Take our comprehensive assessment to understand your values and worldview through Spiral Dynamics. Get personalized insights and practical guidance for growth.'
     : 'Ta vår omfattande bedömning för att förstå dina värderingar och världsbild genom Spiral Dynamics. Få personliga insikter och praktisk vägledning för utveckling.';
-
 </script>
 
 <svelte:head>
@@ -176,6 +289,11 @@
   <meta property="og:description" content={description}>
   <meta property="twitter:title" content={title}>
   <meta property="twitter:description" content={description}>
+  <meta property="og:image" content="{base}/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="twitter:image" content="{base}/social-preview.png">
+  <link rel="canonical" href="https://spiralize.org">
 </svelte:head>
 
 <div class="min-h-screen bg-gray-50">
@@ -194,26 +312,29 @@
       <h1 class="text-4xl md:text-5xl font-bold mb-4">
         {t.heroTitle}
       </h1>
-      <p class="text-xl md:text-2xl mb-8 text-purple-100">
+      <p class="text-xl md:text-2xl mb-4 text-purple-100">
         {t.heroSubtitle}
+      </p>
+      <p class="text-lg mb-8 text-purple-100 max-w-3xl mx-auto">
+        {t.heroDescription}
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a 
-          href="{base}/start"
+          href="{base}/spiral"
           class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
         >
           {t.start}
         </a>
         <a 
           href="{base}/quiz"
-          class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+          class="inline-block bg-purple-400 text-white hover:bg-purple-300 border border-white px-8 py-3 rounded-lg font-medium transition-colors"
         >
           {t.takeAssessment}
         </a>
       </div>
     </div>
 
-    <!-- New Introduction Section -->
+    <!-- Introduction Section -->
     <div class="max-w-4xl mx-auto mb-16">
       <h2 class="text-3xl font-bold text-center mb-6">
         {t.intro.title}
@@ -228,9 +349,9 @@
 
       <div class="mt-8 max-w-xl text-sm text-gray-500 dark:text-gray-500 italic">
         {t.intro.description.quote}
-      </div><br><br>
+      </div>
       
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="mt-12 grid md:grid-cols-3 gap-8">
         {#each t.intro.keyPoints as point}
           <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <div class="text-4xl mb-4">
@@ -246,9 +367,14 @@
         {/each}
       </div>
     </div>
+    
+    <!-- Quick Benefits Section -->
+    <div class="my-16">
+      <QuickBenefits />
+    </div>
 
     <!-- Features Section -->
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
       {#each t.features as feature}
         <a 
           href={feature.link}
@@ -276,11 +402,10 @@
           </div>
         </a>
       {/each}
-    </div>
+    </div> 
   </div>
 
-  <br>
-  <ShareButtons />
-  <br>
-
+  <div class="mt-8">
+    <ShareButtons />
+  </div>
 </div>

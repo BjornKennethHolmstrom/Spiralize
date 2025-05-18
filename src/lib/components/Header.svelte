@@ -102,15 +102,7 @@
 
   // Links for navigation
   const navLinks = [
-    { 
-      label: { en: "Home", sv: "Hem" },
-      isDropdown: true,
-      id: 'home',
-      children: [
-        { href: `${base}/`, label: { en: "🏠 Home", sv: "🏠 Hem" } },
-        { href: `${base}/start`, label: { en: "🌀 Start Here", sv: "🌀 Börja här" } },
-      ]
-    },
+    { href: `${base}/`, label: { en: "🏠 Home", sv: "🏠 Hem" } },
     { href: `${base}/spiral`, label: { en: "Explore", sv: "Utforska" } },
     { href: `${base}/origins`, label: { en: "Origins", sv: "Historia" } },
     { href: `${base}/quiz`, label: { en: "Quiz", sv: "Test" } },
