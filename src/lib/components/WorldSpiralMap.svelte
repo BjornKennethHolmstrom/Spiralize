@@ -63,7 +63,7 @@
     // Data using numeric country IDs (as used in the world-atlas TopoJSON)
     // NORTH AMERICA
     // United States
-    "840": { primaryStage: 'orange', secondaryStage: 'blue', tertiaryStage: 'green', name: { en: 'United States', sv: 'USA' } },
+    "840": { primaryStage: 'orange', secondaryStage: 'blue', tertiaryStage: 'green', dualDominant: true, name: { en: 'United States', sv: 'USA' } },
     // Canada
     "124": { primaryStage: 'green', secondaryStage: 'orange', name: { en: 'Canada', sv: 'Kanada' } },
     // Mexico
@@ -143,11 +143,11 @@
     
     // EUROPE
     // United Kingdom
-    "826": { primaryStage: 'orange', secondaryStage: 'blue', name: { en: 'United Kingdom', sv: 'Storbritannien' } },
+    "826": { primaryStage: 'orange', secondaryStage: 'blue', dualDominant: true, name: { en: 'United Kingdom', sv: 'Storbritannien' } },
     // France
-    "250": { primaryStage: 'orange', secondaryStage: 'green', name: { en: 'France', sv: 'Frankrike' } },
+    "250": { primaryStage: 'orange', secondaryStage: 'blue', tertiaryStage: 'green', dualDominant: true, name: { en: 'France', sv: 'Frankrike' } },
     // Germany
-    "276": { primaryStage: 'green', secondaryStage: 'orange', name: { en: 'Germany', sv: 'Tyskland' } },
+    "276": { primaryStage: 'orange', secondaryStage: 'green', tertiaryStage: 'blue', dualDominant: true, name: { en: 'Germany', sv: 'Tyskland' } },
     // Sweden
     "752": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', name: { en: 'Sweden', sv: 'Sverige' } },
     // Norway
@@ -173,7 +173,7 @@
     // Belarus
     "112": { primaryStage: 'blue', secondaryStage: 'red', name: { en: 'Belarus', sv: 'Vitryssland' } },
     // Ukraine
-    "804": { primaryStage: 'blue', secondaryStage: 'orange', name: { en: 'Ukraine', sv: 'Ukraina' } },
+    "804": { primaryStage: 'red', secondaryStage: 'blue', tertiaryStage: 'orange', name: { en: 'Ukraine', sv: 'Ukraina' } },
     // Netherlands
     "528": { primaryStage: 'green', secondaryStage: 'orange', name: { en: 'Netherlands', sv: 'Nederländerna' } },
     // Belgium
@@ -225,7 +225,7 @@
     // North Macedonia
     "807": { primaryStage: 'blue', secondaryStage: 'red', name: { en: 'North Macedonia', sv: 'Nordmakedonien' } },
     // Romania
-    "642": { primaryStage: 'blue', secondaryStage: 'orange', name: { en: 'Romania', sv: 'Rumänien' } },
+    "642": { primaryStage: 'blue', secondaryStage: 'red', dualDominant: true, name: { en: 'Romania', sv: 'Rumänien' } },
     // San Marino
     "674": { primaryStage: 'orange', secondaryStage: 'blue', name: { en: 'San Marino', sv: 'San Marino' } },
     // Serbia
@@ -247,7 +247,7 @@
     // India
     "356": { primaryStage: 'purple', secondaryStage: 'red', name: { en: 'India', sv: 'Indien' } },
     // Russia
-    "643": { primaryStage: 'red', secondaryStage: 'blue', name: { en: 'Russia', sv: 'Ryssland' } },
+    "643": { primaryStage: 'red', secondaryStage: 'blue', dualDominant: true, name: { en: 'Russia', sv: 'Ryssland' } },
     // Saudi Arabia
     "682": { primaryStage: 'blue', secondaryStage: 'red', name: { en: 'Saudi Arabia', sv: 'Saudiarabien' } },
     // Israel
@@ -547,6 +547,74 @@
       // Get countries feature
       const countries = feature(geoData, geoData.objects.countries);
 
+      // Create patterns for striped fills
+      const defs = svg.append("defs");
+
+      defs.append("pattern")
+        .attr("id", "legend-dual-pattern")
+        .attr("patternUnits", "userSpaceOnUse")
+        .attr("width", 10)
+        .attr("height", 10)
+        .attr("patternTransform", "rotate(45)")
+        .append("rect")
+        .attr("width", 5)
+        .attr("height", 10)
+        .attr("fill", getStageColor("red"));
+
+      defs.select("#legend-dual-pattern")
+        .append("rect")
+        .attr("width", 5)
+        .attr("height", 10)
+        .attr("transform", "translate(5,0)")
+        .attr("fill", getStageColor("blue"));
+
+      // Create a single pattern for each possible stage combination
+      // Instead of creating one per country
+      const stageIds = stages.map(s => s.id);
+      const patternMap = {}; // Map to track pattern IDs
+
+      // Create patterns for each stage combination
+      stageIds.forEach((stage1, i) => {
+        stageIds.forEach((stage2, j) => {
+          if (i < j) { // Only create each combination once
+            const color1 = getStageColor(stage1);
+            const color2 = getStageColor(stage2);
+            
+            // Create a clean pattern ID
+            const patternId = `pattern_${stage1}_${stage2}`;
+            
+            // Store in our map for lookup
+            patternMap[`${stage1}-${stage2}`] = patternId;
+            patternMap[`${stage2}-${stage1}`] = patternId; // Store reverse order too
+            
+            // Create the pattern
+            const pattern = defs.append("pattern")
+              .attr("id", patternId)
+              .attr("patternUnits", "userSpaceOnUse")
+              .attr("width", 10)
+              .attr("height", 10)
+              .attr("patternTransform", "rotate(45)");
+            
+            // Add first color stripe
+            pattern.append("rect")
+              .attr("width", 5)
+              .attr("height", 10)
+              .attr("transform", "translate(0,0)")
+              .attr("fill", color1);
+            
+            // Add second color stripe
+            pattern.append("rect")
+              .attr("width", 5)
+              .attr("height", 10)
+              .attr("transform", "translate(5,0)")
+              .attr("fill", color2);
+          }
+        });
+      });
+
+      // Debug log
+      console.log("Created patterns:", Object.keys(patternMap).length);
+
       // Draw countries
       svg.append("g")
         .selectAll("path")
@@ -554,9 +622,27 @@
         .join("path")
         .attr("d", path)
         .attr("fill", d => {
-          // The id in the topojson is a string numeric code
           const countryData = countrySpiralData[d.id];
-          return countryData ? getStageColor(countryData.primaryStage) : "#CCCCCC";
+          if (!countryData) return "#CCCCCC"; // No data
+          
+          if (countryData.dualDominant && countryData.secondaryStage) {
+            const pKey = `${countryData.primaryStage}-${countryData.secondaryStage}`;
+            const patternId = patternMap[pKey];
+            
+            // Debug log for specific countries
+            if (d.id === "804") { // Ukraine
+              console.log("Ukraine pattern:", patternId, `url(#${patternId})`);
+            }
+            
+            if (patternId) {
+              return `url(#${patternId})`;
+            } else {
+              console.warn(`No pattern found for: ${pKey}`);
+              return getStageColor(countryData.primaryStage);
+            }
+          } else {
+            return getStageColor(countryData.primaryStage);
+          }
         })
         .attr("stroke", "#fff")
         .attr("stroke-width", 0.5)
@@ -642,8 +728,18 @@
             <div class="w-4 h-4 mr-2 rounded-sm bg-gray-300"></div>
             <span class="text-sm">{t.noData}</span>
           </div>
+          <div class="flex items-center">
+              <div 
+                class="w-4 h-4 mr-2 rounded-sm" 
+                style="background-image: linear-gradient(45deg, #E25A53 50%, #4A72B2 50%);"
+              ></div>
+              <span class="text-sm">
+                {currentLanguage === 'en' ? 'Mixed dominant stages' : 'Blandade dominanta stadier'}
+              </span>
+            </div>
         </div>
       </div>
+
       
       <!-- Country info -->
       <div class="bg-gray-50 p-4 rounded-lg">
@@ -656,43 +752,77 @@
             </h4>
             
             <div class="space-y-2">
-              <!-- Primary Stage -->
-              <div>
-                <p class="text-sm font-medium text-gray-600">{t.stage}:</p>
-                {#if selectedCountry.spiralData?.primaryStage}
+              <!-- Modified to show mixed dominant stages -->
+              {#if selectedCountry.spiralData?.dualDominant}
+                <div>
+                  <p class="text-sm font-medium text-gray-600">
+                    {currentLanguage === 'en' ? 'Mixed Dominant Stages:' : 'Blandade dominanta stadier:'}
+                  </p>
                   <div class="flex items-center mt-1">
-                    <div 
-                      class="w-3 h-3 mr-2 rounded-sm" 
-                      style="background-color: {getStageColor(selectedCountry.spiralData.primaryStage)}"
-                    ></div>
-                    <span class="text-sm capitalize">
-                      {selectedCountry.spiralData.primaryStage} - {stages[selectedCountry.spiralData.primaryStage]?.name[currentLanguage]}
-                    </span>
+                    <!-- Show a combined indicator -->
+                    <div class="flex items-center">
+                      <div 
+                        class="w-3 h-3 mr-1 rounded-sm" 
+                        style="background-color: {getStageColor(selectedCountry.spiralData.primaryStage)}"
+                      ></div>
+                      <span class="text-sm capitalize mr-1">
+                        {selectedCountry.spiralData.primaryStage}
+                      </span>
+                      <span class="mr-1">/</span>
+                      <div 
+                        class="w-3 h-3 mr-1 rounded-sm" 
+                        style="background-color: {getStageColor(selectedCountry.spiralData.secondaryStage)}"
+                      ></div>
+                      <span class="text-sm capitalize">
+                        {selectedCountry.spiralData.secondaryStage}
+                      </span>
+                    </div>
                   </div>
-                {:else}
-                  <p class="text-sm text-gray-500 italic">{t.noData}</p>
-                {/if}
-              </div>
+                  <p class="text-xs text-gray-500 mt-1">
+                    {currentLanguage === 'en' 
+                      ? 'This country has two equally dominant value systems.'
+                      : 'Detta land har två lika dominanta värderingssystem.'}
+                  </p>
+                </div>
+              {:else}
+                <!-- Original display for primary stage when not dual dominant -->
+                <div>
+                  <p class="text-sm font-medium text-gray-600">{t.stage}:</p>
+                  {#if selectedCountry.spiralData?.primaryStage}
+                    <div class="flex items-center mt-1">
+                      <div 
+                        class="w-3 h-3 mr-2 rounded-sm" 
+                        style="background-color: {getStageColor(selectedCountry.spiralData.primaryStage)}"
+                      ></div>
+                      <span class="text-sm capitalize">
+                        {selectedCountry.spiralData.primaryStage} - {stages[selectedCountry.spiralData.primaryStage]?.name[currentLanguage]}
+                      </span>
+                    </div>
+                  {:else}
+                    <p class="text-sm text-gray-500 italic">{t.noData}</p>
+                  {/if}
+                </div>
+                
+                <!-- Secondary Stage only shown if not dual dominant -->
+                <div>
+                  <p class="text-sm font-medium text-gray-600">{t.secondaryStage}:</p>
+                  {#if selectedCountry.spiralData?.secondaryStage}
+                    <div class="flex items-center mt-1">
+                      <div 
+                        class="w-3 h-3 mr-2 rounded-sm" 
+                        style="background-color: {getStageColor(selectedCountry.spiralData.secondaryStage)}"
+                      ></div>
+                      <span class="text-sm capitalize">
+                        {selectedCountry.spiralData.secondaryStage} - {stages[selectedCountry.spiralData.secondaryStage]?.name[currentLanguage]}
+                      </span>
+                    </div>
+                  {:else}
+                    <p class="text-sm text-gray-500 italic">{t.noData}</p>
+                  {/if}
+                </div>
+              {/if}
               
-              <!-- Secondary Stage -->
-              <div>
-                <p class="text-sm font-medium text-gray-600">{t.secondaryStage}:</p>
-                {#if selectedCountry.spiralData?.secondaryStage}
-                  <div class="flex items-center mt-1">
-                    <div 
-                      class="w-3 h-3 mr-2 rounded-sm" 
-                      style="background-color: {getStageColor(selectedCountry.spiralData.secondaryStage)}"
-                    ></div>
-                    <span class="text-sm capitalize">
-                      {selectedCountry.spiralData.secondaryStage} - {stages[selectedCountry.spiralData.secondaryStage]?.name[currentLanguage]}
-                    </span>
-                  </div>
-                {:else}
-                  <p class="text-sm text-gray-500 italic">{t.noData}</p>
-                {/if}
-              </div>
-              
-              <!-- Tertiary Stage (new) -->
+              <!-- Tertiary Stage (shown in either case if it exists) -->
               {#if selectedCountry.spiralData?.tertiaryStage}
                 <div>
                   <p class="text-sm font-medium text-gray-600">{t.tertiaryStage}:</p>
