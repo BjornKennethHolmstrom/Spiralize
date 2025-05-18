@@ -149,13 +149,13 @@
     // Germany
     "276": { primaryStage: 'orange', secondaryStage: 'green', tertiaryStage: 'blue', dualDominant: true, name: { en: 'Germany', sv: 'Tyskland' } },
     // Sweden
-    "752": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', name: { en: 'Sweden', sv: 'Sverige' } },
+    "752": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', dualDominant: true, name: { en: 'Sweden', sv: 'Sverige' } },
     // Norway
-    "578": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', name: { en: 'Norway', sv: 'Norge' } },
+    "578": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', dualDominant: true, name: { en: 'Norway', sv: 'Norge' } },
     // Denmark
-    "208": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', name: { en: 'Denmark', sv: 'Danmark' } },
+    "208": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', dualDominant: true, name: { en: 'Denmark', sv: 'Danmark' } },
     // Finland
-    "246": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', name: { en: 'Finland', sv: 'Finland' } },
+    "246": { primaryStage: 'green', secondaryStage: 'orange', tertiaryStage: 'yellow', dualDominant: true, name: { en: 'Finland', sv: 'Finland' } },
     // Czech Republic
     "203": { primaryStage: 'orange', secondaryStage: 'blue', name: { en: 'Czech Republic', sv: 'Tjeckien' } },
     // Poland
