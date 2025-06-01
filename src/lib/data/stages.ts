@@ -644,91 +644,151 @@ export const stages: Stage[] = [
   {
     id: 'turquoise',
     color: 'Turquoise',
-    focus: { en: 'Collective', sv: 'Kollektiv' },
+    focus: { en: 'Collective and Cosmic', sv: 'Kollektiv och kosmisk' },
     hex: '#40E0D0',
     name: { en: 'Turquoise', sv: 'Turkos' },
-    association: { en: 'Holistic', sv: 'Holistiskt' },
+    association: { en: 'Holistic and Integral', sv: 'Holistiskt och integrerat' },
     essence: {
-      en: 'All is one. Being is sacred. The cosmos is intelligent and we are its embodied expression.',
-      sv: 'Allt är ett. Varandet är heligt. Kosmos är intelligent och vi är dess förkroppsligade uttryck.'
+      en: 'The interdependence of all life and systems. A recognition of profound unity—whether framed as ecological, spiritual, or cosmic. For some, this manifests as sacred reverence; for others, as a scientific or ethical commitment to planetary thriving.',
+      sv: 'Allt livs och systemens ömsesidiga beroende. En erkänsla av djup enhet—oavsett om den uppfattas som ekologisk, andlig eller kosmisk. För vissa tar detta form som helig vördnad; för andra som ett vetenskapligt eller etiskt engagemang för planetens välmående.'
     },
     emergence: {
-      en: 'Turquoise arises when Yellow’s mind surrenders to the heart. It seeks integration not just of systems, but of soul.',
-      sv: 'Turkos uppstår när Guls sinne överlämnas till hjärtat. Den söker integration inte bara av system, utan av själ.'
+      en: 'Turquoise arises when Yellow’s systemic awareness expands to include emotional, spiritual, or existential dimensions. It seeks integration—of knowledge and wisdom, self and whole.',
+      sv: 'Turkos uppstår när Gults systemmedvetenhet expanderar till att inkludera emotionella, andliga eller existentiella dimensioner. Den söker integration—av kunskap och visdom, själv och helhet.'
     },
     keyTraits: {
-      en: ['Holism', 'Mystical awareness', 'Collective upliftment', 'Sacred action', 'Emotional mastery'],
-      sv: ['Helhetssyn', 'Mystisk medvetenhet', 'Kollektivt uppvaknande', 'Heligt handlande', 'Emotionell behärskning']
+      en: [
+        'Holism and systems thinking',
+        'Transpersonal or mystical awareness or Cosmic/Planetary perspective',
+        'Collective upliftment',
+        'Ethical or sacred action',
+        'Integrative emotional mastery'
+      ],
+      sv: [
+        'Helhetssyn och systemtänkande',
+        'Transpersonell eller mystisk medvetenhet eller Kosmisk/planetärt perspektiv',
+        'Kollektivt uppvaknande',
+        'Etiskt eller heligt handlande',
+        'Integrerande emotionell behärskning'
+      ]
     },
     insights: {
-      en: ['We are the Earth dreaming', 'Love and presence are intelligence', 'Everything is already whole'],
-      sv: ['Vi är Jorden som drömmer', 'Kärlek och närvaro är intelligens', 'Allt är redan helt']
+      en: [
+        'Life exists as nested, interdependent systems',
+        'We are the Earth dreaming or We are nature becoming aware of itself',
+        'Love and presence are intelligence or Collaboration is the DNA of survival',
+        'Everything is already whole or Every action ripples through the web'
+      ],
+      sv: [
+        'Livet existerar som kapslade, ömsesidigt beroende system',
+        'Vi är Jorden som drömmer eller Vi är naturen som blir medveten om sig själv',
+        'Kärlek och närvaro är intelligens eller Samarbete är överlevnadens DNA',
+        'Allt är redan helt eller Varje handling vågor genom nätverket'
+      ]
     },
     contributions: {
       en: [
-        "Cultivates planetary and cosmic consciousness",
-        "Embeds sacred presence in leadership and action",
-        "Sees wholeness in the midst of complexity"
+        "Cultivates planetary and cosmic consciousness or Advances global-systems intelligence",
+        "Embeds sacred or ethical presence in leadership and action",
+        "Sees wholeness in complexity or Navigates chaos with emergent wisdom",
+        "Bridges science, spirituality, and activism"
       ],
       sv: [
-        "Främjar planetärt och kosmiskt medvetande",
-        "Integrerar helig närvaro i ledarskap och handling",
-        "Ser helhet mitt i komplexitet"
+        "Främjar planetärt och kosmiskt medvetande eller Utvecklar global systemintelligens",
+        "Integrerar heligt eller etiskt närvaro i ledarskap och handling",
+        "Ser helhet i komplexitet eller Navigerar kaos med emergent visdom",
+        "Bygger broar mellan vetenskap, spiritualitet och aktivism"
       ]
     },
     topValues: {
       en: [
-        "Wholeness",
-        "Global consciousness",
+        "Wholeness and interconnection",
+        "Global and cosmic consciousness",
         "Harmony with natural flows",
-        "Interconnectedness",
-        "Spiritual awareness",
+        "Sacred or systemic interconnectedness",
+        "Spiritual or existential awareness or Planetary stewardship",
         "Collective wisdom"
       ],
       sv: [
-        "Helhet",
-        "Globalt medvetande",
+        "Helhet och sammankoppling",
+        "Globalt och kosmiskt medvetande",
         "Harmoni med naturliga flöden",
-        "Sammankoppling",
-        "Andlig medvetenhet",
+        "Heligt eller systemiskt sammanhang",
+        "Andlig eller existentiell medvetenhet eller Planetärt ansvarstagande",
         "Kollektiv visdom"
       ]
     },
     pitfalls: {
-      en: ['Isolation', 'Spiritual bypassing', 'Cosmic overwhelm', 'Challenges grounding insights in daily life'],
-      sv: ['Isolering', 'Andlig flykt', 'Kosmisk överväldigande', 'Utmaningar att förankra insikter i vardagslivet']
+      en: [
+        'Isolation from practical realities',
+        'Spiritual or intellectual bypassing',
+        'Cosmic overwhelm or paralysis by complexity',
+        'Challenges grounding insights in action'
+      ],
+      sv: [
+        'Isolering från praktiska realiteter',
+        'Andlig eller intellektuell flykt',
+        'Kosmisk överväldigande eller komplexitetsförlamning',
+        'Utmaningar att förankra insikter i handling'
+      ]
     },
     triggers: {
-      en: ['Materialism', 'Overanalysis', 'Competitive ego', 'Cynicism'],
-      sv: ['Materialism', 'Överanalys', 'Tävlingsinriktat ego', 'Cynism']
+      en: [
+        'Materialism reductionism',  
+        'Overanalysis without heart',  
+        'Competitive ego or hyper-individualism',  
+        'Cynicism toward unity',  
+        'Fragmented or exploitative systems',  
+        'Denial of interdependence'  
+      ],
+      sv: [
+        'Materialism reduktionism',  
+        'Överanalys utan hjärta',  
+        'Tävlingsinriktat ego eller hyperindividualism',  
+        'Cynism mot enhet',  
+        'Fragmenterade eller exploaterande system',  
+        'Förnekande av ömsesidigt beroende'  
+      ]
     },
     growthPath: {
-      en: 'Turquoise evolves into Coral when it re-engages with the world as Source, balancing form and formlessness with grounded expression.',
-      sv: 'Turkos utvecklas till Korall när den återknyter till världen som Källan, och balanserar form och formlöshet med förankrat uttryck.'
+      en: 'Turquoise evolves when its holistic awareness becomes embodied and actionable—whether through grounded systemic change, artistic expression, or sacred service. It transcends detachment by co-creating with the intelligence of life.',
+      sv: 'Turkos utvecklas när dess holistiska medvetenhet blir förankrad och handlingsorienterad—antingen genom grundläggande systemförändring, konstnärligt uttryck eller heligt engagemang. Den överskrider avkoppling genom att samskapa med livets intelligens.'
     },
     archetypes: {
-      en: ['Mystics', 'Visionary leaders', 'Healers', 'Sacred technologists', 'Quantum poets'],
-      sv: ['Mystiker', 'Visionära ledare', 'Helare', 'Heliga teknologer', 'Kvantpoeter']
+      en: [
+        'Systems thinkers',
+        'Mystics and philosophers',
+        'Planetary healers',
+        'Sacred or ethical technologists',
+        'Quantum poets',
+        'Integral activists'
+      ],
+      sv: [
+        'Systemtänkare',
+        'Mystiker och filosofer',
+        'Planetära helare',
+        'Heliga eller etiska teknologer',
+        'Kvantpoeter',
+        'Integrala aktivister'
+      ]
     },
     quotes: {
       en: [
-        "All is one — and yet every thread matters.",
-        "I move with the field, not against it.",
+        "All is connected—every thread matters.",
+        "I move with the field or I act as part of the whole",
         "What we heal in ourselves echoes outward.",
-        "I am not the wave. I am the ocean remembering itself.",
-        "The real does not die — the unreal never lived. — Nisargadatta Maharaj"
+        "I am not the wave. I am the ocean remembering itself. or We are stardust rearranged into consciousness",
+        "The real does not die — the unreal never lived. — Nisargadatta Maharaj",
+        "In nature, nothing exists alone — Rachel Carson"
       ],
       sv: [
-        "Allt är ett — och ändå spelar varje tråd roll.",
-        "Jag rör mig med fältet, inte mot det.",
+        "Allt är sammankopplat—varje tråd spelar roll.",
+        "Jag rör mig med fältet eller Jag agerar som en del av helheten",
         "Det vi helar i oss själva genljuder utåt.",
-        "Jag är inte vågen. Jag är havet som minns sig självt.",
-        "Det verkliga dör inte — det overkliga har aldrig levt. — Nisargadatta Maharaj"
+        "Jag är inte vågen. Jag är havet som minns sig självt. eller Vi är stjärnstoft omarrangerat till medvetande",
+        "Det verkliga dör inte — det overkliga har aldrig levt. — Nisargadatta Maharaj",
+        "I naturen finns inget som existerar ensamt. — Rachel Carson"
       ]
-    },
-    transitionQuote: {
-      en: '“I am the wave — and the ocean too.”',
-      sv: '”Jag är vågen — och havet också.”'
     }
   },
   {
