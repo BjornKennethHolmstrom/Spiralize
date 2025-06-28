@@ -116,11 +116,11 @@
         { href: `${base}/insights/spiral-psychology`, label: { en: "🧠 Spiral-Aware Psychology", sv: "🧠 Spiralmedveten Psykologi" } },
         { href: `${base}/insights/global`, label: { en: "🌍 Global Perspectives", sv: "🌍 Globala Perspektiv" } },
         { href: `${base}/insights/governance`, label: { en: "🧭 Conscious Governance", sv: "🧭 Medveten Styrning" } },
-        { href: `${base}/insights/peace`, label: { en: "🕊️ Peace Trough Evolution", sv: "🕊️ Fred Genom Evolution" } },
-        { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI-assistants on the Spiral", sv: "🤖 AI-assistenter på spiralen" } },
+        { href: `${base}/insights/peace`, label: { en: "🕊️ Peace Through Evolution", sv: "🕊️ Fred Genom Evolution" } },
+        { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI & the Spiral", sv: "🤖 AI och spiralen" } },
         { href: `${base}/insights/poetry`, label: { en: "🎙️ Spiral Poetry", sv: "🎙️ Spiralpoesi" } 
 },
-        { href: `${base}/insights/examples`, label: { en: "📚 Spiral Examples", sv: "📚 Spiralexempel" } },
+        { href: `${base}/insights/examples`, label: { en: "📚 Real-World Examples", sv: "📚 Exempel från verkligheten" } },
         { href: `${base}/insights/gallery`, label: { en: "🎭 Character Gallery", sv: "🎭 Karaktärsgalleri"} }
       ]
     },
@@ -133,50 +133,50 @@
         { 
           href: `${base}/guide-personal`, 
           label: { 
-            en: "🌱 Personal Spiral Growth Guide", 
-            sv: "🌱 Personlig Spiral-Utvecklingsguide" 
+            en: "🌱 Evolving Yourself", 
+            sv: "🌱 Utveckla dig själv" 
           }
         },
         { 
           href: `${base}/guide-parenting`, 
           label: { 
-            en: "👶 Parenting & Education Guide", 
-            sv: "👶 Föräldraskap & Utbildning" 
+            en: "👶 Conscious Parenting & Education", 
+            sv: "👶 Medveten föräldraskap och utbildning" 
           }
         },
         { 
           href: `${base}/guide-leadership`, 
             label: { 
               en: "🧭 Coaching & Leadership Toolkit", 
-              sv: "🧭 Coaching- och Ledarskapsverktyg" 
+              sv: "🧭 Coaching- och ledarskapsverktyg" 
             }
         },
         { 
           href: `${base}/guide-organizations`, 
           label: { 
             en: "🏢 Spiralizing Organizations & Communities", 
-            sv: "🏢 Spiralisera Organisationer & Gemenskaper" 
+            sv: "🏢 Spiralisera organisationer och gemenskaper" 
           }
         },
         { 
           href: `${base}/guide-psychological`, 
           label: { 
-            en: "🧠 Spiral-Aware Mental Health Guide", 
-            sv: "🧠 Spiralmedveten Mental Hälsa Guide" 
+            en: "🧠 Spiral-Aware Mental Health & Therapeutic Guide", 
+            sv: "🧠 Spiralmedveten guide för mental hälsa och terapeutisk behandling" 
           }
         },
         { 
           href: `${base}/guide-spiritual`, 
           label: { 
-            en: "🧘 Spiral-Aware Spirituality Guide", 
-            sv: "🧘 Spiralmedveten Andlighetsguide" 
+            en: "🧘 The Spiritual & Mystical Spiral", 
+            sv: "🧘 Den spirituella och mystiska spiralen" 
           }
         },
         { 
           href: `${base}/guide-governance`, 
           label: { 
-            en: "🌍 Spiral-Aware Global Governance Guide", 
-            sv: "🌍 Spiralmedveten Global Styrning" 
+            en: "🌍 Spiral-Aware Global Governance", 
+            sv: "🌍 Spiralmedveten global styrning" 
           }
         }
       ]

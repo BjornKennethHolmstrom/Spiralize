@@ -44,7 +44,7 @@ export const guideTranslations = {
     toolkitSectionsTitle: "Guide Sections"
   },
   sv: {
-    title: "Spiral-medveten Föräldraskap & Utbildningsguide",
+    title: "Spiral-medveten föräldraskaps och utbildningsguide",
     subtitle: "Praktiska verktyg för föräldrar, pedagoger och designers för att främja barns utvecklingstillväxt med hjälp av Spiral Dynamics-principer",
     introduction: "Denna guide stödjer föräldrar, pedagoger och designers i att främja barns utvecklingstillväxt genom att anpassa föräldraskap, undervisning och lärandemiljöer med Spiral Dynamics-stadier, med hjälp av praktiska och medkännande verktyg.",
     downloadPrompt: "Ladda ner den kompletta guiden som PDF:",

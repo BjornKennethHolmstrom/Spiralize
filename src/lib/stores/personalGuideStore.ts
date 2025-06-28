@@ -32,7 +32,7 @@ const allGuideItems: GuideItem[] = [
     id: 'preface',
     title: {
       en: "You Are Not Lost — You Are Becoming",
-      sv: "Du Är Inte Vilse — Du Blir Till"
+      sv: "Du är inte vilse — Du blir till"
     },
     description: {
       en: "A gentle invocation: growth is not linear",
@@ -62,7 +62,7 @@ const allGuideItems: GuideItem[] = [
     number: "02",
     title: {
       en: "When the Old Self No Longer Fits",
-      sv: "När det Gamla Jaget Inte Längre Passar"
+      sv: "När det gamla jaget inte längre passar"
     },
     description: {
       en: "Signs of stage transition (discomfort, dissonance, loss of clarity)",
@@ -76,7 +76,7 @@ const allGuideItems: GuideItem[] = [
     number: "03",
     title: {
       en: "Mapping Your Life Through Spiral Lenses",
-      sv: "Kartlägga Ditt Liv Genom Spiral-Linser"
+      sv: "Kartlägg ditt liv genom spiral-linser"
     },
     description: {
       en: "A journaling + timeline exercise to locate past stages",
@@ -89,7 +89,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-03-spiral-life-mapping-worksheet',
     title: {
       en: "Spiral Life Mapping Worksheet",
-      sv: "Arbetsbladet för Spiral-Livskartläggning"
+      sv: "Arbetsbladet för spiral-livskartläggning"
     },
     description: {
       en: "A practical tool to identify your journey through the developmental stages",
@@ -107,7 +107,7 @@ const allGuideItems: GuideItem[] = [
     number: "04",
     title: {
       en: "Beige – The Instinctual Spark",
-      sv: "Beige – Den Instinktiva Gnistan"
+      sv: "Beige – Den instinktiva gnistan"
     },
     description: {
       en: "Survival, body memory, sensory states",
@@ -120,7 +120,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-04-beige-stabilization-card',
     title: {
       en: "Beige Stabilization Card",
-      sv: "Beige Stabiliseringskort"
+      sv: "Beige stabiliseringskort"
     },
     description: {
       en: "Grounding techniques for instinctual survival states",
@@ -136,7 +136,7 @@ const allGuideItems: GuideItem[] = [
     number: "05",
     title: {
       en: "Purple – The Sacred Circle",
-      sv: "Lila – Den Heliga Cirkeln"
+      sv: "Lila – Den heliga cirkeln"
     },
     description: {
       en: "Myth, ritual, ancestry, family patterns",
@@ -149,7 +149,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-05-purple-practice-card',
     title: {
       en: "Purple Practice Card",
-      sv: "Lila Övningskort"
+      sv: "Lila övningskort"
     },
     description: {
       en: "Rituals and practices for connecting with belonging and tradition",
@@ -165,7 +165,7 @@ const allGuideItems: GuideItem[] = [
     number: "06",
     title: {
       en: "Red – The Fire of Will",
-      sv: "Röd – Viljans Eld"
+      sv: "Röd – Viljans eld"
     },
     description: {
       en: "Autonomy, power, freedom, defiance",
@@ -178,7 +178,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-06-red-embodiment-practice-card',
     title: {
       en: "Red Embodiment Practice Card",
-      sv: "Röd Förkroppsligande Övningskort"
+      sv: "Röd förkroppsligande övningskort"
     },
     description: {
       en: "Exercises for healthy assertion and embodied power",
@@ -194,7 +194,7 @@ const allGuideItems: GuideItem[] = [
     number: "07",
     title: {
       en: "Blue – The Path of Purpose",
-      sv: "Blå – Syftets Väg"
+      sv: "Blå – Syftets väg"
     },
     description: {
       en: "Order, tradition, structure, faith",
@@ -207,7 +207,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-07-blue-personal-code-worksheet',
     title: {
       en: "Blue Personal Code Worksheet",
-      sv: "Blå Personlig Kod Arbetsblad"
+      sv: "Blå personlig kod arbetsblad"
     },
     description: {
       en: "Create your own principles and values framework",
@@ -223,7 +223,7 @@ const allGuideItems: GuideItem[] = [
     number: "08",
     title: {
       en: "Orange – The Climb of Self-Mastery",
-      sv: "Orange – Självbehärskningens Klättring"
+      sv: "Orange – Självbehärskningens klättring"
     },
     description: {
       en: "Goals, growth, agency, strategy",
@@ -236,7 +236,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-08-orange-to-green-reflection-worksheet',
     title: {
       en: "Orange to Green Reflection Worksheet",
-      sv: "Orange till Grön Reflektionsarbetsblad"
+      sv: "Orange till grön reflektionsarbetsblad"
     },
     description: {
       en: "Navigating the transition from achievement to authenticity",
@@ -252,7 +252,7 @@ const allGuideItems: GuideItem[] = [
     number: "09",
     title: {
       en: "Green – The Heart of Connection",
-      sv: "Grön – Kontaktens Hjärta"
+      sv: "Grön – kontaktens hjärta"
     },
     description: {
       en: "Empathy, equality, community, meaning",
@@ -265,7 +265,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-09-green-emotional-boundaries-and-needs-card',
     title: {
       en: "Green Emotional Boundaries and Needs Card",
-      sv: "Grönt Kort för Emotionella Gränser och Behov"
+      sv: "Grönt kort för emotionella gränser och behov"
     },
     description: {
       en: "Tools for maintaining healthy boundaries while staying connected",
@@ -281,7 +281,7 @@ const allGuideItems: GuideItem[] = [
     number: "10",
     title: {
       en: "Yellow – The Integrative View",
-      sv: "Gul – Den Integrativa Vyn"
+      sv: "Gul – Den integrativa vyn"
     },
     description: {
       en: "Systems fluency, meta-awareness",
@@ -294,7 +294,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-10-yellow-kaleidoscope-reflection-tool',
     title: {
       en: "Yellow Kaleidoscope Reflection Tool",
-      sv: "Gult Kalejdoskop Reflektionsverktyg"
+      sv: "Gult kalejdoskop reflektionsverktyg"
     },
     description: {
       en: "Mapping inner ecology and systems understanding",
@@ -310,7 +310,7 @@ const allGuideItems: GuideItem[] = [
     number: "11",
     title: {
       en: "Turquoise – The Living Web",
-      sv: "Turkos – Det Levande Nätet"
+      sv: "Turkos – Det levande nätet"
     },
     description: {
       en: "Interbeing, inner stillness, symbolic attunement",
@@ -323,7 +323,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-11-turquoise-presence-attunement-card',
     title: {
       en: "Turquoise Presence Attunement Card",
-      sv: "Turkost Närvaroavstämningskort"
+      sv: "Turkost närvaroavstämningskort"
     },
     description: {
       en: "Practices for embodying presence and planetary awareness",
@@ -339,7 +339,7 @@ const allGuideItems: GuideItem[] = [
     number: "12",
     title: {
       en: "Coral – The Edge of Emergence",
-      sv: "Korall – Framväxtens Kant"
+      sv: "Korall – framväxtens kant"
     },
     description: {
       en: "Non-linear, initiatory, liminal selfhood",
@@ -352,7 +352,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-12-coral-emergence-altar-template',
     title: {
       en: "Coral Emergence Altar Template",
-      sv: "Korall Framväxt Altarmall"
+      sv: "Korall framväxt altarmall"
     },
     description: {
       en: "Creating sacred space for transformation and emergence",
@@ -370,7 +370,7 @@ const allGuideItems: GuideItem[] = [
     number: "13",
     title: {
       en: "Relationships Across Stages",
-      sv: "Relationer Över Stadier"
+      sv: "Relationer över stadier"
     },
     description: {
       en: "Understanding value collisions in love, family, and friendship",
@@ -383,7 +383,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-13-stage-mismatch-reflection-worksheet',
     title: {
       en: "Stage Mismatch Reflection Worksheet",
-      sv: "Reflektion över Stadiemismatch Arbetsblad"
+      sv: "Reflektion över stadiemismatch arbetsblad"
     },
     description: {
       en: "Navigating value gaps in relationships",
@@ -399,7 +399,7 @@ const allGuideItems: GuideItem[] = [
     number: "14",
     title: {
       en: "Life Transitions as Spiral Invitations",
-      sv: "Livets Övergångar som Spirala Inbjudningar"
+      sv: "Livets övergångar som spirala inbjudningar"
     },
     description: {
       en: "Navigating job shifts, crises, awakenings, and losses",
@@ -412,7 +412,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-14-spiral-transition-journal-template',
     title: {
       en: "Spiral Transition Journal Template",
-      sv: "Mall för Spiral-Övergångsjournal"
+      sv: "Mall för spiral-övergångsjournal"
     },
     description: {
       en: "Guided journaling for navigating life transitions",
@@ -428,7 +428,7 @@ const allGuideItems: GuideItem[] = [
     number: "15",
     title: {
       en: "The Inner Spiral: Many Selves, One Being",
-      sv: "Den Inre Spiralen: Många Själv, Ett Varande"
+      sv: "Den inre spiralen: Många själv, Ett varande"
     },
     description: {
       en: "You contain all stages",
@@ -444,7 +444,7 @@ const allGuideItems: GuideItem[] = [
     number: "16",
     title: {
       en: "Ultraviolet, Indigo, and Clear",
-      sv: "Ultraviolett, Indigo och Klar"
+      sv: "Ultraviolett, indigo och klar"
     },
     description: {
       en: "The post-symbolic terrain",
@@ -457,7 +457,7 @@ const allGuideItems: GuideItem[] = [
     id: 'chapter-16-spiral-dance-visualization',
     title: {
       en: "Spiral Dance Visualization",
-      sv: "Spiral-Dansvisualisering"
+      sv: "Spiral-dansvisualisering"
     },
     description: {
       en: "Guided meditation for connecting with the infinite spiral of consciousness",
@@ -473,7 +473,7 @@ const allGuideItems: GuideItem[] = [
     number: "17",
     title: {
       en: "The Spiral and the Soul's Journey",
-      sv: "Spiralen och Själens Resa"
+      sv: "Spiralen och själens resa"
     },
     description: {
       en: "No stage is final",
@@ -503,7 +503,7 @@ const allGuideItems: GuideItem[] = [
     number: "B",
     title: {
       en: "Transition Symptom Map",
-      sv: "Karta över Övergångssymptom"
+      sv: "Karta över övergångssymptom"
     },
     description: {
       en: "Understanding psychological and physical symptoms during stage transitions",
@@ -517,7 +517,7 @@ const allGuideItems: GuideItem[] = [
     number: "C",
     title: {
       en: "Recommended Reading & Media",
-      sv: "Rekommenderad Läsning & Media"
+      sv: "Rekommenderad läsning & media"
     },
     description: {
       en: "Books, articles, podcasts, and videos for further exploration",
@@ -531,7 +531,7 @@ const allGuideItems: GuideItem[] = [
     number: "D",
     title: {
       en: "Spiral Life Timeline Template",
-      sv: "Mall för Spiral-Livstidslinje"
+      sv: "Mall för spiral-livstidslinje"
     },
     description: {
       en: "Where did you feel most 'yourself'? Where did you feel trapped?",
@@ -545,7 +545,7 @@ const allGuideItems: GuideItem[] = [
 // Translations for guide elements
 const guideTranslations = {
   en: {
-    title: "Spiral for Personal Growth & Life Transitions",
+    title: "Evolving Yourself: Spiral for Personal Growth & Life Transitions",
     subtitle: "A Self-Discovery Guide Through the Stages of Human Development",
     introduction: "This guide will help you navigate life transitions, internal transformations, and developmental thresholds using the Spiral Dynamics framework — from Beige to Coral, with glimpses beyond.",
     downloadPrompt: "Download the complete guide as PDF:",
@@ -575,34 +575,34 @@ const guideTranslations = {
     resources: "Worksheets & Resources"
   },
   sv: {
-    title: "Spiral för Personlig Tillväxt & Livsövergångar",
-    subtitle: "En Självupptäcktsguide Genom Stadierna av Mänsklig Utveckling",
+    title: "Utveckla dig själv: Spiral för personlig tillväxt & livsövergångar",
+    subtitle: "En självupptäcktsguide genom stadierna av mänsklig utveckling",
     introduction: "Denna guide hjälper dig att navigera livsövergångar, inre förändringar och utvecklingströsklar med hjälp av Spiral Dynamics-ramverket — från Beige till Korall, med glimtar bortom.",
     downloadPrompt: "Ladda ner hela guiden som PDF:",
     downloadButton: "Ladda ner PDF (Svenska)",
     tableOfContentsTitle: "Innehållsförteckning",
     sectionsTitle: {
       preface: "Förord",
-      partI: "Del I: Möta Spiralen Inom Dig",
-      partII: "Del II: Vandra Spiralen — En Steg-för-Steg Guide",
-      partIII: "Del III: Integrera Spiralen i Vardagen",
-      partIV: "Del IV: Spiral-Horisonter — Glimtar Bortom Kartan",
+      partI: "Del I: Möta spiralen inom dig",
+      partII: "Del II: Vandra spiralen — En steg-för-steg guide",
+      partIII: "Del III: Integrera spiralen i vardagen",
+      partIV: "Del IV: Spiral-horisonter — Glimtar bortom kartan",
       appendices: "Bilagor"
     },
     loading: "Laddar innehåll...",
     error: "Fel vid laddning av innehåll.",
     tableOfContents: "Innehållsförteckning",
-    next: "Nästa Kapitel",
-    previous: "Föregående Kapitel",
+    next: "Nästa kapitel",
+    previous: "Föregående kapitel",
     chapterText: "Kapitel",
     appendixText: "Bilaga",
     worksheetText: "Arbetsblad",
     cardText: "Övningskort",
     templateText: "Mall",
     toolText: "Reflektionsverktyg",
-    visualizationText: "Guidad Visualisering",
+    visualizationText: "Guidad visualisering",
     comingSoon: "Innehåll kommer snart",
-    resources: "Arbetsblad & Resurser"
+    resources: "Arbetsblad och resurser"
   }
 };
 
