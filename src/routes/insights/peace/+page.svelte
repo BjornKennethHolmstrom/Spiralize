@@ -135,7 +135,7 @@
         title: "Case Study: South Africa's Peace Journey",
         subtitle: "A Multi-Stage Approach to Reconciliation",
         content: "South Africa's Truth and Reconciliation Commission blended Purple's Ubuntu philosophy, Blue's justice frameworks, Green's inclusion of all voices, and Yellow's systems thinking to heal post-apartheid divides. By acknowledging multiple worldviews and developmental stages, this process created space for genuine healing and transformation.",
-        learnMore: "Learn more about this and other case studies at globalgovernanceframework.org"
+        learnMore: "Learn more about this and other case studies at globalgovernanceframeworks.org"
       },
       peaceTool: {
         title: "Where Are You on the Peace Spiral?",
@@ -236,7 +236,7 @@
         title: "Fallstudie: Sydafrikas Fredsresa",
         subtitle: "Ett Flerstadie-Tillvägagångssätt för Försoning",
         content: "Sydafrikas Sannings- och försoningskommission blandade Purple's Ubuntu-filosofi, Blue's rättviseramverk, Green's inkludering av alla röster, och Yellow's systemtänkande för att läka post-apartheid klyftor. Genom att erkänna flera världsbilder och utvecklingsstadier skapade denna process utrymme för äkta läkning och transformation.",
-        learnMore: "Lär dig mer om detta och andra fallstudier på globalgovernanceframework.org"
+        learnMore: "Lär dig mer om detta och andra fallstudier på globalgovernanceframeworks.org"
       },
       peaceTool: {
         title: "Var Befinner Du Dig på Fredsspiralen?",
@@ -454,7 +454,7 @@
       
         <div class="mt-4 text-center">
           <a 
-            href="https://globalgovernanceframework.org" 
+            href="https://globalgovernanceframeworks.org" 
             target="_blank" 
             rel="noopener noreferrer"
             class="text-purple-600 hover:text-purple-800 font-medium inline-flex items-center"
