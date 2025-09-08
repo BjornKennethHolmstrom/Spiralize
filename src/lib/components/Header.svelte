@@ -118,6 +118,7 @@
         { href: `${base}/insights/governance`, label: { en: "🧭 Conscious Governance", sv: "🧭 Medveten Styrning" } },
         { href: `${base}/insights/peace`, label: { en: "🕊️ Peace Through Evolution", sv: "🕊️ Fred Genom Evolution" } },
         { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI & the Spiral", sv: "🤖 AI och spiralen" } },
+        { href: `${base}/insights/investing`, label: { en: "💰 Investing & the Spiral", sv: "💰 Investering och spiralen" } },
         { href: `${base}/insights/poetry`, label: { en: "🎙️ Spiral Poetry", sv: "🎙️ Spiralpoesi" } 
 },
         { href: `${base}/insights/examples`, label: { en: "📚 Real-World Examples", sv: "📚 Exempel från verkligheten" } },
@@ -342,7 +343,7 @@
                         on:click|stopPropagation={closeDropdowns}
                       >
                         {child.label[currentLanguage]}
-                        {#if child.href.includes('/poetry') || child.href.includes('/examples') || child.href.includes('/gallery')}
+                        {#if child.href.includes('/investing')}
                           <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                             {currentLanguage === 'en' ? 'New' : 'Ny'}
                           </span>
@@ -514,7 +515,7 @@
                           on:touchstart|stopPropagation={handleMobileLinkClick}
                         >
                           {child.label[currentLanguage]}
-                          {#if child.href.includes('/poetry') || child.href.includes('/examples') || child.href.includes('/gallery')}
+                          {#if child.href.includes('/investing')}
                             <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                               {currentLanguage === 'en' ? 'New' : 'Ny'}
                             </span>
