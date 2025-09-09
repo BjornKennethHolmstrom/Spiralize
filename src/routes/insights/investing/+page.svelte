@@ -54,23 +54,39 @@
         },
         red: {
           title: "Impulsive Opportunist",
-          subtitle: "The 'Wolf of Wall Street' & Raw Opportunism", 
-          description: "The market is a battlefield or casino. It's not for building wealth; it's for taking wealth from others. Capital is a weapon to be used for conquest and display.",
-          approach: "Exploitation and Conquest",
-          keyQuestion: "What can I grab right now to win, get rich, and show off?",
+          subtitle: "Unconstrained Maximization - Pure Power and Immediate Gratification",
+          description: "The world is a zero-sum jungle where 'might makes right.' Red represents the simplest, most brutal optimization: maximizing personal power and pleasure with minimal constraints. This is predatory behavior that destroys trust, relationships, and ultimately leads to self-destruction.",
+          approach: "Unconstrained Maximization (No Ethical or Strategic Limits)",
+          keyQuestion: "What can I grab right now to win, dominate, and feel good?",
+          optimizationFunction: "Maximize f(My Power, My Pleasure) subject to only fear of immediate consequences",
           strategies: [
-            "Pump and dump schemes - inflating cheap stocks through misleading promotion",
-            "YOLO trades - concentrating all capital on extremely high-risk bets for status",
-            "Exploiting others - seeing market participants as 'marks' to be outsmarted",
-            "Display of conquest - profits used for conspicuous consumption and status symbols"
+            "Predatory opportunism - exploiting any weakness or advantage for immediate gain",
+            "Pump and dump schemes - manipulating markets through deception and hype",
+            "YOLO trading - concentrating everything on high-risk bets for thrill and status",
+            "Hostile exploitation - treating all market participants as prey to be conquered"
+          ],
+          strengths: [
+            "Decisive action - no hesitation or analysis paralysis when opportunities arise",
+            "Breaking through barriers - willingness to challenge established power structures",
+            "Raw energy - provides the ego-strength that later stages can channel productively",
+            "Immediate results - can achieve rapid gains in the short term"
           ],
           limitations: [
-            "Complete lack of strategy - purely reactive and short-term",
-            "Inevitable self-destruction through catastrophic financial ruin",
-            "Burns all bridges through exploitation",
-            "Often leads to legal prosecution for fraud and market manipulation"
+            "Inevitable self-destruction - unsustainable behavior leads to catastrophic losses",
+            "Complete lack of strategy - purely reactive with no long-term planning capacity",
+            "Destroys all relationships - burns bridges through exploitation and betrayal",
+            "Legal and ethical violations - frequently crosses into fraud and market manipulation"
           ],
-          warning: "This describes predatory and high-risk behavior that carries extremely high risk of total financial loss and legal consequences."
+          developmentalEvolution: [
+            "Red's boldness + Blue's rules = disciplined entrepreneurship",
+            "Red's risk-appetite + Orange's strategy = breakthrough innovation", 
+            "Red's power-drive + Green's values = social entrepreneurship",
+            "Red's energy properly channeled becomes the fuel for higher-stage achievements"
+          ],
+          keyInsight: "Red is the essential ego-emergence that breaks free from tribal constraints, but it must evolve quickly. The raw power-drive becomes the foundation for Blue's discipline and Orange's strategic achievement when properly developed.",
+          developmentalRole: "Represents the crucial emergence of individual will and self-assertion, but this energy must be channeled through rules (Blue) and strategy (Orange) to become constructive rather than destructive.",
+          realWorldConnection: "Pump-and-dump schemes, insider trading, predatory lending, hostile takeovers driven by conquest rather than strategy, casino-style day trading",
+          criticalWarning: "This behavior pattern is inherently destructive and often illegal. It represents a developmental stage to be transcended, not emulated. Understanding Red helps recognize and avoid these patterns in oneself and others."
         },
         blue: {
           title: "Rule-Based Investor",
@@ -320,6 +336,9 @@
         keyQuestion: "Key Question",
         optimizationFunction: "Optimization Function",
         keyInsight: "Key Insight",
+        developmentalEvolution: "How Red Energy Can Evolve",
+        developmentalRole: "Developmental Role",
+        criticalWarning: "Critical Warning",
         systemTransformation: "System Transformation",
         differentiators: "Key Differentiators",
         whyCurrentlyTheoretical: "Why Currently Theoretical",
@@ -381,24 +400,40 @@
           "note": "Detta beskriver ett förmodernt, släktskapsbaserat utbytessystem, inte en hållbar strategi för moderna finansmarknader."
         },
         "red": {
-          "title": "Impulsiv opportunist",
-          "subtitle": "'Wolf of Wall Street' & Rå opportunism",
-          "description": "Marknaden är ett slagfält eller ett kasino. Den är inte till för att bygga förmögenhet; den är till för att ta förmögenhet från andra. Kapital är ett vapen som ska användas för erövring och uppvisning.",
-          "approach": "Exploatering och erövring",
-          "keyQuestion": "Vad kan jag roffa åt mig just nu för att vinna, bli rik och visa upp mig?",
-          "strategies": [
-            "Pump-and-dump-upplägg - att blåsa upp billiga aktier genom vilseledande marknadsföring",
-            "YOLO-affärer - att koncentrera allt kapital på extremt högrisksatsningar för status",
-            "Utnyttja andra - att se marknadsdeltagare som 'offer' att överlista",
-            "Uppvisning av erövring - vinster används för iögonfallande konsumtion och statussymboler"
-          ],
-          "limitations": [
-            "Total brist på strategi - rent reaktivt och kortsiktigt",
-            "Oundviklig självförstörelse genom katastrofal finansiell ruin",
-            "Bränner alla broar genom exploatering",
-            "Leder ofta till rättsliga åtal för bedrägeri och marknadsmanipulation"
-          ],
-          "warning": "Detta beskriver ett rovdjursliknande och högriskbeteende som medför extremt hög risk för total finansiell förlust och rättsliga konsekvenser."
+            "title": "Impulsiv opportunist",
+            "subtitle": "Obegränsad maximering - ren makt och omedelbar tillfredsställelse",
+            "description": "Världen är en nollsummedjungel där 'makt ger rätt'. Röd representerar den enklaste, mest brutala optimeringen: att maximera personlig makt och njutning med minimala begränsningar. Detta är ett rovdjursbeteende som förstör förtroende, relationer och slutligen leder till självförstörelse.",
+            "approach": "Obegränsad maximering (inga etiska eller strategiska gränser)",
+            "keyQuestion": "Vad kan jag roffa åt mig just nu för att vinna, dominera och må bra?",
+            "optimizationFunction": "Maximera f(Min Makt, Min Njutning) endast begränsat av rädsla för omedelbara konsekvenser",
+            "strategies": [
+                "Rovdjurslik opportunism - att utnyttja varje svaghet eller fördel för omedelbar vinning",
+                "Pump-and-dump-upplägg - att manipulera marknader genom bedrägeri och hajper",
+                "YOLO-handel - att satsa allt på högriskinvesteringar för spänning och status",
+                "Fientligt utnyttjande - att behandla alla marknadsaktörer som byten att erövra"
+            ],
+            "strengths": [
+                "Beslutsamt agerande - ingen tvekan eller analysförlamning när möjligheter uppstår",
+                "Genombrott av barriärer - vilja att utmana etablerade maktstrukturer",
+                "Rå energi - ger den egostyrka som senare stadier kan kanalisera produktivt",
+                "Omedelbara resultat - kan uppnå snabba vinster på kort sikt"
+            ],
+            "limitations": [
+                "Oundviklig självförstörelse - ohållbart beteende leder till katastrofala förluster",
+                "Fullständig brist på strategi - rent reaktiv utan långsiktig planeringsförmåga",
+                "Förstör alla relationer - bränner broar genom utnyttjande och svek",
+                "Legala och etiska överträdelser - övergår ofta i bedrägeri och marknadsmanipulation"
+            ],
+            "developmentalEvolution": [
+                "Röds djärvhet + Blås regler = disciplinerat entreprenörskap",
+                "Röds riskaptit + Oranges strategi = banbrytande innovation",
+                "Röds maktdrivkraft + Gröns värderingar = socialt entreprenörskap",
+                "Röds energi, korrekt kanaliserad, blir bränslet för prestationer på högre stadier"
+            ],
+            "keyInsight": "Röd är den essentiella framväxten av egot som bryter sig loss från stambegränsningar, men den måste utvecklas snabbt. Den råa maktdrivkraften blir grunden för Blås disciplin och Oranges strategiska prestationer när den utvecklas korrekt.",
+            "developmentalRole": "Representerar den avgörande framväxten av individuell vilja och självförverkligande, men denna energi måste kanaliseras genom regler (Blå) och strategi (Orange) för att bli konstruktiv snarare än destruktiv.",
+            "realWorldConnection": "Pump-and-dump-upplägg, insiderhandel, ockerutlåning, fientliga uppköp drivna av erövringslust snarare än strategi, dagshandel i kasinostil",
+            "criticalWarning": "Detta beteendemönster är i sig destruktivt och ofta olagligt. Det representerar ett utvecklingsstadium att överskrida, inte att efterlikna. Att förstå Röd hjälper till att känna igen och undvika dessa mönster hos sig själv och andra."
         },
         "blue": {
             "title": "Regelbaserad investerare",
@@ -648,6 +683,9 @@
         keyQuestion: "Nyckelfråga",
         optimizationFunction: "Optimeringsfunktion",
         keyInsight: "Nyckelinsikt",
+        developmentalEvolution: "Hur röd energi kan utvecklas",
+        developmentalRole: "Utvecklingsroll",
+        criticalWarning: "Kritisk varning",
         systemTransformation: "Systemtransformation",
         differentiators: "Nyckeldifferentialer",
         whyCurrentlyTheoretical: "Varför teoretiskt just nu",
@@ -992,6 +1030,50 @@
                   </li>
                 {/each}
               </ul>
+            </div>
+          {/if}
+
+          <!-- Developmental Evolution (for Red) -->
+          {#if stageData.developmentalEvolution}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">{t.sectionHeaders.developmentalEvolution}</h4>
+              <ul class="space-y-3">
+                {#each stageData.developmentalEvolution as evolution}
+                  <li class="flex items-start">
+                    <span class="text-green-600 text-lg mr-2">→</span>
+                    <span class="text-gray-700">{evolution}</span>
+                  </li>
+                {/each}
+              </ul>
+            </div>
+          {/if}
+
+          <!-- Developmental Role (for Red) -->
+          {#if stageData.developmentalRole}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-indigo-800 mb-3">{t.sectionHeaders.developmentalRole}</h4>
+              <div class="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-400">
+                <p class="text-gray-700 text-sm">{stageData.developmentalRole}</p>
+              </div>
+            </div>
+          {/if}
+
+          <!-- Critical Warning (for Red) -->
+          {#if stageData.criticalWarning}
+            <div class="mb-8">
+              <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h4 class="text-sm font-medium text-red-800">{t.sectionHeaders.criticalWarning}</h4>
+                    <p class="mt-2 text-sm text-red-700">{stageData.criticalWarning}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           {/if}
 
