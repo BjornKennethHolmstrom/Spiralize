@@ -141,6 +141,7 @@
             "Short-termism - quarterly pressure sacrifices long-term sustainability",
             "Stakeholder instrumentalization - people and environment seen as inputs, not inherently valuable"
           ],
+          systemicImpactNote: "While individually rational and socially accepted, Orange's single-minded focus on profit maximization has contributed to systemic challenges including climate change, wealth inequality, and short-term thinking that externalizes costs onto society and future generations. Understanding Orange helps us recognize when 'business as usual' may need evolution.",
           realWorldConnection: "Mainstream finance, index funds based on performance, hedge funds using algorithms for absolute returns"
         },
         green: {
@@ -488,6 +489,7 @@
                 "Kortsiktighet - kvartalsvis press offrar långsiktig hållbarhet",
                 "Instrumentalisering av intressenter - människor och miljö ses som indata, inte som inneboende värdefulla"
             ],
+            "systemicImpactNote": "Även om det är individuellt rationellt och socialt accepterat, har Oranges ensidiga fokus på vinstmaximering bidragit till systemiska utmaningar som klimatförändringar, förmögenhetsklyftor och kortsiktigt tänkande som externaliserar kostnader på samhället och framtida generationer. Att förstå Orange hjälper oss att inse när 'business as usual' kan behöva utvecklas.",
             "realWorldConnection": "Traditionell finans, indexfonder baserade på prestation, hedgefonder som använder algoritmer för absolut avkastning"
         },
         "green": {
@@ -1104,6 +1106,25 @@
                   </li>
                 {/each}
               </ul>
+            </div>
+          {/if}
+
+          <!-- Systemic Impact Note (for Orange) -->
+          {#if stageData.systemicImpactNote}
+            <div class="mb-8">
+              <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-amber-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h4 class="text-sm font-medium text-amber-800">{t.sectionHeaders.systemicImpactNote}</h4>
+                    <p class="mt-2 text-sm text-amber-700">{stageData.systemicImpactNote}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           {/if}
 
