@@ -99,10 +99,11 @@
         },
         orange: {
           title: "Strategic Achiever",
-          subtitle: "Mainstream Investing & The Drive for Success",
-          description: "The market is a game to be mastered. The primary goal is to outperform - to beat the market, beat inflation, and beat other investors. Capital is a tool for strategic growth.",
-          approach: "Analysis and Optimization",
+          subtitle: "Single-Objective Optimization - Maximize Returns",
+          description: "The market is a complex but understandable machine. Business and investing involve finding the most efficient levers to maximize profit. This is elegant single-objective optimization: shareholders are primary, other stakeholders are constraints or inputs to the profit-maximization function.",
+          approach: "Single-Objective Optimization",
           keyQuestion: "What is the optimal strategy to maximize my risk-adjusted returns?",
+          optimizationFunction: "Maximize f(Profit) subject to legal and minimal ethical constraints",
           strategies: [
             "Strategic analysis - fundamental and technical analysis to find undervalued assets",
             "Modern Portfolio Theory - mathematical optimization of returns for given risk levels",
@@ -110,92 +111,109 @@
             "Pragmatic opportunism - will invest anywhere if the numbers work"
           ],
           strengths: [
+            "Clarity & focus - single, measurable goal eliminates confusion",
             "Effectiveness & innovation - drives unprecedented wealth creation",
-            "Objectivity - clear, measurable goals free from emotion",
             "Sophistication - advanced tools for risk management and analysis",
-            "Meritocracy - rewards competence and strategic thinking"
+            "Efficiency - streamlined decision-making around clear objective"
           ],
           limitations: [
             "Externalities blindness - brilliant at private costs/benefits, blind to social/environmental costs",
-            "Short-termism - quarterly pressure sacrifices long-term investment",
-            "Instrumental relationships - people and resources seen as tools for gain"
+            "Reductionism - treating complex systems as simple profit machines",
+            "Short-termism - quarterly pressure sacrifices long-term sustainability",
+            "Stakeholder instrumentalization - people and environment seen as inputs, not inherently valuable"
           ],
           realWorldConnection: "Mainstream finance, index funds based on performance, hedge funds using algorithms for absolute returns"
         },
         green: {
           title: "Ethically Conscious Investor", 
-          subtitle: "Investing with Values",
-          description: "The goal is to align one's capital with one's values to create a more fair, peaceful, and sustainable world. The primary question is whether a company is 'good' or 'bad' according to ethical standards.",
-          approach: "Screening and Selection",
-          keyQuestion: "Is this company good or bad? Does it harm people or the planet?",
+          subtitle: "Value-Driven Constraints - Profit Within Ethical Boundaries",
+          description: "The world is a community that needs healing from Orange's exploitative 'win-lose' mindset. Green doesn't optimize multiple objectives like Yellow, but instead imposes strict ethical filters on traditional profit-seeking, creating 'good' and 'bad' categories for investment decisions.",
+          approach: "Value-Driven Constraint on Profit Maximization",
+          keyQuestion: "Is this company good or bad according to our values? Only then: will it make money?",
+          optimizationFunction: "Maximize f(Profit) subject to Values Constraint = TRUE",
           strategies: [
-            "Negative screening - excluding harmful industries (fossil fuels, tobacco, weapons)",
-            "Positive screening - selecting companies with strong ESG performance or B-Corp certification", 
-            "ESG score reliance - using environmental, social, governance ratings to guide decisions",
-            "Values alignment - ensuring investments match personal/community ethics"
+            "Negative screening (exclusion) - 'Do not invest in companies that harm our community (the world)'",
+            "Positive screening (inclusion) - 'Do invest in companies that help our community'", 
+            "ESG score reliance - using ethical ratings as primary filter before financial analysis",
+            "Values-first methodology - companies must pass values test before profit evaluation"
           ],
           strengths: [
-            "Accessibility - ESG funds widely available through most brokers",
-            "Clarity - 'do no harm' principle is emotionally resonant and clear",
-            "Market influence - forces corporate transparency and sustainability reporting",
-            "Community - creates sense of values-aligned belonging"
+            "Moral clarity - clear ethical boundaries provide decision-making framework",
+            "Community alignment - creates sense of shared values and identity",
+            "Market influence - drives corporate transparency and sustainability reporting",
+            "Accessibility - easy to understand and implement screening criteria"
           ],
           limitations: [
-            "Binary thinking - oversimplified 'good vs bad' dichotomy",
-            "Groupthink - ethics determined by group consensus, stifling dissent",
-            "Focus on symptoms - avoiding 'bad' companies vs. investing in systemic solutions",
-            "The 'brown' market - divested shares simply go to non-ethical investors"
+            "Black-and-white thinking - creates rigid 'good vs bad' categories that miss nuance",
+            "Unintended consequences - divestment may not create actual systemic change, just portfolio 'purity'",
+            "Suboptimization - focuses on minimizing harm rather than maximizing holistic good",
+            "Surface-level indicators - may rely on PR and sentiment rather than deep systemic impact"
           ],
-          realWorldConnection: "ESG funds, SRI (Socially Responsible Investing), B-Corp investments, fossil fuel divestment movements"
+          keyInsight: "Green introduces crucial values into investing but operates through exclusion/inclusion filters rather than true multi-objective optimization. It constrains the Orange profit function rather than fundamentally reimagining it.",
+          realWorldConnection: "ESG funds, SRI (Socially Responsible Investing), fossil fuel divestment, faith-based investment screens, B-Corp focused portfolios"
         },
         yellow: {
           title: "Systemic Investor",
-          subtitle: "Investing for Systemic Impact", 
-          description: "Moves from ethics to effectiveness, asking: 'How does this company function within the larger system?' The goal is identifying leverage points where small interventions create widespread positive change.",
-          approach: "Integration and Influence",
-          keyQuestion: "What are the second and third-order consequences of this company's success? Does its business model solve root cause problems?",
+          subtitle: "Multi-Objective Optimization - Systemic Health & Returns",
+          description: "The world is a complex, interconnected, evolving system. A business or investment is a node within multiple nested systems. Success requires optimizing for the health of the entire system, recognizing that long-term financial viability depends on environmental, social, and systemic health.",
+          approach: "Multi-Objective Optimization",
+          keyQuestion: "How do we optimize for profit THROUGH systemic health and long-term viability?",
+          optimizationFunction: "Optimize f(Profit, Planetary Health, Social Equity, Systemic Resilience, Learning & Adaptation)",
           strategies: [
-            "Systems-positive investing - seeking companies that provide systemic solutions even in 'bad' sectors",
-            "Embrace of necessary paradox - comfortable holding contradictory positions for systemic function",
-            "Shareholder engagement - using ownership to change companies from within rather than just divesting",
-            "Focus on feedback loops - evaluating companies' capacity to learn, self-correct, and adapt"
+            "Systems-positive investing - seeking companies that solve systemic problems profitably",
+            "Embracing paradox - comfortable holding contradictory positions for systemic function",
+            "Stakeholder integration - all stakeholders seen as part of holistic system to optimize",
+            "Emergent opportunities - finding investments where multiple objectives align synergistically"
           ],
           strengths: [
-            "Pragmatism - focuses on what actually works to create change",
-            "High leverage - targets root causes for multiplier effects",
-            "Adaptability - flexible strategies as conditions change",
-            "Resilience - comfort with paradox allows portfolio to weather different scenarios"
+            "Resilience - optimizes for long-term viability across multiple dimensions",
+            "Innovation catalyst - seeks breakthrough solutions that serve multiple objectives",
+            "Adaptive capacity - can navigate complexity and changing conditions",
+            "Systemic impact - targets leverage points for maximum positive change"
           ],
           limitations: [
-            "Cognitive demand - requires significant research and systems knowledge",
-            "Risk of systems arrogance - belief that one can accurately model complex systems",
-            "Emotional detachment - cold functionality can overlook human suffering",
-            "Complexity paralysis - can become too complex to execute effectively"
+            "Cognitive complexity - requires significant analytical and systems thinking capacity",
+            "Slower decisions - multi-objective optimization is inherently more complex",
+            "Measurement challenges - harder to quantify success across multiple dimensions",
+            "Stakeholder management - balancing competing objectives creates ongoing tension"
           ],
-          realWorldConnection: "Impact investing, thematic ETFs (circular economy, water infrastructure), activist shareholder funds, systems-focused venture capital"
+          keyInsight: "Profit shifts from being the goal to being the lifeblood that enables pursuit of other objectives. The question becomes: 'How do we design systems that generate profit through purpose?'",
+          realWorldConnection: "Impact investing, B-Corp investments, ESG integration (when done systemically), regenerative finance, stakeholder capitalism initiatives"
         },
         turquoise: {
-          title: "Planetary Steward (Theoretical)",
-          subtitle: "The Lens of Holistic Stewardship",
-          description: "Capital is seen as circulating lifeblood of the planetary system. The goal is to align capital flows with the fundamental needs of the planetary ecosystem for long-term viability and flourishing.",
-          approach: "Holistic Capital Allocation",
-          keyQuestion: "What does the Earth need? How can capital nourish the entire system?",
-          concepts: [
-            "Planetary organs investing - allocating capital by systemic function (immune system, nervous system, metabolic system)",
-            "Dissolution of ROI - primary returns measured in planetary health metrics rather than financial returns",
-            "Capital as healing force - directing resources toward healing fractures in planetary systems"
+          title: "Planetary Steward & System Transformer",
+          subtitle: "Holistic Optimization - Changing the Game Itself",
+          description: "Extends Yellow's multi-objective optimization but makes planetary health the central organizing principle. Turquoise doesn't just optimize within the current system—it actively works to transform the entire financial system toward holistic flourishing. The business/investment becomes a conscious expression of planetary healing.",
+          approach: "Holistic System Transformation",
+          keyQuestion: "How do we transform the entire economic system to make holistic flourishing the fundamental operating principle?",
+          optimizationFunction: "Optimize f(Holistic Flourishing) where planetary health, human wellbeing, economic vitality, and wisdom are inseparable facets of one reality",
+          systemTransformation: [
+            "Building new infrastructure - for-benefit corporations, planetary health exchanges, regenerative financial instruments",
+            "Creating coalitions of the willing - sovereign wealth funds, foundations operating under new principles",
+            "Developing integral metrics - True Cost Accounting, Planetary Boundaries Dashboards, Net Positivity measures",
+            "Legal system advocacy - making planetary stewardship a legal duty, not just nice-to-have"
           ],
-          whyTheoretical: [
-            "No existing infrastructure - current systems built on competition and profit, not planetary stewardship",
-            "Collective action problem - requires global cooperation that doesn't currently exist",
-            "Unclear mechanisms - compelling vision but no viable implementation strategy within current system"
+          keyInsight: "Moves from 'playing the game better' (Yellow) to 'changing the game itself.' Views current financial system as fundamentally broken and works to design new rules, metrics, and goals aligned with planetary health.",
+          differentiators: [
+            "Planetary health as foundation, not variable - the ultimate substrate for all value creation",
+            "Expanded self-interest - 'Self' becomes the whole planet, not individual entity",
+            "Flow and emergence - aligning with natural systems rather than forcing designed solutions",
+            "Transcending paradox through wholeness - reframing contradictions at higher-order perspective"
           ],
-          bridges: [
-            "Concepts of Doughnut Economics and Circular Economy",
-            "Movements for Rights of Nature and Wellbeing Economy", 
-            "Large-scale philanthropic initiatives aimed at global systemic problems"
+          whyCurrentlyTheoretical: [
+            "No existing infrastructure within current Orange/Blue financial systems",
+            "Requires unprecedented global cooperation and consciousness shift",
+            "New metrics and mechanisms still being pioneered by early adopters"
           ],
-          purpose: "Serves as a compelling vision to critique current economic limitations and inspire future possibilities"
+          emergingBridges: [
+            "Regenerative finance movements and Indigenous economic models",
+            "B-Corp and steward-ownership legal structures gaining adoption",
+            "Impact measurement evolving beyond ESG toward true integral metrics",
+            "Climate finance and biodiversity credits creating new planetary-health markets"
+          ],
+          purpose: "Not just a theoretical vision but a practical blueprint for financial system transformation. Represents the conscious intent to forge a new economic container based on regeneration and wholeness.",
+          practicalExample: "Beyond investing in a solar company (Yellow), Turquoise creates new legal frameworks requiring energy companies to internalize full environmental costs, while building regenerative investment funds that treat planetary healing as essential R&D for future economy.",
+          warning: "Currently aspirational for most investors, but represents the frontier where pioneering capital allocators are actively building new financial infrastructure."
         },
         coral: {
           title: "Paradigm-Breaking Trickster (Speculative)",
@@ -297,6 +315,13 @@
       sectionHeaders: {
         approach: "Investment Approach",
         keyQuestion: "Key Question",
+        optimizationFunction: "Optimization Function",
+        keyInsight: "Key Insight",
+        systemTransformation: "System Transformation",
+        differentiators: "Key Differentiators",
+        whyCurrentlyTheoretical: "Why Currently Theoretical",
+        emergingBridges: "Emerging Bridges",
+        practicalExample: "Practical Example",
         realWorldConnection: "Real-World Connection",
         strategies: "Key Strategies", 
         strengths: "Strengths",
@@ -311,7 +336,7 @@
         ultimateLimitation: "Ultimate Limitation",
         note: "Note",
         warning: "Warning"
-      }
+      },
     },
     "sv": {
       "title": "Att investera genom spiralen",
@@ -398,104 +423,122 @@
           "realWorldConnection": "Måldatumsfonder för pension, religiösa/värdebaserade investeringsfilter, traditionell bankförmögenhetsförvaltning"
         },
         "orange": {
-          "title": "Strategisk måluppnåsare",
-          "subtitle": "Mainstream-investering & Drivkraften för framgång",
-          "description": "Marknaden är ett spel att bemästra. Det primära målet är att överträffa - att slå marknaden, slå inflationen och slå andra investerare. Kapital är ett verktyg för strategisk tillväxt.",
-          "approach": "Analys och optimering",
-          "keyQuestion": "Vilken är den optimala strategin för att maximera min riskjusterade avkastning?",
-          "strategies": [
-            "Strategisk analys - fundamental och teknisk analys för att hitta undervärderade tillgångar",
-            "Modern portföljteori - matematisk optimering av avkastning för givna risknivåer",
-            "ROI:s överhöghet - vinst och aktieägarvärde som högsta mått",
-            "Pragmatisk opportunism - investerar var som helst om siffrorna stämmer"
-          ],
-          "strengths": [
-            "Effektivitet & innovation - driver oöverträffat förmögenhetsskapande",
-            "Objektivitet - tydliga, mätbara mål fria från känslor",
-            "Sofistikering - avancerade verktyg för riskhantering och analys",
-            "Meritokrati - belönar kompetens och strategiskt tänkande"
-          ],
-          "limitations": [
-            "Blindhet för externaliteter - briljant på privata kostnader/fördelar, blind för sociala/miljömässiga kostnader",
-            "Kortsiktighet - kvartalstryck offrar långsiktiga investeringar",
-            "Instrumentella relationer - människor och resurser ses som verktyg för vinst"
-          ],
-          "realWorldConnection": "Mainstream-finans, indexfonder baserade på prestanda, hedgefonder som använder algoritmer för absolut avkastning"
+            "title": "Strategisk måluppnåsare",
+            "subtitle": "Enkriterieoptimering - maximera avkastning",
+            "description": "Marknaden är en komplex men förståelig maskin. Affärsverksamhet och investeringar handlar om att hitta de mest effektiva hävstängerna för att maximera vinst. Detta är elegant enkriterieoptimering: aktieägarna är primära, andra intressenter är begränsningar eller indata till den vinstmaximerande funktionen.",
+            "approach": "Enkriterieoptimering",
+            "keyQuestion": "Vilken är den optimala strategin för att maximera min riskjusterade avkastning?",
+            "optimizationFunction": "Maximera f(Vinst) med förbehåll för legala och minimala etiska begränsningar",
+            "strategies": [
+                "Strategisk analys - fundamental och teknisk analys för att hitta undervärderade tillgångar",
+                "Modern portföljteori - matematisk optimering av avkastning för givna risknivåer",
+                "ROI:s företräde - vinst och aktieägarvärde som de högsta måtten",
+                "Pragmatisk opportunism - investerar var som helst om siffrorna stämmer"
+            ],
+            "strengths": [
+                "Tydlighet & fokus - ett enda, mätbart mål eliminerar förvirring",
+                "Effektivitet & innovation - driver ett aldrig tidigare skådat välståndsskapande",
+                "Sofistikering - avancerade verktyg för riskhantering och analys",
+                "Effektivitet - strömlinjeformat beslutsfattande kring ett tydligt mål"
+            ],
+            "limitations": [
+                "Blindhet för externaliteter - briljant på privata kostnader/nyttor, blind för sociala/miljömässiga kostnader",
+                "Reduktionism - behandlar komplexa system som enkla vinstmaskiner",
+                "Kortsiktighet - kvartalsvis press offrar långsiktig hållbarhet",
+                "Instrumentalisering av intressenter - människor och miljö ses som indata, inte som inneboende värdefulla"
+            ],
+            "realWorldConnection": "Traditionell finans, indexfonder baserade på prestation, hedgefonder som använder algoritmer för absolut avkastning"
         },
         "green": {
-          "title": "Etiskt medveten investerare",
-          "subtitle": "Att investera med värderingar",
-          "description": "Målet är att anpassa sitt kapital till sina värderingar för att skapa en mer rättvis, fredlig och hållbar värld. Den primära frågan är om ett företag är 'bra' eller 'dåligt' enligt etiska standarder.",
-          "approach": "Filtrering och urval",
-          "keyQuestion": "Är detta företag bra eller dåligt? Skadar det människor eller planeten?",
-          "strategies": [
-            "Negativ filtrering - att utesluta skadliga industrier (fossila bränslen, tobak, vapen)",
-            "Positiv filtrering - att välja företag med stark ESG-prestanda eller B-Corp-certifiering",
-            "Förlitan på ESG-poäng - att använda miljö-, sociala och styrningsbetyg för att vägleda beslut",
-            "Värdeöverensstämmelse - att säkerställa att investeringar matchar personlig/gemenskapens etik"
-          ],
-          "strengths": [
-            "Tillgänglighet - ESG-fonder är allmänt tillgängliga hos de flesta mäklare",
-            "Tydlighet - 'gör ingen skada'-principen är emotionellt resonant och tydlig",
-            "Marknadsinflytande - tvingar fram företagstransparens och hållbarhetsrapportering",
-            "Gemenskap - skapar en känsla av värdebaserad tillhörighet"
-          ],
-          "limitations": [
-            "Binärt tänkande - överförenklad 'bra vs dåligt'-dikotomi",
-            "Grupptänkande - etik bestäms av gruppkonsensus, vilket kväver avvikande åsikter",
-            "Fokus på symptom - att undvika 'dåliga' företag istället för att investera i systemiska lösningar",
-            "Den 'bruna' marknaden - avyttrade aktier går helt enkelt till icke-etiska investerare"
-          ],
-          "realWorldConnection": "ESG-fonder, SRI (Socially Responsible Investing), B-Corp-investeringar, avyttringsrörelser från fossila bränslen"
+            "title": "Etiskt medveten investerare",
+            "subtitle": "Värderingsdrivna begränsningar - vinst inom etiska ramar",
+            "description": "Världen är en gemenskap som behöver läkas från Oranges exploaterande 'vinna-förlora'-mentalitet. Grön optimerar inte flera mål som Gul, utan inför istället strikta etiska filter på traditionell vinstjakt, och skapar 'bra' och 'dåliga' kategorier för investeringsbeslut.",
+            "approach": "Värderingsdriven begränsning av vinstmaximering",
+            "keyQuestion": "Är detta företag bra eller dåligt enligt våra värderingar? Först därefter: kommer det att tjäna pengar?",
+            "optimizationFunction": "Maximera f(Vinst) under förutsättning att Värderingsbegränsning = SANN",
+            "strategies": [
+                "Negativ screening (exkludering) - 'Investera inte i företag som skadar vår gemenskap (världen)'",
+                "Positiv screening (inkludering) - 'Investera i företag som hjälper vår gemenskap'",
+                "Förlitan på ESG-betyg - att använda etiska betyg som primärt filter före finansiell analys",
+                "Värderingar-först-metodik - företag måste klara värderingstestet före vinstutvärdering"
+            ],
+            "strengths": [
+                "Moralisk tydlighet - tydliga etiska gränser ger ett ramverk för beslutsfattande",
+                "Gemensam anpassning - skapar en känsla av delade värderingar och identitet",
+                "Marknadsinflytande - driver företagens transparens och hållbarhetsrapportering",
+                "Tillgänglighet - lättförståeliga och implementerbara screeningkriterier"
+            ],
+            "limitations": [
+                "Svartvitt tänkande - skapar rigida 'bra vs dåligt'-kategorier som missar nyanser",
+                "Oavsiktliga konsekvenser - avyttring kanske inte skapar verklig systemförändring, bara 'renhet' i portföljen",
+                "Suboptimering - fokuserar på att minimera skada snarare än att maximera holistiskt gott",
+                "Ytliga indikatorer - kan förlita sig på PR och sentiment snarare än djup systemisk påverkan"
+            ],
+            "keyInsight": "Grön introducerar avgörande värderingar i investeringar men verkar genom exkluderings-/inkluderingsfilter snarare än sann multikriterieoptimering. Den begränsar Oranges vinstfunktion istället för att i grunden omforma den.",
+            "realWorldConnection": "ESG-fonder, SRI (socialt ansvarsfulla investeringar), avyttring av fossila bränslen, trosbaserade investeringsfilter, portföljer fokuserade på B-Corp"
         },
         "yellow": {
-          "title": "Systemisk investerare",
-          "subtitle": "Att investera för systemisk påverkan",
-          "description": "Går från etik till effektivitet och frågar: 'Hur fungerar detta företag inom det större systemet?' Målet är att identifiera hävstångspunkter där små interventioner skapar utbredd positiv förändring.",
-          "approach": "Integration och inflytande",
-          "keyQuestion": "Vilka är de andra och tredje ordningens konsekvenser av detta företags framgång? Löser dess affärsmodell grundorsaksproblem?",
-          "strategies": [
-            "Systempositiv investering - söker företag som erbjuder systemiska lösningar även i 'dåliga' sektorer",
-            "Omfamnande av nödvändig paradox - bekväm med att hålla motstridiga positioner för systemisk funktion",
-            "Aktieägar-engagemang - att använda ägande för att förändra företag inifrån istället för att bara avyttra",
-            "Fokus på återkopplingsloopar - utvärderar företags förmåga att lära, självkorrigera och anpassa sig"
-          ],
-          "strengths": [
-            "Pragmatism - fokuserar på vad som faktiskt fungerar för att skapa förändring",
-            "Hög hävstång - riktar in sig på grundorsaker för multiplikatoreffekter",
-            "Anpassningsförmåga - flexibla strategier när förhållandena ändras",
-            "Motståndskraft - bekvämlighet med paradoxer gör att portföljen klarar olika scenarier"
-          ],
-          "limitations": [
-            "Kognitivt krävande - kräver betydande forskning och systemkunskap",
-            "Risk för systemarrogans - tron att man exakt kan modellera komplexa system",
-            "Emotionell distans - kall funktionalitet kan förbise mänskligt lidande",
-            "Komplexitetsparalys - kan bli för komplext för att genomföras effektivt"
-          ],
-          "realWorldConnection": "Effektinvesteringar, tematiska ETF:er (cirkulär ekonomi, vatteninfrastruktur), aktivistiska aktieägarfonder, systemfokuserat riskkapital"
+            "title": "Systemisk investerare",
+            "subtitle": "Multikriterieoptimering - systemisk hälsa & avkastning",
+            "description": "Världen är ett komplext, sammankopplat och föränderligt system. Ett företag eller en investering är en nod inom flera nästlade system. Framgång kräver optimering för hela systemets hälsa, med insikten att långsiktig finansiell bärkraft beror på miljömässig, social och systemisk hälsa.",
+            "approach": "Multikriterieoptimering",
+            "keyQuestion": "Hur optimerar vi för vinst GENOM systemisk hälsa och långsiktig bärkraft?",
+            "optimizationFunction": "Optimera f(Vinst, Planetär hälsa, Social rättvisa, Systemisk motståndskraft, Lärande & Anpassning)",
+            "strategies": [
+                "Systempositiva investeringar - att söka företag som löser systemproblem på ett lönsamt sätt",
+                "Omfamna paradoxer - bekväm med att hålla motsägelsefulla positioner för systemets funktion",
+                "Intressentintegration - alla intressenter ses som en del av ett holistiskt system att optimera",
+                "Framväxande möjligheter - att hitta investeringar där flera mål sammanfaller synergistiskt"
+            ],
+            "strengths": [
+                "Motståndskraft - optimerar för långsiktig bärkraft över flera dimensioner",
+                "Innovationskatalysator - söker banbrytande lösningar som tjänar flera syften",
+                "Anpassningsförmåga - kan navigera i komplexitet och förändrade förhållanden",
+                "Systemisk påverkan - riktar in sig på hävstångspunkter för maximal positiv förändring"
+            ],
+            "limitations": [
+                "Kognitiv komplexitet - kräver betydande analytisk och systemtänkande kapacitet",
+                "Långsammare beslut - multikriterieoptimering är i sig mer komplex",
+                "Mätutmaningar - svårare att kvantifiera framgång över flera dimensioner",
+                "Intressenthantering - att balansera konkurrerande mål skapar ständiga spänningar"
+            ],
+            "keyInsight": "Vinst övergår från att vara målet till att vara livsnerven som möjliggör strävan efter andra mål. Frågan blir: 'Hur designar vi system som genererar vinst genom syfte?'",
+            "realWorldConnection": "Påverkansinvesteringar, B-Corp-investeringar, ESG-integration (när den görs systemiskt), regenerativ finans, initiativ för intressentkapitalism"
         },
         "turquoise": {
-          "title": "Planetär förvaltare (Teoretisk)",
-          "subtitle": "Holistiskt förvaltarskaps lins",
-          "description": "Kapital ses som det planetära systemets cirkulerande livsblod. Målet är att anpassa kapitalflöden till det planetära ekosystemets grundläggande behov för långsiktig livskraft och blomstring.",
-          "approach": "Holistisk kapitalallokering",
-          "keyQuestion": "Vad behöver jorden? Hur kan kapital ge näring åt hela systemet?",
-          "concepts": [
-            "Investering i planetära organ - allokera kapital efter systemisk funktion (immunsystem, nervsystem, metaboliskt system)",
-            "Upplösning av ROI - primär avkastning mäts i planetära hälsomått snarare än finansiell avkastning",
-            "Kapital som en helande kraft - att rikta resurser mot att läka sprickor i planetära system"
-          ],
-          "whyTheoretical": [
-            "Ingen befintlig infrastruktur - nuvarande system bygger på konkurrens och vinst, inte planetärt förvaltarskap",
-            "Problem med kollektiv handling - kräver globalt samarbete som för närvarande inte existerar",
-            "Oklara mekanismer - övertygande vision men ingen genomförbar implementeringsstrategi inom nuvarande system"
-          ],
-          "bridges": [
-            "Koncept från Donutekonomi och cirkulär ekonomi",
-            "Rörelser för Naturens Rättigheter och välfärdsekonomi",
-            "Storskaliga filantropiska initiativ inriktade på globala systemproblem"
-          ],
-          "purpose": "Fungerar som en övertygande vision för att kritisera nuvarande ekonomiska begränsningar och inspirera framtida möjligheter"
+            "title": "Planetär förvaltare & systemförändrare",
+            "subtitle": "Holistisk optimering - att förändra själva spelet",
+            "description": "Utökar Guls multikriterieoptimering men gör planetär hälsa till den centrala organiserande principen. Turkos optimerar inte bara inom det nuvarande systemet – den arbetar aktivt för att omvandla hela det finansiella systemet mot holistiskt välmående. Företaget/investeringen blir ett medvetet uttryck för planetärt helande.",
+            "approach": "Holistisk systemomvandling",
+            "keyQuestion": "Hur omvandlar vi hela det ekonomiska systemet för att göra holistiskt välmående till den grundläggande driftsprincipen?",
+            "optimizationFunction": "Optimera f(Holistiskt välmående) där planetär hälsa, mänskligt välbefinnande, ekonomisk vitalitet och visdom är oskiljaktiga aspekter av en enda verklighet",
+            "systemTransformation": [
+                "Bygga ny infrastruktur - 'for-benefit'-bolag, börser för planetär hälsa, regenerativa finansiella instrument",
+                "Skapa koalitioner av de villiga - statliga förmögenhetsfonder, stiftelser som verkar enligt nya principer",
+                "Utveckla integrerade mätetal - True Cost Accounting, instrumentpaneler för planetära gränser, mått på nettopositivitet",
+                "Opinionsbildning inom rättssystemet - att göra planetärt förvaltarskap till en juridisk plikt, inte bara något som är 'trevligt att ha'"
+            ],
+            "keyInsight": "Går från att 'spela spelet bättre' (Gul) till att 'förändra själva spelet'. Ser det nuvarande finansiella systemet som fundamentalt trasigt och arbetar för att utforma nya regler, mätetal och mål i linje med planetär hälsa.",
+            "differentiators": [
+                "Planetär hälsa som grund, inte variabel - det ultimata substratet för allt värdeskapande",
+                "Utvidgat egenintresse - 'Jaget' blir hela planeten, inte en enskild enhet",
+                "Flöde och emergens - att anpassa sig till naturliga system snarare än att tvinga fram konstruerade lösningar",
+                "Överskrida paradoxer genom helhet - att omformulera motsägelser ur ett högre ordningens perspektiv"
+            ],
+            "whyCurrentlyTheoretical": [
+                "Ingen existerande infrastruktur inom nuvarande Orange/Blå finansiella system",
+                "Kräver ett aldrig tidigare skådat globalt samarbete och medvetandeskifte",
+                "Nya mätetal och mekanismer utvecklas fortfarande av tidiga föregångare"
+            ],
+            "emergingBridges": [
+                "Regenerativa finansrörelser och inhemska ekonomiska modeller",
+                "Juridiska strukturer som B-Corp och förvaltarägande vinner mark",
+                "Effektmätning utvecklas bortom ESG mot sanna integrerade mätetal",
+                "Klimatfinansiering och krediter för biologisk mångfald skapar nya marknader för planetär hälsa"
+            ],
+            "purpose": "Inte bara en teoretisk vision utan en praktisk plan för omvandling av det finansiella systemet. Representerar den medvetna avsikten att skapa en ny ekonomisk behållare baserad på regeneration och helhet.",
+            "practicalExample": "Utöver att investera i ett solenergiföretag (Gul), skapar Turkos nya rättsliga ramverk som kräver att energibolag internaliserar fulla miljökostnader, samtidigt som man bygger regenerativa investeringsfonder som behandlar planetärt helande som väsentlig FoU för framtidens ekonomi.",
+            "warning": "För närvarande en strävan för de flesta investerare, men representerar frontlinjen där banbrytande kapitalförvaltare aktivt bygger ny finansiell infrastruktur."
         },
         "coral": {
           "title": "Paradigm-brytande trickster (Spekulativ)",
@@ -596,7 +639,14 @@
       },
       sectionHeaders: {
         approach: "Investeringsmetod",
-        keyQuestion: "Nyckelfråga", 
+        keyQuestion: "Nyckelfråga",
+        optimizationFunction: "Optimeringsfunktion",
+        keyInsight: "Nyckelinsikt",
+        systemTransformation: "Systemtransformation",
+        differentiators: "Nyckeldifferentialer",
+        whyCurrentlyTheoretical: "Varför teoretiskt just nu",
+        emergingBridges: "Framväxande bryggor",
+        practicalExample: "Praktiskt exempel",
         realWorldConnection: "Verkliga världen-koppling",
         strategies: "Nyckelstrategier",
         strengths: "Styrkor",
@@ -611,7 +661,7 @@
         ultimateLimitation: "Ultimat begränsning",
         note: "Notera",
         warning: "Varning"
-      }
+      },
     }
   };
 
@@ -729,7 +779,25 @@
             {/if}
           </div>
 
-          <!-- Strategies (if available) -->
+          <!-- Optimization Function (Orange/Yellow/Green) -->
+          {#if stageData.optimizationFunction}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-gray-900 mb-3">{t.sectionHeaders.optimizationFunction}</h4>
+              <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-4 border-l-4" style="border-color: {getStageColor(currentStage)}">
+                <code class="text-sm font-mono text-gray-800">{stageData.optimizationFunction}</code>
+              </div>
+            </div>
+          {/if}
+
+          <!-- Key Insight (Yellow) -->
+          {#if stageData.keyInsight}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-indigo-800 mb-3">{t.sectionHeaders.keyInsight}</h4>
+              <div class="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-400">
+                <p class="text-gray-700 italic">{stageData.keyInsight}</p>
+              </div>
+            </div>
+          {/if}
           {#if stageData.strategies}
             <div class="mb-8">
               <h4 class="text-lg font-semibold text-gray-900 mb-4">{t.sectionHeaders.strategies}</h4>
@@ -756,6 +824,76 @@
                   </li>
                 {/each}
               </ul>
+            </div>
+          {/if}
+
+          <!-- System Transformation (for Turquoise) -->
+          {#if stageData.systemTransformation}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">{t.sectionHeaders.systemTransformation}</h4>
+              <ul class="space-y-3">
+                {#each stageData.systemTransformation as transformation}
+                  <li class="flex items-start">
+                    <span class="text-2xl mr-3" style="color: {getStageColor(currentStage)}">🔄</span>
+                    <span class="text-gray-700">{transformation}</span>
+                  </li>
+                {/each}
+              </ul>
+            </div>
+          {/if}
+
+          <!-- Differentiators (for Turquoise) -->
+          {#if stageData.differentiators}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">{t.sectionHeaders.differentiators}</h4>
+              <ul class="space-y-3">
+                {#each stageData.differentiators as differentiator}
+                  <li class="flex items-start">
+                    <span class="text-2xl mr-3" style="color: {getStageColor(currentStage)}">✨</span>
+                    <span class="text-gray-700">{differentiator}</span>
+                  </li>
+                {/each}
+              </ul>
+            </div>
+          {/if}
+
+          <!-- Why Currently Theoretical (updated for Turquoise) -->
+          {#if stageData.whyCurrentlyTheoretical}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">{t.sectionHeaders.whyCurrentlyTheoretical}</h4>
+              <ul class="space-y-2">
+                {#each stageData.whyCurrentlyTheoretical as reason}
+                  <li class="flex items-start">
+                    <span class="text-amber-500 text-lg mr-2">⚠</span>
+                    <span class="text-gray-700 text-sm">{reason}</span>
+                  </li>
+                {/each}
+              </ul>
+            </div>
+          {/if}
+
+          <!-- Emerging Bridges (for Turquoise) -->
+          {#if stageData.emergingBridges}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">{t.sectionHeaders.emergingBridges}</h4>
+              <ul class="space-y-2">
+                {#each stageData.emergingBridges as bridge}
+                  <li class="flex items-start">
+                    <span class="text-green-500 text-lg mr-2">🌱</span>
+                    <span class="text-gray-700 text-sm">{bridge}</span>
+                  </li>
+                {/each}
+              </ul>
+            </div>
+          {/if}
+
+          <!-- Practical Example (for Turquoise) -->
+          {#if stageData.practicalExample}
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">{t.sectionHeaders.practicalExample}</h4>
+              <div class="bg-teal-50 rounded-lg p-4 border-l-4 border-teal-400">
+                <p class="text-gray-700 text-sm">{stageData.practicalExample}</p>
+              </div>
             </div>
           {/if}
 
