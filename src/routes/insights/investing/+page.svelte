@@ -74,28 +74,31 @@
         },
         blue: {
           title: "Rule-Based Investor",
-          subtitle: "Investing with Order and Discipline",
-          description: "The market is a test of discipline and virtue. It rewards those who follow proven rules and punishes those who are greedy or impulsive. Capital is a responsibility to be managed righteously.",
-          approach: "Discipline and Conformity", 
-          keyQuestion: "What is the correct, time-tested, and morally sound way to invest my money?",
+          subtitle: "Constrained Maximization - Righteousness Within Sacred Rules",
+          description: "The world is governed by absolute Truth and hierarchical order. There is one 'Right Way' to invest, handed down by authority. Blue seeks to maximize righteousness and moral purity within non-negotiable sacred constraints, believing that righteous conduct will lead to deserved prosperity.",
+          approach: "Constrained Maximization (Optimization within Sacred Framework)",
+          keyQuestion: "What does the rulebook (scripture, tradition, authority) say is the right way to handle money?",
+          optimizationFunction: "Maximize f(Righteousness, Order) subject to Sacred Rules = ABSOLUTE",
           strategies: [
-            "The primacy of 'The Plan' - strict adherence to pre-ordained investment plans (e.g., 60/40 portfolio)",
-            "Deference to authority - trusting established banks, advisors, or investment gurus",
-            "Virtue and punishment narrative - gains reward discipline, losses punish straying from the plan",
-            "Focus on long-term stability - building wealth slowly and steadily over a lifetime"
+            "The primacy of 'The Plan' - strict adherence to pre-ordained investment plans without deviation",
+            "Deference to authority - trusting established banks, advisors, or religious financial guidance",
+            "Sacred constraint compliance - avoiding investments that violate religious/moral law (sin stocks, interest)",
+            "Focus on long-term stability - building wealth slowly through disciplined, rule-following behavior"
           ],
           strengths: [
-            "Discipline - protects from emotional, impulsive decisions",
-            "Simplicity and clarity - reduces anxiety and decision fatigue", 
-            "Promotes consistent saving habits",
-            "Creates shared values within faith-based communities"
+            "Unwavering discipline - protects from emotional decisions and market panic",
+            "Clear moral framework - provides certainty and peace of mind in volatile markets",
+            "Community alignment - shared values create trust and collective financial wisdom",
+            "Proven stability - time-tested approaches that have preserved wealth across generations"
           ],
           limitations: [
-            "Rigidity - inability to adapt to changing conditions",
-            "Lacks adaptability to seize new opportunities",
-            "Unquestioning authority can lead to poor outcomes if authority is wrong"
+            "Rigidity - inability to adapt when rules become outdated or counterproductive",
+            "Missed opportunities - excluding potentially profitable investments due to rigid doctrine",
+            "Unquestioning authority - vulnerability if trusted authority provides poor guidance",
+            "False dichotomy - seeing complex financial decisions as simply 'right' or 'wrong'"
           ],
-          realWorldConnection: "Target-date retirement funds, religious/values-based investment screens, traditional bank wealth management"
+          keyInsight: "Blue doesn't search for novel solutions but applies pre-determined 'right answers' from doctrine. The objective function is fixed and sacred - you cannot question the rules to achieve better outcomes because breaking rules IS the failure.",
+          realWorldConnection: "Faith-based investing (Christian, Islamic, Jewish values funds), traditional bank wealth management, target-date retirement funds with preset allocations, government bond investing"
         },
         orange: {
           title: "Strategic Achiever",
@@ -398,29 +401,32 @@
           "warning": "Detta beskriver ett rovdjursliknande och högriskbeteende som medför extremt hög risk för total finansiell förlust och rättsliga konsekvenser."
         },
         "blue": {
-          "title": "Regelbaserad investerare",
-          "subtitle": "Att investera med ordning och disciplin",
-          "description": "Marknaden är ett test av disciplin och dygd. Den belönar dem som följer beprövade regler och straffar dem som är giriga eller impulsiva. Kapital är ett ansvar som ska förvaltas rättfärdigt.",
-          "approach": "Disciplin och konformitet",
-          "keyQuestion": "Vad är det korrekta, beprövade och moraliskt sunda sättet att investera mina pengar?",
-          "strategies": [
-            "'Planens' överhöghet - strikt efterlevnad av förutbestämda investeringsplaner (t.ex. 60/40-portfölj)",
-            "Hänvisning till auktoritet - att lita på etablerade banker, rådgivare eller investeringsguruer",
-            "Narrativ om dygd och straff - vinster belönar disciplin, förluster straffar avvikelse från planen",
-            "Fokus på långsiktig stabilitet - att bygga förmögenhet långsamt och stadigt över en livstid"
-          ],
-          "strengths": [
-            "Disciplin - skyddar mot emotionella, impulsiva beslut",
-            "Enkelhet och tydlighet - minskar ångest och beslutströtthet",
-            "Främjar konsekventa sparvanor",
-            "Skapar delade värderingar inom trosbaserade gemenskaper"
-          ],
-          "limitations": [
-            "Stelhet - oförmåga att anpassa sig till förändrade förhållanden",
-            "Saknar anpassningsförmåga för att gripa nya möjligheter",
-            "Okritisk tilltro till auktoriteter kan leda till dåliga resultat om auktoriteten har fel"
-          ],
-          "realWorldConnection": "Måldatumsfonder för pension, religiösa/värdebaserade investeringsfilter, traditionell bankförmögenhetsförvaltning"
+            "title": "Regelbaserad investerare",
+            "subtitle": "Begränsad maximering - rättfärdighet inom heliga regler",
+            "description": "Världen styrs av absolut Sanning och hierarkisk ordning. Det finns ett 'Rätt Sätt' att investera, nedärvt från en auktoritet. Blå strävar efter att maximera rättfärdighet och moralisk renhet inom icke-förhandlingsbara heliga ramar, i tron att rättfärdigt agerande kommer att leda till förtjänt välstånd.",
+            "approach": "Begränsad maximering (optimering inom ett heligt ramverk)",
+            "keyQuestion": "Vad säger regelboken (helig skrift, tradition, auktoritet) är det rätta sättet att hantera pengar?",
+            "optimizationFunction": "Maximera f(Rättfärdighet, Ordning) under förutsättning att Heliga Regler = ABSOLUT",
+            "strategies": [
+                "'Planens' företräde - strikt efterlevnad av förutbestämda investeringsplaner utan avvikelse",
+                "Hänvisning till auktoritet - att lita på etablerade banker, rådgivare eller religiös finansiell vägledning",
+                "Efterlevnad av heliga begränsningar - att undvika investeringar som bryter mot religiös/moralisk lag (syndaktier, ränta)",
+                "Fokus på långsiktig stabilitet - att bygga förmögenhet långsamt genom disciplinerat, regelstyrt beteende"
+            ],
+            "strengths": [
+                "Orubblig disciplin - skyddar mot känslomässiga beslut och marknadspanik",
+                "Tydligt moraliskt ramverk - ger säkerhet och sinnesfrid på volatila marknader",
+                "Gemensam anpassning - delade värderingar skapar förtroende och kollektiv finansiell visdom",
+                "Beprövad stabilitet - tidstestade metoder som har bevarat förmögenhet över generationer"
+            ],
+            "limitations": [
+                "Stelhet - oförmåga att anpassa sig när regler blir föråldrade eller kontraproduktiva",
+                "Missade möjligheter - att utesluta potentiellt lönsamma investeringar på grund av stel doktrin",
+                "Ofrågvisande auktoritet - sårbarhet om den betrodda auktoriteten ger dålig vägledning",
+                "Falsk dikotomi - att se komplexa finansiella beslut som antingen 'rätta' eller 'felaktiga'"
+            ],
+            "keyInsight": "Blå söker inte efter nya lösningar utan tillämpar förutbestämda 'rätta svar' från doktrinen. Målfunktionen är fast och helig - man kan inte ifrågasätta reglerna för att uppnå bättre resultat eftersom att bryta mot reglerna ÄR misslyckandet.",
+            "realWorldConnection": "Trosbaserade investeringar (kristna, islamiska, judiska värdefonder), traditionell bankförmögenhetsförvaltning, måldatumsfonder för pension med förinställda allokeringar, investeringar i statsobligationer"
         },
         "orange": {
             "title": "Strategisk måluppnåsare",
