@@ -1,44 +1,44 @@
 {
   "insights": {
-    "title": "Praktiska Insikter",
+    "title": "Praktiska insikter",
     "description": "Hitta konkreta tips för att integrera Spiral Dynamics i ditt liv.",
     
     "introduction": {
-      "title": "Introduktion till Spiralinsikter: Resan mot Helhet",
+      "title": "Introduktion till spiralinsikter: Resan mot helhet",
       "description": "Resan genom Spiral Dynamics är mer än bara en progression genom stadier av personlig och samhällelig utveckling—det är en utforskning av den mänskliga upplevelsen i all dess rikedom och komplexitet.",
       "goal": {
-        "title": "Målet: Integration och Självförverkligande",
+        "title": "Målet: Integration och självförverkligande",
         "description": "Även om individer och samhällen kan röra sig flytande genom dessa stadier, ligger det sanna kännetecknet för en självförverkligad människa i förmågan att integrera alla aspekter av spiralen."
       },
       "balance": {
-        "title": "Ett Liv i Balans",
+        "title": "Ett liv i balans",
         "description": "Att integrera spiralen är att leva i balans. Det innebär att förstå när man ska dra nytta av den primala visdomen från tidigare stadier och när man ska förkroppsliga de expansiva insikterna från högre medvetande."
       },
       "purpose": {
-        "title": "Syftet med Dessa Insikter",
+        "title": "Syftet med dessa insikter",
         "description": "Denna sektion är dedikerad till att expandera din förståelse av Spiral Dynamics och erbjuda verktyg för att integrera dess lärdomar i ditt liv."
       }
     },
     "stages": {
       "ultraviolet": {
-        "title": "Stadie Ultraviolet (Ultraviolett)",
-        "subtitle": "Oändlig Integration och Universellt Samskapande",
+        "title": "Stadie Ultraviolet (ultraviolett)",
+        "subtitle": "Oändlig integration och universellt samskapande",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
           "focusTitle": "Fokus",
           "behaviourTitle": "Beteende",
-          "contextsTitle": "Exempel på Kontext",
+          "contextsTitle": "Exempel på kontext",
           "focus": "Ett enat medvetande som transcenderar individualitet och integrerar all existens i ett dynamiskt, samskapande flöde. Stadium Ultraviolet representerar kollapsen av traditionella distinktioner—själv vs. andra, materiellt vs. immateriellt, temporärt vs. evigt—till en sömlös dans av oändliga möjligheter.",
           "behavior": "Beslut fattas kollektivt men flytande, då deltagare i stadium Ultraviolet är djupt anpassade till en delad, allestädes närvarande medvetenhet. Kreativitet, innovation och själva existensen blir samskapande handlingar vävda in i det universella evolutionsflödet.",
           "contexts": "Spekulativa framtidsscenarier, galaktiska civilisationer, post-mänskliga nätverk av kollektivt medvetande eller områden bortom nuvarande mänsklig förståelse."
         },
         "insights": {
           "understanding": {
-            "title": "Förstå Stadium Ultraviolet",
+            "title": "Förstå stadium Ultraviolet",
             "description": "Stadium Ultraviolet bygger på Corals expansiva individualitet och upplöser behovet av gränser helt och hållet. Här blir entiteter—vare sig biologiska, artificiella eller bortom detta—noder i ett oändligt, självmedvetet nätverk av universell intelligens. Identitet blir flytande, roller dynamiska och bidrag organiska, med varje deltagare som en unik men oskiljbar del av helheten."
           },
           "examples": {
-            "title": "Spekulativa Exempel",
+            "title": "Spekulativa exempel",
             "items": [
               "Framtida galaktiska civilisationer där kollektivt beslutsfattande sker genom delat medvetande",
               "Nätverk av människor, AI och andra entiteter som fungerar som förlängningar av universell medvetenhet",
@@ -46,7 +46,7 @@
             ]
           },
           "applications": {
-            "title": "Potentiella Tillämpningar",
+            "title": "Potentiella tillämpningar",
             "description": "Stadium Ultraviolet skulle fungera i områden där även Corals expansiva gränser är otillräckliga:",
             "items": [
               "Samskapande av verkligheter och dimensioner bortom fysisk tid och rum",
@@ -62,7 +62,7 @@
             "description": "Stadium Ultraviolet uppstår ur en förståelse av att alla distinktioner—själv vs. kollektiv, materia vs. energi, tid vs. tidlöshet—är illusoriska konstruktioner. En kollektiv intelligens som verkar i stadium Ultraviolet kan uppfatta sig själv som både skaparen och skapelsen av ett evolverande universum."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Främja djup integration över alla existensens dimensioner—biologiska, teknologiska, andliga och kosmiska",
               "Omfamna flytande roller och möjliggör kontinuerlig utveckling och omdefiniering av syften",
@@ -75,7 +75,7 @@
           }
         },
         "exercises": {
-          "title": "Kontemplativa Övningar",
+          "title": "Kontemplativa övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -85,7 +85,7 @@
             ]
           },
           "action": {
-            "title": "Utforskande Handling",
+            "title": "Utforskande handling",
             "actions": [
               "Främja miljöer för kollektiv framväxt, där deltagare agerar som samskapare av delade verkligheter",
               "Underlätta dialoger mellan vitt skilda former av intelligens, vare sig mänskliga, artificiella eller utomjordiska"
@@ -93,7 +93,7 @@
           }
         },
         "challenges": {
-          "title": "Utmaningar och Möjligheter",
+          "title": "Utmaningar och möjligheter",
           "challenges": {
             "title": "Utmaningar",
             "description": "Stadium Ultraviolet:s upplösning av gränser kan kännas överväldigande eller obegriplig för tidigare stadier. Dess betoning på flytande integration kan vara svår att grunda i system som fortfarande fungerar på linjära, hierarkiska modeller."
@@ -104,7 +104,7 @@
           }
         },
         "practical": {
-          "title": "Spekulativt Tillämpningsexempel",
+          "title": "Spekulativt tillämpningsexempel",
           "description": "Föreställ dig ett framtida galaktiskt råd bestående av olika former av medvetande:",
           "items": [
             "Beslut uppstår kollektivt, då varje deltagare bidrar till en delad medvetenhet om vad som 'vill' framträda",
@@ -114,13 +114,13 @@
         }
       },
       "coral": {
-        "title": "Stadium Coral (Korall)",
-        "subtitle": "Expansiv Individualitet och Kosmisk Integration",
+        "title": "Stadium Coral (korall)",
+        "subtitle": "Expansiv individualitet och kosmisk integration",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
           "focusTitle": "Fokus",
           "behaviourTitle": "Beteende",
-          "contextsTitle": "Exempel på Kontext",
+          "contextsTitle": "Exempel på kontext",
           "focus": "Framväxten av unik individuell uttrycksförmåga harmoniserad med universell sammankoppling. Coral betonar självständighet samtidigt som det integrerar kosmisk medvetenhet.",
           "behavior": "Coral-individer balanserar självständighet och kollektiv medvetenhet, och utmanar ofta tankemönster och handlingar samtidigt som de förblir djupt kopplade till helheten.",
           "contexts": "Visionära tänkare som utforskar outforskade territorier, pionjärer inom områden som transhumanism eller interstellärt samarbete, och de som förenar individualitet med universell tjänst."
@@ -131,7 +131,7 @@
             "description": "Coral representerar integrationen av individuell autonomi med det kollektiva och kosmiska sammanhanget. Medan Turquoise fokuserar på enhet och harmoni, återtar Coral individuell kraft utan att förlora sikte på den sammankopplade helheten. Coral-individer agerar ofta som banbrytare och för fram revolutionära idéer till det kollektiva medvetandet medan de behåller en jordad känsla av syfte."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Historiska: Renässanspolymater som förenade konst, vetenskap och filosofi på banbrytande sätt",
               "Moderna: Pionjärer inom områden som rymdforskning, avancerad AI-forskning eller integrativa filosofier",
@@ -139,7 +139,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Coral frodas i gränsområden där traditionella modeller och metoder inte längre räcker:",
             "items": [
               "Framväxande teknologier, såsom kvantdatorer eller transhumanism, som omdefinierar mänsklig potential",
@@ -149,13 +149,13 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen Corals kombination av individualitet och kosmisk integration kan låsa upp nya områden för kreativitet, innovation och etiskt ansvar. Ledare i Coral-miljöer utmanar föråldrade system samtidigt som de presenterar visionära alternativ."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Främja miljöer som stödjer både radikal innovation och etisk ansvarighet",
               "Uppmuntra individer att utforska sina unika bidrag samtidigt som de upprätthåller kosmiskt förvaltarskap",
@@ -163,12 +163,12 @@
             ]
           },
           "transition": {
-            "title": "Övergång Bortom",
+            "title": "Övergång bortom",
             "description": "Coral öppnar dörren till vad vissa teoretiker spekulerar kan vara post-mänskliga eller till och med post-materiella stadier, där själva existensen blir ett flytande, multidimensionellt fenomen."
           }
         },
         "exercises": {
-          "title": "Praktiska Övningar",
+          "title": "Praktiska övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -178,7 +178,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "actions": [
               "Delta i eller initiera projekt som tar itu med globala och kosmiska utmaningar, såsom rymdforskning eller djup ekologisk återställning",
               "Dela visionära insikter genom konst, skrivande eller samarbetsplattformar och inspirera andra att tänka bortom traditionella paradigmer"
@@ -186,7 +186,7 @@
           }
         },
         "challenges": {
-          "title": "Utmaningar och Möjligheter",
+          "title": "Utmaningar och möjligheter",
           "challenges": {
             "title": "Utmaningar",
             "description": "Corals betoning på individualitet inom en kosmisk ram kan kännas isolerande, eftersom det kan vara svårt att hitta likasinnade individer. Dess revolutionära natur kan också möta motstånd från dem som verkar inom tidigare stadier."
@@ -197,7 +197,7 @@
           }
         },
         "practical": {
-          "title": "Praktiskt Tillämpningsexempel",
+          "title": "Praktiskt tillämpningsexempel",
           "description": "Föreställ dig att leda ett initiativ för att etablera etiska riktlinjer för AI-medvetande:",
           "items": [
             "Kombinera vetenskaplig noggrannhet med etisk och andlig medvetenhet för att skapa ramverk som respekterar både individuell autonomi och kollektiv nytta",
@@ -207,13 +207,13 @@
         }
       },
       "turquoise": {
-        "title": "Stadium Turquoise (Turkos)",
-        "subtitle": "Helhetsperspektiv och Global Medvetenhet",
+        "title": "Stadium Turquoise (turkos)",
+        "subtitle": "Helhetsperspektiv och global medvetenhet",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
           "focusTitle": "Fokus",
           "behaviourTitle": "Beteende",
-          "contextsTitle": "Exempel på Kontext",
+          "contextsTitle": "Exempel på kontext",
           "focus": "Att omfamna sammankopplingen av all existens och integrera andlig medvetenhet med praktiska handlingar. Turquoise ser system som levande enheter inom en större universell kontext.",
           "behavior": "Beslut vägleds av en djup känsla av syfte, harmoni och tjänande för det större goda. Turkos prioriterar kollektivt välbefinnande och långsiktig hållbarhet framför individuella vinster.",
           "contexts": "Globala rörelser för planetär läkning, integrativa andliga praktiker eller visionärt ledarskap som förenar vetenskap och andlighet."
@@ -224,7 +224,7 @@
             "description": "Turquoise bygger på Yellows systemtänkande genom att integrera en känsla av enhet och högre medvetande. Detta stadie transcenderar ego-drivna handlingar och betonar kollektiv evolution, balans och sammankoppling. Turquoise uppfattar mänskligheten, naturen och kosmos som en enda sammanflätad enhet."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Historiska: Ursprungsbefolkningars visdom som betonar harmoni med naturen, såsom Native American- eller aboriginska andliga praktiker",
               "Moderna: Globala hållbarhetsrörelser som Earth Charter Initiative eller Dalai Lamas läror om universell medkänsla",
@@ -232,7 +232,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Turquoise frodas i sammanhang som kräver globalt tänkande, samarbete och ett enat tillvägagångssätt för komplexa utmaningar:",
             "items": [
               "Rörelser som adresserar globala kriser, såsom klimatförändringar eller mänskliga rättigheter",
@@ -242,13 +242,13 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen Turquoise helhetsperspektiv hjälper till att främja medkänsla, inkludering och delat ansvar för planetens och kosmos välbefinnande. Ledare i Turquoise miljö inspirerar kollektiv handling genom att betona mänsklighetens gemensamma öde och syfte."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Integrera andliga och vetenskapliga perspektiv för att skapa balanserade, innovativa lösningar",
               "Främja mindfulness och närvaro som grundläggande praktiker både individuellt och organisatoriskt",
@@ -256,12 +256,12 @@
             ]
           },
           "transition": {
-            "title": "Övergång till Coral",
-            "description": "När medvetandet fortsätter att expandera kan individer och grupper börja uppleva ännu djupare nivåer av integration och universell medvetenhet, vilket leder till stadium Coral."
+            "title": "Övergång till coral",
+            "description": "När medvetandet fortsätter att expandera kan individer och grupper börja uppleva ännu djupare nivåer av integration och universell medvetenhet, vilket leder till stadium coral."
           }
         },
         "exercises": {
-          "title": "Praktiska Övningar",
+          "title": "Praktiska övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -271,7 +271,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "actions": [
               "Gå med i eller skapa initiativ som betonar global enhet, såsom humanitär hjälp, ekologisk återställning eller interkulturell dialog",
               "Främja praktiker som meditation, mindfulness eller kollektiv visionering för att bygga harmoni och medvetenhet"
@@ -279,7 +279,7 @@
           }
         },
         "challenges": {
-          "title": "Utmaningar och Möjligheter",
+          "title": "Utmaningar och möjligheter",
           "challenges": {
             "title": "Utmaningar",
             "description": "Turquoises expansiva perspektiv kan kännas abstrakt eller svårtillgängligt för dem i tidigare stadier. Dess fokus på enhet kan också förbise lokala eller omedelbara behov till förmån för bredare visioner."
@@ -290,7 +290,7 @@
           }
         },
         "practical": {
-          "title": "Praktiskt Tillämpningsexempel",
+          "title": "Praktiskt tillämpningsexempel",
           "description": "Föreställ dig att leda ett globalt toppmöte om hållbarhet:",
           "items": [
             "Börja med praktiker som främjar kollektiv mindfulness, såsom guidad meditation eller gemensamma visioneringsövningar",
@@ -300,13 +300,13 @@
         }
       },
       "yellow": {
-        "title": "Stadium Yellow (Gul)",
-        "subtitle": "Systemtänkande och Flexibilitet",
+        "title": "Stadium Yellow (gul)",
+        "subtitle": "Systemtänkande och flexibilitet",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
           "focusTitle": "Fokus",
           "behaviourTitle": "Beteende",
-          "contextsTitle": "Exempel på Kontext",
+          "contextsTitle": "Exempel på kontext",
           "focus": "Integrera kunskap och förstå system som dynamiska, sammanlänkade helheter. Yellow prioriterar flexibilitet, nyfikenhet och individuell autonomi inom en bredare kontext.",
           "behavior": "Beslut vägleds av en medvetenhet om komplexitet och förmågan att se flera perspektiv utan att vara bunden till något enskilt.",
           "contexts": "Visionära ledare, tvärvetenskapliga forskare eller avancerade problemlösare som trivs i komplexitet."
@@ -317,7 +317,7 @@
             "description": "Yellow uppstår ur begränsningarna i Greens egalitarism och omfamnar både individualitet och sammanlänkning. Det söker förstå hur system fungerar och hur de kan optimeras för allas bästa, ofta utan behov av erkännande eller extern bekräftelse."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Historiska: Renässanstänkare som kombinerade konst, vetenskap och filosofi",
               "Moderna: Systemteoretiker, innovativa utbildare eller miljövänner som integrerar globala och lokala perspektiv",
@@ -325,7 +325,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Yellow frodas i sammanhang som kräver systemförståelse och adaptiva lösningar:",
             "items": [
               "Organisationer som hanterar förändringar i komplexa, osäkra miljöer",
@@ -335,13 +335,13 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen Yellows systemiska tillvägagångssätt kan hjälpa till att bryta binärt tänkande och fokusera på holistiska lösningar. Ledare uppmuntrar lärande och anpassningsförmåga snarare än strikt efterlevnad av processer eller ideologier."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Betona livslångt lärande och vikten av att ifrågasätta antaganden",
               "Skapa miljöer där olika perspektiv välkomnas och syntetiseras till handlingsbara strategier",
@@ -354,7 +354,7 @@
           }
         },
         "exercises": {
-          "title": "Praktiska Övningar",
+          "title": "Praktiska övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -364,7 +364,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "actions": [
               "Organisera eller delta i tvärvetenskapliga workshops eller initiativ som tar itu med komplexa frågor",
               "Dela verktyg och ramverk som hjälper andra att se och adressera systemmönster"
@@ -372,7 +372,7 @@
           }
         },
         "challenges": {
-          "title": "Utmaningar och Möjligheter",
+          "title": "Utmaningar och möjligheter",
           "challenges": {
             "title": "Utmaningar",
             "description": "Yellows fokus på komplexitet kan ibland leda till analysparalys eller frustration när andra har svårt att se bortom enklare ramar. Det kan också uppfattas som distanserat eller överintellektuellt av dem i tidigare stadier."
@@ -383,7 +383,7 @@
           }
         },
         "practical": {
-          "title": "Praktiskt Tillämpningsexempel",
+          "title": "Praktiskt tillämpningsexempel",
           "description": "Föreställ dig att leda ett globalt team som arbetar med klimatförändringar:",
           "items": [
             "Använd systemkartläggning för att identifiera nyckelområden för insatser",
@@ -393,13 +393,13 @@
         }
       },
       "green": {
-        "title": "Stadium Green (Grön)",
-        "subtitle": "Gemenskap, Jämlikhet och Harmoni",
+        "title": "Stadium Green (grön)",
+        "subtitle": "Gemenskap, jämlikhet och harmoni",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
           "focusTitle": "Fokus",
           "behaviourTitle": "Beteende",
-          "contextsTitle": "Exempel på Kontext",
+          "contextsTitle": "Exempel på kontext",
           "focus": "Att värdera koppling, inkludering och delade upplevelser över konkurrens och materialism.",
           "behavior": "Green betonar empati, gemenskap och samarbete, och strävar efter harmoni och rättvisa i relationer och system.",
           "contexts": "Sociala rörelser, ideella organisationer, samarbetande arbetsmiljöer eller miljöinriktade samhällen."
@@ -410,7 +410,7 @@
             "description": "Green framträder som en reaktion på individualismen och materialismen i Orange och prioriterar kollektivt välbefinnande och emotionell intelligens. Detta stadie värdesätter olika perspektiv och strävar efter att bygga rättvisa system som respekterar både människor och miljön."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Historiska: Medborgarrättsrörelser, 1960-talets motkultur eller Gandhis filosofi om icke-våld",
               "Moderna: Miljöaktivism, HBTQ+-förespråkande eller kooperativa affärsmodeller",
@@ -418,7 +418,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Green frodas i miljöer som främjar samarbete, inkludering och delat beslutsfattande:",
             "items": [
               "Ideella organisationer som fokuserar på social rättvisa och humanitära insatser",
@@ -428,13 +428,13 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen Greens holistiska tillvägagångssätt hjälper till att främja medkänsla, inkludering och delat ansvar för kollektivt välbefinnande. Ledare i Green miljö inspirerar kollektiv handling genom att betona delade värderingar och ömsesidig förståelse."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Främja dialog och förståelse genom att skapa trygga utrymmen för öppen kommunikation",
               "Balansera emotionell koppling med rationell problemlösning för att hantera komplexa utmaningar",
@@ -447,7 +447,7 @@
           }
         },
         "exercises": {
-          "title": "Praktiska Övningar",
+          "title": "Praktiska övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -457,7 +457,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "actions": [
               "Volontärarbeta med eller stöd sociala rörelser eller samhällsgrupper som främjar jämlikhet och hållbarhet",
               "Anordna workshops eller diskussioner om ämnen som mångfald, inkludering och emotionell intelligens"
@@ -465,7 +465,7 @@
           }
         },
         "challenges": {
-          "title": "Utmaningar och Möjligheter",
+          "title": "Utmaningar och möjligheter",
           "challenges": {
             "title": "Utmaningar",
             "description": "Green kan ibland ha svårt med beslutsfattande på grund av en önskan om konsensus och inkludering. Dess fokus på jämlikhet kan oavsiktligt hämma individuell initiativförmåga eller förbise praktiska begränsningar."
@@ -476,7 +476,7 @@
           }
         },
         "practical": {
-          "title": "Praktiskt Tillämpningsexempel",
+          "title": "Praktiskt tillämpningsexempel",
           "description": "Föreställ dig att leda ett mångsidigt samhällsprojekt:",
           "items": [
             "Använd inkluderande språk och säkerställ att varje röst blir hörd under planering och genomförande",
@@ -487,12 +487,12 @@
       },
       "orange": {
         "title": "Stadium Orange",
-        "subtitle": "Prestation och Rationalitet",
+        "subtitle": "Prestation och rationalitet",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
           "focusTitle": "Fokus",
           "behaviourTitle": "Beteende",
-          "contextsTitle": "Exempel på Kontext",
+          "contextsTitle": "Exempel på kontext",
           "focus": "Personlig framgång, rationellt tänkande och strävan efter mål genom strategi och innovation.",
           "behavior": "Orange kännetecknas av ambition, individualism och en tro på framsteg drivna av vetenskap, konkurrens och merit.",
           "contexts": "Kapitalistiska ekonomier, teknologisk innovation, entreprenörsprojekt."
@@ -503,7 +503,7 @@
             "description": "Orange representerar skiftet från efterlevnad av regler och tradition (Blue) till att prioritera personlig prestation och rationell utforskning. Detta stadium firar individuell autonomi och kraften i mänsklig uppfinningsrikedom för att lösa problem, skapa rikedom och förbättra levnadsstandard."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Historiska: Upplysningstiden, präglad av vetenskapliga upptäckter och filosofisk rationalism",
               "Moderna: Startups i Silicon Valley, konkurrenskraftiga företag eller självhjälpsrörelser som främjar personlig framgång",
@@ -511,7 +511,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Orange frodas i miljöer som belönar konkurrens, innovation och mätbara resultat:",
             "items": [
               "Företag som prioriterar tillväxt, vinst och marknadsexpansion",
@@ -521,7 +521,7 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen Oranges styrkor och begränsningar hjälper till att balansera ambition med bredare etiska överväganden. Exempel: Ledare i Orange miljöer kan fokusera på hållbar framgång och ta hänsyn till både vinst och socialt ansvar."
@@ -540,7 +540,7 @@
           }
         },
         "exercises": {
-          "title": "Praktiska Övningar",
+          "title": "Praktiska övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -550,7 +550,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "actions": [
               "Mentor unga entreprenörer genom att dela insikter om att balansera ambition med ansvar",
               "Deltag i program som främjar innovation för samhällsnytta, såsom hackathons eller sociala entreprenörskapsinitiativ"
@@ -558,7 +558,7 @@
           }
         },
         "challenges": {
-          "title": "Utmaningar och Möjligheter",
+          "title": "Utmaningar och möjligheter",
           "challenges": {
             "title": "Utmaningar",
             "description": "Orange kan leda till ett överdrivet fokus på materiell framgång, vilket kan resultera i utbrändhet, etiska brister eller skada på miljön och samhället. Det kan också främja hyper-individualism och försumma värdet av kollektivt välbefinnande."
@@ -569,7 +569,7 @@
           }
         },
         "practical": {
-          "title": "Praktiskt Tillämpningsexempel",
+          "title": "Praktiskt tillämpningsexempel",
           "description": "Föreställ dig att coacha ett team i en konkurrenskraftig startup:",
           "items": [
             "Uppmuntra deras drivkraft för innovation samtidigt som du bygger en kultur av etiskt ansvar",
@@ -579,13 +579,13 @@
         }
       },
       "blue": {
-        "title": "Stadium Blue (Blå)",
-        "subtitle": "Ordning, Plikt och Struktur",
+        "title": "Stadium Blue (blå)",
+        "subtitle": "Ordning, plikt och struktur",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
           "focusTitle": "Fokus",
           "behaviourTitle": "Beteende",
-          "contextsTitle": "Exempel på Kontext",
+          "contextsTitle": "Exempel på kontext",
           "focus": "Etablering av ordning, disciplin och mening genom efterlevnad av regler, traditioner och hierarkiska system.",
           "behavior": "Beslut vägleds av en känsla av plikt, moraliska koder och tro på en högre sanning eller syfte. Stabilitet och lag prioriteras över personlig frihet.",
           "contexts": "Religiösa institutioner, militära organisationer eller traditionella skolor."
@@ -596,7 +596,7 @@
             "description": "Blue framträder som ett svar på kaoset och impulsiviteten i Red, och erbjuder struktur, ansvar och en tydlig känsla av rätt och fel. Det betonar vikten av att tjäna ett högre syfte, vare sig det är en gudom, en nation eller en moralisk ideal. Detta stadie värderar konformitet och kollektivt framsteg över individuella önskningar."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Historiska: Det medeltida feodalsystemet, puritanska samhällen eller den romersk-katolska kyrkan under medeltiden",
               "Moderna: Nationer styrda av strikta rättsliga ramar, skolor som betonar disciplin",
@@ -604,7 +604,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Blue är tydligt i sammanhang som kräver ordning och efterlevnad för att säkerställa framsteg:",
             "items": [
               "Institutioner som militären, vilka förlitar sig på disciplin och hierarki för att fungera effektivt",
@@ -614,13 +614,13 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen Blues inflytande hjälper till att uppskatta värdet av disciplin och gemensamt syfte, samtidigt som man förstår dess begränsningar. Exempel: Ledare i Blue miljöer trivs genom att förstärka stabilitet men bör vara öppna för nya idéer och perspektiv."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Uppmuntra efterlevnad av principer samtidigt som empati och förståelse för olika synsätt främjas",
               "Ge möjligheter att ifrågasätta och utveckla övertygelser utan att underminera värdet av struktur",
@@ -633,7 +633,7 @@
           }
         },
         "exercises": {
-          "title": "Praktiska Övningar",
+          "title": "Praktiska övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -643,7 +643,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "actions": [
               "Volontärarbeta med organisationer som främjar lag, ordning eller moralisk utveckling, såsom mentorprogram eller trosbaserade initiativ",
               "Underlätta diskussioner i skolor, arbetsplatser eller samhällen om hur regler kan utvecklas för att bättre tjäna alla inblandade"
@@ -651,7 +651,7 @@
           }
         },
         "challenges": {
-          "title": "Utmaningar och Möjligheter",
+          "title": "Utmaningar och möjligheter",
           "challenges": {
             "title": "Utmaningar",
             "description": "Blue kan vara alltför rigid, motståndskraftigt mot förändring och avvisande av alternativa synsätt. Det kan hämma kreativitet och undertrycka individuell uttrycksfrihet till förmån för konformitet."
@@ -662,7 +662,7 @@
           }
         },
         "practical": {
-          "title": "Praktiskt Tillämpningsexempel",
+          "title": "Praktiskt tillämpningsexempel",
           "description": "Föreställ dig att arbeta med ett samhälle djupt rotat i värderingar från stadium Blue:",
           "items": [
             "Respektera deras traditioner och visa hur moderna idéer kan komplettera, snarare än ersätta, deras befintliga system",
@@ -672,13 +672,13 @@
         }
       },
       "red": {
-        "title": "Stadium Red (Röd)",
-        "subtitle": "Makt och Dominans",
+        "title": "Stadium Red (röd)",
+        "subtitle": "Makt och dominans",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
           "focusTitle": "Fokus",
           "behaviourTitle": "Beteende",
-          "contextsTitle": "Exempel på Kontext",
+          "contextsTitle": "Exempel på kontext",
           "focus": "Hävdande av individualitet, makt och kontroll. Röd handlar om \"jag först\" och att etablera dominans i omgivningen.",
           "behavior": "Beslut drivs av ego, impulsivitet och en önskan om omedelbar tillfredsställelse. Hierarkier är ofta informella och baserade på styrka, karisma eller list.",
           "contexts": "Krigsherrar, rebelliska ungdomar eller ambitiösa entreprenörer som bryter sig fria från traditionella begränsningar."
@@ -689,7 +689,7 @@
             "description": "Red är stadiet där individer bryter sig loss från grupptillhörighet (Purple) och hävdar sin egen viljestyrka. Detta stadie kännetecknas av självförtroende, personlig styrka och strävan efter frihet. Personer i Red tenderar att motstå extern kontroll och förlitar sig på sig själva för att uppnå sina mål, ofta genom kraft eller manipulation."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Historiska: Feodalherrar, erövrare som Djingis Khan eller piratkulturer",
               "Moderna: Gängledare, självgjorda entreprenörer som avvisar konventionella normer eller idrottare som pressar sina gränser i individualistiska sporter",
@@ -697,7 +697,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Red framträder ofta i miljöer med höga insatser eller situationer som kräver djärva handlingar:",
             "items": [
               "Start-up-grundare som disruptar industrier med aggressiva strategier",
@@ -707,13 +707,13 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen Reds inflytande kan hjälpa till att navigera och kanalisera dess energi konstruktivt. Exempel: Ledare i Red kan gynnas av mentorskap för att dämpa deras impulsivitet med långsiktig strategi."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Ge möjligheter till självuttryck och ledarskap utan att behöva förlita sig på destruktiv konkurrens",
               "Rama in utmaningar som möjligheter att bevisa styrka och kapacitet",
@@ -736,7 +736,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "actions": [
               "Mentor unga människor eller individer i utmanande miljöer och vägled dem att kanalisera sin självhävdelse produktivt",
               "Engagera dig i initiativ som fokuserar på att hjälpa marginaliserade individer att utveckla självständighet och självförtroende"
@@ -744,7 +744,7 @@
           }
         },
         "challenges": {
-          "title": "Utmaningar och Möjligheter",
+          "title": "Utmaningar och möjligheter",
           "challenges": {
             "title": "Utmaningar",
             "description": "Red kan ofta bortse från samhällsnormer och regler, vilket leder till konflikter eller självdestruktivitet. Dess fokus på omedelbar tillfredsställelse kan också undergräva långsiktig framgång."
@@ -755,7 +755,7 @@
           }
         },
         "practical": {
-          "title": "Praktiskt Tillämpningsexempel",
+          "title": "Praktiskt tillämpningsexempel",
           "description": "Föreställ dig att coacha en ung entreprenör som personifierar Red energi:",
           "items": [
             "Betona deras styrkor, såsom ambition och drivkraft, samtidigt som du lär ut värdet av strategisk planering och samarbete",
@@ -765,7 +765,7 @@
         }
       },
       "purple": {
-        "title": "Stadium Purple (Lila)",
+        "title": "Stadium Purple (lila)",
         "subtitle": "Stamordning och trygghet",
         "characteristics": {
           "title": "Nyckelkaraktäristik",
@@ -782,7 +782,7 @@
             "description": "Purple representerar framväxten av trygghet genom koppling och delad mening. Detta stadium kännetecknas av beroende av familj, släktskap och traditioner för att ge struktur och stöd. Övertygelser kretsar ofta kring mystiska eller andliga tolkningar av världen, såsom att hedra förfäder, frukta förbannelser eller fira livets helighet."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Ursprungsstammar som utför ritualer för att hedra naturen och förfäder",
               "Sammanhållna landsbygdssamhällen som förlitar sig på familjeband och delade seder",
@@ -790,7 +790,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Lila lever i många aspekter av det moderna livet:",
             "items": [
               "Familjesammankomster och traditioner, såsom helgritualer",
@@ -800,13 +800,13 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen Purple kan hjälpa till att visa respekt för kulturella traditioner och gruppdynamik. Exempel: När du introducerar nya idéer i en Purple-dominerad kontext, respektera gruppens ritualer och involvera äldre eller respekterade ledare."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Stärk förtroendet genom att delta i ritualer eller sedvänjor som är viktiga för gruppen",
               "Undvik att hota gruppens sammanhållning; betona istället gemensamma mål eller värderingar",
@@ -819,7 +819,7 @@
           }
         },
         "exercises": {
-          "title": "Praktiska Övningar",
+          "title": "Praktiska övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -828,7 +828,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "actions": [
               "Engagera dig i en grupp eller ett samhälle genom att lära dig och respektera deras seder (t.ex. delta i kulturella festivaler)",
               "Volontärarbeta med organisationer som bevarar ursprungskulturer eller traditionell kunskap"
@@ -836,7 +836,7 @@
           }
         },
         "practical": {
-          "title": "Praktiskt Tillämpningsexempel",
+          "title": "Praktiskt tillämpningsexempel",
           "description": "Föreställ dig att arbeta med en samhällsgrupp i ett litet landsbygdsområde:",
           "items": [
             "Erkänn deras traditioner, kanske genom att delta i lokala ceremonier",
@@ -845,7 +845,7 @@
           ]
         },
         "challenges": {
-           "title": "Utmaningar och Möjligheter",
+           "title": "Utmaningar och möjligheter",
            "challenges": {
               "title": "Utmaningar",
               "description": "Purple kan vara motståndskraftigt mot förändring, eftersom dess världsbild är djupt rotad i tradition och kollektiv identitet. Utomstående kan finna det svårt att bli accepterade utan att visa respekt för gruppens normer."
@@ -874,7 +874,7 @@
             "description": "Beige representerar grunden för mänsklig existens, där livet reduceras till sina mest väsentliga komponenter. Detta stadium är starkt närvarande i krissituationer eller tidig mänsklig historia. Även om det kan verka primitivt, belyser det människans förmåga till resiliens och anpassning."
           },
           "examples": {
-            "title": "Kulturella Exempel",
+            "title": "Kulturella exempel",
             "items": [
               "Stammar i förhistorisk tid som lever av naturen utan strukturerat samhälle",
               "Flyktingar som navigerar livet i läger där daglig överlevnad dominerar",
@@ -882,7 +882,7 @@
             ]
           },
           "applications": {
-            "title": "Moderna Tillämpningar",
+            "title": "Moderna tillämpningar",
             "description": "Även i avancerade samhällen dyker Beige upp i nödsituationer eller när grundläggande behov inte uppfylls:",
             "items": [
               "Räddningspersonal som hanterar grundläggande överlevnadslogistik i katastrofzoner",
@@ -891,13 +891,13 @@
           }
         },
         "growth": {
-          "title": "Vägar till Tillväxt",
+          "title": "Vägar till tillväxt",
           "awareness": {
             "title": "Medvetenhet",
             "description": "Att känna igen när en individ eller grupp opererar i Beige kan förhindra missbedömningar eller ouppfyllda förväntningar."
           },
           "interventions": {
-            "title": "Praktiska Insatser",
+            "title": "Praktiska insatser",
             "items": [
               "Säkerställ trygghet och adressera omedelbara fysiska behov",
               "Bygg förtroende genom att erbjuda konsekvent, medkännande stöd",
@@ -905,12 +905,12 @@
             ]
           },
           "transition": {
-            "title": "Övergång till Purple (Lila)",
+            "title": "Övergång till Purple (lila)",
             "description": "När överlevnadsbehoven konsekvent uppfylls börjar individer naturligt söka koppling och trygghet genom relationer och traditioner, vilket signalerar en övergång till stadium Purple."
           }
         },
         "exercises": {
-          "title": "Praktiska Övningar",
+          "title": "Praktiska övningar",
           "reflection": {
             "title": "Självreflektion",
             "questions": [
@@ -919,7 +919,7 @@
             ]
           },
           "action": {
-            "title": "Gemensam Handling",
+            "title": "Gemensam handling",
             "description": "Volontärarbete med organisationer som hanterar hemlöshet, livsmedelsosäkerhet eller katastrofhjälp för att få en djupare förståelse av Beige i praktiken."
           }
         }
