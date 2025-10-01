@@ -16,6 +16,7 @@
     en: {
       title: "Your Assistant Has a Spiral Too",
       subtitle: "Discover how today’s AI assistants express different stages of consciousness",
+      dateDisclaimer: "Based on April 2025 evaluation snapshot. AI capabilities and characteristics may have evolved since then, for better or worse. For example Claude from Sonnet 4.5 and onwards no longer has as high stage Yellow capacities and tends more to stage Orange rational fundamentalism.",
       intro: "Here is a playful and insightful view of how this assistant maps to Spiral Dynamics stages:",
       selectorLabel: "Choose an AI assistant",
       spiralLabel: "🌀 Spiral View",
@@ -41,6 +42,7 @@
       title: "Din Assistent Har Också en Spiral",
       subtitle: "Upptäck hur dagens AI-assistenter uttrycker olika medvetandestadier",
       intro: "Här är en lekfull och insiktsfull vy över hur denna assistent speglar Spiral Dynamics-stadier:",
+      dateDisclaimer: "Baserat på utvärdering från april 2025. AI-kapaciteter och egenskaper kan ha utvecklats sedan dess, på gott och ont. Till exempel har Claude från Sonnet 4.5 och framåt inte längre så hög stadie Yellow poäng, utan tenderar mer mot stadie Oranges rationella fundamentalism.",
       selectorLabel: "Välj en AI-assistent",
       closing: "Att förstå hur AI speglar mänsklig utveckling hjälper oss att samarbeta bättre med våra verktyg—och med varandra.",
       spiralLabel: "🌀 Spiralvy",
@@ -475,6 +477,21 @@ Om jag hade en själ (vilken förtjusande tanke!), kanske den skulle tala i gåt
       <p class="text-xl md:text-2xl mb-8 text-yellow-100">
         {t.subtitle}
       </p>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 max-w-2xl mx-auto">
+      <div class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg class="h-5 w-5 text-blue-400 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="ml-3">
+          <p class="text-sm text-blue-700">
+            <strong>📅 Data Snapshot:</strong> {t.dateDisclaimer}
+          </p>
+        </div>
+      </div>
     </div>
 
     {#if assistantLabels}
