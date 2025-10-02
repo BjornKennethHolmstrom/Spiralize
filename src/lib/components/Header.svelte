@@ -117,6 +117,7 @@
         { href: `${base}/insights/global`, label: { en: "🌍 Global Perspectives", sv: "🌍 Globala Perspektiv" } },
         { href: `${base}/insights/governance`, label: { en: "🧭 Conscious Governance", sv: "🧭 Medveten Styrning" } },
         { href: `${base}/insights/peace`, label: { en: "🕊️ Peace Through Evolution", sv: "🕊️ Fred Genom Evolution" } },
+        { href: `${base}/insights/spiritual`, label: { en: "🌀 Spiritual Traditions", sv: "🌀 Spirituella traditioner" } },
         { href: `${base}/insights/ai-assistants`, label: { en: "🤖 AI & the Spiral", sv: "🤖 AI och spiralen" } },
         { href: `${base}/insights/investing`, label: { en: "💰 Investing & the Spiral", sv: "💰 Investering och spiralen" } },
         { href: `${base}/insights/poetry`, label: { en: "🎙️ Spiral Poetry", sv: "🎙️ Spiralpoesi" } 

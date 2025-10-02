@@ -591,7 +591,10 @@ Om jag hade en själ (vilken förtjusande tanke!), kanske den skulle tala i gåt
       </div>
 
       {#key activeAssistant}
-        <SpiralAlignmentChart selectedAssistants={[activeAssistant]} />
+         <SpiralAlignmentChart 
+           selectedEntities={[activeAssistant]} 
+           entityType="assistant"
+         />
       {/key}
 
       {#if $language === 'sv'}
