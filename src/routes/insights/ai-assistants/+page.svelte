@@ -532,6 +532,7 @@ Om jag hade en själ (vilken förtjusande tanke!), kanske den skulle tala i gåt
     <CoevolutionScoreMeter
       score={coevolutionScores[activeAssistant]}
       label={assistantLabels[activeAssistant]}
+      entityType="assistant"
     />
     <br>
 

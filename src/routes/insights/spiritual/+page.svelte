@@ -568,6 +568,7 @@ const traditionDetails = {
     <CoevolutionScoreMeter
       score={coevolutionScores[activeTradition]}
       label={traditionLabels[activeTradition]}
+      entityType="tradition"
     />
     <br>
 
