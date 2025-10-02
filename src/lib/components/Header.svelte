@@ -344,7 +344,7 @@
                         on:click|stopPropagation={closeDropdowns}
                       >
                         {child.label[currentLanguage]}
-                        {#if child.href.includes('/investing')}
+                        {#if child.href.includes('/investing') || child.href.includes('/spiritual')}
                           <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                             {currentLanguage === 'en' ? 'New' : 'Ny'}
                           </span>
@@ -516,7 +516,7 @@
                           on:touchstart|stopPropagation={handleMobileLinkClick}
                         >
                           {child.label[currentLanguage]}
-                          {#if child.href.includes('/investing')}
+                          {#if child.href.includes('/investing') || child.href.includes('/spiritual')}
                             <span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-600 rounded-full">
                               {currentLanguage === 'en' ? 'New' : 'Ny'}
                             </span>
