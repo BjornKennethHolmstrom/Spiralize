@@ -122,7 +122,7 @@
         </div>
       </div>
 
-      <!-- Support Section -->
+      <!-- Support Section 
       <div class="mt-12 pt-6 border-t border-gray-200">
         <h2 class="text-lg font-medium mb-3">{t.support.title}</h2>
         <p class="text-gray-600 mb-4">{t.support.text}</p>
@@ -139,7 +139,7 @@
             {t.support.note}
           </p>
         </div>
-      </div>
+      </div>-->
 
     </div>
   </div>
