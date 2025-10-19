@@ -10,6 +10,8 @@
   import WorldSpiralMap from '$lib/components/WorldSpiralMap.svelte';
   import StageComparisonVisualization from '$lib/components/StageComparisonVisualization.svelte';
   import PersonalSpiralBuilder from '$lib/components/PersonalSpiralBuilder.svelte';
+  import SEO from '$lib/components/SEO.svelte';
+  
   const { language, toggleLanguage } = languageStore; 
   export let expanded: boolean = false;
 
@@ -306,12 +308,16 @@
   }
 
   $: title = currentLanguage === 'en'
-    ? 'Understanding Spiral Dynamics Stages | Spiralize'
-    : 'Förstå Spiral Dynamics Stadier | Spiralize';
+    ? 'Explore Spiral Dynamics Stages'
+    : 'Utforska Spiral Dynamics Stadier';
     
   $: description = currentLanguage === 'en'
-    ? 'Explore all stages of Spiral Dynamics from Beige to Ultraviolet. Learn how human consciousness evolves through different value systems and worldviews.'
-    : 'Utforska alla stadier av Spiral Dynamics från Beige till Ultraviolett. Lär dig hur mänskligt medvetande utvecklas genom olika värdesystem och världsbilder.';
+    ? 'Complete guide to all Spiral Dynamics stages from Beige to Coral. Interactive visualizations, stage comparisons, and resources for understanding consciousness evolution. Includes global map and personal spiral builder.'
+    : 'Komplett guide till alla Spiral Dynamics-stadier från Beige till Coral. Interaktiva visualiseringar, stadie-jämförelser och resurser för att förstå medvetandeutveckling. Inkluderar global karta och personlig spiralbyggare.';
+    
+  $: keywords = currentLanguage === 'en'
+    ? 'spiral dynamics stages, beige purple red blue orange green yellow turquoise coral, consciousness evolution, value systems, worldview development, spiral stages explained, developmental psychology'
+    : 'spiral dynamics stadier, beige lila röd blå orange grön gul turkos korall, medvetandeutveckling, värdesystem, världsbildsutveckling, spiral stadier förklarade, utvecklingspsykologi';
 
   // Helper function to get parameters from URL
   function getQuizResultsFromURL() {
@@ -358,14 +364,13 @@
 
 </script>
 
-<svelte:head>
-  <title>{title}</title>
-  <meta name="description" content={description}>
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
-  <meta property="twitter:title" content={title}>
-  <meta property="twitter:description" content={description}>
-</svelte:head>
+<SEO 
+  {title}
+  {description}
+  {keywords}
+  type="article"
+  section="Spiral Stages"
+/>
 
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-4xl mx-auto">

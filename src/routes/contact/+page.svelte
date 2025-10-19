@@ -2,6 +2,7 @@
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
   import languageStore from '$lib/stores/languageStore';
+  import SEO from '$lib/components/SEO.svelte';
 
   let redirectUrl = '';
   onMount(() => {
@@ -35,22 +36,24 @@
   $: t = translations[currentLanguage];
 
   $: title = currentLanguage === 'en'
-    ? 'Contact Us | Spiralize'
-    : 'Kontakta Oss | Spiralize';
+    ? 'Contact Us'
+    : 'Kontakta Oss';
     
   $: description = currentLanguage === 'en'
-    ? 'Get in touch with the Spiralize team. Share your feedback, ask questions, or inquire about Spiral Dynamics and personal development.'
-    : 'Kontakta Spiralize-teamet. Dela din feedback, ställ frågor eller fråga om Spiral Dynamics och personlig utveckling.';
+    ? 'Get in touch with the Spiralize team. Share feedback, ask questions about Spiral Dynamics, or discuss personal development and consciousness evolution.'
+    : 'Kontakta Spiralize-teamet. Dela feedback, ställ frågor om Spiral Dynamics eller diskutera personlig utveckling och medvetandeutveckling.';
+    
+  $: keywords = currentLanguage === 'en'
+    ? 'contact spiralize, spiral dynamics questions, feedback, personal development help, consciousness evolution guidance'
+    : 'kontakta spiralize, spiral dynamics frågor, feedback, personlig utveckling hjälp, medvetandeutveckling vägledning';
 </script>
 
-<svelte:head>
-  <title>{title}</title>
-  <meta name="description" content={description}>
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
-  <meta property="twitter:title" content={title}>
-  <meta property="twitter:description" content={description}>
-</svelte:head>
+<SEO 
+  {title}
+  {description}
+  {keywords}
+  type="website"
+/>
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

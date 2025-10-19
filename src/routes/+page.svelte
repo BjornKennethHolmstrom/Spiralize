@@ -4,6 +4,7 @@
   import languageStore from '$lib/stores/languageStore';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
   import QuickBenefits from '$lib/components/QuickBenefits.svelte';
+  import SEO from '$lib/components/SEO.svelte';
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -280,21 +281,19 @@
   $: description = currentLanguage === 'en'
     ? 'Take our comprehensive assessment to understand your values and worldview through Spiral Dynamics. Get personalized insights and practical guidance for growth.'
     : 'Ta vår omfattande bedömning för att förstå dina värderingar och världsbild genom Spiral Dynamics. Få personliga insikter och praktisk vägledning för utveckling.';
+    
+  $: keywords = currentLanguage === 'en'
+    ? 'spiral dynamics, consciousness development, values evolution, worldview assessment, personal growth, developmental psychology, Clare Graves'
+    : 'spiral dynamics, medvetandeutveckling, värderingsevolution, världsbildsbedömning, personlig utveckling, utvecklingspsykologi, Clare Graves';
 </script>
 
-<svelte:head>
-  <title>{title}</title>
-  <meta name="description" content={description}>
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
-  <meta property="twitter:title" content={title}>
-  <meta property="twitter:description" content={description}>
-  <meta property="og:image" content="{base}/social-preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="twitter:image" content="{base}/social-preview.png">
-  <link rel="canonical" href="https://spiralize.org">
-</svelte:head>
+<SEO 
+  {title}
+  {description}
+  {keywords}
+  type="website"
+  image="/social-preview.png"
+/>
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

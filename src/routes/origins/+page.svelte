@@ -1,6 +1,7 @@
 <script lang="ts">
   import languageStore from '$lib/stores/languageStore';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
+  import SEO from '$lib/components/SEO.svelte';
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -124,22 +125,26 @@
   $: t = translations[currentLanguage];
 
   $: title = currentLanguage === 'en'
-    ? 'Origins of Spiral Dynamics | Spiralize'
-    : 'Spiral Dynamics Historia | Spiralize';
+    ? 'Origins of Spiral Dynamics'
+    : 'Spiral Dynamics Historia';
     
   $: description = currentLanguage === 'en'
-    ? 'Discover the history and development of Spiral Dynamics theory. Learn about Clare W. Graves, Don Beck, and the evolution of this transformative framework.'
-    : 'Upptäck historien och utvecklingen av Spiral Dynamics-teorin. Lär dig om Clare W. Graves, Don Beck och utvecklingen av detta transformativa ramverk.';
+    ? 'Discover the history of Spiral Dynamics from Clare W. Graves\' research in the 1950s through Don Beck and Chris Cowan\'s development. Learn how this theory transformed understanding of human consciousness evolution.'
+    : 'Upptäck historien om Spiral Dynamics från Clare W. Graves forskning på 1950-talet genom Don Beck och Chris Cowans utveckling. Lär dig hur denna teori transformerade förståelsen av mänsklig medvetandeutveckling.';
+    
+  $: keywords = currentLanguage === 'en'
+    ? 'spiral dynamics history, clare w graves, don beck, chris cowan, emergent cyclical levels, consciousness development theory, value systems evolution, south africa apartheid'
+    : 'spiral dynamics historia, clare w graves, don beck, chris cowan, emergent cyclical levels, medvetandeutvecklingsteori, värdesystemsutveckling, sydafrika apartheid';
 </script>
 
-<svelte:head>
-  <title>{title}</title>
-  <meta name="description" content={description}>
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
-  <meta property="twitter:title" content={title}>
-  <meta property="twitter:description" content={description}>
-</svelte:head>
+<SEO 
+  {title}
+  {description}
+  {keywords}
+  type="article"
+  section="Origins"
+  publishedTime="2024-01-15"
+/>
 
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-4xl mx-auto">

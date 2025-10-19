@@ -13,6 +13,7 @@
     getPartIVChapters,
     getAppendices 
   } from '$lib/stores/communicationGuideStore';
+  import SEO from '$lib/components/SEO.svelte';
 
   const { language } = languageStore;
   $: currentLanguage = $language;
@@ -29,10 +30,13 @@
   $: t = $communicationGuideStore.translations[currentLanguage];
 </script>
 
-<svelte:head>
-  <title>{t.title} | Spiralize</title>
-  <meta name="description" content={t.introduction}>
-</svelte:head>
+<SEO 
+  title="Communicating Spiral Dynamics"
+  description="Learn how to effectively communicate Spiral Dynamics to people."
+  keywords="spiral dynamics communication, developmental communication, cross-stage dialogue"
+  type="article"
+  section="Guides"
+/>
 
 <div class="max-w-5xl mx-auto px-4 py-12">
   <div in:fade>

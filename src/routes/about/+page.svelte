@@ -1,5 +1,6 @@
 <script>
   import languageStore from '$lib/stores/languageStore';
+  import SEO from '$lib/components/SEO.svelte';
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -55,22 +56,24 @@
   $: t = translations[currentLanguage];
 
   $: title = currentLanguage === 'en'
-    ? 'About Spiralize | Your Guide to Spiral Dynamics'
-    : 'Om Spiralize | Din Guide till Spiral Dynamics';
+    ? 'About Spiralize'
+    : 'Om Spiralize';
     
   $: description = currentLanguage === 'en'
-    ? 'Learn about the mission and purpose of Spiralize. Discover how we help individuals and organizations understand and apply Spiral Dynamics principles.'
-    : 'Lär dig om Spiralizes uppdrag och syfte. Upptäck hur vi hjälper individer och organisationer att förstå och tillämpa Spiral Dynamics principer.';
+    ? 'Learn about Spiralize, a free platform making Spiral Dynamics accessible. Discover the mission, inspiration from Clare W. Graves, and commitment to education.'
+    : 'Lär dig om Spiralize, en gratis plattform som gör Spiral Dynamics tillgänglig. Upptäck uppdraget, inspirationen från Clare W. Graves och engagemanget för utbildning.';
+    
+  $: keywords = currentLanguage === 'en'
+    ? 'about spiralize, spiral dynamics education, clare w graves, don beck, developmental psychology, free spiral dynamics resources'
+    : 'om spiralize, spiral dynamics utbildning, clare w graves, don beck, utvecklingspsykologi, gratis spiral dynamics resurser';
 </script>
 
-<svelte:head>
-  <title>{title}</title>
-  <meta name="description" content={description}>
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
-  <meta property="twitter:title" content={title}>
-  <meta property="twitter:description" content={description}>
-</svelte:head>
+<SEO 
+  {title}
+  {description}
+  {keywords}
+  type="website"
+/>
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

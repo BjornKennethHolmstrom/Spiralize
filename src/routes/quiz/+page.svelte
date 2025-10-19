@@ -5,6 +5,7 @@
   import { goto } from '$app/navigation';
   import { base } from '$app/paths';
   import Quiz from '$lib/components/Quiz.svelte';
+  import SEO from '$lib/components/SEO.svelte';
 
   const { language, toggleLanguage } = languageStore; 
 
@@ -132,23 +133,21 @@
     quizActions.startQuiz();
   }
 
-  $: title = currentLanguage === 'en'
-    ? 'Spiral Dynamics Assessment | Spiralize'
-    : 'Spiral Dynamics Bedömning | Spiralize';
+  $: seoTitle = $language === 'en' 
+    ? 'Spiral Dynamics Assessment'
+    : 'Spiral Dynamics Bedömning';
     
-  $: description = currentLanguage === 'en'
-    ? 'Take our comprehensive Spiral Dynamics assessment. 25 carefully designed questions to discover your center of gravity and understand your values system.'
-    : 'Ta vår omfattande Spiral Dynamics-bedömning. 25 noggrant utformade frågor för att upptäcka ditt gravitationscentrum och förstå ditt värdesystem.';
+  $: seoDescription = $language === 'en'
+    ? 'Take our comprehensive Spiral Dynamics quiz to discover your center of gravity and understand your values evolution.'
+    : 'Ta vårt omfattande Spiral Dynamics-test för att upptäcka ditt gravitationscentrum och förstå din värderingsutveckling.';
 </script>
 
-<svelte:head>
-  <title>{title}</title>
-  <meta name="description" content={description}>
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
-  <meta property="twitter:title" content={title}>
-  <meta property="twitter:description" content={description}>
-</svelte:head>
+<SEO 
+  title={seoTitle}
+  description={seoDescription}
+  keywords="spiral dynamics quiz, values assessment, consciousness test, worldview quiz"
+  type="website"
+/>
 
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   {#if !hasStarted}
