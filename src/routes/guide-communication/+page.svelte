@@ -46,6 +46,7 @@
     <div class="prose max-w-none mb-10">
       <p class="text-lg">{t.introduction}</p>
       
+      <!-- 
       <div class="bg-purple-50 p-6 rounded-lg my-8 shadow-sm border border-purple-100">
         <p class="font-medium mb-3">{t.downloadPrompt}</p>
         <a 
@@ -58,7 +59,7 @@
           </svg>
           {t.downloadButton}
         </a>
-      </div>
+      </div> -->
     </div>
     
     <div class="mb-12">
