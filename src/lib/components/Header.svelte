@@ -133,6 +133,13 @@
       id: 'guides',
       children: [
         { 
+          href: `${base}/guide-communication`, 
+          label: { 
+            en: "🌉 Communicating the Spiral", 
+            sv: "🌉 Kommunicera Spiralen" 
+          }
+        },
+        { 
           href: `${base}/guide-personal`, 
           label: { 
             en: "🌱 Evolving Yourself", 
