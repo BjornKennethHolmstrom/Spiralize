@@ -194,9 +194,37 @@ const initialState: CommunicationGuideStore = {
     },
     {
       id: 'chapter8',
-      path: 'engaging-with-achievement-progress',
+      path: 'engaging-with-power-autonomy',
       type: 'chapter',
       number: 8,
+      title: {
+        en: 'Engaging with Power & Autonomy',
+        sv: 'Att engagera sig med Makt & Autonomi'
+      },
+      description: {
+        en: 'Communicating effectively with power-oriented value systems.',
+        sv: 'Kommunicera effektivt med maktorienterade värdesystem.'
+      }
+    },
+    {
+      id: 'chapter9',
+      path: 'engaging-with-order-meaning',
+      type: 'chapter',
+      number: 9,
+      title: {
+        en: 'Engaging with Order & Meaning',
+        sv: 'Att engagera sig med Ordning & Mening'
+      },
+      description: {
+        en: 'Communicating effectively with order-oriented value systems.',
+        sv: 'Kommunicera effektivt med ordningsorienterade värdesystem.'
+      }
+    },
+    {
+      id: 'chapter10',
+      path: 'engaging-with-achievement-progress',
+      type: 'chapter',
+      number: 10,
       title: {
         en: 'Engaging with Achievement & Progress',
         sv: 'Att engagera sig med Prestation & Framsteg'
@@ -207,10 +235,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter9',
+      id: 'chapter11',
       path: 'engaging-with-community-harmony',
       type: 'chapter',
-      number: 9,
+      number: 11,
       title: {
         en: 'Engaging with Community & Harmony',
         sv: 'Att engagera sig med Gemenskap & Harmoni'
@@ -221,10 +249,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter10',
+      id: 'chapter12',
       path: 'engaging-with-systems-functionality',
       type: 'chapter',
-      number: 10,
+      number: 12,
       title: {
         en: 'Engaging with Systems & Functionality',
         sv: 'Att engagera sig med System & Funktionalitet'
@@ -237,10 +265,10 @@ const initialState: CommunicationGuideStore = {
 
     // Part III: The Communicator's Craft
     {
-      id: 'chapter11',
+      id: 'chapter13',
       path: 'cleaning-your-lens',
       type: 'chapter',
-      number: 11,
+      number: 13,
       title: {
         en: "Cleaning Your Lens - The Communicator's Inner Work",
         sv: "Att rengöra din lins - Kommunikatörens inre arbete"
@@ -251,10 +279,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter12',
+      id: 'chapter14',
       path: 'crafting-developmental-narratives',
       type: 'chapter',
-      number: 12,
+      number: 14,
       title: {
         en: 'Crafting Developmental Narratives - The Power of Story',
         sv: 'Att skapa utvecklingsberättelser - Berättelsens kraft'
@@ -265,10 +293,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter13',
+      id: 'chapter15',
       path: 'beyond-jargon',
       type: 'chapter',
-      number: 13,
+      number: 15,
       title: {
         en: 'Beyond Jargon - Everyday Language for Complex Concepts',
         sv: 'Bortom jargong - Vardagsspråk för komplexa koncept'
@@ -279,10 +307,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter14',
+      id: 'chapter16',
       path: 'making-it-tangible',
       type: 'chapter',
-      number: 14,
+      number: 16,
       title: {
         en: 'Making It Tangible - Experiential & Visual Methods',
         sv: 'Göra det påtagligt - Upplevelse- och visuella metoder'
@@ -293,10 +321,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter15',
+      id: 'chapter17',
       path: 'value-translation-method',
       type: 'chapter',
-      number: 15,
+      number: 17,
       title: {
         en: 'The Value Translation Method for Bridge-Building',
         sv: 'Värdeöversättningsmetoden för brobyggande'
@@ -307,10 +335,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter16',
+      id: 'chapter18',
       path: 'when-to-put-the-map-away',
       type: 'chapter',
-      number: 16,
+      number: 18,
       title: {
         en: 'When to Put the Map Away',
         sv: 'När man ska lägga undan kartan'
@@ -323,10 +351,10 @@ const initialState: CommunicationGuideStore = {
 
     // Part IV: Advanced Application & Ethics
     {
-      id: 'chapter17',
+      id: 'chapter19',
       path: 'discussing-integrative-thinking',
       type: 'chapter',
-      number: 17,
+      number: 19,
       title: {
         en: 'Discussing Integrative Thinking Without Elitism',
         sv: 'Att diskutera integrativt tänkande utan elitism'
@@ -337,10 +365,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter18',
+      id: 'chapter20',
       path: 'communicating-in-professional-contexts',
       type: 'chapter',
-      number: 18,
+      number: 20,
       title: {
         en: 'Communicating in Professional Contexts',
         sv: 'Att kommunicera i professionella sammanhang'
@@ -351,10 +379,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter19',
+      id: 'chapter21',
       path: 'addressing-objections-misconceptions',
       type: 'chapter',
-      number: 19,
+      number: 21,
       title: {
         en: 'Addressing Common Objections and Misconceptions',
         sv: 'Att hantera vanliga invändningar och missuppfattningar'
@@ -365,10 +393,10 @@ const initialState: CommunicationGuideStore = {
       }
     },
     {
-      id: 'chapter20',
+      id: 'chapter22',
       path: 'ethics-of-influence',
       type: 'chapter',
-      number: 20,
+      number: 22,
       title: {
         en: 'The Ethics of Influence and Communication',
         sv: 'Etiken kring påverkan och kommunikation'
