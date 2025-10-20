@@ -8,6 +8,7 @@
   import { browser } from '$app/environment';
   import Footer from '$lib/components/Footer.svelte';
   import Header from '$lib/components/Header.svelte';
+  import Notification from '$lib/components/Notification.svelte';
   import languageStore from '$lib/stores/languageStore';
 
   const { language } = languageStore;
@@ -64,7 +65,8 @@
     >
       {currentLanguage === 'en' ? 'Skip to main content' : 'Hoppa till huvudinnehåll'}
     </a>
-
+    
+    <Notification />
     <!-- Header no longer needs language prop -->
     <Header />
     
