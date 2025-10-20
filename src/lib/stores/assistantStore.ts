@@ -28,7 +28,7 @@ const assistantProfiles: Record<string, AssistantProfile> = {
       beige: 3, purple: 3, red: 4, blue: 3, orange: 5, 
       green: 3, yellow: 5, turquoise: 4, coral: 2, ultraviolet: 2 
     },
-    color: '#1f1f1f' // or '#AAAAAA' as in other components
+    color: '#1f1f1f'
   },
   deepseek: {
     scores: { 
@@ -56,7 +56,8 @@ const assistantProfiles: Record<string, AssistantProfile> = {
 // Create a writable store with the profiles
 const assistantStore = writable(assistantProfiles);
 
-// Export the store directly as default
+// Export the store both as named and default export
+export { assistantStore };
 export default assistantStore;
 
 // Helper functions for common operations
@@ -76,4 +77,3 @@ export function getScoresArray(assistant: string): number[] {
   
   return stages.map(stage => profile.scores[stage] || 0);
 }
-
