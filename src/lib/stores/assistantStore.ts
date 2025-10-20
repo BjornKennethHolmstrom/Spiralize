@@ -53,18 +53,11 @@ const assistantProfiles: Record<string, AssistantProfile> = {
   }
 };
 
-// Helper function to convert object scores to array format for the radar chart
-export function getScoresArray(assistant: string): number[] {
-  const stages = ['beige', 'purple', 'red', 'blue', 'orange', 'green', 'yellow', 'turquoise', 'coral', 'ultraviolet'];
-  const profile = assistantProfiles[assistant];
-  
-  if (!profile) return Array(stages.length).fill(0);
-  
-  return stages.map(stage => profile.scores[stage] || 0);
-}
-
 // Create a writable store with the profiles
-export const assistantStore = writable(assistantProfiles);
+const assistantStore = writable(assistantProfiles);
+
+// Export the store directly as default
+export default assistantStore;
 
 // Helper functions for common operations
 export function getAssistantColor(assistant: string): string {
@@ -73,6 +66,15 @@ export function getAssistantColor(assistant: string): string {
 
 export function getAssistantNames(): string[] {
   return Object.keys(assistantProfiles);
+}
+
+export function getScoresArray(assistant: string): number[] {
+  const stages = ['beige', 'purple', 'red', 'blue', 'orange', 'green', 'yellow', 'turquoise', 'coral', 'ultraviolet'];
+  const profile = assistantProfiles[assistant];
+  
+  if (!profile) return Array(stages.length).fill(0);
+  
+  return stages.map(stage => profile.scores[stage] || 0);
 }
 
 export default {
