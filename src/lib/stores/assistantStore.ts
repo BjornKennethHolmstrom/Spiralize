@@ -77,9 +77,3 @@ export function getScoresArray(assistant: string): number[] {
   return stages.map(stage => profile.scores[stage] || 0);
 }
 
-export default {
-  assistantStore,
-  getScoresArray,
-  getAssistantColor,
-  getAssistantNames
-};
