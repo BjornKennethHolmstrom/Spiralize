@@ -557,21 +557,21 @@ function getPartIChapters() {
 function getPartIIChapters() {
   const store = get();
   return store.items
-    .filter(item => item.type === 'chapter' && item.number && item.number >= 6 && item.number <= 10)
+    .filter(item => item.type === 'chapter' && item.number && item.number >= 6 && item.number <= 12)
     .sort((a, b) => (a.number || 0) - (b.number || 0));
 }
 
 function getPartIIIChapters() {
   const store = get();
   return store.items
-    .filter(item => item.type === 'chapter' && item.number && item.number >= 11 && item.number <= 16)
+    .filter(item => item.type === 'chapter' && item.number && item.number >= 13 && item.number <= 18)
     .sort((a, b) => (a.number || 0) - (b.number || 0));
 }
 
 function getPartIVChapters() {
   const store = get();
   return store.items
-    .filter(item => item.type === 'chapter' && item.number && item.number >= 17 && item.number <= 20)
+    .filter(item => item.type === 'chapter' && item.number && item.number >= 19 && item.number <= 22)
     .sort((a, b) => (a.number || 0) - (b.number || 0));
 }
 
