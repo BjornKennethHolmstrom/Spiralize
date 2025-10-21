@@ -270,7 +270,7 @@
       <!-- Page layout with sidebar for larger screens -->
       <div class="lg:flex gap-8">
         <aside class="hidden lg:block w-64 flex-shrink-0">
-          <div class="sticky top-8">
+          <div class="sticky top-8 max-h-[calc(100vh-4rem)] overflow-y-auto">
             <a 
               href="{base}/guide-spiritual" 
               class="font-semibold text-lg mb-4 inline-flex items-center hover:text-teal-600 transition-colors"

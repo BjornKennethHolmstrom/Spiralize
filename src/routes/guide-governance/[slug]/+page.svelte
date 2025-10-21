@@ -362,7 +362,7 @@
       <!-- Page layout with sidebar for larger screens -->
       <div class="lg:flex gap-8">
         <aside class="hidden lg:block w-64 flex-shrink-0">
-          <div class="sticky top-8">
+          <div class="sticky top-8 max-h-[calc(100vh-4rem)] overflow-y-auto">
             <a 
               href="{base}/guide-governance" 
               class="font-semibold text-lg mb-4 inline-flex items-center hover:text-teal-600 transition-colors"
@@ -385,8 +385,8 @@
                       {section.section}. {section.title[currentLanguage]}
                     </a>
                     
-                    <!-- If current section is active and has subsections, show them -->
-                    {#if currentItem && ((currentItem.id === section.id) || (currentItem.parentId === section.id)) && getSubsections(section.id).length > 0}
+                    <!-- If current section is active (or viewing a tool from this section) and has subsections, show them -->
+                    {#if currentItem && ((currentItem.id === section.id) || (currentItem.parentId === section.id) || getSubsections(section.id).some(sub => getTools(sub.id).some(tool => tool.id === currentItem.id))) && getSubsections(section.id).length > 0}
                       <ul class="mt-1 ml-4 space-y-1 border-l border-gray-200 pl-3">
                         {#each getSubsections(section.id) as subsection}
                           <li>
@@ -396,42 +396,54 @@
                             >
                               {subsection.title[currentLanguage]}
                             </a>
+                            
+                            <!-- Show tools under each subsection -->
+                            {#if getTools(subsection.id).length > 0}
+                              <ul class="mt-1 ml-4 space-y-1">
+                                {#each getTools(subsection.id) as tool}
+                                  <li>
+                                    <a 
+                                      href="{base}/guide-governance/{cleanPath(tool.path)}"
+                                      class="block py-1 text-xs hover:text-teal-600 transition-colors {currentItem?.id === tool.id ? 'font-semibold text-teal-600' : 'text-gray-500'}"
+                                    >
+                                      <span class="inline-block bg-blue-100 text-blue-700 text-xs rounded-full px-2 py-0.5 mr-1">
+                                        📊
+                                      </span>
+                                      {tool.title[currentLanguage]}
+                                    </a>
+                                  </li>
+                                {/each}
+                              </ul>
+                            {/if}
                           </li>
                         {/each}
                       </ul>
+                    {/if}
+                    
+                    <!-- Also show tools directly under sections (for sections without subsections) when active or viewing a tool from this section -->
+                    {#if currentItem && ((currentItem.id === section.id) || (currentItem.parentId === section.id) || getTools(section.id).some(tool => tool.id === currentItem.id)) && getTools(section.id).length > 0}
+                      <div class="mt-2 ml-4">
+                        <ul class="space-y-1 border-l border-gray-200 pl-3">
+                          {#each getTools(section.id) as tool}
+                            <li>
+                              <a 
+                                href="{base}/guide-governance/{cleanPath(tool.path)}"
+                                class="block py-1 text-sm hover:text-teal-600 transition-colors {currentItem?.id === tool.id ? 'font-semibold text-teal-600 border-l-2 border-teal-600 -ml-[17px] pl-[15px]' : 'text-gray-600'}"
+                              >
+                                <span class="inline-block bg-blue-100 text-blue-700 text-xs rounded-full px-2 py-0.5 mr-1">
+                                  📊
+                                </span>
+                                <span class="text-xs">{tool.title[currentLanguage]}</span>
+                              </a>
+                            </li>
+                          {/each}
+                        </ul>
+                      </div>
                     {/if}
                   </li>
                 {/each}
               </ul>
             </nav>
-            
-            <!-- Current Section Resources -->
-            {#if currentItem && resources.length > 0}
-              <div class="mt-8">
-                <h3 class="text-sm uppercase text-gray-500 font-medium mb-2">
-                  {t.ui.resources[currentLanguage]}
-                </h3>
-                <ul class="space-y-1 border-l border-gray-200 pl-4">
-                  {#each resources as resource}
-                    <li>
-                      <a 
-                        href="{base}/guide-governance/{cleanPath(resource.path)}"
-                        class="block py-1 text-sm hover:text-teal-600 transition-colors {currentItem?.id === resource.id ? 'font-semibold text-teal-600 border-l-2 border-teal-600 -ml-[17px] pl-[15px]' : 'text-gray-600'}"
-                      >
-                        <span>
-                          {#if resource.isTool}
-                            <span class="bg-blue-100 text-blue-700 text-xs rounded-full px-2 py-0.5 mr-1">
-                              {t.ui.diagrams[currentLanguage]}
-                            </span>
-                          {/if}
-                        </span>
-                        {resource.title[currentLanguage]}
-                      </a>
-                    </li>
-                  {/each}
-                </ul>
-              </div>
-            {/if}
           </div>
         </aside>
         
