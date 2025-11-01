@@ -1,13 +1,14 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { quizStore, quizActions } from '$lib/stores/quizStore';
+  import { quizStore, quizActions, type QuizLength } from '$lib/stores/quizStore';
   import languageStore from '$lib/stores/languageStore';
   import { goto } from '$app/navigation';
   import { base } from '$app/paths';
   import Quiz from '$lib/components/Quiz.svelte';
+  import QuizLengthSelector from '$lib/components/QuizLengthSelector.svelte';
   import SEO from '$lib/components/SEO.svelte';
 
-  const { language, toggleLanguage } = languageStore; 
+  const { language } = languageStore; 
 
   // Subscribe to the stores
   $: ({ hasStarted, isLoading, questions, currentIndex, answers } = $quizStore);
@@ -17,7 +18,12 @@
   let savedResults = null;
   let savedResultsDate = '';
 
-  let clearConfirmation = false;
+  // Confirmation dialog state
+  let showConfirmDialog = false;
+
+  // Quiz length selection
+  let selectedQuizLength: QuizLength = 15; // Default to standard
+  let showLengthSelector = false;
 
   onMount(() => {
     // Reset quiz state first to make sure we start fresh
@@ -31,12 +37,9 @@
 
     // Check for saved results in localStorage
     try {
-      console.log('Checking for saved results...');
       const storedResults = localStorage.getItem('spiralize_quiz_results');
-      console.log('Stored results from localStorage:', storedResults);
       if (storedResults) {
         const parsedResults = JSON.parse(storedResults);
-        console.log('Parsed stored results:', parsedResults);
         savedResults = parsedResults;
         // Format the timestamp for display
         if (parsedResults.timestamp) {
@@ -47,8 +50,6 @@
             day: 'numeric'
           });
         }
-      } else {
-        console.log('No saved results found');
       }
     } catch (error) {
       console.error('Error reading from localStorage:', error);
@@ -59,83 +60,108 @@
     goto(`${base}/quiz/results`);
   }
 
-  function clearSavedResults() {
-    try {
-      localStorage.removeItem('spiralize_quiz_results');
-      savedResults = null; // Clear the saved results
-      savedResultsDate = ''; // Clear the date
-      clearConfirmation = true;
-      setTimeout(() => {
-        clearConfirmation = false;
-      }, 3000);
-    } catch (error) {
-      console.error('Error clearing results from localStorage:', error);
-    }
+  function startFreshQuizConfirm() {
+    showConfirmDialog = true;
+  }
+
+  function cancelFreshQuiz() {
+    showConfirmDialog = false;
   }
 
   function startFreshQuiz() {
-    // Fully reset the quiz before starting again
-    quizActions.resetQuiz();
-    quizStore.update(state => ({
-      ...state,
-      hasStarted: false,
-      currentIndex: 0,
-      answers: {}
-    }));
+    // Clear saved results
+    try {
+      localStorage.removeItem('spiralize_quiz_results');
+      savedResults = null;
+      savedResultsDate = '';
+    } catch (error) {
+      console.error('Error clearing results from localStorage:', error);
+    }
+
+    showConfirmDialog = false;
     
-    // Short timeout to ensure state is updated before starting
-    setTimeout(() => {
-      quizActions.startQuiz();
-    }, 100);
+    // Show length selector
+    showLengthSelector = true;
+  }
+
+  function handleStartQuiz() {
+    // Show length selector instead of starting immediately
+    showLengthSelector = true;
+  }
+
+  function handleLengthSelected(length: QuizLength) {
+    selectedQuizLength = length;
+  }
+
+  function beginQuiz() {
+    // Start quiz with selected length
+    quizActions.startQuiz(selectedQuizLength);
+  }
+
+  function backToStart() {
+    showLengthSelector = false;
   }
 
   const translations = {
     en: {
-      title: "Spiral Dynamics Assessment",
-      description: "Discover your center of gravity in the Spiral Dynamics model through this comprehensive assessment. The test takes about 15-20 minutes to complete.",
+      title: "Spiral Dynamics assessment",
+      description: "Discover your center of gravity in the Spiral Dynamics model through this comprehensive assessment.",
       benefits: [
-        "25 carefully designed questions",
+        "Carefully designed questions",
         "Detailed profile analysis",
         "Personalized insights and recommendations"
       ],
-      startButton: "Start Assessment",
+      startButton: "Start assessment",
+      continueButton: "Continue to assessment",
+      backButton: "Back",
       loading: "Loading assessment...",
       savedResults: {
         title: "You've already completed this assessment",
         completed: "Completed on",
-        viewResults: "View Your Results",
-        startFresh: "Start Fresh Assessment"
+        viewResults: "View your results",
+        startFresh: "Start fresh assessment"
+      },
+      confirmDialog: {
+        title: "Start fresh assessment?",
+        message: "This will clear your saved results and start a new assessment. Your previous results will be permanently deleted.",
+        warning: "This action cannot be undone.",
+        confirm: "Yes, start fresh",
+        cancel: "Cancel"
       }
     },
     sv: {
-      title: "Spiral Dynamics Bedömning",
-      description: "Upptäck din tyngdpunkt i Spiral Dynamics-modellen genom denna omfattande bedömning. Testet tar cirka 15-20 minuter att slutföra.",
+      title: "Spiral Dynamics bedömning",
+      description: "Upptäck din tyngdpunkt i Spiral Dynamics-modellen genom denna omfattande bedömning.",
       benefits: [
-        "25 noggrant utformade frågor",
+        "Noggrant utformade frågor",
         "Detaljerad profilanalys",
         "Personliga insikter och rekommendationer"
       ],
-      startButton: "Starta Bedömning",
+      startButton: "Starta bedömning",
+      continueButton: "Fortsätt till bedömning",
+      backButton: "Tillbaka",
       loading: "Laddar bedömning...",
       savedResults: {
         title: "Du har redan slutfört denna bedömning",
         completed: "Slutförd den",
-        viewResults: "Visa Dina Resultat",
-        startFresh: "Starta Ny Bedömning"
+        viewResults: "Visa dina resultat",
+        startFresh: "Starta ny bedömning"
+      },
+      confirmDialog: {
+        title: "Starta ny bedömning?",
+        message: "Detta kommer att rensa dina sparade resultat och starta en ny bedömning. Dina tidigare resultat kommer att raderas permanent.",
+        warning: "Denna åtgärd kan inte ångras.",
+        confirm: "Ja, starta ny",
+        cancel: "Avbryt"
       }
     }
   };
 
   $: t = translations[currentLanguage];
 
-  function handleStartQuiz() {
-    console.log('Starting quiz...'); // Debug log
-    quizActions.startQuiz();
-  }
-
   $: seoTitle = $language === 'en' 
-    ? 'Spiral Dynamics Assessment'
-    : 'Spiral Dynamics Bedömning';
+    ? 'Spiral Dynamics assessment'
+    : 'Spiral Dynamics bedömning';
     
   $: seoDescription = $language === 'en'
     ? 'Take our comprehensive Spiral Dynamics quiz to discover your center of gravity and understand your values evolution.'
@@ -150,7 +176,7 @@
 />
 
 <div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-  {#if !hasStarted}
+  {#if !hasStarted && !showLengthSelector}
     <div class="max-w-3xl mx-auto text-center">
       <section aria-labelledby="quiz-title">
         <h1 class="text-4xl font-bold text-gray-900 mb-8">
@@ -179,37 +205,12 @@
               </button>
               
               <button
-                class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg text-lg font-medium hover:bg-gray-300 transition-colors"
-                on:click={startFreshQuiz}
+                class="bg-orange-500 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-orange-600 transition-colors"
+                on:click={startFreshQuizConfirm}
               >
                 {t.savedResults.startFresh}
               </button>
-              
-              <!-- Add Clear Results Button -->
-              <button
-                class="bg-red-100 text-red-700 px-6 py-3 rounded-lg text-lg font-medium hover:bg-red-200 transition-colors"
-                on:click={clearSavedResults}
-              >
-                {currentLanguage === 'en' ? 'Clear Saved Results' : 'Rensa Sparade Resultat'}
-              </button>
             </div>
-            
-            <!-- Add notification for cleared results -->
-            {#if clearConfirmation}
-              <div class="mt-4 bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded flex justify-between items-center transition-opacity duration-300">
-                <span>
-                  {currentLanguage === 'en' 
-                    ? 'Your saved results have been cleared.' 
-                    : 'Dina sparade resultat har rensats.'}
-                </span>
-                <button 
-                  on:click={() => clearConfirmation = false}
-                  class="text-blue-700 hover:text-blue-900"
-                >
-                  &times;
-                </button>
-              </div>
-            {/if}
           </div>
         {/if}
         
@@ -235,6 +236,31 @@
         </div>
       </section>
     </div>
+  {:else if showLengthSelector && !hasStarted}
+    <!-- Quiz Length Selection -->
+    <div class="max-w-5xl mx-auto">
+      <QuizLengthSelector 
+        bind:selectedLength={selectedQuizLength}
+        {currentLanguage}
+        onSelect={handleLengthSelected}
+      />
+      
+      <!-- Action buttons -->
+      <div class="flex justify-center gap-4 mt-8">
+        <button
+          class="bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors"
+          on:click={backToStart}
+        >
+          ← {t.backButton}
+        </button>
+        <button
+          class="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-purple-700 transition-colors"
+          on:click={beginQuiz}
+        >
+          {t.continueButton} →
+        </button>
+      </div>
+    </div>
   {:else if isLoading}
     <div 
       class="flex items-center justify-center min-h-[50vh]"
@@ -249,3 +275,52 @@
     <Quiz />
   {/if}
 </div>
+
+<!-- Confirmation Dialog Modal -->
+{#if showConfirmDialog}
+  <div 
+    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+    on:click={cancelFreshQuiz}
+  >
+    <div 
+      class="bg-white rounded-xl shadow-xl max-w-md w-full p-6"
+      on:click|stopPropagation
+    >
+      <div class="mb-4">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">
+          {t.confirmDialog.title}
+        </h3>
+        <p class="text-gray-600 mb-3">
+          {t.confirmDialog.message}
+        </p>
+        <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 flex items-start gap-2">
+          <span class="text-amber-600 text-xl">⚠️</span>
+          <p class="text-sm text-amber-800">
+            {t.confirmDialog.warning}
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-3">
+        <button
+          class="flex-1 bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors"
+          on:click={startFreshQuiz}
+        >
+          {t.confirmDialog.confirm}
+        </button>
+        <button
+          class="flex-1 bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors"
+          on:click={cancelFreshQuiz}
+        >
+          {t.confirmDialog.cancel}
+        </button>
+      </div>
+    </div>
+  </div>
+{/if}
+
+<style>
+  .z-50 {
+    z-index: 50;
+  }
+</style>

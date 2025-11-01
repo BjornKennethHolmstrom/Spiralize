@@ -1,10 +1,13 @@
 // src/lib/stores/quizStore.ts
 import { writable } from 'svelte/store';
 import type { Question } from '../types/spiral';
-import { shuffleArray } from '../utils/questionUtils'; // Reuse your shuffleArray function
+import { shuffleArray } from '../utils/questionUtils';
 import languageStore from '$lib/stores/languageStore';
 
-const { language, toggleLanguage } = languageStore; 
+const { language } = languageStore; 
+
+// Quiz length type
+export type QuizLength = 10 | 15 | 25;
 
 const questionsData: Question[] = [
   {
@@ -2285,6 +2288,67 @@ const questionsData: Question[] = [
   }
 ];
 
+/**
+ * SMART QUESTION SELECTION ALGORITHM
+ * 
+ * Strategy for selecting representative questions:
+ * - Ensure stage coverage (all stages represented)
+ * - Prioritize discriminating questions (clear stage differences)
+ * - Balance categories (values, worldview, relationships, etc.)
+ */
+
+// TIER 1: Best 10 Questions (Quick Snapshot)
+// One question per major stage area, highly discriminating
+const tier1QuestionIds = [
+  'values-1',           // Covers all 10 stages clearly
+  'worldview-1',        // Excellent stage discrimination
+  'relationships-1',    // Good coverage of all stages
+  'society-1',          // Clear differentiation
+  'leadership-1',       // Strong stage indicators
+  'success-1',          // Achievement vs other values
+  'scenario-1',         // Problem-solving approaches
+  'change-1',           // Adaptability across stages
+  'human-nature-1',     // Core beliefs about humanity
+  'uncertainty-1'       // Handling change and chaos
+];
+
+// TIER 2: Best 15 Questions (Standard Assessment) 
+// Tier 1 + 5 more for better accuracy
+const tier2QuestionIds = [
+  ...tier1QuestionIds,
+  'purpose-1',          // Purpose and meaning-making
+  'ethics-1',           // Epistemology across stages
+  'community-1',        // Collective vs individual
+  'development-1',      // Development approaches
+  'problem-1'           // Problem solving
+];
+
+// TIER 3: All 25 Questions (Comprehensive)
+// All questions for maximum accuracy
+
+/**
+ * Filter questions based on quiz length
+ */
+function selectQuestionsByLength(length: QuizLength): Question[] {
+  let selectedIds: string[];
+  
+  switch (length) {
+    case 10:
+      selectedIds = tier1QuestionIds;
+      break;
+    case 15:
+      selectedIds = tier2QuestionIds;
+      break;
+    case 25:
+    default:
+      // Return all questions
+      return questionsData;
+  }
+  
+  // Filter questions by ID while maintaining order for randomization
+  return questionsData.filter(q => selectedIds.includes(q.id));
+}
+
 // Create a proper Svelte store for managing quiz state
 export const quizStore = writable({
   questions: [],
@@ -2292,7 +2356,8 @@ export const quizStore = writable({
   answers: {} as Record<string, any>,
   isLoading: false,
   hasStarted: false,
-  language: 'en'
+  language: 'en',
+  quizLength: 25 as QuizLength // Default to comprehensive
 });
 
 // Synchronize the quiz store with the language store
@@ -2305,18 +2370,24 @@ language.subscribe(lang => {
 
 // Helper functions that work with the store
 export const quizActions = {
-  startQuiz: () => {
+  /**
+   * Start quiz with specified length
+   */
+  startQuiz: (length: QuizLength = 25) => {
     quizStore.update(state => ({
       ...state,
       hasStarted: true,
-      isLoading: true
+      isLoading: true,
+      quizLength: length
     }));
     
     // Simulate loading and randomize questions and their options
     setTimeout(() => {
+      const selectedQuestions = selectQuestionsByLength(length);
+      
       quizStore.update(state => ({
         ...state,
-        questions: shuffleArray(questionsData).map(question => ({
+        questions: shuffleArray(selectedQuestions).map(question => ({
           ...question,
           shuffledOptions: shuffleArray(question.options) // Shuffle options for each question
         })),
@@ -2358,12 +2429,13 @@ export const quizActions = {
 
   resetQuiz: () => {
     quizStore.set({
-      questions: shuffleArray(questionsData),
+      questions: [],
       currentIndex: 0,
       answers: {},
       isLoading: false,
       hasStarted: false,
-      language: 'en'
+      language: 'en',
+      quizLength: 25
     });
   },
 
@@ -2381,3 +2453,45 @@ export const quizActions = {
     return state.questions[Math.floor(Math.random() * state.questions.length)];
   }
 };
+
+/**
+ * Get quiz length metadata for UI display
+ */
+export function getQuizLengthInfo(length: QuizLength, language: 'en' | 'sv') {
+  const info = {
+    10: {
+      name: { en: 'Quick snapshot', sv: 'Snabb överblick' },
+      duration: { en: '~5 minutes', sv: '~5 minuter' },
+      description: { 
+        en: 'Fast overview - Good for getting started', 
+        sv: 'Snabb överblick - Bra för att komma igång' 
+      },
+      accuracy: { en: 'General indication', sv: 'Generell indikation' },
+      icon: '⚡'
+    },
+    15: {
+      name: { en: 'Standard assessment', sv: 'Standardbedömning' },
+      duration: { en: '~10 minutes', sv: '~10 minuter' },
+      description: { 
+        en: 'Balanced and recommended for most people', 
+        sv: 'Balanserad och rekommenderad för de flesta' 
+      },
+      accuracy: { en: 'Good accuracy', sv: 'Bra noggrannhet' },
+      icon: '⭐',
+      recommended: true
+    },
+    25: {
+      name: { en: 'Comprehensive profile', sv: 'Omfattande profil' },
+      duration: { en: '~15-20 minutes', sv: '~15-20 minuter' },
+      description: { 
+        en: 'Most detailed and accurate analysis', 
+        sv: 'Mest detaljerad och noggrann analys' 
+      },
+      accuracy: { en: 'Highest accuracy', sv: 'Högsta noggrannhet' },
+      icon: '🎯'
+    }
+  };
+  
+  return info[length];
+}
+

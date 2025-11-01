@@ -1,9 +1,9 @@
+<!-- src/routes/contact/thanks/+page.svelte -->
 <script lang="ts">
   import languageStore from '$lib/stores/languageStore';
   import { base } from '$app/paths';
 
   const { language } = languageStore; 
-
   $: currentLanguage = $language;
 
   const translations = {
@@ -16,34 +16,16 @@
     sv: {
       title: "Tack!",
       message: "Ditt meddelande har skickats. Vi återkommer till dig så snart som möjligt.",
-      backHome: "Tillbaka till Startsidan",
+      backHome: "Tillbaka till Startsidan", 
       backToContact: "Skicka ett Nytt Meddelande"
     }
   };
 
   $: t = translations[currentLanguage];
-
-  $: title = currentLanguage === 'en'
-    ? 'Message Sent | Spiralize'
-    : 'Meddelande Skickat | Spiralize';
-    
-  $: description = currentLanguage === 'en'
-    ? 'Thank you for contacting Spiralize. We will get back to you soon.'
-    : 'Tack för att du kontaktar Spiralize. Vi återkommer till dig snart.';
 </script>
-
-<svelte:head>
-  <title>{title}</title>
-  <meta name="description" content={description}>
-  <meta property="og:title" content={title}>
-  <meta property="og:description" content={description}>
-  <meta property="twitter:title" content={title}>
-  <meta property="twitter:description" content={description}>
-</svelte:head>
 
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <!-- Hero Section -->
     <div class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl text-white text-center px-6 py-16 mb-12">
       <div class="mb-8 text-6xl">✨</div>
       <h1 class="text-4xl md:text-5xl font-bold mb-4">

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import QuizLengthBadge from '$lib/components/QuizLengthBadge.svelte';
   import { quizStore, quizActions } from '$lib/stores/quizStore';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
@@ -11,6 +12,8 @@
 
   const { language } = languageStore;
   $: currentLanguage = $language;
+
+  $: quizLength = $quizStore.quizLength || 25;
   
   $: ({ answers } = $quizStore);
   function getCleanShareUrl() {
@@ -54,6 +57,7 @@
       stageScores,
       dominantStage,
       secondaryStage,
+      quizLength,
       timestamp: new Date().toISOString()
     };
     
@@ -350,6 +354,23 @@
         </div>
       {/if}
 
+      <QuizLengthBadge {quizLength} {currentLanguage} />
+      <br>
+      <br>
+
+      {#if quizLength === 10}
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+          <p class="text-blue-800 text-sm">
+            {currentLanguage === 'en' 
+              ? 'This is a quick snapshot based on 10 questions. For more accuracy, try the full assessment.'
+              : 'Detta är en snabb överblick baserad på 10 frågor. För högre noggrannhet, prova den fullständiga bedömningen.'}
+          </p>
+          <button class="mt-2 text-blue-600 underline">
+            {currentLanguage === 'en' ? 'Take full assessment' : 'Ta fullständig bedömning'}
+          </button>
+        </div>
+      {/if}
+
       <!-- Results visualization -->
       <div class="results-visualization mb-8">
         {#each Object.entries(stageScores) as [stage, score]}
@@ -485,6 +506,26 @@
               <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
           </a>
+      </div>
+
+      <div class="mt-8 bg-gradient-to-br from-purple-500 to-indigo-600 p-6 rounded-xl text-white">
+        <h3 class="text-xl font-bold mb-2">
+          {currentLanguage === 'en' ? 'Ready to Grow?' : 'Redo att växa?'}
+        </h3>
+        <p class="mb-4 text-purple-100">
+          {currentLanguage === 'en' 
+            ? 'Try personalized challenges designed for your stage of development.'
+            : 'Prova personliga utmaningar utformade för ditt utvecklingsstadium.'}
+        </p>
+        <a 
+          href="{base}/challenges"
+          class="inline-flex items-center bg-white text-purple-600 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+        >
+          <span>{currentLanguage === 'en' ? 'View Your Challenges' : 'Visa dina utmaningar'}</span>
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
       </div>
 
       <div class="mt-8 mb-8">

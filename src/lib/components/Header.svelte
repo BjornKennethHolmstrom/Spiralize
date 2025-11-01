@@ -106,6 +106,7 @@
     { href: `${base}/spiral`, label: { en: "Explore", sv: "Utforska" } },
     { href: `${base}/origins`, label: { en: "Origins", sv: "Historia" } },
     { href: `${base}/quiz`, label: { en: "Quiz", sv: "Test" } },
+    { href: `${base}/challenges`, label: { en: "Challenges", sv: "Utmaningar" } },
     // Insights dropdown
     { 
       label: { en: "Insights", sv: "Insikter" },
