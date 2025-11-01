@@ -1,3 +1,4 @@
+<!-- src/routes/about/+page.svelte -->
 <script>
   import languageStore from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
@@ -10,19 +11,33 @@
     en: {
       title: "About Spiralize",
       subtitle: "Discover the purpose and mission of Spiralize.",
-      paragraphs: [
-        "Spiralize is a platform designed to make the principles of Spiral Dynamics accessible and actionable. It aims to help individuals and societies understand themselves and the world better through this unique framework.",
-        "The project is inspired by the work of Clare W. Graves, Don Beck, and Chris Cowan, and it offers practical tools for personal and collective growth.",
-        "Spiralize is a labor of love by Björn Kenneth Holmström, reflecting a commitment to education and meaningful exploration."
-      ],
-      github: {
-        title: "We're Open Source!",
-        description: "This project is open source and welcomes contributions.",
-        button: "View on GitHub",
-        contribute: "Help us improve Spiralize for everyone"
+      
+      motivation: {
+        title: "Why this project exists",
+        paragraphs: [
+          "I created Spiralize because I find the Spiral Dynamics model profoundly enlightening about the state of our world. It offers a framework for understanding the values conflicts and cultural tensions we see around us—not as random chaos, but as predictable patterns of human development.",
+          "I also believe Spiral Dynamics has been somewhat unfairly rejected by mainstream discourse, perhaps because the model itself can be triggering for certain worldviews. When you're operating from Blue (order) or Orange (achievement) consciousness, being told you're at a \"stage\" that will eventually be transcended can feel invalidating. Yet this discomfort is precisely what makes the model valuable—it reveals our own centers of gravity.",
+          "We're living through a pivotal moment where tier 2 thinking is beginning to emerge at scale. The complex, interconnected challenges we face—climate change, polarization, technological disruption—cannot be solved with tier 1 consciousness alone. Both AI and Spiral Dynamics represent this tier 2 emergence: the ability to hold multiple perspectives, think systemically, and integrate rather than exclude."
+        ]
       },
+      
+      about: {
+        title: "What is Spiralize?",
+        paragraphs: [
+          "Spiralize is a platform designed to make the principles of Spiral Dynamics accessible and actionable. It aims to help individuals and societies understand themselves and the world better through this unique framework.",
+          "The project is inspired by the work of Clare W. Graves, Don Beck, and Chris Cowan, and it offers practical tools for personal and collective growth."
+        ]
+      },
+      
+      github: {
+        title: "This project is open source!",
+        description: "Spiralize is open source and welcomes contributions from the community.",
+        button: "View on GitHub",
+        contribute: "Help improve Spiralize for everyone"
+      },
+      
       relatedSites: {
-        title: "Related Projects",
+        title: "Related projects",
         subtitle: "Spiralize is part of an interconnected ecosystem exploring human consciousness and collective flourishing:",
         sites: [
           {
@@ -57,34 +72,50 @@
         ],
         integration: "Together, these projects explore the full spectrum of human development: from awakening to understanding to embodying in community to coordinating at scale."
       },
+      
       support: {
         title: "Support",
         text: "While Spiralize is free to use, if you'd like to support the project's maintenance and development, you can make a small contribution:",
         button: "Support via PayPal",
         note: "Please add the message \"Spiralize\" with your donation. Thank you!"
       },
+      
       author: {
-        title: "About the Author",
+        title: "About the author",
         text: "Björn Kenneth Holmström writes about consciousness, philosophy, and spirituality and more. Explore more of his work:",
-        blog: "Visit My Blog",
-        books: "Explore My Books",
-        projects: "Other Projects"
+        blog: "Visit my blog",
+        books: "Explore my books",
+        projects: "Other projects"
       }
     },
     sv: {
       title: "Om Spiralize",
       subtitle: "Upptäck syftet och visionen med Spiralize.",
-      paragraphs: [
-        "Spiralize är en plattform som gör principerna i Spiral Dynamics tillgängliga och användbara. Syftet är att hjälpa individer och samhällen att bättre förstå sig själva och världen genom detta unika ramverk.",
-        "Projektet är inspirerat av arbetet av Clare W. Graves, Don Beck och Chris Cowan och erbjuder praktiska verktyg för personlig och kollektiv utveckling.",
-        "Spiralize är ett kärleksarbete av Björn Kenneth Holmström och speglar ett engagemang för utbildning och meningsfull utforskning."
-      ],
-      github: {
-        title: "Vi är Öppen Källkod!",
-        description: "Detta projekt är öppen källkod och välkomnar bidrag.",
-        button: "Visa på GitHub",
-        contribute: "Hjälp oss förbättra Spiralize för alla"
+      
+      motivation: {
+        title: "Varför detta projekt finns",
+        paragraphs: [
+          "Jag skapade Spiralize eftersom jag finner Spiral Dynamics-modellen djupt upplysande om vår världs tillstånd. Den erbjuder ett ramverk för att förstå värdekonflikterna och kulturella spänningarna vi ser omkring oss—inte som slumpmässigt kaos, utan som förutsägbara mönster i mänsklig utveckling.",
+          "Jag tror också att Spiral Dynamics har blivit något orättvist avvisat av mainstream-diskursen, kanske för att själva modellen kan vara utmanande för vissa världsbilder. När man opererar från Blå (ordning) eller Orange (prestation) medvetande kan det kännas ogiltigförklarande att bli sagt att man befinner sig på ett \"stadium\" som så småningom kommer att transcenderas. Men just detta obehag är vad som gör modellen värdefull—den avslöjar våra egna gravitationscentrum.",
+          "Vi lever i en avgörande tid då nivå 2-tänkande börjar växa fram i större skala. De komplexa, sammankopplade utmaningarna vi står inför—klimatförändringar, polarisering, teknologisk disruption—kan inte lösas med enbart nivå 1-medvetande. Både AI och Spiral Dynamics representerar denna nivå 2-framväxt: förmågan att hålla flera perspektiv, tänka systemiskt och integrera snarare än utesluta."
+        ]
       },
+      
+      about: {
+        title: "Vad är Spiralize?",
+        paragraphs: [
+          "Spiralize är en plattform som gör principerna i Spiral Dynamics tillgängliga och användbara. Syftet är att hjälpa individer och samhällen att bättre förstå sig själva och världen genom detta unika ramverk.",
+          "Projektet är inspirerat av arbetet av Clare W. Graves, Don Beck och Chris Cowan och erbjuder praktiska verktyg för personlig och kollektiv utveckling."
+        ]
+      },
+      
+      github: {
+        title: "Detta projekt är öppen källkod!",
+        description: "Spiralize är öppen källkod och välkomnar bidrag från gemenskapen.",
+        button: "Visa på GitHub",
+        contribute: "Hjälp till att förbättra Spiralize för alla"
+      },
+      
       relatedSites: {
         title: "Relaterade projekt",
         subtitle: "Spiralize är en del av ett sammanlänkat ekosystem som utforskar mänskligt medvetande och kollektivt välmående:",
@@ -121,12 +152,14 @@
         ],
         integration: "Tillsammans utforskar dessa projekt hela spektrumet av mänsklig utveckling: från uppvaknande till förståelse till förkroppsligande i gemenskap till samordning i stor skala."
       },
+      
       support: {
         title: "Stöd",
         text: "Medan Spiralize är gratis att använda kan du, om du vill stödja projektets underhåll och utveckling, göra ett litet bidrag:",
         button: "Stöd via PayPal",
         note: "Lägg till meddelandet \"Spiralize\" med din donation. Tack!"
       },
+      
       author: {
         title: "Om författaren",
         text: "Björn Kenneth Holmström skriver om bland annat medvetande, filosofi och spiritualitet. Utforska mer av hans arbete:",
@@ -144,12 +177,12 @@
     : 'Om Spiralize';
     
   $: description = currentLanguage === 'en'
-    ? 'Learn about Spiralize, a free platform making Spiral Dynamics accessible. Discover the mission, inspiration from Clare W. Graves, and commitment to education.'
-    : 'Lär dig om Spiralize, en gratis plattform som gör Spiral Dynamics tillgänglig. Upptäck uppdraget, inspirationen från Clare W. Graves och engagemanget för utbildning.';
+    ? 'Learn about Spiralize and why Spiral Dynamics matters in our pivotal moment of tier 2 emergence. A free platform making developmental psychology accessible.'
+    : 'Lär dig om Spiralize och varför Spiral Dynamics spelar roll i vår avgörande tid av nivå 2-framväxt. En gratis plattform som gör utvecklingspsykologi tillgänglig.';
     
   $: keywords = currentLanguage === 'en'
-    ? 'about spiralize, spiral dynamics education, clare w graves, don beck, developmental psychology, free spiral dynamics resources'
-    : 'om spiralize, spiral dynamics utbildning, clare w graves, don beck, utvecklingspsykologi, gratis spiral dynamics resurser';
+    ? 'about spiralize, spiral dynamics education, clare w graves, don beck, tier 2 thinking, developmental psychology, systems thinking'
+    : 'om spiralize, spiral dynamics utbildning, clare w graves, don beck, nivå 2 tänkande, utvecklingspsykologi, systemtänkande';
 </script>
 
 <SEO 
@@ -173,9 +206,22 @@
 
     <!-- Content Section -->
     <div class="bg-white rounded-xl shadow-sm p-8 text-gray-700">
-      {#each t.paragraphs as paragraph}
-        <p class="mb-6">{paragraph}</p>
-      {/each}
+      
+      <!-- Motivation Section -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-semibold mb-6 text-gray-900">{t.motivation.title}</h2>
+        {#each t.motivation.paragraphs as paragraph}
+          <p class="mb-6 leading-relaxed">{paragraph}</p>
+        {/each}
+      </div>
+
+      <!-- About Section -->
+      <div class="pt-6 border-t border-gray-200">
+        <h2 class="text-2xl font-semibold mb-6 text-gray-900">{t.about.title}</h2>
+        {#each t.about.paragraphs as paragraph}
+          <p class="mb-6">{paragraph}</p>
+        {/each}
+      </div>
 
       <!-- Related Sites Section -->
       <div class="mt-12 pt-6 border-t border-gray-200">
@@ -197,7 +243,7 @@
               </p>
               {#if site.current}
                 <span class="inline-block text-sm text-purple-700 font-medium">
-                  You are here
+                  {currentLanguage === 'en' ? 'You are here' : 'Du är här'}
                 </span>
               {:else}
                 <a
@@ -206,7 +252,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center text-sm text-purple-600 hover:text-purple-700 font-medium"
                 >
-                  Visit site →
+                  {currentLanguage === 'en' ? 'Visit site →' : 'Besök webbplatsen →'}
                 </a>
               {/if}
             </div>

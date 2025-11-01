@@ -9,13 +9,13 @@
   const translations = {
     en: {
       title: "Thank You!",
-      message: "Your message has been sent successfully. We'll get back to you as soon as possible.",
+      message: "Your message has been sent successfully. I'll get back to you as soon as possible.",
       backHome: "Return to Home",
       backToContact: "Send Another Message"
     },
     sv: {
       title: "Tack!",
-      message: "Ditt meddelande har skickats. Vi återkommer till dig så snart som möjligt.",
+      message: "Ditt meddelande har skickats. Jag återkommer till dig så snart som möjligt.",
       backHome: "Tillbaka till Startsidan", 
       backToContact: "Skicka ett Nytt Meddelande"
     }
@@ -34,6 +34,17 @@
       <p class="text-xl md:text-2xl mb-8 text-purple-100">
         {t.message}
       </p>
+      <p class="text-lg text-purple-100 mt-4">
+        {currentLanguage === 'en'
+          ? "— Björn Kenneth Holmström, Creator of Spiralize"
+          : "— Björn Kenneth Holmström, Skapare av Spiralize"}
+      </p>
+      <p class="text-sm text-purple-200 mt-2">
+        {currentLanguage === 'en'
+          ? "Typical response time: 1-3 days"
+          : "Vanlig svarstid: 1-3 dagar"}
+      </p>
+      <br>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a 
           href="{base}/"

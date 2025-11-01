@@ -1,5 +1,7 @@
+<!-- src/routes/contact/+page.svelte -->
 <script>
   import { base } from '$app/paths';
+  import { goto } from '$app/navigation';
   import { onMount } from 'svelte';
   import languageStore from '$lib/stores/languageStore';
   import SEO from '$lib/components/SEO.svelte';
@@ -14,9 +16,9 @@
 
   const translations = {
     en: {
-      contact: "Contact Us",
-      welcome: "We're excited to hear from you!",
-      description: "Whether you have feedback, ideas, questions about Spiral Dynamics, or want to contribute - we'd love to connect.",
+      contact: "Contact me",
+      welcome: "I'm excited to hear from you!",
+      description: "Whether you have feedback, ideas, questions about Spiral Dynamics, or want to contribute - I'd love to connect.",
       reasons: {
         title: "Why reach out?",
         feedback: "Share feedback on the quiz or website functionality",
@@ -27,49 +29,49 @@
         other: "Anything else on your mind!"
       },
       github: {
-        title: "We're Open Source!",
-        description: "This project is open source and welcomes contributions.",
+        title: "This project is open source!",
+        description: "Spiralize welcomes contributions from the community.",
         button: "View on GitHub",
-        contribute: "Help us improve Spiralize for everyone"
+        contribute: "Help improve Spiralize for everyone"
       },
-      formTitle: "Send us a message",
-      name: "Your Name",
-      email: "Your Email", 
-      message: "Your Message",
-      messagePlaceholder: "Tell us what's on your mind...",
-      send: "Send Message",
+      formTitle: "Send me a message",
+      name: "Your name",
+      email: "Your email", 
+      message: "Your message",
+      messagePlaceholder: "Tell me what's on your mind...",
+      send: "Send message",
       sending: "Sending...",
-      success: "Message sent successfully! We'll get back to you soon.",
+      success: "Message sent successfully! I'll get back to you soon.",
       error: "Failed to send message. Please try again.",
       networkError: "Network error. Please check your connection."
     },
     sv: {
-      contact: "Kontakta Oss", 
-      welcome: "Vi är glada att höra från dig!",
-      description: "Oavsett om du har feedback, idéer, frågor om Spiral Dynamics eller vill bidra - så vill vi gärna höra från dig.",
+      contact: "Kontakta mig", 
+      welcome: "Jag är glad att höra från dig!",
+      description: "Oavsett om du har feedback, idéer, frågor om Spiral Dynamics eller vill bidra - så vill jag gärna höra från dig.",
       reasons: {
-        title: "Varför kontakta oss?",
+        title: "Varför kontakta mig?",
         feedback: "Dela feedback om testet eller webbplatsens funktionalitet",
-        ideas: "Föreslå nya funktioner eller innehållsideer", 
+        ideas: "Föreslå nya funktioner eller innehållsidéer", 
         questions: "Ställ frågor om Spiral Dynamics",
         contribute: "Erbjud dig att hjälpa till med översättningar eller utveckling",
         collaborate: "Diskutera samarbetsmöjligheter",
         other: "Något annat du vill dela!"
       },
       github: {
-        title: "Vi är Öppen Källkod!",
-        description: "Detta projekt är öppen källkod och välkomnar bidrag.",
+        title: "Detta projekt är öppen källkod!",
+        description: "Spiralize välkomnar bidrag från gemenskapen.",
         button: "Visa på GitHub",
-        contribute: "Hjälp oss förbättra Spiralize för alla"
+        contribute: "Hjälp till att förbättra Spiralize för alla"
       },
       formTitle: "Skicka ett meddelande",
-      name: "Ditt Namn",
-      email: "Din E-post",
-      message: "Ditt Meddelande", 
+      name: "Ditt namn",
+      email: "Din e-post",
+      message: "Ditt meddelande", 
       messagePlaceholder: "Berätta vad du har på hjärtat...",
-      send: "Skicka Meddelande",
+      send: "Skicka meddelande",
       sending: "Skickar...",
-      success: "Meddelandet har skickats! Vi återkommer till dig snart.",
+      success: "Meddelandet har skickats! Jag återkommer till dig snart.",
       error: "Meddelandet kunde inte skickas. Försök igen.",
       networkError: "Nätverksfel. Kontrollera din anslutning."
     }
@@ -95,9 +97,8 @@
       });
       
       if (response.ok) {
-        success = true;
-        // Reset the form
-        event.target.reset();
+        // Redirect to thanks page instead of inline success
+        goto(`${base}/contact/thanks`);
       } else {
         error = t.error;
       }
@@ -109,12 +110,12 @@
   }
 
   $: title = currentLanguage === 'en'
-    ? 'Contact Us - Spiralize'
-    : 'Kontakta Oss - Spiralize';
+    ? 'Contact - Spiralize'
+    : 'Kontakta - Spiralize';
     
   $: description = currentLanguage === 'en'
-    ? 'Get in touch with the Spiralize team. Share feedback, suggest features, ask about Spiral Dynamics, or contribute to our open source project.'
-    : 'Kontakta Spiralize-teamet. Dela feedback, föreslå funktioner, fråga om Spiral Dynamics eller bidra till vårt projekt med öppen källkod.';
+    ? 'Get in touch with Björn Kenneth Holmström, creator of Spiralize. Share feedback, suggest features, ask about Spiral Dynamics, or contribute to this open source project.'
+    : 'Kontakta Björn Kenneth Holmström, skapare av Spiralize. Dela feedback, föreslå funktioner, fråga om Spiral Dynamics eller bidra till detta projekt med öppen källkod.';
     
   $: keywords = currentLanguage === 'en'
     ? 'contact spiralize, spiral dynamics questions, feedback, contribute, open source, personal development'
@@ -212,15 +213,6 @@
           {t.formTitle}
         </h2>
         
-        {#if success}
-          <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-6">
-            <div class="flex items-center gap-2">
-              <span class="text-lg">✅</span>
-              <span>{t.success}</span>
-            </div>
-          </div>
-        {/if}
-
         {#if error}
           <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6">
             <div class="flex items-center gap-2">
