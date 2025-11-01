@@ -21,7 +21,7 @@
       matchScore: "Match score",
       matchDescription: "Your profile shares similarities with this AI assistant's expression of Spiral values.",
       viewAll: "Compare with all assistants",
-      buttonText: "See who you align with most",
+      buttonText: "See which AI you align with most",
       learnMore: "Learn more about AI assistants and consciousness",
       approachLabel: "Approach",
       approachText: {
@@ -40,7 +40,7 @@
       matchScore: "Matchpoäng",
       matchDescription: "Din profil delar likheter med denna AI-assistents uttryck av Spiral-värderingar.",
       viewAll: "Jämför med alla assistenter",
-      buttonText: "Se vem du stämmer mest överens med",
+      buttonText: "Se vilken AI du stämmer mest överens med",
       learnMore: "Lär dig mer om AI-assistenter och medvetande",
       approachLabel: "Tillvägagångssätt",
       approachText: {

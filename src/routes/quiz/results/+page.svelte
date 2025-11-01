@@ -57,7 +57,7 @@
       stageScores,
       dominantStage,
       secondaryStage,
-      quizLength,
+      quizLength: $quizStore.quizLength,
       timestamp: new Date().toISOString()
     };
     
@@ -157,6 +157,7 @@
           stageScores = parsedResults.stageScores;
           dominantStage = parsedResults.dominantStage;
           secondaryStage = parsedResults.secondaryStage;
+          quizLength = parsedResults.quizLength || 25;
         } else {
           // No stored results either, redirect to quiz
           console.log('No stored results, redirecting to quiz');
@@ -487,6 +488,27 @@
         </button>
       </div>
 
+      <!-- Ready to Grow? banner -->
+      <div class="mt-8 bg-gradient-to-br from-purple-500 to-indigo-600 p-6 rounded-xl text-white">
+        <h3 class="text-xl font-bold mb-2">
+          {currentLanguage === 'en' ? 'Ready to Grow?' : 'Redo att växa?'}
+        </h3>
+        <p class="mb-4 text-purple-100">
+          {currentLanguage === 'en' 
+            ? 'Try personalized challenges designed for your stage of development.'
+            : 'Prova personliga utmaningar utformade för ditt utvecklingsstadium.'}
+        </p>
+        <a 
+          href="{base}/challenges"
+          class="inline-flex items-center bg-white text-purple-600 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
+        >
+          <span>{currentLanguage === 'en' ? 'View Your Challenges' : 'Visa dina utmaningar'}</span>
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+
       <!-- Explore visualizations banner -->
       <div class="mt-8 mb-8 bg-blue-50 p-6 rounded-lg border border-blue-200">
         <h3 class="font-semibold text-lg text-blue-800 mb-2">
@@ -506,26 +528,6 @@
               <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
           </a>
-      </div>
-
-      <div class="mt-8 bg-gradient-to-br from-purple-500 to-indigo-600 p-6 rounded-xl text-white">
-        <h3 class="text-xl font-bold mb-2">
-          {currentLanguage === 'en' ? 'Ready to Grow?' : 'Redo att växa?'}
-        </h3>
-        <p class="mb-4 text-purple-100">
-          {currentLanguage === 'en' 
-            ? 'Try personalized challenges designed for your stage of development.'
-            : 'Prova personliga utmaningar utformade för ditt utvecklingsstadium.'}
-        </p>
-        <a 
-          href="{base}/challenges"
-          class="inline-flex items-center bg-white text-purple-600 px-6 py-3 rounded-lg font-medium hover:bg-purple-50 transition-colors"
-        >
-          <span>{currentLanguage === 'en' ? 'View Your Challenges' : 'Visa dina utmaningar'}</span>
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
-        </a>
       </div>
 
       <div class="mt-8 mb-8">
