@@ -68,6 +68,13 @@
             description: "Designing governance frameworks for planetary coordination and collective action on global challenges.",
             url: "https://globalgovernanceframeworks.org",
             logo: "/logo-ggf.svg"
+          },
+          {
+            name: "Fjärilspartiet",
+            tagline: "Evolving",
+            description: "A Swedish political party inspired by metamorphosis—applying systems thinking and adaptive governance to transform society through strategic, evolutionary change—bringing tier 2 consciousness into democratic practice.",
+            url: "https://fjarilspartiet.se",
+            logo: "/logo-fjarilspartiet.svg"
           }
         ],
         integration: "Together, these projects explore the full spectrum of human development: from awakening to understanding to embodying in community to coordinating at scale."
@@ -148,6 +155,13 @@
             description: "Designa styrningsramverk för planetär samordning och kollektiv handling på globala utmaningar.",
             url: "https://globalgovernanceframeworks.org",
             logo: "/logo-ggf.svg"
+          },
+          {
+            name: "Fjärilspartiet",
+            tagline: "Utvecklande",
+            description: "Ett svenskt politiskt parti inspirerat av metamorfos – som tillämpar systemtänkande och adaptiv styrning för att omvandla samhället genom strategisk, evolutionär förändring – och för in medvetande på nivå 2 i demokratisk praktik.",
+            url: "https://fjarilspartiet.se",
+            logo: "/logo-fjarilspartiet.svg"
           }
         ],
         integration: "Tillsammans utforskar dessa projekt hela spektrumet av mänsklig utveckling: från uppvaknande till förståelse till förkroppsligande i gemenskap till samordning i stor skala."
