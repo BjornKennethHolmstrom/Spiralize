@@ -12,6 +12,7 @@
       about: "About",
       contact: "Contact",
       learnMore: "Learn More",
+      support: "Support",
       sisterSites: "Sister Sites"
     },
     sv: {
@@ -19,6 +20,7 @@
       about: "Om",
       contact: "Kontakt",
       learnMore: "Läs mer",
+      support: "Stöd",
       sisterSites: "Systersidor"
     }
   };
@@ -42,6 +44,9 @@
         </a>
         <a href="{base}/contact" class="hover:underline text-gray-400 hover:text-white transition-colors">
           {t.contact}
+        </a>
+        <a href="{base}/support" class="hover:underline text-gray-400 hover:text-white transition-colors">
+          {t.support}
         </a>
         <a href="{base}/origins" class="hover:underline text-gray-400 hover:text-white transition-colors">
           {t.learnMore}

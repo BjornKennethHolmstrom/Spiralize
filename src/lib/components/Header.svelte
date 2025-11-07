@@ -192,7 +192,8 @@
       ]
     },
     { href: `${base}/contact`, label: { en: "Contact", sv: "Kontakt" } },
-    { href: `${base}/about`, label: { en: "About", sv: "Om" } }
+    { href: `${base}/about`, label: { en: "About", sv: "Om" } },
+    { href: `${base}/support`, label: { en: "Support", sv: "Stöd" } }
   ];
 
   function toggleMobileMenu(event: MouseEvent | TouchEvent) {
