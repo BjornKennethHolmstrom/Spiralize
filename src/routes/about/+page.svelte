@@ -90,9 +90,7 @@
       author: {
         title: "About the author",
         text: "Björn Kenneth Holmström writes about consciousness, philosophy, and spirituality and more. Explore more of his work:",
-        blog: "Visit my blog",
-        books: "Explore my books",
-        projects: "Other projects"
+        website: "Visit my website",
       }
     },
     sv: {
@@ -177,9 +175,7 @@
       author: {
         title: "Om författaren",
         text: "Björn Kenneth Holmström skriver om bland annat medvetande, filosofi och spiritualitet. Utforska mer av hans arbete:",
-        blog: "Besök min blogg",
-        books: "Utforska mina böcker",
-        projects: "Andra projekt"
+        website: "Besök min hemsida",
       }
     }
   };
@@ -283,28 +279,12 @@
           <p class="text-gray-600 mb-4">{t.author.text}</p>
           <div class="flex flex-wrap gap-4">
             <a
-              href="https://bjornkennethholmstrom.wordpress.com/"
+              href="https://bjornkennethholmstrom.org/"
               target="_blank"
               rel="noopener"
               class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm"
             >
-              {t.author.blog}
-            </a>
-            <a          
-              href="https://bjornkennethholmstrom.wordpress.com/books/"
-              target="_blank"
-              rel="noopener"
-              class="inline-block bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors text-sm"
-            >
-              {t.author.books}
-            </a>
-            <a          
-              href="https://bjornkennethholmstrom.wordpress.com/code/"
-              target="_blank"
-              rel="noopener"
-              class="inline-block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm"
-            >
-              {t.author.projects}
+              {t.author.website}
             </a>
           </div>
         </div>
