@@ -122,8 +122,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Support
 
-If you find Spiralize helpful, please consider supporting the project:
-
-- [Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=FX7FQMDQBAR4N)
-
 Thank you for your support and for exploring Spiral Dynamics with Spiralize!
