@@ -147,6 +147,12 @@
   const books = {
     en: [
       {
+        title: "The Integration Crisis",
+        author: "Björn Kenneth Holmström",
+        description: "Why does winning feel like losing? A diagnostic manual for civilizational redesign and the shift to Yellow consciousness. Read for free online.",
+        link: "https://www.bjornkennethholmstrom.org/books/integration-crisis"
+      },
+      {
         title: "Spiral Dynamics: Mastering Values, Leadership, and Change",
         author: "Don Beck & Christopher Cowan",
         description: "The foundational text that details the complete Spiral Dynamics model, its theoretical background, and practical applications across various domains.",
@@ -172,6 +178,12 @@
       }
     ],
     sv: [
+      {
+        title: "Integrationskrisen",
+        author: "Björn Kenneth Holmström",
+        description: "Varför känns framgång som förlust? En handbok för civilisatorisk redesign och skiftet till Gult medvetande. Läs gratis online.",
+        link: "https://www.bjornkennethholmstrom.org/books/integration-crisis"
+      },
       {
         title: "Spiral Dynamics: Mastering Values, Leadership, and Change",
         author: "Don Beck & Christopher Cowan",

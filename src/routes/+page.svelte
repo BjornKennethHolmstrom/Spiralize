@@ -6,8 +6,7 @@
   import QuickBenefits from '$lib/components/QuickBenefits.svelte';
   import SEO from '$lib/components/SEO.svelte';
 
-  const { language, toggleLanguage } = languageStore; 
-
+  const { language, toggleLanguage } = languageStore;
   // Reactive language value
   $: currentLanguage = $language;
 
@@ -52,6 +51,13 @@
           description: "Discover your center of gravity on the Spiral Dynamics model with an interactive quiz.",
           link: `${base}/quiz`,
           icon: "📝"
+        },
+        {
+          title: "New Book: The Integration Crisis",
+          description: "Why does winning feel like losing? A diagnostic manual for civilizational redesign and the shift to Yellow consciousness. Read for free.",
+          link: "https://www.bjornkennethholmstrom.org/books/integration-crisis",
+          icon: "📖",
+          external: true // Added flag
         },
         {
           title: "Explore the Spiral",
@@ -182,6 +188,13 @@
           icon: "📝"
         },
         {
+          title: "Ny Bok: Integrationskrisen",
+          description: "Varför känns framgång som förlust? En handbok för civilisatorisk redesign och skiftet till Gult medvetande. Läs gratis online.",
+          link: "https://www.bjornkennethholmstrom.org/books/integration-crisis",
+          icon: "📖",
+          external: true // Added flag
+        },
+        {
           title: "Utforska Spiralen",
           description: "Lär dig om varje steg i spiralen och hur de formar personlig och samhällelig utveckling.",
           link: `${base}/spiral`,
@@ -273,11 +286,9 @@
 
   // Reactive translation data
   $: t = translations[$language];
-
   $: title = currentLanguage === 'en'
     ? 'Spiralize - Discover Your Spiral Dynamics Profile'
     : 'Spiralize - Upptäck Din Spiral Dynamics Profil';
-    
   $: description = currentLanguage === 'en'
     ? 'Take our comprehensive assessment to understand your values and worldview through Spiral Dynamics. Get personalized insights and practical guidance for growth.'
     : 'Ta vår omfattande bedömning för att förstå dina värderingar och världsbild genom Spiral Dynamics. Få personliga insikter och praktisk vägledning för utveckling.';
@@ -298,9 +309,7 @@
 <div class="min-h-screen bg-gray-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-    <!-- Hero Section -->
     <div class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl text-white text-center px-6 py-16 mb-12">
-      <!-- Add logo here -->
       <div class="mb-8">
         <img 
           src="{base}/logo.svg" 
@@ -333,7 +342,6 @@
       </div>
     </div>
 
-    <!-- Introduction Section -->
     <div class="max-w-4xl mx-auto mb-16">
       <h2 class="text-3xl font-bold text-center mb-6">
         {t.intro.title}
@@ -367,16 +375,16 @@
       </div>
     </div>
     
-    <!-- Quick Benefits Section -->
     <div class="my-16">
       <QuickBenefits />
     </div>
 
-    <!-- Features Section -->
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
       {#each t.features as feature}
         <a 
           href={feature.link}
+          target={feature.external ? "_blank" : undefined}
+          rel={feature.external ? "noopener noreferrer" : undefined}
           class="group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6 border-2 border-transparent hover:border-purple-500 transform hover:-translate-y-1"
         >
           <div class="flex items-start space-x-4">
@@ -395,9 +403,15 @@
             </div>
           </div>
           <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+            {#if feature.external}
+              <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            {:else}
+              <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            {/if}
           </div>
         </a>
       {/each}
