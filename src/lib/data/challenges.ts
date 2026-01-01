@@ -774,27 +774,27 @@ export const challenges: Challenge[] = [
     difficulty: 'gentle',
     context: 'daily-life',
     title: {
-      en: 'Practice presence',
-      sv: 'Öva på närvaro'
+      en: 'Recognize your embeddedness',
+      sv: 'Inse din inneslutning'
     },
     description: {
-      en: 'Yellow excels at thinking about systems. Turquoise experiences being part of the system. This challenge invites felt experience.',
-      sv: 'Gult utmärker sig i att tänka på system. Turkos upplever att vara en del av systemet. Den här utmaningen bjuder in till en kännbar upplevelse.'
+      en: 'Yellow analyzes systems from outside. Turquoise recognizes itself as embedded within them. This challenge invites you to shift from mapping complexity to experiencing yourself as a participant within it.',
+      sv: 'Gult analyserar system utifrån. Turkos inser sig själv som innesluten i dem. Den här utmaningen bjuder in dig att skifta från att kartlägga komplexitet till att uppleva dig själv som en deltagare inom den.'
     },
     action: {
-      en: 'Spend 10 minutes in nature or a quiet space. Instead of analyzing or thinking, simply experience. Notice sounds, sensations, your breath. When thoughts arise, gently return to direct experience.',
-      sv: 'Tillbringa 10 minuter i naturen eller på en lugn plats. Istället för att analysera eller tänka, bara upplev. Lägg märke till ljud, förnimmelser, ditt andetag. När tankar dyker upp, återvänd försiktigt till den direkta upplevelsen.'
+      en: 'Choose one system you regularly analyze (your workplace, local ecosystem, family dynamics). Spend 10 minutes simply being present within it without analyzing. Notice: What changes when you stop being the outside observer? What do you notice about your role as a participant?',
+      sv: 'Välj ett system du regelbundet analyserar (din arbetsplats, lokala ekosystem, familjedynamik). Tillbringa 10 minuter med att bara vara närvarande inom det utan att analysera. Lägg märke till: Vad förändras när du slutar vara utomstående observatör? Vad märker du om din roll som deltagare?'
     },
     reflectionPrompts: {
       en: [
-        'How hard was it to stop analyzing and just be?',
-        'Did you notice a different quality of awareness?',
-        'What happens when you stop being the observer and become part of the field?'
+        'How hard was it to stop analyzing and just participate?',
+        'What did you notice about the system that analysis alone couldn\'t reveal?',
+        'How does recognizing your embeddedness change what you think you can do?'
       ],
       sv: [
-        'Hur svårt var det att sluta analysera och bara vara?',
-        'Lade du märke till en annan kvalitet av medvetenhet?',
-        'Vad händer när du slutar vara observatören och blir en del av fältet?'
+        'Hur svårt var det att sluta analysera och bara delta?',
+        'Vad märkte du om systemet som analys ensamt inte kunde avslöja?',
+        'Hur förändrar insikten om din inneslutning vad du tror att du kan göra?'
       ]
     },
     timeframe: {
@@ -810,34 +810,34 @@ export const challenges: Challenge[] = [
     difficulty: 'active',
     context: 'community',
     title: {
-      en: 'Participate in emergence',
-      sv: 'Delta i emergens'
+      en: 'Cultivate conditions instead of solving',
+      sv: 'Odla förutsättningar istället för att lösa'
     },
     description: {
-      en: 'Turquoise trusts emergent processes. This challenge asks you to participate without controlling the outcome.',
-      sv: 'Turkos litar på framväxande (emergenta) processer. Den här utmaningen ber dig att delta utan att kontrollera resultatet.'
+      en: 'Yellow solves problems through elegant systemic interventions. Turquoise cultivates conditions where transformation can emerge organically. This challenge asks you to shift from imposing solutions to facilitating emergence.',
+      sv: 'Gult löser problem genom eleganta systemiska ingrepp. Turkos odlar förutsättningar där transformation kan växa fram organiskt. Den här utmaningen ber dig att skifta från att påtvinga lösningar till att facilitera framväxt.'
     },
     action: {
-      en: 'Facilitate or join a group conversation where there is no predetermined outcome. Use practices like council circles or open space. Notice what emerges when you trust the collective intelligence.',
-      sv: 'Led eller delta i en gruppkonversation där det inte finns något förutbestämt resultat. Använd metoder som cirkelsamtal (council) eller "open space". Lägg märke till vad som växer fram när du litar på den kollektiva intelligensen.'
+      en: 'Identify a recurring challenge in your team or community. Instead of proposing a solution, create conditions: change the meeting format, introduce new patterns of interaction, shift physical spaces. Don\'t control the outcome—observe what emerges from the new conditions.',
+      sv: 'Identifiera en återkommande utmaning i ditt team eller gemenskap. Istället för att föreslå en lösning, skapa förutsättningar: ändra mötesformatet, introducera nya interaktionsmönster, förskjut fysiska utrymmen. Kontrollera inte resultatet—observera vad som växer fram från de nya förutsättningarna.'
     },
     reflectionPrompts: {
       en: [
-        'How did it feel to not have a strategic goal?',
-        'What emerged that no individual could have planned?',
-        'Did you notice moments of collective flow?',
-        'Can you trust emergence as much as you trust analysis?'
+        'How did it feel to not impose your solution?',
+        'What emerged that no strategic plan could have created?',
+        'Can you trust condition-setting as much as problem-solving?',
+        'What\'s the difference between cultivating conditions and abdicating responsibility?'
       ],
       sv: [
-        'Hur kändes det att inte ha ett strategiskt mål?',
-        'Vad växte fram som ingen enskild individ kunde ha planerat?',
-        'Lade du märke till stunder av kollektivt flöde?',
-        'Kan du lita på emergens lika mycket som du litar på analys?'
+        'Hur kändes det att inte påtvinga din lösning?',
+        'Vad växte fram som ingen strategisk plan kunde ha skapat?',
+        'Kan du lita på att sätta förutsättningar lika mycket som att lösa problem?',
+        'Vad är skillnaden mellan att odla förutsättningar och att abdikera ansvar?'
       ]
     },
     timeframe: {
-      en: 'One emergent session',
-      sv: 'En emergent session'
+      en: 'One two-week experiment',
+      sv: 'Ett tvåveckorsexperiment'
     }
   },
   {
@@ -848,36 +848,34 @@ export const challenges: Challenge[] = [
     difficulty: 'active',
     context: 'work',
     title: {
-      en: 'Lead from the field',
-      sv: 'Led från fältet'
+      en: 'Practice meta-systemic coordination',
+      sv: 'Öva på meta-systemisk koordinering'
     },
     description: {
-      en: 'Yellow leads through brilliant analysis and strategic vision. Turquoise leads through presence and resonance with the collective field. This challenge asks you to drop your maps and trust emergent intelligence.',
-      sv: 'Gult leder genom briljant analys och strategisk vision. Turkos leder genom närvaro och resonans med det kollektiva fältet. Den här utmaningen ber dig att släppa dina kartor och lita på framväxande intelligens.'
+      en: 'Yellow excels at mapping and optimizing systems. Turquoise coordinates across nested systems while recognizing how one\'s own thinking is also a system. This challenge asks you to work at multiple scales simultaneously while staying aware of your own embeddedness.',
+      sv: 'Gult utmärker sig i att kartlägga och optimera system. Turkos koordinerar över kapslade system samtidigt som den inser hur ens eget tänkande också är ett system. Den här utmaningen ber dig att arbeta på flera skalor samtidigt medan du förblir medveten om din egen inneslutning.'
     },
     action: {
-      en: 'In your next team meeting or collaborative project, don\'t prepare an agenda or analysis. Instead, open with a moment of silence. Let the conversation emerge organically. Speak only when you feel moved by the collective field, not when you have the "right answer."',
-      sv: 'I ditt nästa teammöte eller samarbetsprojekt, förbered ingen agenda eller analys. Öppna istället med ett ögonblicks tystnad. Låt konversationen växa fram organiskt. Tala bara när du känner dig driven av det kollektiva fältet, inte när du har "rätt svar."'
+      en: 'Take a current project and map it at three scales: immediate (team level), intermediate (organization level), and extended (ecosystem/multi-generational level). As you work, notice how decisions at one scale affect others. Explicitly track: How does your own thinking participate in creating the system you\'re trying to coordinate?',
+      sv: 'Ta ett aktuellt projekt och kartlägg det på tre skalor: omedelbart (teamnivå), mellanliggande (organisationsnivå) och utvidgat (ekosystem/flerlagergenerationsnivå). När du arbetar, lägg märke till hur beslut på en skala påverkar andra. Spåra explicit: Hur deltar ditt eget tänkande i att skapa det system du försöker koordinera?'
     },
     reflectionPrompts: {
       en: [
-        'What emerged that no strategic plan could have created?',
-        'How did it feel to lead without being the expert?',
-        'Did the group intelligence surpass your individual brilliance?',
-        'What new possibilities opened when you stopped trying to be right?',
-        'Can you trust emergence more than you trust your own analysis?'
+        'What became visible when you looked across multiple scales?',
+        'How did recognizing your own role as a system participant change your approach?',
+        'Can you coordinate complexity without pretending to stand outside it?',
+        'What trade-offs emerge when you optimize for multiple scales rather than just one?'
       ],
       sv: [
-        'Vad växte fram som ingen strategisk plan kunde ha skapat?',
-        'Hur kändes det att leda utan att vara experten?',
-        'Överträffade gruppens intelligens din individuella briljans?',
-        'Vilka nya möjligheter öppnades när du slutade försöka ha rätt?',
-        'Kan du lita på emergens mer än du litar på din egen analys?'
+        'Vad blev synligt när du tittade över flera skalor?',
+        'Hur förändrade insikten om din egen roll som systemdeltagare ditt tillvägagångssätt?',
+        'Kan du koordinera komplexitet utan att låtsas stå utanför den?',
+        'Vilka avvägningar uppstår när du optimerar för flera skalor snarare än bara en?'
       ]
     },
     timeframe: {
-      en: 'One collaborative session',
-      sv: 'En samarbetssession'
+      en: 'Duration of one project cycle',
+      sv: 'Varaktighet av en projektcykel'
     }
   },
   {
@@ -888,40 +886,40 @@ export const challenges: Challenge[] = [
     difficulty: 'deep',
     context: 'beliefs',
     title: {
-      en: 'Surrender systemic control',
-      sv: 'Överge systemisk kontroll'
+      en: 'Hold models lightly',
+      sv: 'Håll modeller lätt'
     },
     description: {
-      en: 'Yellow masters complex systems thinking and strategic intervention. Turquoise surrenders to the wisdom of the whole, trusting that life knows better than any model. This challenge invites you to release your need to understand and manage reality.',
-      sv: 'Gult bemästrar komplext systemtänkande och strategiska ingrepp. Turkos överlämnar sig till helhetens visdom, i tillit till att livet vet bättre än någon modell. Den här utmaningen bjuder in dig att släppa ditt behov av att förstå och hantera verkligheten.'
+      en: 'Yellow masters systems thinking through sophisticated models. Turquoise recognizes all models—including systems thinking itself—as temporary scaffolds in an evolving reality. This challenge invites you to hold your expertise lightly while maintaining functional effectiveness.',
+      sv: 'Gult bemästrar systemtänkande genom sofistikerade modeller. Turkos inser att alla modeller—inklusive systemtänkandet självt—är tillfälliga ställningar i en evolutionär verklighet. Den här utmaningen bjuder in dig att hålla din expertis lätt samtidigt som du bibehåller funktionell effektivitet.'
     },
     action: {
-      en: 'Identify one complex system you\'ve been trying to understand or optimize (your organization, a relationship pattern, a social issue). For one month, stop analyzing it. Instead, practice: "I don\'t need to figure this out. The system knows what it\'s doing." Notice what emerges when you stop intervening.',
-      sv: 'Identifiera ett komplext system du har försökt förstå eller optimera (din organisation, ett relationsmönster, en samhällsfråga). Under en månad, sluta analysera det. Öva istället på: "Jag behöver inte lista ut det här. Systemet vet vad det gör." Lägg märke till vad som växer fram när du slutar ingripa.'
+      en: 'Choose your most trusted analytical framework (a systems model, theory, or approach you rely on). For one month, actively look for its limitations and blind spots. Ask: What does this model prevent me from seeing? What becomes visible when I set it aside? What might be a better scaffold for this particular context? Keep using the model functionally while holding it epistemologically lightly.',
+      sv: 'Välj ditt mest betrodda analytiska ramverk (en systemmodell, teori eller tillvägagångssätt du förlitar dig på). Under en månad, leta aktivt efter dess begränsningar och blinda fläckar. Fråga: Vad hindrar denna modell mig från att se? Vad blir synligt när jag lägger den åt sidan? Vad kan vara en bättre ställning för detta specifika sammanhang? Fortsätt använda modellen funktionellt samtidigt som du håller den epistemologiskt lätt.'
     },
     reflectionPrompts: {
       en: [
-        'What fears came up when you stopped trying to understand?',
-        'Did the system self-organize in ways your models couldn\'t predict?',
-        'What part of you resisted trusting the intelligence of life itself?',
-        'Can you distinguish between wise action and controlling intervention?',
-        'What emerged when you stopped being the smartest person in the room and became a humble participant?'
+        'What did you discover about the limits of your most trusted frameworks?',
+        'Can you maintain functional expertise while recognizing its partiality?',
+        'How did holding models lightly change your relationship to certainty?',
+        'What becomes possible when you see all frameworks as temporary scaffolds?',
+        'Can you be both competent and humble about what you know?'
       ],
       sv: [
-        'Vilka rädslor dök upp när du slutade försöka förstå?',
-        'Organiserade systemet om sig på sätt som dina modeller inte kunde förutse?',
-        'Vilken del av dig motsatte sig att lita på livets egen intelligens?',
-        'Kan du skilja mellan klok handling och kontrollerande ingripande?',
-        'Vad växte fram när du slutade vara den smartaste personen i rummet och blev en ödmjuk deltagare?'
+        'Vad upptäckte du om gränserna för dina mest betrodda ramverk?',
+        'Kan du bibehålla funktionell expertis samtidigt som du erkänner dess partiskhet?',
+        'Hur förändrade det att hålla modeller lätt din relation till visshet?',
+        'Vad blir möjligt när du ser alla ramverk som tillfälliga ställningar?',
+        'Kan du vara både kompetent och ödmjuk om vad du vet?'
       ]
     },
     timeframe: {
-      en: 'One month of surrendered participation',
-      sv: 'En månad av överlämnad deltagande'
+      en: 'One month of epistemological humility',
+      sv: 'En månad av epistemologisk ödmjukhet'
     },
     warning: {
-      en: 'This is advanced practice. Ensure you have stable Yellow capacity before attempting. The goal is not to abandon responsibility, but to discover a deeper intelligence than your own.',
-      sv: 'Detta är avancerad övning. Se till att du har stabil Gul kapacitet innan du försöker. Målet är inte att överge ansvar, utan att upptäcka en djupare intelligens än din egen.'
+      en: 'This is advanced practice. The goal is not to abandon rigorous thinking, but to recognize thinking itself as embedded within what it tries to understand.',
+      sv: 'Detta är avancerad övning. Målet är inte att överge rigoröst tänkande, utan att inse att tänkandet självt är inneslutet i det det försöker förstå.'
     }
   },
 
@@ -938,25 +936,25 @@ export const challenges: Challenge[] = [
       sv: 'Återta ditt heliga "nej"'
     },
     description: {
-      en: 'Turquoise emphasizes unity and interconnection, sometimes at the expense of individual boundaries. Coral reclaims sovereign power while maintaining holistic awareness. This challenge invites you to honor your limits as sacred.',
-      sv: 'Turkos betonar enhet och sammankoppling, ibland på bekostnad av individuella gränser. Korall återtar suverän kraft samtidigt som den bibehåller holistisk medvetenhet. Den här utmaningen bjuder in dig att hedra dina gränser som heliga.'
+      en: 'Turquoise emphasizes participatory awareness within nested systems, sometimes leading to over-adaptation or complexity paralysis. Coral reclaims sovereign creative agency while maintaining meta-systemic understanding. This challenge invites you to honor your boundaries as essential to systemic health.',
+      sv: 'Turkos betonar deltagande medvetenhet inom kapslade system, vilket ibland leder till överanpassning eller komplexitetsförlamning. Korall återtar suverän kreativ agens samtidigt som meta-systemisk förståelse bibehålls. Den här utmaningen bjuder in dig att hedra dina gränser som väsentliga för systemisk hälsa.'
     },
     action: {
-      en: 'Identify one request or expectation you\'ve been accepting out of spiritual bypass or collective harmony. Say "no" clearly and without guilt. Notice that your boundary can actually serve the whole by modeling integrity.',
-      sv: 'Identifiera en begäran eller förväntan du har accepterat på grund av "spiritual bypass" (andligt undvikande) eller kollektiv harmoni. Säg "nej" tydligt och utan skuld. Lägg märke till att din gräns faktiskt kan tjäna helheten genom att föregå med gott exempel på integritet.'
+      en: 'Identify one request or expectation you\'ve been accepting out of systems-awareness paralysis ("I see all the interdependencies...") or spiritual bypass. Say "no" clearly and without guilt. Notice that your boundary can actually serve the larger system by modeling integrity and preventing unhealthy patterns.',
+      sv: 'Identifiera en begäran eller förväntan du har accepterat på grund av systemmedvetenhetsförlamning ("Jag ser alla ömsesidiga beroenden...") eller andligt undvikande. Säg "nej" tydligt och utan skuld. Lägg märke till att din gräns faktiskt kan tjäna det större systemet genom att föregå med gott exempel på integritet och förhindra ohälsosamma mönster.'
     },
     reflectionPrompts: {
       en: [
-        'Did saying "no" feel selfish or liberating?',
-        'Can boundaries be an act of love for the system?',
-        'What happened when you honored your truth even if it disrupted harmony?',
-        'Is authentic wholeness possible without individual sovereignty?'
+        'Did saying "no" feel selfish or clarifying?',
+        'Can boundaries strengthen rather than fragment systems?',
+        'What happened when you honored your agency even if it disrupted smooth coordination?',
+        'Is authentic participation possible without sovereign boundaries?'
       ],
       sv: [
-        'Kändes det själviskt eller befriande att säga "nej"?',
-        'Kan gränser vara en kärlekshandling gentemot systemet?',
-        'Vad hände när du hedrade din sanning även om det störde harmonin?',
-        'Är autentisk helhet möjlig utan individuell suveränitet?'
+        'Kändes det själviskt eller klargörande att säga "nej"?',
+        'Kan gränser stärka snarare än fragmentera system?',
+        'Vad hände när du hedrade din agens även om det störde smidig koordinering?',
+        'Är autentiskt deltagande möjligt utan suveräna gränser?'
       ]
     },
     timeframe: {
@@ -972,34 +970,34 @@ export const challenges: Challenge[] = [
     difficulty: 'gentle',
     context: 'daily-life',
     title: {
-      en: 'Embody your uniqueness',
-      sv: 'Förkroppsliga din unikhet'
+      en: 'Express your unique contribution',
+      sv: 'Uttryck ditt unika bidrag'
     },
     description: {
-      en: 'Turquoise experiences cosmic unity. Coral brings that unity back into unique, embodied expression. This challenge invites your particular flavor of consciousness to shine through ordinary moments.',
-      sv: 'Turkos upplever kosmisk enhet. Korall för tillbaka den enheten till unikt, förkroppsligat uttryck. Den här utmaningen bjuder in din särskilda smak av medvetande att lysa igenom vanliga ögonblick.'
+      en: 'Turquoise coordinates across nested systems with meta-level awareness. Coral brings unique creative agency back into that coordination. This challenge invites your particular way of participating to emerge clearly.',
+      sv: 'Turkos koordinerar över kapslade system med meta-nivå medvetenhet. Korall för tillbaka unik kreativ agens in i den koordineringen. Den här utmaningen bjuder in ditt särskilda sätt att delta att framträda tydligt.'
     },
     action: {
-      en: 'Choose one routine activity (walking, eating, working). Do it in a way that only you would do it - with your unique rhythm, style, or presence. Don\'t explain or justify your way. Just let your essence express itself.',
-      sv: 'Välj en rutinmässig aktivitet (promenad, äta, arbeta). Gör det på ett sätt som bara du skulle göra det - med din unika rytm, stil eller närvaro. Förklara eller rättfärdiga inte ditt sätt. Låt bara din essens uttrycka sig själv.'
+      en: 'Choose one collaborative activity (a meeting, project, or shared task). Instead of adapting to coordinate smoothly with everyone else, deliberately contribute in your unique way—with your specific rhythm, style, or insight. Don\'t justify or soften it. Trust that systems need diversity, not just harmony.',
+      sv: 'Välj en samarbetsaktivitet (ett möte, projekt eller delad uppgift). Istället för att anpassa dig för att koordinera smidigt med alla andra, bidra medvetet på ditt unika sätt—med din specifika rytm, stil eller insikt. Rättfärdiga eller mjuka inte upp det. Lita på att system behöver mångfald, inte bara harmoni.'
     },
     reflectionPrompts: {
       en: [
-        'How did it feel to stop blending into universal flow?',
-        'Did your uniqueness enhance or detract from the moment?',
-        'Can cosmic consciousness and personal expression coexist?',
-        'What wants to be expressed through you that no one else can express?'
+        'How did it feel to stop smoothing your edges?',
+        'Did your uniqueness enhance or disrupt the system? (Can it be both?)',
+        'Can meta-systemic awareness coexist with bold individual expression?',
+        'What contribution can you make that requires you to be specifically you?'
       ],
       sv: [
-        'Hur kändes det att sluta smälta in i universellt flöde?',
-        'Förbättrade eller försämrade din unikhet ögonblicket?',
-        'Kan kosmiskt medvetande och personligt uttryck samexistera?',
-        'Vad vill uttryckas genom dig som ingen annan kan uttrycka?'
+        'Hur kändes det att sluta mjuka ut dina kanter?',
+        'Förbättrade eller störde din unikhet systemet? (Kan det vara båda?)',
+        'Kan meta-systemisk medvetenhet samexistera med djärvt individuellt uttryck?',
+        'Vilket bidrag kan du ge som kräver att du är specifikt du?'
       ]
     },
     timeframe: {
-      en: 'One day of embodied expression',
-      sv: 'En dag av förkroppsligat uttryck'
+      en: 'One day of distinctive participation',
+      sv: 'En dag av distinkt deltagande'
     }
   },
   {
@@ -1010,29 +1008,29 @@ export const challenges: Challenge[] = [
     difficulty: 'active',
     context: 'community',
     title: {
-      en: 'Create from your unique essence',
-      sv: 'Skapa från din unika essens'
+      en: 'Create from evolutionary necessity',
+      sv: 'Skapa från evolutionär nödvändighet'
     },
     description: {
-      en: 'Coral consciousness brings bold, embodied action back into spirituality. This challenge asks you to create something that expresses your specific calling, not just universal oneness.',
-      sv: 'Korall-medvetande för tillbaka djärvt, förkroppsligat handlande in i andligheten. Den här utmaningen ber dig att skapa något som uttrycker ditt specifika kall, inte bara universell enhet.'
+      en: 'Turquoise cultivates conditions for systemic transformation. Coral adds sovereign creative agency—bringing forward what specifically wants to emerge through you. This challenge asks you to create something that serves evolution but could only come from your unique participation.',
+      sv: 'Turkos odlar förutsättningar för systemisk transformation. Korall tillför suverän kreativ agens—för fram det som specifikt vill uppstå genom dig. Den här utmaningen ber dig att skapa något som tjänar evolution men som bara kunde komma från ditt unika deltagande.'
     },
     action: {
-      en: 'Create and share something that only you could make - art, writing, music, a project, a ritual. Don\'t ask for consensus or blend your voice. Let it be raw, particular, and yours. Offer it to the world without apology.',
-      sv: 'Skapa och dela något som bara du kan göra - konst, text, musik, ett projekt, en ritual. Be inte om konsensus eller blanda ut din röst. Låt det vara rått, särpräglat och ditt. Erbjud det till världen utan ursäkt.'
+      en: 'Create and share something that addresses a systemic need you recognize, but do it in a way that only you would do it. Don\'t blend your voice into consensus or coordinate excessively. Let it be distinctive, even disruptive. Trust that evolution needs your specific creative agency, not just smooth coordination.',
+      sv: 'Skapa och dela något som adresserar ett systemiskt behov du känner igen, men gör det på ett sätt som bara du skulle göra det. Blanda inte ut din röst i konsensus eller koordinera överdrivet. Låt det vara distinkt, till och med störande. Lita på att evolution behöver din specifika kreativa agens, inte bara smidig koordinering.'
     },
     reflectionPrompts: {
       en: [
-        'How did it feel to create from your particular essence rather than universal principles?',
-        'Did your uniqueness enhance or detract from your service to the whole?',
-        'Can individual expression be an act of sacred participation?',
-        'What emerged when you stopped trying to be "spiritual" and just were yourself?'
+        'How did it feel to create from sovereign agency rather than systemic coordination alone?',
+        'Did your uniqueness enhance your service to the larger transformation?',
+        'Can individual creative expression be an essential form of systemic participation?',
+        'What emerged when you stopped trying to fit smoothly and just contributed your truth?'
       ],
       sv: [
-        'Hur kändes det att skapa från din särpräglade essens snarare än universella principer?',
-        'Förbättrade eller försämrade din unikhet din tjänst till helheten?',
-        'Kan individuella uttryck vara en handling av heligt deltagande?',
-        'Vad växte fram när du slutade försöka vara "andlig" och bara var dig själv?'
+        'Hur kändes det att skapa från suverän agens snarare än bara systemisk koordinering?',
+        'Förbättrade din unikhet din tjänst till den större transformationen?',
+        'Kan individuellt kreativt uttryck vara en väsentlig form av systemiskt deltagande?',
+        'Vad växte fram när du slutade försöka passa in smidigt och bara bidrog med din sanning?'
       ]
     },
     timeframe: {
@@ -1048,31 +1046,31 @@ export const challenges: Challenge[] = [
     difficulty: 'deep',
     context: 'daily-life',
     title: {
-      en: 'Dance with chaos',
-      sv: 'Dansa med kaos'
+      en: 'Embrace creative disruption',
+      sv: 'Omfamna kreativ störning'
     },
     description: {
-      en: 'Turquoise seeks harmony and flow. Coral embraces disruption as creative force. This challenge invites you to meet chaos not as a problem to transcend, but as sacred energy to channel.',
-      sv: 'Turkos söker harmoni och flöde. Korall omfamnar störningar som en kreativ kraft. Den här utmaningen bjuder in dig att möta kaos, inte som ett problem att transcendera, utan som en helig energi att kanalisera.'
+      en: 'Turquoise cultivates conditions for emergence and coordinates across scales. Coral recognizes that sometimes evolution requires disruption, not just harmonious coordination. This challenge invites you to act as an agent of creative transformation, even when it unsettles existing patterns.',
+      sv: 'Turkos odlar förutsättningar för framväxt och koordinerar över skalor. Korall inser att evolution ibland kräver störning, inte bara harmonisk koordinering. Den här utmaningen bjuder in dig att agera som en agent för kreativ transformation, även när det rubblar existerande mönster.'
     },
     action: {
-      en: 'Choose one area of your life that feels stuck in spiritual bypass or excessive harmony. Deliberately introduce creative disruption - have the difficult conversation, break the pattern, shake the structure. Stay present with what emerges.',
-      sv: 'Välj ett område i ditt liv som känns fast i andligt undvikande eller överdriven harmoni. Introducera medvetet kreativa störningar - ha det svåra samtalet, bryt mönstret, skaka om strukturen. Var närvarande i det som växer fram.'
+      en: 'Choose one area of your life or work where meta-systemic awareness has led to over-coordination or paralysis ("I see all the trade-offs, so I can\'t act..."). Deliberately introduce creative disruption—have the difficult conversation, break the comfortable pattern, propose the thing that doesn\'t fit smoothly. Stay grounded in your understanding of nested systems while acting with sovereign agency.',
+      sv: 'Välj ett område i ditt liv eller arbete där meta-systemisk medvetenhet har lett till överkoordinering eller förlamning ("Jag ser alla avvägningar, så jag kan inte agera..."). Introducera medvetet kreativ störning—ha det svåra samtalet, bryt det bekväma mönstret, föreslå saken som inte passar in smidigt. Förbli förankrad i din förståelse av kapslade system samtidigt som du agerar med suverän agens.'
     },
     reflectionPrompts: {
       en: [
-        'Did the disruption destroy or regenerate?',
-        'Could you stay grounded while allowing chaos?',
-        'What wanted to be born that harmony was preventing?',
-        'Can destruction be sacred when it serves evolution?',
-        'Did you discover that you can be both mystic and warrior?'
+        'Did the disruption damage the system or catalyze needed transformation?',
+        'Could you maintain meta-systemic awareness while acting with bold agency?',
+        'What wanted to emerge that smooth coordination was preventing?',
+        'Can you be both systems-aware and creatively disruptive?',
+        'Did you discover you can honor complexity without being paralyzed by it?'
       ],
       sv: [
-        'Förstörde eller återskapade störningen?',
-        'Kunde du förbli grundad samtidigt som du tillät kaos?',
-        'Vad ville födas som harmonin förhindrade?',
-        'Kan förstörelse vara helig när den tjänar evolutionen?',
-        'Upptäckte du att du kan vara både mystiker och krigare?'
+        'Skadade störningen systemet eller katalyserade den nödvändig transformation?',
+        'Kunde du bibehålla meta-systemisk medvetenhet samtidigt som du agerade med djärv agens?',
+        'Vad ville framträda som smidig koordinering förhindrade?',
+        'Kan du vara både systemmedveten och kreativt störande?',
+        'Upptäckte du att du kan hedra komplexitet utan att bli förlamad av den?'
       ]
     },
     timeframe: {
@@ -1080,8 +1078,8 @@ export const challenges: Challenge[] = [
       sv: 'En cykel av störning och integration'
     },
     warning: {
-      en: 'This is advanced work. Only engage if you have stable Turquoise awareness and can hold both transcendence and embodiment.',
-      sv: 'Detta är avancerat arbete. Engagera dig bara om du har en stabil Turkos medvetenhet och kan hålla både transcendens och förkroppsligande.'
+      en: 'This is advanced work. Only engage if you have stable meta-systemic awareness and can hold both coordinated participation and sovereign agency without collapsing into either extreme.',
+      sv: 'Detta är avancerat arbete. Engagera dig bara om du har stabil meta-systemisk medvetenhet och kan hålla både koordinerat deltagande och suverän agens utan att kollapsa in i någon av ytterligheterna.'
     }
   },
 

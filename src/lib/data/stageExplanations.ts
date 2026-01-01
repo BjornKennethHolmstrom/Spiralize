@@ -81,32 +81,42 @@ export const dominantStageExplanations: Record<string, StageExplanation> = {
   },
   turquoise: {
     dominant: {
-      en: "Your center of gravity in Turquoise reflects a holistic worldview and deep connection to global systems. You likely value unity and see the interconnectedness of all life.",
-      sv: "Ditt gravitationscentrum i Turkos återspeglar en holistisk världsbild och djup koppling till globala system. Du värdesätter troligen enhet och ser sammankopplingen av allt liv."
+      en: "Your center of gravity in Turquoise reflects meta-systemic awareness and participatory understanding of nested living systems. You likely recognize yourself as embedded within complexity and excel at cultivating conditions for emergence rather than imposing solutions.",
+      sv: "Ditt gravitationscentrum i Turkos återspeglar meta-systemisk medvetenhet och deltagande förståelse för kapslade levande system. Du inser troligen dig själv som innesluten i komplexitet och är skicklig på att odla förutsättningar för framväxt snarare än att påtvinga lösningar."
     },
     secondary: {
-      en: "Having Turquoise as a secondary influence suggests you maintain holistic awareness while engaging with other value systems.",
-      sv: "Att ha Turkos som sekundärt inflytande antyder att du upprätthåller holistisk medvetenhet samtidigt som du engagerar dig i andra värdesystem."
+      en: "Having Turquoise as a secondary influence suggests you maintain participatory systems awareness and multi-generational thinking while engaging with other value systems.",
+      sv: "Att ha Turkos som sekundärt inflytande antyder att du upprätthåller deltagande systemmedvetenhet och flerlagergenerationellt tänkande samtidigt som du engagerar dig i andra värdesystem."
     }
   },
   coral: {
     dominant: {
-      en: "Your center of gravity in Coral indicates a unique balance of sovereign individuality and universal connection. You likely excel at pioneering new paradigms while maintaining deep resonance with universal consciousness, bringing together personal creative expression with collective evolution.",
-      sv: "Ditt gravitationscentrum i Korall indikerar en unik balans mellan suverän individualitet och universell koppling. Du är troligen skicklig på att pionjära nya paradigm medan du bibehåller djup resonans med universellt medvetande, och förenar personligt kreativt uttryck med kollektiv evolution."
+      en: "Your center of gravity in Coral reflects sovereign creative consciousness and evolutionary purpose. You likely pioneer new paradigms while maintaining deep connection to universal patterns of emergence.",
+      sv: "Ditt gravitationscentrum i Korall återspeglar suveränt kreativt medvetande och evolutionärt syfte. Du är troligen pionjär för nya paradigm medan en djup koppling till universella framväxtmönster bibehålls."
     },
     secondary: {
-      en: "Having Coral as a secondary influence suggests you maintain the ability to pioneer new possibilities and integrate personal sovereignty with universal awareness while operating from other value systems.",
-      sv: "Att ha Korall som sekundärt inflytande antyder att du upprätthåller förmågan att pionjära nya möjligheter och integrera personlig suveränitet med universell medvetenhet medan du opererar från andra värdesystem."
+      en: "Having Coral as a secondary influence suggests you maintain creative sovereignty while grounding it in other value systems.",
+      sv: "Att ha Korall som sekundärt inflytande antyder att du upprätthåller kreativ suveränitet samtidigt som du förankrar det i andra värdesystem."
     }
   },
   ultraviolet: {
     dominant: {
-      en: "Your center of gravity in Ultraviolet reflects a complete dissolution into infinite flow and co-creation. You likely experience reality as a seamless dance of infinite possibilities, where boundaries between self and other, form and formlessness, naturally dissolve into dynamic creative expression.",
-      sv: "Ditt gravitationscentrum i Ultraviolett återspeglar en fullständig upplösning i oändligt flöde och medskapande. Du upplever troligen verkligheten som en sömlös dans av oändliga möjligheter, där gränser mellan själv och andra, form och formlöshet, naturligt upplöses i dynamiskt kreativt uttryck."
+      en: "Your center of gravity in Ultraviolet reflects boundless awareness beyond all separation. You likely experience reality as infinite flow and maintain deep presence while engaging with manifest forms.",
+      sv: "Ditt gravitationscentrum i Ultraviolett återspeglar gränslös medvetenhet bortom all separation. Du upplever troligen verkligheten som oändligt flöde och upprätthåller djup närvaro medan du engagerar dig i manifesta former."
     },
     secondary: {
-      en: "Having Ultraviolet as a secondary influence suggests you maintain access to infinite awareness and boundless flow while engaging with more structured value systems.",
-      sv: "Att ha Ultraviolett som sekundärt inflytande antyder att du upprätthåller tillgång till oändlig medvetenhet och gränslöst flöde medan du engagerar dig i mer strukturerade värdesystem."
+      en: "Having Ultraviolet as a secondary influence suggests you maintain access to boundless awareness while operating from other value systems.",
+      sv: "Att ha Ultraviolett som sekundärt inflytande antyder att du upprätthåller tillgång till gränslös medvetenhet medan du opererar från andra värdesystem."
+    }
+  },
+  clear: {
+    dominant: {
+      en: "Your center of gravity in Clear reflects complete transparency beyond all identity and form. You likely experience existence without attachment to any particular expression or manifestation.",
+      sv: "Ditt gravitationscentrum i Klar återspeglar fullständig transparens bortom all identitet och form. Du upplever troligen existens utan bundenhet till något särskilt uttryck eller manifestation."
+    },
+    secondary: {
+      en: "Having Clear as a secondary influence suggests you maintain profound emptiness awareness while engaging with other value systems.",
+      sv: "Att ha Klar som sekundärt inflytande antyder att du upprätthåller djupgående tomhetsmedvetenhet samtidigt som du engagerar dig i andra värdesystem."
     }
   }
 };
@@ -114,135 +124,135 @@ export const dominantStageExplanations: Record<string, StageExplanation> = {
 export const stageCombinations: StageCombinations = {
   beige: {
     purple: {
-      en: "This combination merges survival awareness with communal wisdom, suggesting an ability to address basic needs through collective support and ancestral knowledge. You likely excel at building secure environments while maintaining strong group bonds and traditional practices.",
-      sv: "Denna kombination förenar överlevnadsmedvetenhet med kommunal visdom, vilket antyder en förmåga att hantera grundläggande behov genom kollektivt stöd och förfäders kunskap. Du är troligen skicklig på att bygga trygga miljöer medan starka gruppband och traditionella praktiker upprätthålls."
+      en: "This combination suggests a balance between immediate survival needs and community belonging, indicating adaptability in challenging environments while maintaining social connections.",
+      sv: "Denna kombination antyder en balans mellan omedelbara överlevnadsbehov och gemenskapstillhörighet, vilket indikerar anpassningsförmåga i utmanande miljöer samtidigt som sociala kopplingar bibehålls."
     },
     red: {
-      en: "This combination unites survival instincts with assertive action, suggesting a powerful ability to secure resources and protect vital interests. You likely excel at taking decisive action to ensure basic needs are met while maintaining personal autonomy and strength.",
-      sv: "Denna kombination förenar överlevnadsinstinkter med självsäkert handlande, vilket antyder en kraftfull förmåga att säkra resurser och skydda vitala intressen. Du är troligen skicklig på att ta avgörande beslut för att säkerställa att grundläggande behov möts medan personlig autonomi och styrka bibehålls."
+      en: "This combination merges survival instincts with assertive action, suggesting a strong capacity to navigate challenges through both practical resourcefulness and personal power.",
+      sv: "Denna kombination förenar överlevnadsinstinkter med självsäker handling, vilket antyder en stark förmåga att navigera utmaningar genom både praktisk resursfullhet och personlig makt."
     },
     blue: {
-      en: "This combination connects survival awareness with structured principles, suggesting an ability to create stable and secure environments through systematic approaches. You likely excel at establishing practical systems that ensure basic needs are consistently met.",
-      sv: "Denna kombination förenar överlevnadsmedvetenhet med strukturerade principer, vilket antyder en förmåga att skapa stabila och säkra miljöer genom systematiska tillvägagångssätt. Du är troligen skicklig på att etablera praktiska system som säkerställer att grundläggande behov konsekvent uppfylls."
+      en: "This combination integrates basic survival awareness with structured order, indicating an ability to meet fundamental needs through disciplined approaches and systematic planning.",
+      sv: "Denna kombination integrerar grundläggande överlevnadsmedvetenhet med strukturerad ordning, vilket indikerar en förmåga att möta fundamentala behov genom disciplinerade tillvägagångssätt och systematisk planering."
     },
     orange: {
-      en: "This combination merges survival instincts with strategic thinking, indicating a practical approach to achievement and resource management. You likely excel at finding efficient solutions to fundamental challenges while maximizing available resources.",
-      sv: "Denna kombination förenar överlevnadsinstinkter med strategiskt tänkande, vilket indikerar ett praktiskt förhållningssätt till prestation och resurshantering. Du är troligen skicklig på att hitta effektiva lösningar på grundläggande utmaningar medan tillgängliga resurser maximeras."
+      en: "This combination combines survival pragmatism with strategic achievement, suggesting an ability to pursue goals while remaining grounded in practical realities.",
+      sv: "Denna kombination förenar överlevnadspragmatism med strategisk prestation, vilket antyder en förmåga att eftersträva mål medan förankring i praktiska realiteter bibehålls."
     },
     green: {
-      en: "This combination unites basic survival awareness with social consciousness, suggesting an ability to address fundamental needs through community-oriented solutions. You likely understand how collective support enhances individual survival and wellbeing.",
-      sv: "Denna kombination förenar grundläggande överlevnadsmedvetenhet med socialt medvetande, vilket antyder en förmåga att hantera grundläggande behov genom gemenskapsorienterade lösningar. Du förstår troligen hur kollektivt stöd förbättrar individuell överlevnad och välbefinnande."
+      en: "This combination merges basic survival needs with community care, indicating a capacity to address fundamental challenges while maintaining empathy and connection.",
+      sv: "Denna kombination förenar grundläggande överlevnadsbehov med gemenskapsomsorg, vilket indikerar en förmåga att hantera fundamentala utmaningar samtidigt som empati och koppling bibehålls."
     },
     yellow: {
-      en: "This combination integrates survival intelligence with systems thinking, indicating an ability to understand and address fundamental needs within larger systemic contexts. You likely excel at creating adaptive solutions that ensure basic security while considering complex interconnections.",
-      sv: "Denna kombination integrerar överlevnadsintelligens med systemtänkande, vilket indikerar en förmåga att förstå och hantera grundläggande behov inom större systemiska sammanhang. Du är troligen skicklig på att skapa adaptiva lösningar som säkerställer grundläggande säkerhet medan komplexa samband beaktas."
+      en: "This combination integrates survival awareness with systems thinking, suggesting an ability to address fundamental needs through understanding complex patterns and relationships.",
+      sv: "Denna kombination integrerar överlevnadsmedvetenhet med systemtänkande, vilket antyder en förmåga att hantera fundamentala behov genom att förstå komplexa mönster och relationer."
     },
     turquoise: {
-      en: "This combination connects basic survival awareness with holistic consciousness, suggesting an understanding of how fundamental needs relate to global systems and universal patterns. You likely see the deep connection between individual survival and planetary wellbeing.",
-      sv: "Denna kombination förenar grundläggande överlevnadsmedvetenhet med holistiskt medvetande, vilket antyder en förståelse för hur grundläggande behov relaterar till globala system och universella mönster. Du ser troligen den djupa kopplingen mellan individuell överlevnad och planetärt välbefinnande."
+      en: "This combination merges survival pragmatism with participatory systems awareness, suggesting an ability to meet fundamental needs while understanding nested interdependencies and multi-generational impacts.",
+      sv: "Denna kombination förenar överlevnadspragmatism med deltagande systemmedvetenhet, vilket antyder en förmåga att möta fundamentala behov samtidigt som kapslade ömsesidiga beroenden och flerlagergenerationella påverkningar förstås."
     },
     coral: {
-      en: "This combination merges survival awareness with sovereign unity consciousness, suggesting an ability to ground cosmic understanding in the most basic aspects of existence. You likely bridge primal life forces with pioneering visions of new evolutionary possibilities.",
-      sv: "Denna kombination förenar överlevnadsmedvetenhet med suveränt enhetsmedvetande, vilket antyder en förmåga att jorda kosmisk förståelse i existensens mest grundläggande aspekter. Du överbryggar troligen ursprungliga livskrafter med banbrytande visioner av nya evolutionära möjligheter."
+      en: "This combination integrates survival awareness with sovereign creativity, suggesting a capacity to address fundamental challenges through innovative breakthroughs and evolutionary thinking.",
+      sv: "Denna kombination integrerar överlevnadsmedvetenhet med suverän kreativitet, vilket antyder en förmåga att hantera fundamentala utmaningar genom innovativa genombrott och evolutionärt tänkande."
     },
     ultraviolet: {
-      en: "This combination unites survival awareness with infinite flow consciousness, suggesting an ability to experience the most basic life forces as expressions of boundless potential. You likely maintain deep presence in physical reality while accessing infinite awareness.",
-      sv: "Denna kombination förenar överlevnadsmedvetenhet med oändligt flödesmedvetande, vilket antyder en förmåga att uppleva de mest grundläggande livskrafterna som uttryck för gränslös potential. Du bibehåller troligen djup närvaro i fysisk verklighet medan oändlig medvetenhet nås."
+      en: "This combination merges survival awareness with infinite flow, suggesting an ability to address fundamental needs while remaining open to boundless possibility.",
+      sv: "Denna kombination förenar överlevnadsmedvetenhet med oändligt flöde, vilket antyder en förmåga att hantera fundamentala behov samtidigt som öppenhet för gränslös möjlighet bibehålls."
     }
   },
   purple: {
     red: {
-      en: "This combination merges tribal bonding with individual power expression, suggesting an ability to maintain strong group connections while asserting personal strength. You likely understand the dynamics of both group loyalty and individual leadership, often serving as a bridge between collective traditions and bold individual action.",
-      sv: "Denna kombination förenar stamgemenskap med individuellt kraftuttryck, vilket antyder en förmåga att upprätthålla starka gruppkopplingar medan personlig styrka hävdas. Du förstår troligen dynamiken i både grupplojalitet och individuellt ledarskap, och fungerar ofta som en bro mellan kollektiva traditioner och djärv individuell handling."
+      en: "This combination integrates tribal belonging with personal power, suggesting a balance between community loyalty and individual assertiveness.",
+      sv: "Denna kombination integrerar stamtillhörighet med personlig makt, vilket antyder en balans mellan gemenskapslojalitet och individuell självhävdelse."
     },
     blue: {
-      en: "This combination integrates ancestral wisdom with moral structure, suggesting a deep respect for both traditional knowledge and principled order. You likely excel at maintaining cultural continuity while establishing clear ethical frameworks and organizational systems.",
-      sv: "Denna kombination integrerar förfäders visdom med moralisk struktur, vilket antyder en djup respekt för både traditionell kunskap och principiell ordning. Du är troligen skicklig på att upprätthålla kulturell kontinuitet medan tydliga etiska ramverk och organisatoriska system etableras."
+      en: "This combination merges traditional wisdom with structured order, indicating a strong foundation in both ancestral knowledge and principled discipline.",
+      sv: "Denna kombination förenar traditionell visdom med strukturerad ordning, vilket indikerar en stark grund i både förfäders kunskap och principfast disciplin."
     },
     orange: {
-      en: "This combination blends traditional wisdom with strategic achievement, suggesting an ability to leverage cultural knowledge for practical success. You likely excel at bridging ancestral practices with modern innovation.",
-      sv: "Denna kombination blandar traditionell visdom med strategisk prestation, vilket antyder en förmåga att utnyttja kulturell kunskap för praktisk framgång. Du är troligen skicklig på att överbrygga förfäders praktiker med modern innovation."
+      en: "This combination blends tribal values with strategic achievement, suggesting an ability to pursue progress while honoring tradition and community roots.",
+      sv: "Denna kombination blandar stamvärden med strategisk prestation, vilket antyder en förmåga att eftersträva framsteg samtidigt som tradition och gemenskapsrötter hedras."
     },
     green: {
-      en: "This combination brings together traditional community values with modern inclusive thinking, suggesting an ability to honor ancestral wisdom while embracing diversity and equality. You likely excel at maintaining cultural heritage while fostering open, accepting communal spaces that welcome all voices.",
-      sv: "Denna kombination för samman traditionella gemenskapsvärderingar med modernt inkluderande tänkande, vilket antyder en förmåga att hedra förfäders visdom medan mångfald och jämlikhet omfamnas. Du är troligen skicklig på att bevara kulturarv medan öppna, accepterande gemenskapsutrymmen som välkomnar alla röster främjas."
+      en: "This combination unites tribal belonging with inclusive community, indicating a capacity for both deep cultural roots and broad social connection.",
+      sv: "Denna kombination förenar stamtillhörighet med inkluderande gemenskap, vilket indikerar en förmåga för både djupa kulturella rötter och bred social koppling."
     },
     yellow: {
-      en: "This combination unites tribal wisdom with systems thinking, indicating an ability to see traditional knowledge within larger systemic frameworks. You likely understand how ancestral practices fit into complex adaptive systems.",
-      sv: "Denna kombination förenar stamvisdom med systemtänkande, vilket indikerar en förmåga att se traditionell kunskap inom större systemiska ramverk. Du förstår troligen hur förfäders praktiker passar in i komplexa adaptiva system."
+      en: "This combination integrates ancestral wisdom with systems thinking, suggesting an ability to honor traditional knowledge while understanding complex modern patterns.",
+      sv: "Denna kombination integrerar förfäders visdom med systemtänkande, vilket antyder en förmåga att hedra traditionell kunskap samtidigt som komplexa moderna mönster förstås."
     },
     turquoise: {
-      en: "This unique combination bridges ancient wisdom with holistic awareness, suggesting an ability to honor traditional knowledge while seeing its place in larger planetary systems. You likely bring together ancestral understanding with contemporary global awareness.",
-      sv: "Denna unika kombination överbryggar uråldrig visdom med holistisk medvetenhet, vilket antyder en förmåga att hedra traditionell kunskap medan dess plats i större planetära system erkänns. Du för troligen samman förfäders förståelse med samtida global medvetenhet."
+      en: "This combination merges tribal wisdom with meta-systemic awareness, suggesting an ability to honor place-based ancestral knowledge while understanding nested, bioregional systems across scales.",
+      sv: "Denna kombination förenar stamvisdom med meta-systemisk medvetenhet, vilket antyder en förmåga att hedra platsbaserad förfäderskunskap samtidigt som kapslade, bioregionala system över skalor förstås."
     },
     coral: {
-      en: "This combination integrates tribal wisdom with sovereign unity, suggesting an ability to honor ancestral knowledge while pioneering new paradigms of collective consciousness. You likely weave traditional practices into innovative expressions of universal potential.",
-      sv: "Denna kombination integrerar stamvisdom med suverän enhet, vilket antyder en förmåga att hedra förfäders kunskap medan nya paradigmer av kollektivt medvetande växer fram. Du väver troligen traditionella praktiker in i innovativa uttryck av universell potential."
+      en: "This combination blends ancestral connection with evolutionary creativity, suggesting a capacity to draw upon traditional wisdom while pioneering new paradigms.",
+      sv: "Denna kombination blandar förfäderskoppling med evolutionär kreativitet, vilket antyder en förmåga att dra nytta av traditionell visdom samtidigt som nya paradigm pionjäras."
     },
     ultraviolet: {
-      en: "This combination integrates tribal wisdom with infinite flow, suggesting an ability to experience collective traditions as expressions of boundless creativity. You likely perceive ancestral knowledge through the lens of infinite possibility.",
-      sv: "Denna kombination integrerar stamvisdom med oändligt flöde, vilket antyder en förmåga att uppleva kollektiva traditioner som uttryck för gränslös kreativitet. Du uppfattar troligen förfäders kunskap genom linsen av oändlig möjlighet."
+      en: "This combination integrates tribal belonging with infinite flow, suggesting an ability to honor sacred connection while remaining open to boundless awareness.",
+      sv: "Denna kombination integrerar stamtillhörighet med oändligt flöde, vilket antyder en förmåga att hedra helig koppling samtidigt som öppenhet för gränslös medvetenhet bibehålls."
     }
   },
   red: {
     blue: {
-      en: "This combination unites assertive power with moral structure, indicating an ability to channel strong willpower through established principles and order. You likely excel at decisive action within ethical frameworks, bringing together leadership strength with a sense of purpose and duty.",
-      sv: "Denna kombination förenar kraftfullt självuttryck med moralisk struktur, vilket indikerar en förmåga att kanalisera stark viljekraft genom etablerade principer och ordning. Du är troligen skicklig på beslutsamt handlande inom etiska ramar, och förenar ledarskapsstryka med en känsla av syfte och plikt."
+      en: "This combination balances personal power with structured order, indicating a capacity for both assertive action and disciplined responsibility.",
+      sv: "Denna kombination balanserar personlig makt med strukturerad ordning, vilket indikerar en förmåga för både självsäker handling och disciplinerat ansvar."
     },
     orange: {
-      en: "This combination merges assertive action with strategic thinking, indicating a powerful drive for achievement combined with tactical awareness. You likely excel at decisive leadership while maintaining focus on practical outcomes.",
-      sv: "Denna kombination förenar kraftfull handling med strategiskt tänkande, vilket indikerar en stark drivkraft för prestation kombinerad med taktisk medvetenhet. Du är troligen skicklig på beslutsamt ledarskap medan fokus på praktiska resultat bibehålls."
+      en: "This combination merges assertive drive with strategic thinking, suggesting a powerful capacity for achievement through both courage and calculated effectiveness.",
+      sv: "Denna kombination förenar självsäker drivkraft med strategiskt tänkande, vilket antyder en kraftfull förmåga till prestation genom både mod och beräknad effektivitet."
     },
     green: {
-      en: "This combination merges assertive power with social consciousness, suggesting an ability to channel strong leadership toward community benefit. You likely excel at initiating positive change while considering collective wellbeing.",
-      sv: "Denna kombination förenar självhävdande kraft med socialt medvetande, vilket antyder en förmåga att kanalisera starkt ledarskap mot samhällsnytta. Du är troligen skicklig på att initiera positiv förändring medan kollektivt välbefinnande beaktas."
+      en: "This combination integrates personal strength with social awareness, indicating an ability to assert oneself while remaining connected to community needs.",
+      sv: "Denna kombination integrerar personlig styrka med social medvetenhet, vilket indikerar en förmåga att hävda sig själv samtidigt som koppling till gemenskapsbehov bibehålls."
     },
     yellow: {
-      en: "This dynamic combination merges assertive power with systems thinking, indicating an ability to take bold action while understanding complex interconnections. You likely bring together decisive leadership with nuanced strategic awareness.",
-      sv: "Denna dynamiska kombination förenar kraftfull makt med systemtänkande, vilket indikerar en förmåga att ta djärva beslut medan komplexa sammankopplingar förstås. Du för troligen samman beslutsamt ledarskap med nyanserad strategisk medvetenhet."
+      en: "This combination blends assertive action with systems thinking, suggesting a capacity to take decisive steps while understanding complex systemic impacts.",
+      sv: "Denna kombination blandar självsäker handling med systemtänkande, vilket antyder en förmåga att ta beslutsamma steg samtidigt som komplexa systemiska påverkningar förstås."
     },
     turquoise: {
-      en: "This combination unites personal power with holistic awareness, indicating an ability to express individual strength while maintaining connection to global systems. You likely understand how personal action affects the larger whole.",
-      sv: "Denna kombination förenar personlig kraft med holistisk medvetenhet, vilket indikerar en förmåga att uttrycka individuell styrka medan koppling till globala system bibehålls. Du förstår troligen hur personlig handling påverkar den större helheten."
+      en: "This combination merges personal power with participatory awareness, suggesting an ability to take bold action while recognizing embeddedness within nested systems and multi-scale impacts.",
+      sv: "Denna kombination förenar personlig makt med deltagande medvetenhet, vilket antyder en förmåga att ta modig handling samtidigt som inneslutning inom kapslade system och påverkan på flera skalor erkänns."
     },
     coral: {
-      en: "This combination unites personal power with sovereign unity awareness, suggesting an ability to channel strong individual energy into pioneering evolutionary breakthroughs. You likely express bold creativity while maintaining deep resonance with universal wisdom.",
-      sv: "Denna kombination förenar personlig kraft med suveränt enhetsmedvetande, vilket antyder en förmåga att kanalisera stark individuell energi in i banbrytande evolutionära genombrott. Du uttrycker troligen djärv kreativitet medan djup resonans med universell visdom bibehålls."
+      en: "This combination integrates assertive power with sovereign creativity, suggesting a capacity for bold expression while pioneering evolutionary possibilities.",
+      sv: "Denna kombination integrerar självsäker makt med suverän kreativitet, vilket antyder en förmåga för djärvt uttryck samtidigt som evolutionära möjligheter pionjäras."
     },
     ultraviolet: {
-      en: "This combination merges personal power with infinite flow consciousness, suggesting an ability to channel individual energy as an expression of boundless potential. You likely experience personal action as a dance of infinite creative force.",
-      sv: "Denna kombination förenar personlig kraft med oändligt flödesmedvetande, vilket antyder en förmåga att kanalisera individuell energi som ett uttryck för gränslös potential. Du upplever troligen personlig handling som en dans av oändlig kreativ kraft."
+      en: "This combination blends personal power with infinite flow, suggesting an ability to act decisively while remaining open to boundless possibility.",
+      sv: "Denna kombination blandar personlig makt med oändligt flöde, vilket antyder en förmåga att agera beslutsamt samtidigt som öppenhet för gränslös möjlighet bibehålls."
     }
   },
   blue: {
     orange: {
-      en: "This combination brings together principle-based thinking with strategic action, suggesting an ability to achieve goals while maintaining strong ethical standards. You likely excel at creating structured approaches to innovation and progress.",
-      sv: "Denna kombination förenar principbaserat tänkande med strategisk handling, vilket antyder en förmåga att uppnå mål medan starka etiska standarder upprätthålls. Du är troligen skicklig på att skapa strukturerade tillvägagångssätt för innovation och framsteg."
+      en: "This combination balances principled structure with strategic achievement, indicating a capacity for pursuing goals through both disciplined order and innovative effectiveness.",
+      sv: "Denna kombination balanserar principfast struktur med strategisk prestation, vilket indikerar en förmåga att eftersträva mål genom både disciplinerad ordning och innovativ effektivitet."
     },
     green: {
-      en: "This combination merges moral principles with social awareness, indicating a strong commitment to both ethical standards and inclusive community values. You likely excel at creating structured approaches to social justice and community building.",
-      sv: "Denna kombination förenar moraliska principer med social medvetenhet, vilket indikerar ett starkt engagemang för både etiska standarder och inkluderande gemenskapsvärderingar. Du är troligen skicklig på att skapa strukturerade tillvägagångssätt för social rättvisa och gemenskapsbyggande."
+      en: "This combination merges structured order with social harmony, suggesting an ability to maintain principles while fostering inclusive community.",
+      sv: "Denna kombination förenar strukturerad ordning med social harmoni, vilket antyder en förmåga att upprätthålla principer samtidigt som inkluderande gemenskap främjas."
     },
     yellow: {
-      en: "This combination connects moral structure with systems thinking, suggesting an ability to apply ethical principles within complex adaptive frameworks. You likely excel at creating principled approaches to systemic challenges.",
-      sv: "Denna kombination förenar moralisk struktur med systemtänkande, vilket antyder en förmåga att tillämpa etiska principer inom komplexa adaptiva ramverk. Du är troligen skicklig på att skapa principfasta tillvägagångssätt för systemiska utmaningar."
+      en: "This combination integrates principled discipline with systems awareness, indicating a capacity for structured thinking that adapts to complex contexts.",
+      sv: "Denna kombination integrerar principfast disciplin med systemmedvetenhet, vilket indikerar en förmåga för strukturerat tänkande som anpassar sig till komplexa sammanhang."
     },
     turquoise: {
-      en: "This combination unites moral principles with holistic awareness, indicating an ability to see ethical frameworks within planetary systems. You likely understand how individual values connect to universal patterns.",
-      sv: "Denna kombination förenar moraliska principer med holistisk medvetenhet, vilket indikerar en förmåga att se etiska ramverk inom planetära system. Du förstår troligen hur individuella värderingar kopplar till universella mönster."
+      en: "This combination merges structured order with meta-systemic understanding, suggesting an ability to create disciplined frameworks that serve multi-generational wellbeing and enable adaptive emergence.",
+      sv: "Denna kombination förenar strukturerad ordning med meta-systemisk förståelse, vilket antyder en förmåga att skapa disciplinerade ramverk som tjänar flerlagergenerationellt välbefinnande och möjliggör adaptiv framväxt."
     },
     coral: {
-      en: "This combination merges principled structure with sovereign unity, suggesting an ability to create ethical frameworks that support evolutionary emergence. You likely pioneer new paradigms while maintaining respect for foundational order.",
-      sv: "Denna kombination förenar principfast struktur med suverän enhet, vilket antyder en förmåga att skapa etiska ramverk som stödjer evolutionär framväxt. Du är troligen pionjär för nya paradigmer medan respekt för grundläggande ordning bibehålls."
+      en: "This combination integrates principled structure with sovereign creativity, suggesting a capacity to honor order while pioneering evolutionary innovation.",
+      sv: "Denna kombination integrerar principfast struktur med suverän kreativitet, vilket antyder en förmåga att hedra ordning samtidigt som evolutionär innovation pionjäras."
     },
     ultraviolet: {
-      en: "This combination unites structured principles with infinite flow, suggesting an ability to perceive order as a dynamic expression of boundless possibility. You likely experience ethical frameworks as fluid manifestations of infinite wisdom.",
-      sv: "Denna kombination förenar strukturerade principer med oändligt flöde, vilket antyder en förmåga att uppfatta ordning som ett dynamiskt uttryck av gränslös möjlighet. Du upplever troligen etiska ramverk som flytande manifestationer av oändlig visdom."
+      en: "This combination blends structured discipline with infinite flow, suggesting an ability to maintain principled action while remaining open to boundless possibility.",
+      sv: "Denna kombination blandar strukturerad disciplin med oändligt flöde, vilket antyder en förmåga att upprätthålla principfast handling samtidigt som öppenhet för gränslös möjlighet bibehålls."
     }
   },
   orange: {
     green: {
-      en: "This combination brings together achievement-orientation with social awareness, suggesting an approach to success that considers both effectiveness and human impact. You likely excel at creating sustainable solutions that benefit both individuals and communities.",
+      en: "This combination balances achievement orientation with social consciousness, suggesting an approach to success that considers both effectiveness and human impact. You likely excel at creating sustainable solutions that benefit both individuals and communities.",
       sv: "Denna kombination förenar prestationsorientering med social medvetenhet, vilket antyder ett förhållningssätt till framgång som beaktar både effektivitet och mänsklig påverkan. Du är troligen skicklig på att skapa hållbara lösningar som gynnar både individer och samhällen."
     },
     yellow: {
@@ -250,8 +260,8 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna kombination förenar strategiskt tänkande med systemmedvetenhet, vilket indikerar en förmåga till innovativa lösningar som hanterar komplexa utmaningar medan praktisk effektivitet bibehålls."
     },
     turquoise: {
-      en: "This combination integrates strategic achievement with holistic awareness, suggesting an ability to pursue success while maintaining a deep connection to global systems. You likely excel at creating innovative solutions that serve both practical objectives and planetary wellbeing.",
-      sv: "Denna kombination integrerar strategisk prestation med holistisk medvetenhet, vilket antyder en förmåga att sträva efter framgång medan en djup koppling till globala system bibehålls. Du är troligen skicklig på att skapa innovativa lösningar som tjänar både praktiska mål och planetärt välbefinnande."
+      en: "This combination integrates strategic effectiveness with meta-systemic awareness, suggesting an ability to create innovations that deliver measurable results while serving multi-generational wellbeing and operating within planetary boundaries.",
+      sv: "Denna kombination integrerar strategisk effektivitet med meta-systemisk medvetenhet, vilket antyder en förmåga att skapa innovationer som levererar mätbara resultat samtidigt som de tjänar flerlagergenerationellt välbefinnande och opererar inom planetära gränser."
     },
     coral: {
       en: "This combination integrates strategic achievement with sovereign unity consciousness, suggesting an ability to manifest innovative breakthroughs while maintaining cosmic awareness. You likely excel at bringing visionary possibilities into practical reality.",
@@ -268,8 +278,8 @@ export const stageCombinations: StageCombinations = {
       sv: "Denna kombination antyder ett holistiskt förhållningssätt till mänsklig utveckling, som kombinerar djup empati med systemförståelse. Du är troligen skicklig på att facilitera tillväxt och förändring medan du bibehåller medvetenhet om både individuella och kollektiva behov."
     },
     turquoise: {
-      en: "This combination integrates social consciousness with global awareness, indicating a deep understanding of both human relationships and planetary systems. You likely see the interconnections between social justice and ecological wellbeing.",
-      sv: "Denna kombination integrerar socialt medvetande med global medvetenhet, vilket indikerar en djup förståelse för både mänskliga relationer och planetära system. Du ser troligen sammankopplingarna mellan social rättvisa och ekologiskt välbefinnande."
+      en: "This combination integrates social consciousness with participatory systems awareness, indicating a deep understanding of both human relationships and nested living systems. You likely see connections between social justice and ecological wellbeing across multiple scales.",
+      sv: "Denna kombination integrerar socialt medvetande med deltagande systemmedvetenhet, vilket indikerar en djup förståelse för både mänskliga relationer och kapslade levande system. Du ser troligen kopplingar mellan social rättvisa och ekologiskt välbefinnande över flera skalor."
     },
     coral: {
       en: "This combination unites social consciousness with sovereign unity, suggesting a deep capacity for fostering collective evolution while honoring individual creativity. You likely pioneer new forms of community that support both personal sovereignty and universal connection.",
@@ -282,8 +292,8 @@ export const stageCombinations: StageCombinations = {
   },
   yellow: {
     turquoise: {
-      en: "This combination merges systems thinking with holistic awareness, suggesting an ability to navigate complex challenges while maintaining connection to the larger whole. You likely excel at finding innovative solutions that serve both immediate needs and long-term evolution.",
-      sv: "Denna kombination förenar systemtänkande med holistisk medvetenhet, vilket antyder en förmåga att navigera komplexa utmaningar medan kopplingen till den större helheten bibehålls. Du är troligen skicklig på att hitta innovativa lösningar som tjänar både omedelbara behov och långsiktig evolution."
+      en: "This combination merges systems thinking with meta-systemic awareness, suggesting an ability to shift from analyzing complexity to participating within it. You likely excel at cultivating conditions for emergence while maintaining analytical rigor and functional coherence.",
+      sv: "Denna kombination förenar systemtänkande med meta-systemisk medvetenhet, vilket antyder en förmåga att skifta från att analysera komplexitet till att delta inom den. Du är troligen skicklig på att odla förutsättningar för framväxt samtidigt som analytisk stringens och funktionell koherens bibehålls."
     },
     coral: {
       en: "This combination merges systems thinking with sovereign unity consciousness, suggesting an ability to understand complex patterns while pioneering new evolutionary possibilities. You likely integrate systemic awareness with creative breakthroughs in consciousness.",
@@ -296,12 +306,12 @@ export const stageCombinations: StageCombinations = {
   },
   turquoise: {
     coral: {
-      en: "This combination integrates holistic awareness with sovereign unity, suggesting a profound ability to unite global consciousness with individual creative expression. You likely pioneer new paradigms that serve both planetary evolution and universal emergence.",
-      sv: "Denna kombination integrerar holistisk medvetenhet med suverän enhet, vilket antyder en djupgående förmåga att förena globalt medvetande med individuellt kreativt uttryck. Du är troligen pionjär för nya paradigmer som tjänar både planetär evolution och universell framväxt."
+      en: "This combination integrates participatory systems awareness with sovereign creativity, suggesting a profound ability to facilitate emergence within nested living systems while honoring unique creative expression. You likely pioneer regenerative paradigms that serve multi-generational evolution.",
+      sv: "Denna kombination integrerar deltagande systemmedvetenhet med suverän kreativitet, vilket antyder en djupgående förmåga att facilitera framväxt inom kapslade levande system samtidigt som unikt kreativt uttryck hedras. Du är troligen pionjär för regenerativa paradigmer som tjänar flerlagergenerationell evolution."
     },
     ultraviolet: {
-      en: "This combination merges holistic planetary awareness with infinite flow, suggesting a profound ability to unite universal patterns with boundless creative potential. You likely experience reality as a dynamic interplay between manifest wholeness and infinite possibility.",
-      sv: "Denna kombination förenar holistisk planetär medvetenhet med oändligt flöde, vilket antyder en djupgående förmåga att förena universella mönster med gränslös kreativ potential. Du upplever troligen verkligheten som ett dynamiskt samspel mellan manifest helhet och oändlig möjlighet."
+      en: "This combination merges meta-systemic coordination with infinite flow, suggesting a profound ability to cultivate conditions for planetary-scale transformation while remaining open to boundless possibility. You likely experience nested systems as expressions of infinite creative potential.",
+      sv: "Denna kombination förenar meta-systemisk koordinering med oändligt flöde, vilket antyder en djupgående förmåga att odla förutsättningar för planetär-skala transformation samtidigt som öppenhet för gränslös möjlighet bibehålls. Du upplever troligen kapslade system som uttryck för oändlig kreativ potential."
     }
   },
   coral: {

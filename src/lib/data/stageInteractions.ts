@@ -279,15 +279,15 @@ export const stageInteractions: StageInteractions = {
     }
   },
   "beige-turquoise": {
-    en: "Turquoise integrates Beige survival needs into a holistic understanding of life systems and global wellbeing. Beige keeps Turquoise grounded in physical reality. This combination fosters sustainable approaches to meeting human needs within planetary boundaries.",
-    sv: "Turkos integrerar Beiges överlevnadsbehov i en holistisk förståelse av livssystem och globalt välbefinnande. Beige håller Turkos förankrad i den fysiska verkligheten. Denna kombination främjar hållbara sätt att tillgodose mänskliga behov inom planetens gränser.",
+    en: "Turquoise integrates Beige survival needs into meta-systemic understanding of nested life-support systems and planetary boundaries. Beige keeps Turquoise grounded in immediate physical reality. This combination fosters regenerative approaches to meeting human needs within ecological constraints.",
+    sv: "Turkos integrerar Beiges överlevnadsbehov i meta-systemisk förståelse av kapslade livsstödssystem och planetära gränser. Beige håller Turkos förankrad i omedelbar fysisk verklighet. Denna kombination främjar regenerativa sätt att tillgodose mänskliga behov inom ekologiska begränsningar.",
     clashes: {
-      en: "Turquoise's global, long-term perspective can seem disconnected from Beige's immediate survival challenges. Beige's focus on personal survival can appear limited to Turquoise's planetary consciousness.",
-      sv: "Turkos globala, långsiktiga perspektiv kan verka frånkopplat från Beiges omedelbara överlevnadsutmaningar. Beiges fokus på personlig överlevnad kan framstå som begränsat för Turkos planetära medvetande."
+      en: "Turquoise's multi-generational, systems-level perspective can seem disconnected from Beige's immediate survival challenges. Beige's focus on personal survival can appear limited to Turquoise's understanding of nested interdependencies.",
+      sv: "Turkos flerlagergenerationella, systemnivåperspektiv kan verka frånkopplat från Beiges omedelbara överlevnadsutmaningar. Beiges fokus på personlig överlevnad kan framstå som begränsat för Turkos förståelse av kapslade ömsesidiga beroenden."
     },
     bridging: {
-      en: "Connect immediate survival solutions to regenerative approaches that strengthen both human and ecological systems. Turquoise can develop practical applications of holistic principles, while Beige can recognize how ecological health directly impacts human survival prospects.",
-      sv: "Koppla omedelbara överlevnadslösningar till regenerativa metoder som stärker både mänskliga och ekologiska system. Turkos kan utveckla praktiska tillämpningar av holistiska principer, medan Beige kan inse hur ekologisk hälsa direkt påverkar mänskliga överlevnadsutsikter."
+      en: "Connect immediate survival solutions to regenerative approaches that strengthen both human and ecological systems. Turquoise can develop practical applications of systems principles for crisis response, while Beige can recognize how ecological health directly impacts human survival prospects.",
+      sv: "Koppla omedelbara överlevnadslösningar till regenerativa metoder som stärker både mänskliga och ekologiska system. Turkos kan utveckla praktiska tillämpningar av systemprinciper för krisrespons, medan Beige kan inse hur ekologisk hälsa direkt påverkar mänskliga överlevnadsutsikter."
     }
   },
   "beige-coral": {
@@ -375,15 +375,15 @@ export const stageInteractions: StageInteractions = {
     }
   },
   "purple-turquoise": {
-    en: "Turquoise recognizes Purple tribal wisdom as an expression of universal consciousness, while Purple grounds Turquoise in lived cultural experience. This combination integrates indigenous knowledge into global ecological awareness.",
-    sv: "Turkos ser Lilas stamvisdom som ett uttryck för universellt medvetande, medan Lila förankrar Turkos i levd kulturell erfarenhet. Denna kombination integrerar ursprunglig kunskap i global ekologisk medvetenhet.",
+    en: "Turquoise recognizes Purple's ritual and community wisdom as embedded participatory knowledge within living systems. Purple provides Turquoise with ancestral understanding and place-based practices. Together they honor both indigenous wisdom and planetary-scale coordination.",
+    sv: "Turkos erkänner Lilas ritualer och gemenskapsvisdom som innesluten deltagande kunskap inom levande system. Lila ger Turkos förfädernas förståelse och platsbaserade praktiker. Tillsammans hedrar de både ursprungsbefolkningens visdom och planetär-skala samordning.",
     clashes: {
-      en: "Turquoise's universal, planetary perspective can seem abstract and disconnected from Purple's specific cultural context. Purple's focus on particular traditions can appear limiting to Turquoise's holistic consciousness.",
-      sv: "Turkos universella, planetära perspektiv kan verka abstrakt och frånkopplat från Lilas specifika kulturella sammanhang. Lilas fokus på särskilda traditioner kan framstå som begränsande för Turkos holistiska medvetande."
+      en: "Turquoise's meta-systemic understanding can seem to abstract or depersonalize Purple's sacred local traditions. Purple's focus on specific tribal boundaries and rituals can appear limited to Turquoise's understanding of nested, interconnected communities.",
+      sv: "Turkos meta-systemiska förståelse kan verka abstrahera eller avpersonalisera Lilas heliga lokala traditioner. Lilas fokus på specifika stamgränser och ritualer kan framstå som begränsat för Turkos förståelse av kapslade, sammankopplade gemenskaper."
     },
     bridging: {
-      en: "Recognize how specific cultural wisdom reflects universal patterns of life and consciousness. Turquoise can honor the embodied wisdom in cultural practices, while Purple can sense the universal consciousness expressed through its particular traditions.",
-      sv: "Inse hur specifik kulturell visdom återspeglar universella livs- och medvetenhetsmönster. Turkos kan hedra den förkroppsligade visdomen i kulturella praktiker, medan Lila kan känna det universella medvetandet som uttrycks genom dess särskilda traditioner."
+      en: "Recognize how local, place-based wisdom connects to planetary understanding through bioregional scales. Turquoise can honor indigenous knowledge as essential participatory wisdom, while Purple can see how local traditions contribute to larger living systems.",
+      sv: "Inse hur lokal, platsbaserad visdom ansluter till planetär förståelse genom bioregionala skalor. Turkos kan hedra ursprungsbefolkningens kunskap som nödvändig deltagande visdom, medan Lila kan se hur lokala traditioner bidrar till större levande system."
     }
   },
   "purple-coral": {
@@ -459,15 +459,15 @@ export const stageInteractions: StageInteractions = {
     }
   },
   "red-turquoise": {
-    en: "Turquoise channels Red's vital force toward evolutionary purposes, while Red gives Turquoise the energy to manifest its vision. This relationship transforms raw power into service of global consciousness.",
-    sv: "Turkos kanaliserar Rötts livskraft mot evolutionära syften, medan Rött ger Turkos energin att förverkliga sin vision. Denna relation omvandlar rå makt till tjänst för globalt medvetande.",
+    en: "Turquoise channels Red's vital agency into service of nested living systems, while Red provides Turquoise with the will and energy for decisive action. Together they create powerful responses to systemic challenges that require both courage and coordination.",
+    sv: "Turkos kanaliserar Röds vitala agens i tjänst för kapslade levande system, medan Röd ger Turkos viljan och energin för beslutsamt handlande. Tillsammans skapar de kraftfulla svar på systemiska utmaningar som kräver både mod och samordning.",
     clashes: {
-      en: "Red's individual power focus can resist Turquoise's dissolution of ego boundaries and emphasis on serving the whole. Turquoise's holistic perspective can seem disconnected from Red's concrete, immediate power concerns.",
-      sv: "Rötts individuella maktfokus kan motsätta sig Turkos upplösning av egogränser och betoning på att tjäna helheten. Turkos holistiska perspektiv kan verka frånkopplat från Rötts konkreta, omedelbara maktangelägenheter."
+      en: "Turquoise's participatory approach and developmental responsibility can seem to constrain Red's immediate assertive action. Red's focus on personal power and direct impact can appear to ignore the systemic consequences that Turquoise recognizes.",
+      sv: "Turkos deltagande tillvägagångssätt och utvecklingsansvar kan verka begränsa Röds omedelbara självsäkra handling. Röds fokus på personlig makt och direkt påverkan kan verka ignorera de systemiska konsekvenser som Turkos erkänner."
     },
     bridging: {
-      en: "Channel powerful energy toward evolutionary purposes that honor individual courage within universal service. Turquoise can acknowledge the importance of vital strength in manifesting vision, while Red can find fulfillment in directing its power toward larger purposes.",
-      sv: "Kanalisera kraftfull energi mot evolutionära syften som hedrar individuellt mod inom universell tjänst. Turkos kan erkänna vikten av vital styrka för att manifestera vision, medan Rött kan finna uppfyllelse i att rikta sin kraft mot större syften."
+      en: "Develop bold interventions informed by understanding of living systems and multi-scale impacts. Turquoise can embrace Red's decisive energy when coordinated action is needed, while Red can direct its power toward challenges that serve nested systems rather than just personal gain.",
+      sv: "Utveckla modiga interventioner informerade av förståelse för levande system och påverkan på flera skalor. Turkos kan omfamna Röds beslutsamma energi när samordnad handling behövs, medan Röd kan rikta sin kraft mot utmaningar som tjänar kapslade system snarare än bara personlig vinning."
     }
   },
   "red-coral": {
@@ -531,15 +531,15 @@ export const stageInteractions: StageInteractions = {
     }
   },
   "blue-turquoise": {
-    en: "Turquoise expands Blue's moral frameworks to encompass global systems and future generations, while Blue gives Turquoise practical structure. This relationship creates ethical systems that honor universal principles across scales of existence.",
-    sv: "Turkos utvidgar Blåtts moraliska ramar till att omfatta globala system och framtida generationer, medan Blått ger Turkos praktisk struktur. Denna relation skapar etiska system som hedrar universella principer på alla existensnivåer.",
+    en: "Turquoise brings meta-systemic understanding to Blue's structures of order, recognizing how coordinated systems can serve multi-generational wellbeing. Blue provides Turquoise with the discipline and institutional frameworks necessary for sustained coordination. Together they create regenerative governance systems.",
+    sv: "Turkos tillför meta-systemisk förståelse till Blås ordningsstrukturer och erkänner hur samordnade system kan tjäna flerlagergenerationellt välbefinnande. Blå ger Turkos disciplinen och de institutionella ramverk som är nödvändiga för varaktig samordning. Tillsammans skapar de regenerativa styrningssystem.",
     clashes: {
-      en: "Turquoise's fluid, holistic perspective challenges Blue's preference for clear boundaries and defined roles. Blue's focus on established rules can seem limited in addressing complex global challenges from Turquoise's evolutionary perspective.",
-      sv: "Turkos flytande, holistiska perspektiv utmanar Blåtts preferens för tydliga gränser och definierade roller. Blåtts fokus på etablerade regler kan verka begränsat för att hantera komplexa globala utmaningar från Turkos evolutionära perspektiv."
+      en: "Turquoise's adaptive, emergence-based approach can challenge Blue's preference for fixed rules and established hierarchies. Blue's insistence on proper authority and traditional order can seem rigid to Turquoise's understanding of evolving, living systems.",
+      sv: "Turkos adaptiva, emergensbaserade tillvägagångssätt kan utmana Blås preferens för fasta regler och etablerade hierarkier. Blås insisterande på rättmätig auktoritet och traditionell ordning kan verka stel för Turkos förståelse av evolutionära, levande system."
     },
     bridging: {
-      en: "Develop living principles that express timeless values in adaptive forms across scales. Blue can expand its moral frameworks to include global systems and future generations, while Turquoise can appreciate how structured expressions help manifest evolutionary wisdom.",
-      sv: "Utveckla levande principer som uttrycker tidlösa värden i adaptiva former över olika skalor. Blått kan utvidga sina moraliska ramverk till att omfatta globala system och framtida generationer, medan Turkos kan uppskatta hur strukturerade uttryck hjälper till att manifestera evolutionär visdom."
+      en: "Develop institutional frameworks that provide stability while allowing for adaptive emergence. Turquoise can appreciate how Blue's structures enable coordinated action at scale, while Blue can evolve its institutions to serve regenerative purposes and respond to changing conditions.",
+      sv: "Utveckla institutionella ramverk som ger stabilitet samtidigt som de tillåter adaptiv framväxt. Turkos kan uppskatta hur Blås strukturer möjliggör samordnad handling i skala, medan Blå kan utveckla sina institutioner för att tjäna regenerativa syften och svara på föränderliga förhållanden."
     }
   },
   "blue-coral": {
@@ -591,15 +591,15 @@ export const stageInteractions: StageInteractions = {
     }
   },
   "orange-turquoise": {
-    en: "Turquoise aligns Orange's achievements with evolutionary purpose and global wellbeing, while Orange gives Turquoise practical means to manifest its vision. This relationship creates regenerative businesses and conscious innovation.",
-    sv: "Turkos anpassar Oranges framgångar till evolutionärt syfte och globalt välbefinnande, medan Orange ger Turkos praktiska medel att förverkliga sin vision. Denna relation skapar regenerativa företag och medveten innovation.",
+    en: "Turquoise aligns Orange's strategic effectiveness with multi-generational wellbeing and regenerative systems design, while Orange provides Turquoise with practical implementation capacity and measurable outcomes. Together they create innovations that work within planetary boundaries while delivering results.",
+    sv: "Turkos anpassar Oranges strategiska effektivitet med flerlagergenerationellt välbefinnande och regenerativ systemdesign, medan Orange ger Turkos praktisk implementeringskapacitet och mätbara resultat. Tillsammans skapar de innovationer som fungerar inom planetära gränser samtidigt som de levererar resultat.",
     clashes: {
-      en: "Orange's profit-focused metrics and competitive approaches can conflict with Turquoise's holistic values and collaborative orientation. Turquoise's planetary perspective can seem impractical or abstract to Orange's tactical mindset.",
-      sv: "Oranges vinstfokuserade mätvärden och konkurrenskraftiga tillvägagångssätt kan komma i konflikt med Turkos holistiska värderingar och samarbetsinriktning. Turkos planetära perspektiv kan verka opraktiskt eller abstrakt för Oranges taktiska tankesätt."
+      en: "Orange's short-term optimization and competitive approaches can conflict with Turquoise's multi-scale, multi-generational thinking. Turquoise's participatory systems approach can seem impractical or inefficient to Orange's tactical, results-focused mindset.",
+      sv: "Oranges kortsiktig optimering och konkurrenskraftiga tillvägagångssätt kan komma i konflikt med Turkos multiskalära, flerlagergenerationella tänkande. Turkos deltagande systemtillvägagångssätt kan verka opraktiskt eller ineffektivt för Oranges taktiska, resultatinriktade tankesätt."
     },
     bridging: {
-      en: "Develop regenerative business models that align profit with evolutionary purpose. Orange can expand its metrics to include long-term planetary wellbeing, while Turquoise can appreciate the power of practical innovation and measurable outcomes.",
-      sv: "Utveckla regenerativa affärsmodeller som anpassar vinst med evolutionärt syfte. Orange kan utvidga sina mätvärden till att inkludera långsiktigt planetärt välbefinnande, medan Turkos kan uppskatta kraften i praktisk innovation och mätbara resultat."
+      en: "Develop regenerative business models and innovations that deliver both immediate results and long-term systemic health. Orange can expand its success metrics to include ecological and social impacts across time scales, while Turquoise can appreciate how strategic effectiveness enables large-scale transformation.",
+      sv: "Utveckla regenerativa affärsmodeller och innovationer som levererar både omedelbara resultat och långsiktig systemisk hälsa. Orange kan utvidga sina framgångsmått till att inkludera ekologiska och sociala påverkningar över tidsskalor, medan Turkos kan uppskatta hur strategisk effektivitet möjliggör storskalig transformation."
     }
   },
   "orange-coral": {
@@ -639,15 +639,15 @@ export const stageInteractions: StageInteractions = {
     }
   },
   "green-turquoise": {
-    en: "Turquoise expands Green's social consciousness to include global systems and evolutionary awareness, while Green grounds Turquoise in human connection. This relationship fosters planetary healing that honors all beings.",
-    sv: "Turkos utvidgar Grönts sociala medvetenhet till att omfatta globala system och evolutionärt medvetande, medan Grönt förankrar Turkos i mänsklig närhet. Denna relation främjar planetärt helande som hedrar alla varelser.",
+    en: "Turquoise expands Green's social consciousness to include multi-species and multi-generational perspectives through meta-systemic understanding, while Green grounds Turquoise in relational care and community practice. Together they foster transformation that honors both human connection and planetary thriving.",
+    sv: "Turkos utvidgar Grönts sociala medvetenhet till att omfatta flerspecie- och flerlagergenerationella perspektiv genom meta-systemisk förståelse, medan Grönt förankrar Turkos i relationell omsorg och gemenskapspraktik. Tillsammans främjar de transformation som hedrar både mänsklig koppling och planetens blomstrande.",
     clashes: {
-      en: "Green's focus on human equality and social justice can seem limited to Turquoise's planetary consciousness that includes all life forms. Turquoise's evolutionary perspective can appear to transcend human concerns in ways that challenge Green's humanistic values.",
-      sv: "Grönts fokus på mänsklig jämlikhet och social rättvisa kan verka begränsat för Turkos planetära medvetande som inkluderar alla livsformer. Turkos evolutionära perspektiv kan verka överskrida mänskliga angelägenheter på sätt som utmanar Grönts humanistiska värderingar."
+      en: "Green's focus on human equality and social justice can seem anthropocentric to Turquoise's understanding of nested systems that include all life. Turquoise's multi-scale systems perspective can appear to deprioritize immediate human suffering in ways that challenge Green's humanistic values.",
+      sv: "Grönts fokus på mänsklig jämlikhet och social rättvisa kan verka antropocentrisk för Turkos förståelse av kapslade system som inkluderar allt liv. Turkos multiskalära systemperspektiv kan verka nedprioritera omedelbart mänskligt lidande på sätt som utmanar Grönts humanistiska värderingar."
     },
     bridging: {
-      en: "Expand social justice to include ecological justice across scales and species. Green can extend its circle of compassion beyond humans to all living systems, while Turquoise can ensure its holistic awareness includes addressing human suffering and social inequities.",
-      sv: "Utvidga social rättvisa till att inkludera ekologisk rättvisa över skalor och arter. Grönt kan utöka sin medkänslocirkel bortom människor till alla levande system, medan Turkos kan säkerställa att dess holistiska medvetenhet inkluderar hantering av mänskligt lidande och sociala orättvisor."
+      en: "Expand social justice to include ecological and intergenerational justice through multi-scale coordination. Green can extend its circle of care to all living systems while maintaining relational depth, while Turquoise can ensure its systems understanding includes addressing immediate human needs and social inequities.",
+      sv: "Utvidga social rättvisa till att inkludera ekologisk och intergenerationell rättvisa genom multiskalär samordning. Grönt kan utöka sin omsorgsradie till alla levande system samtidigt som det behåller relationsdjup, medan Turkos kan säkerställa att dess systemförståelse inkluderar hantering av omedelbara mänskliga behov och sociala orättvisor."
     }
   },
   "green-coral": {
@@ -675,15 +675,15 @@ export const stageInteractions: StageInteractions = {
     }
   },
   "yellow-turquoise": {
-    en: "Turquoise infuses Yellow's systems thinking with unified consciousness and spiritual depth, while Yellow gives Turquoise practical effectiveness. This synergistic combination creates integral approaches to global challenges.",
-    sv: "Turkos genomsyrar Gults systemtänkande med enhetligt medvetande och andligt djup, medan Gult ger Turkos praktisk effektivitet. Denna synergiska kombination skapar integrerade tillvägagångssätt för globala utmaningar.",
+    en: "Turquoise brings meta-systemic awareness to Yellow's systems thinking, shifting from analyzing complexity to participating within it. Yellow provides Turquoise with analytical rigor and functional coherence. Together they move from mapping systems to cultivating conditions where transformation can emerge.",
+    sv: "Turkos tillför meta-systemisk medvetenhet till Gults systemtänkande, och skiftar från att analysera komplexitet till att delta inom den. Gult ger Turkos analytisk stringens och funktionell koherens. Tillsammans rör de sig från att kartlägga system till att odla förutsättningar där transformation kan uppstå.",
     clashes: {
-      en: "Yellow's analytical, functional perspective can miss the unified field consciousness central to Turquoise's worldview. Turquoise's holistic awareness can sometimes lack the detailed systemic understanding that Yellow offers.",
-      sv: "Gults analytiska, funktionella perspektiv kan missa det enade fältmedvetande som är centralt för Turkos världsbild. Turkos holistiska medvetenhet kan ibland sakna den detaljerade systemiska förståelse som Gult erbjuder."
+      en: "Yellow's analytical stance can treat systems as objects to optimize rather than recognizing itself as embedded within them. Turquoise's participatory approach can seem to sacrifice the precision and functional clarity that Yellow values, leading to what Yellow perceives as vague holism.",
+      sv: "Gults analytiska hållning kan behandla system som objekt att optimera snarare än att erkänna sig själv som innesluten i dem. Turkos deltagande tillvägagångssätt kan verka offra den precision och funktionella klarhet som Gult värdesätter, vilket leder till vad Gult uppfattar som vag holism."
     },
     bridging: {
-      en: "Integrate systems expertise with holistic consciousness to address global challenges. Yellow can open to the unified field awareness that connects all systems, while Turquoise can appreciate how functional understanding helps manifest holistic vision in concrete reality.",
-      sv: "Integrera systemexpertis med holistiskt medvetande för att hantera globala utmaningar. Gult kan öppna för det enade fältmedvetande som förbinder alla system, medan Turkos kan uppskatta hur funktionell förståelse hjälper till att manifestera holistisk vision i konkret verklighet."
+      en: "Recognize how analytical systems thinking becomes participatory meta-systemic awareness—not by abandoning rigor but by including the observer within the system. Yellow can embrace its embeddedness without losing analytical clarity, while Turquoise can ground its participatory approach in functional understanding and measurable outcomes.",
+      sv: "Inse hur analytiskt systemtänkande blir deltagande meta-systemisk medvetenhet—inte genom att överge stringens utan genom att inkludera observatören i systemet. Gult kan omfamna sin inneslutning utan att förlora analytisk klarhet, medan Turkos kan förankra sitt deltagande tillvägagångssätt i funktionell förståelse och mätbara resultat."
     }
   },
   "yellow-coral": {
@@ -711,27 +711,27 @@ export const stageInteractions: StageInteractions = {
     }
   },
   "turquoise-coral": {
-    en: "Coral brings sovereign creativity to Turquoise's holistic awareness, while Turquoise provides Coral with unified field consciousness. This powerful combination creates evolutionary innovations that serve planetary wellbeing while honoring individual sovereignty.",
-    sv: "Korall tillför suverän kreativitet till Turkos holistiska medvetenhet, medan Turkos ger Korall medvetenhet om det enade fältet. Denna kraftfulla kombination skapar evolutionära innovationer som tjänar planetens välbefinnande och samtidigt hedrar individuell suveränitet.",
+    en: "Coral brings sovereign creative agency to Turquoise's participatory systems awareness, while Turquoise provides Coral with understanding of nested, living systems. This combination enables evolutionary innovations that serve planetary wellbeing while honoring unique creative expression.",
+    sv: "Korall tillför suverän kreativ agens till Turkos deltagande systemmedvetenhet, medan Turkos ger Korall förståelse för kapslade, levande system. Denna kombination möjliggör evolutionära innovationer som tjänar planetens välbefinnande samtidigt som unikt kreativt uttryck hedras.",
     clashes: {
-      en: "Turquoise's emphasis on unity and transcendence of individual perspective can clash with Coral's focus on sovereign expression and unique creative contribution. Coral's evolutionary creativity can sometimes push against Turquoise's sense of harmonious flow.",
-      sv: "Turkos betoning på enhet och transcendering av individuellt perspektiv kan kollidera med Koralls fokus på suveränt uttryck och unikt kreativt bidrag. Koralls evolutionära kreativitet kan ibland trycka mot Turkos känsla av harmoniskt flöde."
+      en: "Turquoise's emphasis on participatory embeddedness within systems can seem to limit Coral's focus on sovereign creative agency and unique contribution. Coral's evolutionary creativity can push against Turquoise's recognition of systemic constraints and interdependencies.",
+      sv: "Turkos betoning på deltagande inneslutning inom system kan verka begränsa Koralls fokus på suverän kreativ agens och unikt bidrag. Koralls evolutionära kreativitet kan trycka mot Turkos erkännande av systemiska begränsningar och ömsesidiga beroenden."
     },
     bridging: {
-      en: "Honor how unique creative expression serves the evolutionary unfolding of unified consciousness. Turquoise can recognize how sovereign creativity furthers conscious evolution, while Coral can appreciate how connection to unified awareness enriches creative potential.",
-      sv: "Hedra hur unikt kreativt uttryck tjänar den evolutionära utvecklingen av enat medvetande. Turkos kan erkänna hur suverän kreativitet främjar medveten evolution, medan Korall kan uppskatta hur koppling till enad medvetenhet berikar kreativ potential."
+      en: "Honor how unique creative expression operates within—and transforms—living systems. Turquoise can recognize how sovereign creativity serves systemic evolution, while Coral can appreciate how understanding systemic interdependencies enriches rather than constrains creative potential.",
+      sv: "Hedra hur unikt kreativt uttryck opererar inom—och transformerar—levande system. Turkos kan erkänna hur suverän kreativitet tjänar systemisk evolution, medan Korall kan uppskatta hur förståelse för systemiska ömsesidiga beroenden berikar snarare än begränsar kreativ potential."
     }
   },
   "turquoise-ultraviolet": {
-    en: "Ultraviolet reveals the boundless nature of Turquoise's holistic consciousness, while Turquoise gives Ultraviolet coherent expression across planetary systems. This relationship creates fluid, evolutionary expressions of infinite awareness through living systems.",
-    sv: "Ultraviolett avslöjar den gränslösa naturen i Turkos holistiska medvetande, medan Turkos ger Ultraviolett ett samlat uttryck över planetära system. Denna relation skapar flytande, evolutionära uttryck för oändlig medvetenhet genom levande system.",
+    en: "Ultraviolet reveals the boundless awareness underlying Turquoise's participatory systems consciousness, while Turquoise gives Ultraviolet coherent expression through nested, living systems. This relationship creates fluid expressions of presence through planetary-scale coordination.",
+    sv: "Ultraviolett avslöjar den gränslösa medvetenhet som ligger bakom Turkos deltagande systemmedvetande, medan Turkos ger Ultraviolett samstämmigt uttryck genom kapslade, levande system. Denna relation skapar flytande uttryck för närvaro genom planetär-skala koordinering.",
     clashes: {
-      en: "Turquoise's focus on evolutionary purpose and cosmic order can seem too structured to Ultraviolet's infinite openness beyond all form. Ultraviolet's boundless awareness can dissolve the distinctions that Turquoise requires for evolutionary understanding.",
-      sv: "Turkos fokus på evolutionärt syfte och kosmisk ordning kan verka för strukturerat för Ultravioletts oändliga öppenhet bortom all form. Ultravioletts gränslösa medvetenhet kan upplösa de distinktioner som Turkos kräver för evolutionär förståelse."
+      en: "Turquoise's focus on meta-systemic understanding and developmental responsibility can seem too structured to Ultraviolet's infinite openness beyond all frameworks. Ultraviolet's boundless awareness can dissolve the functional distinctions that Turquoise recognizes as necessary for coordinated action.",
+      sv: "Turkos fokus på meta-systemisk förståelse och utvecklingsansvar kan verka för strukturerat för Ultravioletts oändliga öppenhet bortom alla ramverk. Ultravioletts gränslösa medvetenhet kan upplösa de funktionella distinktioner som Turkos erkänner som nödvändiga för koordinerad handling."
     },
     bridging: {
-      en: "Recognize how boundless awareness expresses through the evolutionary journey of living systems. Turquoise can open to the infinite potential beyond all evolutionary forms, while Ultraviolet can appreciate how cosmic patterns provide pathways for infinite consciousness to manifest.",
-      sv: "Inse hur gränslös medvetenhet uttrycks genom levande systems evolutionära resa. Turkos kan öppna för den oändliga potentialen bortom alla evolutionära former, medan Ultraviolett kan uppskatta hur kosmiska mönster tillhandahåller vägar för oändligt medvetande att manifesteras."
+      en: "Recognize how boundless awareness can manifest through participatory coordination within living systems. Turquoise can open to the infinite potential beyond all systemic frameworks while maintaining functional coherence, while Ultraviolet can appreciate how meta-systemic coordination provides pathways for presence to manifest at scale.",
+      sv: "Inse hur gränslös medvetenhet kan manifesteras genom deltagande koordinering inom levande system. Turkos kan öppna för den oändliga potentialen bortom alla systemiska ramverk samtidigt som funktionell koherens upprätthålls, medan Ultraviolett kan uppskatta hur meta-systemisk koordinering tillhandahåller vägar för närvaro att manifesteras i skala."
     }
   },
   "coral-ultraviolet": {
