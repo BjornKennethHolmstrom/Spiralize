@@ -647,148 +647,160 @@ export const stages: Stage[] = [
     focus: { en: 'Collective and Cosmic', sv: 'Kollektiv och kosmisk' },
     hex: '#40E0D0',
     name: { en: 'Turquoise', sv: 'Turkos' },
-    association: { en: 'Holistic and Integral', sv: 'Holistiskt och integrerat' },
+    association: { en: 'Meta-systemic', sv: 'Meta-systemisk' },
     essence: {
-      en: 'The interdependence of all life and systems. A recognition of profound unity—whether framed as ecological, spiritual, or cosmic. For some, this manifests as sacred reverence; for others, as a scientific or ethical commitment to planetary thriving.',
-      sv: 'Allt livs och systemens ömsesidiga beroende. En erkänsla av djup enhet—oavsett om den uppfattas som ekologisk, andlig eller kosmisk. För vissa tar detta form som helig vördnad; för andra som ett vetenskapligt eller etiskt engagemang för planetens välmående.'
+      en: 'Consciousness becomes explicitly aware of itself as an embedded participant in living, evolving systems. The shift is from analyzing complexity to embodying it—recognizing that the observer is inseparable from the web being observed. This may manifest as planetary stewardship, collective wisdom practices, or sacred interconnection.',
+      sv: 'Medvetandet blir explicit medvetet om sig själv som en innesluten deltagare i levande, utvecklande system. Skiftet är från att analysera komplexitet till att förkroppsliga den—att inse att observatören är oskiljbar från det nätverk som observeras. Detta kan ta sig uttryck som planetärt förvaltarskap, kollektiva visdomspraktiker eller helig sammankoppling.'
     },
     emergence: {
-      en: 'Turquoise arises when Yellow’s systemic awareness expands to include emotional, spiritual, or existential dimensions. It seeks integration—of knowledge and wisdom, self and whole.',
-      sv: 'Turkos uppstår när Gults systemmedvetenhet expanderar till att inkludera emotionella, andliga eller existentiella dimensioner. Den söker integration—av kunskap och visdom, själv och helhet.'
+      en: 'Turquoise arises when Yellow\'s systemic thinking becomes participatory and meta-systemic. Rather than mapping systems from outside, Turquoise recognizes itself as woven into them. The focus shifts from solving problems elegantly to cultivating conditions where transformation can emerge organically. For some this manifests through spiritual or cosmic awareness; for others through bioregional coordination, collective sense-making, or embodied systems change.',
+      sv: 'Turkos uppstår när Gults systemtänkande blir deltagande och meta-systemiskt. Istället för att kartlägga system utifrån, inser Turkos sig vara sammanvävd med dem. Fokuset skiftar från att lösa problem elegant till att odla förutsättningar där transformation kan uppstå organiskt. För vissa tar detta form genom andlig eller kosmisk medvetenhet; för andra genom bioregional samordning, kollektiv meningsskapande eller förankrad systemförändring.'
     },
     keyTraits: {
       en: [
-        'Holism and systems thinking',
-        'Transpersonal or mystical awareness or Cosmic/Planetary perspective',
-        'Collective upliftment',
-        'Ethical or sacred action',
-        'Integrative emotional mastery'
+        'Meta-systemic awareness—thinking about how we think about systems',
+        'Participatory rather than analytical stance toward complexity',
+        'Temporal depth—considering deep time and multi-generational impact',
+        'Comfort with paradox, emergence, and uncertainty as fundamental',
+        'Multiple epistemologies—integrating science, art, indigenous wisdom, contemplative practice'
       ],
       sv: [
-        'Helhetssyn och systemtänkande',
-        'Transpersonell eller mystisk medvetenhet eller Kosmisk/planetärt perspektiv',
-        'Kollektivt uppvaknande',
-        'Etiskt eller heligt handlande',
-        'Integrerande emotionell behärskning'
+        'Meta-systemisk medvetenhet—att tänka på hur vi tänker om system',
+        'Deltagande snarare än analytisk hållning till komplexitet',
+        'Temporal djup—beaktar djup tid och flerlagergenerationell påverkan',
+        'Bekvämlighet med paradox, emergens och osäkerhet som grundläggande',
+        'Flera epistemologier—integrerar vetenskap, konst, ursprungsbefolkningens visdom, kontemplativa praktiker'
       ]
     },
     insights: {
       en: [
-        'Life exists as nested, interdependent systems',
-        'We are the Earth dreaming or We are nature becoming aware of itself',
-        'Love and presence are intelligence or Collaboration is the DNA of survival',
-        'Everything is already whole or Every action ripples through the web'
+        'Systems are not just interconnected—they are nested, living, and co-evolving',
+        'All models (including this one) are temporary scaffolds in an unfolding reality',
+        'The observer changes what is observed; separation is a useful fiction',
+        'Transformation happens through cultivating conditions, not imposing solutions',
+        'Every stage exists simultaneously in society and within oneself'
       ],
       sv: [
-        'Livet existerar som kapslade, ömsesidigt beroende system',
-        'Vi är Jorden som drömmer eller Vi är naturen som blir medveten om sig själv',
-        'Kärlek och närvaro är intelligens eller Samarbete är överlevnadens DNA',
-        'Allt är redan helt eller Varje handling vågor genom nätverket'
+        'System är inte bara sammankopplade—de är kapslade, levande och samevolutionära',
+        'Alla modeller (inklusive denna) är tillfälliga ställningar i en framväxande verklighet',
+        'Observatören förändrar det som observeras; separation är en användbar fiktion',
+        'Transformation sker genom att odla förutsättningar, inte genom att påtvinga lösningar',
+        'Varje stadium existerar samtidigt i samhället och inom en själv'
       ]
     },
     contributions: {
       en: [
-        "Cultivates planetary and cosmic consciousness or Advances global-systems intelligence",
-        "Embeds sacred or ethical presence in leadership and action",
-        "Sees wholeness in complexity or Navigates chaos with emergent wisdom",
-        "Bridges science, spirituality, and activism"
+        "Bridges individual consciousness development with collective transformation",
+        "Creates generative conditions rather than rigid solutions",
+        "Holds developmental humility—no stage is 'better', only more complex",
+        "Approaches polycrisis with multi-leverage interventions across psychological, cultural, and systemic levels",
+        "Balances pragmatic action within broken systems while seeding regenerative alternatives"
       ],
       sv: [
-        "Främjar planetärt och kosmiskt medvetande eller Utvecklar global systemintelligens",
-        "Integrerar heligt eller etiskt närvaro i ledarskap och handling",
-        "Ser helhet i komplexitet eller Navigerar kaos med emergent visdom",
-        "Bygger broar mellan vetenskap, spiritualitet och aktivism"
+        "Bygger broar mellan individuell medvetenhetsutveckling och kollektiv transformation",
+        "Skapar generativa förutsättningar snarare än rigida lösningar",
+        "Håller utvecklingsmässig ödmjukhet—inget stadium är 'bättre', bara mer komplext",
+        "Möter polykris med multileveransinterventioner över psykologiska, kulturella och systemiska nivåer",
+        "Balanserar pragmatiskt handlande inom trasiga system samtidigt som regenerativa alternativ sås"
       ]
     },
     topValues: {
       en: [
-        "Wholeness and interconnection",
-        "Global and cosmic consciousness",
-        "Harmony with natural flows",
-        "Sacred or systemic interconnectedness",
-        "Spiritual or existential awareness or Planetary stewardship",
-        "Collective wisdom"
+        "Planetary and ecosystemic thriving",
+        "Developmental responsibility—fostering conditions for all stages to express healthily",
+        "Participatory knowing and collective sense-making",
+        "Deep time and multi-generational thinking",
+        "Integration without spiritual bypass",
+        "Emergent wisdom over imposed control"
       ],
       sv: [
-        "Helhet och sammankoppling",
-        "Globalt och kosmiskt medvetande",
-        "Harmoni med naturliga flöden",
-        "Heligt eller systemiskt sammanhang",
-        "Andlig eller existentiell medvetenhet eller Planetärt ansvarstagande",
-        "Kollektiv visdom"
+        "Planetärt och ekosystemiskt blomstrande",
+        "Utvecklingsansvar—främja förutsättningar för alla stadier att uttrycka sig friskt",
+        "Deltagande vetande och kollektiv meningsskapande",
+        "Djup tid och flerlagergenerationellt tänkande",
+        "Integration utan andlig förbikoppling",
+        "Emergent visdom över påtvingad kontroll"
       ]
     },
     pitfalls: {
       en: [
-        'Isolation from practical realities',
-        'Spiritual or intellectual bypassing',
-        'Cosmic overwhelm or paralysis by complexity',
-        'Challenges grounding insights in action'
+        'Spiritual or systems-theoretical bypass—talking about wholeness while avoiding embodied action',
+        'Complexity paralysis—seeing so many interdependencies that action becomes impossible',
+        'Subtle superiority—treating "meta-systemic awareness" as a credential rather than responsibility',
+        'Disconnection from practical, boots-on-the-ground work',
+        'Treating all perspectives as equally valid (relativism) vs. recognizing them as partial (perspectivalism)'
       ],
       sv: [
-        'Isolering från praktiska realiteter',
-        'Andlig eller intellektuell flykt',
-        'Kosmisk överväldigande eller komplexitetsförlamning',
-        'Utmaningar att förankra insikter i handling'
+        'Andlig eller systemteoretisk förbikoppling—prata om helhet samtidigt som förankrad handling undviks',
+        'Komplexitetsförlamning—se så många ömsesidiga beroenden att handling blir omöjlig',
+        'Subtil överlägsenhet—behandla "meta-systemisk medvetenhet" som en meritlista snarare än ansvar',
+        'Frånkoppling från praktiskt, "boots-on-the-ground"-arbete',
+        'Behandla alla perspektiv som lika giltiga (relativism) vs. erkänna dem som partiella (perspektivalism)'
       ]
     },
     triggers: {
       en: [
-        'Materialism reductionism',  
-        'Overanalysis without heart',  
-        'Competitive ego or hyper-individualism',  
-        'Cynicism toward unity',  
-        'Fragmented or exploitative systems',  
-        'Denial of interdependence'  
+        'Reductionist materialism that ignores emergent properties',
+        'Purely analytical approaches that exclude embodied or relational knowing',
+        'Hyper-individualism that denies systemic interdependence',
+        'Exploitative systems that treat life as extractable resource',
+        'Cynicism toward collective wisdom or planetary stewardship',
+        'Treating development models as fixed truths rather than evolving tools'
       ],
       sv: [
-        'Materialism reduktionism',  
-        'Överanalys utan hjärta',  
-        'Tävlingsinriktat ego eller hyperindividualism',  
-        'Cynism mot enhet',  
-        'Fragmenterade eller exploaterande system',  
-        'Förnekande av ömsesidigt beroende'  
+        'Reduktionistisk materialism som ignorerar emergenta egenskaper',
+        'Rent analytiska tillvägagångssätt som utesluter förankrat eller relationellt vetande',
+        'Hyperindividualism som förnekar systemiskt ömsesidigt beroende',
+        'Exploaterande system som behandlar liv som utvinningsbar resurs',
+        'Cynism mot kollektiv visdom eller planetärt förvaltarskap',
+        'Behandla utvecklingsmodeller som fixerade sanningar snarare än evolutionära verktyg'
       ]
     },
     growthPath: {
-      en: 'Turquoise evolves when its holistic awareness becomes embodied and actionable—whether through grounded systemic change, artistic expression, or sacred service. It transcends detachment by co-creating with the intelligence of life.',
-      sv: 'Turkos utvecklas när dess holistiska medvetenhet blir förankrad och handlingsorienterad—antingen genom grundläggande systemförändring, konstnärligt uttryck eller heligt engagemang. Den överskrider avkoppling genom att samskapa med livets intelligens.'
+      en: 'Turquoise evolves when meta-systemic awareness becomes fully embodied in grounded action. This might look like: bioregional governance experiments, regenerative economic design, crisis-resilient infrastructure, or collective practices that bridge contemplative depth with systemic change. The key is moving from understanding interconnection to living as interconnection—while maintaining developmental humility and avoiding the trap of spiritual superiority.',
+      sv: 'Turkos utvecklas när meta-systemisk medvetenhet blir fullständigt förankrad i jordnära handling. Detta kan se ut som: bioregionala styrningsexperiment, regenerativ ekonomisk design, krisresillient infrastruktur, eller kollektiva praktiker som bygger broar mellan kontemplativt djup och systemisk förändring. Nyckeln är att gå från att förstå sammankoppling till att leva som sammankoppling—samtidigt som utvecklingsmässig ödmjukhet upprätthålls och fällan av andlig överlägsenhet undviks.'
     },
     archetypes: {
       en: [
-        'Systems thinkers',
-        'Mystics and philosophers',
-        'Planetary healers',
-        'Sacred or ethical technologists',
-        'Quantum poets',
-        'Integral activists'
+        'Meta-systems designers (not just systems thinkers)',
+        'Bioregional coordinators',
+        'Regenerative economists',
+        'Collective wisdom facilitators',
+        'Crisis resilience architects',
+        'Planetary stewards working at multiple scales simultaneously',
+        'Those bridging contemplative practice with systemic transformation'
       ],
       sv: [
-        'Systemtänkare',
-        'Mystiker och filosofer',
-        'Planetära helare',
-        'Heliga eller etiska teknologer',
-        'Kvantpoeter',
-        'Integrala aktivister'
+        'Meta-systemdesigners (inte bara systemtänkare)',
+        'Bioregionala koordinatorer',
+        'Regenerativa ekonomer',
+        'Facilitatorer av kollektiv visdom',
+        'Krisresiliensarkitekter',
+        'Planetära förvaltare som arbetar på flera skalor samtidigt',
+        'De som bygger broar mellan kontemplativ praktik och systemisk transformation'
       ]
     },
     quotes: {
       en: [
-        "All is connected—every thread matters.",
-        "I move with the field or I act as part of the whole",
-        "What we heal in ourselves echoes outward.",
-        "I am not the wave. I am the ocean remembering itself. or We are stardust rearranged into consciousness",
-        "The real does not die — the unreal never lived. — Nisargadatta Maharaj",
-        "In nature, nothing exists alone — Rachel Carson"
+        "I don't solve problems—I cultivate conditions where they can transform.",
+        "Every model is a scaffolding, not a cage. Including this one.",
+        "The observer is always already inside the web.",
+        "Complexity isn't the problem. Pretending we're outside it is.",
+        "Higher isn't better—it's just more complex, with its own vulnerabilities.",
+        "\"Don\'t call it a stage. Call it a quality of presence that arises when consciousness stops seeking stages.\" — (meta-reflection on SD itself)"
       ],
       sv: [
-        "Allt är sammankopplat—varje tråd spelar roll.",
-        "Jag rör mig med fältet eller Jag agerar som en del av helheten",
-        "Det vi helar i oss själva genljuder utåt.",
-        "Jag är inte vågen. Jag är havet som minns sig självt. eller Vi är stjärnstoft omarrangerat till medvetande",
-        "Det verkliga dör inte — det overkliga har aldrig levt. — Nisargadatta Maharaj",
-        "I naturen finns inget som existerar ensamt. — Rachel Carson"
+        "Jag löser inte problem—jag odlar förutsättningar där de kan transformeras.",
+        "Varje modell är en ställning, inte en bur. Inklusive denna.",
+        "Observatören är alltid redan inuti nätverket.",
+        "Komplexitet är inte problemet. Att låtsas att vi är utanför det är.",
+        "Högre är inte bättre—det är bara mer komplext, med sina egna sårbarheter.",
+        "\"Kalla det inte ett stadium. Kalla det en kvalitet av närvaro som uppstår när medvetandet slutar söka stadier.\" — (meta-reflektion på SD själv)"
       ]
+    },
+    transitionQuote: {
+      en: '"The map became the territory when I realized I was always already walking on it."',
+      sv: '"Kartan blev territoriet när jag insåg att jag alltid redan gick på den."'
     }
   },
   {
