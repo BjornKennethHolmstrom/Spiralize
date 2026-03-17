@@ -134,59 +134,66 @@
       id: 'guides',
       children: [
         { 
-          href: `${base}/guide-communication`, 
+          href: `${base}/guides/communication`, 
           label: { 
             en: "🌉 Communicating the Spiral", 
             sv: "🌉 Kommunicera Spiralen" 
           }
         },
         { 
-          href: `${base}/guide-personal`, 
+          href: `${base}/guides/personal`, 
           label: { 
             en: "🌱 Evolving Yourself", 
             sv: "🌱 Utveckla dig själv" 
           }
         },
         { 
-          href: `${base}/guide-parenting`, 
+          href: `${base}/guides/parenting`, 
           label: { 
             en: "👶 Conscious Parenting & Education", 
             sv: "👶 Medveten föräldraskap och utbildning" 
           }
         },
         { 
-          href: `${base}/guide-leadership`, 
+          href: `${base}/guides/leadership`, 
             label: { 
               en: "🧭 Coaching & Leadership Toolkit", 
               sv: "🧭 Coaching- och ledarskapsverktyg" 
             }
         },
         { 
-          href: `${base}/guide-organizations`, 
+          href: `${base}/guides/organizations`, 
           label: { 
             en: "🏢 Spiralizing Organizations & Communities", 
             sv: "🏢 Spiralisera organisationer och gemenskaper" 
           }
         },
         { 
-          href: `${base}/guide-psychological`, 
+          href: `${base}/guides/psychological`, 
           label: { 
             en: "🧠 Spiral-Aware Mental Health & Therapeutic Guide", 
             sv: "🧠 Spiralmedveten guide för mental hälsa och terapeutisk behandling" 
           }
         },
         { 
-          href: `${base}/guide-spiritual`, 
+          href: `${base}/guides/spiritual`, 
           label: { 
             en: "🧘 The Spiritual & Mystical Spiral", 
             sv: "🧘 Den spirituella och mystiska spiralen" 
           }
         },
         { 
-          href: `${base}/guide-governance`, 
+          href: `${base}/guides/governance`, 
           label: { 
             en: "🌍 Spiral-Aware Global Governance", 
             sv: "🌍 Spiralmedveten global styrning" 
+          }
+        },
+        { 
+          href: `${base}/guides/meeting`, 
+          label: { 
+            en: "🕸️ Tier-2 Meeting Protocol", 
+            sv: "🕸️ Tier-2 Mötesprotokoll" 
           }
         }
       ]
