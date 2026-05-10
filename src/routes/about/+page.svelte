@@ -89,7 +89,7 @@
       
       author: {
         title: "About the author",
-        text: "Björn Kenneth Holmström writes about consciousness, philosophy, and spirituality and more. Explore more of his work:",
+        text: "Björn Kenneth Holmström writes about consciousness, philosophy, and spirituality through the lens of developmental psychology and from his own experiences. He is the architect of the Global Governance Frameworks and the Variety Gap Framework, which apply systems thinking and control theory to the diagnosis of governance failure—work grounded in the same Stage Yellow/Turquoise perspective that animates this site. Explore more of his work:",
         website: "Visit my website",
       }
     },
@@ -174,7 +174,7 @@
       
       author: {
         title: "Om författaren",
-        text: "Björn Kenneth Holmström skriver om bland annat medvetande, filosofi och spiritualitet. Utforska mer av hans arbete:",
+        text: "Björn Kenneth Holmström skriver om medvetande, filosofi och andlighet genom utvecklingspsykologins lins och från sina egna upplevelser. Han är arkitekten bakom Global Governance Frameworks och Variety Gap Framework, som tillämpar systemtänkande och kontrollteori för att diagnostisera styrningsmisslyckanden – ett arbete som är förankrat i samma Stage Yellow/Turquoise-perspektiv som animerar denna webbplats. Utforska mer av hans arbete:",
         website: "Besök min hemsida",
       }
     }
