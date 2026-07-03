@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spiral — four lenses, one society</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#14171c; --panel:#1b2027; --raised:#222a33; --line:#2b333d;
+    --ink:#d7dee7; --muted:#727e8c; --faint:#4a545f;
+    --safe:#5fb98a; --warn:#e3a52f; --crash:#e0564a;
+    --lens:#5a9bd4;
+    --mono:'IBM Plex Mono',ui-monospace,monospace; --sans:'Space Grotesk',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box} html,body{margin:0}
+  body{background:radial-gradient(130% 90% at 50% -10%, #1a1f27 0%, var(--bg) 60%) fixed, var(--bg);
+    color:var(--ink); font-family:var(--sans); min-height:100vh; display:flex; justify-content:center;
+    -webkit-font-smoothing:antialiased; line-height:1.45;}
+  .wrap{width:100%; max-width:820px; padding:22px 18px 48px;}
+
+  .top{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  h1{font-size:18px; font-weight:600; margin:0;} h1 small{color:var(--muted); font-weight:400; font-size:13px; margin-left:8px;}
+  .readouts{display:flex; gap:16px; font-family:var(--mono); font-size:12px; color:var(--muted); flex-wrap:wrap;}
+  .readouts b{color:var(--ink); font-weight:600;}
+  .reality{margin-top:10px; font-family:var(--mono); font-size:11px; color:var(--faint);
+    border:1px dashed var(--line); border-radius:8px; padding:6px 10px; display:inline-flex; gap:8px;}
+
+  .lenses{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:16px;}
+  .lens-tab{appearance:none; cursor:pointer; text-align:left; background:var(--panel); border:1px solid var(--line);
+    border-radius:11px; padding:10px 11px; transition:.15s; color:var(--ink); position:relative;}
+  .lens-tab .nm{font-size:12.5px; font-weight:600; display:flex; align-items:center; gap:6px;}
+  .lens-tab .nm .sw{width:8px; height:8px; border-radius:2px; background:var(--c);}
+  .lens-tab .sub{font-family:var(--mono); font-size:9.5px; color:var(--muted); margin-top:3px; line-height:1.4;}
+  .lens-tab[data-active="1"]{border-color:var(--c); background:linear-gradient(180deg,#222a33,#1a1f26);}
+  .lens-tab:not([data-active="1"]):not(:disabled):hover{border-color:var(--muted);}
+  .lens-tab:disabled{opacity:.45; cursor:not-allowed;}
+
+  .gracebar{margin-top:14px; display:none; align-items:center; justify-content:space-between; gap:12px;
+    background:#171c22; border:1px solid var(--lens); border-radius:11px; padding:11px 14px; flex-wrap:wrap;}
+  .gracebar span{font-size:12.5px; color:var(--ink);}
+  .gracebar button{appearance:none; cursor:pointer; font-family:var(--sans); font-weight:600; font-size:13px;
+    border-radius:9px; padding:9px 18px; border:1px solid var(--lens); background:var(--lens); color:#0c0e12;}
+
+  .stage{margin-top:14px; background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:18px; border-top:2px solid var(--lens); transition:border-color .3s; min-height:280px;}
+  .stage-head{display:flex; align-items:baseline; justify-content:space-between; gap:10px;}
+  .stage-title{font-size:15px; font-weight:600; color:var(--lens);}
+  .stage-note{font-family:var(--mono); font-size:10.5px; color:var(--muted); text-align:right; max-width:42ch;}
+
+  .gauge{margin-top:16px;}
+  .gauge .glbl{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);}
+  .gauge .gv{font-family:var(--mono); font-weight:600; font-size:38px; margin:4px 0; font-variant-numeric:tabular-nums;}
+  .gbar{height:8px; background:#10141a; border-radius:5px; overflow:hidden; position:relative;}
+  .gbar .fill{height:100%; transition:width .4s, background .3s;}
+  .gbar .mark{position:absolute; top:-3px; bottom:-3px; width:2px; background:var(--crash);}
+  .gnote{font-family:var(--mono); font-size:10.5px; color:var(--muted); margin-top:8px; line-height:1.5;}
+  .twin{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media(max-width:600px){.twin{grid-template-columns:1fr;}}
+
+  .insts{margin-top:18px; display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+  @media(max-width:680px){.insts{grid-template-columns:1fr;}}
+  .inst{border:1px solid var(--line); border-radius:11px; padding:11px 12px; background:#171c22;}
+  .inst .ihd{display:flex; justify-content:space-between; align-items:baseline; gap:6px; flex-wrap:wrap;}
+  .inst .inm{font-size:12px; font-weight:600;}
+  .inst .verdict{font-family:var(--mono); font-size:9.5px; padding:2px 7px; border-radius:999px; border:1px solid currentColor;}
+  .inst .lines{font-family:var(--mono); font-size:10px; color:var(--muted); margin-top:7px; line-height:1.6;}
+  .inst .lines b{color:var(--ink); font-weight:600;}
+  .inst .ibtn{appearance:none; cursor:pointer; margin-top:9px; font-family:var(--mono); font-size:10px; font-weight:600;
+    border-radius:8px; padding:5px 10px; border:1px solid var(--line); background:var(--raised); color:var(--ink);}
+  .inst .ibtn:hover:not(:disabled){border-color:var(--lens);} .inst .ibtn:disabled{opacity:.4; cursor:not-allowed;}
+  .mbar{height:5px; background:#10141a; border-radius:3px; margin-top:8px; overflow:hidden;}
+  .mbar .mf{height:100%; background:var(--lens); transition:width .4s;}
+
+  .actions{margin-top:16px;}
+  .actions-lbl{font-size:11px; color:var(--muted); margin-bottom:9px;}
+  .act-row{display:flex; gap:10px; flex-wrap:wrap;}
+  .act{appearance:none; cursor:pointer; flex:1; min-width:170px; text-align:left; background:var(--raised);
+    border:1px solid var(--line); border-radius:10px; padding:11px 13px; color:var(--ink); transition:.15s;}
+  .act:hover:not(:disabled){border-color:var(--lens);} .act:disabled{opacity:.4; cursor:not-allowed;}
+  .act .an{font-size:13px; font-weight:600;} .act .ad{font-family:var(--mono); font-size:10px; color:var(--muted); margin-top:3px; line-height:1.4;}
+  .act .ac{font-family:var(--mono); font-size:10px; color:var(--warn); margin-top:5px;}
+
+  .footnote{margin-top:22px; font-size:10.5px; color:var(--faint); text-align:center; line-height:1.6;}
+
+  .overlay{position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+    background:rgba(14,17,22,.86); backdrop-filter:blur(4px); z-index:20; padding:20px;}
+  .overlay.show{display:flex;}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:26px 28px; max-width:560px; text-align:center;}
+  .card h2{margin:0 0 8px; font-size:24px; font-weight:700;} .card p{font-size:13.5px; color:var(--muted); line-height:1.6; margin:8px 0;}
+  .card .verdict{font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:.1em;}
+  .card .btn{appearance:none; cursor:pointer; margin-top:16px; font-family:var(--sans); font-weight:600; font-size:14px;
+    border-radius:11px; padding:12px 22px; border:1px solid #33414d; background:linear-gradient(180deg,#2a3540,#212a33); color:#fff;}
+
+  .blackout{position:fixed; inset:0; display:none; flex-direction:column; align-items:center; justify-content:center;
+    background:#0c0e12; z-index:25; text-align:center;}
+  .blackout.show{display:flex;}
+  .blackout .scr{font-family:var(--mono); font-size:13px; color:#39424d; letter-spacing:.15em; height:32px; margin-bottom:14px;}
+  .blackout .bmsg{font-size:15px; color:var(--ink); font-weight:600;}
+  .blackout .bsub{font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:8px;}
+  .blackout .bcount{font-family:var(--mono); font-size:40px; color:var(--warn); margin-top:16px;}
+  .blackout .bwarn{font-family:var(--mono); font-size:11px; color:var(--crash); margin-top:14px;}
+
+  @media(max-width:600px){ .lenses{grid-template-columns:repeat(2,1fr);} .top{flex-direction:column; align-items:flex-start; gap:6px;} }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>Spiral <small>four lenses, one society &middot; prototype</small></h1>
+    <div class="readouts">
+      <span>DAY <b id="clk">0</b>/60</span>
+      <span>VIABILITY <b id="via">100</b></span>
+      <span>&Omega; <b id="omega">100</b></span>
+      <span>READINESS <b id="ready">0</b>%</span>
+    </div>
+  </div>
+  <div class="reality">&#128584; one hidden society &middot; each lens compiles a different world &mdash; and can only act in its own language</div>
+
+  <div class="lenses" id="lenses"></div>
+  <div class="gracebar" id="gracebar">
+    <span>Nothing has broken yet. Browse the lenses freely &mdash; each reads the same society differently &mdash; then open the era when ready.</span>
+    <button id="startCrisis">Open the era</button>
+  </div>
+  <div class="stage" id="stage"></div>
+  <div class="actions" id="actions"></div>
+
+  <div class="footnote">
+    The Spiral colour names are an interpretive skin [H] over compression regimes &mdash; resolution, aggregation, and coupling settings from the Governance as Engineering series.<br>
+    No lens is higher or truer. Yellow is gated by societal readiness (conditions), not achievement. Each crisis is legible to some lenses and invisible to others.
+  </div>
+</div>
+
+<div class="overlay" id="overlay"><div class="card" id="card"></div></div>
+<div class="blackout" id="blackout">
+  <div class="scr mono" id="scr"></div>
+  <div class="bmsg">Re-ontologizing</div>
+  <div class="bsub" id="bsub"></div>
+  <div class="bcount" id="bcount">3</div>
+  <div class="bwarn">the society keeps moving, unobserved</div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const $=id=>document.getElementById(id);
+  const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+
+  // ---------- config ----------
+  const TICK_MS=1500, WINDOW=60;
+  const SWITCH_COST=20, BLACKOUT=3, OMEGA0=110, REGEN=3;
+  const READY_YELLOW=60;
+  const C_AUDIT=25, C_ASSEMBLY=25, C_LAB=30;
+
+  const LENS={
+    blue:  {name:"Blue",   c:"#5a9bd4", sub:"order &middot; rules &middot; thresholds"},
+    orange:{name:"Orange", c:"#e3a52f", sub:"performance &middot; optimization"},
+    green: {name:"Green",  c:"#5fb98a", sub:"trust &middot; relationships"},
+    yellow:{name:"Yellow", c:"#c9b458", sub:"systems &middot; feedback design"},
+  };
+  const ORDER=["blue","orange","green","yellow"];
+
+  // ---------- state ----------
+  let S, timer, scrT;
+  function fresh(){
+    const j=()=>Math.floor(Math.random()*5)-2; // ±2 day jitter
+    const a=j(), b=j(), c=j();
+    S={ tick:0, phase:"playing", mode:"blue", omega:OMEGA0, V:100,
+        O:75, T:60, B:0, g:0.45, R:0, perf:60,
+        winA:[8+a,18+a], winB:[20+b,32+b], winC:[34+c,50+c],
+        burstDone:false, delegated:false,
+        insts:{ audit:{built:false}, assembly:{built:false, mat:0}, lab:{built:false} },
+        blackoutLeft:0, pendingMode:null, loseCause:null };
+  }
+  const inWin=w=>S.tick>=w[0]&&S.tick<=w[1];
+  const anyCrisis=()=>inWin(S.winA)||inWin(S.winB)||inWin(S.winC);
+
+  // ---------- world ----------
+  function advance(){
+    S.tick++; S.omega+=REGEN;
+    // Crisis A: rule drift (Blue-legible)
+    if(inWin(S.winA)) S.O-=4.5; else S.O=Math.min(80,S.O+0.4);
+    if(S.delegated) S.O=Math.min(80,S.O+1.8);
+    // Crisis B: Goodhart bubble (invisible in Orange; symptoms in Green)
+    if(inWin(S.winB)&&!S.burstDone){
+      S.B+=0.082-(S.insts.audit.built?0.015:0);
+      S.T-=1.2;
+    } else if(!inWin(S.winB)) S.T=Math.min(75,S.T+0.4);
+    if(S.B>=1&&!S.burstDone){
+      S.burstDone=true;
+      const dmg=clamp(36 - S.insts.assembly.mat*0.14 - (S.T-40)*0.35, 12, 40);
+      S.V-=dmg; S.B=0;
+    }
+    // Crisis C: coupling runaway (Yellow-legible)
+    if(inWin(S.winC)) S.g+=0.06;
+    if(S.g>=1) S.V-=10;
+    // institutions & readiness
+    if(S.insts.assembly.built) S.insts.assembly.mat=Math.min(100,S.insts.assembly.mat+(anyCrisis()?4:2));
+    S.R=Math.min(100, S.R
+      + (S.insts.assembly.built?0.8:0) + (S.insts.assembly.built&&anyCrisis()?1.0:0)
+      + (S.insts.lab.built?1.4:0));
+    S.perf=clamp(60+35*S.B-(S.burstDone?35:0),5,120);
+    // collapse checks
+    if(S.O<30){ S.loseCause="order"; return end(false); }
+    if(S.V<40){ S.loseCause=S.g>=1?"runaway":"burst"; return end(false); }
+  }
+  function tickLoop(){
+    if(S.phase==="won"||S.phase==="lost") return;
+    advance(); if(S.phase==="won"||S.phase==="lost") return;
+    if(S.phase==="blackout"){
+      S.blackoutLeft--;
+      if(S.blackoutLeft<=0){ S.mode=S.pendingMode; S.pendingMode=null; S.phase="playing"; $("blackout").classList.remove("show"); }
+    }
+    if(S.tick>=WINDOW&&S.phase!=="blackout") return end(true);
+    render();
+  }
+
+  // ---------- actions ----------
+  function pay(c){ if(S.omega<c) return false; S.omega-=c; return true; }
+  function build(k){
+    if(S.phase!=="playing") return;
+    if(k==="audit"&&!S.insts.audit.built&&pay(C_AUDIT)) S.insts.audit.built=true;
+    if(k==="assembly"&&!S.insts.assembly.built&&pay(C_ASSEMBLY)) S.insts.assembly.built=true;
+    if(k==="lab"&&!S.insts.lab.built&&pay(C_LAB)) S.insts.lab.built=true;
+    render();
+  }
+  const ACTS={
+    blue:[
+      {an:"Issue directive",ad:"Shore up order (+6).",c:8,f:()=>{S.O=Math.min(85,S.O+6);}},
+      {an:"Enforce compliance",ad:"Order +12 &mdash; but assemblies wither and trust drops.",c:10,
+        f:()=>{S.O=Math.min(85,S.O+12); S.insts.assembly.mat=Math.max(0,S.insts.assembly.mat-12); S.T=Math.max(0,S.T-6);}},
+    ],
+    orange:[
+      {an:"Optimize allocation",ad:"Performance index climbs.",c:8,f:()=>{S.B=Math.min(1,S.B+0.07);}},
+      {an:"Correct the metric",ad:"Requires Independent Audit. Deflates the divergence.",c:10,
+        need:()=>S.insts.audit.built, f:()=>{S.B=Math.max(0,S.B-0.12);}},
+    ],
+    green:[
+      {an:"Convene assembly",ad:"Effect scales with assembly maturity. Vents the pressure Orange calls growth.",c:10,
+        need:()=>S.insts.assembly.built, f:()=>{S.B=Math.max(0,S.B-(0.04+0.18*S.insts.assembly.mat/100)); S.T=Math.min(80,S.T+4);}},
+      {an:"Mediate disputes",ad:"Trust +6, order +2.",c:8,f:()=>{S.T=Math.min(80,S.T+6); S.O=Math.min(85,S.O+2);}},
+    ],
+    yellow:[
+      {an:"Redesign feedback",ad:"Coupling gain \u22120.30. Repeatable.",c:14,f:()=>{S.g=Math.max(0.30,S.g-0.30);}},
+      {an:"Delegate to nodes",ad:"Autonomous local order-holding (+1.8/day, permanent).",c:16,
+        need:()=>!S.delegated, f:()=>{S.delegated=true;}},
+    ],
+  };
+  function requestSwitch(k){
+    if(k===S.mode) return;
+    if(k==="yellow"&&S.R<READY_YELLOW) return;
+    if(S.phase==="orient"){ S.mode=k; render(); return; }
+    if(S.phase!=="playing") return;
+    if(S.omega<SWITCH_COST){ const o=$("omega"); o.style.color="var(--crash)"; setTimeout(()=>o.style.color="",400); return; }
+    S.omega-=SWITCH_COST; S.pendingMode=k; S.phase="blackout"; S.blackoutLeft=BLACKOUT;
+    $("blackout").classList.add("show"); $("bsub").textContent=LENS[S.mode].name+"  \u2192  "+LENS[k].name;
+    runScramble(); render();
+  }
+  function runScramble(){
+    clearInterval(scrT); const g="01<>/\\|=+*#%&";
+    scrT=setInterval(()=>{ if(S.phase!=="blackout"){clearInterval(scrT);return;}
+      let s=""; for(let i=0;i<30;i++)s+=g[Math.floor(Math.random()*g.length)];
+      $("scr").textContent=s; $("bcount").textContent=Math.max(0,S.blackoutLeft); },90);
+  }
+
+  // ---------- institutions: same building, four verdicts ----------
+  const INST_VIEW={
+    audit:{
+      nm:"Independent audit",
+      blue:  ["parallel authority","Reports outside the chain of command<br>Order impact: <b>ambiguous</b>","var(--warn)"],
+      orange:["margin drag","Costs with no revenue<br>KPI impact: <b>negative</b>","var(--crash)"],
+      green: ["honest witness","Decorrelates the official story<br>Trust anchor: <b>yes</b>","var(--safe)"],
+      yellow:["decorrelated sensor","Breaks metric self-reference<br>Enables: <b>Correct the metric</b>","var(--safe)"],
+    },
+    assembly:{
+      nm:"Civic assembly",
+      blue:  ["disorderly","Unstructured deliberation<br>Compliance impact: <b>negative</b>","var(--crash)"],
+      orange:["unproductive","Hours spent, output <b>0</b>","var(--muted)"],
+      green: ["living tissue","Matures through use, faster in crisis<br>Vents pressure before it bursts","var(--safe)"],
+      yellow:["distributed sensor net","Raises societal readiness<br>Weak-signal aggregation","var(--safe)"],
+    },
+    lab:{
+      nm:"Systems lab",
+      blue:  ["irrelevant","No rules produced<br>Purpose: <b>unclear</b>","var(--muted)"],
+      orange:["speculative cost","ROI: <b>none measurable</b>","var(--muted)"],
+      green: ["ivory tower","Distant from lived concerns","var(--warn)"],
+      yellow:["the lens-maker","Raises readiness fastest<br>What made this view thinkable","var(--safe)"],
+    },
+  };
+  function instCard(k){
+    const iv=INST_VIEW[k], v=iv[S.mode], st=S.insts[k];
+    const dis=S.phase!=="playing"?"disabled":"";
+    const cost=k==="audit"?C_AUDIT:k==="assembly"?C_ASSEMBLY:C_LAB;
+    let extra="";
+    if(st.built){
+      extra = k==="assembly" ? `<div class="mbar"><div class="mf" style="width:${st.mat}%"></div></div>` :
+        `<div class="lines" style="margin-top:6px;color:var(--safe)">established</div>`;
+    } else {
+      extra=`<button class="ibtn" ${dis} data-build="${k}">establish &middot; ${cost} \u03a9</button>`;
+    }
+    return `<div class="inst"><div class="ihd"><div class="inm">${iv.nm}</div>
+      <div class="verdict" style="color:${v[2]}">${v[0]}</div></div>
+      <div class="lines">${v[1]}</div>${extra}</div>`;
+  }
+
+  // ---------- render ----------
+  function gauge(lbl,val,fmt,lo,hi,mark,col,note){
+    const pct=clamp(((val-lo)/(hi-lo))*100,0,100);
+    const mp=clamp(((mark-lo)/(hi-lo))*100,0,100);
+    return `<div class="gauge"><div class="glbl">${lbl}</div><div class="gv" style="color:${col}">${fmt}</div>
+      <div class="gbar"><div class="fill" style="width:${pct}%;background:${col}"></div><div class="mark" style="left:${mp}%"></div></div>
+      <div class="gnote">${note}</div></div>`;
+  }
+  function render(){
+    document.documentElement.style.setProperty("--lens", LENS[S.mode].c);
+    $("clk").textContent=S.tick;
+    const v=$("via"); v.textContent=Math.round(S.V); v.style.color=S.V<55?"var(--crash)":S.V<75?"var(--warn)":"var(--safe)";
+    $("omega").textContent=Math.round(S.omega);
+    $("ready").textContent=Math.round(S.R);
+    $("gracebar").style.display=S.phase==="orient"?"flex":"none";
+    renderTabs(); renderStage(); renderActions();
+  }
+  function renderTabs(){
+    const el=$("lenses"); el.innerHTML="";
+    ORDER.forEach(k=>{
+      const L=LENS[k], a=(k===S.mode), locked=(k==="yellow"&&S.R<READY_YELLOW);
+      const b=document.createElement("button");
+      b.className="lens-tab"; b.style.setProperty("--c",L.c); b.dataset.active=a?"1":"0";
+      if(locked) b.disabled=true;
+      const cost = a?"active":(S.phase==="orient"?"view (free)":"\u03a9"+SWITCH_COST+" + "+BLACKOUT+"-day blackout");
+      b.innerHTML=`<div class="nm"><span class="sw"></span>${L.name}</div>
+        <div class="sub">${L.sub}<br>${locked?("society not yet ready &middot; "+Math.round(S.R)+"/"+READY_YELLOW):cost}</div>`;
+      if(!a&&!locked) b.addEventListener("click",()=>requestSwitch(k));
+      el.appendChild(b);
+    });
+  }
+  function renderStage(){
+    const st=$("stage"); let head="",body="";
+    if(S.mode==="blue"){
+      const col=S.O<40?"var(--crash)":S.O<52?"var(--warn)":"var(--safe)";
+      head=["Blue lens &middot; order","Resolves: rules, compliance, order.<br>Cannot resolve: metric drift, trust, coupling."];
+      body=gauge("Civil order (O)",S.O,Math.round(S.O),25,85,30,col,"Fails below 30."+(inWin(S.winA)?" <span style='color:var(--warn)'>Rule drift underway \u2014 order decaying.</span>":" Holding."));
+    } else if(S.mode==="orange"){
+      const col="var(--lens)";
+      head=["Orange lens &middot; performance","Resolves: one performance index.<br>Cannot resolve: what the index is made of."];
+      body=gauge("Performance index",S.perf,Math.round(S.perf),0,120,0,S.burstDone?"var(--crash)":col,
+        S.burstDone?"<span style='color:var(--crash)'>Collapsed.</span>":(S.B>0.3?"Climbing strongly.":"Steady."));
+      if(S.insts.audit.built){
+        const t=Math.round(60-25*S.B);
+        body+=gauge("Audited real output",t,t,0,120,0,S.B>0.35?"var(--warn)":"var(--safe)",
+          S.B>0.35?"<span style='color:var(--warn)'>Diverging from the index \u2014 the gap is the lie.</span>":"Tracking the index.");
+        body=`<div class="twin">${body}</div>`;
+      }
+    } else if(S.mode==="green"){
+      const col=S.T<40?"var(--crash)":S.T<50?"var(--warn)":"var(--safe)";
+      head=["Green lens &middot; trust","Resolves: cohesion, relationships, strain.<br>Cannot resolve: order thresholds, coupling gain."];
+      body=gauge("Social trust (T)",S.T,Math.round(S.T),20,80,35,col,
+        inWin(S.winB)&&!S.burstDone?"<span style='color:var(--warn)'>Strain rising \u2014 something is being inflated at people\u2019s expense.</span>":"Communities holding.");
+    } else {
+      const col=S.g>0.9?"var(--crash)":S.g>0.72?"var(--warn)":"var(--safe)";
+      head=["Yellow lens &middot; feedback structure","Resolves: coupling, loop gain, system design.<br>The view readiness made thinkable."];
+      body=gauge("Coupling gain (g)",S.g,S.g.toFixed(2),0.3,1.0,1.0,col,
+        "Runaway at 1.00."+(inWin(S.winC)?" <span style='color:var(--warn)'>Tightening now.</span>":""));
+    }
+    st.innerHTML=`<div class="stage-head"><div class="stage-title">${head[0]}</div><div class="stage-note">${head[1]}</div></div>
+      ${body}<div class="insts">${instCard("audit")}${instCard("assembly")}${instCard("lab")}</div>`;
+    st.querySelectorAll("[data-build]").forEach(b=>b.addEventListener("click",()=>build(b.dataset.build)));
+  }
+  function renderActions(){
+    const el=$("actions"); const acts=ACTS[S.mode].filter(a=>!a.need||a.need());
+    let html=`<div class="actions-lbl">Actions &mdash; expressible in the <b style="color:var(--lens)">${LENS[S.mode].name} lens</b> only</div><div class="act-row">`;
+    acts.forEach((a,i)=>{ const dis=(S.phase!=="playing"||S.omega<a.c)?"disabled":"";
+      html+=`<button class="act" ${dis} data-i="${i}"><div class="an">${a.an}</div><div class="ad">${a.ad}</div><div class="ac">\u03a9 ${a.c}</div></button>`; });
+    html+=`</div>`; el.innerHTML=html;
+    el.querySelectorAll(".act").forEach(b=>b.addEventListener("click",()=>{acts[+b.dataset.i].f(); render();}));
+  }
+
+  // ---------- end / intro ----------
+  function end(win){
+    S.phase=win?"won":"lost"; clearInterval(timer); clearInterval(scrT); $("blackout").classList.remove("show");
+    const c=$("card");
+    if(win){
+      c.innerHTML=`<div class="verdict" style="color:var(--safe)">\u2713 THE SOCIETY HELD</div><h2>60 days, three crises</h2>
+        <p>No lens could have carried all three alone: the rule drift was invisible to Orange, the bubble was invisible to Orange <i>from inside it</i>, and the coupling was invisible to everyone until readiness made Yellow thinkable.</p>
+        <p style="color:var(--faint)">Whatever you built early and could not justify at the time &mdash; that was what held.</p>
+        <button class="btn" id="again">Run again</button>`;
+    } else {
+      const why={ order:"Civil order collapsed. The rule drift was legible only in Blue \u2014 and needed tending there.",
+        burst:"The bubble burst. From inside Orange it looked like growth; the strain was visible in Green, and an audit would have shown the gap.",
+        runaway:"The coupling ran away. Only Yellow could see or touch it \u2014 and Yellow only becomes thinkable if the society\u2019s readiness was built in time." }[S.loseCause]||"The society fell out of viability.";
+      c.innerHTML=`<div class="verdict" style="color:var(--crash)">\u2717 COLLAPSE</div><h2>Day ${S.tick}</h2>
+        <p>${why}</p>
+        <p style="color:var(--faint)">The danger was legible \u2014 in a lens you weren\u2019t in, or couldn\u2019t yet reach.</p>
+        <button class="btn" id="again">Try again</button>`;
+    }
+    $("overlay").classList.add("show"); $("again").addEventListener("click",start);
+  }
+  function intro(){
+    $("card").innerHTML=`<div class="verdict" style="color:var(--lens)">SPIRAL</div><h2>Hold one society for 60 days</h2>
+      <p>Three crises will arrive, roughly in sequence. Each is legible to some lenses and <b>invisible</b> to others &mdash; and each lens can only act in its own vocabulary. Switching costs &Omega; and days of blackout.</p>
+      <p>The fourth lens does not exist yet: <b>Yellow</b> only becomes thinkable once the society&rsquo;s readiness has grown &mdash; and the third crisis can only be seen and fixed from there.</p>
+      <p style="color:var(--faint)">No lens is higher. Each one is a different way of losing sight of something.</p>
+      <button class="btn" id="begin">Begin</button>`;
+    $("overlay").classList.add("show"); $("begin").addEventListener("click",start);
+  }
+  function start(){
+    clearInterval(timer); clearInterval(scrT);
+    $("overlay").classList.remove("show"); $("blackout").classList.remove("show");
+    fresh(); S.phase="orient"; render();
+  }
+  function beginCrisis(){ if(S.phase!=="orient")return; S.phase="playing"; render(); timer=setInterval(tickLoop,TICK_MS); }
+
+  $("startCrisis").addEventListener("click",beginCrisis);
+  fresh(); render(); intro();
+})();
+</script>
+</body>
+</html>
